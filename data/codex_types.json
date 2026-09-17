@@ -1,0 +1,21 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "want": [
+    "DNg29",
+    "JO"
+  ],
+  "token_present": false,
+  "ok": false,
+  "blocked": "Codex CSV dumps need api_token. Local measured dumps are the authority for this pack (data/type_counts.json). Do not scrape the SPA.",
+  "fallback": {
+    "authority": "D:\\FlyWire_Connectome feathers/TSV + neuPrint live",
+    "type_counts": "C:\\Users\\damia\\Desktop\\fsot fly nuron net\\data\\type_counts.json",
+    "male_DNg29": 2,
+    "banc_DNg29": 2,
+    "hemibrain_DNg29": 0,
+    "male_JO": 672,
+    "banc_JO": 1198,
+    "hemibrain_JO": 78
+  }
+}

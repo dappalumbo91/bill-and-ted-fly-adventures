@@ -1,0 +1,91 @@
+{
+  "product": "named fly proteins on named walking-program cells → FSOT product Cα",
+  "free_parameters": 0,
+  "pin": "AEB2AD",
+  "rule": "Fold only where a measured homolog exists. Do not MDS a fly protein brain.",
+  "connectome_seed": "mechanosensory / JO from fly_behavior_flow.json",
+  "genes": [
+    {
+      "symbol": "iav",
+      "name": "inactive",
+      "flybase": "FBgn0086693",
+      "flybase_secondary": "FBgn0032043",
+      "uniprot": "Q9W3W0",
+      "aa": 1123,
+      "sits_on": "Johnston organ chordotonal (JO types in v630)",
+      "function": "TRPV mechanotransduction, hearing / antennal vibration",
+      "fold": "product Cα: 9NVP Inactive (Halyomorpha Nan-Iav) 81% id, 60% cov; leftover query tails"
+    },
+    {
+      "symbol": "nan",
+      "name": "nanchung",
+      "flybase": "FBgn0036414",
+      "uniprot": "Q9VUD5",
+      "aa": 833,
+      "sits_on": "Johnston organ, partners with iav",
+      "function": "TRPV, sound / humidity / startle",
+      "fold": "product Cα: 9NVN (Halyomorpha Nan-Iav cryo-EM) 74% id, 86% cov"
+    },
+    {
+      "symbol": "nompC",
+      "name": "no mechanoreceptor potential C",
+      "flybase": "FBgn0016920",
+      "flybase_secondary": "FBgn0026324",
+      "uniprot": "Q7KIQ2",
+      "aa": 1619,
+      "sits_on": "mechanosensory bristles / campaniform",
+      "function": "TRPN mechanotransduction channel",
+      "fold": "product Cα: 5VKQ Drosophila NOMPC 97% id, 92% cov"
+    },
+    {
+      "symbol": "Gad1",
+      "name": "glutamic acid decarboxylase 1",
+      "flybase": "FBgn0004516",
+      "uniprot": "P20228",
+      "aa": 510,
+      "sits_on": "GABAergic neurons (inhibitory residual already used on the graph)",
+      "function": "GABA synthesis",
+      "fold": "product Cα: 2OKJ human GAD67 2.3 Å, 64% id, 94% cov"
+    },
+    {
+      "symbol": "ChAT",
+      "name": "Choline acetyltransferase",
+      "flybase": "FBgn0000303",
+      "uniprot": "P07668",
+      "aa": 721,
+      "sits_on": "cholinergic neurons (default excitatory edge; not a Fly Cell Atlas join)",
+      "function": "acetylcholine synthesis",
+      "fold": "product Cα: 2FY4 53% id / 78% cov (below close-homolog 1/φ; still a measured template, not MDS)"
+    },
+    {
+      "symbol": "VGlut",
+      "name": "Vesicular glutamate transporter",
+      "flybase": "FBgn0031424",
+      "uniprot": "Q9VQC0",
+      "aa": 632,
+      "sits_on": "glutamatergic motor neurons (vnc_motor NMJ)",
+      "function": "glutamate packaging at NMJ",
+      "fold": "product Cα: 7T3O 61% id / 69% cov"
+    },
+    {
+      "symbol": "Mhc",
+      "name": "Myosin heavy chain",
+      "flybase": "FBgn0264695",
+      "uniprot": "P05661",
+      "aa": 1962,
+      "sits_on": "muscle (effector of vnc_motor; not a CNS cell)",
+      "function": "muscle contraction",
+      "fold": "product Cα: 5W1A 97% id / 40% cov (leftover ≥ 1/φ²)"
+    }
+  ],
+  "missing_for_whole_fly": [
+    "Fly Cell Atlas joined to FlyWire root_id (per-cell transcriptome)",
+    "Muscle / cuticle / gut cells (not in CNS dumps)",
+    "Rest and odor observer videos on the same kinematics rig"
+  ],
+  "other_species_whole_body": [
+    "C. elegans Cook 2019 — live boot scripts/worm_connectome.py",
+    "Ciona intestinalis larva Ryan 2016",
+    "Platynereis dumerilii 3-day larva Verasztó 2025"
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "pin": "AEB2AD",
+  "residual_Biochemistry": 1.284069161007025,
+  "free_parameters": 0,
+  "curriculum": "spatial / trit / \u03c6 first \u2014 not language tokens",
+  "math_probe": {
+    "n": 13,
+    "n_ok": 13,
+    "fail": [],
+    "overall_ok": true,
+    "rows": [
+      {
+        "name": "trit_consensus_9",
+        "ok": true,
+        "n": 9
+      },
+      {
+        "name": "trit_sumsat_1_1",
+        "ok": true,
+        "got": 1
+      },
+      {
+        "name": "trit_sumsat_1_m1",
+        "ok": true,
+        "got": 0
+      },
+      {
+        "name": "trit_neg",
+        "ok": true
+      },
+      {
+        "name": "trit_pair_disagree",
+        "ok": true,
+        "got": -1
+      },
+      {
+        "name": "phi_inv_eq_phi_minus_1",
+        "ok": true,
+        "inv": 0.6180339887498948
+      },
+      {
+        "name": "phi2_eq_phi_plus_1",
+        "ok": true,
+        "phi2": 2.618033988749895
+      },
+      {
+        "name": "leftover_1_over_phi2",
+        "ok": true,
+        "leftover": 0.38196601125010515
+      },
+      {
+        "name": "residual_biochem",
+        "ok": true,
+        "r": 1.284069161007025,
+        "D_eff": 10
+      },
+      {
+        "name": "pair_FW_8",
+        "ok": true,
+        "w": 1.6700524010190179
+      },
+      {
+        "name": "overlay_phi_on",
+        "ok": true,
+        "cut": 0.6180339887498948
+      },
+      {
+        "name": "fromS_overlay",
+        "ok": true
+      },
+      {
+        "name": "seeds_pi_e_phi_gamma",
+        "ok": true
+      }
+    ],
+    "note": "These are identities the organism already is. Not trained."
+  },
+  "miss_audit": {
+    "rule": "Trial-mean (R\u2212L)/median_step uses overlay 1/\u03c6. If leftover, do not collapse the heading. Maze lane is per-frame consensus trit on walk steps.",
+    "trials": [
+      {
+        "id": "Fly01_T001",
+        "left_mean": 0.19653144734849937,
+        "right_mean": 0.19810446306204846,
+        "right_minus_left_mean": 0.001573015713549079,
+        "mean_over_median_step": 0.004166137069727919,
+        "mean_laterality_trit": 0,
+        "mean_is_leftover": true,
+        "sim_turns": {
+          "left": 29,
+          "right": 28,
+          "superpose": 73
+        },
+        "sim_final_lane": 1,
+        "sim_left_resource": true,
+        "per_leg_mean_speed": {
+          "R1": 0.07764441294705582,
+          "R2": 0.06554963610598286,
+          "R3": 0.05491041400900979,
+          "L1": 0.07050598646388262,
+          "L2": 0.07646666165367026,
+          "L3": 0.0495587992309465
+        }
+      },
+      {
+        "id": "Fly01_T002",
+        "left_mean": 0.1669872791874512,
+        "right_mean": 0.14850131148456183,
+        "right_minus_left_mean": -0.018485967702889367,
+        "mean_over_median_step": -0.0628828407355935,
+        "mean_laterality_trit": 0,
+        "mean_is_leftover": true,
+        "sim_turns": {
+          "left": 35,
+          "right": 26,
+          "superpose": 49
+        },
+        "sim_final_lane": 1,
+        "sim_left_resource": true,
+        "per_leg_mean_speed": {
+          "R1": 0.06307822437962549,
+          "R2": 0.05076706895506539,
+          "R3": 0.03465601814987096,
+          "L1": 0.057619174659321225,
+          "L2": 0.06567293406690665,
+          "L3": 0.04369517046122333
+        }
+      },
+      {
+        "id": "Fly02_T002",
+        "left_mean": 0.23156826045040546,
+        "right_mean": 0.2658896648975456,
+        "right_minus_left_mean": 0.03432140444714014,
+        "mean_over_median_step": 0.0718845399708111,
+        "mean_laterality_trit": 0,
+        "mean_is_leftover": true,
+        "sim_turns": {
+          "left": 16,
+          "right": 28,
+          "superpose": 55
+        },
+        "sim_final_lane": -1,
+        "sim_left_resource": false,
+        "per_leg_mean_speed": {
+          "R1": 0.08159548457514736,
+          "R2": 0.10168096828861208,
+          "R3": 0.08261321203378622,
+          "L1": 0.08853613759113647,
+          "L2": 0.07170388113140833,
+          "L3": 0.0713282417278607
+        }
+      }
+    ],
+    "n_trials": 3,
+    "n_mean_laterality_leftover": 3,
+    "finding": "All three trial *means* sit under the overlay (leftover). Fly02 miss is 28 right vs 16 left *frames* at the junction plant, not a failed residual hop and not odor."
+  },
+  "laterality_hops": {
+    "programs": [
+      {
+        "name": "vnc_sensory_L",
+        "n_seed": 3185,
+        "hop2": {
+          "vnc_motor": 9.924161657124472,
+          "vnc_motor_L": 6.659541423237376,
+          "vnc_motor_R": 3.2646202338870887,
+          "vnc_motor_other": 0.0,
+          "ipsi_bias": 0.3420864458523569
+        }
+      },
+      {
+        "name": "vnc_sensory_R",
+        "n_seed": 3166,
+        "hop2": {
+          "vnc_motor": 8.406758312944776,
+          "vnc_motor_L": 2.6831180164210973,
+          "vnc_motor_R": 5.723640296523679,
+          "vnc_motor_other": 0.0,
+          "ipsi_bias": -0.3616759477217759
+        }
+      },
+      {
+        "name": "JO_L",
+        "n_seed": 348,
+        "hop2": {
+          "vnc_motor": 5.829714989444043,
+          "vnc_motor_L": 3.6309713540588535,
+          "vnc_motor_R": 2.198743635385181,
+          "vnc_motor_other": 0.0,
+          "ipsi_bias": 0.24567714223882067
+        }
+      },
+      {
+        "name": "JO_R",
+        "n_seed": 324,
+        "hop2": {
+          "vnc_motor": 5.4053750525493784,
+          "vnc_motor_L": 2.0576682081156252,
+          "vnc_motor_R": 3.3477068444337608,
+          "vnc_motor_other": 0.0,
+          "ipsi_bias": -0.23865848785265403
+        }
+      }
+    ],
+    "vnc_sensory_ipsi_same_sign": true,
+    "note": "vnc_sensory laterality is rootSide (somaSide is empty on the cord). vnc_motor laterality is somaSide. Crossing is allowed; we measure it."
+  },
+  "next": "Language/coding still waits. After spatial laterality is measured, integer counting can ride hop-n_active / overlay, still without backprop."
+}

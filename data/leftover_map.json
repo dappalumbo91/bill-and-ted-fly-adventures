@@ -1,0 +1,278 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "phi": 1.618033988749895,
+  "overlay": 0.6180339887498948,
+  "leftover_floor_1_over_phi2": 0.38196601125010515,
+  "n": 30,
+  "n_mapped": 21,
+  "by_kind": {
+    "overlay": 2,
+    "consensus": 2,
+    "hub": 3,
+    "unlabeled": 6,
+    "product": 2,
+    "horizon": 1,
+    "sleep": 1,
+    "unsigned": 1,
+    "parked": 1,
+    "missing": 8,
+    "sibling": 1,
+    "denied": 1,
+    "language": 1
+  },
+  "by_status": {
+    "mapped": 21,
+    "sibling": 2,
+    "blocked": 4,
+    "refused": 2,
+    "deferred": 1
+  },
+  "items": [
+    {
+      "kind": "overlay",
+      "name": "trial-mean (R\u2212L) laterality",
+      "status": "mapped",
+      "n": 3,
+      "mechanic": "fromS under 1/\u03c6 on all 3 clips \u2014 do not collapse heading from the mean",
+      "do": "use per-frame trit"
+    },
+    {
+      "kind": "overlay",
+      "name": "JO n_seed L vs R (348 vs 324)",
+      "status": "mapped",
+      "n": true,
+      "mechanic": "imbalance 24/336 < 1/\u03c6 \u2014 do not yaw from cell count",
+      "do": "yaw from unilateral ipsi_bias sign"
+    },
+    {
+      "kind": "consensus",
+      "name": "T001 vs Fly02 heading",
+      "status": "mapped",
+      "n": 1,
+      "mechanic": "cons(left, right)=0 superposition",
+      "do": "do not vote"
+    },
+    {
+      "kind": "consensus",
+      "name": "bilateral JO",
+      "status": "mapped",
+      "n": 0,
+      "mechanic": "JO_L +1 \u2227 JO_R \u22121 \u2192 cons 0 straight",
+      "do": "one ear off to yaw"
+    },
+    {
+      "kind": "hub",
+      "name": "olfactory il3LN6",
+      "status": "mapped",
+      "n": 1319.5,
+      "mechanic": "hop-1 collapse leftover LN \u2014 not a thought",
+      "do": "do not expand"
+    },
+    {
+      "kind": "hub",
+      "name": "Kenyon APL / KCg-s1 / MBp3",
+      "status": "mapped",
+      "n": 963.5,
+      "mechanic": "MB leftover hub / precursor does not light vnc_motor",
+      "do": "do not expand"
+    },
+    {
+      "kind": "hub",
+      "name": "JO hop-1 silent cells",
+      "status": "mapped",
+      "n": 669,
+      "mechanic": "672\u22123=669 below overlay after hop-1; 3 active = DNg29 bottleneck",
+      "do": "command bottleneck DNg29 is the expansion candidate"
+    },
+    {
+      "kind": "unlabeled",
+      "name": "VNC sensory without rootSide",
+      "status": "mapped",
+      "n": 14,
+      "mechanic": "6365 \u2212 (3185+3166) = 14",
+      "do": "keep unlabeled; do not impute side"
+    },
+    {
+      "kind": "unlabeled",
+      "name": "Male traced without birthtime",
+      "status": "mapped",
+      "n": 157219,
+      "mechanic": "165122\u22127903 unlabeled birth",
+      "do": "hops only on labeled early/late"
+    },
+    {
+      "kind": "unlabeled",
+      "name": "Male without Truman hemilineage",
+      "status": "mapped",
+      "n": 145385,
+      "mechanic": "165122\u221219737",
+      "do": "hops on labeled lineages only"
+    },
+    {
+      "kind": "unlabeled",
+      "name": "Truman tag TBD",
+      "status": "mapped",
+      "n": 1603,
+      "mechanic": "named leftover in the dump, not a lineage",
+      "do": "do not treat TBD as 07B"
+    },
+    {
+      "kind": "unlabeled",
+      "name": "Male without Ito\u2013Lee hemilineage",
+      "status": "mapped",
+      "n": 127377,
+      "mechanic": "165122\u221237745",
+      "do": "same"
+    },
+    {
+      "kind": "unlabeled",
+      "name": "type names only-Male / only-BANC",
+      "status": "mapped",
+      "n": {
+        "only_male": 4309,
+        "only_banc": 4062
+      },
+      "mechanic": "Jaccard 0.471 \u2014 class identity not a merged graph",
+      "do": "do not merge synapses"
+    },
+    {
+      "kind": "product",
+      "name": "PHOT1 kinase/linker leftover",
+      "status": "mapped",
+      "n": 0.7058232931726908,
+      "mechanic": "cov 0.29, leftover 0.706 > 1/\u03c6\u00b2=0.382 \u2014 domains only",
+      "do": "not full-chain product, not MDS"
+    },
+    {
+      "kind": "product",
+      "name": "Genetics C\u03b1 campaign freeze",
+      "status": "sibling",
+      "n": "0.13 \u00c5 vs AF 0.47",
+      "mechanic": "pack pin AEB2AD; campaign pin D1D38A",
+      "do": "do not silently re-run as this pack"
+    },
+    {
+      "kind": "horizon",
+      "name": "hop leftover round(\u03c6\u2075)",
+      "status": "mapped",
+      "n": 11,
+      "mechanic": "horizon not a fitted T",
+      "do": "stop at 11"
+    },
+    {
+      "kind": "sleep",
+      "name": "DAM leftover-long inactivity",
+      "status": "mapped",
+      "n": 0.1722528802401007,
+      "mechanic": "sleep is leftover rest on measured beams",
+      "do": "not a 5-min free cut"
+    },
+    {
+      "kind": "unsigned",
+      "name": "hemibrain no predictedNt / n_gaba",
+      "status": "mapped",
+      "n": 0,
+      "mechanic": "unsigned residual; DNg29 absent",
+      "do": "do not mix 2.68 desc with 7.77 vnc_motor"
+    },
+    {
+      "kind": "parked",
+      "name": "tethered wing hinges",
+      "status": "mapped",
+      "n": 0,
+      "mechanic": "400 Hz clip, peak 4\u20139 Hz, not 200 Hz band",
+      "do": "plant is simulated command\u2192sinusoid"
+    },
+    {
+      "kind": "missing",
+      "name": "haltere named types",
+      "status": "mapped",
+      "n": 0,
+      "mechanic": "count 0 in Male CNS types",
+      "do": "wait for a dump; do not invent"
+    },
+    {
+      "kind": "missing",
+      "name": "type string 'wing'",
+      "status": "mapped",
+      "n": 0,
+      "mechanic": "count 0; hg* MN are the steering muscles",
+      "do": "use hg3 / DNp01"
+    },
+    {
+      "kind": "missing",
+      "name": "free-flight 3D wingbeat",
+      "status": "blocked",
+      "n": null,
+      "mechanic": "no time series on disk",
+      "do": "do not synthesize a 200 Hz clip and call it measured"
+    },
+    {
+      "kind": "missing",
+      "name": "embryo\u2192pupa synapse movie",
+      "status": "refused",
+      "n": null,
+      "mechanic": "does not exist; two snapshots + hemilineage",
+      "do": "do not interpolate metamorphosis synapses"
+    },
+    {
+      "kind": "missing",
+      "name": "Fly Cell Atlas \u2192 bodyId",
+      "status": "refused",
+      "n": null,
+      "mechanic": "none published",
+      "do": "genes sit on classes, not invented bodyIds"
+    },
+    {
+      "kind": "missing",
+      "name": "Codex api_token CSV",
+      "status": "blocked",
+      "n": null,
+      "mechanic": "local type_counts.json is authority",
+      "do": "do not scrape the SPA"
+    },
+    {
+      "kind": "missing",
+      "name": "Berlin walk / ymaze zip",
+      "status": "blocked",
+      "n": null,
+      "mechanic": "unauthorized token / corrupt zip on D:",
+      "do": "Harvard 3D remains the body"
+    },
+    {
+      "kind": "missing",
+      "name": "Iwasaki ball-walk videos",
+      "status": "blocked",
+      "n": null,
+      "mechanic": "papers cited; videos not on disk",
+      "do": "forelimb share \u2265 1/\u03c6 analog"
+    },
+    {
+      "kind": "sibling",
+      "name": "FSOT-Genetics GitHub pin",
+      "status": "sibling",
+      "n": "D1D38A",
+      "mechanic": "this pack is AEB2AD",
+      "do": "do not mix pins"
+    },
+    {
+      "kind": "denied",
+      "name": "courtship / aggression default observer",
+      "status": "mapped",
+      "n": "DENY",
+      "mechanic": "labels exist; human-facing seed off",
+      "do": "not leftover of data \u2014 guardrail"
+    },
+    {
+      "kind": "language",
+      "name": "LLM / coding tokens",
+      "status": "deferred",
+      "n": null,
+      "mechanic": "spatial/trit/\u03c6 first; ALU and parser exist",
+      "do": "not this pack's next observer"
+    }
+  ],
+  "rule": "Leftover is mapped when we name the mechanic and the do-not. Missing dumps stay missing. Do not invent joins.",
+  "overall_ok": true
+}

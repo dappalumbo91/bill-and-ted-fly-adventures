@@ -1,0 +1,133 @@
+{
+  "pin": "AEB2AD",
+  "residual_Biochemistry": 1.284069161007025,
+  "free_parameters": 0,
+  "fps_authority": "Haustein 2024 Harvard Dataverse 10.7910/DVN/BBNPYX 400 Hz",
+  "wingbeat_band_hz": [
+    150.0,
+    250.0
+  ],
+  "n_trials_flight_like": 0,
+  "verdict": "Wing hinge keypoints exist. Spectrum is not the 200 Hz flight band. Tethered walking, wings parked. Do not call this a wingbeat dump.",
+  "wings": [
+    {
+      "id": "Fly01_T001",
+      "n_frames": 334,
+      "duration_s": 0.835,
+      "fps": 400.0,
+      "wing_energy": {
+        "min": 0.002161601567334096,
+        "median": 0.006595608629130492,
+        "max": 0.017949478414047645
+      },
+      "tarsus_energy_median": 0.3775717618545907,
+      "wing_over_tarsus": 0.01746849021949132,
+      "fft": {
+        "peak_hz": 3.5928143712574854,
+        "band_150_250": 1.287127337021376,
+        "band_0_20": 1.4059528995367279,
+        "flight_band_ratio": 0.9154839663864833
+      },
+      "flight_like": false,
+      "verdict": "parked_hinge"
+    },
+    {
+      "id": "Fly01_T002",
+      "n_frames": 348,
+      "duration_s": 0.87,
+      "fps": 400.0,
+      "wing_energy": {
+        "min": 0.0008392095912385474,
+        "median": 0.004978831330617863,
+        "max": 0.013867900510541833
+      },
+      "tarsus_energy_median": 0.2939747550616413,
+      "wing_over_tarsus": 0.016936254711929107,
+      "fft": {
+        "peak_hz": 9.195402298850574,
+        "band_150_250": 1.1414998400689156,
+        "band_0_20": 1.182369517655361,
+        "flight_band_ratio": 0.9654340906314504
+      },
+      "flight_like": false,
+      "verdict": "parked_hinge"
+    },
+    {
+      "id": "Fly02_T002",
+      "n_frames": 338,
+      "duration_s": 0.845,
+      "fps": 400.0,
+      "wing_energy": {
+        "min": 0.0016974395001507826,
+        "median": 0.005638393558672221,
+        "max": 0.013899340506569756
+      },
+      "tarsus_energy_median": 0.47745182011323517,
+      "wing_over_tarsus": 0.01180934561590566,
+      "fft": {
+        "peak_hz": 9.467455621301776,
+        "band_150_250": 1.3594698126875089,
+        "band_0_20": 1.2690930714515027,
+        "flight_band_ratio": 1.0712136432449104
+      },
+      "flight_like": false,
+      "verdict": "parked_hinge"
+    }
+  ],
+  "types": {
+    "n_traced": 165122,
+    "counts": {
+      "DNp01": 2,
+      "DNp": 320,
+      "DNg": 860,
+      "DNb": 40,
+      "DNa": 52,
+      "DNg29": 2,
+      "hg1 MN": 2,
+      "hg2 MN": 2,
+      "hg3 MN": 2,
+      "hg4 MN": 2,
+      "JO": 672,
+      "ORN": 2635,
+      "KC": 4064,
+      "TN1": 35,
+      "pC1": 156,
+      "vnc_motor": 708,
+      "descending_neuron": 1314,
+      "cb_motor": 107,
+      "haltere_type_substr": 0,
+      "wing_type_substr": 0
+    }
+  },
+  "flight_motor_hops": {
+    "DNp01": {
+      "n_seed": 2,
+      "hop2_vnc_motor": 5.803954745189134,
+      "hop2_descending": 15.768776200818206,
+      "hop2_cb_motor": 0.34269407545835584,
+      "top": "DNp01"
+    },
+    "hg3_MN": {
+      "n_seed": 2,
+      "hop2_vnc_motor": 4.8176244211075625,
+      "hop2_descending": 1.5066205726958424,
+      "hop2_cb_motor": 0.13678168416932987,
+      "top": "hg1 MN"
+    }
+  },
+  "other_functions_on_disk": [
+    "6-leg 3D walk (same files)",
+    "antenna 3D (JO observer)",
+    "JO / ORN / KC / DNg / DNp types in Male CNS",
+    "hg1\u20134 MN (2 each) \u2014 steering / song muscle names",
+    "DNp01 n=2 \u2014 giant-fiber analog",
+    "sleep DAM leftover inactivity",
+    "odor ACV video rest/pulse",
+    "courtship fru-GAL4 wing-extension clip (guardrail: not default seed)"
+  ],
+  "missing": [
+    "free-flight wingbeat kinematics (~200 Hz)",
+    "haltere named types in this dump (count 0)",
+    "type string containing 'wing' (count 0)"
+  ]
+}

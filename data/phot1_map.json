@@ -1,0 +1,42 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "mislabel": {
+    "stamped_as": "PHOT1",
+    "accession": "Q2V2M9",
+    "live_gene": "FHOD3",
+    "live_organism": "Homo sapiens",
+    "note": "Human formin FHOD3 \u2014 not Arabidopsis phototropin."
+  },
+  "phot1": {
+    "accession": "O48963",
+    "gene": "PHOT1",
+    "organism": "Arabidopsis thaliana",
+    "length": 996,
+    "uniprot_reviewed": true
+  },
+  "measured_domains": [
+    {
+      "pdb": "2Z6C",
+      "method": "X-ray",
+      "resolution_A": "2.10 A",
+      "chains": "A/B=180-308",
+      "n_res": 129
+    },
+    {
+      "pdb": "4HHD",
+      "method": "X-ray",
+      "resolution_A": "2.75 A",
+      "chains": "A/B=452-615",
+      "n_res": 164
+    }
+  ],
+  "domain_residues": 293,
+  "template_coverage": 0.29417670682730923,
+  "leftover": 0.7058232931726908,
+  "leftover_floor_1_over_phi2": 0.38196601125010515,
+  "close_homolog": true,
+  "structure_mode": "measured_domains",
+  "full_chain_product": false,
+  "rule": "Same-protein crystals are measured maps. LOV1 2Z6C and LOV2 4HHD are Biochemistry observations. Kinase/linker leftover stays unmapped. Not no_measured_map. Not bulk MDS."
+}

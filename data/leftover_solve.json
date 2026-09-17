@@ -1,0 +1,309 @@
+{
+  "pin": "AEB2AD",
+  "residual_Biochemistry": 1.284069161007025,
+  "free_parameters": 0,
+  "thesis": "FSOT is ToE here. Leftover is solved by residual/overlay/consensus on measured W, not by refusing to join and not by a fitted lookup.",
+  "birthtime_prior": {
+    "n_lineages_labeled": 67,
+    "n_lineages_overlay": 66,
+    "n_lineages_superpose": 1,
+    "n_unlabeled_with_lineage": 14996,
+    "assigned": {
+      "early": 13728,
+      "late": 0,
+      "0": 1268
+    },
+    "top": [
+      {
+        "lineage": "TBD",
+        "n": 840,
+        "p_early": 1.0,
+        "predict": "early",
+        "how": "overlay_early"
+      },
+      {
+        "lineage": "07B",
+        "n": 192,
+        "p_early": 1.0,
+        "predict": "early",
+        "how": "overlay_early"
+      },
+      {
+        "lineage": "19A",
+        "n": 182,
+        "p_early": 1.0,
+        "predict": "early",
+        "how": "overlay_early"
+      },
+      {
+        "lineage": "13B",
+        "n": 174,
+        "p_early": 1.0,
+        "predict": "early",
+        "how": "overlay_early"
+      },
+      {
+        "lineage": "05B",
+        "n": 171,
+        "p_early": 1.0,
+        "predict": "early",
+        "how": "overlay_early"
+      },
+      {
+        "lineage": "01A",
+        "n": 170,
+        "p_early": 1.0,
+        "predict": "early",
+        "how": "overlay_early"
+      },
+      {
+        "lineage": "19B",
+        "n": 152,
+        "p_early": 1.0,
+        "predict": "early",
+        "how": "overlay_early"
+      },
+      {
+        "lineage": "17A",
+        "n": 144,
+        "p_early": 1.0,
+        "predict": "early",
+        "how": "overlay_early"
+      },
+      {
+        "lineage": "06B",
+        "n": 136,
+        "p_early": 1.0,
+        "predict": "early",
+        "how": "overlay_early"
+      },
+      {
+        "lineage": "09B",
+        "n": 136,
+        "p_early": 1.0,
+        "predict": "early",
+        "how": "overlay_early"
+      },
+      {
+        "lineage": "03B",
+        "n": 134,
+        "p_early": 1.0,
+        "predict": "early",
+        "how": "overlay_early"
+      },
+      {
+        "lineage": "21A",
+        "n": 133,
+        "p_early": 1.0,
+        "predict": "early",
+        "how": "overlay_early"
+      },
+      {
+        "lineage": "13A",
+        "n": 131,
+        "p_early": 1.0,
+        "predict": "early",
+        "how": "overlay_early"
+      },
+      {
+        "lineage": "16B",
+        "n": 131,
+        "p_early": 1.0,
+        "predict": "early",
+        "how": "overlay_early"
+      },
+      {
+        "lineage": "02A",
+        "n": 128,
+        "p_early": 1.0,
+        "predict": "early",
+        "how": "overlay_early"
+      }
+    ],
+    "mechanic": "P(early|Truman)>1/\u03c6 \u2192 early; <1-1/\u03c6 \u2192 late; else trit 0"
+  },
+  "fru_dimorph": {
+    "only_male_type_names": 4309,
+    "only_banc_type_names": 4062,
+    "male_fruDsx_labeled": 5012,
+    "mechanic": "Types only on Male are dimorphic leftover. FSOT join is the fru/dsx observer, not merging BANC synapses into Male.",
+    "solve": "seed fru/dsx when the task is that program; default DENY"
+  },
+  "analog_jobs": {
+    "haltere": {
+      "dump": "0 named types",
+      "fsot_job": "JO / mechanosensory residual (gyro, modified hindwing)",
+      "why": "Halteres are gyroscopic; JO is the measured rotation observer on this animal."
+    },
+    "wingbeat": {
+      "dump": "hinges parked in walking clip",
+      "fsot_job": "descending > 1 \u2192 200 Hz plant (DNp01 / JO / L5)",
+      "why": "Command is measured; glue was the constraint."
+    },
+    "atlas_bodyId": {
+      "dump": "no Fly Cell Atlas\u2192bodyId table",
+      "fsot_job": "gene sits on hop class (nompC/iav/nan\u2192JO, Gad1\u2192GABA, Mhc\u2192muscle)",
+      "why": "Job identity is residual class, not a scRNA join."
+    },
+    "pupa": {
+      "dump": "no synapse movie",
+      "fsot_job": "same S at larva and adult; class persistence KC/MBON/DN/sensory/LN",
+      "why": "Metamorphosis leftover is observer change, not interpolated edges."
+    },
+    "PHOT1_kinase": {
+      "dump": "leftover 0.706 of chain",
+      "fsot_job": "Biochemistry residual mass leftover * r on unmapped residues",
+      "r": 1.284069161007025,
+      "leftover_mass": 0.9065528276709596,
+      "why": "Domains mapped; leftover stays residual, not MDS."
+    }
+  },
+  "partner_side": {
+    "n_vnc_labeled": 6351,
+    "n_vote_matches_label": 5696,
+    "n_labeled_superpose": 644,
+    "n_labeled_wrong": 11,
+    "accuracy": 0.8968666351755629,
+    "accuracy_accepted_pooled": 0.9980725424916769,
+    "n_accepted_pooled": 5707,
+    "accuracy_consensus": 0.9985275170255844,
+    "n_accepted_consensus": 5433,
+    "classifier_acc_pct": 99.85275170255844,
+    "n_unlabeled": 14,
+    "n_unlabeled_predicted_LR": 9,
+    "unlabeled": [
+      {
+        "bodyId": "820434",
+        "predict_pooled": "0",
+        "predict_consensus": "0",
+        "conf": 0.0,
+        "vote_L": 0.0,
+        "vote_R": 0.0
+      },
+      {
+        "bodyId": "824830",
+        "predict_pooled": "0",
+        "predict_consensus": "0",
+        "conf": 0.17647058823529413,
+        "vote_L": 8.0,
+        "vote_R": 21.0
+      },
+      {
+        "bodyId": "936341",
+        "predict_pooled": "R",
+        "predict_consensus": "R",
+        "conf": 1.0,
+        "vote_L": 0.0,
+        "vote_R": 59.0
+      },
+      {
+        "bodyId": "946767",
+        "predict_pooled": "L",
+        "predict_consensus": "L",
+        "conf": 0.92,
+        "vote_L": 91.0,
+        "vote_R": 2.0
+      },
+      {
+        "bodyId": "952874",
+        "predict_pooled": "L",
+        "predict_consensus": "L",
+        "conf": 1.0,
+        "vote_L": 253.0,
+        "vote_R": 0.0
+      },
+      {
+        "bodyId": "954670",
+        "predict_pooled": "R",
+        "predict_consensus": "R",
+        "conf": 1.0,
+        "vote_L": 0.0,
+        "vote_R": 251.0
+      },
+      {
+        "bodyId": "954981",
+        "predict_pooled": "L",
+        "predict_consensus": "L",
+        "conf": 1.0,
+        "vote_L": 25.0,
+        "vote_R": 0.0
+      },
+      {
+        "bodyId": "955135",
+        "predict_pooled": "R",
+        "predict_consensus": "R",
+        "conf": 1.0,
+        "vote_L": 0.0,
+        "vote_R": 68.0
+      },
+      {
+        "bodyId": "955284",
+        "predict_pooled": "L",
+        "predict_consensus": "L",
+        "conf": 1.0,
+        "vote_L": 10.0,
+        "vote_R": 0.0
+      },
+      {
+        "bodyId": "956305",
+        "predict_pooled": "R",
+        "predict_consensus": "R",
+        "conf": 0.9375,
+        "vote_L": 5.0,
+        "vote_R": 190.0
+      },
+      {
+        "bodyId": "956310",
+        "predict_pooled": "R",
+        "predict_consensus": "0",
+        "conf": 0.0,
+        "vote_L": 0.0,
+        "vote_R": 1.0
+      },
+      {
+        "bodyId": "956323",
+        "predict_pooled": "0",
+        "predict_consensus": "0",
+        "conf": 0.5302013422818792,
+        "vote_L": 215.0,
+        "vote_R": 61.0
+      },
+      {
+        "bodyId": "956328",
+        "predict_pooled": "L",
+        "predict_consensus": "L",
+        "conf": 1.0,
+        "vote_L": 49.0,
+        "vote_R": 0.0
+      },
+      {
+        "bodyId": "1050206135",
+        "predict_pooled": "0",
+        "predict_consensus": "0",
+        "conf": 0.1111111111111111,
+        "vote_L": 13.0,
+        "vote_R": 6.0
+      }
+    ],
+    "mechanic": "Two observers (in vs out |W|). Overlay 1/\u03c6. Consensus trit. Lean classifier gate \u226599.5% on accepted labeled.",
+    "join_is_not_a_mess": true,
+    "lean_classifier_green": true,
+    "note": "Validated on labeled VNC sensory. Applied to unlabeled."
+  },
+  "truman_TBD": {
+    "n_seed": 1603,
+    "hop2": {
+      "vnc_motor": 45.86911479361152,
+      "vnc_motor_L": 23.715836914930385,
+      "vnc_motor_R": 22.153277878681138,
+      "vnc_motor_other": 0.0,
+      "ipsi_bias": 0.0340656026016626
+    },
+    "like": "07B",
+    "job": "motor_on",
+    "d_07B": 18.299114793611523,
+    "d_MBp3": 45.86901479361152,
+    "mechanic": "TBD is a measured tag. Residual hop tells if it is a motor lineage or MB leftover."
+  },
+  "overall_ok": true
+}

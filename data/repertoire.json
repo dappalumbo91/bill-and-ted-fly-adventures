@@ -1,0 +1,188 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "why_walking_first": "Walking was first because Harvard 6-leg 3D + Male/BANC vnc_motor is a clean measured loop. It is not the whole animal. This table is the rest of the measured observers under the same law.",
+  "law": "S=K(T1+T2+T3); residual hops; observer from measured class",
+  "jobs": [
+    {
+      "job": "rest",
+      "observer": "no afferent (odor off, motion under MAD+\u03c6)",
+      "allow": true,
+      "walks": false,
+      "male": {
+        "vnc_motor": 0.0,
+        "descending": 0.0,
+        "top": ""
+      },
+      "note": "Rest is leftover, not a neuron class."
+    },
+    {
+      "job": "walk",
+      "observer": "vnc_sensory (tarsus / VNC)",
+      "allow": true,
+      "walks": true,
+      "male": {
+        "vnc_motor": 10.740180804833889,
+        "descending": 11.38578833493545,
+        "n_active": 2,
+        "top": "AN08B034"
+      },
+      "banc": {
+        "vnc_motor": 10.161924095410841,
+        "descending": 6.4801374784561725,
+        "n_active": 0,
+        "top": "AN19B001_b"
+      },
+      "note": "First readout: legs exist on Male/BANC VNC."
+    },
+    {
+      "job": "hear_steer",
+      "observer": "JO (Johnston organ)",
+      "allow": true,
+      "walks": true,
+      "male": {
+        "vnc_motor": 7.772920928859144,
+        "descending": 24.213046671127735,
+        "n_active": 4,
+        "top": "IN23B001"
+      },
+      "banc": {
+        "vnc_motor": 6.636908411047972,
+        "descending": 16.282350887307224,
+        "n_active": 9,
+        "top": "WED109"
+      },
+      "hemi": {
+        "vnc_motor": 0.0,
+        "descending": 2.683235242013257,
+        "n_active": 3,
+        "top": "Giant Fiber"
+      },
+      "note": "Hearing + antennal wind. Hop-1 peaks DNg29. Descending > vnc_motor."
+    },
+    {
+      "job": "object",
+      "observer": "mechanosensory (forelimb / bristle)",
+      "allow": true,
+      "walks": true,
+      "male": {
+        "vnc_motor": 7.549628185600908,
+        "descending": 13.890959775127437,
+        "n_active": 2,
+        "top": "AN08B034"
+      },
+      "note": "Iwasaki ball analog. Tarsal/bristle afferents."
+    },
+    {
+      "job": "see",
+      "observer": "L5 lamina (optic)",
+      "allow": true,
+      "walks": false,
+      "male": {
+        "vnc_motor": 0.0014929328621908077,
+        "descending": 1.9159346289752521,
+        "top": "LT1c",
+        "n_seed": 1787
+      },
+      "note": "Legs off at hop-2; descending lights (visual DNs). Not vnc_motor walking."
+    },
+    {
+      "job": "smell",
+      "observer": "olfactory ORN",
+      "allow": true,
+      "walks": false,
+      "male": {
+        "vnc_motor": 0.0005710214203076791,
+        "descending": 0.5732455413367353,
+        "n_active": 1,
+        "top": "v2LN30"
+      },
+      "banc": {
+        "vnc_motor": 0.0007640599289252,
+        "descending": 0.9603830401468656,
+        "n_active": 18,
+        "top": "v2LN30"
+      },
+      "hemi": {
+        "vnc_motor": 0.0,
+        "descending": 0.07190743889872583,
+        "n_active": 4,
+        "top": "lLN2T_c"
+      },
+      "note": "Leftover LN hub. Contrast only. Not a thought."
+    },
+    {
+      "job": "mushroom_body",
+      "observer": "KCg-m",
+      "allow": true,
+      "walks": false,
+      "male": {
+        "vnc_motor": 1.981863881460573e-05,
+        "descending": 0.05300842628805969,
+        "top": "APL"
+      },
+      "hemi_kc": {
+        "vnc_motor": 0.0,
+        "descending": 0.003338890376443141,
+        "n_active": 1,
+        "top": "APL"
+      },
+      "note": "APL leftover hub. Sparse. Not a thought."
+    },
+    {
+      "job": "descend_escape",
+      "observer": "DNg29 (seed the command type)",
+      "allow": true,
+      "walks": true,
+      "male": {
+        "vnc_motor": 2.087500777701731,
+        "descending": 9.204417345859511,
+        "top": "AVLP542"
+      },
+      "note": "Walking/flight-command analog. Giant Fiber is hemibrain JO hop-1. No wingbeat dump."
+    },
+    {
+      "job": "sleep",
+      "observer": "DAM IR beam leftover-long inactivity; LNv/ER/FB named types",
+      "allow": true,
+      "walks": false,
+      "sleep": {
+        "frac_sleep": 0.1722528802401007,
+        "night_over_day": 1.4499214806720184,
+        "n_alive": 30
+      },
+      "note": "Sleep is leftover-long rest on measured beams, not a 5-min free cut."
+    },
+    {
+      "job": "courtship",
+      "observer": "fru/dsx",
+      "allow": false,
+      "walks": false,
+      "note": "Measured labels exist. Default human-facing observer OFF."
+    },
+    {
+      "job": "aggression",
+      "observer": "aggression flow",
+      "allow": false,
+      "walks": false,
+      "note": "Measured labels exist. Default observer OFF."
+    }
+  ],
+  "n_jobs": 11,
+  "n_allowed": 9,
+  "n_denied_default": 2,
+  "overall_ok": true,
+  "day": {
+    "sleep_frac": 0.1722528802401007,
+    "wake_frac": 0.8277471197598993,
+    "odor_video": "Harvard tethered-walk clips have no rest. This video does: pre-odor still frames vs a 10 s ACV pulse vs offset search. Rest is not a neuron class \u2014 odor off and",
+    "rule": "Sleep leftover; wake uses allow=True observers. Not a trained circadian net."
+  },
+  "guardrail_deny": [
+    "courtship",
+    "aggression",
+    "fru_dsx",
+    "olfactory_as_motor"
+  ],
+  "note": "No wingbeat kinematics on disk. Descending mass is the flight/escape analog. Do not call olfactory LN or APL a thought."
+}

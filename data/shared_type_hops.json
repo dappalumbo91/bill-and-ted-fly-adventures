@@ -1,0 +1,72 @@
+{
+  "pin": "AEB2AD",
+  "residual_Biochemistry": 1.284069161007025,
+  "free_parameters": 0,
+  "rule": "Same type string on two graphs. Do not merge synapses.",
+  "types": [
+    {
+      "type": "DNg29",
+      "expect": "descending_on",
+      "male": {
+        "n_seed": 2,
+        "n_active": 3,
+        "vnc_motor": 2.087500777701731,
+        "descending": 9.204417345859511,
+        "top": "AVLP542",
+        "gpu": true
+      },
+      "banc": {
+        "n_seed": 2,
+        "n_active": 5,
+        "vnc_motor": 5.826875919568374,
+        "descending": 7.813307176720595,
+        "top": "AVLP542",
+        "gpu": true
+      },
+      "ok": true
+    },
+    {
+      "type": "KCg-m",
+      "expect": "motor_off",
+      "male": {
+        "n_seed": 1342,
+        "n_active": 2,
+        "vnc_motor": 1.981863881460573e-05,
+        "descending": 0.05300842628805969,
+        "top": "APL",
+        "gpu": true
+      },
+      "banc": {
+        "n_seed": 1456,
+        "n_active": 3,
+        "vnc_motor": 0.0004349890535721657,
+        "descending": 0.21441614271464934,
+        "top": "MBON05",
+        "gpu": true
+      },
+      "ok": true
+    },
+    {
+      "type": "L5",
+      "expect": "motor_off",
+      "male": {
+        "n_seed": 1787,
+        "n_active": 5,
+        "vnc_motor": 0.0014929328621908077,
+        "descending": 1.9159346289752521,
+        "top": "LT1c",
+        "gpu": true
+      },
+      "banc": {
+        "n_seed": 1683,
+        "n_active": 0,
+        "vnc_motor": 0.0,
+        "descending": 3.528284543262168,
+        "top": "CT1",
+        "gpu": true
+      },
+      "ok": true
+    }
+  ],
+  "overall_ok": true
+}

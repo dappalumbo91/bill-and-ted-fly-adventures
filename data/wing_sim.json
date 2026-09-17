@@ -1,0 +1,199 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "f_wb_hz": 200.0,
+  "sim_fps": 2000.0,
+  "f_wb_note": "Species band center 150\u2013250 Hz (already in fly_function). Not fitted to the parked clip.",
+  "duration_s": 0.835,
+  "n_beats_if_on": 167,
+  "parked_clip_flight_like": 0,
+  "conditions": [
+    {
+      "condition": "rest",
+      "vnc_motor": 0.0,
+      "descending": 0.0,
+      "walks": false,
+      "mode": "rest",
+      "effectors_agree": true,
+      "flies": false,
+      "n_beats": 0,
+      "fft_peak_hz": 0.0,
+      "in_band": false,
+      "yaw": false,
+      "n_samples": 1670
+    },
+    {
+      "condition": "walk",
+      "vnc_motor": 10.740180804833889,
+      "descending": 11.38578833493545,
+      "walks": true,
+      "mode": "takeoff_both",
+      "effectors_agree": true,
+      "flies": true,
+      "n_beats": 167,
+      "fft_peak_hz": 200.00000000000003,
+      "in_band": true,
+      "yaw": false,
+      "n_samples": 1670
+    },
+    {
+      "condition": "hear_JO",
+      "vnc_motor": 7.772920928859144,
+      "descending": 24.213046671127735,
+      "walks": true,
+      "mode": "takeoff_both",
+      "effectors_agree": true,
+      "flies": true,
+      "n_beats": 167,
+      "fft_peak_hz": 200.00000000000003,
+      "in_band": true,
+      "yaw": false,
+      "n_samples": 1670
+    },
+    {
+      "condition": "see_L5",
+      "vnc_motor": 0.0014929328621908077,
+      "descending": 1.9159346289752521,
+      "walks": false,
+      "mode": "flight_only",
+      "effectors_agree": false,
+      "flies": true,
+      "n_beats": 167,
+      "fft_peak_hz": 200.00000000000003,
+      "in_band": true,
+      "yaw": false,
+      "n_samples": 1670
+    },
+    {
+      "condition": "smell",
+      "vnc_motor": 0.0005710214203076791,
+      "descending": 0.5732455413367353,
+      "walks": false,
+      "mode": "rest",
+      "effectors_agree": true,
+      "flies": false,
+      "n_beats": 0,
+      "fft_peak_hz": 0.0,
+      "in_band": false,
+      "yaw": false,
+      "n_samples": 1670
+    },
+    {
+      "condition": "DNp01_escape",
+      "vnc_motor": 5.803954745189134,
+      "descending": 15.768776200818206,
+      "walks": true,
+      "mode": "takeoff_both",
+      "effectors_agree": true,
+      "flies": true,
+      "n_beats": 167,
+      "fft_peak_hz": 200.00000000000003,
+      "in_band": true,
+      "yaw": false,
+      "n_samples": 1670
+    },
+    {
+      "condition": "DNp01_yaw",
+      "vnc_motor": 5.803954745189134,
+      "descending": 15.768776200818206,
+      "walks": true,
+      "mode": "takeoff_both",
+      "effectors_agree": true,
+      "flies": true,
+      "n_beats": 167,
+      "fft_peak_hz": 200.00000000000003,
+      "in_band": true,
+      "yaw": true,
+      "n_samples": 1670
+    },
+    {
+      "condition": "object",
+      "vnc_motor": 7.549628185600908,
+      "descending": 13.890959775127437,
+      "walks": true,
+      "mode": "takeoff_both",
+      "effectors_agree": true,
+      "flies": true,
+      "n_beats": 167,
+      "fft_peak_hz": 200.00000000000003,
+      "in_band": true,
+      "yaw": false,
+      "n_samples": 1670
+    }
+  ],
+  "tests": [
+    {
+      "q": "parked clip is not flight",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "rest plant does not beat",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "smell leftover does not beat",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "see (L5) flight_only",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "DNp01 in 200 Hz band",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "walk also has descending > 1 so untethered takeoff_both",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "JO hear takeoff_both (desc 24)",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "yaw plant marks yaw",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "beat count in clip window",
+      "got": 167,
+      "want": 167,
+      "ok": true
+    },
+    {
+      "q": "beats > leftover hops 11",
+      "got": true,
+      "want": true,
+      "ok": true
+    }
+  ],
+  "n_ok": 10,
+  "n": 10,
+  "fail": [],
+  "overall_ok": true,
+  "advice": [
+    "Untethered, walking's own descending (11.4) already clears overlay \u2014 the ball was hiding a takeoff command. Dual-effector takeoff is a feature, not a bug.",
+    "Vision (L5) is the clean flight_only test: descending 1.92, legs off. That is the visual-flight analog without inventing wing MNs.",
+    "DNp01 descending 15.8 is the escape plant; hg3 MN stays local VNC (song/steering muscle), do not swap them.",
+    "Thought stress cons(T001, Fly02)=0 is heading leftover. Do not grow tissue on olfactory il3LN6 / Kenyon APL.",
+    "Next learning pressure: L/R yaw from laterality trit on L5 or JO_L vs JO_R, still measured cells.",
+    "Still missing: free-flight 3D. This plant is command\u2192sinusoid, labeled simulated, not a reconstructed wingbeat."
+  ],
+  "note": "Computer removes the glue. Residual descending is still the measured command."
+}

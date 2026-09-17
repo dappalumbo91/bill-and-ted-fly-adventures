@@ -1,0 +1,220 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "rule": "Same type name is identity of a class, not a license to merge synapses. Two animals.",
+  "male_traced": 165122,
+  "male_n_types": 11751,
+  "banc_n_cells": 188508,
+  "banc_n_types": 11504,
+  "banc_n_with_malecns_cell_type": 43490,
+  "banc_n_malecns_type_names": 8342,
+  "banc_n_with_malecns_match": 23608,
+  "shared_cell_type_names": 7442,
+  "shared_malecns_annotation_in_male_types": 8257,
+  "only_male_type_names": 4309,
+  "only_banc_type_names": 4062,
+  "jaccard_type_names": 0.47062543476886104,
+  "top_shared": [
+    {
+      "type": "T3",
+      "male_n": 1940,
+      "banc_n": 1584
+    },
+    {
+      "type": "L5",
+      "male_n": 1787,
+      "banc_n": 1683
+    },
+    {
+      "type": "L2",
+      "male_n": 1779,
+      "banc_n": 1680
+    },
+    {
+      "type": "L1",
+      "male_n": 1776,
+      "banc_n": 1665
+    },
+    {
+      "type": "T1",
+      "male_n": 1777,
+      "banc_n": 1656
+    },
+    {
+      "type": "Mi1",
+      "male_n": 1773,
+      "banc_n": 1436
+    },
+    {
+      "type": "Tm3",
+      "male_n": 2054,
+      "banc_n": 1095
+    },
+    {
+      "type": "T2a",
+      "male_n": 1872,
+      "banc_n": 1130
+    },
+    {
+      "type": "T5c",
+      "male_n": 1720,
+      "banc_n": 1224
+    },
+    {
+      "type": "T4c",
+      "male_n": 1778,
+      "banc_n": 1113
+    },
+    {
+      "type": "T5b",
+      "male_n": 1715,
+      "banc_n": 1159
+    },
+    {
+      "type": "Mi9",
+      "male_n": 1775,
+      "banc_n": 1065
+    },
+    {
+      "type": "Mi4",
+      "male_n": 1772,
+      "banc_n": 1055
+    },
+    {
+      "type": "T5d",
+      "male_n": 1620,
+      "banc_n": 1206
+    },
+    {
+      "type": "KCg-m",
+      "male_n": 1342,
+      "banc_n": 1456
+    },
+    {
+      "type": "C3",
+      "male_n": 1779,
+      "banc_n": 1011
+    },
+    {
+      "type": "T4a",
+      "male_n": 1684,
+      "banc_n": 1093
+    },
+    {
+      "type": "T5a",
+      "male_n": 1664,
+      "banc_n": 1091
+    },
+    {
+      "type": "T4b",
+      "male_n": 1690,
+      "banc_n": 1035
+    },
+    {
+      "type": "Tm2",
+      "male_n": 1766,
+      "banc_n": 949
+    },
+    {
+      "type": "Tm9",
+      "male_n": 1771,
+      "banc_n": 908
+    },
+    {
+      "type": "T4d",
+      "male_n": 1709,
+      "banc_n": 952
+    },
+    {
+      "type": "L4",
+      "male_n": 1769,
+      "banc_n": 877
+    },
+    {
+      "type": "Tm1",
+      "male_n": 1777,
+      "banc_n": 854
+    },
+    {
+      "type": "L3",
+      "male_n": 1772,
+      "banc_n": 783
+    },
+    {
+      "type": "Tm20",
+      "male_n": 1762,
+      "banc_n": 768
+    },
+    {
+      "type": "Tm4",
+      "male_n": 1670,
+      "banc_n": 817
+    },
+    {
+      "type": "T2",
+      "male_n": 1630,
+      "banc_n": 849
+    },
+    {
+      "type": "C2",
+      "male_n": 1745,
+      "banc_n": 712
+    },
+    {
+      "type": "Dm2",
+      "male_n": 1452,
+      "banc_n": 758
+    },
+    {
+      "type": "BM_InOm",
+      "male_n": 745,
+      "banc_n": 1212
+    },
+    {
+      "type": "TmY5a",
+      "male_n": 1364,
+      "banc_n": 561
+    },
+    {
+      "type": "Mi15",
+      "male_n": 1151,
+      "banc_n": 665
+    },
+    {
+      "type": "Mi13",
+      "male_n": 910,
+      "banc_n": 479
+    },
+    {
+      "type": "TmY3",
+      "male_n": 824,
+      "banc_n": 419
+    },
+    {
+      "type": "Mi2",
+      "male_n": 986,
+      "banc_n": 133
+    },
+    {
+      "type": "Y3",
+      "male_n": 627,
+      "banc_n": 434
+    },
+    {
+      "type": "Dm10",
+      "male_n": 626,
+      "banc_n": 347
+    },
+    {
+      "type": "LC12",
+      "male_n": 498,
+      "banc_n": 454
+    },
+    {
+      "type": "Dm15",
+      "male_n": 485,
+      "banc_n": 353
+    }
+  ],
+  "do_not": "merge BANC and Male CNS edge lists into one graph"
+}

@@ -1,0 +1,26 @@
+{
+  "n_cells": 2952,
+  "n_edges": 110677,
+  "n_typed": 2606,
+  "type_counts": {
+    "pre-DN-VNC": 476,
+    "sensory": 430,
+    "unlabeled": 346,
+    "PN": 206,
+    "LHN": 202,
+    "DN-VNC": 182,
+    "DN-SEZ": 164,
+    "PN-somato": 152,
+    "KC": 144,
+    "LN": 110,
+    "MB-FBN": 108,
+    "pre-DN-SEZ": 102,
+    "CN": 100,
+    "MB-FFN": 54,
+    "RGN": 54,
+    "MBON": 48,
+    "ascending": 46,
+    "MBIN": 28
+  },
+  "free_parameters": 0
+}

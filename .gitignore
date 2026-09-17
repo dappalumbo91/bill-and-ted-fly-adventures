@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+Thumbs.db
+data/_*.log
+*.feather
+*.mp4
+*.mov
+*.zip
+.venv/
+venv/
+.env
+*.swp

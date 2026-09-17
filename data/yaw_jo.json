@@ -1,0 +1,86 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "mechanic": "One JO side on \u2192 ipsilateral motor \u2192 yaw trit. Both sides on \u2192 consensus 0 \u2192 straight. n_seed imbalance is leftover; hop ipsi_bias sign is the command.",
+  "JO_L": {
+    "n_seed": 348,
+    "ipsi_bias": 0.24567714223882067,
+    "yaw_trit": 1
+  },
+  "JO_R": {
+    "n_seed": 324,
+    "ipsi_bias": -0.23865848785265403,
+    "yaw_trit": -1
+  },
+  "bilateral_consensus": 0,
+  "seed_imbalance": 0.07142857142857122,
+  "seed_leftover": true,
+  "expr_JO_L_minus_JO_R": 24,
+  "tests": [
+    {
+      "q": "JO_L ipsi_bias > 0 \u2192 yaw trit +1 (left)",
+      "got": 1,
+      "want": 1,
+      "ok": true
+    },
+    {
+      "q": "JO_R ipsi_bias < 0 \u2192 yaw trit \u22121 (right)",
+      "got": -1,
+      "want": -1,
+      "ok": true
+    },
+    {
+      "q": "bilateral consensus 0 (straight)",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "q": "n_seed 348 vs 324 is leftover under 1/\u03c6",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "JO_L - JO_R = 24 (count), trit +1 but leftover so do not collapse",
+      "got": 24,
+      "want": 24,
+      "ok": true
+    },
+    {
+      "q": "unilateral L plant yaws",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "unilateral R plant yaws",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "bilateral plant no yaw",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "unilateral still 200 Hz",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "ipsi signs opposite",
+      "got": true,
+      "want": true,
+      "ok": true
+    }
+  ],
+  "n": 10,
+  "n_ok": 10,
+  "fail": [],
+  "overall_ok": true,
+  "reverse": "Straight flight: both JO observers on. Yaw: one side leftover-off."
+}

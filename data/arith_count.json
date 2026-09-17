@@ -1,0 +1,242 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "n": 27,
+  "n_ok": 27,
+  "fail": [],
+  "overall_ok": true,
+  "by_kind": {
+    "const": {
+      "n": 1,
+      "n_ok": 1
+    },
+    "count": {
+      "n": 7,
+      "n_ok": 7
+    },
+    "sub": {
+      "n": 5,
+      "n_ok": 5
+    },
+    "add": {
+      "n": 6,
+      "n_ok": 6
+    },
+    "cmp": {
+      "n": 2,
+      "n_ok": 2
+    },
+    "abs": {
+      "n": 1,
+      "n_ok": 1
+    },
+    "div": {
+      "n": 3,
+      "n_ok": 3
+    },
+    "show": {
+      "n": 2,
+      "n_ok": 2
+    }
+  },
+  "measured": {
+    "hop_leftover_phi5": 11,
+    "JO_n_seed": 672,
+    "vnc_L": 3185,
+    "vnc_R": 3166,
+    "JO_L": 348,
+    "JO_R": 324
+  },
+  "problems": [
+    {
+      "kind": "const",
+      "q": "leftover hops = round(\u03c6\u2075)",
+      "got": 11,
+      "want": 11,
+      "ok": true
+    },
+    {
+      "kind": "count",
+      "q": "vnc_sensory hop-0 n_active = n_seed",
+      "got": 6365,
+      "want": 6365,
+      "ok": true
+    },
+    {
+      "kind": "count",
+      "q": "mechanosensory hop-0 n_active = n_seed",
+      "got": 5832,
+      "want": 5832,
+      "ok": true
+    },
+    {
+      "kind": "count",
+      "q": "JO hop-0 n_active = n_seed",
+      "got": 672,
+      "want": 672,
+      "ok": true
+    },
+    {
+      "kind": "count",
+      "q": "olfactory hop-0 n_active = n_seed",
+      "got": 2639,
+      "want": 2639,
+      "ok": true
+    },
+    {
+      "kind": "count",
+      "q": "JO n_seed",
+      "got": 672,
+      "want": 672,
+      "ok": true
+    },
+    {
+      "kind": "count",
+      "q": "JO hop-1 n_active (DNg29 bottleneck)",
+      "got": 3,
+      "want": 3,
+      "ok": true
+    },
+    {
+      "kind": "sub",
+      "q": "JO cells not active at hop-1: n_seed \u2212 n_active(1)",
+      "got": 669,
+      "want": 669,
+      "ok": true
+    },
+    {
+      "kind": "add",
+      "q": "JO_L + JO_R = JO n_seed",
+      "got": 672,
+      "want": 672,
+      "ok": true
+    },
+    {
+      "kind": "add",
+      "q": "vnc_sensory_L + vnc_sensory_R",
+      "got": 6351,
+      "want": 6351,
+      "ok": true
+    },
+    {
+      "kind": "sub",
+      "q": "vnc_sensory unlabeled = n_seed \u2212 (L+R)",
+      "got": 14,
+      "want": 14,
+      "ok": true
+    },
+    {
+      "kind": "cmp",
+      "q": "more left VNC sensory than right?",
+      "got": 1,
+      "want": 1,
+      "ok": true
+    },
+    {
+      "kind": "add",
+      "q": "Male DNg29 + BANC DNg29",
+      "got": 4,
+      "want": 4,
+      "ok": true
+    },
+    {
+      "kind": "count",
+      "q": "hemibrain DNg29",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "kind": "add",
+      "q": "hemibrain JO + KC",
+      "got": 2005,
+      "want": 2005,
+      "ok": true
+    },
+    {
+      "kind": "add",
+      "q": "all-trial left turns 29+35+16",
+      "got": 80,
+      "want": 80,
+      "ok": true
+    },
+    {
+      "kind": "add",
+      "q": "all-trial right turns 28+26+28",
+      "got": 82,
+      "want": 82,
+      "ok": true
+    },
+    {
+      "kind": "sub",
+      "q": "net heading all trials (left\u2212right)",
+      "got": -2,
+      "want": -2,
+      "ok": true
+    },
+    {
+      "kind": "cmp",
+      "q": "all-trials net: right-biased?",
+      "got": -1,
+      "want": -1,
+      "ok": true
+    },
+    {
+      "kind": "sub",
+      "q": "Fly02 heading 16\u221228",
+      "got": -12,
+      "want": -12,
+      "ok": true
+    },
+    {
+      "kind": "abs",
+      "q": "|Fly02 heading|",
+      "got": 12,
+      "want": 12,
+      "ok": true
+    },
+    {
+      "kind": "div",
+      "q": "672 \u00f7 3",
+      "got": 224,
+      "want": 224,
+      "ok": true
+    },
+    {
+      "kind": "div",
+      "q": "4 \u00f7 2  (two DNg29 \u00d7 two graphs, per graph)",
+      "got": 2,
+      "want": 2,
+      "ok": true
+    },
+    {
+      "kind": "div",
+      "q": "11 leftover hops \u00f7 1",
+      "got": 11,
+      "want": 11,
+      "ok": true
+    },
+    {
+      "kind": "sub",
+      "q": "Male traced \u2212 GABA = excitatory/other cells",
+      "got": 143067,
+      "want": 143067,
+      "ok": true
+    },
+    {
+      "kind": "show",
+      "q": "3185 in balanced ternary",
+      "got": "1110100T",
+      "want": "1110100T",
+      "ok": true
+    },
+    {
+      "kind": "show",
+      "q": "3185 + 3166 in trit ALU",
+      "got": "100T011T0",
+      "want": "100T011T0",
+      "ok": true
+    }
+  ],
+  "note": "Integers are measured hop/type/turn counts. Arithmetic is trit ALU. Not a language model."
+}

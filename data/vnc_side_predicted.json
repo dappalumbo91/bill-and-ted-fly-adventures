@@ -1,0 +1,123 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "mechanic": "in/out |W| consensus; overlay 1/\u03c6; predicted not EM",
+  "n_predicted": 9,
+  "n_leftover": 5,
+  "predicted": [
+    {
+      "bodyId": "936341",
+      "predict_pooled": "R",
+      "predict_consensus": "R",
+      "conf": 1.0,
+      "vote_L": 0.0,
+      "vote_R": 59.0
+    },
+    {
+      "bodyId": "946767",
+      "predict_pooled": "L",
+      "predict_consensus": "L",
+      "conf": 0.92,
+      "vote_L": 91.0,
+      "vote_R": 2.0
+    },
+    {
+      "bodyId": "952874",
+      "predict_pooled": "L",
+      "predict_consensus": "L",
+      "conf": 1.0,
+      "vote_L": 253.0,
+      "vote_R": 0.0
+    },
+    {
+      "bodyId": "954670",
+      "predict_pooled": "R",
+      "predict_consensus": "R",
+      "conf": 1.0,
+      "vote_L": 0.0,
+      "vote_R": 251.0
+    },
+    {
+      "bodyId": "954981",
+      "predict_pooled": "L",
+      "predict_consensus": "L",
+      "conf": 1.0,
+      "vote_L": 25.0,
+      "vote_R": 0.0
+    },
+    {
+      "bodyId": "955135",
+      "predict_pooled": "R",
+      "predict_consensus": "R",
+      "conf": 1.0,
+      "vote_L": 0.0,
+      "vote_R": 68.0
+    },
+    {
+      "bodyId": "955284",
+      "predict_pooled": "L",
+      "predict_consensus": "L",
+      "conf": 1.0,
+      "vote_L": 10.0,
+      "vote_R": 0.0
+    },
+    {
+      "bodyId": "956305",
+      "predict_pooled": "R",
+      "predict_consensus": "R",
+      "conf": 0.9375,
+      "vote_L": 5.0,
+      "vote_R": 190.0
+    },
+    {
+      "bodyId": "956328",
+      "predict_pooled": "L",
+      "predict_consensus": "L",
+      "conf": 1.0,
+      "vote_L": 49.0,
+      "vote_R": 0.0
+    }
+  ],
+  "leftover": [
+    {
+      "bodyId": "820434",
+      "predict_pooled": "0",
+      "predict_consensus": "0",
+      "conf": 0.0,
+      "vote_L": 0.0,
+      "vote_R": 0.0
+    },
+    {
+      "bodyId": "824830",
+      "predict_pooled": "0",
+      "predict_consensus": "0",
+      "conf": 0.17647058823529413,
+      "vote_L": 8.0,
+      "vote_R": 21.0
+    },
+    {
+      "bodyId": "956310",
+      "predict_pooled": "R",
+      "predict_consensus": "0",
+      "conf": 0.0,
+      "vote_L": 0.0,
+      "vote_R": 1.0
+    },
+    {
+      "bodyId": "956323",
+      "predict_pooled": "0",
+      "predict_consensus": "0",
+      "conf": 0.5302013422818792,
+      "vote_L": 215.0,
+      "vote_R": 61.0
+    },
+    {
+      "bodyId": "1050206135",
+      "predict_pooled": "0",
+      "predict_consensus": "0",
+      "conf": 0.1111111111111111,
+      "vote_L": 13.0,
+      "vote_R": 6.0
+    }
+  ]
+}

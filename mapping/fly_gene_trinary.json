@@ -1,0 +1,576 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "law": "S=K(T1+T2+T3); residual Biochemistry on measured synapses; product C-alpha on measured homologs",
+  "not": "Not a trained RNN. Edges are measured synapse counts.",
+  "trinary": {
+    "unique_expanded_words": true,
+    "n_aa": 20,
+    "F01_collision_groups": [
+      {
+        "phase": [
+          0,
+          -1,
+          -1
+        ],
+        "aas": [
+          "A",
+          "G"
+        ]
+      },
+      {
+        "phase": [
+          1,
+          1,
+          1
+        ],
+        "aas": [
+          "R",
+          "H",
+          "K"
+        ]
+      },
+      {
+        "phase": [
+          0,
+          1,
+          0
+        ],
+        "aas": [
+          "N",
+          "T"
+        ]
+      },
+      {
+        "phase": [
+          0,
+          1,
+          1
+        ],
+        "aas": [
+          "Q",
+          "Y"
+        ]
+      },
+      {
+        "phase": [
+          0,
+          -1,
+          1
+        ],
+        "aas": [
+          "I",
+          "L",
+          "M",
+          "F",
+          "W"
+        ]
+      },
+      {
+        "phase": [
+          0,
+          -1,
+          0
+        ],
+        "aas": [
+          "P",
+          "V"
+        ]
+      }
+    ],
+    "aa": {
+      "A": {
+        "F01": [
+          0,
+          -1,
+          -1
+        ],
+        "opcode7": [
+          0,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spin": -0.4,
+        "charge": 0.0
+      },
+      "R": {
+        "F01": [
+          1,
+          1,
+          1
+        ],
+        "opcode7": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "spin": 0.6,
+        "charge": 1.381966011250105
+      },
+      "N": {
+        "F01": [
+          0,
+          1,
+          0
+        ],
+        "opcode7": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spin": 0.2,
+        "charge": 0.0
+      },
+      "D": {
+        "F01": [
+          -1,
+          1,
+          0
+        ],
+        "opcode7": [
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spin": 0.2,
+        "charge": -1.0
+      },
+      "C": {
+        "F01": [
+          0,
+          0,
+          -1
+        ],
+        "opcode7": [
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "spin": -0.2,
+        "charge": 0.6180339887498948
+      },
+      "Q": {
+        "F01": [
+          0,
+          1,
+          1
+        ],
+        "opcode7": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spin": 0.4,
+        "charge": 0.0
+      },
+      "E": {
+        "F01": [
+          -1,
+          1,
+          1
+        ],
+        "opcode7": [
+          -1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spin": 0.4,
+        "charge": -1.0
+      },
+      "G": {
+        "F01": [
+          0,
+          -1,
+          -1
+        ],
+        "opcode7": [
+          0,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          0
+        ],
+        "spin": -0.4,
+        "charge": -0.6180339887498948
+      },
+      "H": {
+        "F01": [
+          1,
+          1,
+          1
+        ],
+        "opcode7": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "spin": 0.4,
+        "charge": 1.618033988749895
+      },
+      "I": {
+        "F01": [
+          0,
+          -1,
+          1
+        ],
+        "opcode7": [
+          0,
+          -1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "spin": 0.4,
+        "charge": 0.38196601125010515
+      },
+      "L": {
+        "F01": [
+          0,
+          -1,
+          1
+        ],
+        "opcode7": [
+          0,
+          -1,
+          1,
+          0,
+          1,
+          0,
+          -1
+        ],
+        "spin": 0.0,
+        "charge": -0.38196601125010515
+      },
+      "K": {
+        "F01": [
+          1,
+          1,
+          1
+        ],
+        "opcode7": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          -1
+        ],
+        "spin": 0.2,
+        "charge": 0.6180339887498949
+      },
+      "M": {
+        "F01": [
+          0,
+          -1,
+          1
+        ],
+        "opcode7": [
+          0,
+          -1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "spin": 0.0,
+        "charge": 0.6180339887498948
+      },
+      "F": {
+        "F01": [
+          0,
+          -1,
+          1
+        ],
+        "opcode7": [
+          0,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "spin": 0.4,
+        "charge": 0.38196601125010515
+      },
+      "P": {
+        "F01": [
+          0,
+          -1,
+          0
+        ],
+        "opcode7": [
+          0,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        "spin": -0.4,
+        "charge": 0.0
+      },
+      "S": {
+        "F01": [
+          0,
+          1,
+          -1
+        ],
+        "opcode7": [
+          0,
+          1,
+          -1,
+          0,
+          0,
+          -1,
+          0
+        ],
+        "spin": 0.0,
+        "charge": -0.6180339887498948
+      },
+      "T": {
+        "F01": [
+          0,
+          1,
+          0
+        ],
+        "opcode7": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          -1
+        ],
+        "spin": 0.2,
+        "charge": -1.0
+      },
+      "W": {
+        "F01": [
+          0,
+          -1,
+          1
+        ],
+        "opcode7": [
+          0,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "spin": 0.2,
+        "charge": 0.6180339887498948
+      },
+      "Y": {
+        "F01": [
+          0,
+          1,
+          1
+        ],
+        "opcode7": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          0
+        ],
+        "spin": 0.6,
+        "charge": -0.6180339887498948
+      },
+      "V": {
+        "F01": [
+          0,
+          -1,
+          0
+        ],
+        "opcode7": [
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "spin": 0.2,
+        "charge": 0.38196601125010515
+      }
+    },
+    "pair_weight_FW_sep8": 1.6700524010190179,
+    "pair_law": "geom=phi*dist**(-1/pi); weight=geom*(base+0.15*elec)*(0.35+0.65*env)"
+  },
+  "hop_split": {
+    "male_cns_hop2_vnc_motor": {
+      "vnc_sensory": 10.740180804833885,
+      "JO": 7.772920928859141,
+      "olfactory": 0.0005710214203076791,
+      "mechanosensory": 7.549628185600906
+    },
+    "banc_hop2_vnc_motor": {
+      "vnc_sensory": 10.16192409541084,
+      "JO": 6.636908411047969,
+      "olfactory": 0.0007640599289252,
+      "chordotonal": 5.010851171929309
+    }
+  },
+  "genes_on_cells": [
+    {
+      "symbol": "iav",
+      "name": "inactive",
+      "flybase": "FBgn0086693",
+      "flybase_secondary": "FBgn0032043",
+      "uniprot": "Q9W3W0",
+      "aa": 1123,
+      "sits_on": "Johnston organ chordotonal (JO types in v630)",
+      "function": "TRPV mechanotransduction, hearing / antennal vibration",
+      "fold": "product C\u03b1: 9NVP Inactive (Halyomorpha Nan-Iav) 81% id, 60% cov; leftover query tails"
+    },
+    {
+      "symbol": "nan",
+      "name": "nanchung",
+      "flybase": "FBgn0036414",
+      "uniprot": "Q9VUD5",
+      "aa": 833,
+      "sits_on": "Johnston organ, partners with iav",
+      "function": "TRPV, sound / humidity / startle",
+      "fold": "product C\u03b1: 9NVN (Halyomorpha Nan-Iav cryo-EM) 74% id, 86% cov"
+    },
+    {
+      "symbol": "nompC",
+      "name": "no mechanoreceptor potential C",
+      "flybase": "FBgn0016920",
+      "flybase_secondary": "FBgn0026324",
+      "uniprot": "Q7KIQ2",
+      "aa": 1619,
+      "sits_on": "mechanosensory bristles / campaniform",
+      "function": "TRPN mechanotransduction channel",
+      "fold": "product C\u03b1: 5VKQ Drosophila NOMPC 97% id, 92% cov"
+    },
+    {
+      "symbol": "Gad1",
+      "name": "glutamic acid decarboxylase 1",
+      "flybase": "FBgn0004516",
+      "uniprot": "P20228",
+      "aa": 510,
+      "sits_on": "GABAergic neurons (inhibitory residual already used on the graph)",
+      "function": "GABA synthesis",
+      "fold": "product C\u03b1: 2OKJ human GAD67 2.3 \u00c5, 64% id, 94% cov"
+    },
+    {
+      "symbol": "ChAT",
+      "uniprot": "P07668",
+      "aa": 721,
+      "sits_on": "cholinergic neurons (default excitatory edge)",
+      "fold": "2FY4 53% id / 78% cov"
+    },
+    {
+      "symbol": "VGlut",
+      "uniprot": "Q9VQC0",
+      "aa": 632,
+      "sits_on": "glutamatergic vnc_motor NMJ",
+      "fold": "7T3O 61% id / 69% cov"
+    },
+    {
+      "symbol": "Mhc",
+      "uniprot": "P05661",
+      "aa": 1962,
+      "sits_on": "muscle (not a CNS cell)",
+      "fold": "5W1A 97% id / 40% cov"
+    }
+  ],
+  "walking_product": [
+    {
+      "symbol": "Gad1",
+      "uniprot": "P20228",
+      "template_pdb": "2OKJ",
+      "template_identity": 0.6395833333333333,
+      "sits_on": "GABAergic neurons"
+    },
+    {
+      "symbol": "nan",
+      "uniprot": "Q9VUD5",
+      "template_pdb": "9NVN",
+      "template_identity": 0.7366946778711485,
+      "sits_on": "Johnston organ"
+    },
+    {
+      "symbol": "iav",
+      "uniprot": "Q9W3W0",
+      "template_pdb": "9NVP",
+      "template_identity": 0.8104477611940298,
+      "sits_on": "Johnston organ"
+    },
+    {
+      "symbol": "nompC",
+      "uniprot": "Q7KIQ2",
+      "template_pdb": "5VKQ",
+      "template_identity": 0.9712182061579652,
+      "sits_on": "mechanosensory transduction"
+    },
+    {
+      "symbol": "ChAT",
+      "uniprot": "P07668",
+      "template_pdb": "2FY4",
+      "template_identity": 0.5258467023172906,
+      "sits_on": "cholinergic neurons"
+    },
+    {
+      "symbol": "VGlut",
+      "uniprot": "Q9VQC0",
+      "template_pdb": "7T3O",
+      "template_identity": 0.6114942528735632,
+      "sits_on": "glutamatergic vnc_motor NMJ"
+    },
+    {
+      "symbol": "Mhc",
+      "uniprot": "P05661",
+      "template_pdb": "5W1A",
+      "template_identity": 0.9656488549618321,
+      "sits_on": "muscle (not a CNS cell)"
+    }
+  ]
+}

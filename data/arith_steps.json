@@ -1,0 +1,426 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "n": 10,
+  "n_ok": 10,
+  "fail": [],
+  "overall_ok": true,
+  "n_steps_total": 34,
+  "registry": {
+    "JO": 672,
+    "JO_h1": 3,
+    "VNC": 6365,
+    "JO_L": 348,
+    "JO_R": 324,
+    "VNC_L": 3185,
+    "VNC_R": 3166,
+    "GABA": 22055,
+    "NEURONS": 165122,
+    "DNg29_M": 2,
+    "DNg29_B": 2,
+    "DNg29_H": 0,
+    "HOPS": 11,
+    "T001_L": 29,
+    "T001_R": 28,
+    "T002_L": 35,
+    "T002_R": 26,
+    "T02_L": 16,
+    "T02_R": 28,
+    "KC": 1927,
+    "H_JO": 78
+  },
+  "chains": [
+    {
+      "name": "JO laterality then bottleneck",
+      "want": 669,
+      "got": 669,
+      "ok": true,
+      "n_steps": 3,
+      "trace": [
+        {
+          "id": "sum",
+          "op": "add",
+          "args": [
+            "JO_L",
+            "JO_R"
+          ],
+          "value": 672
+        },
+        {
+          "id": "check",
+          "op": "sub",
+          "args": [
+            "sum",
+            "JO"
+          ],
+          "value": 0
+        },
+        {
+          "id": "silent",
+          "op": "sub",
+          "args": [
+            "sum",
+            "JO_h1"
+          ],
+          "value": 669
+        }
+      ]
+    },
+    {
+      "name": "VNC L+R then unlabeled back to n_seed",
+      "want": 6365,
+      "got": 6365,
+      "ok": true,
+      "n_steps": 3,
+      "trace": [
+        {
+          "id": "lab",
+          "op": "add",
+          "args": [
+            "VNC_L",
+            "VNC_R"
+          ],
+          "value": 6351
+        },
+        {
+          "id": "unlab",
+          "op": "sub",
+          "args": [
+            "VNC",
+            "lab"
+          ],
+          "value": 14
+        },
+        {
+          "id": "back",
+          "op": "add",
+          "args": [
+            "lab",
+            "unlab"
+          ],
+          "value": 6365
+        }
+      ]
+    },
+    {
+      "name": "which VNC side is larger?",
+      "want": 1,
+      "got": 1,
+      "ok": true,
+      "n_steps": 1,
+      "trace": [
+        {
+          "id": "c",
+          "op": "cmp",
+          "args": [
+            "VNC_L",
+            "VNC_R"
+          ],
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "DNg29 two CNS graphs, none in hemibrain",
+      "want": 2,
+      "got": 2,
+      "ok": true,
+      "n_steps": 3,
+      "trace": [
+        {
+          "id": "both",
+          "op": "add",
+          "args": [
+            "DNg29_M",
+            "DNg29_B"
+          ],
+          "value": 4
+        },
+        {
+          "id": "per",
+          "op": "div",
+          "args": [
+            "both",
+            2
+          ],
+          "value": 2
+        },
+        {
+          "id": "gap",
+          "op": "sub",
+          "args": [
+            "per",
+            "DNg29_H"
+          ],
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "three-trial net heading then sign",
+      "want": -1,
+      "got": -1,
+      "ok": true,
+      "n_steps": 6,
+      "trace": [
+        {
+          "id": "L",
+          "op": "add",
+          "args": [
+            "T001_L",
+            "T002_L"
+          ],
+          "value": 64
+        },
+        {
+          "id": "Lall",
+          "op": "add",
+          "args": [
+            "L",
+            "T02_L"
+          ],
+          "value": 80
+        },
+        {
+          "id": "R",
+          "op": "add",
+          "args": [
+            "T001_R",
+            "T002_R"
+          ],
+          "value": 54
+        },
+        {
+          "id": "Rall",
+          "op": "add",
+          "args": [
+            "R",
+            "T02_R"
+          ],
+          "value": 82
+        },
+        {
+          "id": "net",
+          "op": "sub",
+          "args": [
+            "Lall",
+            "Rall"
+          ],
+          "value": -2
+        },
+        {
+          "id": "sgn",
+          "op": "trit",
+          "args": [
+            "net"
+          ],
+          "value": -1
+        }
+      ]
+    },
+    {
+      "name": "T001 and T002 agree left; consensus with Fly02",
+      "want": 0,
+      "got": 0,
+      "ok": true,
+      "n_steps": 8,
+      "trace": [
+        {
+          "id": "h1",
+          "op": "sub",
+          "args": [
+            "T001_L",
+            "T001_R"
+          ],
+          "value": 1
+        },
+        {
+          "id": "s1",
+          "op": "trit",
+          "args": [
+            "h1"
+          ],
+          "value": 1
+        },
+        {
+          "id": "h2",
+          "op": "sub",
+          "args": [
+            "T002_L",
+            "T002_R"
+          ],
+          "value": 9
+        },
+        {
+          "id": "s2",
+          "op": "trit",
+          "args": [
+            "h2"
+          ],
+          "value": 1
+        },
+        {
+          "id": "agree",
+          "op": "cons",
+          "args": [
+            "s1",
+            "s2"
+          ],
+          "value": 1
+        },
+        {
+          "id": "h3",
+          "op": "sub",
+          "args": [
+            "T02_L",
+            "T02_R"
+          ],
+          "value": -12
+        },
+        {
+          "id": "s3",
+          "op": "trit",
+          "args": [
+            "h3"
+          ],
+          "value": -1
+        },
+        {
+          "id": "all3",
+          "op": "cons",
+          "args": [
+            "agree",
+            "s3"
+          ],
+          "value": 0
+        }
+      ]
+    },
+    {
+      "name": "Fly02 miss magnitude vs leftover hop horizon",
+      "want": 1,
+      "got": 1,
+      "ok": true,
+      "n_steps": 3,
+      "trace": [
+        {
+          "id": "h",
+          "op": "sub",
+          "args": [
+            "T02_L",
+            "T02_R"
+          ],
+          "value": -12
+        },
+        {
+          "id": "mag",
+          "op": "abs",
+          "args": [
+            "h"
+          ],
+          "value": 12
+        },
+        {
+          "id": "vs",
+          "op": "cmp",
+          "args": [
+            "mag",
+            "HOPS"
+          ],
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "JO recover: (L+R)\u00f73\u00d73",
+      "want": 672,
+      "got": 672,
+      "ok": true,
+      "n_steps": 3,
+      "trace": [
+        {
+          "id": "s",
+          "op": "add",
+          "args": [
+            "JO_L",
+            "JO_R"
+          ],
+          "value": 672
+        },
+        {
+          "id": "q",
+          "op": "div",
+          "args": [
+            "s",
+            3
+          ],
+          "value": 224
+        },
+        {
+          "id": "back",
+          "op": "mul",
+          "args": [
+            "q",
+            3
+          ],
+          "value": 672
+        }
+      ]
+    },
+    {
+      "name": "non-GABA cells then compare to GABA",
+      "want": 1,
+      "got": 1,
+      "ok": true,
+      "n_steps": 2,
+      "trace": [
+        {
+          "id": "ex",
+          "op": "sub",
+          "args": [
+            "NEURONS",
+            "GABA"
+          ],
+          "value": 143067
+        },
+        {
+          "id": "c",
+          "op": "cmp",
+          "args": [
+            "ex",
+            "GABA"
+          ],
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "hemibrain JO+KC vs Male JO seed",
+      "want": 1,
+      "got": 1,
+      "ok": true,
+      "n_steps": 2,
+      "trace": [
+        {
+          "id": "hk",
+          "op": "add",
+          "args": [
+            "H_JO",
+            "KC"
+          ],
+          "value": 2005
+        },
+        {
+          "id": "c",
+          "op": "cmp",
+          "args": [
+            "hk",
+            "JO"
+          ],
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "note": "Multi-step worksheets. Each step is trit ALU. Inputs are measured counts."
+}

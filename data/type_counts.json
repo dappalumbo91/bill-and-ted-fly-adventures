@@ -1,0 +1,48 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "rule": "Counts from measured dumps on D:. Codex api_token not used.",
+  "male_cns": {
+    "source": "D:\\FlyWire_Connectome\\male_cns\\body-annotations-male-cns-v1.0-minconf-0.5.feather",
+    "n_traced": 165122,
+    "n_annotated": 211577,
+    "DNg29": 2,
+    "JO_type_prefix": 672,
+    "jo_lower_prefix": 672
+  },
+  "banc": {
+    "source": "D:\\FlyWire_Connectome\\banc\\banc_888_meta.feather",
+    "n": 188508,
+    "type_column": "cell_type",
+    "DNg29": 2,
+    "JO_type_prefix": 1198,
+    "jo_lower_prefix": 1198
+  },
+  "flywire_annotations": {
+    "source": "D:\\FlyWire_Connectome\\Supplemental_file1_neuron_annotations.tsv",
+    "n": 139248,
+    "DNg29": 2,
+    "JO_type_prefix": 1104,
+    "jo_lower_prefix": 1104
+  },
+  "hemibrain_cache": {
+    "source": "D:\\FlyWire_Connectome\\hemibrain\\neuprint_v1_2_1_typed_neurons.feather",
+    "n_typed": 22704,
+    "DNg29": 0,
+    "JO_type_prefix": 78,
+    "KC_type_prefix": 1927,
+    "ORN_type_prefix": 2577,
+    "Giant_Fiber": 1
+  },
+  "neuprint_hemibrain_live": {
+    "ok": true,
+    "counts": {
+      "DNg29": 0,
+      "JO": 78,
+      "KC": 1927,
+      "ORN": 2577,
+      "GF": 1,
+      "typed": 22704
+    }
+  }
+}

@@ -1,0 +1,439 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "rule": "Fold and hop only where measured. No Fly Cell Atlas bodyId invent.",
+  "n": 7,
+  "fail": [],
+  "overall_ok": true,
+  "genes": [
+    {
+      "symbol": "iav",
+      "name": "inactive",
+      "flybase": "FBgn0086693",
+      "flybase_secondary": "FBgn0032043",
+      "uniprot": "Q9W3W0",
+      "aa": 1123,
+      "sits_on": "Johnston organ chordotonal (JO types in v630)",
+      "function": "TRPV mechanotransduction, hearing / antennal vibration",
+      "fold": "product C\u03b1: 9NVP Inactive (Halyomorpha Nan-Iav) 81% id, 60% cov; leftover query tails",
+      "job": "JO TRPV",
+      "hop_seed": "JO",
+      "male_hop2": {
+        "vnc_motor": 7.772920928859144,
+        "descending": 24.213046671127735,
+        "top": "IN23B001"
+      },
+      "banc_hop2": {
+        "vnc_motor": 6.636908411047972,
+        "descending": 16.282350887307224,
+        "top": "WED109"
+      },
+      "uniprot_live": {
+        "accession": "Q9W3W0",
+        "gene": "iav",
+        "organism": "Drosophila melanogaster",
+        "length": 1123,
+        "reviewed": false,
+        "flybase": "FBgn0086693",
+        "flybase_all": [
+          "FBgn0086693"
+        ]
+      },
+      "ensembl_live": {
+        "id": "FBgn0086693",
+        "display_name": "iav",
+        "biotype": "protein_coding"
+      },
+      "walking_product": {
+        "template_pdb": "9NVP",
+        "template_identity": 0.8104477611940298,
+        "structure_mode": "template_raw"
+      },
+      "homolog_transfers": [
+        {
+          "organism": "Apis mellifera",
+          "uniprot": "A0A7M7M0I9",
+          "template_pdb": "9NVP",
+          "template_identity": 0.8616541353383459
+        },
+        {
+          "organism": "Anopheles gambiae",
+          "uniprot": "Q7QFD0",
+          "template_pdb": "9NVO",
+          "template_identity": 0.49700598802395207
+        },
+        {
+          "organism": "Tribolium castaneum",
+          "uniprot": "D6WNB8",
+          "template_pdb": "9NVN",
+          "template_identity": 0.793584379358438
+        }
+      ],
+      "ok": true
+    },
+    {
+      "symbol": "nan",
+      "name": "nanchung",
+      "flybase": "FBgn0036414",
+      "uniprot": "Q9VUD5",
+      "aa": 833,
+      "sits_on": "Johnston organ, partners with iav",
+      "function": "TRPV, sound / humidity / startle",
+      "fold": "product C\u03b1: 9NVN (Halyomorpha Nan-Iav cryo-EM) 74% id, 86% cov",
+      "job": "JO TRPV",
+      "hop_seed": "JO",
+      "male_hop2": {
+        "vnc_motor": 7.772920928859144,
+        "descending": 24.213046671127735,
+        "top": "IN23B001"
+      },
+      "banc_hop2": {
+        "vnc_motor": 6.636908411047972,
+        "descending": 16.282350887307224,
+        "top": "WED109"
+      },
+      "uniprot_live": {
+        "accession": "Q9VUD5",
+        "gene": "nan",
+        "organism": "Drosophila melanogaster",
+        "length": 833,
+        "reviewed": false,
+        "flybase": "FBgn0036414",
+        "flybase_all": [
+          "FBgn0036414"
+        ]
+      },
+      "ensembl_live": {
+        "id": "FBgn0036414",
+        "display_name": "nan",
+        "biotype": "protein_coding"
+      },
+      "walking_product": {
+        "template_pdb": "9NVN",
+        "template_identity": 0.7366946778711485,
+        "structure_mode": "template_raw"
+      },
+      "homolog_transfers": [
+        {
+          "organism": "Apis mellifera",
+          "uniprot": "A0A7M7M0I9",
+          "template_pdb": "9NVP",
+          "template_identity": 0.8616541353383459
+        },
+        {
+          "organism": "Tribolium castaneum",
+          "uniprot": "D6WNB8",
+          "template_pdb": "9NVN",
+          "template_identity": 0.793584379358438
+        }
+      ],
+      "ok": true
+    },
+    {
+      "symbol": "nompC",
+      "name": "no mechanoreceptor potential C",
+      "flybase": "FBgn0016920",
+      "flybase_secondary": "FBgn0026324",
+      "uniprot": "Q7KIQ2",
+      "aa": 1619,
+      "sits_on": "mechanosensory bristles / campaniform",
+      "function": "TRPN mechanotransduction channel",
+      "fold": "product C\u03b1: 5VKQ Drosophila NOMPC 97% id, 92% cov",
+      "job": "mechanotransduction",
+      "hop_seed": "JO",
+      "male_hop2": {
+        "vnc_motor": 7.772920928859144,
+        "descending": 24.213046671127735,
+        "top": "IN23B001"
+      },
+      "banc_hop2": {
+        "vnc_motor": 6.636908411047972,
+        "descending": 16.282350887307224,
+        "top": "WED109"
+      },
+      "uniprot_live": {
+        "accession": "Q7KIQ2",
+        "gene": "nompC",
+        "organism": "Drosophila melanogaster",
+        "length": 1619,
+        "reviewed": false,
+        "flybase": "FBgn0016920",
+        "flybase_all": [
+          "FBgn0016920"
+        ]
+      },
+      "ensembl_live": null,
+      "walking_product": {
+        "template_pdb": "5VKQ",
+        "template_identity": 0.9712182061579652,
+        "structure_mode": "template_physics"
+      },
+      "homolog_transfers": [
+        {
+          "organism": "Apis mellifera",
+          "uniprot": "A0A7M7IF52",
+          "template_pdb": "5VKQ",
+          "template_identity": 0.8121621621621622
+        },
+        {
+          "organism": "Anopheles gambiae",
+          "uniprot": "A0A1S4GZD0",
+          "template_pdb": "5VKQ",
+          "template_identity": 0.8513060951105157
+        },
+        {
+          "organism": "Tribolium castaneum",
+          "uniprot": "XP_015838654.2",
+          "template_pdb": "5VKQ",
+          "template_identity": 0.8106111484217595
+        }
+      ],
+      "ok": true
+    },
+    {
+      "symbol": "Gad1",
+      "name": "glutamic acid decarboxylase 1",
+      "flybase": "FBgn0004516",
+      "uniprot": "P20228",
+      "aa": 510,
+      "sits_on": "GABAergic neurons (inhibitory residual already used on the graph)",
+      "function": "GABA synthesis",
+      "fold": "product C\u03b1: 2OKJ human GAD67 2.3 \u00c5, 64% id, 94% cov",
+      "job": "inhibitory GABA residual",
+      "hop_seed": "vnc_sensory",
+      "male_hop2": {
+        "vnc_motor": 10.740180804833889,
+        "descending": 11.38578833493545,
+        "top": "AN08B034"
+      },
+      "banc_hop2": {
+        "vnc_motor": 10.161924095410841,
+        "descending": 6.4801374784561725,
+        "top": "AN19B001_b"
+      },
+      "uniprot_live": {
+        "accession": "P20228",
+        "gene": "Gad1",
+        "organism": "Drosophila melanogaster",
+        "length": 510,
+        "reviewed": true,
+        "flybase": "FBgn0004516",
+        "flybase_all": [
+          "FBgn0004516"
+        ]
+      },
+      "ensembl_live": {
+        "id": "FBgn0004516",
+        "display_name": "Gad1",
+        "biotype": "protein_coding"
+      },
+      "walking_product": {
+        "template_pdb": "2OKJ",
+        "template_identity": 0.6395833333333333,
+        "structure_mode": "template_physics"
+      },
+      "homolog_transfers": [
+        {
+          "organism": "Apis mellifera",
+          "uniprot": "A0A7M7R9C7",
+          "template_pdb": "7LZ6",
+          "template_identity": 0.5454545454545454
+        },
+        {
+          "organism": "Anopheles gambiae",
+          "uniprot": "Q7PNL7",
+          "template_pdb": "2JIS",
+          "template_identity": 0.5396145610278372
+        },
+        {
+          "organism": "Tribolium castaneum",
+          "uniprot": "A7U8C7",
+          "template_pdb": "2JIS",
+          "template_identity": 0.6058700209643606
+        }
+      ],
+      "ok": true
+    },
+    {
+      "symbol": "ChAT",
+      "name": "Choline acetyltransferase",
+      "uniprot": "P07668",
+      "aa": 721,
+      "sits_on": "cholinergic neurons (default excitatory edge; not a Fly Cell Atlas join)",
+      "function": "acetylcholine synthesis",
+      "fold": "product C\u03b1: 2FY4 53% id / 78% cov (below close-homolog 1/\u03c6; still a measured template, not MDS)",
+      "job": "cholinergic excitatory default (ACh edges)",
+      "hop_seed": "vnc_sensory",
+      "male_hop2": {
+        "vnc_motor": 10.740180804833889,
+        "descending": 11.38578833493545,
+        "top": "AN08B034"
+      },
+      "banc_hop2": {
+        "vnc_motor": 10.161924095410841,
+        "descending": 6.4801374784561725,
+        "top": "AN19B001_b"
+      },
+      "uniprot_live": {
+        "accession": "P07668",
+        "gene": "ChAT",
+        "organism": "Drosophila melanogaster",
+        "length": 721,
+        "reviewed": true,
+        "flybase": "FBgn0000303",
+        "flybase_all": [
+          "FBgn0000303"
+        ]
+      },
+      "ensembl_live": {
+        "id": "FBgn0000303",
+        "display_name": "ChAT",
+        "biotype": "protein_coding"
+      },
+      "walking_product": {
+        "template_pdb": "2FY4",
+        "template_identity": 0.5258467023172906,
+        "structure_mode": "template_physics"
+      },
+      "homolog_transfers": [
+        {
+          "organism": "Apis mellifera",
+          "uniprot": "A0A7M7KYL4",
+          "template_pdb": "1XMC",
+          "template_identity": 0.4631956912028725
+        },
+        {
+          "organism": "Anopheles gambiae",
+          "uniprot": "A0A1S4GEW3",
+          "template_pdb": "1Q6X",
+          "template_identity": 0.5285714285714286
+        },
+        {
+          "organism": "Tribolium castaneum",
+          "uniprot": "D6WI25",
+          "template_pdb": "1XMC",
+          "template_identity": 0.45126353790613716
+        }
+      ],
+      "ok": true
+    },
+    {
+      "symbol": "VGlut",
+      "name": "Vesicular glutamate transporter",
+      "uniprot": "Q9VQC0",
+      "aa": 632,
+      "sits_on": "glutamatergic motor neurons (vnc_motor NMJ)",
+      "function": "glutamate packaging at NMJ",
+      "fold": "product C\u03b1: 7T3O 61% id / 69% cov",
+      "job": "glutamatergic vnc_motor NMJ",
+      "hop_seed": "vnc_sensory",
+      "male_hop2": {
+        "vnc_motor": 10.740180804833889,
+        "descending": 11.38578833493545,
+        "top": "AN08B034"
+      },
+      "banc_hop2": {
+        "vnc_motor": 10.161924095410841,
+        "descending": 6.4801374784561725,
+        "top": "AN19B001_b"
+      },
+      "uniprot_live": {
+        "accession": "Q9VQC0",
+        "gene": "VGlut1",
+        "organism": "Drosophila melanogaster",
+        "length": 632,
+        "reviewed": false,
+        "flybase": "FBgn0031424",
+        "flybase_all": [
+          "FBgn0031424"
+        ]
+      },
+      "ensembl_live": {
+        "id": "FBgn0031424",
+        "display_name": "VGlut",
+        "biotype": "protein_coding"
+      },
+      "walking_product": {
+        "template_pdb": "7T3O",
+        "template_identity": 0.6114942528735632,
+        "structure_mode": "template_msa_fuse"
+      },
+      "homolog_transfers": [
+        {
+          "organism": "Apis mellifera",
+          "uniprot": "A0A7M7IGJ9",
+          "template_pdb": "7T3N",
+          "template_identity": 0.6480186480186481
+        },
+        {
+          "organism": "Anopheles gambiae",
+          "uniprot": "A0A1S4GXM0",
+          "template_pdb": "7T3O",
+          "template_identity": 0.6319444444444444
+        },
+        {
+          "organism": "Tribolium castaneum",
+          "uniprot": "D2A242",
+          "template_pdb": "7T3O",
+          "template_identity": 0.5939675174013921
+        }
+      ],
+      "ok": true
+    },
+    {
+      "symbol": "Mhc",
+      "name": "Myosin heavy chain",
+      "uniprot": "P05661",
+      "aa": 1962,
+      "sits_on": "muscle (effector of vnc_motor; not a CNS cell)",
+      "function": "muscle contraction",
+      "fold": "product C\u03b1: 5W1A 97% id / 40% cov (leftover \u2265 1/\u03c6\u00b2)",
+      "job": "muscle effector (not a CNS cell)",
+      "hop_seed": "",
+      "male_hop2": null,
+      "banc_hop2": null,
+      "uniprot_live": {
+        "accession": "P05661",
+        "gene": "Mhc",
+        "organism": "Drosophila melanogaster",
+        "length": 1962,
+        "reviewed": true,
+        "flybase": "FBgn0264695",
+        "flybase_all": [
+          "FBgn0264695"
+        ]
+      },
+      "ensembl_live": {
+        "id": "FBgn0264695",
+        "display_name": "Mhc",
+        "biotype": "protein_coding"
+      },
+      "walking_product": {
+        "template_pdb": "5W1A",
+        "template_identity": 0.9656488549618321,
+        "structure_mode": "template_raw"
+      },
+      "homolog_transfers": [
+        {
+          "organism": "Apis mellifera",
+          "uniprot": "A0A7M7L2C0",
+          "template_pdb": "1JWY",
+          "template_identity": 0.6040609137055838
+        },
+        {
+          "organism": "Anopheles gambiae",
+          "uniprot": "A0A1S4H3X2",
+          "template_pdb": "6XE9",
+          "template_identity": 0.6454465075154731
+        },
+        {
+          "organism": "Tribolium castaneum",
+          "uniprot": "D6WM41",
+          "template_pdb": "1JWY",
+          "template_identity": 0.5947315096251267
+        }
+      ],
+      "ok": true
+    }
+  ]
+}

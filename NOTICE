@@ -1,0 +1,9 @@
+FSOT fly neural connective net — Bill and Ted fly adventures
+Copyright 2026 Damiano Palumbo
+
+This product includes the FSOT 2.1 Lean scalar engine (vendor/fsot_compute.py),
+pin AEB2AD. Synapse graphs are measured FlyWire / Male CNS / BANC / hemibrain
+public dumps (not redistributed here; too large). Residual hops and Bill/TED
+saved states in data/ are derived under the same 0-free-parameter law.
+
+Licensed under the Apache License, Version 2.0.

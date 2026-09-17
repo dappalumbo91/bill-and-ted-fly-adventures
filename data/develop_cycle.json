@@ -1,0 +1,368 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "law": "S=K(T1+T2+T3); residual on measured cells; no invented metamorphosis synapses",
+  "inventory": {
+    "male_traced": 165122,
+    "male_birthtime": {
+      "early": 7890,
+      "late": 13
+    },
+    "male_n_with_birthtime": 7903,
+    "male_truman_hemilineage_n": 19737,
+    "male_truman_nunique": 76,
+    "male_truman_top": {
+      "TBD": 1603,
+      "07B": 954,
+      "20A.22A": 816,
+      "19A": 640,
+      "06A": 611,
+      "03A": 577,
+      "19B": 570,
+      "04B": 568,
+      "12B": 560,
+      "09A": 551,
+      "12A": 535,
+      "14A": 518
+    },
+    "male_ito_lee_n": 37745,
+    "male_ito_lee_nunique": 203,
+    "banc_hemilineage_n": 50501,
+    "banc_hemilineage_nunique": 259,
+    "flywire_ito_lee_n": 37542,
+    "larva_n_rows": 1373,
+    "larva_celltypes": {
+      "sensory": 235,
+      "LN": 56,
+      "PN": 103,
+      "DN-SEZ": 82,
+      "ascending": 23,
+      "pre-DN-VNC": 238,
+      "PN-somato": 76,
+      "pre-DN-SEZ": 51,
+      "DN-VNC": 91,
+      "RGN": 27,
+      "LHN": 101,
+      "KC": 121,
+      "CN": 50,
+      "MB-FFN": 27,
+      "MB-FBN": 54,
+      "MBON": 24,
+      "MBIN": 14
+    },
+    "larva_extra_top": [
+      [
+        "KC",
+        121
+      ],
+      [
+        "gustatory-external",
+        66
+      ],
+      [
+        "gustatory-pharyngeal",
+        56
+      ],
+      [
+        "gut",
+        45
+      ],
+      [
+        "noci 2nd_order PN",
+        32
+      ],
+      [
+        "visual",
+        29
+      ],
+      [
+        "mechano-Ch 2nd_order PN",
+        25
+      ],
+      [
+        "olfactory",
+        21
+      ],
+      [
+        "gustatory-external 2nd_order PN",
+        15
+      ],
+      [
+        "gustatory-external 2nd_order PN; gustatory-pharyngeal 2nd_order PN",
+        13
+      ],
+      [
+        "respiratory",
+        13
+      ],
+      [
+        "proprio 2nd_order PN",
+        9
+      ]
+    ],
+    "named_job_persistence": [
+      {
+        "larva_class": "KC",
+        "n_larva_rows": 121,
+        "adult_prefixes": [
+          "KC"
+        ],
+        "n_adult_traced_matching": 4064,
+        "persistent_job": true
+      },
+      {
+        "larva_class": "MBON",
+        "n_larva_rows": 24,
+        "adult_prefixes": [
+          "MBON"
+        ],
+        "n_adult_traced_matching": 97,
+        "persistent_job": true
+      },
+      {
+        "larva_class": "DN-VNC",
+        "n_larva_rows": 91,
+        "adult_prefixes": [
+          "DN",
+          "DNg",
+          "DNp",
+          "DNb"
+        ],
+        "n_adult_traced_matching": 2562,
+        "persistent_job": true
+      },
+      {
+        "larva_class": "ascending",
+        "n_larva_rows": 23,
+        "adult_prefixes": [
+          "AN"
+        ],
+        "n_adult_traced_matching": 1849,
+        "persistent_job": true
+      },
+      {
+        "larva_class": "sensory",
+        "n_larva_rows": 235,
+        "adult_prefixes": [
+          "JO",
+          "ORN",
+          "SN"
+        ],
+        "n_adult_traced_matching": 15912,
+        "persistent_job": true
+      },
+      {
+        "larva_class": "LN",
+        "n_larva_rows": 56,
+        "adult_prefixes": [
+          "LN",
+          "lLN",
+          "il3LN"
+        ],
+        "n_adult_traced_matching": 191,
+        "persistent_job": true
+      }
+    ],
+    "missing": "No published complete synapse time series embryo\u2192pupa\u2192adult. Two measured snapshots + hemilineage/birthtime. C. elegans remains the only complete cell lineage."
+  },
+  "hops": {
+    "programs": [
+      {
+        "name": "birth_early",
+        "column": "birthtime",
+        "want": "early",
+        "n_seed": 7890,
+        "gpu": true,
+        "flow": [
+          {
+            "hop": 0,
+            "n_active": 7890,
+            "vnc_motor": 381.0,
+            "descending": 522.0,
+            "top": "AMMC-A1"
+          },
+          {
+            "hop": 1,
+            "n_active": 14,
+            "vnc_motor": 60.62266187050359,
+            "descending": 86.34160671462821,
+            "top": "PS100"
+          },
+          {
+            "hop": 2,
+            "n_active": 8,
+            "vnc_motor": 24.253860720964948,
+            "descending": 35.05472378325457,
+            "top": "CRE011"
+          },
+          {
+            "hop": 3,
+            "n_active": 33,
+            "vnc_motor": 3.932954065436156,
+            "descending": 6.8800623516750825,
+            "top": "lLN1_bc"
+          }
+        ]
+      },
+      {
+        "name": "truman_07B",
+        "column": "trumanHl",
+        "want": "07B",
+        "n_seed": 954,
+        "gpu": true,
+        "flow": [
+          {
+            "hop": 0,
+            "n_active": 954,
+            "vnc_motor": 0.0,
+            "descending": 162.0,
+            "top": "AMMC009"
+          },
+          {
+            "hop": 1,
+            "n_active": 19,
+            "vnc_motor": 39.912333476579235,
+            "descending": 51.629136226901586,
+            "top": "PS047_b"
+          },
+          {
+            "hop": 2,
+            "n_active": 2,
+            "vnc_motor": 27.565871341818752,
+            "descending": 32.06329530478219,
+            "top": "PS196_a"
+          },
+          {
+            "hop": 3,
+            "n_active": 9,
+            "vnc_motor": 14.561782748486209,
+            "descending": 34.45485734614376,
+            "top": "OA-VUMa1"
+          }
+        ]
+      },
+      {
+        "name": "ito_MBp3",
+        "column": "itoleeHl",
+        "want": "MBp3",
+        "n_seed": 1038,
+        "gpu": true,
+        "flow": [
+          {
+            "hop": 0,
+            "n_active": 1038,
+            "vnc_motor": 0.0,
+            "descending": 0.0,
+            "top": "KCg-d"
+          },
+          {
+            "hop": 1,
+            "n_active": 2,
+            "vnc_motor": 0.0,
+            "descending": 0.0020942408376963357,
+            "top": "APL"
+          },
+          {
+            "hop": 2,
+            "n_active": 2,
+            "vnc_motor": 7.979027811605463e-05,
+            "descending": 0.042771837026188295,
+            "top": "APL"
+          },
+          {
+            "hop": 3,
+            "n_active": 0,
+            "vnc_motor": 0.001179710038711774,
+            "descending": 0.03711778727318862,
+            "top": "CRE011"
+          }
+        ]
+      }
+    ],
+    "compare": {
+      "hop_1": {
+        "birth_early": {
+          "vnc_motor": 60.62266187050359,
+          "descending": 86.34160671462821,
+          "top": "PS100",
+          "n_active": 14
+        },
+        "truman_07B": {
+          "vnc_motor": 39.912333476579235,
+          "descending": 51.629136226901586,
+          "top": "PS047_b",
+          "n_active": 19
+        },
+        "ito_MBp3": {
+          "vnc_motor": 0.0,
+          "descending": 0.0020942408376963357,
+          "top": "APL",
+          "n_active": 2
+        }
+      },
+      "hop_2": {
+        "birth_early": {
+          "vnc_motor": 24.253860720964948,
+          "descending": 35.05472378325457,
+          "top": "CRE011",
+          "n_active": 8
+        },
+        "truman_07B": {
+          "vnc_motor": 27.565871341818752,
+          "descending": 32.06329530478219,
+          "top": "PS196_a",
+          "n_active": 2
+        },
+        "ito_MBp3": {
+          "vnc_motor": 7.979027811605463e-05,
+          "descending": 0.042771837026188295,
+          "top": "APL",
+          "n_active": 2
+        }
+      }
+    },
+    "larva_hop2": {
+      "sensory": {
+        "DN_VNC": 0.3227499387814155,
+        "DN_SEZ": 1.428463302241708,
+        "n_active": 7,
+        "top": {
+          "celltype": "LN",
+          "extra": "no official annotation",
+          "a": 0.9999999999999972
+        }
+      },
+      "olfactory": {
+        "DN_VNC": 0.42922315656998894,
+        "DN_SEZ": 1.0544781953740228,
+        "n_active": 8,
+        "top": {
+          "celltype": "LN",
+          "extra": "no official annotation",
+          "a": 0.9999999999999971
+        }
+      },
+      "mechano": {
+        "DN_VNC": 16.601553829078632,
+        "DN_SEZ": 10.3675281433327,
+        "n_active": 38,
+        "top": {
+          "celltype": "PN-somato",
+          "extra": "noci 2nd_order PN",
+          "a": 0.9999999999999895
+        }
+      },
+      "gustatory": {
+        "DN_VNC": 5.36554406045928,
+        "DN_SEZ": 7.543510162154186,
+        "n_active": 11,
+        "top": {
+          "celltype": "LN",
+          "extra": "no official annotation",
+          "a": 0.999999999999994
+        }
+      }
+    },
+    "note": "Birth/lineage seeds are adult cells that still carry a measured developmental tag. Residual does not replay metamorphosis."
+  }
+}

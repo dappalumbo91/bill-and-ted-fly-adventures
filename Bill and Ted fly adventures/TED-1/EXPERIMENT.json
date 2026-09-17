@@ -1,0 +1,13 @@
+{
+  "id": "TED-1",
+  "role": "ted",
+  "change": "9 predicted VNC sides as hop observers (not EM)",
+  "vs_bill": "Bill-0 labeled vnc_sensory L/R ipsi law",
+  "ipsi_pair": true,
+  "predicted_L_ipsi": 0.16920869839344738,
+  "predicted_R_ipsi": -0.8369998318029581,
+  "lean_margin_green": true,
+  "promotes": true,
+  "promote_to": "Bill-1",
+  "why": "Same ipsilateral motor law as Bill-0 labeled VNC. R overlay \u22120.84; L sign +; leftover-five ~0. Labels remain predicted."
+}

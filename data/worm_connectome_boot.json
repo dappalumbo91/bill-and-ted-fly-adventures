@@ -1,0 +1,413 @@
+{
+  "organism": "Caenorhabditis elegans hermaphrodite",
+  "sex": "hermaphrodite",
+  "seed": "sensory",
+  "n_seed": 83,
+  "n_cells": 453,
+  "n_edges": 4879,
+  "n_nmj_to_bwm": 956,
+  "type_counts": {
+    "INTERNEURONS": 81,
+    "SENSORY NEURONS": 83,
+    "MOTOR NEURONS": 108,
+    "OTHER END ORGANS": 20,
+    "SEX-SPECIFIC CELLS": 16,
+    "PHARYNX": 50,
+    "BODYWALL MUSCLES": 95
+  },
+  "n_gaba": 26,
+  "graph_source": "D:\\FlyWire_Connectome\\C_elegans\\SI5.xlsx",
+  "sheet": "hermaphrodite chemical",
+  "hops": 11,
+  "residual_Biochemistry": 1.091958932349586,
+  "gaba_inhibitory": true,
+  "authority": "Cook et al. 2019 SI5 hermaphrodite chemical adjacency (OpenWorm ConnectomeToolbox copy); GABA names WormAtlas/Pereira 2015 (DD01/VD01 = DD1/VD1); NMJs onto body-wall muscles included. Male sheet lumped dBWM/vBWM under MOTOR NEURONS \u2014 relabeled by the measured Cook names. Netzschleuder CSV listed muscle nodes but dropped every NMJ.",
+  "free_parameters": 0,
+  "trace": [
+    {
+      "hop": 0,
+      "l1": 83.0,
+      "n_active": 83,
+      "mass_by_type": {
+        "SENSORY NEURONS": 83.0,
+        "INTERNEURONS": 0.0,
+        "MOTOR NEURONS": 0.0,
+        "OTHER END ORGANS": 0.0,
+        "SEX-SPECIFIC CELLS": 0.0,
+        "PHARYNX": 0.0,
+        "BODYWALL MUSCLES": 0.0
+      },
+      "target_mass": {
+        "sensory": 83.0,
+        "motor": 0.0,
+        "bodywall_muscle": 0.0,
+        "interneuron": 0.0,
+        "sex_specific": 0.0,
+        "other_end_organs": 0.0
+      },
+      "top": [
+        {
+          "name": "ALML",
+          "type": "SENSORY NEURONS",
+          "a": 1.0
+        },
+        {
+          "name": "ALMR",
+          "type": "SENSORY NEURONS",
+          "a": 1.0
+        },
+        {
+          "name": "ALNL",
+          "type": "SENSORY NEURONS",
+          "a": 1.0
+        },
+        {
+          "name": "ALNR",
+          "type": "SENSORY NEURONS",
+          "a": 1.0
+        },
+        {
+          "name": "AQR",
+          "type": "SENSORY NEURONS",
+          "a": 1.0
+        },
+        {
+          "name": "URXL",
+          "type": "SENSORY NEURONS",
+          "a": 1.0
+        },
+        {
+          "name": "URXR",
+          "type": "SENSORY NEURONS",
+          "a": 1.0
+        },
+        {
+          "name": "URYDL",
+          "type": "SENSORY NEURONS",
+          "a": 1.0
+        }
+      ]
+    },
+    {
+      "hop": 1,
+      "l1": 27.75886524822686,
+      "n_active": 3,
+      "mass_by_type": {
+        "INTERNEURONS": 15.797872340425476,
+        "SENSORY NEURONS": 5.50354609929076,
+        "MOTOR NEURONS": 5.117021276595726,
+        "BODYWALL MUSCLES": 1.0177304964538973,
+        "OTHER END ORGANS": 0.24822695035460912,
+        "SEX-SPECIFIC CELLS": 0.07446808510638274,
+        "PHARYNX": 0.0
+      },
+      "target_mass": {
+        "sensory": 5.50354609929076,
+        "motor": 5.117021276595726,
+        "bodywall_muscle": 1.0177304964538973,
+        "interneuron": 15.797872340425476,
+        "sex_specific": 0.07446808510638274,
+        "other_end_organs": 0.24822695035460912
+      },
+      "top": [
+        {
+          "name": "AVAR",
+          "type": "INTERNEURONS",
+          "a": 0.9999999999999967
+        },
+        {
+          "name": "AVAL",
+          "type": "INTERNEURONS",
+          "a": 0.978723404255316
+        },
+        {
+          "name": "PVCL",
+          "type": "INTERNEURONS",
+          "a": 0.6985815602836857
+        },
+        {
+          "name": "AVDL",
+          "type": "INTERNEURONS",
+          "a": 0.5886524822695016
+        },
+        {
+          "name": "RIPR",
+          "type": "INTERNEURONS",
+          "a": 0.5851063829787215
+        },
+        {
+          "name": "AVEL",
+          "type": "INTERNEURONS",
+          "a": 0.5780141843971612
+        },
+        {
+          "name": "AVER",
+          "type": "INTERNEURONS",
+          "a": 0.570921985815601
+        },
+        {
+          "name": "AIAR",
+          "type": "INTERNEURONS",
+          "a": 0.5638297872340406
+        }
+      ]
+    },
+    {
+      "hop": 2,
+      "l1": 26.597135757607955,
+      "n_active": 4,
+      "mass_by_type": {
+        "INTERNEURONS": 11.764955780586122,
+        "MOTOR NEURONS": 9.876800170999484,
+        "SENSORY NEURONS": 2.3559195233387493,
+        "BODYWALL MUSCLES": 2.2995431105885955,
+        "OTHER END ORGANS": 0.1828092019130561,
+        "SEX-SPECIFIC CELLS": 0.0689341918935523,
+        "PHARYNX": 0.048173778288401074
+      },
+      "target_mass": {
+        "sensory": 2.3559195233387493,
+        "motor": 9.876800170999484,
+        "bodywall_muscle": 2.2995431105885955,
+        "interneuron": 11.764955780586122,
+        "sex_specific": 0.0689341918935523,
+        "other_end_organs": 0.1828092019130561
+      },
+      "top": [
+        {
+          "name": "AVAR",
+          "type": "INTERNEURONS",
+          "a": 0.9999999999999931
+        },
+        {
+          "name": "AVAL",
+          "type": "INTERNEURONS",
+          "a": 0.901381355705768
+        },
+        {
+          "name": "RIAL",
+          "type": "INTERNEURONS",
+          "a": 0.6680204130707729
+        },
+        {
+          "name": "RIAR",
+          "type": "INTERNEURONS",
+          "a": 0.6273278649103542
+        },
+        {
+          "name": "RMDDL",
+          "type": "MOTOR NEURONS",
+          "a": 0.582867983006916
+        },
+        {
+          "name": "RMDVR",
+          "type": "MOTOR NEURONS",
+          "a": 0.5440724610575215
+        },
+        {
+          "name": "RMDVL",
+          "type": "MOTOR NEURONS",
+          "a": 0.5433243380447232
+        },
+        {
+          "name": "RMDDR",
+          "type": "MOTOR NEURONS",
+          "a": 0.5389691933630764
+        }
+      ]
+    },
+    {
+      "hop": 3,
+      "l1": 37.98383482953809,
+      "n_active": 10,
+      "mass_by_type": {
+        "MOTOR NEURONS": 16.459485687397088,
+        "INTERNEURONS": 12.217657003747004,
+        "BODYWALL MUSCLES": 6.855623395793071,
+        "SENSORY NEURONS": 1.8026139583685499,
+        "OTHER END ORGANS": 0.5794412441799809,
+        "SEX-SPECIFIC CELLS": 0.049319258305634925,
+        "PHARYNX": 0.019694281746757455
+      },
+      "target_mass": {
+        "sensory": 1.8026139583685499,
+        "motor": 16.459485687397088,
+        "bodywall_muscle": 6.855623395793071,
+        "interneuron": 12.217657003747004,
+        "sex_specific": 0.049319258305634925,
+        "other_end_organs": 0.5794412441799809
+      },
+      "top": [
+        {
+          "name": "RMDDL",
+          "type": "MOTOR NEURONS",
+          "a": 0.9999999999999902
+        },
+        {
+          "name": "AVAR",
+          "type": "INTERNEURONS",
+          "a": 0.9867760432305971
+        },
+        {
+          "name": "RMDVL",
+          "type": "MOTOR NEURONS",
+          "a": 0.9674381240659408
+        },
+        {
+          "name": "RMDDR",
+          "type": "MOTOR NEURONS",
+          "a": 0.9236348638228901
+        },
+        {
+          "name": "RMDVR",
+          "type": "MOTOR NEURONS",
+          "a": 0.9015110463771728
+        },
+        {
+          "name": "RIAL",
+          "type": "INTERNEURONS",
+          "a": 0.8723520160515513
+        },
+        {
+          "name": "AVAL",
+          "type": "INTERNEURONS",
+          "a": 0.854083472254331
+        },
+        {
+          "name": "RIAR",
+          "type": "INTERNEURONS",
+          "a": 0.8100734124176318
+        }
+      ]
+    },
+    {
+      "hop": 4,
+      "l1": 32.98402601699783,
+      "n_active": 10,
+      "mass_by_type": {
+        "MOTOR NEURONS": 14.651713281840134,
+        "INTERNEURONS": 9.108040153064593,
+        "BODYWALL MUSCLES": 7.4425231181657185,
+        "SENSORY NEURONS": 1.340065763854923,
+        "OTHER END ORGANS": 0.40614157067812395,
+        "SEX-SPECIFIC CELLS": 0.02888920667048965,
+        "PHARYNX": 0.006652922723849125
+      },
+      "target_mass": {
+        "sensory": 1.340065763854923,
+        "motor": 14.651713281840134,
+        "bodywall_muscle": 7.4425231181657185,
+        "interneuron": 9.108040153064593,
+        "sex_specific": 0.02888920667048965,
+        "other_end_organs": 0.40614157067812395
+      },
+      "top": [
+        {
+          "name": "RMDDL",
+          "type": "MOTOR NEURONS",
+          "a": 0.9999999999999929
+        },
+        {
+          "name": "RMDVL",
+          "type": "MOTOR NEURONS",
+          "a": 0.956802830511466
+        },
+        {
+          "name": "RMDDR",
+          "type": "MOTOR NEURONS",
+          "a": 0.9446380148891979
+        },
+        {
+          "name": "RMDVR",
+          "type": "MOTOR NEURONS",
+          "a": 0.8807321884192567
+        },
+        {
+          "name": "RIAL",
+          "type": "INTERNEURONS",
+          "a": 0.8050679970172151
+        },
+        {
+          "name": "AVAR",
+          "type": "INTERNEURONS",
+          "a": 0.7896991829447231
+        },
+        {
+          "name": "RIAR",
+          "type": "INTERNEURONS",
+          "a": 0.7858709598114078
+        },
+        {
+          "name": "SMDDR",
+          "type": "MOTOR NEURONS",
+          "a": 0.7151325035623355
+        }
+      ]
+    },
+    {
+      "hop": 11,
+      "l1": 21.298466198032738,
+      "n_active": 6,
+      "mass_by_type": {
+        "MOTOR NEURONS": 10.006849651458154,
+        "BODYWALL MUSCLES": 6.552175544217541,
+        "INTERNEURONS": 3.725539938839314,
+        "SENSORY NEURONS": 0.8510510194578259,
+        "OTHER END ORGANS": 0.15190730311010445,
+        "SEX-SPECIFIC CELLS": 0.007749382337096016,
+        "PHARYNX": 0.0031933586127032947
+      },
+      "target_mass": {
+        "sensory": 0.8510510194578259,
+        "motor": 10.006849651458154,
+        "bodywall_muscle": 6.552175544217541,
+        "interneuron": 3.725539938839314,
+        "sex_specific": 0.007749382337096016,
+        "other_end_organs": 0.15190730311010445
+      },
+      "top": [
+        {
+          "name": "RMDDL",
+          "type": "MOTOR NEURONS",
+          "a": 0.9999999999999915
+        },
+        {
+          "name": "RMDDR",
+          "type": "MOTOR NEURONS",
+          "a": 0.9444075047761045
+        },
+        {
+          "name": "RMDVL",
+          "type": "MOTOR NEURONS",
+          "a": 0.9382008860791268
+        },
+        {
+          "name": "RMDVR",
+          "type": "MOTOR NEURONS",
+          "a": 0.8746691450857929
+        },
+        {
+          "name": "RIAL",
+          "type": "INTERNEURONS",
+          "a": 0.6383947233134927
+        },
+        {
+          "name": "RIAR",
+          "type": "INTERNEURONS",
+          "a": 0.6180612781999538
+        },
+        {
+          "name": "SMDDR",
+          "type": "MOTOR NEURONS",
+          "a": 0.5293533326975423
+        },
+        {
+          "name": "SMDDL",
+          "type": "MOTOR NEURONS",
+          "a": 0.46693817487736605
+        }
+      ]
+    }
+  ],
+  "note": "Whole-animal graph: neurons + muscles. Not a trained dynamics model and not a thought. This is the organism-complete analog of the fly brain boot."
+}

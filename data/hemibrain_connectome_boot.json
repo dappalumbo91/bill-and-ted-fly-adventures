@@ -1,0 +1,660 @@
+{
+  "dataset": "hemibrain:v1.2.1",
+  "pin": "AEB2AD",
+  "residual_Biochemistry": 1.284069161007025,
+  "n_neurons": 22704,
+  "n_edges": 3438115,
+  "n_gaba": 0,
+  "n_jo": 78,
+  "n_orn": 2577,
+  "n_dn": 91,
+  "n_kc": 1927,
+  "n_dng29": 0,
+  "authority": "neuPrint hemibrain:v1.2.1 typed neurons including cropped Leaves; weight = measured synapse count; unsigned residual (no predictedNt); DNg29 not in this volume; no VNC",
+  "free_parameters": 0,
+  "programs": [
+    {
+      "name": "JO",
+      "seed": "JO",
+      "how": "type_prefix",
+      "n_seed": 78,
+      "gpu": true,
+      "device": "NVIDIA GeForce RTX 5070",
+      "elapsed_s": 1.3817490000510588,
+      "flow": [
+        {
+          "hop": 0,
+          "l1": 78.0,
+          "n_active": 78,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 0.0,
+          "sensory": 78.0,
+          "DN": 0.0,
+          "olfactory": 0.0,
+          "mechanosensory": 78.0,
+          "top": {
+            "cell_type": "JO-A/B/C",
+            "super_class": "sensory",
+            "cell_class": "mechanosensory",
+            "a": 1.0
+          }
+        },
+        {
+          "hop": 1,
+          "l1": 8.684210526315784,
+          "n_active": 1,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 1.691950464396284,
+          "sensory": 0.9775541795665627,
+          "DN": 1.691950464396284,
+          "olfactory": 0.0,
+          "mechanosensory": 0.9775541795665627,
+          "top": {
+            "cell_type": "Giant Fiber",
+            "super_class": "descending",
+            "cell_class": "DN",
+            "a": 0.9999999999999994
+          }
+        },
+        {
+          "hop": 2,
+          "l1": 24.337117886738874,
+          "n_active": 3,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 2.683235242013257,
+          "sensory": 0.7404995767966429,
+          "DN": 2.683235242013257,
+          "olfactory": 0.0,
+          "mechanosensory": 0.7404995767966429,
+          "top": {
+            "cell_type": "Giant Fiber",
+            "super_class": "descending",
+            "cell_class": "DN",
+            "a": 0.9999999999999961
+          }
+        },
+        {
+          "hop": 3,
+          "l1": 43.204581017782616,
+          "n_active": 3,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 3.027834636041052,
+          "sensory": 0.8045864921964614,
+          "DN": 3.027834636041052,
+          "olfactory": 0.0001991536739607466,
+          "mechanosensory": 0.8043873385224983,
+          "top": {
+            "cell_type": "Giant Fiber",
+            "super_class": "descending",
+            "cell_class": "DN",
+            "a": 0.9999999999999983
+          }
+        },
+        {
+          "hop": 4,
+          "l1": 104.51030924950108,
+          "n_active": 4,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 3.606240577828373,
+          "sensory": 0.4992548088925106,
+          "DN": 3.606240577828373,
+          "olfactory": 0.16409137892016606,
+          "mechanosensory": 0.33516342997234394,
+          "top": {
+            "cell_type": "AVLP082",
+            "super_class": "",
+            "cell_class": "",
+            "a": 0.9999999999999986
+          }
+        },
+        {
+          "hop": 11,
+          "l1": 89.21954948820017,
+          "n_active": 2,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 0.11909806113236672,
+          "sensory": 7.958956209015453,
+          "DN": 0.11909806113236672,
+          "olfactory": 7.958414221932978,
+          "mechanosensory": 0.0005419870824751278,
+          "top": {
+            "cell_type": "APL",
+            "super_class": "",
+            "cell_class": "mb_modulatory",
+            "a": 0.9999999999999999
+          }
+        }
+      ]
+    },
+    {
+      "name": "olfactory",
+      "seed": "ORN",
+      "how": "type_prefix",
+      "n_seed": 2577,
+      "gpu": true,
+      "device": "NVIDIA GeForce RTX 5070",
+      "elapsed_s": 0.05746189993806183,
+      "flow": [
+        {
+          "hop": 0,
+          "l1": 2577.0,
+          "n_active": 2577,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 0.0,
+          "sensory": 2577.0,
+          "DN": 0.0,
+          "olfactory": 2577.0,
+          "mechanosensory": 0.0,
+          "top": {
+            "cell_type": "ORN_D",
+            "super_class": "sensory",
+            "cell_class": "olfactory",
+            "a": 1.0
+          }
+        },
+        {
+          "hop": 1,
+          "l1": 37.88852863980239,
+          "n_active": 6,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 0.0012351397251814116,
+          "sensory": 7.539447274973027,
+          "DN": 0.0012351397251814116,
+          "olfactory": 7.539447274973027,
+          "mechanosensory": 0.0,
+          "top": {
+            "cell_type": "lLN2F_b",
+            "super_class": "",
+            "cell_class": "",
+            "a": 1.0
+          }
+        },
+        {
+          "hop": 2,
+          "l1": 65.48356199439388,
+          "n_active": 4,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 0.07190743889872583,
+          "sensory": 16.15258359484114,
+          "DN": 0.07190743889872583,
+          "olfactory": 16.15256141294079,
+          "mechanosensory": 2.218190034848228e-05,
+          "top": {
+            "cell_type": "lLN2T_c",
+            "super_class": "",
+            "cell_class": "",
+            "a": 0.9999999999999998
+          }
+        },
+        {
+          "hop": 3,
+          "l1": 82.62579870993821,
+          "n_active": 10,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 0.10300070994782357,
+          "sensory": 14.616067612896245,
+          "DN": 0.10300070994782357,
+          "olfactory": 14.615965713117934,
+          "mechanosensory": 0.0001018997783104208,
+          "top": {
+            "cell_type": "lLN2F_b",
+            "super_class": "",
+            "cell_class": "",
+            "a": 0.9999999999999998
+          }
+        },
+        {
+          "hop": 4,
+          "l1": 82.83125685727165,
+          "n_active": 10,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 0.09324625936945809,
+          "sensory": 13.279059404892946,
+          "DN": 0.09324625936945809,
+          "olfactory": 13.278999553383297,
+          "mechanosensory": 5.98515096480962e-05,
+          "top": {
+            "cell_type": "lLN2F_a",
+            "super_class": "",
+            "cell_class": "",
+            "a": 0.9999999999999999
+          }
+        },
+        {
+          "hop": 11,
+          "l1": 98.60610380360872,
+          "n_active": 10,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 0.08502908936483623,
+          "sensory": 10.306135960500363,
+          "DN": 0.08502908936483623,
+          "olfactory": 10.306094180802067,
+          "mechanosensory": 4.177969829905906e-05,
+          "top": {
+            "cell_type": "APL",
+            "super_class": "",
+            "cell_class": "mb_modulatory",
+            "a": 0.9999999999999999
+          }
+        }
+      ]
+    },
+    {
+      "name": "kenyon",
+      "seed": "KC",
+      "how": "type_prefix",
+      "n_seed": 1927,
+      "gpu": true,
+      "device": "NVIDIA GeForce RTX 5070",
+      "elapsed_s": 0.05830290005542338,
+      "flow": [
+        {
+          "hop": 0,
+          "l1": 1927.0,
+          "n_active": 1927,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 0.0,
+          "sensory": 0.0,
+          "DN": 0.0,
+          "olfactory": 0.0,
+          "mechanosensory": 0.0,
+          "top": {
+            "cell_type": "KCa'b'-ap1",
+            "super_class": "",
+            "cell_class": "kenyon",
+            "a": 1.0
+          }
+        },
+        {
+          "hop": 1,
+          "l1": 12.874747157361405,
+          "n_active": 2,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 8.837218436401485e-05,
+          "sensory": 0.0,
+          "DN": 8.837218436401485e-05,
+          "olfactory": 0.0,
+          "mechanosensory": 0.0,
+          "top": {
+            "cell_type": "APL",
+            "super_class": "",
+            "cell_class": "mb_modulatory",
+            "a": 1.0
+          }
+        },
+        {
+          "hop": 2,
+          "l1": 45.768832858813056,
+          "n_active": 1,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 0.003338890376443143,
+          "sensory": 0.0003558684361871477,
+          "DN": 0.003338890376443143,
+          "olfactory": 0.0003558684361871477,
+          "mechanosensory": 0.0,
+          "top": {
+            "cell_type": "APL",
+            "super_class": "",
+            "cell_class": "mb_modulatory",
+            "a": 0.9999999999999998
+          }
+        },
+        {
+          "hop": 3,
+          "l1": 38.04778272956421,
+          "n_active": 2,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 0.006678620829799183,
+          "sensory": 0.009886926510554861,
+          "DN": 0.006678620829799183,
+          "olfactory": 0.009885886820727295,
+          "mechanosensory": 1.0396898275665164e-06,
+          "top": {
+            "cell_type": "APL",
+            "super_class": "",
+            "cell_class": "mb_modulatory",
+            "a": 0.9999999999999999
+          }
+        },
+        {
+          "hop": 4,
+          "l1": 40.166359011880516,
+          "n_active": 1,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 0.010276894226685672,
+          "sensory": 0.10204164193499507,
+          "DN": 0.010276894226685672,
+          "olfactory": 0.10203886336735232,
+          "mechanosensory": 2.778567642758825e-06,
+          "top": {
+            "cell_type": "APL",
+            "super_class": "",
+            "cell_class": "mb_modulatory",
+            "a": 0.9999999999999999
+          }
+        },
+        {
+          "hop": 11,
+          "l1": 43.059886255683296,
+          "n_active": 2,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 0.015627998598632613,
+          "sensory": 0.5402210055895622,
+          "DN": 0.015627998598632613,
+          "olfactory": 0.5402134430911544,
+          "mechanosensory": 7.562498407709864e-06,
+          "top": {
+            "cell_type": "APL",
+            "super_class": "",
+            "cell_class": "mb_modulatory",
+            "a": 0.9999999999999999
+          }
+        }
+      ]
+    },
+    {
+      "name": "kenyon_subgraph",
+      "seed": "KC",
+      "how": "subgraph",
+      "n_seed": 1927,
+      "n_subgraph": 1927,
+      "n_subgraph_edges": 340367,
+      "gpu": true,
+      "device": "NVIDIA GeForce RTX 5070",
+      "elapsed_s": 0.006645699962973595,
+      "flow": [
+        {
+          "hop": 0,
+          "l1": 1927.0,
+          "n_active": 1927,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 0.0,
+          "sensory": 0.0,
+          "DN": 0.0,
+          "olfactory": 0.0,
+          "mechanosensory": 0.0,
+          "top": {
+            "cell_type": "KCa'b'-ap1",
+            "super_class": "",
+            "cell_class": "kenyon",
+            "a": 1.0
+          }
+        },
+        {
+          "hop": 1,
+          "l1": 574.7369369369366,
+          "n_active": 2,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 0.0,
+          "sensory": 0.0,
+          "DN": 0.0,
+          "olfactory": 0.0,
+          "mechanosensory": 0.0,
+          "top": {
+            "cell_type": "KCg-s1",
+            "super_class": "",
+            "cell_class": "kenyon",
+            "a": 0.9999999999999993
+          }
+        },
+        {
+          "hop": 2,
+          "l1": 535.3940077863508,
+          "n_active": 2,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 0.0,
+          "sensory": 0.0,
+          "DN": 0.0,
+          "olfactory": 0.0,
+          "mechanosensory": 0.0,
+          "top": {
+            "cell_type": "KCg-s1",
+            "super_class": "",
+            "cell_class": "kenyon",
+            "a": 0.9999999999999978
+          }
+        },
+        {
+          "hop": 3,
+          "l1": 498.2501395911224,
+          "n_active": 2,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 0.0,
+          "sensory": 0.0,
+          "DN": 0.0,
+          "olfactory": 0.0,
+          "mechanosensory": 0.0,
+          "top": {
+            "cell_type": "KCg-s1",
+            "super_class": "",
+            "cell_class": "kenyon",
+            "a": 0.9999999999999978
+          }
+        },
+        {
+          "hop": 4,
+          "l1": 468.93105289879634,
+          "n_active": 2,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 0.0,
+          "sensory": 0.0,
+          "DN": 0.0,
+          "olfactory": 0.0,
+          "mechanosensory": 0.0,
+          "top": {
+            "cell_type": "KCg-s1",
+            "super_class": "",
+            "cell_class": "kenyon",
+            "a": 0.9999999999999978
+          }
+        },
+        {
+          "hop": 11,
+          "l1": 345.98791046858645,
+          "n_active": 2,
+          "motor": 0.0,
+          "vnc_motor": 0.0,
+          "descending": 0.0,
+          "sensory": 0.0,
+          "DN": 0.0,
+          "olfactory": 0.0,
+          "mechanosensory": 0.0,
+          "top": {
+            "cell_type": "KCg-s1",
+            "super_class": "",
+            "cell_class": "kenyon",
+            "a": 0.9999999999999979
+          }
+        }
+      ]
+    }
+  ],
+  "compare": {
+    "hop_1": {
+      "JO": {
+        "descending": 1.691950464396284,
+        "vnc_motor": 0.0,
+        "motor": 0.0,
+        "DN": 1.691950464396284,
+        "n_active": 1,
+        "top": {
+          "cell_type": "Giant Fiber",
+          "super_class": "descending",
+          "cell_class": "DN",
+          "a": 0.9999999999999994
+        }
+      },
+      "olfactory": {
+        "descending": 0.0012351397251814116,
+        "vnc_motor": 0.0,
+        "motor": 0.0,
+        "DN": 0.0012351397251814116,
+        "n_active": 6,
+        "top": {
+          "cell_type": "lLN2F_b",
+          "super_class": "",
+          "cell_class": "",
+          "a": 1.0
+        }
+      },
+      "kenyon": {
+        "descending": 8.837218436401485e-05,
+        "vnc_motor": 0.0,
+        "motor": 0.0,
+        "DN": 8.837218436401485e-05,
+        "n_active": 2,
+        "top": {
+          "cell_type": "APL",
+          "super_class": "",
+          "cell_class": "mb_modulatory",
+          "a": 1.0
+        }
+      },
+      "kenyon_subgraph": {
+        "descending": 0.0,
+        "vnc_motor": 0.0,
+        "motor": 0.0,
+        "DN": 0.0,
+        "n_active": 2,
+        "top": {
+          "cell_type": "KCg-s1",
+          "super_class": "",
+          "cell_class": "kenyon",
+          "a": 0.9999999999999993
+        }
+      }
+    },
+    "hop_2": {
+      "JO": {
+        "descending": 2.683235242013257,
+        "vnc_motor": 0.0,
+        "motor": 0.0,
+        "DN": 2.683235242013257,
+        "n_active": 3,
+        "top": {
+          "cell_type": "Giant Fiber",
+          "super_class": "descending",
+          "cell_class": "DN",
+          "a": 0.9999999999999961
+        }
+      },
+      "olfactory": {
+        "descending": 0.07190743889872583,
+        "vnc_motor": 0.0,
+        "motor": 0.0,
+        "DN": 0.07190743889872583,
+        "n_active": 4,
+        "top": {
+          "cell_type": "lLN2T_c",
+          "super_class": "",
+          "cell_class": "",
+          "a": 0.9999999999999998
+        }
+      },
+      "kenyon": {
+        "descending": 0.003338890376443143,
+        "vnc_motor": 0.0,
+        "motor": 0.0,
+        "DN": 0.003338890376443143,
+        "n_active": 1,
+        "top": {
+          "cell_type": "APL",
+          "super_class": "",
+          "cell_class": "mb_modulatory",
+          "a": 0.9999999999999998
+        }
+      },
+      "kenyon_subgraph": {
+        "descending": 0.0,
+        "vnc_motor": 0.0,
+        "motor": 0.0,
+        "DN": 0.0,
+        "n_active": 2,
+        "top": {
+          "cell_type": "KCg-s1",
+          "super_class": "",
+          "cell_class": "kenyon",
+          "a": 0.9999999999999978
+        }
+      }
+    },
+    "hop_3": {
+      "JO": {
+        "descending": 3.027834636041052,
+        "vnc_motor": 0.0,
+        "motor": 0.0,
+        "DN": 3.027834636041052,
+        "n_active": 3,
+        "top": {
+          "cell_type": "Giant Fiber",
+          "super_class": "descending",
+          "cell_class": "DN",
+          "a": 0.9999999999999983
+        }
+      },
+      "olfactory": {
+        "descending": 0.10300070994782357,
+        "vnc_motor": 0.0,
+        "motor": 0.0,
+        "DN": 0.10300070994782357,
+        "n_active": 10,
+        "top": {
+          "cell_type": "lLN2F_b",
+          "super_class": "",
+          "cell_class": "",
+          "a": 0.9999999999999998
+        }
+      },
+      "kenyon": {
+        "descending": 0.006678620829799183,
+        "vnc_motor": 0.0,
+        "motor": 0.0,
+        "DN": 0.006678620829799183,
+        "n_active": 2,
+        "top": {
+          "cell_type": "APL",
+          "super_class": "",
+          "cell_class": "mb_modulatory",
+          "a": 0.9999999999999999
+        }
+      },
+      "kenyon_subgraph": {
+        "descending": 0.0,
+        "vnc_motor": 0.0,
+        "motor": 0.0,
+        "DN": 0.0,
+        "n_active": 2,
+        "top": {
+          "cell_type": "KCg-s1",
+          "super_class": "",
+          "cell_class": "kenyon",
+          "a": 0.9999999999999978
+        }
+      }
+    }
+  },
+  "note": "Hemibrain is a partial central brain \u2014 no VNC, so vnc_motor stays 0. JO vs olfactory is scored on descending (DN[a-z] types; clock DN1/2/3 excluded). DNg29 is not in this volume. Unsigned residual: neuPrint Neuron has no predictedNt. Compact GCS dump dropped cropped JO/ORN; this boot uses typed neuPrint including Leaves."
+}

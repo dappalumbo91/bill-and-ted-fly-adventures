@@ -1,0 +1,112 @@
+{
+  "pin": "AEB2AD",
+  "residual_Biochemistry": 1.284069161007025,
+  "free_parameters": 0,
+  "mechanic": "Predicted VNC sides as hop seeds. Same ipsi law as labeled vnc_sensory_L/R. Not EM labels.",
+  "n_predicted_L": 5,
+  "n_predicted_R": 4,
+  "n_leftover": 5,
+  "programs": [
+    {
+      "name": "predicted_L",
+      "n_seed": 5,
+      "bodyIds": [
+        "946767",
+        "952874",
+        "954981",
+        "955284",
+        "956328"
+      ],
+      "expect_yaw_trit": 1,
+      "hop2": {
+        "vnc_motor": 19.827490412778914,
+        "vnc_motor_L": 11.591237128966966,
+        "vnc_motor_R": 8.236253283811925,
+        "vnc_motor_other": 0.0,
+        "ipsi_bias": 0.16920869839344738
+      },
+      "yaw_trit": 0,
+      "ipsi_leftover": true,
+      "function_ok": true,
+      "label": "predicted_not_EM"
+    },
+    {
+      "name": "predicted_R",
+      "n_seed": 4,
+      "bodyIds": [
+        "936341",
+        "954670",
+        "955135",
+        "956305"
+      ],
+      "expect_yaw_trit": -1,
+      "hop2": {
+        "vnc_motor": 4.905875657988331,
+        "vnc_motor_L": 0.3998292787025168,
+        "vnc_motor_R": 4.5060463792858085,
+        "vnc_motor_other": 0.0,
+        "ipsi_bias": -0.8369998318029581
+      },
+      "yaw_trit": -1,
+      "ipsi_leftover": false,
+      "function_ok": true,
+      "label": "predicted_not_EM"
+    },
+    {
+      "name": "leftover_5",
+      "n_seed": 5,
+      "bodyIds": [
+        "820434",
+        "824830",
+        "956310",
+        "956323",
+        "1050206135"
+      ],
+      "expect_yaw_trit": 0,
+      "hop2": {
+        "vnc_motor": 11.493373595034335,
+        "vnc_motor_L": 5.721187720181144,
+        "vnc_motor_R": 5.772185874853181,
+        "vnc_motor_other": 0.0,
+        "ipsi_bias": -0.004437178888369806
+      },
+      "yaw_trit": 0,
+      "ipsi_leftover": true,
+      "function_ok": true,
+      "label": "predicted_not_EM"
+    },
+    {
+      "name": "predicted_all_9",
+      "n_seed": 9,
+      "bodyIds": [
+        "946767",
+        "952874",
+        "954981",
+        "955284",
+        "956328",
+        "936341",
+        "954670",
+        "955135",
+        "956305"
+      ],
+      "expect_yaw_trit": 0,
+      "hop2": {
+        "vnc_motor": 23.182702091577085,
+        "vnc_motor_L": 11.128010175240226,
+        "vnc_motor_R": 12.054691916336889,
+        "vnc_motor_other": 0.0,
+        "ipsi_bias": -0.03997298233122322
+      },
+      "yaw_trit": 0,
+      "ipsi_leftover": true,
+      "function_ok": true,
+      "label": "predicted_not_EM"
+    }
+  ],
+  "ipsi_pair": true,
+  "overall_ok": true,
+  "compare_labeled": {
+    "vnc_sensory_L_ipsi": 0.342,
+    "vnc_sensory_R_ipsi": -0.362
+  }
+}

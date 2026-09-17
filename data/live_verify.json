@@ -1,0 +1,73 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "n": 9,
+  "fail": 0,
+  "overall_ok": true,
+  "checks": [
+    {
+      "name": "uniprot_nompC",
+      "ok": true,
+      "status": 200,
+      "gene": "nompC",
+      "accession": "Q7KIQ2"
+    },
+    {
+      "name": "ensembl_nompC",
+      "ok": true,
+      "status": 200,
+      "id": "FBgn0016920",
+      "display_name": "nompC"
+    },
+    {
+      "name": "neuprint_hemibrain",
+      "ok": true,
+      "status": 200,
+      "version": {
+        "Version": "1.9.3"
+      },
+      "has_hemibrain": true,
+      "n_datasets": 9
+    },
+    {
+      "name": "codex_download_page",
+      "ok": true,
+      "status": 200,
+      "has_fafb": true,
+      "has_mcns": false,
+      "note": "CSV dumps need Codex api_token"
+    },
+    {
+      "name": "allen_brain_atlas",
+      "ok": true,
+      "status": 200,
+      "success": true,
+      "sample": "Developing Mouse E15.5 (2010)",
+      "note": "Allen Atlas is mouse/human. Fly synapses are FlyWire/CAVE, not this atlas."
+    },
+    {
+      "name": "github_FSOT-Genetics",
+      "ok": true,
+      "status": 200,
+      "html_url": "https://github.com/dappalumbo91/FSOT-Genetics"
+    },
+    {
+      "name": "github_FSOT-2.1-Lean",
+      "ok": true,
+      "status": 200,
+      "html_url": "https://github.com/dappalumbo91/FSOT-2.1-Lean"
+    },
+    {
+      "name": "github_FSOT-2.1-Neural",
+      "ok": true,
+      "status": 200,
+      "html_url": "https://github.com/dappalumbo91/FSOT-2.1-Neural"
+    },
+    {
+      "name": "github_fsot-neuron-zig",
+      "ok": true,
+      "status": 200,
+      "html_url": "https://github.com/dappalumbo91/fsot-neuron-zig"
+    }
+  ]
+}

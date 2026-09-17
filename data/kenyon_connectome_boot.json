@@ -1,0 +1,302 @@
+{
+  "dataset": "hemibrain:v1.2.1",
+  "pin": "AEB2AD",
+  "residual_Biochemistry": 1.284069161007025,
+  "product": "Kenyon residual hops on measured MB types (not a new brain)",
+  "n_kc": 1927,
+  "n_mbon": 71,
+  "n_dan": 317,
+  "n_mb_subgraph": 2318,
+  "n_mb_edges": 538511,
+  "free_parameters": 0,
+  "authority": "neuPrint hemibrain:v1.2.1 typed neurons including cropped Leaves; weight = measured synapse count; unsigned residual (no predictedNt); DNg29 not in this volume; no VNC; subgraph = measured KC/MBON/PAM/PPL1/APL/DPM types",
+  "programs": [
+    {
+      "name": "kc_full_hemibrain",
+      "seed": "KC",
+      "how": "type_prefix",
+      "n_seed": 1927,
+      "n_graph": 22704,
+      "n_edges": 3438115,
+      "gpu": true,
+      "device": "NVIDIA GeForce RTX 5070",
+      "elapsed_s": 3.5501045000273734,
+      "flow": [
+        {
+          "hop": 0,
+          "l1": 1927.0,
+          "n_active": 1927,
+          "descending": 0.0,
+          "vnc_motor": 0.0,
+          "kenyon": 1927.0,
+          "mbon": 0.0,
+          "dan": 0.0,
+          "top": {
+            "cell_type": "KCa'b'-ap1",
+            "cell_class": "kenyon",
+            "a": 1.0
+          }
+        },
+        {
+          "hop": 1,
+          "l1": 12.874747157361405,
+          "n_active": 2,
+          "descending": 8.837218436401483e-05,
+          "vnc_motor": 0.0,
+          "kenyon": 6.264193554722016,
+          "mbon": 3.118232163547456,
+          "dan": 1.6002042379371968,
+          "top": {
+            "cell_type": "APL",
+            "cell_class": "mb_modulatory",
+            "a": 1.0
+          }
+        },
+        {
+          "hop": 2,
+          "l1": 45.76883285881303,
+          "n_active": 1,
+          "descending": 0.003338890376443141,
+          "vnc_motor": 0.0,
+          "kenyon": 35.10368089172848,
+          "mbon": 3.103317630324107,
+          "dan": 1.97538112914931,
+          "top": {
+            "cell_type": "APL",
+            "cell_class": "mb_modulatory",
+            "a": 0.9999999999999998
+          }
+        },
+        {
+          "hop": 3,
+          "l1": 38.047782729564226,
+          "n_active": 2,
+          "descending": 0.006678620829799182,
+          "vnc_motor": 0.0,
+          "kenyon": 26.535960614902738,
+          "mbon": 3.2896644811320774,
+          "dan": 1.9205912772310758,
+          "top": {
+            "cell_type": "APL",
+            "cell_class": "mb_modulatory",
+            "a": 0.9999999999999999
+          }
+        },
+        {
+          "hop": 4,
+          "l1": 40.1663590118805,
+          "n_active": 1,
+          "descending": 0.010276894226685667,
+          "vnc_motor": 0.0,
+          "kenyon": 27.837103486200238,
+          "mbon": 3.2317310335948384,
+          "dan": 1.9406098548885846,
+          "top": {
+            "cell_type": "APL",
+            "cell_class": "mb_modulatory",
+            "a": 0.9999999999999998
+          }
+        },
+        {
+          "hop": 11,
+          "l1": 43.059886255683296,
+          "n_active": 2,
+          "descending": 0.015627998598632616,
+          "vnc_motor": 0.0,
+          "kenyon": 27.974259904205255,
+          "mbon": 3.2584824762494597,
+          "dan": 1.9504757399190258,
+          "top": {
+            "cell_type": "APL",
+            "cell_class": "mb_modulatory",
+            "a": 0.9999999999999998
+          }
+        }
+      ]
+    },
+    {
+      "name": "kc_mb_subgraph",
+      "seed": "KC",
+      "how": "type_prefix",
+      "n_seed": 1927,
+      "n_graph": 2318,
+      "n_edges": 538511,
+      "gpu": true,
+      "device": "NVIDIA GeForce RTX 5070",
+      "elapsed_s": 0.010024699964560568,
+      "flow": [
+        {
+          "hop": 0,
+          "l1": 1927.0,
+          "n_active": 1927,
+          "descending": 0.0,
+          "vnc_motor": 0.0,
+          "kenyon": 1927.0,
+          "mbon": 0.0,
+          "dan": 0.0,
+          "top": {
+            "cell_type": "KCa'b'-ap1",
+            "cell_class": "kenyon",
+            "a": 1.0
+          }
+        },
+        {
+          "hop": 1,
+          "l1": 12.64739498438758,
+          "n_active": 2,
+          "descending": 0.0,
+          "vnc_motor": 0.0,
+          "kenyon": 6.264193554722016,
+          "mbon": 3.1182321635474555,
+          "dan": 1.6002042379371968,
+          "top": {
+            "cell_type": "APL",
+            "cell_class": "mb_modulatory",
+            "a": 1.0
+          }
+        },
+        {
+          "hop": 2,
+          "l1": 41.86343619465552,
+          "n_active": 1,
+          "descending": 0.0,
+          "vnc_motor": 0.0,
+          "kenyon": 35.15226003085876,
+          "mbon": 3.105288888029736,
+          "dan": 1.9798933477169338,
+          "top": {
+            "cell_type": "APL",
+            "cell_class": "mb_modulatory",
+            "a": 0.9999999999999998
+          }
+        },
+        {
+          "hop": 3,
+          "l1": 33.34211532123606,
+          "n_active": 2,
+          "descending": 0.0,
+          "vnc_motor": 0.0,
+          "kenyon": 26.488366886412948,
+          "mbon": 3.275684564292648,
+          "dan": 1.8986199045436898,
+          "top": {
+            "cell_type": "APL",
+            "cell_class": "mb_modulatory",
+            "a": 0.9999999999999998
+          }
+        },
+        {
+          "hop": 4,
+          "l1": 34.34628803949009,
+          "n_active": 2,
+          "descending": 0.0,
+          "vnc_motor": 0.0,
+          "kenyon": 27.60841858022629,
+          "mbon": 3.1950801766363,
+          "dan": 1.9009510364803246,
+          "top": {
+            "cell_type": "APL",
+            "cell_class": "mb_modulatory",
+            "a": 0.9999999999999998
+          }
+        },
+        {
+          "hop": 11,
+          "l1": 34.539438358717945,
+          "n_active": 2,
+          "descending": 0.0,
+          "vnc_motor": 0.0,
+          "kenyon": 27.742107738473923,
+          "mbon": 3.2307783253493025,
+          "dan": 1.9096031013226136,
+          "top": {
+            "cell_type": "APL",
+            "cell_class": "mb_modulatory",
+            "a": 0.9999999999999998
+          }
+        }
+      ]
+    }
+  ],
+  "compare": {
+    "hop_1": {
+      "kc_full_hemibrain": {
+        "kenyon": 6.264193554722016,
+        "mbon": 3.118232163547456,
+        "dan": 1.6002042379371968,
+        "descending": 8.837218436401483e-05,
+        "n_active": 2,
+        "top": {
+          "cell_type": "APL",
+          "cell_class": "mb_modulatory",
+          "a": 1.0
+        }
+      },
+      "kc_mb_subgraph": {
+        "kenyon": 6.264193554722016,
+        "mbon": 3.1182321635474555,
+        "dan": 1.6002042379371968,
+        "descending": 0.0,
+        "n_active": 2,
+        "top": {
+          "cell_type": "APL",
+          "cell_class": "mb_modulatory",
+          "a": 1.0
+        }
+      }
+    },
+    "hop_2": {
+      "kc_full_hemibrain": {
+        "kenyon": 35.10368089172848,
+        "mbon": 3.103317630324107,
+        "dan": 1.97538112914931,
+        "descending": 0.003338890376443141,
+        "n_active": 1,
+        "top": {
+          "cell_type": "APL",
+          "cell_class": "mb_modulatory",
+          "a": 0.9999999999999998
+        }
+      },
+      "kc_mb_subgraph": {
+        "kenyon": 35.15226003085876,
+        "mbon": 3.105288888029736,
+        "dan": 1.9798933477169338,
+        "descending": 0.0,
+        "n_active": 1,
+        "top": {
+          "cell_type": "APL",
+          "cell_class": "mb_modulatory",
+          "a": 0.9999999999999998
+        }
+      }
+    },
+    "hop_3": {
+      "kc_full_hemibrain": {
+        "kenyon": 26.535960614902738,
+        "mbon": 3.2896644811320774,
+        "dan": 1.9205912772310758,
+        "descending": 0.006678620829799182,
+        "n_active": 2,
+        "top": {
+          "cell_type": "APL",
+          "cell_class": "mb_modulatory",
+          "a": 0.9999999999999999
+        }
+      },
+      "kc_mb_subgraph": {
+        "kenyon": 26.488366886412948,
+        "mbon": 3.275684564292648,
+        "dan": 1.8986199045436898,
+        "descending": 0.0,
+        "n_active": 2,
+        "top": {
+          "cell_type": "APL",
+          "cell_class": "mb_modulatory",
+          "a": 0.9999999999999998
+        }
+      }
+    }
+  },
+  "note": "Pattern-separation analog = hops on measured KC/MBON/DAN types. Do not call leftover KC mass a thought. DNg29 is not in this volume."
+}

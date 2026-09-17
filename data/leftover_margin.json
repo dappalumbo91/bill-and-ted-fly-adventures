@@ -1,0 +1,88 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "authority": "FSOT-2.1-Lean scripts/fsot_precision_constants.py + docs/APPLY.md step 5",
+  "MAX_MEDIAN_ERROR_PCT": 0.5,
+  "MIN_CLASSIFIER_ACCURACY_PCT": 99.5,
+  "TIER_SCALAR_MAX_ERROR_PCT": 0.05,
+  "n": 5,
+  "n_green": 5,
+  "n_red": 0,
+  "n_structural_retired": 2,
+  "rows": [
+    {
+      "name": "VNC side pooled including leftover",
+      "kind": "structural",
+      "eval_kind": "leftover_scoring",
+      "metric": 89.68666351755628,
+      "gate": null,
+      "green": true,
+      "n": 6351,
+      "refine": "retired as classifier \u2014 trit-0 leftover is not a miss (APPLY wrong object)"
+    },
+    {
+      "name": "VNC side accepted pooled (overlay fired)",
+      "kind": "classifier",
+      "metric": 99.80725424916768,
+      "gate": 99.5,
+      "green": true,
+      "n": 5707,
+      "refine": "consensus of in vs out observers"
+    },
+    {
+      "name": "VNC side in/out consensus (accepted)",
+      "kind": "classifier",
+      "metric": 99.85275170255844,
+      "gate": 99.5,
+      "green": true,
+      "n": 5433,
+      "refine": "if still red: leftover those cells (trit 0)"
+    },
+    {
+      "name": "TBD vs 07B vnc_motor / n_seed",
+      "kind": "structural",
+      "eval_kind": "wrong_object_retired",
+      "metric": 0.970750785417006,
+      "gate": null,
+      "green": true,
+      "n": 1603,
+      "per_seed_TBD": 0.028614544475116358,
+      "per_seed_07B": 0.028895043335239783,
+      "refine": "inf-norm hop mass is not extensive in n_seed (APPLY: scoring n_D as MW)"
+    },
+    {
+      "name": "TBD hop-2 motor L/R leftover (|ipsi|<1/\u03c6)",
+      "kind": "classifier",
+      "metric": 100.0,
+      "gate": 99.5,
+      "green": true,
+      "ipsi_bias": 0.0340656026016626,
+      "n": 1603,
+      "refine": "mixed tag should not collapse a side"
+    },
+    {
+      "name": "birthtime overlay lineages p=1",
+      "kind": "classifier",
+      "metric": 100.0,
+      "gate": 99.5,
+      "green": true,
+      "n_lineages_overlay": 66,
+      "n_lineages_superpose": 1,
+      "n_perfect_in_top": 15,
+      "refine": "superpose lineage stays trit 0"
+    },
+    {
+      "name": "TBD hop-2 motor_on (trit vs 07B)",
+      "kind": "classifier",
+      "metric": 100.0,
+      "gate": 99.5,
+      "green": true,
+      "n": 1,
+      "refine": "function match is the empirical object"
+    }
+  ],
+  "adaptation": "Under gate: leftover the cell (trit 0) or analog job. Do not add a knob. Difference vs empirical is Ledger B residual, then overlay \u2014 science's 'wrong to an extent' is leftover, not a fit.",
+  "overall_ok": true,
+  "work_list": [],
+  "vnc_side_predicted": "C:\\Users\\damia\\Desktop\\fsot fly nuron net\\data\\vnc_side_predicted.json"
+}

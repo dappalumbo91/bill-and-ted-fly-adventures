@@ -1,0 +1,180 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "n": 21,
+  "n_ok": 21,
+  "fail": [],
+  "overall_ok": true,
+  "consensus_zero_stress": 1,
+  "expressions": [
+    {
+      "expr": "JO_L + JO_R",
+      "want": 672,
+      "got": 672,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    },
+    {
+      "expr": "JO_L + JO_R - JO_h1",
+      "want": 669,
+      "got": 669,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    },
+    {
+      "expr": "(JO_L + JO_R) / 3 * 3",
+      "want": 672,
+      "got": 672,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    },
+    {
+      "expr": "JO_L + JO_R == JO",
+      "want": 1,
+      "got": 1,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    },
+    {
+      "expr": "VNC_L + VNC_R",
+      "want": 6351,
+      "got": 6351,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    },
+    {
+      "expr": "VNC - (VNC_L + VNC_R)",
+      "want": 14,
+      "got": 14,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    },
+    {
+      "expr": "VNC_L > VNC_R",
+      "want": 1,
+      "got": 1,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    },
+    {
+      "expr": "DNg29_M + DNg29_B",
+      "want": 4,
+      "got": 4,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    },
+    {
+      "expr": "(DNg29_M + DNg29_B) / 2 - DNg29_H",
+      "want": 2,
+      "got": 2,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    },
+    {
+      "expr": "T001_L - T001_R",
+      "want": 1,
+      "got": 1,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    },
+    {
+      "expr": "T02_L - T02_R",
+      "want": -12,
+      "got": -12,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    },
+    {
+      "expr": "abs(T02_L - T02_R)",
+      "want": 12,
+      "got": 12,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    },
+    {
+      "expr": "abs(T02_L - T02_R) > HOPS",
+      "want": 1,
+      "got": 1,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    },
+    {
+      "expr": "trit(T001_L - T001_R)",
+      "want": 1,
+      "got": 1,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    },
+    {
+      "expr": "trit(T02_L - T02_R)",
+      "want": -1,
+      "got": -1,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    },
+    {
+      "expr": "cons(trit(T001_L - T001_R), trit(T002_L - T002_R))",
+      "want": 1,
+      "got": 1,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    },
+    {
+      "expr": "cons(trit(T001_L - T001_R), trit(T02_L - T02_R))",
+      "want": 0,
+      "got": 0,
+      "ok": true,
+      "error": null,
+      "thought_stress": true
+    },
+    {
+      "expr": "leftover(0)",
+      "want": 1,
+      "got": 1,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    },
+    {
+      "expr": "overlay(1)",
+      "want": 1,
+      "got": 1,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    },
+    {
+      "expr": "NEURONS - GABA > GABA",
+      "want": 1,
+      "got": 1,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    },
+    {
+      "expr": "H_JO + KC > JO",
+      "want": 1,
+      "got": 1,
+      "ok": true,
+      "error": null,
+      "thought_stress": false
+    }
+  ],
+  "note": "Parser evaluates on trit ALU. cons=0 is thought leftover, not a new axon."
+}

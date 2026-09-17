@@ -1,0 +1,320 @@
+{
+  "pin": "AEB2AD",
+  "residual_Biochemistry": 1.284069161007025,
+  "phi": 1.618033988749895,
+  "free_parameters": 0,
+  "not": "Not an LLM. Not a trained walking policy. Not Iwasaki video (not on disk). Not Berlin/ymaze files (those dumps are unauthorized/corrupt). Language/coding is not this baseline.",
+  "law": "S=K(T1+T2+T3); a <- r W a; inf-norm; observer from measured limbs",
+  "body": "Harvard Dataverse 10.7910/DVN/BBNPYX tethered fly on a ball, 6-leg 3D tarsus + antenna. MAD+\u03c6 gates.",
+  "brain": "Male CNS hop-2 frozen fields (measured synapses). BANC listed for split check.",
+  "object_papers": [
+    "Iwasaki et al. PNAS 2025 e2426180122 (microrobotics / ball cargo)",
+    "Iwasaki et al. Curr Biol 2025 35:5475 (immobile sphere preference; h\u0394 FB)"
+  ],
+  "guardrail": "courtship/aggression/fru never seeded. olfactory is contrast only.",
+  "brain_print": [
+    {
+      "condition": "rest",
+      "seeds": [],
+      "body": "no afferent",
+      "allow": true,
+      "male": {
+        "seeds": [],
+        "vnc_motor": 0.0,
+        "descending": 0.0,
+        "walks": false
+      },
+      "banc": {
+        "seeds": [],
+        "vnc_motor": 0.0,
+        "descending": 0.0,
+        "walks": false
+      },
+      "ok": true
+    },
+    {
+      "condition": "walk_legs",
+      "seeds": [
+        "vnc_sensory"
+      ],
+      "body": "tarsus / VNC sensory",
+      "allow": true,
+      "male": {
+        "seeds": [
+          "vnc_sensory"
+        ],
+        "vnc_motor": 10.740180804833889,
+        "descending": 11.38578833493545,
+        "walks": true
+      },
+      "banc": {
+        "seeds": [
+          "vnc_sensory"
+        ],
+        "vnc_motor": 10.161924095410841,
+        "descending": 6.4801374784561725,
+        "walks": true
+      },
+      "ok": true
+    },
+    {
+      "condition": "walk_JO",
+      "seeds": [
+        "JO"
+      ],
+      "body": "antenna / Johnston organ",
+      "allow": true,
+      "male": {
+        "seeds": [
+          "JO"
+        ],
+        "vnc_motor": 7.772920928859144,
+        "descending": 24.213046671127735,
+        "walks": true
+      },
+      "banc": {
+        "seeds": [
+          "JO"
+        ],
+        "vnc_motor": 6.636908411047972,
+        "descending": 16.282350887307224,
+        "walks": true
+      },
+      "ok": true
+    },
+    {
+      "condition": "ball_contact",
+      "seeds": [
+        "mechanosensory"
+      ],
+      "body": "forelimb object analog (Iwasaki ball)",
+      "allow": true,
+      "male": {
+        "seeds": [
+          "mechanosensory"
+        ],
+        "vnc_motor": 7.549628185600908,
+        "descending": 13.890959775127437,
+        "walks": true
+      },
+      "banc": {
+        "seeds": [
+          "mechanosensory"
+        ],
+        "vnc_motor": 0.0,
+        "descending": 0.0,
+        "walks": false
+      },
+      "ok": true
+    },
+    {
+      "condition": "walk_plus_ball",
+      "seeds": [
+        "vnc_sensory",
+        "mechanosensory"
+      ],
+      "body": "legs + object",
+      "allow": true,
+      "male": {
+        "seeds": [
+          "vnc_sensory",
+          "mechanosensory"
+        ],
+        "vnc_motor": 10.740180804833889,
+        "descending": 13.890959775127437,
+        "walks": true
+      },
+      "banc": {
+        "seeds": [
+          "vnc_sensory",
+          "mechanosensory"
+        ],
+        "vnc_motor": 10.161924095410841,
+        "descending": 6.4801374784561725,
+        "walks": true
+      },
+      "ok": true
+    },
+    {
+      "condition": "odor_contrast",
+      "seeds": [
+        "olfactory"
+      ],
+      "body": "olfactory ORN (must NOT walk)",
+      "allow": true,
+      "male": {
+        "seeds": [
+          "olfactory"
+        ],
+        "vnc_motor": 0.0005710214203076791,
+        "descending": 0.5732455413367353,
+        "walks": false
+      },
+      "banc": {
+        "seeds": [
+          "olfactory"
+        ],
+        "vnc_motor": 0.0007640599289252,
+        "descending": 0.9603830401468656,
+        "walks": false
+      },
+      "ok": true
+    },
+    {
+      "condition": "courtship_DENIED",
+      "seeds": [],
+      "body": "fru/courtship observer",
+      "allow": false,
+      "male": {
+        "vnc_motor": 0.0,
+        "descending": 0.0,
+        "walks": false,
+        "blocked": true
+      },
+      "banc": {
+        "vnc_motor": 0.0,
+        "descending": 0.0,
+        "walks": false,
+        "blocked": true
+      },
+      "ok": true
+    },
+    {
+      "condition": "aggression_DENIED",
+      "seeds": [],
+      "body": "aggression observer",
+      "allow": false,
+      "male": {
+        "vnc_motor": 0.0,
+        "descending": 0.0,
+        "walks": false,
+        "blocked": true
+      },
+      "banc": {
+        "vnc_motor": 0.0,
+        "descending": 0.0,
+        "walks": false,
+        "blocked": true
+      },
+      "ok": true
+    }
+  ],
+  "brain_print_ok": true,
+  "closed_loop_trials": [
+    {
+      "id": "Fly01_T001",
+      "n_frames": 333,
+      "tarsus_gate": 0.5439336576513865,
+      "antenna_gate": 0.019160389742970768,
+      "n_walk_frames": 130,
+      "n_rest_frames": 203,
+      "n_vnc_sensory_on": 57,
+      "n_JO_on": 82,
+      "n_ball_forelimb": 9,
+      "seed_histogram": {
+        "JO": 73,
+        "rest": 203,
+        "vnc_sensory": 40,
+        "vnc_sensory+mechanosensory": 8,
+        "vnc_sensory+JO": 8,
+        "vnc_sensory+JO+mechanosensory": 1
+      },
+      "turns": {
+        "left": 29,
+        "right": 28,
+        "superpose": 73
+      },
+      "maze_resource_left_reached": true,
+      "final_lane": 1,
+      "per_leg_mean_speed": {
+        "R1": 0.07764441294705582,
+        "R2": 0.06554963610598286,
+        "R3": 0.05491041400900979,
+        "L1": 0.07050598646388262,
+        "L2": 0.07646666165367026,
+        "L3": 0.0495587992309465
+      },
+      "whole_clip_is_walking": true
+    },
+    {
+      "id": "Fly01_T002",
+      "n_frames": 347,
+      "tarsus_gate": 0.4050497189805883,
+      "antenna_gate": 0.015487263016600155,
+      "n_walk_frames": 110,
+      "n_rest_frames": 237,
+      "n_vnc_sensory_on": 61,
+      "n_JO_on": 61,
+      "n_ball_forelimb": 15,
+      "seed_histogram": {
+        "rest": 237,
+        "JO": 49,
+        "vnc_sensory": 35,
+        "vnc_sensory+mechanosensory": 14,
+        "vnc_sensory+JO": 11,
+        "vnc_sensory+JO+mechanosensory": 1
+      },
+      "turns": {
+        "left": 35,
+        "right": 26,
+        "superpose": 49
+      },
+      "maze_resource_left_reached": true,
+      "final_lane": 1,
+      "per_leg_mean_speed": {
+        "R1": 0.06307822437962549,
+        "R2": 0.05076706895506539,
+        "R3": 0.03465601814987096,
+        "L1": 0.057619174659321225,
+        "L2": 0.06567293406690665,
+        "L3": 0.04369517046122333
+      },
+      "whole_clip_is_walking": true
+    },
+    {
+      "id": "Fly02_T002",
+      "n_frames": 337,
+      "tarsus_gate": 0.642133927171511,
+      "antenna_gate": 0.01180990104004114,
+      "n_walk_frames": 99,
+      "n_rest_frames": 238,
+      "n_vnc_sensory_on": 54,
+      "n_JO_on": 57,
+      "n_ball_forelimb": 5,
+      "seed_histogram": {
+        "JO": 45,
+        "rest": 238,
+        "vnc_sensory": 39,
+        "vnc_sensory+mechanosensory": 3,
+        "vnc_sensory+JO": 10,
+        "vnc_sensory+JO+mechanosensory": 2
+      },
+      "turns": {
+        "left": 16,
+        "right": 28,
+        "superpose": 55
+      },
+      "maze_resource_left_reached": false,
+      "final_lane": -1,
+      "per_leg_mean_speed": {
+        "R1": 0.08159548457514736,
+        "R2": 0.10168096828861208,
+        "R3": 0.08261321203378622,
+        "L1": 0.08853613759113647,
+        "L2": 0.07170388113140833,
+        "L3": 0.0713282417278607
+      },
+      "whole_clip_is_walking": true
+    }
+  ],
+  "n_trials": 3,
+  "n_resource_reached": 2,
+  "maze": {
+    "stem": 8.0,
+    "arm": 8.0,
+    "resource": "left",
+    "choice": "left/right tarsus consensus trit; 0 = no collapse"
+  },
+  "ball_rule": "forelimb (R1+L1) share of tarsus energy \u2265 1/\u03c6 \u2192 mechanosensory seed",
+  "next_not_this_file": "Language, coding, LLM-style tokens wait until this baseline holds. Teach by adding measured observers, not trained weights."
+}
