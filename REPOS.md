@@ -1,6 +1,8 @@
 # GitHub repositories this fly pack sits on
 
-Same pin **AEB2AD** as [FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean). This folder is a working copy of fly + genetics findings, not a new theory. Previous pack pin was D1D38A (Genetics decimal-knob edition).
+This pack: **[bill-and-ted-fly-adventures](https://github.com/dappalumbo91/bill-and-ted-fly-adventures)** (Apache-2.0).
+
+Same pin **AEB2AD** as [FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean). Working copy of fly + genetics findings, not a new theory. Previous pack pin was D1D38A (Genetics decimal-knob edition).
 
 ## Required for this pack
 

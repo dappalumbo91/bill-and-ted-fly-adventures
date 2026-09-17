@@ -91,3 +91,5 @@ Balanced ternary ALU (trit + trit carry). Add/sub/mul/compare. Maze word problem
 `python scripts/leftover_margin.py` → Lean **5/5 green** (2 wrong-object retired). Predicted VNC sides **9/14** in `data/vnc_side_predicted.json`.
 
 `python scripts/predicted_side_hops.py` → predicted L/R as hop observers. R ipsi **−0.84**; L sign +; leftover five ~0. Not EM.
+
+Bill-0 freeze → TED-1 (predicted observers) → **Bill-1**. Ledger: `Bill and Ted fly adventures/`. GitHub: https://github.com/dappalumbo91/bill-and-ted-fly-adventures (Apache-2.0).
