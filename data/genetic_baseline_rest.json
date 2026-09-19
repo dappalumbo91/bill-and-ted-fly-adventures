@@ -1,0 +1,676 @@
+{
+  "adventure": 1,
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "n": 47,
+  "n_ok": 47,
+  "fail": [],
+  "genes": [
+    {
+      "symbol": "ninaE",
+      "sits_on": "see L5 / photoreceptor",
+      "job": "Rh1 rhodopsin",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "ninaE",
+        "uniprot": "P06002",
+        "aa": 373,
+        "flybase": "FBgn0002940",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "trp",
+      "sits_on": "see / phototransduction",
+      "job": "TRP channel",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "trp",
+        "uniprot": "P19334",
+        "aa": 1275,
+        "flybase": "FBgn0003861",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "trpl",
+      "sits_on": "see / phototransduction",
+      "job": "TRP-like",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "trpl",
+        "uniprot": "P48994",
+        "aa": 1124,
+        "flybase": "FBgn0005614",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "norpA",
+      "sits_on": "see / phototransduction",
+      "job": "PLC-\u03b2",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "norpA",
+        "uniprot": "P13217",
+        "aa": 1095,
+        "flybase": "FBgn0262738",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Galphaq",
+      "sits_on": "see / phototransduction",
+      "job": "Gq alpha",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Galphaq",
+        "uniprot": "P23625",
+        "aa": 353,
+        "flybase": "FBgn0004435",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "arr2",
+      "sits_on": "see / phototransduction",
+      "job": "arrestin-2",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Arr2",
+        "uniprot": "P19107",
+        "aa": 401,
+        "flybase": "FBgn0000121",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Orco",
+      "sits_on": "olfactory leftover LN",
+      "job": "odorant co-receptor",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Orco",
+        "uniprot": "Q9VNB5",
+        "aa": 486,
+        "flybase": "FBgn0037324",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Ir8a",
+      "sits_on": "olfactory leftover",
+      "job": "IR co-receptor",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Ir8a",
+        "uniprot": "Q9W365",
+        "aa": 936,
+        "flybase": "FBgn0052704",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Ir25a",
+      "sits_on": "olfactory leftover",
+      "job": "IR co-receptor",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Ir25a",
+        "uniprot": "E9NA96",
+        "aa": 947,
+        "flybase": "FBgn0031634",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Ir76b",
+      "sits_on": "olfactory leftover",
+      "job": "IR co-receptor",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Ir76b",
+        "uniprot": "Q9VW78",
+        "aa": 636,
+        "flybase": "FBgn0036937",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Gr5a",
+      "sits_on": "taste leftover (not vnc_motor)",
+      "job": "sugar GR",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Gr5a",
+        "uniprot": "Q9W497",
+        "aa": 444,
+        "flybase": "FBgn0003747",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Gr66a",
+      "sits_on": "taste leftover",
+      "job": "bitter GR",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Gr66a",
+        "uniprot": "Q9VSH2",
+        "aa": 527,
+        "flybase": "FBgn0035870",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "piezo",
+      "sits_on": "mechanosensory",
+      "job": "Piezo",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Piezo",
+        "uniprot": "M9MSG8",
+        "aa": 2551,
+        "flybase": "FBgn0264953",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Tmc",
+      "sits_on": "mechanosensory / JO",
+      "job": "transmembrane channel-like",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Tmc",
+        "uniprot": "A0A0U1QT59",
+        "aa": 2036,
+        "flybase": "FBgn0267796",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "nompA",
+      "sits_on": "JO / scolopale",
+      "job": "NOMPA",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "nompA",
+        "uniprot": "A0A0B4LF37",
+        "aa": 1306,
+        "flybase": "FBgn0016047",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Dop2R",
+      "sits_on": "DA volume leftover",
+      "job": "D2-like",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Dop2R",
+        "uniprot": "Q8IS44",
+        "aa": 905,
+        "flybase": "FBgn0053517",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "DopEcR",
+      "sits_on": "DA volume leftover",
+      "job": "DA/ecdysone GPCR",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "DopEcR",
+        "uniprot": "Q9VZD1",
+        "aa": 322,
+        "flybase": "FBgn0035538",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Octbeta1R",
+      "sits_on": "OA volume leftover",
+      "job": "OA \u03b21",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Octbeta1R",
+        "uniprot": "Q9VCZ3",
+        "aa": 508,
+        "flybase": "FBgn0038980",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Octbeta2R",
+      "sits_on": "OA volume leftover",
+      "job": "OA \u03b22",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Octbeta2R",
+        "uniprot": "Q4LBB9",
+        "aa": 536,
+        "flybase": "FBgn0038063",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Octbeta3R",
+      "sits_on": "OA volume leftover",
+      "job": "OA \u03b23",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Octbeta3R",
+        "uniprot": "Q4LBB6",
+        "aa": 1256,
+        "flybase": "FBgn0250910",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "5-HT1B",
+      "sits_on": "5HT signaling leftover",
+      "job": "5-HT1B",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "5-HT1B",
+        "uniprot": "P28286",
+        "aa": 617,
+        "flybase": "FBgn0263116",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "5-HT2A",
+      "sits_on": "5HT signaling leftover",
+      "job": "5-HT2A",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "5-HT2A",
+        "uniprot": "Q8IPN2",
+        "aa": 930,
+        "flybase": "FBgn0087012",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "5-HT2B",
+      "sits_on": "5HT signaling leftover",
+      "job": "5-HT2B",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "5-HT2B",
+        "uniprot": "A0A0B4KFU6",
+        "aa": 947,
+        "flybase": "FBgn0261929",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "5-HT7",
+      "sits_on": "5HT signaling leftover",
+      "job": "5-HT7",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "5-HT7",
+        "uniprot": "P20905",
+        "aa": 564,
+        "flybase": "FBgn0004573",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Lcch3",
+      "sits_on": "GABA",
+      "job": "GABA-A like subunit",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Lcch3",
+        "uniprot": "Q08832",
+        "aa": 496,
+        "flybase": "FBgn0010240",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Grd",
+      "sits_on": "GABA",
+      "job": "GABA-A like subunit",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Grd",
+        "uniprot": "Q24352",
+        "aa": 686,
+        "flybase": "FBgn0001134",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "GABA-B-R1",
+      "sits_on": "GABA",
+      "job": "GABA-B R1",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "GABA-B-R1",
+        "uniprot": "Q9V3Q9",
+        "aa": 841,
+        "flybase": "FBgn0260446",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "GABA-B-R2",
+      "sits_on": "GABA",
+      "job": "GABA-B R2",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "GABA-B-R2",
+        "uniprot": "Q8IN24",
+        "aa": 1220,
+        "flybase": "FBgn0027575",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "GluRIIB",
+      "sits_on": "NMJ glutamate",
+      "job": "iGluR IIB",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "GluRIIB",
+        "uniprot": "Q9VMP3",
+        "aa": 913,
+        "flybase": "FBgn0020429",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "GluRIIC",
+      "sits_on": "NMJ glutamate",
+      "job": "iGluR IIC",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "GluRIIC",
+        "uniprot": "Q9VPV3",
+        "aa": 940,
+        "flybase": "FBgn0046113",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "mGluR",
+      "sits_on": "glutamate",
+      "job": "metabotropic GluR",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "mGluR",
+        "uniprot": "P91685",
+        "aa": 976,
+        "flybase": "FBgn0019985",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Nmdar1",
+      "sits_on": "glutamate / Zig NMDA analog",
+      "job": "NMDA R1",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Nmdar1",
+        "uniprot": "Q24418",
+        "aa": 997,
+        "flybase": "FBgn0010399",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Nmdar2",
+      "sits_on": "glutamate / Zig NMDA analog",
+      "job": "NMDA R2",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Nmdar2",
+        "uniprot": "E1JJC6",
+        "aa": 941,
+        "flybase": "FBgn0053513",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "ChT",
+      "sits_on": "ACh",
+      "job": "choline transporter",
+      "accession": "Q9VE46",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "ChT",
+        "uniprot": "Q9VE46",
+        "aa": 614,
+        "flybase": "FBgn0038641",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Ace",
+      "sits_on": "ACh",
+      "job": "acetylcholinesterase",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Ace",
+        "uniprot": "P07140",
+        "aa": 649,
+        "flybase": "FBgn0000024",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "SIFaR",
+      "sits_on": "courtship DENY default",
+      "job": "SIFamide receptor",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "SIFaR",
+        "uniprot": "Q8IN35",
+        "aa": 758,
+        "flybase": "FBgn0038880",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "sNPFR",
+      "sits_on": "feeding leftover",
+      "job": "sNPF receptor",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "sNPF-R",
+        "uniprot": "Q9VW75",
+        "aa": 600,
+        "flybase": "FBgn0036934",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Dh31-R",
+      "sits_on": "clock leftover",
+      "job": "Dh31 receptor",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Dh31-R",
+        "uniprot": "A1Z9B7",
+        "aa": 443,
+        "flybase": "FBgn0052843",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "AstA-R1",
+      "sits_on": "feeding leftover",
+      "job": "AstA receptor 1",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "AstA-R1",
+        "uniprot": "Q9U721",
+        "aa": 394,
+        "flybase": "FBgn0266429",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "CcapR",
+      "sits_on": "ecdysis leftover",
+      "job": "CCAP receptor",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "CCAP-R",
+        "uniprot": "Q868T3",
+        "aa": 494,
+        "flybase": "FBgn0039396",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "CrzR",
+      "sits_on": "stress leftover",
+      "job": "corazonin receptor",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "CrzR",
+        "uniprot": "M9PF00",
+        "aa": 644,
+        "flybase": "FBgn0036278",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "cry",
+      "sits_on": "sleep leftover",
+      "job": "cryptochrome",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "cry",
+        "uniprot": "O77059",
+        "aa": 542,
+        "flybase": "FBgn0025680",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "ebony",
+      "sits_on": "DA volume leftover",
+      "job": "N-\u03b2-alanyldopamine synthase",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "e",
+        "uniprot": "O76858",
+        "aa": 879,
+        "flybase": "FBgn0000527",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "tan",
+      "sits_on": "DA volume leftover",
+      "job": "N-\u03b2-alanyldopamine hydrolase",
+      "accession": "Q9W369",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "t",
+        "uniprot": "Q9W369",
+        "aa": 387,
+        "flybase": "FBgn0086367",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Inx3",
+      "sits_on": "consensus gap analog",
+      "job": "innexin-3",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Inx3",
+        "uniprot": "Q9VAS7",
+        "aa": 395,
+        "flybase": "FBgn0265274",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "shaw",
+      "sits_on": "spike K",
+      "job": "Shaw K channel",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Shaw",
+        "uniprot": "P17972",
+        "aa": 498,
+        "flybase": "FBgn0003386",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "eag",
+      "sits_on": "spike K",
+      "job": "ether-a-go-go K",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "eag",
+        "uniprot": "Q02280",
+        "aa": 1174,
+        "flybase": "FBgn0000535",
+        "reviewed": true
+      },
+      "ok": true
+    }
+  ],
+  "orco_note": null,
+  "olfactory_hop2_vnc_motor": 0.0005710214203076791,
+  "orco_job_leftover": true,
+  "overall_ok": true,
+  "prior_seated": 58,
+  "this_pass": 47
+}

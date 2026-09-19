@@ -88,6 +88,7 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | Adventure 1 fold (APIs + Genetics + Zig) | **closed** | 9/9 live enzymes; Biochem/Neuro look-split **0.494%** GREEN; DA leftover = Zig MB-modulate |
 | Genetic interactions | **closed 17/17** | receptors, VMAT/VAChT/VGAT, DAT/SerT, shakB/ogre/Inx2, para/Sh; `data/genetic_interactions.json` |
 | Peptides + leftover genes | **closed 28/28** | Pdf/NPF/SIFa/clock/fru/dsx/nAChR extras; LNv hop leftover 0.28; `data/peptide_leftovers.json` |
+| Genetic baseline rest | **closed 47/47** | photo, Orco/IR, extra DA/OA/5HT/GABA/Glu receptors, peptide Rs, ChT, tan; `data/genetic_baseline_rest.json` |
 
 ---
 

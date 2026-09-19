@@ -57,6 +57,7 @@ ADV1 = ROOT / "data" / "adventure1.json"
 FOLD = ROOT / "data" / "adventure1_fold.json"
 GINT = ROOT / "data" / "genetic_interactions.json"
 PEP = ROOT / "data" / "peptide_leftovers.json"
+GBR = ROOT / "data" / "genetic_baseline_rest.json"
 
 
 def fail(msg: str) -> None:
@@ -408,6 +409,10 @@ def test_identity_phot1_develop() -> None:
         f"peptide_leftovers {pep['n_ok']}/{pep['n']}  "
         f"LNv leftover motor={((ln.get('hop2') or {}).get('vnc_motor'))}"
     )
+    gbr = json.loads(GBR.read_text(encoding="utf-8"))
+    if not gbr.get("overall_ok") or int(gbr.get("n_ok") or 0) < 47:
+        fail(f"genetic_baseline_rest {gbr.get('fail')}")
+    ok(f"genetic_baseline_rest {gbr['n_ok']}/{gbr['n']}  Orco leftover olf={float(gbr.get('olfactory_hop2_vnc_motor') or 0):.4f}")
 
 
 def test_counts() -> None:

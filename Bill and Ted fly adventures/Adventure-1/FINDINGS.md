@@ -77,3 +77,8 @@ Live **17/17**. Synthesis already seated. Innexins → consensus analog (no EM g
 Live **28/28**. Pdf/NPF/SIFa/clock/fru/dsx/nAChR extras/EAAT1/Gat/TrpA1.
 
 LNv hop n=20 vnc_motor=0.2842003448420871 leftover=True
+
+
+## Genetic baseline rest
+
+This pass **47/47** live. Fail=[]. Orco job leftover via olfactory hop-2 vnc_motor=0.0006.
