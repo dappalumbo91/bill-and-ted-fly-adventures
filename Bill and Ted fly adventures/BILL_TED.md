@@ -25,6 +25,8 @@ Pin **AEB2AD**. Law \(S=K(T_1+T_2+T_3)\). Residual hops on measured synapses. Ov
 | **Bill-0** | Pack freeze at predicted-side solve, AEB2AD, leftover_margin 5/5 | baseline |
 | **TED-1** | 9 predicted VNC sides as hop observers | ipsi_pair; R overlay −0.84; L sign + | → **Bill-1** |
 | **Bill-1** | Bill-0 + predicted observers (labels still *predicted*, not EM) | promoted from TED-1 |
+| **TED-2 / Adventure 1** | DA/5HT/OA hops as volume observers; gap analog; snapshot; off-domain bound | volume leftover vs VNC walk → **Bill-2** |
+| **Bill-2** | current | neuromod is observer/volume, not step micro-management |
 
 Scripts: `python scripts/bill_ted.py freeze` · `python scripts/bill_ted.py ted-1` · `python scripts/bill_ted.py ledger`
 

@@ -53,6 +53,7 @@ SOLVE = ROOT / "data" / "leftover_solve.json"
 MARGIN = ROOT / "data" / "leftover_margin.json"
 PSIDE = ROOT / "data" / "predicted_side_hops.json"
 BTLED = ROOT / "Bill and Ted fly adventures" / "ledger.json"
+ADV1 = ROOT / "data" / "adventure1.json"
 
 
 def fail(msg: str) -> None:
@@ -376,9 +377,13 @@ def test_identity_phot1_develop() -> None:
         f"R={ps.get('n_predicted_R')} leftover={ps.get('n_leftover')}"
     )
     bt = json.loads(BTLED.read_text(encoding="utf-8"))
-    if bt.get("current_bill") not in ("Bill-0", "Bill-1"):
+    if bt.get("current_bill") not in ("Bill-0", "Bill-1", "Bill-2"):
         fail(f"bill_ted current {bt.get('current_bill')}")
     ok(f"bill_ted current={bt.get('current_bill')} teds={bt.get('teds')}")
+    a1 = json.loads(ADV1.read_text(encoding="utf-8"))
+    if not a1.get("overall_ok"):
+        fail("adventure1")
+    ok("adventure1 neuromod volume leftover vs VNC walk")
 
 
 def test_counts() -> None:

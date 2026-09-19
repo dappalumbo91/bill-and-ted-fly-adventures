@@ -3,18 +3,25 @@
   "free_parameters": 0,
   "bills": [
     "Bill-0",
-    "Bill-1"
+    "Bill-1",
+    "Bill-2"
   ],
   "teds": [
-    "TED-1"
+    "TED-1",
+    "TED-2"
   ],
   "promotions": [
     {
       "from": "TED-1",
       "to": "Bill-1",
       "tree": "1E7A1453BE0249F1FFD604AC3D4EB42617C5F6CE32CB30C414A57B9AF63135E5"
+    },
+    {
+      "from": "TED-2",
+      "to": "Bill-2",
+      "tree": "39E0BE59280D4C8023564AED4BC858482149A41E7B9853296ECBB859FDE7B2BC"
     }
   ],
-  "current_bill": "Bill-1",
+  "current_bill": "Bill-2",
   "last_tree_sha256": "638BF99BB193B8407C2047B7AFC9BE2C6B126A8828AF402D870A1AF121734081"
 }

@@ -90,6 +90,8 @@ python scripts/leftover_map.py              # overlay/hubs/unlabeled/missing dum
 python scripts/leftover_solve.py --hops     # FSOT join: side vote, TBD hops, birth prior
 python scripts/leftover_margin.py           # Lean 0.5% / 99.5% gates on those solves
 python scripts/predicted_side_hops.py       # 9 predicted VNC sides as hop observers
+python scripts/adventure1.py                # Adventure 1: neuromod volume vs walk
+python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 
 `--live` re-reads `D:\FlyWire_Connectome` and checks neuron/edge/GABA counts match the frozen boots (165,122 / 25,563,197 / 22,055). Hop-2 split stays JO/VNC on, olfactory off.

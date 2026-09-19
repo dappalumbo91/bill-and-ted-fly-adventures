@@ -1,0 +1,11 @@
+{
+  "id": "TED-2",
+  "role": "ted",
+  "adventure": 1,
+  "change": "DA/5HT/OA/histamine/GABA as hop observers (volume, not extra edges)",
+  "vs_bill": "Bill-1 VNC walk 10.74",
+  "volume_weaker_than_vnc_walk": true,
+  "promotes": true,
+  "promote_to": "Bill-2",
+  "why": "Neuromod hop-2 motor weaker than VNC walk/\u03c6. Volume leftover, not step micro-management. Gap analog remains consensus trit (no EM list)."
+}

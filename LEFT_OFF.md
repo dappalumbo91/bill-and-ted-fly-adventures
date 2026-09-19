@@ -93,3 +93,5 @@ Balanced ternary ALU (trit + trit carry). Add/sub/mul/compare. Maze word problem
 `python scripts/predicted_side_hops.py` → predicted L/R as hop observers. R ipsi **−0.84**; L sign +; leftover five ~0. Not EM.
 
 Bill-0 freeze → TED-1 (predicted observers) → **Bill-1**. Ledger: `Bill and Ted fly adventures/`. GitHub: https://github.com/dappalumbo91/bill-and-ted-fly-adventures (Apache-2.0).
+
+**Adventure 1 / TED-2 → Bill-2:** neuromod hops. DA 0.041 leftover, OA 0.80 leftover, 5HT 4.70 < VNC walk/φ. Volume = observer, not extra edges. Gap junctions: consensus analog (no EM list). Off-domain text not mapped onto \(W\). `Bill and Ted fly adventures/Adventure-1/FINDINGS.md`

@@ -1,0 +1,13 @@
+{
+  "id": "TED-2",
+  "overall_ok": true,
+  "volume_weaker_than_vnc_walk": true,
+  "worked": [
+    "DA/5HT/OA hop-2 vnc_motor weaker than VNC walk / \u03c6 (volume leftover)",
+    "GABA remains the signed brake on measured W",
+    "off-domain text not forced onto the graph"
+  ],
+  "did_not": [
+    "no EM gap-junction list \u2014 consensus analog only"
+  ]
+}

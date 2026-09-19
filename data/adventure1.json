@@ -1,0 +1,120 @@
+{
+  "adventure": 1,
+  "ted": "TED-2",
+  "pin": "AEB2AD",
+  "residual_Biochemistry": 1.284069161007025,
+  "free_parameters": 0,
+  "title": "Neuromod volume, gap analog, snapshot, off-domain bound",
+  "positives_mapped": {
+    "decentralized_motor": "VNC sensory hop-2 vnc_motor 10.74; JO descending 24.21 is high-level. Local modules in the cord; brain issues direction. Matches the article.",
+    "sensory_motor_loops": "L5 vision: legs off, descending 1.92. DNp01 escape desc 15.77. Not a trained voltage model.",
+    "not_ann_blueprint": "We do not prune a dense ANN onto FlyWire. W is measured. 0 free params."
+  },
+  "shortcomings_fsot": {
+    "neuromod_volume": "DA/5HT/OA are observers (T1 / overlay), not new edges. Volume transmission = leftover of chemical W. No invented octopamine rewires.",
+    "gap_junctions": "EM misses electrical synapses. FSOT analog is consensus trit (bidirectional: a if a=b else 0) \u2014 speed without a fake gap list.",
+    "single_snapshot": "Male + BANC + hemibrain + larva are four measured graphs, not one insect. Predicted sides / TBD hops are adaptation, labeled predicted.",
+    "off_domain_text": "Topology is low-dimensional sensory-motor. Trit ALU + overlay leftover IS the bound. We do not map email classification onto W.",
+    "simulation_collapse": "Inf-norm + GABA sign + observer off = no hyper-excited silent trap from unconstrained voltage. Rest is leftover, not a stuck attractor."
+  },
+  "neuromod_hops": [
+    {
+      "nt": "dopamine",
+      "n_seed": 392,
+      "hop2": {
+        "vnc_motor": 0.041395377371460616,
+        "vnc_motor_L": 0.0203359696254555,
+        "vnc_motor_R": 0.02105940774600507,
+        "vnc_motor_other": 0.0,
+        "ipsi_bias": -0.017476302101085753
+      },
+      "walks": false,
+      "volume_leftover": true
+    },
+    {
+      "nt": "serotonin",
+      "n_seed": 48,
+      "hop2": {
+        "vnc_motor": 4.695936959278612,
+        "vnc_motor_L": 2.395189888157668,
+        "vnc_motor_R": 2.3007470711209512,
+        "vnc_motor_other": 0.0,
+        "ipsi_bias": 0.02011160240345409
+      },
+      "walks": true,
+      "volume_leftover": false
+    },
+    {
+      "nt": "octopamine",
+      "n_seed": 101,
+      "hop2": {
+        "vnc_motor": 0.799930297424188,
+        "vnc_motor_L": 0.4071534400438449,
+        "vnc_motor_R": 0.39277685738034246,
+        "vnc_motor_other": 0.0,
+        "ipsi_bias": 0.017972294223356382
+      },
+      "walks": false,
+      "volume_leftover": true
+    },
+    {
+      "nt": "histamine",
+      "n_seed": 5910,
+      "hop2": {
+        "vnc_motor": 2.9700420343458376,
+        "vnc_motor_L": 1.5956024113929559,
+        "vnc_motor_R": 1.3744396229528875,
+        "vnc_motor_other": 0.0,
+        "ipsi_bias": 0.0744645314384264
+      },
+      "walks": true,
+      "volume_leftover": false
+    },
+    {
+      "nt": "gaba",
+      "n_seed": 22055,
+      "hop2": {
+        "vnc_motor": 28.747975630228993,
+        "vnc_motor_L": 15.144939303617297,
+        "vnc_motor_R": 13.603036326611669,
+        "vnc_motor_other": 0.0,
+        "ipsi_bias": 0.053635184502669436
+      },
+      "walks": true,
+      "volume_leftover": false
+    }
+  ],
+  "volume_weaker_than_vnc_walk": true,
+  "snapshot": {
+    "male_vnc_sensory": 10.740180804833889,
+    "banc_vnc_sensory": 10.161924095410841,
+    "male_JO": 7.772920928859144,
+    "banc_JO": 6.636908411047972,
+    "male_olf": 0.0005710214203076791,
+    "banc_olf": 0.0007640599289252,
+    "flywire_n": 139248,
+    "flywire_nt": {
+      "acetylcholine": 86193,
+      "glutamate": 24875,
+      "gaba": 19171,
+      "dopamine": 5909,
+      "serotonin": 2282,
+      "unlabeled": 602,
+      "octopamine": 216
+    }
+  },
+  "flywire_modulators": {
+    "dopamine": 5909,
+    "serotonin": 2282,
+    "octopamine": 216
+  },
+  "worked": [
+    "DA/5HT/OA hop-2 vnc_motor weaker than VNC walk / \u03c6 (volume leftover)",
+    "GABA remains the signed brake on measured W",
+    "off-domain text not forced onto the graph"
+  ],
+  "did_not": [
+    "no EM gap-junction list \u2014 consensus analog only"
+  ],
+  "overall_ok": true
+}

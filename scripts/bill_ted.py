@@ -39,6 +39,8 @@ def freeze_paths() -> list[Path]:
         ROOT / "RUNNING.md",
         BT / "BILL_TED.md",
         BT / "TED-1" / "EXPERIMENT.json",
+        BT / "TED-2" / "EXPERIMENT.json",
+        BT / "Adventure-1" / "FINDINGS.md",
     ]:
         if p.is_file():
             paths.append(p)
@@ -125,6 +127,36 @@ def main(argv: list[str] | None = None) -> int:
         led["current_bill"] = bill_id
         led["last_tree_sha256"] = man["tree_sha256"]
         print(f"  froze {bill_id} tree={man['tree_sha256'][:12]} n={man['n_files']}")
+    elif cmd == "ted-2":
+        a1 = json.loads((ROOT / "data" / "adventure1.json").read_text(encoding="utf-8"))
+        win = bool(a1.get("overall_ok") and a1.get("volume_weaker_than_vnc_walk"))
+        exp = {
+            "id": "TED-2",
+            "role": "ted",
+            "adventure": 1,
+            "change": "DA/5HT/OA/histamine/GABA as hop observers (volume, not extra edges)",
+            "vs_bill": "Bill-1 VNC walk 10.74",
+            "volume_weaker_than_vnc_walk": a1.get("volume_weaker_than_vnc_walk"),
+            "promotes": win,
+            "promote_to": "Bill-2" if win else None,
+            "why": (
+                "Neuromod hop-2 motor weaker than VNC walk/φ. Volume leftover, not "
+                "step micro-management. Gap analog remains consensus trit (no EM list)."
+            ),
+        }
+        dest = BT / "TED-2"
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / "EXPERIMENT.json").write_text(json.dumps(exp, indent=2), encoding="utf-8")
+        if "TED-2" not in led["teds"]:
+            led["teds"].append("TED-2")
+        print(f"  TED-2 promotes={win}")
+        if win:
+            man = freeze("Bill-2")
+            if "Bill-2" not in led["bills"]:
+                led["bills"].append("Bill-2")
+            led["promotions"].append({"from": "TED-2", "to": "Bill-2", "tree": man["tree_sha256"]})
+            led["current_bill"] = "Bill-2"
+            print(f"  promoted Bill-2 tree={man['tree_sha256'][:12]}")
     elif cmd == "ted-1":
         exp = ted1()
         if "TED-1" not in led["teds"]:
@@ -142,7 +174,7 @@ def main(argv: list[str] | None = None) -> int:
     elif cmd == "ledger":
         print(json.dumps({k: led[k] for k in led if k != "files"}, indent=2)[:2000])
     else:
-        print("usage: freeze [Bill-0] | ted-1 | ledger")
+        print("usage: freeze [Bill-0] | ted-1 | ted-2 | ledger")
         return 1
     LEDGER.write_text(json.dumps(led, indent=2), encoding="utf-8")
     print(f"  wrote {LEDGER}")
