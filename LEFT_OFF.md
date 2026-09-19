@@ -24,7 +24,7 @@ Named jobs that exist as strings in larva **and** adult: KC, MBON, DN-VNC, ascen
 
 `docs/NEURAL_GUARDRAILS.md` · `data/neural_guardrails.json`
 
-Default human-facing seeds: JO / VNC sensory / GABA **on**. Courtship, aggression, *fru*/*dsx* **off** unless that is the task. Consensus trit = agree or superpose. Overlay cut \(1/\varphi\). Do not delete types. Do not call olfactory leftover a thought. New brain regions = residual on **measured** classes (Kenyon), not invented axons.
+Default human-facing seeds: JO / VNC sensory / GABA **on**. Courtship, aggression, *fru*/*dsx* **off** (\(T_1\)): this pack is for human-facing AI; that family opposes human safety; labels stay measured. Consensus trit = agree or superpose. Overlay cut \(1/\varphi\). Do not delete types. Do not call olfactory leftover a thought. New brain regions = residual on **measured** classes (Kenyon), not invented axons.
 
 ## Still-opens closed this round
 
@@ -98,4 +98,4 @@ Bill-0 freeze → TED-1 (predicted observers) → **Bill-1**. Ledger: `Bill and 
 
 Fold: live UniProt **9/9** biosynthetic enzymes sit on NT jobs. Biochem vs Neuro |S| look-split **0.494% ≤ 0.5%**. Zig DA→MB: fly DA motor leftover is the **correct application** (not a walk seed). Pin edition: Zig D1D38A, pack AEB2AD — same law, hops stay AEB2AD.
 
-Adventure 1 extras: Ledger B on dump N, GABA n, CRC transmitter AA — **17/17** green, median **0.076%**. Hops already r=1+\|S\|P_NEW. Genetic baseline + FSOT apply on those objects is in.
+Adventure 1 extras: Ledger B on dump N, GABA n, CRC transmitter AA — **17/17** green, median **0.076%**. Blueprint through FSOT: **120/120** genes (hop residual / overlay / trit / DENY / excitatory \(W\) / effector); pathways **5/5** (F02 precursor → enzyme → \(a\leftarrow rWa\)). Orco leftover 0.0006. fru/dsx/courtship/aggression DENY: \(T_1\) off — this pack is for human-facing AI; that family opposes human safety; labels stay. Hops already r=1+\|S\|P_NEW.

@@ -133,10 +133,12 @@
   ],
   "two_animal_function_ok": true,
   "finish_extras": [
-    "Adventure 1: genetic baseline + accuracy classes. Orco is the olfactory co-receptor; leftover is the job.",
-    "Dump identity 0% is the measured file. Independent: look-split 0.494%; side vote 99.85%; DA/OA/LNv/olf leftover; JO/VNC walk; two-animal function 3/3.",
-    "Male vs BANC magnitude (~5% VNC motor) is two animals (sex/cut), not one measured m under the 0.5% scalar gate.",
+    "Adventure 1: genetic baseline + accuracy classes. Orco leftover is the olfactory residual hop.",
+    "Dump identity 0% is the measured W the hops use. Independent: look-split, side vote, leftover, two-animal function.",
+    "Male vs BANC magnitude is two animals (sex/cut), not one measured m under the 0.5% scalar gate.",
     "Zig pin D1D38A vs pack AEB2AD: fold by function; do not mix hashes.",
+    "Blueprint through FSOT: F02 transmitter AA, residual hops on 120 genes, pathway sim, overlay, consensus trit.",
+    "fru/dsx/courtship/aggression DENY: T1 off because this pack is for human-facing AI; that family opposes human safety. Labels stay.",
     "Next adventure: use this blueprint (pathways, plant, neuromod observer)."
   ],
   "overall_ok": true

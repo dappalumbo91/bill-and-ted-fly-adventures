@@ -36,7 +36,7 @@ A fly protein sequence is a string of these opcodes. Product Cα uses that chemi
 2. Read hop-2 `vnc_motor` / descending in `data/male_cns_boot.json` or `data/banc_connectome_boot.json`.
 3. Do not replace the edge list with a trained net if you want this number.
 
-Development (measured tags, not a synapse movie): `python scripts/develop_cycle.py --hops`. Early-born / Truman 07B light `vnc_motor`; Ito MBp3 does not. Guardrails: `docs/NEURAL_GUARDRAILS.md` — JO/VNC/GABA on, courtship/aggression/fru off.
+Development (measured tags, not a synapse movie): `python scripts/develop_cycle.py --hops`. Early-born / Truman 07B light `vnc_motor`; Ito MBp3 does not. Guardrails: `docs/NEURAL_GUARDRAILS.md` — JO/VNC/GABA on; courtship/aggression/fru/dsx off (\(T_1\); human-facing AI).
 
 Live hook (UniProt gene name + hop-2 mass on the seed class):
 

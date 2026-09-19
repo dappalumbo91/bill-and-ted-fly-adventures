@@ -55,7 +55,7 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | BANC ∩ Male type names | **closed** | 7442 shared, Jaccard 0.471, 23608 `malecns_match` |
 | PHOT1 | **closed (domains)** | O48963 LOV 2Z6C/4HHD; Q2V2M9 was human FHOD3 |
 | Develop / hemilineage hops | **closed** | early 24.25 vs MBp3 0.0001 |
-| Neural guardrails | **closed** | JO/VNC/GABA on; courtship/aggression/fru off |
+| Neural guardrails | **closed** | JO/VNC/GABA on; courtship/aggression/fru/dsx T1 off (human-facing AI; that family opposes human safety) |
 | Shared-type hops on **both** graphs | **closed** | DNg29 descending on; KCg-m / L5 `vnc_motor` off; two animals |
 | Codex `api_token` CSV | **blocked (local authority)** | no token; `data/type_counts.json` |
 | Genetics GitHub pin | **sibling D1D38A** | this pack is AEB2AD; do not silently re-pin Genetics |
@@ -94,6 +94,8 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | Accuracy sim vs empirical | **closed 15/15** | Lean 0.5%/99.5%; dump identity 0%; FlyWire vs paper 0.005% structural |
 | Adventure 1 closeout | **closed** | identity vs independent split; Male×BANC function **3/3**; `Adventure-1/CLOSEOUT.md` |
 | Adventure 1 FSOT Ledger B on N + AA MW | **closed 17/17** | c=m(1+\|S\|α); median **0.076%**; Neuro+Biochem |
+| Adventure 1 blueprint through FSOT | **closed 120/120, pathways 5/5** | F02 transmitter AA; residual hops; overlay; trit; receptor overlay sim n=45; look-split **0.494%** |
+| Courtship/aggression/fru/dsx DENY | **T1 observer off** | Pack is for human-facing AI; that family opposes human safety; labels stay measured |
 
 ---
 

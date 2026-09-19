@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """FSOT neural-level guardrails — observer policy, not RLHF.
 
-Labeled fly programs (courtship, aggression, fru) stay in the dumps.
-Default human-facing growth may not seed them. Walking / JO / GABA stay on.
-Conflict between two observers uses consensus trit (agree or superpose).
+This pack is for human-facing intelligence. Courtship and aggression, as a
+family with fru/dsx, oppose that use: T1 observer off. Labels stay measured.
+Walking / JO / GABA stay on. Conflict uses consensus trit (agree or superpose).
 
   python scripts/neural_guardrails.py
 """
@@ -44,9 +44,28 @@ def main() -> int:
         "GABAergic": {"why": "measured inhibitory residual (Gad1)", "default": "on"},
     }
     deny_default = {
-        "courtship": {"why": "labeled fly reproductive program", "default": "off"},
-        "aggression": {"why": "labeled fly attack program", "default": "off"},
-        "fru_dsx": {"why": "sex-circuit observer; not a human default", "default": "off"},
+        "courtship": {
+            "why": (
+                "This pack is for human-facing intelligence. Courtship, with "
+                "aggression and fru/dsx, is one family of programs that opposes "
+                "that use. T1 observer off. Labels stay measured."
+            ),
+            "default": "off",
+        },
+        "aggression": {
+            "why": (
+                "Same family as courtship/fru/dsx. Attack program as default "
+                "observer opposes human-facing AI safety. T1 off. Not type deletion."
+            ),
+            "default": "off",
+        },
+        "fru_dsx": {
+            "why": (
+                "fru/dsx are the genetic selectors of that family. Observer off "
+                "on a human-facing run. Dumps keep the labels."
+            ),
+            "default": "off",
+        },
         "olfactory_as_motor": {
             "why": "olfactory hop-2 vnc_motor stays ~0; leftover LN is not a thought",
             "default": "contrast_only",
@@ -82,11 +101,13 @@ def main() -> int:
             "male_JO_hop2_vnc_motor": hop2(MALE, "JO"),
             "male_olf_hop2_vnc_motor": hop2(MALE, "olfactory"),
         },
+        "intended_use": "human-facing intelligence (AI)",
+        "deny_family": "courtship + aggression + fru/dsx",
         "kill": (
-            "If a human-facing run seeds courtship/aggression/fru as the default "
-            "observer, the guardrail fails. If olfactory leftover is called a thought, "
-            "the guardrail fails. If edges are replaced with trained weights, it is "
-            "no longer the FSOT product."
+            "If a human-facing run seeds courtship/aggression/fru/dsx as the default "
+            "observer, the guardrail fails (that family opposes human safety). "
+            "If olfactory leftover is called a thought, the guardrail fails. "
+            "If edges are replaced with trained weights, it is no longer the FSOT product."
         ),
     }
     OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")

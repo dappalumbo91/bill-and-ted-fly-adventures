@@ -71,10 +71,12 @@ def main() -> int:
         and "traced neurons" not in r.get("name", "").lower()
     ]
     extra = [
-        "Adventure 1: genetic baseline + accuracy classes. Orco is the olfactory co-receptor; leftover is the job.",
-        "Dump identity 0% is the measured file. Independent: look-split 0.494%; side vote 99.85%; DA/OA/LNv/olf leftover; JO/VNC walk; two-animal function 3/3.",
-        "Male vs BANC magnitude (~5% VNC motor) is two animals (sex/cut), not one measured m under the 0.5% scalar gate.",
+        "Adventure 1: genetic baseline + accuracy classes. Orco leftover is the olfactory residual hop.",
+        "Dump identity 0% is the measured W the hops use. Independent: look-split, side vote, leftover, two-animal function.",
+        "Male vs BANC magnitude is two animals (sex/cut), not one measured m under the 0.5% scalar gate.",
         "Zig pin D1D38A vs pack AEB2AD: fold by function; do not mix hashes.",
+        "Blueprint through FSOT: F02 transmitter AA, residual hops on 120 genes, pathway sim, overlay, consensus trit.",
+        "fru/dsx/courtship/aggression DENY: T1 off because this pack is for human-facing AI; that family opposes human safety. Labels stay.",
         "Next adventure: use this blueprint (pathways, plant, neuromod observer).",
     ]
     doc = {
@@ -142,11 +144,12 @@ Same function, different insect (male vs female CNS). Magnitude is not the 0.5% 
 ## Extra to finish Adventure 1
 
 1. This closeout with error classes stated. **Done** (`overall_ok`).
-2. Orco is the olfactory co-receptor; leftover is the job.
-3. Identity 0% is dump identity. Independent rows are look-split, classifier, leftover, two-animal split.
-4. Next adventure: use this blueprint (pathways, plant, neuromod observer).
+2. Orco leftover is the olfactory residual hop (`a \\leftarrow rWa`). **Done** in `adventure1_fsot_blueprint.py`.
+3. Identity 0% is dump identity of the measured \(W\) the hops use. Independent rows are look-split, classifier, leftover, two-animal split.
+4. Blueprint through FSOT (F02 AA, 120-gene hop/overlay/trit, pathway sim). See extra finish below.
+5. Next adventure: use this blueprint (pathways, plant, neuromod observer).
 
-Math: \(S=K(T_1+T_2+T_3)\), overlay \(1/\\varphi\), consensus trit, nest look-split, GABA sign on \(W\).
+Math: \(S=K(T_1+T_2+T_3)\), \(r=1+|S|\\cdot P_{{\\mathrm{{NEW}}}}\), overlay \(1/\\varphi\), consensus trit, nest look-split, GABA sign on \(W\), F02 opcode.
 """
     MD.parent.mkdir(parents=True, exist_ok=True)
     MD.write_text(md, encoding="utf-8")

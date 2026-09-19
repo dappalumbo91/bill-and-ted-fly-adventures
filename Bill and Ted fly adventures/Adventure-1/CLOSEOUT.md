@@ -44,14 +44,26 @@ Same function, different insect (male vs female CNS). Magnitude is not the 0.5% 
 ## Extra to finish Adventure 1
 
 1. This closeout with error classes stated. **Done** (`overall_ok`).
-2. Orco is the olfactory co-receptor; leftover is the job.
-3. Identity 0% is dump identity. Independent rows are look-split, classifier, leftover, two-animal split.
-4. Next adventure: use this blueprint (pathways, plant, neuromod observer).
+2. Orco leftover is the olfactory residual hop (`a \leftarrow rWa`). **Done** in `adventure1_fsot_blueprint.py`.
+3. Identity 0% is dump identity of the measured \(W\) the hops use. Independent rows are look-split, classifier, leftover, two-animal split.
+4. Blueprint through FSOT (F02 AA, 120-gene hop/overlay/trit, pathway sim). See extra finish below.
+5. Next adventure: use this blueprint (pathways, plant, neuromod observer).
 
-Math: \(S=K(T_1+T_2+T_3)\), overlay \(1/\varphi\), consensus trit, nest look-split, GABA sign on \(W\).
+Math: \(S=K(T_1+T_2+T_3)\), \(r=1+|S|\cdot P_{\mathrm{NEW}}\), overlay \(1/\varphi\), consensus trit, nest look-split, GABA sign on \(W\), F02 opcode.
 
 ## Extra finish — everything through FSOT Ledger B
 
 c = m (1 + |S| · ALPHA), ALPHA=0.000808294 (seed). Median residual **0.0761%** ≤ 0.5%. **17/17** green.
 
 Dump N, GABA n, and CRC transmitter AA (Gly Asp Glu Tyr Trp His) on Biochemistry and Neuroscience. Hops already use r = 1+|S|·P_NEW.
+
+
+## Extra finish — blueprint through FSOT
+
+Law: \(S=K(T_1+T_2+T_3)\), \(r=1+|S|\cdot P_{\mathrm{NEW}}\), overlay \(1/\varphi\), consensus trit, F02 opcode. Look-split **0.494%**. **120/120** genes classified. Pathways **5/5**.
+
+Orco olfactory hop-2 vnc_motor **0.0006 leftover** (the job). fru/dsx/courtship/aggression **DENY**: \(T_1\) off because this pack is for human-facing AI; that family opposes human safety; labels stay. Innexins **4** consensus trit. DA **0.041 leftover**, OA **0.800 leftover**, LNv **0.284 leftover**.
+
+Transmitter AA (Gly Asp Glu Tyr Trp His) through F02 7-trit opcode (h, V, μ, q) and Ledger B on CRC MW. Biosynthetic pathways: precursor F02 → enzyme sits_on → NT residual hop. Receptor occupancy analog = ligand hop leftover under \(1/\varphi\), not a fitted \(K_d\).
+
+Dump identity 0% is the measured \(W\) the hops use. Independent rows go through \(S\), \(rW\), overlay, trit. **overall_ok=True**.

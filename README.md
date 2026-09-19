@@ -97,6 +97,8 @@ python scripts/peptide_leftovers.py --hops  # Pdf/NPF/clock/fru + LNv leftover h
 python scripts/genetic_baseline_rest.py     # photo/olf/extra receptors/peptide Rs
 python scripts/gene_blueprint.py --crumbs   # official names + GluRIID/Rh3–6 crumbs
 python scripts/accuracy_sim.py              # FSOT vs empirical fly measurements
+python scripts/adventure1_fsot_apply.py     # Ledger B on dump N, GABA n, CRC transmitter AA MW
+python scripts/adventure1_fsot_blueprint.py # F02 AA + 120-gene residual hops + pathway sim
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 
@@ -132,7 +134,7 @@ PHOT1 is **done as measured domains**: live UniProt **O48963** (Arabidopsis PHOT
 
 Development: `data/develop_cycle.json`. Early-born adult cells hop-2 `vnc_motor` **24.25**; Truman **07B** **27.57**; Ito **MBp3** (mushroom-body precursor) **0.0001**. Same split as JO vs olfactory, now on **birth/lineage**. Larva→adult named jobs that persist: KC, MBON, DN-VNC, ascending, sensory, LN. No embryo→pupa synapse movie exists.
 
-Neural guardrails: `docs/NEURAL_GUARDRAILS.md`. Default observer JO/VNC/GABA **on**; courtship/aggression/fru **off**. Consensus trit for give/take. Not a lobotomy.
+Neural guardrails: `docs/NEURAL_GUARDRAILS.md`. Default observer JO/VNC/GABA **on**; courtship/aggression/fru/dsx **off** (\(T_1\)) because this pack is for human-facing AI and that family opposes human safety. Labels stay. Consensus trit for give/take. Not a lobotomy.
 
 Hemibrain residual hops are **done** (`data/hemibrain_connectome_boot.json`): JO hop-2 descending **2.68** (Giant Fiber) vs olfactory **0.072**. No VNC, DNg29 absent, unsigned (no predictedNt).
 

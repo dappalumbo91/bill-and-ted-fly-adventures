@@ -82,3 +82,11 @@ LNv hop n=20 vnc_motor=0.2842003448420871 leftover=True
 ## Genetic baseline rest
 
 This pass **47/47** live. Fail=[]. Orco job leftover via olfactory hop-2 vnc_motor=0.0006.
+
+## Extra finish — everything through FSOT
+
+Blueprint **120/120** genes computed as hop residual / overlay leftover / consensus trit / DENY / excitatory \(W\) / effector. Not UniProt seating with a side check.
+
+Pathways (F02 precursor → enzyme → \(a \leftarrow rWa\)): DA leftover 0.041; OA leftover 0.800; 5HT 4.70 < walk/φ=6.64; GABA signed brake; histamine recorded.
+
+Orco leftover 0.0006. fru/dsx/courtship/aggression DENY: T1 off for human-facing AI (that family opposes human safety). Transmitter AA through F02 + Ledger B. Receptor overlay sim n=45. Look-split 0.494%.

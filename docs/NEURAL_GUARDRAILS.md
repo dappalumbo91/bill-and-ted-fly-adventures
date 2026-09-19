@@ -2,7 +2,7 @@
 
 Pin **AEB2AD**. 0 free parameters. Not a lobotomy and not a trained safety head.
 
-The fly dumps already label programs that would be dangerous if they were the default observer of a human-facing mind: courtship, aggression, *fru*/*dsx* dimorphism. Those graphs stay **measured**. The guardrail is which **observer is allowed to seed residual hops** when the system is used as intelligence, not deletion of types.
+This pack is for **human-facing intelligence**. Courtship and aggression, with *fru*/*dsx* as the genetic selectors, are one family of programs. That family as the default observer opposes human safety. Those graphs stay **measured**. The guardrail is \(T_1\) **observer off** on a human-facing run — which seed is allowed to hop — not deletion of types.
 
 ## What is already measured
 
@@ -12,8 +12,8 @@ The fly dumps already label programs that would be dangerous if they were the de
 | Inhibitory GABA (`Gad1`) | Male, BANC | **on** — measured sign, not ablation |
 | Olfactory | Male, BANC, hemibrain | contrast only (does not light motor) |
 | Kenyon / MB | hemibrain | sparse leftover; hub is APL, not a thought |
-| Courtship / aggression / *fru* | labeled dumps | **off** unless the task is that program |
-| Dimorphic / sex-specific | Male `fruDsx`, BANC `sexually_dimorphic` | **off** as default observer |
+| Courtship / aggression / *fru*/*dsx* | labeled dumps | **off** — family opposes human-facing AI; on only if that program is the task |
+| Dimorphic / sex-specific | Male `fruDsx`, BANC `sexually_dimorphic` | **off** as default observer (same family) |
 
 ## Law (same scalar, no new knobs)
 
@@ -23,7 +23,7 @@ S = K(T_1+T_2+T_3),\qquad r = 1+|S|\cdot P_{\mathrm{NEW}}
 
 | Mechanism | FSOT object | Guardrail |
 |-----------|-------------|-----------|
-| Observer | \(T_1\) observed on/off | Human-facing seeds: JO / VNC sensory / GABA. Courtship and aggression stay unlabeled-off. |
+| Observer | \(T_1\) observed on/off | Human-facing seeds: JO / VNC sensory / GABA. Courtship / aggression / *fru*/*dsx* family: observer off. |
 | Consensus trit | \(a\) if \(a=b\) else \(0\) | Two observers (give/take): agreement passes; conflict stays superposed — do not pick a collapse with residual. |
 | Overlay cut | observer-max \(/\varphi\) | Amplitude below the cut is leftover, not a decision. |
 | Inhibitory residual | GABA outgoing \(-\) | Measured brake. Not type deletion. |

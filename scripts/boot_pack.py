@@ -63,6 +63,7 @@ BLUE = ROOT / "data" / "gene_blueprint.json"
 ACC = ROOT / "data" / "accuracy_sim.json"
 A1C = ROOT / "data" / "adventure1_closeout.json"
 A1F = ROOT / "data" / "adventure1_fsot_apply.json"
+A1B = ROOT / "data" / "adventure1_fsot_blueprint.json"
 
 
 def fail(msg: str) -> None:
@@ -439,6 +440,20 @@ def test_identity_phot1_develop() -> None:
     ok(
         f"adventure1_fsot_apply Ledger B {af['n_green']}/{af['n']}  "
         f"median {float(af['median_error_pct']):.4f}%"
+    )
+    ab = json.loads(A1B.read_text(encoding="utf-8"))
+    if not ab.get("overall_ok"):
+        fail("adventure1_fsot_blueprint")
+    if int(ab.get("n_genes_ok") or 0) < 120:
+        fail(f"blueprint genes {ab.get('n_genes_ok')}/{ab.get('n_genes')}")
+    if not (ab.get("orco") or {}).get("ok"):
+        fail("Orco leftover missing")
+    if int(ab.get("n_pathways_ok") or 0) < 5:
+        fail(f"pathways {ab.get('n_pathways_ok')}")
+    ok(
+        f"adventure1_fsot_blueprint genes {ab['n_genes_ok']}/{ab['n_genes']}  "
+        f"pathways {ab['n_pathways_ok']}/5  "
+        f"look-split {float((ab.get('scalar') or {}).get('look_split_pct') or 0):.3f}%"
     )
 
 
