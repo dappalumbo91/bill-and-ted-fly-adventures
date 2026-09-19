@@ -95,6 +95,8 @@ python scripts/adventure1_fold.py           # Genetics/Zig/Lean API fold onto NT
 python scripts/genetic_interactions.py      # receptors, VMAT/VAChT/VGAT, innexins, channels
 python scripts/peptide_leftovers.py --hops  # Pdf/NPF/clock/fru + LNv leftover hop
 python scripts/genetic_baseline_rest.py     # photo/olf/extra receptors/peptide Rs
+python scripts/gene_blueprint.py --crumbs   # official names + GluRIID/Rh3–6 crumbs
+python scripts/accuracy_sim.py              # FSOT vs empirical fly measurements
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

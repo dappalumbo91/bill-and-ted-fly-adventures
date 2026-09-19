@@ -98,4 +98,4 @@ Bill-0 freeze → TED-1 (predicted observers) → **Bill-1**. Ledger: `Bill and 
 
 Fold: live UniProt **9/9** biosynthetic enzymes sit on NT jobs. Biochem vs Neuro |S| look-split **0.494% ≤ 0.5%**. Zig DA→MB: fly DA motor leftover is the **correct application** (not a walk seed). Pin edition: Zig D1D38A, pack AEB2AD — same law, hops stay AEB2AD.
 
-Genetic interactions **17/17** + peptides/clock **28/28** + baseline rest **47/47**. Orco sits on olfactory leftover (hop-2 0.0006). ChT pinned Q9VE46 (not chaoptin). tan pinned Q9W369 (gene *t*). ~105 seated genes. Still Adventure 1.
+Genetic crumbs **15/15**. Blueprint **120** genes with FlyBase symbols (tan→*t*, ebony→*e*, painless→*pain*). Accuracy sim **15/15** vs dump/literature. Still Adventure 1.

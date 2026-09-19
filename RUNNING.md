@@ -89,6 +89,9 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | Genetic interactions | **closed 17/17** | receptors, VMAT/VAChT/VGAT, DAT/SerT, shakB/ogre/Inx2, para/Sh; `data/genetic_interactions.json` |
 | Peptides + leftover genes | **closed 28/28** | Pdf/NPF/SIFa/clock/fru/dsx/nAChR extras; LNv hop leftover 0.28; `data/peptide_leftovers.json` |
 | Genetic baseline rest | **closed 47/47** | photo, Orco/IR, extra DA/OA/5HT/GABA/Glu receptors, peptide Rs, ChT, tan; `data/genetic_baseline_rest.json` |
+| Genetic crumbs | **closed 15/15** | GluRIID/E, AstA-R2, Rh3–6, ninaC, inaD, Oct-TyrR, Shab/Shal/sei, Mlc2, EAAT2 |
+| Official gene names | **closed** | tan→**t**, ebony→**e**, painless→**pain**, sNPFR→**sNPF-R**, CcapR→**CCAP-R**; `data/gene_blueprint.json` n=120 |
+| Accuracy sim vs empirical | **closed 15/15** | Lean 0.5%/99.5%; dump identity 0%; FlyWire vs paper 0.005% structural |
 
 ---
 

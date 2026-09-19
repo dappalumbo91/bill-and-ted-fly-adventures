@@ -1,0 +1,282 @@
+{
+  "adventure": 1,
+  "pin": "AEB2AD",
+  "n": 15,
+  "n_ok": 15,
+  "fail": [],
+  "genes": [
+    {
+      "symbol": "GluRIID",
+      "sits_on": "NMJ glutamate",
+      "job": "iGluR IID",
+      "uniprot_live": {
+        "ok": true,
+        "flybase_symbol": "GluRIID",
+        "synonyms": [
+          "GluRIID-RA",
+          "Kai-RIA",
+          "KaiRIA"
+        ],
+        "uniprot": "Q9TVI0",
+        "aa": 902,
+        "flybase": "FBgn0028422",
+        "reviewed": false
+      },
+      "ok": true,
+      "flybase_symbol": "GluRIID"
+    },
+    {
+      "symbol": "GluRIIE",
+      "sits_on": "NMJ glutamate",
+      "job": "iGluR IIE",
+      "uniprot_live": {
+        "ok": true,
+        "flybase_symbol": "GluRIIE",
+        "synonyms": [
+          "Dmel\\CG31201",
+          "DmelGluRIIE",
+          "GluR-IIE"
+        ],
+        "uniprot": "Q0KI42",
+        "aa": 897,
+        "flybase": "FBgn0051201",
+        "reviewed": false
+      },
+      "ok": true,
+      "flybase_symbol": "GluRIIE"
+    },
+    {
+      "symbol": "AstA-R2",
+      "sits_on": "feeding leftover",
+      "job": "AstA receptor 2",
+      "uniprot_live": {
+        "ok": true,
+        "flybase_symbol": "AstA-R2",
+        "synonyms": [
+          "AR-2"
+        ],
+        "uniprot": "Q9NBC8",
+        "aa": 357,
+        "flybase": "FBgn0039595",
+        "reviewed": false
+      },
+      "ok": true,
+      "flybase_symbol": "AstA-R2"
+    },
+    {
+      "symbol": "Oct-TyrR",
+      "sits_on": "OA/tyramine volume leftover",
+      "job": "OA/tyramine receptor",
+      "uniprot_live": {
+        "ok": true,
+        "flybase_symbol": "Oct-TyrR",
+        "synonyms": [
+          "OcR",
+          "OctyR99AB",
+          "TYR",
+          "TyrR"
+        ],
+        "uniprot": "P22270",
+        "aa": 601,
+        "flybase": "FBgn0004514",
+        "reviewed": true
+      },
+      "ok": true,
+      "flybase_symbol": "Oct-TyrR"
+    },
+    {
+      "symbol": "ninaC",
+      "sits_on": "photoreceptor",
+      "job": "ninaC kinase-myosin",
+      "uniprot_live": {
+        "ok": true,
+        "flybase_symbol": "ninaC",
+        "synonyms": [],
+        "uniprot": "P10676",
+        "aa": 1501,
+        "flybase": "FBgn0002938",
+        "reviewed": true
+      },
+      "ok": true,
+      "flybase_symbol": "ninaC"
+    },
+    {
+      "symbol": "inaD",
+      "sits_on": "photoreceptor scaffold",
+      "job": "INAD PDZ scaffold",
+      "uniprot_live": {
+        "ok": true,
+        "flybase_symbol": "inaD",
+        "synonyms": [],
+        "uniprot": "Q24008",
+        "aa": 674,
+        "flybase": "FBgn0001263",
+        "reviewed": true
+      },
+      "ok": true,
+      "flybase_symbol": "inaD"
+    },
+    {
+      "symbol": "Rh3",
+      "sits_on": "photoreceptor",
+      "job": "UV rhodopsin",
+      "uniprot_live": {
+        "ok": true,
+        "flybase_symbol": "Rh3",
+        "synonyms": [
+          "RH92CD"
+        ],
+        "uniprot": "P04950",
+        "aa": 383,
+        "flybase": "FBgn0003249",
+        "reviewed": true
+      },
+      "ok": true,
+      "flybase_symbol": "Rh3"
+    },
+    {
+      "symbol": "Rh4",
+      "sits_on": "photoreceptor",
+      "job": "UV rhodopsin",
+      "uniprot_live": {
+        "ok": true,
+        "flybase_symbol": "Rh4",
+        "synonyms": [],
+        "uniprot": "P08255",
+        "aa": 378,
+        "flybase": "FBgn0003250",
+        "reviewed": true
+      },
+      "ok": true,
+      "flybase_symbol": "Rh4"
+    },
+    {
+      "symbol": "Rh5",
+      "sits_on": "photoreceptor",
+      "job": "blue rhodopsin",
+      "uniprot_live": {
+        "ok": true,
+        "flybase_symbol": "Rh5",
+        "synonyms": [],
+        "uniprot": "P91657",
+        "aa": 382,
+        "flybase": "FBgn0014019",
+        "reviewed": true
+      },
+      "ok": true,
+      "flybase_symbol": "Rh5"
+    },
+    {
+      "symbol": "Rh6",
+      "sits_on": "photoreceptor",
+      "job": "green rhodopsin",
+      "uniprot_live": {
+        "ok": true,
+        "flybase_symbol": "Rh6",
+        "synonyms": [],
+        "uniprot": "O01668",
+        "aa": 369,
+        "flybase": "FBgn0019940",
+        "reviewed": true
+      },
+      "ok": true,
+      "flybase_symbol": "Rh6"
+    },
+    {
+      "symbol": "Shab",
+      "sits_on": "spike K",
+      "job": "Shab K channel",
+      "uniprot_live": {
+        "ok": true,
+        "flybase_symbol": "Shab",
+        "synonyms": [],
+        "uniprot": "P17970",
+        "aa": 1015,
+        "flybase": "FBgn0262593",
+        "reviewed": true
+      },
+      "ok": true,
+      "flybase_symbol": "Shab"
+    },
+    {
+      "symbol": "Shal",
+      "sits_on": "spike K",
+      "job": "Shal K channel",
+      "uniprot_live": {
+        "ok": true,
+        "flybase_symbol": "Shal",
+        "synonyms": [
+          "SHAL2"
+        ],
+        "uniprot": "P17971",
+        "aa": 571,
+        "flybase": "FBgn0005564",
+        "reviewed": true
+      },
+      "ok": true,
+      "flybase_symbol": "Shal"
+    },
+    {
+      "symbol": "sei",
+      "sits_on": "spike K",
+      "job": "seizure K channel",
+      "uniprot_live": {
+        "ok": true,
+        "flybase_symbol": "sei",
+        "synonyms": [
+          "Derg",
+          "Dmel\\CG3182",
+          "erg",
+          "Sei",
+          "seit"
+        ],
+        "uniprot": "Q2MGM5",
+        "aa": 855,
+        "flybase": "",
+        "reviewed": false
+      },
+      "ok": true,
+      "flybase_symbol": "sei"
+    },
+    {
+      "symbol": "Mlc2",
+      "sits_on": "muscle effector (not CNS)",
+      "job": "myosin light chain 2",
+      "uniprot_live": {
+        "ok": true,
+        "flybase_symbol": "Mlc2",
+        "synonyms": [],
+        "uniprot": "P18432",
+        "aa": 222,
+        "flybase": "FBgn0002773",
+        "reviewed": true
+      },
+      "ok": true,
+      "flybase_symbol": "Mlc2"
+    },
+    {
+      "symbol": "EAAT2",
+      "sits_on": "glutamate",
+      "job": "EAAT2",
+      "uniprot_live": {
+        "ok": true,
+        "flybase_symbol": "Eaat2",
+        "synonyms": [
+          "dEAAT2",
+          "dEaat2",
+          "Dmel\\CG3159",
+          "EAAT",
+          "Eaat 2",
+          "EAAT2"
+        ],
+        "uniprot": "E1JHQ6",
+        "aa": 579,
+        "flybase": "FBgn0026438",
+        "reviewed": false
+      },
+      "ok": true,
+      "flybase_symbol": "Eaat2"
+    }
+  ],
+  "overall_ok": true
+}

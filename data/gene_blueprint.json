@@ -1,0 +1,1138 @@
+{
+  "adventure": 1,
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "n": 120,
+  "n_rename": 5,
+  "renames": [
+    {
+      "working_symbol": "painless",
+      "flybase_symbol": "pain",
+      "uniprot": "A0A0B4KEZ8",
+      "flybase": "FBgn0060296",
+      "sits_on": "nociception leftover",
+      "source": "peptide_leftovers.json",
+      "rename": true
+    },
+    {
+      "working_symbol": "sNPFR",
+      "flybase_symbol": "sNPF-R",
+      "uniprot": "Q9VW75",
+      "flybase": "FBgn0036934",
+      "sits_on": "feeding leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": true
+    },
+    {
+      "working_symbol": "CcapR",
+      "flybase_symbol": "CCAP-R",
+      "uniprot": "Q868T3",
+      "flybase": "FBgn0039396",
+      "sits_on": "ecdysis leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": true
+    },
+    {
+      "working_symbol": "ebony",
+      "flybase_symbol": "e",
+      "uniprot": "O76858",
+      "flybase": "FBgn0000527",
+      "sits_on": "DA volume leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": true
+    },
+    {
+      "working_symbol": "tan",
+      "flybase_symbol": "t",
+      "uniprot": "Q9W369",
+      "flybase": "FBgn0086367",
+      "sits_on": "DA volume leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": true
+    }
+  ],
+  "genes": [
+    {
+      "working_symbol": "5-HT1A",
+      "flybase_symbol": "5-HT1A",
+      "uniprot": "P28285",
+      "flybase": "FBgn0004168",
+      "sits_on": "NT hop serotonin",
+      "source": "genetic_interactions.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "5-HT1B",
+      "flybase_symbol": "5-HT1B",
+      "uniprot": "P28286",
+      "flybase": "FBgn0263116",
+      "sits_on": "5HT signaling leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "5-HT2A",
+      "flybase_symbol": "5-HT2A",
+      "uniprot": "Q8IPN2",
+      "flybase": "FBgn0087012",
+      "sits_on": "5HT signaling leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "5-HT2B",
+      "flybase_symbol": "5-HT2B",
+      "uniprot": "A0A0B4KFU6",
+      "flybase": "FBgn0261929",
+      "sits_on": "5HT signaling leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "5-HT7",
+      "flybase_symbol": "5-HT7",
+      "uniprot": "P20905",
+      "flybase": "FBgn0004573",
+      "sits_on": "5HT signaling leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Ace",
+      "flybase_symbol": "Ace",
+      "uniprot": "P07140",
+      "flybase": "FBgn0000024",
+      "sits_on": "ACh",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "arr2",
+      "flybase_symbol": "Arr2",
+      "uniprot": "P19107",
+      "flybase": "FBgn0000121",
+      "sits_on": "see / phototransduction",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "AstA",
+      "flybase_symbol": "AstA",
+      "uniprot": "Q9VC44",
+      "flybase": "FBgn0015591",
+      "sits_on": "feeding leftover",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "AstA-R1",
+      "flybase_symbol": "AstA-R1",
+      "uniprot": "Q9U721",
+      "flybase": "FBgn0266429",
+      "sits_on": "feeding leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "AstA-R2",
+      "flybase_symbol": "AstA-R2",
+      "uniprot": "Q9NBC8",
+      "flybase": "FBgn0039595",
+      "sits_on": "feeding leftover",
+      "source": "genetic_crumbs",
+      "rename": false
+    },
+    {
+      "working_symbol": "CCAP",
+      "flybase_symbol": "CCAP",
+      "uniprot": "Q9VCW0",
+      "flybase": "FBgn0039007",
+      "sits_on": "ecdysis leftover",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "CcapR",
+      "flybase_symbol": "CCAP-R",
+      "uniprot": "Q868T3",
+      "flybase": "FBgn0039396",
+      "sits_on": "ecdysis leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": true
+    },
+    {
+      "working_symbol": "ChAT",
+      "flybase_symbol": "ChAT",
+      "uniprot": "P07668",
+      "flybase": "FBgn0000303",
+      "sits_on": "cholinergic neurons (default excitatory edge; not a Fly Cell Atlas join)",
+      "source": "fly_genetics_join.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "ChT",
+      "flybase_symbol": "ChT",
+      "uniprot": "Q9VE46",
+      "flybase": "FBgn0038641",
+      "sits_on": "ACh",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Clk",
+      "flybase_symbol": "Clk",
+      "uniprot": "O61735",
+      "flybase": "FBgn0023076",
+      "sits_on": "sleep leftover",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "cry",
+      "flybase_symbol": "cry",
+      "uniprot": "O77059",
+      "flybase": "FBgn0025680",
+      "sits_on": "sleep leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Crz",
+      "flybase_symbol": "Crz",
+      "uniprot": "Q26377",
+      "flybase": "FBgn0013767",
+      "sits_on": "stress leftover",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "CrzR",
+      "flybase_symbol": "CrzR",
+      "uniprot": "M9PF00",
+      "flybase": "FBgn0036278",
+      "sits_on": "stress leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "cyc",
+      "flybase_symbol": "cyc",
+      "uniprot": "O61734",
+      "flybase": "FBgn0023094",
+      "sits_on": "sleep leftover",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "DAT",
+      "flybase_symbol": "DAT",
+      "uniprot": "Q7K4Y6",
+      "flybase": "FBgn0034136",
+      "sits_on": "NT hop dopamine",
+      "source": "genetic_interactions.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Ddc",
+      "flybase_symbol": "Ddc",
+      "uniprot": "P05031",
+      "flybase": "FBgn0000422",
+      "sits_on": "dopa decarboxylase (DA/5HT)",
+      "source": "adventure1_fold.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Dh31",
+      "flybase_symbol": "Dh31",
+      "uniprot": "Q9VLK4",
+      "flybase": "FBgn0032048",
+      "sits_on": "clock / gut leftover",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Dh31-R",
+      "flybase_symbol": "Dh31-R",
+      "uniprot": "A1Z9B7",
+      "flybase": "FBgn0052843",
+      "sits_on": "clock leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Dop1R1",
+      "flybase_symbol": "Dop1R1",
+      "uniprot": "P41596",
+      "flybase": "FBgn0011582",
+      "sits_on": "NT hop dopamine",
+      "source": "genetic_interactions.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Dop2R",
+      "flybase_symbol": "Dop2R",
+      "uniprot": "Q8IS44",
+      "flybase": "FBgn0053517",
+      "sits_on": "DA volume leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "DopEcR",
+      "flybase_symbol": "DopEcR",
+      "uniprot": "Q9VZD1",
+      "flybase": "FBgn0035538",
+      "sits_on": "DA volume leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "dsx",
+      "flybase_symbol": "dsx",
+      "uniprot": "P23023",
+      "flybase": "FBgn0000504",
+      "sits_on": "courtship DENY default",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "EAAT1",
+      "flybase_symbol": "Eaat1",
+      "uniprot": "A0A6H2EJK0",
+      "flybase": "FBgn0026439",
+      "sits_on": "glutamate",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "EAAT2",
+      "flybase_symbol": "Eaat2",
+      "uniprot": "E1JHQ6",
+      "flybase": "FBgn0026438",
+      "sits_on": "glutamate",
+      "source": "genetic_crumbs",
+      "rename": false
+    },
+    {
+      "working_symbol": "eag",
+      "flybase_symbol": "eag",
+      "uniprot": "Q02280",
+      "flybase": "FBgn0000535",
+      "sits_on": "spike K",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "ebony",
+      "flybase_symbol": "e",
+      "uniprot": "O76858",
+      "flybase": "FBgn0000527",
+      "sits_on": "DA volume leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": true
+    },
+    {
+      "working_symbol": "fru",
+      "flybase_symbol": "fru",
+      "uniprot": "Q8IN81",
+      "flybase": "FBgn0004652",
+      "sits_on": "courtship DENY default",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "GABA-B-R1",
+      "flybase_symbol": "GABA-B-R1",
+      "uniprot": "Q9V3Q9",
+      "flybase": "FBgn0260446",
+      "sits_on": "GABA",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "GABA-B-R2",
+      "flybase_symbol": "GABA-B-R2",
+      "uniprot": "Q8IN24",
+      "flybase": "FBgn0027575",
+      "sits_on": "GABA",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Gad1",
+      "flybase_symbol": "Gad1",
+      "uniprot": "P20228",
+      "flybase": "FBgn0004516",
+      "sits_on": "GABAergic neurons (inhibitory residual already used on the graph)",
+      "source": "fly_genetics_join.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Galphaq",
+      "flybase_symbol": "Galphaq",
+      "uniprot": "P23625",
+      "flybase": "FBgn0004435",
+      "sits_on": "see / phototransduction",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Gat",
+      "flybase_symbol": "Gat",
+      "uniprot": "Q8IMC1",
+      "flybase": "FBgn0039915",
+      "sits_on": "GABA",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "GluRIIA",
+      "flybase_symbol": "GluRIIA",
+      "uniprot": "Q9VMP4",
+      "flybase": "FBgn0004620",
+      "sits_on": "NT hop glutamate",
+      "source": "genetic_interactions.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "GluRIIB",
+      "flybase_symbol": "GluRIIB",
+      "uniprot": "Q9VMP3",
+      "flybase": "FBgn0020429",
+      "sits_on": "NMJ glutamate",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "GluRIIC",
+      "flybase_symbol": "GluRIIC",
+      "uniprot": "Q9VPV3",
+      "flybase": "FBgn0046113",
+      "sits_on": "NMJ glutamate",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "GluRIID",
+      "flybase_symbol": "GluRIID",
+      "uniprot": "Q9TVI0",
+      "flybase": "FBgn0028422",
+      "sits_on": "NMJ glutamate",
+      "source": "genetic_crumbs",
+      "rename": false
+    },
+    {
+      "working_symbol": "GluRIIE",
+      "flybase_symbol": "GluRIIE",
+      "uniprot": "Q0KI42",
+      "flybase": "FBgn0051201",
+      "sits_on": "NMJ glutamate",
+      "source": "genetic_crumbs",
+      "rename": false
+    },
+    {
+      "working_symbol": "Gr5a",
+      "flybase_symbol": "Gr5a",
+      "uniprot": "Q9W497",
+      "flybase": "FBgn0003747",
+      "sits_on": "taste leftover (not vnc_motor)",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Gr66a",
+      "flybase_symbol": "Gr66a",
+      "uniprot": "Q9VSH2",
+      "flybase": "FBgn0035870",
+      "sits_on": "taste leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Grd",
+      "flybase_symbol": "Grd",
+      "uniprot": "Q24352",
+      "flybase": "FBgn0001134",
+      "sits_on": "GABA",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Hdc",
+      "flybase_symbol": "Hdc",
+      "uniprot": "Q05733",
+      "flybase": "FBgn0005619",
+      "sits_on": "histidine decarboxylase",
+      "source": "adventure1_fold.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "HisCl1",
+      "flybase_symbol": "HisCl1",
+      "uniprot": "Q9VGI0",
+      "flybase": "FBgn0037950",
+      "sits_on": "NT hop histamine",
+      "source": "genetic_interactions.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "iav",
+      "flybase_symbol": "iav",
+      "uniprot": "Q9W3W0",
+      "flybase": "FBgn0086693",
+      "sits_on": "Johnston organ chordotonal (JO types in v630)",
+      "source": "fly_genetics_join.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "inaD",
+      "flybase_symbol": "inaD",
+      "uniprot": "Q24008",
+      "flybase": "FBgn0001263",
+      "sits_on": "photoreceptor scaffold",
+      "source": "genetic_crumbs",
+      "rename": false
+    },
+    {
+      "working_symbol": "Inx2",
+      "flybase_symbol": "Inx2",
+      "uniprot": "Q9V427",
+      "flybase": "FBgn0027108",
+      "sits_on": "consensus_gap_analog",
+      "source": "genetic_interactions.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Inx3",
+      "flybase_symbol": "Inx3",
+      "uniprot": "Q9VAS7",
+      "flybase": "FBgn0265274",
+      "sits_on": "consensus gap analog",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Ir25a",
+      "flybase_symbol": "Ir25a",
+      "uniprot": "E9NA96",
+      "flybase": "FBgn0031634",
+      "sits_on": "olfactory leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Ir76b",
+      "flybase_symbol": "Ir76b",
+      "uniprot": "Q9VW78",
+      "flybase": "FBgn0036937",
+      "sits_on": "olfactory leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Ir8a",
+      "flybase_symbol": "Ir8a",
+      "uniprot": "Q9W365",
+      "flybase": "FBgn0052704",
+      "sits_on": "olfactory leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Lcch3",
+      "flybase_symbol": "Lcch3",
+      "uniprot": "Q08832",
+      "flybase": "FBgn0010240",
+      "sits_on": "GABA",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "mGluR",
+      "flybase_symbol": "mGluR",
+      "uniprot": "P91685",
+      "flybase": "FBgn0019985",
+      "sits_on": "glutamate",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Mhc",
+      "flybase_symbol": "Mhc",
+      "uniprot": "P05661",
+      "flybase": "FBgn0264695",
+      "sits_on": "muscle (effector of vnc_motor; not a CNS cell)",
+      "source": "fly_genetics_join.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Mlc2",
+      "flybase_symbol": "Mlc2",
+      "uniprot": "P18432",
+      "flybase": "FBgn0002773",
+      "sits_on": "muscle effector (not CNS)",
+      "source": "genetic_crumbs",
+      "rename": false
+    },
+    {
+      "working_symbol": "nAChRalpha1",
+      "flybase_symbol": "nAChRalpha1",
+      "uniprot": "P09478",
+      "flybase": "FBgn0000036",
+      "sits_on": "ACh",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "nAChRalpha2",
+      "flybase_symbol": "nAChRalpha2",
+      "uniprot": "P17644",
+      "flybase": "FBgn0000039",
+      "sits_on": "ACh",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "nAChRalpha3",
+      "flybase_symbol": "nAChRalpha3",
+      "uniprot": "Q9W3G6",
+      "flybase": "FBgn0015519",
+      "sits_on": "ACh",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "nAChRalpha4",
+      "flybase_symbol": "nAChRalpha4",
+      "uniprot": "A8JNX5",
+      "flybase": "FBgn0266347",
+      "sits_on": "ACh",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "nAChRalpha5",
+      "flybase_symbol": "nAChRalpha5",
+      "uniprot": "A0A499GGQ3",
+      "flybase": "FBgn0028875",
+      "sits_on": "ACh",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "nAChRalpha6",
+      "flybase_symbol": "nAChRalpha6",
+      "uniprot": "Q7KTF8",
+      "flybase": "FBgn0032151",
+      "sits_on": "ACh",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "nAChRalpha7",
+      "flybase_symbol": "nAChRalpha7",
+      "uniprot": "E1JJR2",
+      "flybase": "FBgn0086778",
+      "sits_on": "NT hop acetylcholine",
+      "source": "genetic_interactions.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "nAChRbeta1",
+      "flybase_symbol": "nAChRbeta1",
+      "uniprot": "P04755",
+      "flybase": "FBgn0000038",
+      "sits_on": "ACh",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "nAChRbeta2",
+      "flybase_symbol": "nAChRbeta2",
+      "uniprot": "P25162",
+      "flybase": "FBgn0004118",
+      "sits_on": "ACh",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "nan",
+      "flybase_symbol": "nan",
+      "uniprot": "Q9VUD5",
+      "flybase": "FBgn0036414",
+      "sits_on": "Johnston organ, partners with iav",
+      "source": "fly_genetics_join.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "ninaC",
+      "flybase_symbol": "ninaC",
+      "uniprot": "P10676",
+      "flybase": "FBgn0002938",
+      "sits_on": "photoreceptor",
+      "source": "genetic_crumbs",
+      "rename": false
+    },
+    {
+      "working_symbol": "ninaE",
+      "flybase_symbol": "ninaE",
+      "uniprot": "P06002",
+      "flybase": "FBgn0002940",
+      "sits_on": "see L5 / photoreceptor",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Nmdar1",
+      "flybase_symbol": "Nmdar1",
+      "uniprot": "Q24418",
+      "flybase": "FBgn0010399",
+      "sits_on": "glutamate / Zig NMDA analog",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Nmdar2",
+      "flybase_symbol": "Nmdar2",
+      "uniprot": "E1JJC6",
+      "flybase": "FBgn0053513",
+      "sits_on": "glutamate / Zig NMDA analog",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "nompA",
+      "flybase_symbol": "nompA",
+      "uniprot": "A0A0B4LF37",
+      "flybase": "FBgn0016047",
+      "sits_on": "JO / scolopale",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "nompC",
+      "flybase_symbol": "nompC",
+      "uniprot": "Q7KIQ2",
+      "flybase": "FBgn0016920",
+      "sits_on": "mechanosensory bristles / campaniform",
+      "source": "fly_genetics_join.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "norpA",
+      "flybase_symbol": "norpA",
+      "uniprot": "P13217",
+      "flybase": "FBgn0262738",
+      "sits_on": "see / phototransduction",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "NPF",
+      "flybase_symbol": "NPF",
+      "uniprot": "Q9VET0",
+      "flybase": "FBgn0027109",
+      "sits_on": "feeding leftover (not walk)",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "NPFR",
+      "flybase_symbol": "NPFR",
+      "uniprot": "Q9VNM1",
+      "flybase": "FBgn0037408",
+      "sits_on": "feeding leftover",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Oamb",
+      "flybase_symbol": "Oamb",
+      "uniprot": "Q7JQF1",
+      "flybase": "FBgn0024944",
+      "sits_on": "NT hop octopamine",
+      "source": "genetic_interactions.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Oct-TyrR",
+      "flybase_symbol": "Oct-TyrR",
+      "uniprot": "P22270",
+      "flybase": "FBgn0004514",
+      "sits_on": "OA/tyramine volume leftover",
+      "source": "genetic_crumbs",
+      "rename": false
+    },
+    {
+      "working_symbol": "Octbeta1R",
+      "flybase_symbol": "Octbeta1R",
+      "uniprot": "Q9VCZ3",
+      "flybase": "FBgn0038980",
+      "sits_on": "OA volume leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Octbeta2R",
+      "flybase_symbol": "Octbeta2R",
+      "uniprot": "Q4LBB9",
+      "flybase": "FBgn0038063",
+      "sits_on": "OA volume leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Octbeta3R",
+      "flybase_symbol": "Octbeta3R",
+      "uniprot": "Q4LBB6",
+      "flybase": "FBgn0250910",
+      "sits_on": "OA volume leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "ogre",
+      "flybase_symbol": "ogre",
+      "uniprot": "P27716",
+      "flybase": "FBgn0004646",
+      "sits_on": "consensus_gap_analog",
+      "source": "genetic_interactions.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Orco",
+      "flybase_symbol": "Orco",
+      "uniprot": "Q9VNB5",
+      "flybase": "FBgn0037324",
+      "sits_on": "olfactory leftover LN",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "painless",
+      "flybase_symbol": "pain",
+      "uniprot": "A0A0B4KEZ8",
+      "flybase": "FBgn0060296",
+      "sits_on": "nociception leftover",
+      "source": "peptide_leftovers.json",
+      "rename": true
+    },
+    {
+      "working_symbol": "para",
+      "flybase_symbol": "para",
+      "uniprot": "P35500",
+      "flybase": "FBgn0285944",
+      "sits_on": "voltage-gated Na (spike)",
+      "source": "genetic_interactions.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Pdf",
+      "flybase_symbol": "Pdf",
+      "uniprot": "O96690",
+      "flybase": "FBgn0023178",
+      "sits_on": "sleep leftover / LNv clock",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "PdfR",
+      "flybase_symbol": "Pdfr",
+      "uniprot": "Q9W4Y2",
+      "flybase": "FBgn0260753",
+      "sits_on": "sleep leftover / LNv clock",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "per",
+      "flybase_symbol": "per",
+      "uniprot": "P07663",
+      "flybase": "FBgn0003068",
+      "sits_on": "sleep leftover",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "piezo",
+      "flybase_symbol": "Piezo",
+      "uniprot": "M9MSG8",
+      "flybase": "FBgn0264953",
+      "sits_on": "mechanosensory",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "ple",
+      "flybase_symbol": "ple",
+      "uniprot": "P18459",
+      "flybase": "FBgn0005626",
+      "sits_on": "tyrosine hydroxylase (DA synthesis)",
+      "source": "adventure1_fold.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Rdl",
+      "flybase_symbol": "Rdl",
+      "uniprot": "P25123",
+      "flybase": "FBgn0004244",
+      "sits_on": "NT hop gaba",
+      "source": "genetic_interactions.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Rh3",
+      "flybase_symbol": "Rh3",
+      "uniprot": "P04950",
+      "flybase": "FBgn0003249",
+      "sits_on": "photoreceptor",
+      "source": "genetic_crumbs",
+      "rename": false
+    },
+    {
+      "working_symbol": "Rh4",
+      "flybase_symbol": "Rh4",
+      "uniprot": "P08255",
+      "flybase": "FBgn0003250",
+      "sits_on": "photoreceptor",
+      "source": "genetic_crumbs",
+      "rename": false
+    },
+    {
+      "working_symbol": "Rh5",
+      "flybase_symbol": "Rh5",
+      "uniprot": "P91657",
+      "flybase": "FBgn0014019",
+      "sits_on": "photoreceptor",
+      "source": "genetic_crumbs",
+      "rename": false
+    },
+    {
+      "working_symbol": "Rh6",
+      "flybase_symbol": "Rh6",
+      "uniprot": "O01668",
+      "flybase": "FBgn0019940",
+      "sits_on": "photoreceptor",
+      "source": "genetic_crumbs",
+      "rename": false
+    },
+    {
+      "working_symbol": "sei",
+      "flybase_symbol": "sei",
+      "uniprot": "Q2MGM5",
+      "flybase": "",
+      "sits_on": "spike K",
+      "source": "genetic_crumbs",
+      "rename": false
+    },
+    {
+      "working_symbol": "SerT",
+      "flybase_symbol": "SerT",
+      "uniprot": "P51905",
+      "flybase": "FBgn0010414",
+      "sits_on": "NT hop serotonin",
+      "source": "genetic_interactions.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Sh",
+      "flybase_symbol": "Sh",
+      "uniprot": "P08510",
+      "flybase": "FBgn0003380",
+      "sits_on": "Shaker K channel",
+      "source": "genetic_interactions.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Shab",
+      "flybase_symbol": "Shab",
+      "uniprot": "P17970",
+      "flybase": "FBgn0262593",
+      "sits_on": "spike K",
+      "source": "genetic_crumbs",
+      "rename": false
+    },
+    {
+      "working_symbol": "shakB",
+      "flybase_symbol": "shakB",
+      "uniprot": "P33085",
+      "flybase": "FBgn0085387",
+      "sits_on": "consensus_gap_analog",
+      "source": "genetic_interactions.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Shal",
+      "flybase_symbol": "Shal",
+      "uniprot": "P17971",
+      "flybase": "FBgn0005564",
+      "sits_on": "spike K",
+      "source": "genetic_crumbs",
+      "rename": false
+    },
+    {
+      "working_symbol": "shaw",
+      "flybase_symbol": "Shaw",
+      "uniprot": "P17972",
+      "flybase": "FBgn0003386",
+      "sits_on": "spike K",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "SIFa",
+      "flybase_symbol": "SIFa",
+      "uniprot": "Q6IGX9",
+      "flybase": "FBgn0053527",
+      "sits_on": "courtship DENY default",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "SIFaR",
+      "flybase_symbol": "SIFaR",
+      "uniprot": "Q8IN35",
+      "flybase": "FBgn0038880",
+      "sits_on": "courtship DENY default",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "sNPF",
+      "flybase_symbol": "sNPF",
+      "uniprot": "Q9VIQ0",
+      "flybase": "FBgn0032840",
+      "sits_on": "feeding leftover",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "sNPFR",
+      "flybase_symbol": "sNPF-R",
+      "uniprot": "Q9VW75",
+      "flybase": "FBgn0036934",
+      "sits_on": "feeding leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": true
+    },
+    {
+      "working_symbol": "tan",
+      "flybase_symbol": "t",
+      "uniprot": "Q9W369",
+      "flybase": "FBgn0086367",
+      "sits_on": "DA volume leftover",
+      "source": "genetic_baseline_rest.json",
+      "rename": true
+    },
+    {
+      "working_symbol": "Tbh",
+      "flybase_symbol": "Tbh",
+      "uniprot": "Q86B61",
+      "flybase": "FBgn0010329",
+      "sits_on": "tyramine \u03b2-hydroxylase (OA)",
+      "source": "adventure1_fold.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Tdc2",
+      "flybase_symbol": "Tdc2",
+      "uniprot": "A1Z6N4",
+      "flybase": "FBgn0050446",
+      "sits_on": "tyrosine decarboxylase (OA)",
+      "source": "adventure1_fold.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "tim",
+      "flybase_symbol": "tim",
+      "uniprot": "P49021",
+      "flybase": "FBgn0014396",
+      "sits_on": "sleep leftover",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Tmc",
+      "flybase_symbol": "Tmc",
+      "uniprot": "A0A0U1QT59",
+      "flybase": "FBgn0267796",
+      "sits_on": "mechanosensory / JO",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Trh",
+      "flybase_symbol": "trh",
+      "uniprot": "Q24119",
+      "flybase": "FBgn0262139",
+      "sits_on": "tryptophan hydroxylase (5HT)",
+      "source": "adventure1_fold.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "trp",
+      "flybase_symbol": "trp",
+      "uniprot": "P19334",
+      "flybase": "FBgn0003861",
+      "sits_on": "see / phototransduction",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "TrpA1",
+      "flybase_symbol": "TrpA1",
+      "uniprot": "Q7Z020",
+      "flybase": "FBgn0035934",
+      "sits_on": "JO / mechanosensory",
+      "source": "peptide_leftovers.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "trpl",
+      "flybase_symbol": "trpl",
+      "uniprot": "P48994",
+      "flybase": "FBgn0005614",
+      "sits_on": "see / phototransduction",
+      "source": "genetic_baseline_rest.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "VAChT",
+      "flybase_symbol": "VAChT",
+      "uniprot": "O17444",
+      "flybase": "FBgn0270928",
+      "sits_on": "NT hop acetylcholine",
+      "source": "genetic_interactions.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "VGAT",
+      "flybase_symbol": "VGAT",
+      "uniprot": "A1Z9M6",
+      "flybase": "FBgn0033911",
+      "sits_on": "NT hop gaba",
+      "source": "genetic_interactions.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "VGlut",
+      "flybase_symbol": "VGlut",
+      "uniprot": "Q9VQC0",
+      "flybase": "FBgn0031424",
+      "sits_on": "glutamatergic motor neurons (vnc_motor NMJ)",
+      "source": "fly_genetics_join.json",
+      "rename": false
+    },
+    {
+      "working_symbol": "Vmat",
+      "flybase_symbol": "Vmat",
+      "uniprot": "Q8IH57",
+      "flybase": "FBgn0260964",
+      "sits_on": "NT hop dopamine",
+      "source": "genetic_interactions.json",
+      "rename": false
+    }
+  ],
+  "note": "working_symbol = label used in this pack. flybase_symbol = UniProt gene name. Use flybase_symbol in scientific text. tan\u2192t, ebony\u2192e, VGlut\u2192VGlut1, painless\u2192pain.",
+  "overall_ok": true
+}

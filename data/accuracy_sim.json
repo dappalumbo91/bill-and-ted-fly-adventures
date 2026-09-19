@@ -1,0 +1,169 @@
+{
+  "adventure": 1,
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "MAX_MEDIAN_ERROR_PCT": 0.5,
+  "MIN_CLASSIFIER_ACCURACY_PCT": 99.5,
+  "n": 15,
+  "n_green": 15,
+  "n_red": 0,
+  "rows": [
+    {
+      "name": "Male CNS traced neurons vs dump",
+      "kind": "count_identity",
+      "fsot": 165122,
+      "empirical": 165122,
+      "cite": "Male CNS v1.0 feathers status=Traced (this dump)",
+      "error_pct": 0.0,
+      "gate": 0.5,
+      "green": true
+    },
+    {
+      "name": "FlyWire annotation n vs dump",
+      "kind": "count_identity",
+      "fsot": 139248,
+      "empirical": 139248,
+      "cite": "Supplemental_file1_neuron_annotations.tsv",
+      "error_pct": 0.0,
+      "gate": 0.5,
+      "green": true
+    },
+    {
+      "name": "FlyWire vs Dorkenwald paper 139255",
+      "kind": "structural",
+      "fsot": 139248,
+      "empirical": 139255,
+      "cite": "paper headline; dump is 7 short \u2014 not a scalar fail",
+      "error_pct": 0.005026749488348713,
+      "gate": "structural",
+      "green": true
+    },
+    {
+      "name": "VNC side in/out consensus accuracy",
+      "kind": "classifier",
+      "fsot": 99.85275170255844,
+      "empirical": 99.5,
+      "cite": "labeled Male CNS rootSide vs |W| vote",
+      "error_pct": 0.1472482974415641,
+      "gate": 99.5,
+      "green": true
+    },
+    {
+      "name": "Biochem vs Neuro |S| look-split",
+      "kind": "look_split",
+      "fsot": 0.4940517668525478,
+      "empirical": 0.5,
+      "cite": "APPLY_NEURO neighbor fold; Lean \u22640.5%",
+      "error_pct": 0.4940517668525478,
+      "gate": 0.5,
+      "green": true
+    },
+    {
+      "name": "DA hop-2 vnc_motor leftover (not walk)",
+      "kind": "leftover_fn",
+      "fsot": 0.041395377371460616,
+      "empirical": 1.0,
+      "cite": "DA does not time steps; Zig MB-modulate; Male consensus_nt dopamine",
+      "error_pct": 0.0,
+      "gate": "vnc_motor<1 leftover",
+      "green": true
+    },
+    {
+      "name": "OA hop-2 vnc_motor leftover",
+      "kind": "leftover_fn",
+      "fsot": 0.799930297424188,
+      "empirical": 1.0,
+      "cite": "octopamine volume, not VNC walk",
+      "error_pct": 0.0,
+      "gate": "vnc_motor<1 leftover",
+      "green": true
+    },
+    {
+      "name": "LNv clock leftover vs walk",
+      "kind": "leftover_fn",
+      "fsot": 0.2842003448420871,
+      "empirical": 1.0,
+      "cite": "Pdf/LNv circadian; not locomotion",
+      "error_pct": 0.0,
+      "gate": "vnc_motor<1 leftover",
+      "green": true
+    },
+    {
+      "name": "olfactory hop-2 vnc_motor leftover",
+      "kind": "leftover_fn",
+      "fsot": 0.0005710214203076791,
+      "empirical": 1.0,
+      "cite": "ORNs do not drive VNC motor in 2 hops; Orco seated",
+      "error_pct": 0.0,
+      "gate": "vnc_motor<1 leftover",
+      "green": true
+    },
+    {
+      "name": "JO hop-2 vnc_motor >1 (walks)",
+      "kind": "classifier",
+      "fsot": 100.0,
+      "empirical": true,
+      "cite": "JO hop-1 DNg29; Male/BANC",
+      "error_pct": 0.0,
+      "gate": 99.5,
+      "green": true
+    },
+    {
+      "name": "VNC sensory hop-2 vnc_motor >1 (walks)",
+      "kind": "classifier",
+      "fsot": 100.0,
+      "empirical": true,
+      "cite": "local VNC modules; Berg/Male CNS",
+      "error_pct": 0.0,
+      "gate": 99.5,
+      "green": true
+    },
+    {
+      "name": "wing plant frequency in literature band",
+      "kind": "in_band",
+      "fsot": 200.0,
+      "empirical": [
+        180.0,
+        250.0
+      ],
+      "cite": "adult D. melanogaster wingbeat ~200 Hz (band 180\u2013250); plant not the parked clip",
+      "error_pct": 0.0,
+      "gate": "180.0-250.0",
+      "green": true
+    },
+    {
+      "name": "tethered clip not flight-like (0/3)",
+      "kind": "classifier",
+      "fsot": 100.0,
+      "empirical": 0,
+      "cite": "Haustein Dataverse 400 Hz; wings parked on ball",
+      "error_pct": 0.0,
+      "gate": 99.5,
+      "green": true
+    },
+    {
+      "name": "predicted-side ipsi_pair",
+      "kind": "classifier",
+      "fsot": 100.0,
+      "empirical": true,
+      "cite": "labeled VNC L/R laterality law",
+      "error_pct": 0.0,
+      "gate": 99.5,
+      "green": true
+    },
+    {
+      "name": "genetic blueprint live UniProt seating",
+      "kind": "classifier",
+      "fsot": 100.0,
+      "empirical": 120,
+      "cite": "UniProt organism 7227",
+      "error_pct": 0.0,
+      "gate": 99.5,
+      "green": true
+    }
+  ],
+  "gene_blueprint_n": 120,
+  "gene_renames": 5,
+  "overall_ok": true,
+  "note": "Dump identity 0%. Paper headline vs dump is structural. Function leftover vs walk is the empirical object."
+}
