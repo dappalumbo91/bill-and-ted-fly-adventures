@@ -1,0 +1,144 @@
+{
+  "adventure": 1,
+  "status": "genetic_baseline_complete_honest_accuracy",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "n_genes_blueprint": 120,
+  "n_renames": 5,
+  "accuracy_sim_green": "15/15",
+  "identity_rows": [
+    {
+      "name": "Male CNS traced neurons vs dump",
+      "kind": "count_identity",
+      "fsot": 165122,
+      "empirical": 165122,
+      "cite": "Male CNS v1.0 feathers status=Traced (this dump)",
+      "error_pct": 0.0,
+      "gate": 0.5,
+      "green": true
+    },
+    {
+      "name": "FlyWire annotation n vs dump",
+      "kind": "count_identity",
+      "fsot": 139248,
+      "empirical": 139248,
+      "cite": "Supplemental_file1_neuron_annotations.tsv",
+      "error_pct": 0.0,
+      "gate": 0.5,
+      "green": true
+    }
+  ],
+  "independent_rows": [
+    {
+      "name": "VNC side in/out consensus accuracy",
+      "fsot": 99.85275170255844,
+      "green": true,
+      "kind": "classifier"
+    },
+    {
+      "name": "Biochem vs Neuro |S| look-split",
+      "fsot": 0.4940517668525478,
+      "green": true,
+      "kind": "look_split"
+    },
+    {
+      "name": "DA hop-2 vnc_motor leftover (not walk)",
+      "fsot": 0.041395377371460616,
+      "green": true,
+      "kind": "leftover_fn"
+    },
+    {
+      "name": "OA hop-2 vnc_motor leftover",
+      "fsot": 0.799930297424188,
+      "green": true,
+      "kind": "leftover_fn"
+    },
+    {
+      "name": "LNv clock leftover vs walk",
+      "fsot": 0.2842003448420871,
+      "green": true,
+      "kind": "leftover_fn"
+    },
+    {
+      "name": "olfactory hop-2 vnc_motor leftover",
+      "fsot": 0.0005710214203076791,
+      "green": true,
+      "kind": "leftover_fn"
+    },
+    {
+      "name": "JO hop-2 vnc_motor >1 (walks)",
+      "fsot": 100.0,
+      "green": true,
+      "kind": "classifier"
+    },
+    {
+      "name": "VNC sensory hop-2 vnc_motor >1 (walks)",
+      "fsot": 100.0,
+      "green": true,
+      "kind": "classifier"
+    },
+    {
+      "name": "wing plant frequency in literature band",
+      "fsot": 200.0,
+      "green": true,
+      "kind": "in_band"
+    },
+    {
+      "name": "tethered clip not flight-like (0/3)",
+      "fsot": 100.0,
+      "green": true,
+      "kind": "classifier"
+    },
+    {
+      "name": "predicted-side ipsi_pair",
+      "fsot": 100.0,
+      "green": true,
+      "kind": "classifier"
+    },
+    {
+      "name": "genetic blueprint live UniProt seating",
+      "fsot": 100.0,
+      "green": true,
+      "kind": "classifier"
+    }
+  ],
+  "two_animal_function": [
+    {
+      "program": "vnc_sensory",
+      "male": 10.740180804833889,
+      "banc": 10.161924095410841,
+      "male_walks": true,
+      "banc_walks": true,
+      "function_match": true,
+      "mag_rel_pct": 5.3840500446956066
+    },
+    {
+      "program": "JO",
+      "male": 7.772920928859144,
+      "banc": 6.636908411047972,
+      "male_walks": true,
+      "banc_walks": true,
+      "function_match": true,
+      "mag_rel_pct": 14.61500159603333
+    },
+    {
+      "program": "olfactory",
+      "male": 0.0005710214203076791,
+      "banc": 0.0007640599289252,
+      "male_walks": false,
+      "banc_walks": false,
+      "function_match": true,
+      "mag_rel_pct": 25.26483870042333
+    }
+  ],
+  "two_animal_function_ok": true,
+  "finish_extras": [
+    "Keep Adventure 1 closed on *genetic baseline + honest accuracy*. Do not add every odorant receptor (Or42b\u2026).",
+    "Identity 0% stays in the ledger as dump hygiene, never as a ToE headline.",
+    "Independent headlines: Biochem/Neuro 0.494%; side vote 99.85%; DA/OA/LNv/olf leftover; JO/VNC walk; two-animal function 3/3.",
+    "Male vs BANC *magnitude* (~5% on VNC motor) is two animals (sex/cut), not a 0.5% scalar on one m.",
+    "Zig pin D1D38A vs pack AEB2AD: fold by function, do not mix hashes.",
+    "Next adventure: *use* this blueprint (pathways / plant / neuromod observer), not more gene seating."
+  ],
+  "overall_ok": true
+}

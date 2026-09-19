@@ -61,6 +61,7 @@ GBR = ROOT / "data" / "genetic_baseline_rest.json"
 CRUMB = ROOT / "data" / "genetic_crumbs.json"
 BLUE = ROOT / "data" / "gene_blueprint.json"
 ACC = ROOT / "data" / "accuracy_sim.json"
+A1C = ROOT / "data" / "adventure1_closeout.json"
 
 
 def fail(msg: str) -> None:
@@ -427,6 +428,10 @@ def test_identity_phot1_develop() -> None:
         f"crumbs {cr['n_ok']}/{cr['n']}  blueprint n={bp.get('n')} "
         f"renames={bp.get('n_rename')}  accuracy_sim {acs.get('n_green')}/{acs.get('n')}"
     )
+    a1c = json.loads(A1C.read_text(encoding="utf-8"))
+    if not a1c.get("overall_ok") or not a1c.get("two_animal_function_ok"):
+        fail("adventure1_closeout")
+    ok("adventure1 closeout  two-animal function 3/3")
 
 
 def test_counts() -> None:

@@ -92,6 +92,7 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | Genetic crumbs | **closed 15/15** | GluRIID/E, AstA-R2, Rh3–6, ninaC, inaD, Oct-TyrR, Shab/Shal/sei, Mlc2, EAAT2 |
 | Official gene names | **closed** | tan→**t**, ebony→**e**, painless→**pain**, sNPFR→**sNPF-R**, CcapR→**CCAP-R**; `data/gene_blueprint.json` n=120 |
 | Accuracy sim vs empirical | **closed 15/15** | Lean 0.5%/99.5%; dump identity 0%; FlyWire vs paper 0.005% structural |
+| Adventure 1 closeout | **closed** | identity vs independent split; Male×BANC function **3/3**; `Adventure-1/CLOSEOUT.md` |
 
 ---
 
