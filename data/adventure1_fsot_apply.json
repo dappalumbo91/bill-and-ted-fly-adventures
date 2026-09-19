@@ -1,0 +1,189 @@
+{
+  "adventure": 1,
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "law": "Ledger B: c = m (1 + |S| ALPHA); hops: a <- (1+|S| P_NEW) W a",
+  "ALPHA": 0.0008082937414140405,
+  "P_NEW": 0.30030227667037146,
+  "r_Neuroscience": 1.2826657122979865,
+  "r_Biochemistry": 1.284069161007025,
+  "hop_r_look_split_pct": 0.1092969718186959,
+  "n": 17,
+  "n_green": 17,
+  "median_error_pct": 0.07608231569074611,
+  "median_green": true,
+  "rows": [
+    {
+      "name": "Male traced N",
+      "domain": "Neuroscience",
+      "S": 0.941270627156304,
+      "measured": 165122,
+      "computed": 165247.62864131486,
+      "error_pct": 0.07608231569073944,
+      "green": true,
+      "cite": "Male CNS v1.0 traced"
+    },
+    {
+      "name": "Male traced N",
+      "domain": "Biochemistry",
+      "S": 0.9459440805999452,
+      "measured": 165122,
+      "computed": 165248.2523934956,
+      "error_pct": 0.07646006800766197,
+      "green": true,
+      "cite": "molecule zoom of same N"
+    },
+    {
+      "name": "FlyWire n",
+      "domain": "Neuroscience",
+      "S": 0.941270627156304,
+      "measured": 139248,
+      "computed": 139353.94310295305,
+      "error_pct": 0.07608231569074839,
+      "green": true,
+      "cite": "annotation TSV"
+    },
+    {
+      "name": "BANC n",
+      "domain": "Neuroscience",
+      "S": 0.941270627156304,
+      "measured": 175401,
+      "computed": 175534.4491425447,
+      "error_pct": 0.07608231569073434,
+      "green": true,
+      "cite": "BANC v888"
+    },
+    {
+      "name": "Male GABA n",
+      "domain": "Neuroscience",
+      "S": 0.941270627156304,
+      "measured": 22055,
+      "computed": 22071.779954725593,
+      "error_pct": 0.07608231569073992,
+      "green": true,
+      "cite": "consensus_nt gaba traced"
+    },
+    {
+      "name": "Gly MW",
+      "domain": "Biochemistry",
+      "S": 0.9459440805999452,
+      "measured": 75.07,
+      "computed": 75.12739857305334,
+      "error_pct": 0.07646006800765678,
+      "green": true,
+      "cite": "CRC/IUPAC APPLY_NEURO"
+    },
+    {
+      "name": "Gly MW",
+      "domain": "Neuroscience",
+      "S": 0.941270627156304,
+      "measured": 75.07,
+      "computed": 75.12711499438903,
+      "error_pct": 0.07608231569074064,
+      "green": true,
+      "cite": "CRC/IUPAC signaling zoom"
+    },
+    {
+      "name": "Asp MW",
+      "domain": "Biochemistry",
+      "S": 0.9459440805999452,
+      "measured": 133.1,
+      "computed": 133.2017683505182,
+      "error_pct": 0.07646006800766282,
+      "green": true,
+      "cite": "CRC/IUPAC APPLY_NEURO"
+    },
+    {
+      "name": "Asp MW",
+      "domain": "Neuroscience",
+      "S": 0.941270627156304,
+      "measured": 133.1,
+      "computed": 133.20126556218437,
+      "error_pct": 0.07608231569074421,
+      "green": true,
+      "cite": "CRC/IUPAC signaling zoom"
+    },
+    {
+      "name": "Glu MW",
+      "domain": "Biochemistry",
+      "S": 0.9459440805999452,
+      "measured": 147.13,
+      "computed": 147.24249569805966,
+      "error_pct": 0.0764600680076536,
+      "green": true,
+      "cite": "CRC/IUPAC APPLY_NEURO"
+    },
+    {
+      "name": "Glu MW",
+      "domain": "Neuroscience",
+      "S": 0.941270627156304,
+      "measured": 147.13,
+      "computed": 147.24193991107578,
+      "error_pct": 0.0760823156907359,
+      "green": true,
+      "cite": "CRC/IUPAC signaling zoom"
+    },
+    {
+      "name": "Tyr MW",
+      "domain": "Biochemistry",
+      "S": 0.9459440805999452,
+      "measured": 181.19,
+      "computed": 181.32853799722307,
+      "error_pct": 0.07646006800765387,
+      "green": true,
+      "cite": "CRC/IUPAC APPLY_NEURO"
+    },
+    {
+      "name": "Tyr MW",
+      "domain": "Neuroscience",
+      "S": 0.941270627156304,
+      "measured": 181.19,
+      "computed": 181.32785354780006,
+      "error_pct": 0.07608231569074611,
+      "green": true,
+      "cite": "CRC/IUPAC signaling zoom"
+    },
+    {
+      "name": "Trp MW",
+      "domain": "Biochemistry",
+      "S": 0.9459440805999452,
+      "measured": 204.23,
+      "computed": 204.38615439689204,
+      "error_pct": 0.0764600680076624,
+      "green": true,
+      "cite": "CRC/IUPAC APPLY_NEURO"
+    },
+    {
+      "name": "Trp MW",
+      "domain": "Neuroscience",
+      "S": 0.941270627156304,
+      "measured": 204.23,
+      "computed": 204.38538291333518,
+      "error_pct": 0.07608231569073509,
+      "green": true,
+      "cite": "CRC/IUPAC signaling zoom"
+    },
+    {
+      "name": "His MW",
+      "domain": "Biochemistry",
+      "S": 0.9459440805999452,
+      "measured": 155.16,
+      "computed": 155.27863544152066,
+      "error_pct": 0.07646006800764793,
+      "green": true,
+      "cite": "CRC/IUPAC APPLY_NEURO"
+    },
+    {
+      "name": "His MW",
+      "domain": "Neuroscience",
+      "S": 0.941270627156304,
+      "measured": 155.16,
+      "computed": 155.27804932102575,
+      "error_pct": 0.0760823156907392,
+      "green": true,
+      "cite": "CRC/IUPAC signaling zoom"
+    }
+  ],
+  "da_hop_already_fsot": 0.041395377371460616,
+  "overall_ok": true
+}

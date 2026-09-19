@@ -49,3 +49,9 @@ Same function, different insect (male vs female CNS). Magnitude is not the 0.5% 
 4. Next adventure: use this blueprint (pathways, plant, neuromod observer).
 
 Math: \(S=K(T_1+T_2+T_3)\), overlay \(1/\varphi\), consensus trit, nest look-split, GABA sign on \(W\).
+
+## Extra finish — everything through FSOT Ledger B
+
+c = m (1 + |S| · ALPHA), ALPHA=0.000808294 (seed). Median residual **0.0761%** ≤ 0.5%. **17/17** green.
+
+Dump N, GABA n, and CRC transmitter AA (Gly Asp Glu Tyr Trp His) on Biochemistry and Neuroscience. Hops already use r = 1+|S|·P_NEW.

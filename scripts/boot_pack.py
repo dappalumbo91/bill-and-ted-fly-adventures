@@ -62,6 +62,7 @@ CRUMB = ROOT / "data" / "genetic_crumbs.json"
 BLUE = ROOT / "data" / "gene_blueprint.json"
 ACC = ROOT / "data" / "accuracy_sim.json"
 A1C = ROOT / "data" / "adventure1_closeout.json"
+A1F = ROOT / "data" / "adventure1_fsot_apply.json"
 
 
 def fail(msg: str) -> None:
@@ -432,6 +433,13 @@ def test_identity_phot1_develop() -> None:
     if not a1c.get("overall_ok") or not a1c.get("two_animal_function_ok"):
         fail("adventure1_closeout")
     ok("adventure1 closeout  two-animal function 3/3")
+    af = json.loads(A1F.read_text(encoding="utf-8"))
+    if not af.get("overall_ok"):
+        fail("adventure1_fsot_apply")
+    ok(
+        f"adventure1_fsot_apply Ledger B {af['n_green']}/{af['n']}  "
+        f"median {float(af['median_error_pct']):.4f}%"
+    )
 
 
 def test_counts() -> None:

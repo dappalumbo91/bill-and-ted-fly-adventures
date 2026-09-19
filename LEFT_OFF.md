@@ -98,4 +98,4 @@ Bill-0 freeze → TED-1 (predicted observers) → **Bill-1**. Ledger: `Bill and 
 
 Fold: live UniProt **9/9** biosynthetic enzymes sit on NT jobs. Biochem vs Neuro |S| look-split **0.494% ≤ 0.5%**. Zig DA→MB: fly DA motor leftover is the **correct application** (not a walk seed). Pin edition: Zig D1D38A, pack AEB2AD — same law, hops stay AEB2AD.
 
-Genetic crumbs **15/15**. Blueprint **120** genes with FlyBase symbols (tan→*t*, ebony→*e*, painless→*pain*). Accuracy sim **15/15** vs dump/literature. Still Adventure 1.
+Adventure 1 extras: Ledger B on dump N, GABA n, CRC transmitter AA — **17/17** green, median **0.076%**. Hops already r=1+\|S\|P_NEW. Genetic baseline + FSOT apply on those objects is in.

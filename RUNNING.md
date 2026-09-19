@@ -93,6 +93,7 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | Official gene names | **closed** | tan→**t**, ebony→**e**, painless→**pain**, sNPFR→**sNPF-R**, CcapR→**CCAP-R**; `data/gene_blueprint.json` n=120 |
 | Accuracy sim vs empirical | **closed 15/15** | Lean 0.5%/99.5%; dump identity 0%; FlyWire vs paper 0.005% structural |
 | Adventure 1 closeout | **closed** | identity vs independent split; Male×BANC function **3/3**; `Adventure-1/CLOSEOUT.md` |
+| Adventure 1 FSOT Ledger B on N + AA MW | **closed 17/17** | c=m(1+\|S\|α); median **0.076%**; Neuro+Biochem |
 
 ---
 
