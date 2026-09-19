@@ -1,0 +1,235 @@
+{
+  "adventure": 1,
+  "ted": "TED-2b",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "fold": "Genetics gene-on-job + Zig DA/MB + Lean Biochem/Neuro neighbor. Errors are application (wrong observer), not missing FSOT.",
+  "genes": [
+    {
+      "symbol": "ple",
+      "nt": "dopamine",
+      "job": "tyrosine hydroxylase (DA synthesis)",
+      "uniprot_live": {
+        "ok": true,
+        "symbol": "ple",
+        "live_gene": "ple",
+        "uniprot": "P18459",
+        "aa": 579,
+        "flybase": "FBgn0005626",
+        "reviewed": true
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0005626",
+        "display_name": "ple"
+      },
+      "nt_hop2_vnc_motor": 0.041395377371460616,
+      "nt_n_seed": 392,
+      "ok": true
+    },
+    {
+      "symbol": "Ddc",
+      "nt": "dopamine",
+      "job": "dopa decarboxylase (DA/5HT)",
+      "uniprot_live": {
+        "ok": true,
+        "symbol": "Ddc",
+        "live_gene": "Ddc",
+        "uniprot": "P05031",
+        "aa": 510,
+        "flybase": "FBgn0000422",
+        "reviewed": true
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0000422",
+        "display_name": "Ddc"
+      },
+      "nt_hop2_vnc_motor": 0.041395377371460616,
+      "nt_n_seed": 392,
+      "ok": true
+    },
+    {
+      "symbol": "Trh",
+      "nt": "serotonin",
+      "job": "tryptophan hydroxylase (5HT)",
+      "uniprot_live": {
+        "ok": true,
+        "symbol": "Trh",
+        "live_gene": "trh",
+        "uniprot": "Q24119",
+        "aa": 1022,
+        "flybase": "FBgn0262139",
+        "reviewed": true
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0262139",
+        "display_name": "trh"
+      },
+      "nt_hop2_vnc_motor": 4.695936959278612,
+      "nt_n_seed": 48,
+      "ok": true
+    },
+    {
+      "symbol": "Tdc2",
+      "nt": "octopamine",
+      "job": "tyrosine decarboxylase (OA)",
+      "accession": "A1Z6N4",
+      "uniprot_live": {
+        "ok": true,
+        "symbol": "Tdc2",
+        "live_gene": "Tdc2",
+        "uniprot": "A1Z6N4",
+        "aa": 637,
+        "flybase": "FBgn0050446",
+        "reviewed": false
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0050446",
+        "display_name": "Tdc2"
+      },
+      "nt_hop2_vnc_motor": 0.799930297424188,
+      "nt_n_seed": 101,
+      "ok": true
+    },
+    {
+      "symbol": "Tbh",
+      "nt": "octopamine",
+      "job": "tyramine \u03b2-hydroxylase (OA)",
+      "uniprot_live": {
+        "ok": true,
+        "symbol": "Tbh",
+        "live_gene": "Tbh",
+        "uniprot": "Q86B61",
+        "aa": 670,
+        "flybase": "FBgn0010329",
+        "reviewed": true
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0010329",
+        "display_name": "Tbh"
+      },
+      "nt_hop2_vnc_motor": 0.799930297424188,
+      "nt_n_seed": 101,
+      "ok": true
+    },
+    {
+      "symbol": "Hdc",
+      "nt": "histamine",
+      "job": "histidine decarboxylase",
+      "accession": "Q05733",
+      "uniprot_live": {
+        "ok": true,
+        "symbol": "Hdc",
+        "live_gene": "Hdc",
+        "uniprot": "Q05733",
+        "aa": 847,
+        "flybase": "FBgn0005619",
+        "reviewed": true
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0005619",
+        "display_name": "Hdc"
+      },
+      "nt_hop2_vnc_motor": 2.9700420343458376,
+      "nt_n_seed": 5910,
+      "ok": true
+    },
+    {
+      "symbol": "Gad1",
+      "nt": "gaba",
+      "job": "glutamate decarboxylase (already on hop table)",
+      "uniprot_live": {
+        "ok": true,
+        "symbol": "Gad1",
+        "live_gene": "Gad1",
+        "uniprot": "P20228",
+        "aa": 510,
+        "flybase": "FBgn0004516",
+        "reviewed": true
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0004516",
+        "display_name": "Gad1"
+      },
+      "nt_hop2_vnc_motor": 28.747975630228993,
+      "nt_n_seed": 22055,
+      "ok": true
+    },
+    {
+      "symbol": "ChAT",
+      "nt": "acetylcholine",
+      "job": "choline acetyltransferase (already seated)",
+      "uniprot_live": {
+        "ok": true,
+        "symbol": "ChAT",
+        "live_gene": "ChAT",
+        "uniprot": "P07668",
+        "aa": 721,
+        "flybase": "FBgn0000303",
+        "reviewed": true
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0000303",
+        "display_name": "ChAT"
+      },
+      "nt_hop2_vnc_motor": null,
+      "nt_n_seed": null,
+      "ok": true
+    },
+    {
+      "symbol": "VGlut",
+      "nt": "glutamate",
+      "job": "vesicular glutamate transporter (already seated)",
+      "accession": "Q9VQC0",
+      "uniprot_live": {
+        "ok": true,
+        "symbol": "VGlut",
+        "live_gene": "VGlut1",
+        "uniprot": "Q9VQC0",
+        "aa": 632,
+        "flybase": "FBgn0031424",
+        "reviewed": false
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0031424",
+        "display_name": "VGlut"
+      },
+      "nt_hop2_vnc_motor": null,
+      "nt_n_seed": null,
+      "ok": true
+    }
+  ],
+  "n": 9,
+  "n_ok": 9,
+  "fail": [],
+  "biochem_S": 0.9459440805999452,
+  "neuro_S": 0.941270627156304,
+  "r_Biochemistry": 1.284069161007025,
+  "r_Neuroscience": 1.2826657122979865,
+  "look_split_pct": 0.4940517668525478,
+  "look_split_green_0_5": true,
+  "zig_da_vs_fly": {
+    "zig_doctrine": "DA modulates mushroom body after outcome, does not micro-manage walk",
+    "fly_da_vnc_motor": 0.041395377371460616,
+    "application": "Seeding DA cells as if they were tarsus was the wrong fold. Leftover motor 0.041 is the *correct* application: volume/T1, not walk.",
+    "match_empirical": true
+  },
+  "overall_ok": true,
+  "worked": [
+    "Live UniProt/Ensembl for biosynthetic enzymes",
+    "DA leftover motor matches Zig MB-modulate doctrine",
+    "Biochem vs Neuro |S| look-split 0.494% \u2264 0.5%"
+  ],
+  "did_not": [
+    "MW \u00d7 r is the wrong object (APPLY: do not score n_D as MW)",
+    "Zig still D1D38A; this pack AEB2AD \u2014 same law, different pin edition; hops stay AEB2AD"
+  ]
+}

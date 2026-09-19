@@ -91,6 +91,7 @@ python scripts/leftover_solve.py --hops     # FSOT join: side vote, TBD hops, bi
 python scripts/leftover_margin.py           # Lean 0.5% / 99.5% gates on those solves
 python scripts/predicted_side_hops.py       # 9 predicted VNC sides as hop observers
 python scripts/adventure1.py                # Adventure 1: neuromod volume vs walk
+python scripts/adventure1_fold.py           # Genetics/Zig/Lean API fold onto NT jobs
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

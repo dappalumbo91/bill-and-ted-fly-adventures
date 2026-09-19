@@ -54,6 +54,7 @@ MARGIN = ROOT / "data" / "leftover_margin.json"
 PSIDE = ROOT / "data" / "predicted_side_hops.json"
 BTLED = ROOT / "Bill and Ted fly adventures" / "ledger.json"
 ADV1 = ROOT / "data" / "adventure1.json"
+FOLD = ROOT / "data" / "adventure1_fold.json"
 
 
 def fail(msg: str) -> None:
@@ -384,6 +385,13 @@ def test_identity_phot1_develop() -> None:
     if not a1.get("overall_ok"):
         fail("adventure1")
     ok("adventure1 neuromod volume leftover vs VNC walk")
+    fd = json.loads(FOLD.read_text(encoding="utf-8"))
+    if not fd.get("overall_ok") or int(fd.get("n_ok") or 0) < 9:
+        fail(f"adventure1_fold {fd.get('fail')}")
+    ok(
+        f"adventure1_fold genes {fd['n_ok']}/{fd['n']}  "
+        f"look-split {float(fd.get('look_split_pct') or 0):.3f}%"
+    )
 
 
 def test_counts() -> None:

@@ -85,6 +85,7 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | Bill / TED versioning | **closed** | Bill-0 freeze; TED-1 predicted observers → **Bill-1**; `Bill and Ted fly adventures/` |
 | GitHub | **closed** | https://github.com/dappalumbo91/bill-and-ted-fly-adventures Apache-2.0 |
 | Adventure 1 / TED-2 | **closed → Bill-2** | DA 0.041 / OA 0.80 leftover; 5HT 4.70 < walk/φ; volume not step micro-management |
+| Adventure 1 fold (APIs + Genetics + Zig) | **closed** | 9/9 live enzymes; Biochem/Neuro look-split **0.494%** GREEN; DA leftover = Zig MB-modulate |
 
 ---
 
