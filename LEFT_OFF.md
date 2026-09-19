@@ -97,3 +97,5 @@ Bill-0 freeze → TED-1 (predicted observers) → **Bill-1**. Ledger: `Bill and 
 **Adventure 1 / TED-2 → Bill-2:** neuromod hops. DA 0.041 leftover, OA 0.80 leftover, 5HT 4.70 < VNC walk/φ. Volume = observer, not extra edges. Gap junctions: consensus analog (no EM list). Off-domain text not mapped onto \(W\). `Bill and Ted fly adventures/Adventure-1/FINDINGS.md`
 
 Fold: live UniProt **9/9** biosynthetic enzymes sit on NT jobs. Biochem vs Neuro |S| look-split **0.494% ≤ 0.5%**. Zig DA→MB: fly DA motor leftover is the **correct application** (not a walk seed). Pin edition: Zig D1D38A, pack AEB2AD — same law, hops stay AEB2AD.
+
+Genetic interactions **17/17**: Rdl, GluRIIA, nAChRalpha7, Dop1R1, Oamb, 5-HT1A, HisCl1, Vmat, VAChT, VGAT, DAT, SerT, shakB, ogre, Inx2, para, Sh. Innexins sit on consensus analog (no EM gap list). Still catalog-leftover: neuropeptides (Pdf, NPF), fru/dsx proteins (already on cell labels).

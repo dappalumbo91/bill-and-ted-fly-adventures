@@ -55,6 +55,7 @@ PSIDE = ROOT / "data" / "predicted_side_hops.json"
 BTLED = ROOT / "Bill and Ted fly adventures" / "ledger.json"
 ADV1 = ROOT / "data" / "adventure1.json"
 FOLD = ROOT / "data" / "adventure1_fold.json"
+GINT = ROOT / "data" / "genetic_interactions.json"
 
 
 def fail(msg: str) -> None:
@@ -392,6 +393,10 @@ def test_identity_phot1_develop() -> None:
         f"adventure1_fold genes {fd['n_ok']}/{fd['n']}  "
         f"look-split {float(fd.get('look_split_pct') or 0):.3f}%"
     )
+    gi = json.loads(GINT.read_text(encoding="utf-8"))
+    if not gi.get("overall_ok") or int(gi.get("n_ok") or 0) < 17:
+        fail(f"genetic_interactions {gi.get('fail')}")
+    ok(f"genetic_interactions {gi['n_ok']}/{gi['n']} receptors/transporters/innexins")
 
 
 def test_counts() -> None:

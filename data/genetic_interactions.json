@@ -1,0 +1,426 @@
+{
+  "adventure": 1,
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "already_synthesis": [
+    "ple",
+    "Ddc",
+    "Trh",
+    "Tdc2",
+    "Tbh",
+    "Hdc",
+    "Gad1",
+    "ChAT",
+    "VGlut"
+  ],
+  "n": 17,
+  "n_ok": 17,
+  "fail": [],
+  "by_layer_ok": {
+    "receptor": 7,
+    "v_transport": 3,
+    "reuptake": 2,
+    "innexin": 3,
+    "channel": 2
+  },
+  "genes": [
+    {
+      "symbol": "Rdl",
+      "layer": "receptor",
+      "nt": "gaba",
+      "job": "GABA-A receptor",
+      "accession": "",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Rdl",
+        "uniprot": "P25123",
+        "aa": 606,
+        "flybase": "FBgn0004244",
+        "reviewed": true
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0004244",
+        "display_name": "Rdl"
+      },
+      "sits_on": "NT hop gaba",
+      "nt_hop2_vnc_motor": 28.747975630228993,
+      "ok": true
+    },
+    {
+      "symbol": "GluRIIA",
+      "layer": "receptor",
+      "nt": "glutamate",
+      "job": "NMJ iGluR",
+      "accession": "",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "GluRIIA",
+        "uniprot": "Q9VMP4",
+        "aa": 907,
+        "flybase": "FBgn0004620",
+        "reviewed": false
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0004620",
+        "display_name": "GluRIIA"
+      },
+      "sits_on": "NT hop glutamate",
+      "nt_hop2_vnc_motor": null,
+      "ok": true
+    },
+    {
+      "symbol": "nAChRalpha7",
+      "layer": "receptor",
+      "nt": "acetylcholine",
+      "job": "nicotinic AChR",
+      "accession": "",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "nAChRalpha7",
+        "uniprot": "E1JJR2",
+        "aa": 564,
+        "flybase": "FBgn0086778",
+        "reviewed": false
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0086778",
+        "display_name": "nAChRalpha7"
+      },
+      "sits_on": "NT hop acetylcholine",
+      "nt_hop2_vnc_motor": null,
+      "ok": true
+    },
+    {
+      "symbol": "Dop1R1",
+      "layer": "receptor",
+      "nt": "dopamine",
+      "job": "D1-like DA receptor",
+      "accession": "",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Dop1R1",
+        "uniprot": "P41596",
+        "aa": 511,
+        "flybase": "FBgn0011582",
+        "reviewed": true
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0011582",
+        "display_name": "Dop1R1"
+      },
+      "sits_on": "NT hop dopamine",
+      "nt_hop2_vnc_motor": 0.041395377371460616,
+      "ok": true
+    },
+    {
+      "symbol": "Oamb",
+      "layer": "receptor",
+      "nt": "octopamine",
+      "job": "OA receptor",
+      "accession": "",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Oamb",
+        "uniprot": "Q7JQF1",
+        "aa": 645,
+        "flybase": "FBgn0024944",
+        "reviewed": true
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0024944",
+        "display_name": "Oamb"
+      },
+      "sits_on": "NT hop octopamine",
+      "nt_hop2_vnc_motor": 0.799930297424188,
+      "ok": true
+    },
+    {
+      "symbol": "5-HT1A",
+      "layer": "receptor",
+      "nt": "serotonin",
+      "job": "5-HT1A receptor",
+      "accession": "",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "5-HT1A",
+        "uniprot": "P28285",
+        "aa": 834,
+        "flybase": "FBgn0004168",
+        "reviewed": true
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0004168",
+        "display_name": "5-HT1A"
+      },
+      "sits_on": "NT hop serotonin",
+      "nt_hop2_vnc_motor": 4.695936959278612,
+      "ok": true
+    },
+    {
+      "symbol": "HisCl1",
+      "layer": "receptor",
+      "nt": "histamine",
+      "job": "histamine chloride channel",
+      "accession": "",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "HisCl1",
+        "uniprot": "Q9VGI0",
+        "aa": 426,
+        "flybase": "FBgn0037950",
+        "reviewed": false
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0037950",
+        "display_name": "HisCl1"
+      },
+      "sits_on": "NT hop histamine",
+      "nt_hop2_vnc_motor": 2.9700420343458376,
+      "ok": true
+    },
+    {
+      "symbol": "Vmat",
+      "layer": "v_transport",
+      "nt": "dopamine",
+      "job": "vesicular monoamine (DA/OA/5HT)",
+      "accession": "",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Vmat",
+        "uniprot": "Q8IH57",
+        "aa": 646,
+        "flybase": "FBgn0260964",
+        "reviewed": false
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0260964",
+        "display_name": "Vmat"
+      },
+      "sits_on": "NT hop dopamine",
+      "nt_hop2_vnc_motor": 0.041395377371460616,
+      "ok": true
+    },
+    {
+      "symbol": "VAChT",
+      "layer": "v_transport",
+      "nt": "acetylcholine",
+      "job": "vesicular ACh transporter",
+      "accession": "",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "VAChT",
+        "uniprot": "O17444",
+        "aa": 578,
+        "flybase": "FBgn0270928",
+        "reviewed": true
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0270928",
+        "display_name": "VAChT"
+      },
+      "sits_on": "NT hop acetylcholine",
+      "nt_hop2_vnc_motor": null,
+      "ok": true
+    },
+    {
+      "symbol": "VGAT",
+      "layer": "v_transport",
+      "nt": "gaba",
+      "job": "vesicular GABA transporter",
+      "accession": "",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "VGAT",
+        "uniprot": "A1Z9M6",
+        "aa": 549,
+        "flybase": "FBgn0033911",
+        "reviewed": false
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0033911",
+        "display_name": "VGAT"
+      },
+      "sits_on": "NT hop gaba",
+      "nt_hop2_vnc_motor": 28.747975630228993,
+      "ok": true
+    },
+    {
+      "symbol": "DAT",
+      "layer": "reuptake",
+      "nt": "dopamine",
+      "job": "dopamine transporter",
+      "accession": "",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "DAT",
+        "uniprot": "Q7K4Y6",
+        "aa": 631,
+        "flybase": "FBgn0034136",
+        "reviewed": true
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0034136",
+        "display_name": "DAT"
+      },
+      "sits_on": "NT hop dopamine",
+      "nt_hop2_vnc_motor": 0.041395377371460616,
+      "ok": true
+    },
+    {
+      "symbol": "SerT",
+      "layer": "reuptake",
+      "nt": "serotonin",
+      "job": "serotonin transporter",
+      "accession": "",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "SerT",
+        "uniprot": "P51905",
+        "aa": 622,
+        "flybase": "FBgn0010414",
+        "reviewed": true
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0010414",
+        "display_name": "SerT"
+      },
+      "sits_on": "NT hop serotonin",
+      "nt_hop2_vnc_motor": 4.695936959278612,
+      "ok": true
+    },
+    {
+      "symbol": "shakB",
+      "layer": "innexin",
+      "nt": "",
+      "job": "gap junction (giant-fiber electrical)",
+      "accession": "",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "shakB",
+        "uniprot": "P33085",
+        "aa": 372,
+        "flybase": "FBgn0085387",
+        "reviewed": true
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0085387",
+        "display_name": "shakB"
+      },
+      "sits_on": "consensus_gap_analog",
+      "nt_hop2_vnc_motor": null,
+      "ok": true
+    },
+    {
+      "symbol": "ogre",
+      "layer": "innexin",
+      "nt": "",
+      "job": "innexin-1 gap junction",
+      "accession": "",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "ogre",
+        "uniprot": "P27716",
+        "aa": 362,
+        "flybase": "FBgn0004646",
+        "reviewed": true
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0004646",
+        "display_name": "ogre"
+      },
+      "sits_on": "consensus_gap_analog",
+      "nt_hop2_vnc_motor": null,
+      "ok": true
+    },
+    {
+      "symbol": "Inx2",
+      "layer": "innexin",
+      "nt": "",
+      "job": "innexin-2 gap junction",
+      "accession": "",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Inx2",
+        "uniprot": "Q9V427",
+        "aa": 367,
+        "flybase": "FBgn0027108",
+        "reviewed": true
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0027108",
+        "display_name": "Inx2"
+      },
+      "sits_on": "consensus_gap_analog",
+      "nt_hop2_vnc_motor": null,
+      "ok": true
+    },
+    {
+      "symbol": "para",
+      "layer": "channel",
+      "nt": "",
+      "job": "voltage-gated Na (spike)",
+      "accession": "",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "para",
+        "uniprot": "P35500",
+        "aa": 2131,
+        "flybase": "FBgn0285944",
+        "reviewed": true
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0285944",
+        "display_name": "para"
+      },
+      "sits_on": "voltage-gated Na (spike)",
+      "nt_hop2_vnc_motor": null,
+      "ok": true
+    },
+    {
+      "symbol": "Sh",
+      "layer": "channel",
+      "nt": "",
+      "job": "Shaker K channel",
+      "accession": "",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Sh",
+        "uniprot": "P08510",
+        "aa": 655,
+        "flybase": "FBgn0003380",
+        "reviewed": true
+      },
+      "ensembl_live": {
+        "ok": true,
+        "id": "FBgn0003380",
+        "display_name": "Sh"
+      },
+      "sits_on": "Shaker K channel",
+      "nt_hop2_vnc_motor": null,
+      "ok": true
+    }
+  ],
+  "innexin_doctrine": "No Inx cell-type string in Male CNS (INXXX false positive). shakB/ogre/Inx2 sit on consensus trit (electrical analog), not invented gap edges.",
+  "overall_ok": true,
+  "worked": [
+    "receptors + VMAT/VAChT/VGAT + DAT/SerT + innexins live UniProt",
+    "synthesis already folded (ple Ddc Trh Tdc2 Tbh Hdc Gad1 ChAT VGlut)"
+  ],
+  "did_not": []
+}

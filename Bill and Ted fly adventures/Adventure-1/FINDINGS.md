@@ -67,3 +67,7 @@ Live enzymes **9/9**. Look-split Biochem/Neuro **0.494%** GREEN vs Lean 0.5%.
 Zig DA→MB modulate: fly DA hop-2 vnc_motor **0.041 leftover**. Application error was treating DA as a walk seed. Correct fold is volume/T1.
 
 Biosynthetic genes sit on NT jobs (ple/Ddc→DA, Trh→5HT, Tdc2/Tbh→OA, Hdc→histamine, Gad1/ChAT/VGlut already seated).
+
+## Genetic interactions (receptors / transporters / innexins)
+
+Live **17/17**. Synthesis already seated. Innexins → consensus analog (no EM gap list).
