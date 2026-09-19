@@ -71,3 +71,9 @@ Biosynthetic genes sit on NT jobs (ple/Ddc→DA, Trh→5HT, Tdc2/Tbh→OA, Hdc�
 ## Genetic interactions (receptors / transporters / innexins)
 
 Live **17/17**. Synthesis already seated. Innexins → consensus analog (no EM gap list).
+
+## Peptides and leftover genes
+
+Live **28/28**. Pdf/NPF/SIFa/clock/fru/dsx/nAChR extras/EAAT1/Gat/TrpA1.
+
+LNv hop n=20 vnc_motor=0.2842003448420871 leftover=True

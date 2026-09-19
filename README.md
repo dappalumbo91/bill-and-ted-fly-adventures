@@ -93,6 +93,7 @@ python scripts/predicted_side_hops.py       # 9 predicted VNC sides as hop obser
 python scripts/adventure1.py                # Adventure 1: neuromod volume vs walk
 python scripts/adventure1_fold.py           # Genetics/Zig/Lean API fold onto NT jobs
 python scripts/genetic_interactions.py      # receptors, VMAT/VAChT/VGAT, innexins, channels
+python scripts/peptide_leftovers.py --hops  # Pdf/NPF/clock/fru + LNv leftover hop
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

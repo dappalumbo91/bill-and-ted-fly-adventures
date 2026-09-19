@@ -56,6 +56,7 @@ BTLED = ROOT / "Bill and Ted fly adventures" / "ledger.json"
 ADV1 = ROOT / "data" / "adventure1.json"
 FOLD = ROOT / "data" / "adventure1_fold.json"
 GINT = ROOT / "data" / "genetic_interactions.json"
+PEP = ROOT / "data" / "peptide_leftovers.json"
 
 
 def fail(msg: str) -> None:
@@ -397,6 +398,16 @@ def test_identity_phot1_develop() -> None:
     if not gi.get("overall_ok") or int(gi.get("n_ok") or 0) < 17:
         fail(f"genetic_interactions {gi.get('fail')}")
     ok(f"genetic_interactions {gi['n_ok']}/{gi['n']} receptors/transporters/innexins")
+    pep = json.loads(PEP.read_text(encoding="utf-8"))
+    if not pep.get("overall_ok") or int(pep.get("n_ok") or 0) < 28:
+        fail(f"peptide_leftovers {pep.get('fail')}")
+    ln = pep.get("LNv_hop") or {}
+    if ln and not ln.get("sleep_leftover"):
+        fail("LNv should leftover vs walk")
+    ok(
+        f"peptide_leftovers {pep['n_ok']}/{pep['n']}  "
+        f"LNv leftover motor={((ln.get('hop2') or {}).get('vnc_motor'))}"
+    )
 
 
 def test_counts() -> None:

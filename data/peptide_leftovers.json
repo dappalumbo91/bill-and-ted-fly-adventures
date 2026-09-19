@@ -1,0 +1,454 @@
+{
+  "adventure": 1,
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "n": 28,
+  "n_ok": 28,
+  "fail": [],
+  "by_layer_ok": {
+    "peptide": 8,
+    "receptor": 10,
+    "clock": 4,
+    "selector": 2,
+    "reuptake": 2,
+    "channel": 2
+  },
+  "genes": [
+    {
+      "symbol": "Pdf",
+      "layer": "peptide",
+      "sits_on": "sleep leftover / LNv clock",
+      "job": "pigment-dispersing factor",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Pdf",
+        "uniprot": "O96690",
+        "aa": 102,
+        "flybase": "FBgn0023178",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "PdfR",
+      "layer": "receptor",
+      "sits_on": "sleep leftover / LNv clock",
+      "job": "Pdf receptor",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Pdfr",
+        "uniprot": "Q9W4Y2",
+        "aa": 669,
+        "flybase": "FBgn0260753",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "NPF",
+      "layer": "peptide",
+      "sits_on": "feeding leftover (not walk)",
+      "job": "neuropeptide F",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "NPF",
+        "uniprot": "Q9VET0",
+        "aa": 102,
+        "flybase": "FBgn0027109",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "NPFR",
+      "layer": "receptor",
+      "sits_on": "feeding leftover",
+      "job": "NPF receptor",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "NPFR",
+        "uniprot": "Q9VNM1",
+        "aa": 485,
+        "flybase": "FBgn0037408",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "SIFa",
+      "layer": "peptide",
+      "sits_on": "courtship DENY default",
+      "job": "SIFamide",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "SIFa",
+        "uniprot": "Q6IGX9",
+        "aa": 72,
+        "flybase": "FBgn0053527",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "sNPF",
+      "layer": "peptide",
+      "sits_on": "feeding leftover",
+      "job": "short NPF",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "sNPF",
+        "uniprot": "Q9VIQ0",
+        "aa": 281,
+        "flybase": "FBgn0032840",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Dh31",
+      "layer": "peptide",
+      "sits_on": "clock / gut leftover",
+      "job": "diuretic hormone 31",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Dh31",
+        "uniprot": "Q9VLK4",
+        "aa": 116,
+        "flybase": "FBgn0032048",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "AstA",
+      "layer": "peptide",
+      "sits_on": "feeding leftover",
+      "job": "allatostatin A",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "AstA",
+        "uniprot": "Q9VC44",
+        "aa": 151,
+        "flybase": "FBgn0015591",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "CCAP",
+      "layer": "peptide",
+      "sits_on": "ecdysis leftover",
+      "job": "crustacean cardioactive peptide",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "CCAP",
+        "uniprot": "Q9VCW0",
+        "aa": 155,
+        "flybase": "FBgn0039007",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Crz",
+      "layer": "peptide",
+      "sits_on": "stress leftover",
+      "job": "corazonin",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Crz",
+        "uniprot": "Q26377",
+        "aa": 154,
+        "flybase": "FBgn0013767",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "per",
+      "layer": "clock",
+      "sits_on": "sleep leftover",
+      "job": "period",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "per",
+        "uniprot": "P07663",
+        "aa": 1218,
+        "flybase": "FBgn0003068",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "tim",
+      "layer": "clock",
+      "sits_on": "sleep leftover",
+      "job": "timeless",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "tim",
+        "uniprot": "P49021",
+        "aa": 1398,
+        "flybase": "FBgn0014396",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Clk",
+      "layer": "clock",
+      "sits_on": "sleep leftover",
+      "job": "Clock",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Clk",
+        "uniprot": "O61735",
+        "aa": 1027,
+        "flybase": "FBgn0023076",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "cyc",
+      "layer": "clock",
+      "sits_on": "sleep leftover",
+      "job": "cycle",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "cyc",
+        "uniprot": "O61734",
+        "aa": 413,
+        "flybase": "FBgn0023094",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "fru",
+      "layer": "selector",
+      "sits_on": "courtship DENY default",
+      "job": "fruitless",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "fru",
+        "uniprot": "Q8IN81",
+        "aa": 955,
+        "flybase": "FBgn0004652",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "dsx",
+      "layer": "selector",
+      "sits_on": "courtship DENY default",
+      "job": "doublesex",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "dsx",
+        "uniprot": "P23023",
+        "aa": 549,
+        "flybase": "FBgn0000504",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "nAChRalpha1",
+      "layer": "receptor",
+      "sits_on": "ACh",
+      "job": "nAChR \u03b11",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "nAChRalpha1",
+        "uniprot": "P09478",
+        "aa": 567,
+        "flybase": "FBgn0000036",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "nAChRalpha2",
+      "layer": "receptor",
+      "sits_on": "ACh",
+      "job": "nAChR \u03b12",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "nAChRalpha2",
+        "uniprot": "P17644",
+        "aa": 576,
+        "flybase": "FBgn0000039",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "nAChRalpha3",
+      "layer": "receptor",
+      "sits_on": "ACh",
+      "job": "nAChR \u03b13",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "nAChRalpha3",
+        "uniprot": "Q9W3G6",
+        "aa": 795,
+        "flybase": "FBgn0015519",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "nAChRalpha4",
+      "layer": "receptor",
+      "sits_on": "ACh",
+      "job": "nAChR \u03b14",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "nAChRalpha4",
+        "uniprot": "A8JNX5",
+        "aa": 539,
+        "flybase": "FBgn0266347",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "nAChRalpha5",
+      "layer": "receptor",
+      "sits_on": "ACh",
+      "job": "nAChR \u03b15",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "nAChRalpha5",
+        "uniprot": "A0A499GGQ3",
+        "aa": 837,
+        "flybase": "FBgn0028875",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "nAChRalpha6",
+      "layer": "receptor",
+      "sits_on": "ACh",
+      "job": "nAChR \u03b16",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "nAChRalpha6",
+        "uniprot": "Q7KTF8",
+        "aa": 523,
+        "flybase": "FBgn0032151",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "nAChRbeta1",
+      "layer": "receptor",
+      "sits_on": "ACh",
+      "job": "nAChR \u03b21",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "nAChRbeta1",
+        "uniprot": "P04755",
+        "aa": 521,
+        "flybase": "FBgn0000038",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "nAChRbeta2",
+      "layer": "receptor",
+      "sits_on": "ACh",
+      "job": "nAChR \u03b22",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "nAChRbeta2",
+        "uniprot": "P25162",
+        "aa": 519,
+        "flybase": "FBgn0004118",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "EAAT1",
+      "layer": "reuptake",
+      "sits_on": "glutamate",
+      "job": "excitatory AA transporter",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Eaat1",
+        "uniprot": "A0A6H2EJK0",
+        "aa": 523,
+        "flybase": "FBgn0026439",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "Gat",
+      "layer": "reuptake",
+      "sits_on": "GABA",
+      "job": "GABA transporter",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "Gat",
+        "uniprot": "Q8IMC1",
+        "aa": 508,
+        "flybase": "FBgn0039915",
+        "reviewed": false
+      },
+      "ok": true
+    },
+    {
+      "symbol": "TrpA1",
+      "layer": "channel",
+      "sits_on": "JO / mechanosensory",
+      "job": "thermo/mechano TRPA",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "TrpA1",
+        "uniprot": "Q7Z020",
+        "aa": 1197,
+        "flybase": "FBgn0035934",
+        "reviewed": true
+      },
+      "ok": true
+    },
+    {
+      "symbol": "painless",
+      "layer": "channel",
+      "sits_on": "nociception leftover",
+      "job": "TRPA nociception",
+      "uniprot_live": {
+        "ok": true,
+        "live_gene": "pain",
+        "uniprot": "A0A0B4KEZ8",
+        "aa": 629,
+        "flybase": "FBgn0060296",
+        "reviewed": false
+      },
+      "ok": true
+    }
+  ],
+  "LNv_hop": {
+    "n_seed": 20,
+    "hop2": {
+      "vnc_motor": 0.2842003448420871,
+      "vnc_motor_L": 0.14039698893982053,
+      "vnc_motor_R": 0.14380335590226634,
+      "vnc_motor_other": 0.0,
+      "ipsi_bias": -0.011985794613748763
+    },
+    "walks": false,
+    "sleep_leftover": true,
+    "residual_Biochemistry": 1.284069161007025,
+    "job": "clock LNv \u2014 should leftover vs VNC walk 10.74"
+  },
+  "overall_ok": true,
+  "closeout": "Peptides/clock/selectors/extra nAChR/reuptake/TRP seated. Adventure 1 genetic catalog complete enough to start Adventure 2."
+}

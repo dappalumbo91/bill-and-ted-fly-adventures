@@ -98,4 +98,4 @@ Bill-0 freeze → TED-1 (predicted observers) → **Bill-1**. Ledger: `Bill and 
 
 Fold: live UniProt **9/9** biosynthetic enzymes sit on NT jobs. Biochem vs Neuro |S| look-split **0.494% ≤ 0.5%**. Zig DA→MB: fly DA motor leftover is the **correct application** (not a walk seed). Pin edition: Zig D1D38A, pack AEB2AD — same law, hops stay AEB2AD.
 
-Genetic interactions **17/17**: Rdl, GluRIIA, nAChRalpha7, Dop1R1, Oamb, 5-HT1A, HisCl1, Vmat, VAChT, VGAT, DAT, SerT, shakB, ogre, Inx2, para, Sh. Innexins sit on consensus analog (no EM gap list). Still catalog-leftover: neuropeptides (Pdf, NPF), fru/dsx proteins (already on cell labels).
+Genetic interactions **17/17** + peptides/clock **28/28**. LNv hop-2 vnc_motor **0.28 leftover** (clock, not walk). fru/dsx proteins seated, DENY default. Adventure 1 genetic catalog is enough to start Adventure 2.
