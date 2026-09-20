@@ -105,6 +105,7 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | TED-9 grow command bottlenecks | **promoted → Bill-9** | live type-exact hops **5/6**; DNg29 desc on; INXXX007 isolated leftover; `docs/GROWTH_REGIONS.md` |
 | TED-10 INXXX007 leftover | **promoted → Bill-10** | class-gated leftover; chordotonal class vm 5.01; FETi BANC n=6 vm 9.19; do not grow XXX |
 | TED-11 remaining leftovers | **promoted → Bill-11** | map **26/35**; 4 blocked wait; language splice job; Male FETi analog BANC |
+| TED-12 analog-join remaining 9 | **promoted → Bill-12** | leftover map **35/35**; dumps still missing; no invented data |
 
 ---
 

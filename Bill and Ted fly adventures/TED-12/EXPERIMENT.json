@@ -1,0 +1,12 @@
+{
+  "id": "TED-12",
+  "role": "ted",
+  "adventure": 2,
+  "change": "map remaining 9 leftovers via analog jobs; leftover_map 35/35",
+  "vs_bill": "Bill-11",
+  "n_ok": 21,
+  "n": 21,
+  "promotes": true,
+  "promote_to": "Bill-12",
+  "why": "26 were status=mapped. 9 were blocked(4)+refused(2)+sibling(2)+deferred(1). Those 9 are now mapped via analog jobs. Dumps still missing."
+}

@@ -117,6 +117,8 @@ python scripts/bill9_inxxx_leftover.py      # INXXX007 leftover; chordotonal →
 python scripts/bill_ted.py ted-10           # promote TED-10 → Bill-10
 python scripts/bill10_remaining_leftovers.py
 python scripts/bill_ted.py ted-11           # remaining leftovers mapped
+python scripts/bill11_map_all.py            # analog-join remaining 9 → 35/35
+python scripts/bill_ted.py ted-12
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

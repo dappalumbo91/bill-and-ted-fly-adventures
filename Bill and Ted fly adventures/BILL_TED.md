@@ -44,7 +44,9 @@ Pin **AEB2AD**. Law \(S=K(T_1+T_2+T_3)\). Residual hops on measured synapses. Ov
 | **TED-10 / Adventure 2** | INXXX007 class-gated leftover; splice chordotonal → FETi | **9/9** → **Bill-10** |
 | **Bill-10** | leftover named; FETi effector hopped (BANC n=6, vm 9.19) | promoted from TED-10 |
 | **TED-11 / Adventure 2** | remaining leftovers mapped (analogs, wait, refuse, language splice) | **18/18** → **Bill-11** |
-| **Bill-11** | current | leftover map 26/35; `docs/LEFTOVER_REMAINING.md` |
+| **Bill-11** | leftover map 26/35; `docs/LEFTOVER_REMAINING.md` | promoted from TED-11 |
+| **TED-12 / Adventure 2** | analog-join the remaining 9 leftovers; map **35/35** | **21/21** → **Bill-12** |
+| **Bill-12** | current | leftover map 35/35 via analog jobs; dumps still missing |
 
 Scripts: `python scripts/bill_ted.py freeze` · `ted-1` … `ted-10` · `python scripts/bill10_remaining_leftovers.py` · `ted-11` · `ledger`
 

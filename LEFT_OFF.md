@@ -117,3 +117,5 @@ Adventure 1 extras: Ledger B on dump N, GABA n, CRC transmitter AA — **17/17**
 **TED-10:** INXXX007 leftover **solved**. Chordotonal class n=2136 hop-2 vm **5.01** command; INXXX007 n=2 leftover (XXX unlabeled); DNg29 n=2 still commands (contrast). Class hop-3 effector **tibia_extensor_FETi**; live BANC n=6 hop-2 vm **9.19**. Do not grow INXXX007. Splice **class → FETi**. **9/9. Promoted → Bill-10.** `python scripts/bill9_inxxx_leftover.py` · `python scripts/bill_ted.py ted-10`
 
 **TED-11:** remaining leftovers **18/18**. Map **26/35**. Blocked 4 wait (free-flight, Codex, Berlin, Iwasaki). Refused 2. Sibling pins. Language deferred splice. VNC 5 trit 0. Male FETi analog BANC. `docs/LEFTOVER_REMAINING.md`. **Promoted → Bill-11.** `python scripts/bill10_remaining_leftovers.py` · `python scripts/bill_ted.py ted-11`
+
+**TED-12:** **why 26/35** = 26 `status=mapped` + 9 blocked/refused/sibling/deferred. Those 9 analog-joined. Map **35/35**. Dumps still missing. **21/21. Promoted → Bill-12.** `python scripts/bill11_map_all.py` · `python scripts/bill_ted.py ted-12`

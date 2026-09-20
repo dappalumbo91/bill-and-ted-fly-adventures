@@ -7,7 +7,7 @@ Pin **AEB2AD**. Leftover is a **mechanic**, not a hole to fill with invented syn
 \text{leftover} \iff \lvert x\rvert \le 1/\varphi
 \]
 
-Consensus trit \(0\) is leftover of a decision (superpose). Missing dumps stay missing. Stamp: `data/leftover_map.json` (`python scripts/leftover_map.py`). **35** items: **26 mapped**, 4 blocked, 2 refused, 2 sibling, 1 deferred.
+Consensus trit \(0\) is leftover of a decision (superpose). Missing dumps stay missing. Stamp: `data/leftover_map.json` (`python scripts/leftover_map.py`). **35** items: **35 mapped**. Analog joins; dumps still missing.
 
 ---
 
@@ -52,23 +52,23 @@ Consensus trit \(0\) is leftover of a decision (superpose). Missing dumps stay m
 - Sleep **~17%** leftover-long DAM inactivity.
 - Hop horizon \(\mathrm{round}(\varphi^5)=11\).
 
-## Missing dumps (wait — do not invent)
+## Missing dumps (mapped analog — still no invented data)
 
-| Missing | Status |
+| Missing | Analog |
 |---------|--------|
-| Free-flight 3D wingbeat | blocked |
-| Haltere named types (count 0) | mapped empty |
-| Type string `wing` (count 0; use hg3 / DNp01) | mapped empty |
-| Embryo→pupa synapse movie | refused |
-| Fly Cell Atlas → bodyId | refused |
-| Codex `api_token` | blocked; local counts authority |
-| Berlin / ymaze files | blocked (token / corrupt) |
-| Iwasaki ball videos | blocked; forelimb analog |
+| Free-flight 3D wingbeat | 200 Hz plant (descending>1) |
+| Haltere named types (count 0) | JO gyro |
+| Type string `wing` (count 0) | hg3 / DNp01 |
+| Embryo→pupa synapse movie | two snapshots + hemilineage |
+| Fly Cell Atlas → bodyId | gene sits_on hop class (n=120) |
+| Codex `api_token` | local type_counts.json |
+| Berlin / ymaze files | Harvard 3D + maze plant |
+| Iwasaki ball videos | forelimb ≥ 1/φ |
 
-## Sibling / deferred / denied
+## Sibling / language / denied (now mapped analog)
 
-- Genetics GitHub still **D1D38A**. This pack **AEB2AD**.
-- Language / coding tokens **deferred** (trit ALU and parser exist; not an LLM observer).
+- Genetics pin **D1D38A** vs pack **AEB2AD**: same law; fold by function; do not mix hashes.
+- Language / coding tokens: analog trit ALU + parser 21/21; not an observer on \(W\); splice later at a command bottleneck.
 - Courtship / aggression **DENY** default — guardrail, not missing data.
 
 ---
@@ -113,8 +113,6 @@ Authority: FSOT-2.1-Lean `docs/APPLY.md` step 5 and `scripts/fsot_precision_cons
 - Birthtime overlay p=1: **GREEN**.
 - Unlabeled VNC: **9 predicted L/R**, 5 leftover — `data/vnc_side_predicted.json` (predicted, not EM).
 - Those 9 as hop observers (`python scripts/predicted_side_hops.py`): L ipsi **+0.17**, R **−0.84**, leftover-five ~0. Function matches labeled VNC laterality.
+## Remaining (TED-12)
 
-
-## Remaining (TED-11)
-
-Map stamp **26/35**. Blocked 4 wait. Refused 2. Sibling 2. Language deferred splice. VNC 5 sides trit 0. Male FETi naming analog BANC. See `docs/LEFTOVER_REMAINING.md`.
+**35/35 mapped.** Former blocked/refused/sibling/deferred joined to analog jobs. See `docs/LEFTOVER_REMAINING.md`.

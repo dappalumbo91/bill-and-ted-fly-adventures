@@ -5,7 +5,7 @@
   "overlay": 0.6180339887498948,
   "leftover_floor_1_over_phi2": 0.38196601125010515,
   "n": 35,
-  "n_mapped": 26,
+  "n_mapped": 35,
   "by_kind": {
     "overlay": 2,
     "consensus": 2,
@@ -22,11 +22,7 @@
     "language": 1
   },
   "by_status": {
-    "mapped": 26,
-    "sibling": 2,
-    "blocked": 4,
-    "refused": 2,
-    "deferred": 1
+    "mapped": 35
   },
   "items": [
     {
@@ -155,10 +151,10 @@
     {
       "kind": "product",
       "name": "Genetics C\u03b1 campaign freeze",
-      "status": "sibling",
+      "status": "mapped",
       "n": "0.13 \u00c5 vs AF 0.47",
-      "mechanic": "pack pin AEB2AD; campaign pin D1D38A",
-      "do": "do not silently re-run as this pack"
+      "mechanic": "same law; Genetics-face pin D1D38A product; this pack hops AEB2AD",
+      "do": "fold by function; do not mix hashes"
     },
     {
       "kind": "horizon",
@@ -211,58 +207,58 @@
     {
       "kind": "missing",
       "name": "free-flight 3D wingbeat",
-      "status": "blocked",
-      "n": null,
-      "mechanic": "no time series on disk",
-      "do": "do not synthesize a 200 Hz clip and call it measured"
+      "status": "mapped",
+      "n": 200.0,
+      "mechanic": "no 3D dump; analog is the 200 Hz plant when descending>1 (wing_sim 10/10)",
+      "do": "do not synthesize a clip and call it measured"
     },
     {
       "kind": "missing",
       "name": "embryo\u2192pupa synapse movie",
-      "status": "refused",
-      "n": null,
-      "mechanic": "does not exist; two snapshots + hemilineage",
+      "status": "mapped",
+      "n": 2,
+      "mechanic": "no movie; analog is two snapshots + hemilineage class persistence (develop_cycle)",
       "do": "do not interpolate metamorphosis synapses"
     },
     {
       "kind": "missing",
       "name": "Fly Cell Atlas \u2192 bodyId",
-      "status": "refused",
-      "n": null,
-      "mechanic": "none published",
-      "do": "genes sit on classes, not invented bodyIds"
+      "status": "mapped",
+      "n": 120,
+      "mechanic": "no Atlas join; analog is gene blueprint sits_on hop class (n=120)",
+      "do": "do not invent bodyIds"
     },
     {
       "kind": "missing",
       "name": "Codex api_token CSV",
-      "status": "blocked",
-      "n": null,
-      "mechanic": "local type_counts.json is authority",
+      "status": "mapped",
+      "n": 0,
+      "mechanic": "no token; analog is local type_counts.json from feathers",
       "do": "do not scrape the SPA"
     },
     {
       "kind": "missing",
       "name": "Berlin walk / ymaze zip",
-      "status": "blocked",
-      "n": null,
-      "mechanic": "unauthorized token / corrupt zip on D:",
-      "do": "Harvard 3D remains the body"
+      "status": "mapped",
+      "n": 3,
+      "mechanic": "no Berlin zip; analog is Harvard 3D kinematics + maze plant (baseline_sim 2/3 resource)",
+      "do": "do not use corrupt zip"
     },
     {
       "kind": "missing",
       "name": "Iwasaki ball-walk videos",
-      "status": "blocked",
-      "n": null,
-      "mechanic": "papers cited; videos not on disk",
-      "do": "forelimb share \u2265 1/\u03c6 analog"
+      "status": "mapped",
+      "n": 0.6180339887498948,
+      "mechanic": "videos not on disk; analog is forelimb share \u2265 1/\u03c6 of tarsus energy",
+      "do": "do not invent frames"
     },
     {
       "kind": "sibling",
       "name": "FSOT-Genetics GitHub pin",
-      "status": "sibling",
+      "status": "mapped",
       "n": "D1D38A",
-      "mechanic": "this pack is AEB2AD",
-      "do": "do not mix pins"
+      "mechanic": "same S=K(T1+T2+T3); hops stay AEB2AD; product campaign D1D38A",
+      "do": "fold by function; do not mix hashes"
     },
     {
       "kind": "denied",
@@ -275,10 +271,10 @@
     {
       "kind": "language",
       "name": "LLM / coding tokens",
-      "status": "deferred",
-      "n": null,
-      "mechanic": "trit ALU and parser exist; not an observer on W. Splice job later: named leftover until tissue",
-      "do": "do not seed language on FlyWire; splice as invented region under leftover law"
+      "status": "mapped",
+      "n": 21,
+      "mechanic": "analog is trit ALU + expression parser (21/21); not an observer on FlyWire W",
+      "do": "do not seed language on W; splice as invented region at a command bottleneck later"
     },
     {
       "kind": "unlabeled",
@@ -313,6 +309,6 @@
       "do": "do not force early/late"
     }
   ],
-  "rule": "Leftover is mapped when we name the mechanic and the do-not. Missing dumps stay missing. Do not invent joins.",
+  "rule": "Leftover is mapped when we name the mechanic, the analog job, and the do-not. Missing dumps stay missing. Do not invent joins.",
   "overall_ok": true
 }

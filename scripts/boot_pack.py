@@ -73,6 +73,7 @@ A2GX = ROOT / "data" / "bill7_memory_expand.json"
 A2GR = ROOT / "data" / "bill8_grow_bottlenecks.json"
 A2IX = ROOT / "data" / "bill9_inxxx_leftover.json"
 A2R = ROOT / "data" / "bill10_remaining_leftovers.json"
+A2ALL = ROOT / "data" / "bill11_map_all.json"
 
 
 def fail(msg: str) -> None:
@@ -398,7 +399,7 @@ def test_identity_phot1_develop() -> None:
     bt = json.loads(BTLED.read_text(encoding="utf-8"))
     if bt.get("current_bill") not in (
         "Bill-0", "Bill-1", "Bill-2", "Bill-3", "Bill-4",
-        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10", "Bill-11",
+        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10", "Bill-11", "Bill-12",
     ):
         fail(f"bill_ted current {bt.get('current_bill')}")
     ok(f"bill_ted current={bt.get('current_bill')} teds={bt.get('teds')}")
@@ -559,12 +560,23 @@ def test_identity_phot1_develop() -> None:
     rem = json.loads(A2R.read_text(encoding="utf-8"))
     if not rem.get("overall_ok"):
         fail(f"bill10_remaining_leftovers fail={rem.get('fail')}")
-    if rem.get("promotes") and bt.get("current_bill") != "Bill-11":
-        fail("TED-11 promotes but ledger current_bill is not Bill-11")
+    if rem.get("promotes") and "Bill-11" not in (bt.get("bills") or []) and bt.get("current_bill") not in ("Bill-11", "Bill-12"):
+        fail("TED-11 promotes but Bill-11 is not on the ledger")
     ok(
         f"bill10_remaining_leftovers TED-11 {rem.get('n_ok')}/{rem.get('n')}  "
         f"map={rem.get('leftover_map_n_mapped')}/{rem.get('leftover_map_n')}  "
         f"current={bt.get('current_bill')}"
+    )
+    mall = json.loads(A2ALL.read_text(encoding="utf-8"))
+    if not mall.get("overall_ok"):
+        fail(f"bill11_map_all fail={mall.get('fail')}")
+    if int(mall.get("n_mapped") or 0) != int(mall.get("n") or 0):
+        fail(f"leftover map {mall.get('n_mapped')}/{mall.get('n')}")
+    if mall.get("promotes") and bt.get("current_bill") != "Bill-12":
+        fail("TED-12 promotes but ledger current_bill is not Bill-12")
+    ok(
+        f"bill11_map_all TED-12 {mall.get('n_ok')}/{mall.get('n_tests')}  "
+        f"map={mall.get('n_mapped')}/{mall.get('n')}  current={bt.get('current_bill')}"
     )
 
 

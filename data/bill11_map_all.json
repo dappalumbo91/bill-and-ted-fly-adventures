@@ -1,0 +1,194 @@
+{
+  "adventure": 2,
+  "ted": "TED-12",
+  "vs_bill": "Bill-11",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "why_26_of_35": "26 were status=mapped. 9 were blocked(4)+refused(2)+sibling(2)+deferred(1). Those 9 are now mapped via analog jobs. Dumps still missing.",
+  "n_mapped": 35,
+  "n": 35,
+  "former_nine": [
+    {
+      "name": "Genetics C\u03b1 campaign freeze",
+      "mechanic": "same law; Genetics-face pin D1D38A product; this pack hops AEB2AD",
+      "do": "fold by function; do not mix hashes"
+    },
+    {
+      "name": "free-flight 3D wingbeat",
+      "mechanic": "no 3D dump; analog is the 200 Hz plant when descending>1 (wing_sim 10/10)",
+      "do": "do not synthesize a clip and call it measured"
+    },
+    {
+      "name": "embryo\u2192pupa synapse movie",
+      "mechanic": "no movie; analog is two snapshots + hemilineage class persistence (develop_cycle)",
+      "do": "do not interpolate metamorphosis synapses"
+    },
+    {
+      "name": "Fly Cell Atlas \u2192 bodyId",
+      "mechanic": "no Atlas join; analog is gene blueprint sits_on hop class (n=120)",
+      "do": "do not invent bodyIds"
+    },
+    {
+      "name": "Codex api_token CSV",
+      "mechanic": "no token; analog is local type_counts.json from feathers",
+      "do": "do not scrape the SPA"
+    },
+    {
+      "name": "Berlin walk / ymaze zip",
+      "mechanic": "no Berlin zip; analog is Harvard 3D kinematics + maze plant (baseline_sim 2/3 resource)",
+      "do": "do not use corrupt zip"
+    },
+    {
+      "name": "Iwasaki ball-walk videos",
+      "mechanic": "videos not on disk; analog is forelimb share \u2265 1/\u03c6 of tarsus energy",
+      "do": "do not invent frames"
+    },
+    {
+      "name": "FSOT-Genetics GitHub pin",
+      "mechanic": "same S=K(T1+T2+T3); hops stay AEB2AD; product campaign D1D38A",
+      "do": "fold by function; do not mix hashes"
+    },
+    {
+      "name": "LLM / coding tokens",
+      "mechanic": "analog is trit ALU + expression parser (21/21); not an observer on FlyWire W",
+      "do": "do not seed language on W; splice as invented region at a command bottleneck later"
+    }
+  ],
+  "n_tests": 21,
+  "n_ok": 21,
+  "fail": [],
+  "problems": [
+    {
+      "q": "leftover_map n",
+      "got": 35,
+      "want": 35,
+      "ok": true
+    },
+    {
+      "q": "leftover_map n_mapped",
+      "got": 35,
+      "want": 35,
+      "ok": true
+    },
+    {
+      "q": "all items status mapped",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "leftover_map overall_ok",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "blocked count 0",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "q": "refused count 0",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "q": "deferred count 0",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "q": "sibling status 0",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "q": "mapped: Genetics C\u03b1 campaign freeze",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "mapped: free-flight 3D wingbeat",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "mapped: embryo\u2192pupa synapse movie",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "mapped: Fly Cell Atlas \u2192 bodyId",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "mapped: Codex api_token CSV",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "mapped: Berlin walk / ymaze zip",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "mapped: Iwasaki ball-walk videos",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "mapped: FSOT-Genetics GitHub pin",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "mapped: LLM / coding tokens",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "wing_sim analog 10/10",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "trit_expr analog 21/21",
+      "got": 21,
+      "want": 21,
+      "ok": true
+    },
+    {
+      "q": "gene blueprint analog n>=120",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "baseline maze analog exists",
+      "got": true,
+      "want": true,
+      "ok": true
+    }
+  ],
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-12",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}
