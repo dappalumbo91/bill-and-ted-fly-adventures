@@ -1,0 +1,321 @@
+{
+  "adventure": 2,
+  "ted": "TED-9",
+  "vs_bill": "Bill-8",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "residual_Biochemistry": 1.284069161007025,
+  "mode": "type_exact_live",
+  "live_error": null,
+  "n_modules": 6,
+  "n_command_ok": 5,
+  "modules": [
+    {
+      "type": "DNg29",
+      "job": "descending steer (JO hop-1)",
+      "expect": "descending_on",
+      "male": {
+        "n_seed": 2,
+        "n_active": 3,
+        "vnc_motor": 2.087500777701731,
+        "descending": 9.204417345859508,
+        "top": "AVLP542",
+        "walks": true,
+        "desc_on": true,
+        "command": true,
+        "hops_2_4": {
+          "2": {
+            "n_active": 3,
+            "vnc_motor": 2.087500777701731,
+            "descending": 9.204417345859508,
+            "top": "AVLP542",
+            "command": true
+          },
+          "3": {
+            "n_active": 4,
+            "vnc_motor": 10.080222554581443,
+            "descending": 14.64050982210178,
+            "top": "AVLP082",
+            "command": true
+          },
+          "4": {
+            "n_active": 0,
+            "vnc_motor": 2.520414190945865,
+            "descending": 2.2760573586218458,
+            "top": "IN19A003",
+            "command": true
+          }
+        },
+        "gpu": true
+      },
+      "banc": {
+        "n_seed": 2,
+        "n_active": 5,
+        "vnc_motor": 5.826875919568374,
+        "descending": 7.813307176720595,
+        "top": "AVLP542",
+        "walks": true,
+        "desc_on": true,
+        "command": true,
+        "hops_2_4": {
+          "2": {
+            "n_active": 5,
+            "vnc_motor": 5.826875919568374,
+            "descending": 7.813307176720595,
+            "top": "AVLP542",
+            "command": true
+          },
+          "3": {
+            "n_active": 4,
+            "vnc_motor": 26.117207929289574,
+            "descending": 12.818292154331683,
+            "top": "AVLP082",
+            "command": true
+          },
+          "4": {
+            "n_active": 4,
+            "vnc_motor": 21.07352170781234,
+            "descending": 10.684556423741371,
+            "top": "AVLP082",
+            "command": true
+          }
+        },
+        "gpu": true
+      },
+      "source": "type_exact residual hop",
+      "ok": true
+    },
+    {
+      "type": "IN01B001",
+      "job": "mechanosensory command IN",
+      "expect": "command",
+      "male": {
+        "n_seed": 2,
+        "n_active": 0,
+        "vnc_motor": 0.026775320139697297,
+        "descending": 0.033772312766783025,
+        "top": "IN19A001",
+        "walks": false,
+        "desc_on": false,
+        "command": true,
+        "hops_2_4": {
+          "2": {
+            "n_active": 0,
+            "vnc_motor": 0.026775320139697297,
+            "descending": 0.033772312766783025,
+            "top": "IN19A001",
+            "command": false
+          },
+          "3": {
+            "n_active": 3,
+            "vnc_motor": 0.7169028975183291,
+            "descending": 3.5566446774455365,
+            "top": "INXXX238",
+            "command": true
+          },
+          "4": {
+            "n_active": 13,
+            "vnc_motor": 3.3197960577391603,
+            "descending": 16.402482613784933,
+            "top": "IN23B005",
+            "command": true
+          }
+        },
+        "gpu": true
+      },
+      "source": "type_exact residual hop",
+      "ok": true
+    },
+    {
+      "type": "IN05B011a",
+      "job": "VNC walk command IN",
+      "expect": "command",
+      "male": {
+        "n_seed": 2,
+        "n_active": 0,
+        "vnc_motor": 0.009743589743589706,
+        "descending": 0.8823251748251736,
+        "top": "AN09B004",
+        "walks": false,
+        "desc_on": false,
+        "command": true,
+        "hops_2_4": {
+          "2": {
+            "n_active": 0,
+            "vnc_motor": 0.009743589743589706,
+            "descending": 0.8823251748251736,
+            "top": "AN09B004",
+            "command": false
+          },
+          "3": {
+            "n_active": 1,
+            "vnc_motor": 0.4560848569241401,
+            "descending": 2.056123601575983,
+            "top": "AN05B102a",
+            "command": true
+          },
+          "4": {
+            "n_active": 5,
+            "vnc_motor": 1.4253286156258331,
+            "descending": 7.399950625262835,
+            "top": "DNp35",
+            "command": true
+          }
+        },
+        "gpu": true
+      },
+      "source": "type_exact residual hop",
+      "ok": true
+    },
+    {
+      "type": "PS100",
+      "job": "early-birth command",
+      "expect": "command",
+      "male": {
+        "n_seed": 2,
+        "n_active": 0,
+        "vnc_motor": 3.268087605026749,
+        "descending": 1.2740744327949807,
+        "top": "DNg74_a",
+        "walks": true,
+        "desc_on": true,
+        "command": true,
+        "hops_2_4": {
+          "2": {
+            "n_active": 0,
+            "vnc_motor": 3.268087605026749,
+            "descending": 1.2740744327949807,
+            "top": "DNg74_a",
+            "command": true
+          },
+          "3": {
+            "n_active": 1,
+            "vnc_motor": 2.0909601259593007,
+            "descending": 6.246474511705299,
+            "top": "iii3 MN",
+            "command": true
+          },
+          "4": {
+            "n_active": 2,
+            "vnc_motor": 2.9175463405674757,
+            "descending": 11.576961548357106,
+            "top": "DNg74_a",
+            "command": true
+          }
+        },
+        "gpu": true
+      },
+      "source": "type_exact residual hop",
+      "ok": true
+    },
+    {
+      "type": "AN05B009",
+      "job": "VNC ascending command",
+      "expect": "command",
+      "banc": {
+        "n_seed": 3,
+        "n_active": 0,
+        "vnc_motor": 0.20632170172084044,
+        "descending": 1.1367411567877608,
+        "top": "IN23B009",
+        "walks": false,
+        "desc_on": true,
+        "command": true,
+        "hops_2_4": {
+          "2": {
+            "n_active": 0,
+            "vnc_motor": 0.20632170172084044,
+            "descending": 1.1367411567877608,
+            "top": "IN23B009",
+            "command": true
+          },
+          "3": {
+            "n_active": 3,
+            "vnc_motor": 3.065856062840875,
+            "descending": 13.608065610021832,
+            "top": "DNg15",
+            "command": true
+          },
+          "4": {
+            "n_active": 8,
+            "vnc_motor": 13.059750773333516,
+            "descending": 25.187826192339934,
+            "top": "IN19B003",
+            "command": true
+          }
+        },
+        "gpu": true
+      },
+      "source": "type_exact residual hop",
+      "ok": true
+    },
+    {
+      "type": "INXXX007",
+      "job": "chordotonal command IN",
+      "expect": "command",
+      "banc": {
+        "n_seed": 2,
+        "n_active": 0,
+        "vnc_motor": 0.12052010190198736,
+        "descending": 0.10551786480637652,
+        "top": "IN00A020",
+        "walks": false,
+        "desc_on": false,
+        "command": false,
+        "hops_2_4": {
+          "2": {
+            "n_active": 0,
+            "vnc_motor": 0.12052010190198736,
+            "descending": 0.10551786480637652,
+            "top": "IN00A020",
+            "command": false
+          },
+          "3": {
+            "n_active": 0,
+            "vnc_motor": 0.6826949443541115,
+            "descending": 0.3723243203695564,
+            "top": "AVLP087",
+            "command": false
+          },
+          "4": {
+            "n_active": 0,
+            "vnc_motor": 0.5520787247773125,
+            "descending": 0.258423724358851,
+            "top": "AVLP082",
+            "command": false
+          }
+        },
+        "gpu": true
+      },
+      "source": "type_exact residual hop",
+      "ok": false
+    }
+  ],
+  "never": [
+    "APL",
+    "il3LN6",
+    "lLN2F_b"
+  ],
+  "splice": {
+    "rule": "This pack will not stay a fly-only brain. A new region may be spliced later iff it is residual on a named job (measured type or derived leftover job), 0 free parameters, Lean gates, courtship/aggression T1 off. Not a trained net.",
+    "measured_modules_now": [
+      "DNg29",
+      "IN01B001",
+      "IN05B011a",
+      "PS100",
+      "AN05B009"
+    ],
+    "never_splice_as_memory_hub": [
+      "APL",
+      "il3LN6",
+      "lLN2F_b"
+    ],
+    "invented_region_later": "When a needed job has no dump (language, long STM), derive the job first (trit ALU, overlay leftover, consensus). Splice = residual observer on that job, optionally new measured cells later. Do not grow APL/il3LN6."
+  },
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-9",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}

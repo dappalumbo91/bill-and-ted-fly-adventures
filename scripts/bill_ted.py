@@ -46,11 +46,14 @@ def freeze_paths() -> list[Path]:
         BT / "TED-6" / "EXPERIMENT.json",
         BT / "TED-7" / "EXPERIMENT.json",
         BT / "TED-8" / "EXPERIMENT.json",
+        BT / "TED-9" / "EXPERIMENT.json",
         BT / "Adventure-2" / "COURSES.md",
         BT / "Adventure-2" / "ANALYSIS.md",
         BT / "Adventure-2" / "MEMORY.md",
         BT / "Adventure-2" / "GROWTH.md",
+        BT / "Adventure-2" / "GROW.md",
         ROOT / "docs" / "MEMORY_LIMITS.md",
+        ROOT / "docs" / "GROWTH_REGIONS.md",
         BT / "Adventure-1" / "FINDINGS.md",
         BT / "Adventure-1" / "CLOSEOUT.md",
         BT / "Adventure-2" / "FINDINGS.md",
@@ -404,6 +407,45 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  promoted Bill-8 tree={man['tree_sha256'][:12]}")
         else:
             print("  Bill-7 stays")
+    elif cmd == "ted-9":
+        vpath = ROOT / "data" / "bill8_grow_bottlenecks.json"
+        if not vpath.is_file():
+            print("  run python scripts/bill8_grow_bottlenecks.py first")
+            return 1
+        v = json.loads(vpath.read_text(encoding="utf-8"))
+        win = bool(v.get("promotes") and v.get("overall_ok"))
+        exp = {
+            "id": "TED-9",
+            "role": "ted",
+            "adventure": 2,
+            "change": "residual-seed command bottlenecks as splice-ready growth modules; not APL/il3LN6",
+            "vs_bill": "Bill-8",
+            "n_command_ok": v.get("n_command_ok"),
+            "n_modules": v.get("n_modules"),
+            "mode": v.get("mode"),
+            "promotes": win,
+            "promote_to": "Bill-9" if win else None,
+            "why": (
+                "Measured types under hop-1 stress got residual hops. "
+                "New regions later splice on named jobs, 0 knobs. Not a fly-only forever constraint."
+            ),
+        }
+        dest = BT / "TED-9"
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / "EXPERIMENT.json").write_text(json.dumps(exp, indent=2), encoding="utf-8")
+        if "TED-9" not in led["teds"]:
+            led["teds"].append("TED-9")
+        print(f"  TED-9 promotes={win}  command={exp.get('n_command_ok')}/{exp.get('n_modules')} mode={exp.get('mode')}")
+        if win:
+            man = freeze("Bill-9")
+            if "Bill-9" not in led["bills"]:
+                led["bills"].append("Bill-9")
+            led["promotions"].append({"from": "TED-9", "to": "Bill-9", "tree": man["tree_sha256"]})
+            led["current_bill"] = "Bill-9"
+            led["last_tree_sha256"] = man["tree_sha256"]
+            print(f"  promoted Bill-9 tree={man['tree_sha256'][:12]}")
+        else:
+            print("  Bill-8 stays")
     elif cmd == "ted-1":
         exp = ted1()
         if "TED-1" not in led["teds"]:
@@ -421,7 +463,7 @@ def main(argv: list[str] | None = None) -> int:
     elif cmd == "ledger":
         print(json.dumps({k: led[k] for k in led if k != "files"}, indent=2)[:2000])
     else:
-        print("usage: freeze [Bill-0] | ted-1 | ted-2 | ted-3 | ted-4 | ted-5 | ted-6 | ted-7 | ted-8 | ledger")
+        print("usage: freeze [Bill-0] | ted-1 | ted-2 | ted-3 | ted-4 | ted-5 | ted-6 | ted-7 | ted-8 | ted-9 | ledger")
         return 1
     LEDGER.write_text(json.dumps(led, indent=2), encoding="utf-8")
     print(f"  wrote {LEDGER}")

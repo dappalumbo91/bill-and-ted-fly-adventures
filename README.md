@@ -111,6 +111,8 @@ python scripts/bill6_memory.py              # math expand + STM/LTM encode-inter
 python scripts/bill_ted.py ted-7            # promote TED-7 → Bill-7 if memory exam holds
 python scripts/bill7_memory_expand.py       # STM φ² window, LTM class index, growth map
 python scripts/bill_ted.py ted-8            # promote TED-8 → Bill-8
+python scripts/bill8_grow_bottlenecks.py    # residual-seed command bottleneck types (needs D:)
+python scripts/bill_ted.py ted-9            # promote TED-9 → Bill-9
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

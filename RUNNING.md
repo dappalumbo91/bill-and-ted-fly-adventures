@@ -102,6 +102,7 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | TED-6 analysis / multivariable / plant ODEs | **promoted → Bill-6** | IVT/MVT/Taylor; partials/Green; \(\ddot y+\omega^2 y=0\) at 200 Hz **46/46** |
 | TED-7 STM/LTM exam + math expand | **promoted → Bill-7** | encode/interfere/retrieve **36/36**; STM last-item; LTM 10/10 after B; KC APL leftover |
 | TED-8 STM/LTM expand + growth map | **promoted → Bill-8** | STM \(\mathrm{round}(\varphi^2)=3\); LTM class index; APL/il3LN6 refuse; `docs/MEMORY_LIMITS.md` |
+| TED-9 grow command bottlenecks | **promoted → Bill-9** | live type-exact hops **5/6**; DNg29 desc on; INXXX007 isolated leftover; `docs/GROWTH_REGIONS.md` |
 
 ---
 

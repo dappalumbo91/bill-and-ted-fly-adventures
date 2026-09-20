@@ -64,7 +64,7 @@ Language / coding tokens remain **deferred** (`docs/LEFTOVER.md`): trit ALU and 
 
 ## Grow later (command bottlenecks) — evolutionary analog
 
-When we mutate tissue, seed **these measured types** with residual hops. That is how a brain adds connective tissue under stress: more residual on the command bottleneck, not a new invented region, not APL, not il3LN6.
+TED-9 residual-seeded these types (live hops). That is how a brain adds connective tissue under stress: more residual on the command bottleneck, not a new invented region, not APL, not il3LN6. This pack is **not required to stay a fly-only brain**; splice-in regions later still need a named job and the same law. See `docs/GROWTH_REGIONS.md`.
 
 | Type | Program | Collapse | n_seed→h1 | How |
 |------|---------|---------:|-----------|-----|

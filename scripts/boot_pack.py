@@ -70,6 +70,7 @@ A2C = ROOT / "data" / "bill4_math_courses.json"
 A2A = ROOT / "data" / "bill5_analysis.json"
 A2MEM = ROOT / "data" / "bill6_memory.json"
 A2GX = ROOT / "data" / "bill7_memory_expand.json"
+A2GR = ROOT / "data" / "bill8_grow_bottlenecks.json"
 
 
 def fail(msg: str) -> None:
@@ -393,7 +394,7 @@ def test_identity_phot1_develop() -> None:
         f"R={ps.get('n_predicted_R')} leftover={ps.get('n_leftover')}"
     )
     bt = json.loads(BTLED.read_text(encoding="utf-8"))
-    if bt.get("current_bill") not in ("Bill-0", "Bill-1", "Bill-2", "Bill-3", "Bill-4", "Bill-5", "Bill-6", "Bill-7", "Bill-8"):
+    if bt.get("current_bill") not in ("Bill-0", "Bill-1", "Bill-2", "Bill-3", "Bill-4", "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9"):
         fail(f"bill_ted current {bt.get('current_bill')}")
     ok(f"bill_ted current={bt.get('current_bill')} teds={bt.get('teds')}")
     a1 = json.loads(ADV1.read_text(encoding="utf-8"))
@@ -523,12 +524,23 @@ def test_identity_phot1_develop() -> None:
         fail(f"bill7_memory_expand fail={gx.get('fail')}")
     if int(gx.get("n_ok") or 0) != int(gx.get("n") or 0):
         fail(f"memory expand {gx.get('n_ok')}/{gx.get('n')}")
-    if gx.get("promotes") and bt.get("current_bill") != "Bill-8":
-        fail("TED-8 promotes but ledger current_bill is not Bill-8")
+    if gx.get("promotes") and "Bill-8" not in (bt.get("bills") or []) and bt.get("current_bill") not in ("Bill-8", "Bill-9"):
+        fail("TED-8 promotes but Bill-8 is not on the ledger")
     ok(
         f"bill7_memory_expand TED-8 {gx.get('n_ok')}/{gx.get('n')}  "
         f"STM={gx.get('stm_slots')}  later={len(gx.get('growth_later') or [])}  "
         f"current={bt.get('current_bill')}"
+    )
+    gr = json.loads(A2GR.read_text(encoding="utf-8"))
+    if not gr.get("overall_ok"):
+        fail(f"bill8_grow_bottlenecks fail n_command={gr.get('n_command_ok')}")
+    if int(gr.get("n_command_ok") or 0) < 4:
+        fail(f"grow command {gr.get('n_command_ok')}/{gr.get('n_modules')}")
+    if gr.get("promotes") and bt.get("current_bill") != "Bill-9":
+        fail("TED-9 promotes but ledger current_bill is not Bill-9")
+    ok(
+        f"bill8_grow_bottlenecks TED-9 {gr.get('n_command_ok')}/{gr.get('n_modules')}  "
+        f"mode={gr.get('mode')}  current={bt.get('current_bill')}"
     )
 
 
