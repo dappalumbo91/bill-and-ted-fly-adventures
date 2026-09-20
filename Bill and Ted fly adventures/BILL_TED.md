@@ -36,8 +36,10 @@ Pin **AEB2AD**. Law \(S=K(T_1+T_2+T_3)\). Residual hops on measured synapses. Ov
 | **TED-6 / Adventure 2** | real analysis, multivariable calculus, ODEs on the 200 Hz wing plant | **46/46** → **Bill-6** |
 | **Bill-6** | analysis + plant oscillator | promoted from TED-6 |
 | **TED-7 / Adventure 2** | math expansion + STM/LTM exam (encode, interfere, retrieve) | **36/36** → **Bill-7** |
-| **Bill-7** | current | memory stores mapped: STM register, LTM \(W\), KC leftover |
+| **Bill-7** | memory stores mapped: STM register, LTM \(W\), KC leftover | promoted from TED-7 |
+| **TED-8 / Adventure 2** | STM \(\varphi^2\) window + LTM class index; growth map; no new axons | **28/28** → **Bill-8** |
+| **Bill-8** | current | STM 3 slots; LTM bindings; `docs/MEMORY_LIMITS.md` |
 
-Scripts: `python scripts/bill_ted.py freeze` · `ted-1` … `ted-6` · `python scripts/bill6_memory.py` · `ted-7` · `ledger`
+Scripts: `python scripts/bill_ted.py freeze` · `ted-1` … `ted-7` · `python scripts/bill7_memory_expand.py` · `ted-8` · `ledger`
 
 Data: `Bill and Ted fly adventures/ledger.json`

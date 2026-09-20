@@ -1,0 +1,13 @@
+{
+  "id": "TED-8",
+  "role": "ted",
+  "adventure": 2,
+  "change": "STM \u03c6\u00b2 window + LTM class index; growth map; no new axons",
+  "vs_bill": "Bill-7",
+  "n_ok": 28,
+  "n": 28,
+  "fail": [],
+  "promotes": true,
+  "promote_to": "Bill-8",
+  "why": "STM round(\u03c6\u00b2)=3. LTM bindings on measured classes. APL/il3LN6 refused. Growth map: leftover hubs never; command bottlenecks later residual seed."
+}

@@ -109,6 +109,8 @@ python scripts/bill5_analysis.py            # analysis, multivariable, 200 Hz pl
 python scripts/bill_ted.py ted-6            # promote TED-6 → Bill-6 if analysis holds
 python scripts/bill6_memory.py              # math expand + STM/LTM encode-interfere-retrieve
 python scripts/bill_ted.py ted-7            # promote TED-7 → Bill-7 if memory exam holds
+python scripts/bill7_memory_expand.py       # STM φ² window, LTM class index, growth map
+python scripts/bill_ted.py ted-8            # promote TED-8 → Bill-8
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

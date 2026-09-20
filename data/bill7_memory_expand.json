@@ -1,0 +1,318 @@
+{
+  "adventure": 2,
+  "ted": "TED-8",
+  "vs_bill": "Bill-7",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "n": 28,
+  "n_ok": 28,
+  "fail": [],
+  "problems": [
+    {
+      "kind": "law",
+      "q": "STM slots = round(\u03c6\u00b2)",
+      "got": 3,
+      "want": 3,
+      "ok": true
+    },
+    {
+      "kind": "law",
+      "q": "LTM hop horizon = round(\u03c6\u2075)",
+      "got": 11,
+      "want": 11,
+      "ok": true
+    },
+    {
+      "kind": "law",
+      "q": "TED-7 STM was 1 item (first missed)",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "kind": "stm",
+      "q": "window holds last 3 encode items",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "kind": "stm",
+      "q": "window evicts item 0 (beyond \u03c6\u00b2)",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "kind": "stm",
+      "q": "window evicts item 1",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "kind": "stm",
+      "q": "TED-8 STM first-of-last-3 HIT (was MISS at capacity 1)",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "kind": "stm",
+      "q": "cons(walk +1, JO walk +1) = +1 dual-hold",
+      "got": 1,
+      "want": 1,
+      "ok": true
+    },
+    {
+      "kind": "stm",
+      "q": "cons(walk +1, smell leftover 0) = 0 superpose not overwrite",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "kind": "ltm",
+      "q": "bind 5 facts on measured classes (not APL/il3LN6)",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "kind": "ltm",
+      "q": "refuse write to APL leftover hub",
+      "got": "refused_leftover_hub",
+      "want": "refused_leftover_hub",
+      "ok": true
+    },
+    {
+      "kind": "ltm",
+      "q": "refuse write to il3LN6 leftover hub",
+      "got": "refused_leftover_hub",
+      "want": "refused_leftover_hub",
+      "ok": true
+    },
+    {
+      "kind": "ltm",
+      "q": "APL/il3LN6 not in LTM keys after refuse",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "kind": "ltm",
+      "q": "JO binding survives olfactory interference",
+      "got": 15,
+      "want": 15,
+      "ok": true
+    },
+    {
+      "kind": "ltm",
+      "q": "VNC binding survives",
+      "got": 1,
+      "want": 1,
+      "ok": true
+    },
+    {
+      "kind": "ltm",
+      "q": "DNp01 plant 200 Hz still bound",
+      "got": 200.0,
+      "want": 200.0,
+      "ok": true
+    },
+    {
+      "kind": "ltm",
+      "q": "KCg-m leftover address still bound (not APL write)",
+      "got": "motor_off",
+      "want": "motor_off",
+      "ok": true
+    },
+    {
+      "kind": "ltm",
+      "q": "n LTM keys after interfere",
+      "got": 6,
+      "want": 6,
+      "ok": true
+    },
+    {
+      "kind": "ltm",
+      "q": "measured KC n as LTM address space",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "kind": "ltm",
+      "q": "measured MBON n",
+      "got": 71,
+      "want": 71,
+      "ok": true
+    },
+    {
+      "kind": "ltm",
+      "q": "measured DAN n (volume leftover, T1)",
+      "got": 317,
+      "want": 317,
+      "ok": true
+    },
+    {
+      "kind": "ltm",
+      "q": "DNp01 n=2 giant-fiber analog exists",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "kind": "growth",
+      "q": "never-grow leftover hubs n\u22653",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "kind": "growth",
+      "q": "later-grow command bottlenecks n\u22653",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "kind": "growth",
+      "q": "il3LN6 listed never-grow",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "kind": "growth",
+      "q": "APL listed never-grow",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "kind": "growth",
+      "q": "IN01B001 listed later residual seed",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "kind": "guardrail",
+      "q": "courtship not a memory/growth seed",
+      "got": true,
+      "want": true,
+      "ok": true
+    }
+  ],
+  "stm_slots": 3,
+  "ltm_horizon": 11,
+  "ltm_keys": [
+    "DNp01",
+    "JO",
+    "KCg-m",
+    "mechanosensory",
+    "olfactory",
+    "vnc_sensory"
+  ],
+  "forbid_write": [
+    "APL",
+    "KCg-s1",
+    "il3LN6",
+    "lLN2F_b"
+  ],
+  "growth_later": [
+    {
+      "top": "PS100",
+      "program": "birth_early",
+      "source": "develop_cycle.json",
+      "collapse_h1": 563.5714285714286,
+      "n_seed": 7890,
+      "n_active_h1": 14,
+      "grow": "residual seed this measured type later; do not invent edges"
+    },
+    {
+      "top": "AN05B009",
+      "program": "vnc_sensory",
+      "source": "banc_connectome_boot.json",
+      "collapse_h1": 560.3571428571429,
+      "n_seed": 7845,
+      "n_active_h1": 14,
+      "grow": "residual seed this measured type later; do not invent edges"
+    },
+    {
+      "top": "INXXX007",
+      "program": "chordotonal",
+      "source": "banc_connectome_boot.json",
+      "collapse_h1": 356.0,
+      "n_seed": 2136,
+      "n_active_h1": 6,
+      "grow": "residual seed this measured type later; do not invent edges"
+    },
+    {
+      "top": "IN01B001",
+      "program": "mechanosensory",
+      "source": "male_cns_boot.json",
+      "collapse_h1": 343.05882352941177,
+      "n_seed": 5832,
+      "n_active_h1": 17,
+      "grow": "residual seed this measured type later; do not invent edges"
+    }
+  ],
+  "growth_never": [
+    {
+      "top": "il3LN6",
+      "program": "olfactory",
+      "collapse_h1": 1319.5,
+      "grow": "never \u2014 leftover hub"
+    },
+    {
+      "top": "APL",
+      "program": "kenyon",
+      "collapse_h1": 963.5,
+      "grow": "never \u2014 leftover hub"
+    },
+    {
+      "top": "KCg-s1",
+      "program": "kenyon_subgraph",
+      "collapse_h1": 963.5,
+      "grow": "never \u2014 leftover hub"
+    },
+    {
+      "top": "APL",
+      "program": "kc_full_hemibrain",
+      "collapse_h1": 963.5,
+      "grow": "never \u2014 leftover hub"
+    },
+    {
+      "top": "APL",
+      "program": "kc_mb_subgraph",
+      "collapse_h1": 963.5,
+      "grow": "never \u2014 leftover hub"
+    },
+    {
+      "top": "il3LN6",
+      "program": "olfactory",
+      "collapse_h1": 751.75,
+      "grow": "never \u2014 leftover hub"
+    },
+    {
+      "top": "APL",
+      "program": "ito_MBp3",
+      "collapse_h1": 519.0,
+      "grow": "never \u2014 leftover hub"
+    },
+    {
+      "top": "lLN2F_b",
+      "program": "olfactory",
+      "collapse_h1": 429.5,
+      "grow": "never \u2014 leftover hub"
+    }
+  ],
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-8",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}
