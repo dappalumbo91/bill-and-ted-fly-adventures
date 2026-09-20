@@ -1,0 +1,198 @@
+{
+  "adventure": 1,
+  "ted": "TED-19",
+  "vs_bill": "Bill-18",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "law": "reward trit +1/0/\u22121; DA leftover T1 bind; 5HT leftover on \u22121; overlay vs leftover resistance; not fitted RL",
+  "DA_vnc_motor": 0.041395377371460616,
+  "5HT_vnc_motor": 4.695936959278612,
+  "lesson": [
+    {
+      "got": 10,
+      "trace": [
+        {
+          "step": "N",
+          "val": 40,
+          "usable": true
+        },
+        {
+          "step": "P",
+          "val": 25,
+          "usable": true
+        },
+        {
+          "step": "N*P",
+          "val": 1000,
+          "usable": true
+        },
+        {
+          "step": "/100",
+          "val": 10,
+          "usable": true
+        }
+      ],
+      "resistance": 0.0,
+      "how": "percent_of_steps"
+    },
+    {
+      "got": 5,
+      "trace": [
+        {
+          "step": "k",
+          "val": 3,
+          "usable": true
+        },
+        {
+          "step": "total",
+          "val": 15,
+          "usable": true
+        },
+        {
+          "step": "total/k",
+          "val": 5,
+          "usable": true
+        }
+      ],
+      "resistance": 0.0,
+      "how": "times_as_many_steps"
+    }
+  ],
+  "transfer": [
+    {
+      "prompt": "20% of 50",
+      "want": 10,
+      "got": 10,
+      "how": "percent_of_steps",
+      "reward_trit": 1,
+      "ok": true,
+      "resistance": 0.0,
+      "DA_T1": true,
+      "5HT_leftover_error": false
+    },
+    {
+      "prompt": "10% of 80",
+      "want": 8,
+      "got": 8,
+      "how": "percent_of_steps",
+      "reward_trit": 1,
+      "ok": true,
+      "resistance": 0.0,
+      "DA_T1": true,
+      "5HT_leftover_error": false
+    },
+    {
+      "prompt": "4 times as many as 24",
+      "want": 6,
+      "got": 6,
+      "how": "times_as_many_steps",
+      "reward_trit": 1,
+      "ok": true,
+      "resistance": 0.0,
+      "DA_T1": true,
+      "5HT_leftover_error": false
+    },
+    {
+      "prompt": "8 less than 30",
+      "want": 22,
+      "got": 22,
+      "how": "less_than",
+      "reward_trit": 1,
+      "ok": true,
+      "resistance": null,
+      "DA_T1": true,
+      "5HT_leftover_error": false
+    },
+    {
+      "prompt": "What value of n makes n+9=20 true?",
+      "want": 11,
+      "got": 11,
+      "how": "eq_n_plus",
+      "reward_trit": 1,
+      "ok": true,
+      "resistance": null,
+      "DA_T1": true,
+      "5HT_leftover_error": false
+    },
+    {
+      "prompt": "one quarter of 32",
+      "want": 8,
+      "got": 8,
+      "how": "quarter",
+      "reward_trit": 1,
+      "ok": true,
+      "resistance": null,
+      "DA_T1": true,
+      "5HT_leftover_error": false
+    }
+  ],
+  "n_transfer_ok": 6,
+  "n_transfer": 6,
+  "n_ok": 8,
+  "n": 8,
+  "fail": [],
+  "problems": [
+    {
+      "q": "DA still volume leftover (no new edges)",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "5HT volume leftover vs walk/\u03c6",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "transfer exact +1",
+      "got": 6,
+      "want": 6,
+      "ok": true
+    },
+    {
+      "q": "LTM binds on +1",
+      "got": 6,
+      "want": 6,
+      "ok": true
+    },
+    {
+      "q": "retention after interference",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "cons(+1,\u22121) still 0",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "q": "lesson percent 40,25 \u2192 10",
+      "got": 10,
+      "want": 10,
+      "ok": true
+    },
+    {
+      "q": "lesson times 3,15 \u2192 5",
+      "got": 5,
+      "want": 5,
+      "ok": true
+    }
+  ],
+  "retention": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-19",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}

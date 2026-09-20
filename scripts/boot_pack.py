@@ -80,6 +80,7 @@ A2HV = ROOT / "data" / "bill14_host_eval.json"
 A2UM = ROOT / "data" / "bill15_unseen_math.json"
 A2WS = ROOT / "data" / "bill16_word_sense.json"
 A1AD = ROOT / "data" / "bill17_adaptive.json"
+A1BT = ROOT / "data" / "bill18_bio_teach.json"
 
 
 def fail(msg: str) -> None:
@@ -405,7 +406,7 @@ def test_identity_phot1_develop() -> None:
     bt = json.loads(BTLED.read_text(encoding="utf-8"))
     if bt.get("current_bill") not in (
         "Bill-0", "Bill-1", "Bill-2", "Bill-3", "Bill-4",
-        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10", "Bill-11", "Bill-12", "Bill-13", "Bill-14", "Bill-15", "Bill-16", "Bill-17", "Bill-18",
+        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10", "Bill-11", "Bill-12", "Bill-13", "Bill-14", "Bill-15", "Bill-16", "Bill-17", "Bill-18", "Bill-19",
     ):
         fail(f"bill_ted current {bt.get('current_bill')}")
     ok(f"bill_ted current={bt.get('current_bill')} teds={bt.get('teds')}")
@@ -632,11 +633,21 @@ def test_identity_phot1_develop() -> None:
     ad = json.loads(A1AD.read_text(encoding="utf-8"))
     if not ad.get("overall_ok"):
         fail(f"bill17_adaptive fail={ad.get('fail')}")
-    if ad.get("promotes") and bt.get("current_bill") != "Bill-18":
-        fail("TED-18 promotes but ledger current_bill is not Bill-18")
+    if ad.get("promotes") and "Bill-18" not in (bt.get("bills") or []) and bt.get("current_bill") not in ("Bill-18", "Bill-19"):
+        fail("TED-18 promotes but Bill-18 is not on the ledger")
     ok(
         f"bill17_adaptive TED-18 {ad.get('n_ok')}/{ad.get('n')}  "
         f"LTM={ad.get('n_ltm_bound')}  current={bt.get('current_bill')}"
+    )
+    bteach = json.loads(A1BT.read_text(encoding="utf-8"))
+    if not bteach.get("overall_ok"):
+        fail(f"bill18_bio_teach fail={bteach.get('fail')}")
+    if bteach.get("promotes") and bt.get("current_bill") != "Bill-19":
+        fail("TED-19 promotes but ledger current_bill is not Bill-19")
+    ok(
+        f"bill18_bio_teach TED-19 {bteach.get('n_ok')}/{bteach.get('n')}  "
+        f"transfer={bteach.get('n_transfer_ok')}/{bteach.get('n_transfer')}  "
+        f"current={bt.get('current_bill')}"
     )
 
 

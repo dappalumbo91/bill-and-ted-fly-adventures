@@ -1,0 +1,13 @@
+{
+  "id": "TED-19",
+  "role": "ted",
+  "adventure": 1,
+  "change": "teach steps then own work; DA leftover T1 reward; overlay resistance; not fitted RL",
+  "vs_bill": "Bill-18",
+  "n_ok": 8,
+  "n": 8,
+  "transfer": "6/6",
+  "promotes": true,
+  "promote_to": "Bill-19",
+  "why": "Procedure then new numbers. Reward trit +1/0/\u22121. DA leftover binds LTM. 5HT leftover on error. No new synapses. Not LLM."
+}

@@ -58,7 +58,9 @@ Pin **AEB2AD**. Law \(S=K(T_1+T_2+T_3)\). Residual hops on measured synapses. Ov
 | **TED-17 / Adventure 2** | dictionary/grammar senses; DISCOVERIES.md | **13/13** → **Bill-17** |
 | **Bill-17** | times-as-many ≠ multiply; Wikipedia leftover not over W | promoted from TED-17 |
 | **TED-18 / Adventure 1** | adaptive grammar leftover learner; teaching trajectory is data | **22/22** → **Bill-18** |
-| **Bill-18** | current | no per-item schema; LTM bind; `docs/LEARNING.md` |
+| **Bill-18** | no per-item schema; LTM bind; `docs/LEARNING.md` | promoted from TED-18 |
+| **TED-19 / Adventure 1** | teach steps, own work, DA leftover reward | transfer **6/6** → **Bill-19** |
+| **Bill-19** | current | bio-teach; not fitted RL; DA still leftover |
 
 Scripts: `python scripts/bill_ted.py freeze` · `ted-1` … `ted-10` · `python scripts/bill10_remaining_leftovers.py` · `ted-11` · `ledger`
 

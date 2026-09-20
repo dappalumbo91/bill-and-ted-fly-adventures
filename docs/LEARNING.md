@@ -20,6 +20,8 @@ Mappings that **keep working** as Bills promote are measurements of this organis
 | 15 | pC1/fru **would** command if T1 on |
 | 16 | unseen word math leftover until jobs named |
 | 18 | grammar senses adapt without per-item programming |
+| 19 | teach steps then own work; DA leftover +1 bind; transfer 6/6 |
+| 19 | teach steps then own work; DA leftover +1 bind; transfer 6/6 |
 
 Hop-2 function (walk vs leftover, two-animal 3/3) is longitudinal data on measured \(W\).
 
