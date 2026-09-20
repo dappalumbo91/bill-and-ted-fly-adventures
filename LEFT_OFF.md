@@ -125,3 +125,5 @@ Adventure 1 extras: Ledger B on dump N, GABA n, CRC transmitter AA — **17/17**
 **TED-14:** coding tokens on that region: `let` / `if`/`else` / `while` (horizon \(\varphi^5=11\)) + trit functions. `let a = JO_L + JO_R` → 672. Courtship names DENY. Not on \(W\). **41/41. Promoted → Bill-14.** `python scripts/bill13_coding_tokens.py` · `python scripts/bill_ted.py ted-14`
 
 **TED-15:** host-eval trit coding vs restricted Python sandbox **7/7**. Unrestricted eval/import is host attack surface. Safety hops T1 off: pC1 n=156 desc **30.94**, TN1 n=35 vm **10.07**, fru/dsx n=5012 desc **35.21** — family *would* command if seeded. Language/code still DENY. **33/33. Promoted → Bill-15.** `python scripts/bill14_host_eval.py` · `python scripts/bill_ted.py ted-15`
+
+**TED-16:** unseen open math (NAEP G4 sample + IM CC BY). Blind language+ALU **0/22** (word leftover; some false ALU on "times"). Named leftover jobs (percent, ratio, linear) **22/22**. Not an LLM test. **Promoted → Bill-16.** `python scripts/bill15_unseen_math.py` · `python scripts/bill_ted.py ted-16`

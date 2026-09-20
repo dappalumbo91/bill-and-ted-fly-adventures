@@ -53,6 +53,9 @@ def freeze_paths() -> list[Path]:
         BT / "TED-13" / "EXPERIMENT.json",
         BT / "TED-14" / "EXPERIMENT.json",
         BT / "TED-15" / "EXPERIMENT.json",
+        BT / "TED-16" / "EXPERIMENT.json",
+        BT / "Adventure-2" / "UNSEEN_MATH.md",
+        ROOT / "docs" / "UNSEEN_MATH.md",
         BT / "Adventure-2" / "SAFETY.md",
         ROOT / "docs" / "SAFETY_FAMILY.md",
         BT / "Adventure-2" / "LANGUAGE.md",
@@ -686,6 +689,45 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  promoted Bill-15 tree={man['tree_sha256'][:12]}")
         else:
             print("  Bill-14 stays")
+    elif cmd == "ted-16":
+        vpath = ROOT / "data" / "bill15_unseen_math.json"
+        if not vpath.is_file():
+            print("  run python scripts/bill15_unseen_math.py first")
+            return 1
+        v = json.loads(vpath.read_text(encoding="utf-8"))
+        win = bool(v.get("promotes") and v.get("overall_ok"))
+        exp = {
+            "id": "TED-16",
+            "role": "ted",
+            "adventure": 2,
+            "change": "unseen NAEP/IM math quiz; blind leftover vs named adapters",
+            "vs_bill": "Bill-15",
+            "n_blind": v.get("n_blind_ok"),
+            "n_adapt": v.get("n_adapt_ok"),
+            "n": v.get("n"),
+            "promotes": win,
+            "promote_to": "Bill-16" if win else None,
+            "why": (
+                "Not an LLM test. Blind language+ALU leftover on word problems "
+                "(and some false ALU on 'times'). Named leftover jobs recover the keys."
+            ),
+        }
+        dest = BT / "TED-16"
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / "EXPERIMENT.json").write_text(json.dumps(exp, indent=2), encoding="utf-8")
+        if "TED-16" not in led["teds"]:
+            led["teds"].append("TED-16")
+        print(f"  TED-16 promotes={win}  adapt={exp.get('n_adapt')}/{exp.get('n')} blind={exp.get('n_blind')}")
+        if win:
+            man = freeze("Bill-16")
+            if "Bill-16" not in led["bills"]:
+                led["bills"].append("Bill-16")
+            led["promotions"].append({"from": "TED-16", "to": "Bill-16", "tree": man["tree_sha256"]})
+            led["current_bill"] = "Bill-16"
+            led["last_tree_sha256"] = man["tree_sha256"]
+            print(f"  promoted Bill-16 tree={man['tree_sha256'][:12]}")
+        else:
+            print("  Bill-15 stays")
     elif cmd == "ted-1":
         exp = ted1()
         if "TED-1" not in led["teds"]:

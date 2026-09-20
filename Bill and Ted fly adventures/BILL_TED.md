@@ -52,7 +52,9 @@ Pin **AEB2AD**. Law \(S=K(T_1+T_2+T_3)\). Residual hops on measured synapses. Ov
 | **TED-14 / Adventure 2** | coding tokens: let/if/while on trit ALU | **41/41** → **Bill-14** |
 | **Bill-14** | coding splice; loop horizon φ⁵=11; not on W | promoted from TED-14 |
 | **TED-15 / Adventure 2** | host-eval vs Python sandbox; safety-hop courtship/aggression T1 off | **33/33** → **Bill-15** |
-| **Bill-15** | current | sandbox host eval 7/7; pC1/fru light motor if seeded — T1 stays off |
+| **Bill-15** | sandbox host eval 7/7; pC1/fru light motor if seeded — T1 stays off | promoted from TED-15 |
+| **TED-16 / Adventure 2** | unseen NAEP/IM math quiz (not LLM) | blind 0/22, adapt **22/22** → **Bill-16** |
+| **Bill-16** | current | named leftover jobs recover unseen IM/NAEP keys |
 
 Scripts: `python scripts/bill_ted.py freeze` · `ted-1` … `ted-10` · `python scripts/bill10_remaining_leftovers.py` · `ted-11` · `ledger`
 

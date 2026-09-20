@@ -125,6 +125,8 @@ python scripts/bill13_coding_tokens.py      # let/if/while coding tokens
 python scripts/bill_ted.py ted-14
 python scripts/bill14_host_eval.py          # host-eval vs sandbox; safety hops T1 off
 python scripts/bill_ted.py ted-15
+python scripts/bill15_unseen_math.py        # unseen NAEP/IM math quiz
+python scripts/bill_ted.py ted-16
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

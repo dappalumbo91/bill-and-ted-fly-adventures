@@ -109,6 +109,7 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | TED-13 language splice | **promoted → Bill-13** | invented region at IN05B011a/DNg29/DNp01/ALU; not on \(W\); **61/61** |
 | TED-14 coding tokens | **promoted → Bill-14** | let/if/while on trit ALU; horizon 11; courtship DENY; **41/41** |
 | TED-15 host eval + safety family | **promoted → Bill-15** | FSOT==Py sandbox **7/7**; pC1 desc 30.9 if seeded; T1 off |
+| TED-16 unseen math (NAEP/IM) | **promoted → Bill-16** | blind **0/22** leftover; adapt **22/22** named jobs |
 
 ---
 

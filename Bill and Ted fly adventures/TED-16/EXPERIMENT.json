@@ -1,0 +1,13 @@
+{
+  "id": "TED-16",
+  "role": "ted",
+  "adventure": 2,
+  "change": "unseen NAEP/IM math quiz; blind leftover vs named adapters",
+  "vs_bill": "Bill-15",
+  "n_blind": 0,
+  "n_adapt": 22,
+  "n": 22,
+  "promotes": true,
+  "promote_to": "Bill-16",
+  "why": "Not an LLM test. Blind language+ALU leftover on word problems (and some false ALU on 'times'). Named leftover jobs recover the keys."
+}
