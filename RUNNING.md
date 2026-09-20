@@ -100,6 +100,7 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | TED-4 Adventure 2 math environments | **promoted → Bill-4** | Bill-3 through maze/yaw/walk/smell/trit ring/PhD identities **37/37**. Thinking = residual hops; 11 types lit. Courtship not seeded. |
 | TED-5 conventional math courses | **promoted → Bill-5** | Z/Q/algebra/geometry/trig/combinatorics/lin alg/calculus/stats/logic **58/58** on trit ALU; conventional notation |
 | TED-6 analysis / multivariable / plant ODEs | **promoted → Bill-6** | IVT/MVT/Taylor; partials/Green; \(\ddot y+\omega^2 y=0\) at 200 Hz **46/46** |
+| TED-7 STM/LTM exam + math expand | **promoted → Bill-7** | encode/interfere/retrieve **36/36**; STM last-item; LTM 10/10 after B; KC APL leftover |
 
 ---
 

@@ -44,8 +44,10 @@ def freeze_paths() -> list[Path]:
         BT / "TED-4" / "EXPERIMENT.json",
         BT / "TED-5" / "EXPERIMENT.json",
         BT / "TED-6" / "EXPERIMENT.json",
+        BT / "TED-7" / "EXPERIMENT.json",
         BT / "Adventure-2" / "COURSES.md",
         BT / "Adventure-2" / "ANALYSIS.md",
+        BT / "Adventure-2" / "MEMORY.md",
         BT / "Adventure-1" / "FINDINGS.md",
         BT / "Adventure-1" / "CLOSEOUT.md",
         BT / "Adventure-2" / "FINDINGS.md",
@@ -321,6 +323,45 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  promoted Bill-6 tree={man['tree_sha256'][:12]}")
         else:
             print("  Bill-5 stays")
+    elif cmd == "ted-7":
+        vpath = ROOT / "data" / "bill6_memory.json"
+        if not vpath.is_file():
+            print("  run python scripts/bill6_memory.py first")
+            return 1
+        v = json.loads(vpath.read_text(encoding="utf-8"))
+        win = bool(v.get("promotes") and v.get("overall_ok"))
+        exp = {
+            "id": "TED-7",
+            "role": "ted",
+            "adventure": 2,
+            "change": "math expansion + STM/LTM exam (encode, interfere, retrieve); memory stores on W / residual / KC",
+            "vs_bill": "Bill-6",
+            "n_ok": v.get("n_ok"),
+            "n": v.get("n"),
+            "fail": v.get("fail") or [],
+            "promotes": win,
+            "promote_to": "Bill-7" if win else None,
+            "why": (
+                "STM is the last residual/register. LTM is measured W (re-seed). "
+                "KC leftover, APL hub not expanded. Interference does not edit W."
+            ),
+        }
+        dest = BT / "TED-7"
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / "EXPERIMENT.json").write_text(json.dumps(exp, indent=2), encoding="utf-8")
+        if "TED-7" not in led["teds"]:
+            led["teds"].append("TED-7")
+        print(f"  TED-7 promotes={win}  {exp.get('n_ok')}/{exp.get('n')}")
+        if win:
+            man = freeze("Bill-7")
+            if "Bill-7" not in led["bills"]:
+                led["bills"].append("Bill-7")
+            led["promotions"].append({"from": "TED-7", "to": "Bill-7", "tree": man["tree_sha256"]})
+            led["current_bill"] = "Bill-7"
+            led["last_tree_sha256"] = man["tree_sha256"]
+            print(f"  promoted Bill-7 tree={man['tree_sha256'][:12]}")
+        else:
+            print("  Bill-6 stays")
     elif cmd == "ted-1":
         exp = ted1()
         if "TED-1" not in led["teds"]:
@@ -338,7 +379,7 @@ def main(argv: list[str] | None = None) -> int:
     elif cmd == "ledger":
         print(json.dumps({k: led[k] for k in led if k != "files"}, indent=2)[:2000])
     else:
-        print("usage: freeze [Bill-0] | ted-1 | ted-2 | ted-3 | ted-4 | ted-5 | ted-6 | ledger")
+        print("usage: freeze [Bill-0] | ted-1 | ted-2 | ted-3 | ted-4 | ted-5 | ted-6 | ted-7 | ledger")
         return 1
     LEDGER.write_text(json.dumps(led, indent=2), encoding="utf-8")
     print(f"  wrote {LEDGER}")

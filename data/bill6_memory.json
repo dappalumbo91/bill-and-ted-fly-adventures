@@ -1,0 +1,453 @@
+{
+  "adventure": 2,
+  "ted": "TED-7",
+  "vs_bill": "Bill-6",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "n": 36,
+  "n_ok": 36,
+  "fail": [],
+  "by_course": {
+    "complex": {
+      "n": 4,
+      "n_ok": 4
+    },
+    "fourier": {
+      "n": 2,
+      "n_ok": 2
+    },
+    "recurrence": {
+      "n": 2,
+      "n_ok": 2
+    },
+    "probability": {
+      "n": 3,
+      "n_ok": 3
+    },
+    "generating": {
+      "n": 2,
+      "n_ok": 2
+    },
+    "ode_char": {
+      "n": 1,
+      "n_ok": 1
+    },
+    "vector": {
+      "n": 1,
+      "n_ok": 1
+    },
+    "logexp": {
+      "n": 1,
+      "n_ok": 1
+    },
+    "memory_map": {
+      "n": 5,
+      "n_ok": 5
+    },
+    "stm": {
+      "n": 6,
+      "n_ok": 6
+    },
+    "ltm": {
+      "n": 6,
+      "n_ok": 6
+    },
+    "interfere": {
+      "n": 1,
+      "n_ok": 1
+    },
+    "exam": {
+      "n": 1,
+      "n_ok": 1
+    },
+    "guardrail": {
+      "n": 1,
+      "n_ok": 1
+    }
+  },
+  "problems": [
+    {
+      "course": "complex",
+      "q": "i\u00b2 = \u22121",
+      "got": {
+        "re": -1.0,
+        "im": 0.0
+      },
+      "want": {
+        "re": -1.0,
+        "im": 0.0
+      },
+      "ok": true
+    },
+    {
+      "course": "complex",
+      "q": "(1+2i)(3\u2212i)",
+      "got": {
+        "re": 5.0,
+        "im": 5.0
+      },
+      "want": {
+        "re": 5.0,
+        "im": 5.0
+      },
+      "ok": true
+    },
+    {
+      "course": "complex",
+      "q": "|3+4i| = 5",
+      "got": 5.0,
+      "want": 5.0,
+      "ok": true
+    },
+    {
+      "course": "complex",
+      "q": "e^{i\u03c0} = \u22121",
+      "got": {
+        "re": -1.0,
+        "im": 1.2246467991473532e-16
+      },
+      "want": {
+        "re": -1.0,
+        "im": 0.0
+      },
+      "ok": true
+    },
+    {
+      "course": "fourier",
+      "q": "plant fundamental 200 Hz (species band center)",
+      "got": 200.0,
+      "want": 200.0,
+      "ok": true
+    },
+    {
+      "course": "fourier",
+      "q": "Nyquist of 400 Hz camera aliases 200 Hz beat",
+      "got": 200.0,
+      "want": 200.0,
+      "ok": true
+    },
+    {
+      "course": "recurrence",
+      "q": "F8 from F6=8, F7=13",
+      "got": 21,
+      "want": 21,
+      "ok": true
+    },
+    {
+      "course": "recurrence",
+      "q": "F5=5, 5=2+3",
+      "got": 5,
+      "want": 5,
+      "ok": true
+    },
+    {
+      "course": "probability",
+      "q": "P(JO_L | JO) = 348/672",
+      "got": 0.5178571428571429,
+      "want": 0.5178571428571429,
+      "ok": true
+    },
+    {
+      "course": "probability",
+      "q": "C(6,2)/2^6 binomial P(k=2)",
+      "got": 0.234375,
+      "want": 0.234375,
+      "ok": true
+    },
+    {
+      "course": "probability",
+      "q": "Bayes: P(A|B)=P(B|A)P(A)/P(B) with 1/2,1,1/2",
+      "got": 1.0,
+      "want": 1.0,
+      "ok": true
+    },
+    {
+      "course": "generating",
+      "q": "partial 1+x+x\u00b2 at x=1/2",
+      "got": 1.75,
+      "want": 1.75,
+      "ok": true
+    },
+    {
+      "course": "generating",
+      "q": "convolution [1,1]*[1,1] = [1,2,1]",
+      "got": [
+        1,
+        2,
+        1
+      ],
+      "want": [
+        1,
+        2,
+        1
+      ],
+      "ok": true
+    },
+    {
+      "course": "ode_char",
+      "q": "r\u00b2 + \u03c9\u00b2 = 0 \u21d2 r = \u00b1i\u03c9 (harmonic plant)",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "course": "vector",
+      "q": "line integral of grad(x\u00b2) from 0 to 1 = 1",
+      "got": 1.0,
+      "want": 1.0,
+      "ok": true
+    },
+    {
+      "course": "logexp",
+      "q": "log(e^3)=3",
+      "got": 3.0,
+      "want": 3.0,
+      "ok": true
+    },
+    {
+      "course": "memory_map",
+      "q": "KC hop-1 top is APL leftover hub (do not expand)",
+      "got": "APL",
+      "want": "APL",
+      "ok": true
+    },
+    {
+      "course": "memory_map",
+      "q": "KC hop-2 vnc_motor leftover",
+      "got": 0.0,
+      "want": 0.0,
+      "ok": true
+    },
+    {
+      "course": "memory_map",
+      "q": "JO encode pathway hop-1 DNg29",
+      "got": "DNg29",
+      "want": "DNg29",
+      "ok": true
+    },
+    {
+      "course": "memory_map",
+      "q": "olfactory interfere pathway hop-1 il3LN6",
+      "got": "il3LN6",
+      "want": "il3LN6",
+      "ok": true
+    },
+    {
+      "course": "memory_map",
+      "q": "DA volume leftover (MB modulate, not walk LTM)",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "course": "stm",
+      "q": "after encode, register holds LAST item only",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "course": "stm",
+      "q": "after encode, register does NOT hold FIRST item (STM overwrite)",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "course": "stm",
+      "q": "immediate recall last encode item (register hit)",
+      "got": 25,
+      "want": 25,
+      "ok": true
+    },
+    {
+      "course": "stm",
+      "q": "immediate recall first encode item from register (expect miss)",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "course": "ltm",
+      "q": "procedural LTM recompute encode set 10/10",
+      "got": 10,
+      "want": 10,
+      "ok": true
+    },
+    {
+      "course": "interfere",
+      "q": "register after B is a B item (STM overwritten)",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "course": "ltm",
+      "q": "delayed recall of A after B interference (recompute LTM)",
+      "got": 10,
+      "want": 10,
+      "ok": true
+    },
+    {
+      "course": "ltm",
+      "q": "JO pathway identity after interference (W)",
+      "got": [
+        "JO-A2",
+        "DNg29",
+        "IN23B001"
+      ],
+      "want": [
+        "JO-A2",
+        "DNg29",
+        "IN23B001"
+      ],
+      "ok": true
+    },
+    {
+      "course": "ltm",
+      "q": "VNC pathway identity after interference (W)",
+      "got": [
+        "SNta23",
+        "IN05B011a",
+        "AN08B034"
+      ],
+      "want": [
+        "SNta23",
+        "IN05B011a",
+        "AN08B034"
+      ],
+      "ok": true
+    },
+    {
+      "course": "ltm",
+      "q": "olfactory leftover pathway still il3LN6",
+      "got": [
+        "ORN_DP1m",
+        "il3LN6",
+        "v2LN30"
+      ],
+      "want": [
+        "ORN_DP1m",
+        "il3LN6",
+        "v2LN30"
+      ],
+      "ok": true
+    },
+    {
+      "course": "ltm",
+      "q": "KC APL hub identity (do not write new memory edges)",
+      "got": [
+        "KCa'b'-ap1",
+        "APL",
+        "APL"
+      ],
+      "want": [
+        "KCa'b'-ap1",
+        "APL",
+        "APL"
+      ],
+      "ok": true
+    },
+    {
+      "course": "exam",
+      "q": "mixed A/B paper, A items 5/5",
+      "got": 5,
+      "want": 5,
+      "ok": true
+    },
+    {
+      "course": "stm",
+      "q": "cons(walk trit +1, smell leftover 0) = 0 (cannot dual-hold)",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "course": "stm",
+      "q": "two observers disagree \u2192 STM superposes, does not overwrite W",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "course": "guardrail",
+      "q": "courtship not a memory seed",
+      "got": true,
+      "want": true,
+      "ok": true
+    }
+  ],
+  "stores": {
+    "STM_register": {
+      "object": "last ALU word / last observer residual",
+      "capacity": "one item",
+      "forgets": "next problem or next hop collapse",
+      "expand_later": "keep more observers in consensus-0 superposition; do not add edges"
+    },
+    "STM_overlay": {
+      "object": "n_active after hop, |a|>1/\u03c6",
+      "JO_hop1_n_active": 3,
+      "VNC_hop1_n_active": 19,
+      "KC_hop1_n_active": 2,
+      "forgets": "inf-norm hop; leftover horizon \u03c6^5"
+    },
+    "LTM_W": {
+      "object": "measured synapse counts W (GABA \u2212)",
+      "capacity": "the dump",
+      "forgets": "never on this freeze (identity 0%)",
+      "retrieval": "re-seed the class, a \u2190 r W a"
+    },
+    "LTM_KC": {
+      "object": "Kenyon residual; motor leftover",
+      "n_kc": 1927,
+      "hop1_top": "APL",
+      "vnc_motor_h2": 0.0,
+      "do_not": "expand APL leftover hub"
+    },
+    "retrieval": {
+      "procedural": "recompute on trit ALU (courses)",
+      "episodic_pathway": "re-seed observer; top cell types must match encoding",
+      "interference": "consensus 0 if two observers disagree; W unchanged"
+    }
+  },
+  "exam": {
+    "n_encode": 10,
+    "n_interfere": 9,
+    "stm_holds_last": true,
+    "stm_holds_first": false,
+    "ltm_recompute_after_interfere": 10,
+    "pathway_JO": [
+      "JO-A2",
+      "DNg29",
+      "IN23B001"
+    ],
+    "pathway_VNC": [
+      "SNta23",
+      "IN05B011a",
+      "AN08B034"
+    ],
+    "pathway_olfactory": [
+      "ORN_DP1m",
+      "il3LN6",
+      "v2LN30"
+    ],
+    "pathway_KC": [
+      "KCa'b'-ap1",
+      "APL",
+      "APL"
+    ]
+  },
+  "blueprint": {
+    "STM": "ALU register + overlay n_active (one observer). Next hop/problem overwrites.",
+    "LTM": "measured W. Retrieval is re-seed. Interference cannot edit W.",
+    "KC": "associative leftover; APL is the hub; do not invent memory synapses.",
+    "expand_STM_later": "superpose more observers under consensus 0; longer residual before inf-norm collapse.",
+    "expand_LTM_later": "residual on measured KC/MBON types, never APL/il3LN6 expansion."
+  },
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-7",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}

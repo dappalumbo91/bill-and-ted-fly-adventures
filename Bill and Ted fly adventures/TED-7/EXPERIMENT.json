@@ -1,0 +1,13 @@
+{
+  "id": "TED-7",
+  "role": "ted",
+  "adventure": 2,
+  "change": "math expansion + STM/LTM exam (encode, interfere, retrieve); memory stores on W / residual / KC",
+  "vs_bill": "Bill-6",
+  "n_ok": 36,
+  "n": 36,
+  "fail": [],
+  "promotes": true,
+  "promote_to": "Bill-7",
+  "why": "STM is the last residual/register. LTM is measured W (re-seed). KC leftover, APL hub not expanded. Interference does not edit W."
+}

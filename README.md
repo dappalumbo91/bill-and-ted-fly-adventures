@@ -107,6 +107,8 @@ python scripts/bill4_math_courses.py        # conventional math courses (Z,Q,alg
 python scripts/bill_ted.py ted-5            # promote TED-5 → Bill-5 if courses hold
 python scripts/bill5_analysis.py            # analysis, multivariable, 200 Hz plant ODEs
 python scripts/bill_ted.py ted-6            # promote TED-6 → Bill-6 if analysis holds
+python scripts/bill6_memory.py              # math expand + STM/LTM encode-interfere-retrieve
+python scripts/bill_ted.py ted-7            # promote TED-7 → Bill-7 if memory exam holds
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

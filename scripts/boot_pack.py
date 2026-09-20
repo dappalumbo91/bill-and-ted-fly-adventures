@@ -68,6 +68,7 @@ A1V = ROOT / "data" / "adventure1_verify.json"
 A2M = ROOT / "data" / "bill3_math_env.json"
 A2C = ROOT / "data" / "bill4_math_courses.json"
 A2A = ROOT / "data" / "bill5_analysis.json"
+A2MEM = ROOT / "data" / "bill6_memory.json"
 
 
 def fail(msg: str) -> None:
@@ -391,7 +392,7 @@ def test_identity_phot1_develop() -> None:
         f"R={ps.get('n_predicted_R')} leftover={ps.get('n_leftover')}"
     )
     bt = json.loads(BTLED.read_text(encoding="utf-8"))
-    if bt.get("current_bill") not in ("Bill-0", "Bill-1", "Bill-2", "Bill-3", "Bill-4", "Bill-5", "Bill-6"):
+    if bt.get("current_bill") not in ("Bill-0", "Bill-1", "Bill-2", "Bill-3", "Bill-4", "Bill-5", "Bill-6", "Bill-7"):
         fail(f"bill_ted current {bt.get('current_bill')}")
     ok(f"bill_ted current={bt.get('current_bill')} teds={bt.get('teds')}")
     a1 = json.loads(ADV1.read_text(encoding="utf-8"))
@@ -498,11 +499,23 @@ def test_identity_phot1_develop() -> None:
         fail(f"bill5_analysis fail={a2a.get('fail')}")
     if int(a2a.get("n_ok") or 0) != int(a2a.get("n") or 0):
         fail(f"analysis {a2a.get('n_ok')}/{a2a.get('n')}")
-    if a2a.get("promotes") and bt.get("current_bill") != "Bill-6":
-        fail("TED-6 promotes but ledger current_bill is not Bill-6")
+    if a2a.get("promotes") and "Bill-6" not in (bt.get("bills") or []) and bt.get("current_bill") not in ("Bill-6", "Bill-7"):
+        fail("TED-6 promotes but Bill-6 is not on the ledger")
     ok(
         f"bill5_analysis TED-6 {a2a.get('n_ok')}/{a2a.get('n')}  "
         f"plant_f={((a2a.get('plant') or {}).get('f_wb_hz'))}  current={bt.get('current_bill')}"
+    )
+    mem = json.loads(A2MEM.read_text(encoding="utf-8"))
+    if not mem.get("overall_ok"):
+        fail(f"bill6_memory fail={mem.get('fail')}")
+    if int(mem.get("n_ok") or 0) != int(mem.get("n") or 0):
+        fail(f"memory {mem.get('n_ok')}/{mem.get('n')}")
+    if mem.get("promotes") and bt.get("current_bill") != "Bill-7":
+        fail("TED-7 promotes but ledger current_bill is not Bill-7")
+    ok(
+        f"bill6_memory TED-7 {mem.get('n_ok')}/{mem.get('n')}  "
+        f"LTM={(mem.get('exam') or {}).get('ltm_recompute_after_interfere')}  "
+        f"current={bt.get('current_bill')}"
     )
 
 

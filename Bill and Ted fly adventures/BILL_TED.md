@@ -34,8 +34,10 @@ Pin **AEB2AD**. Law \(S=K(T_1+T_2+T_3)\). Residual hops on measured synapses. Ov
 | **TED-5 / Adventure 2** | conventional math courses (Z, Q, algebra, geometry, trig, calculus, lin alg, stats, logic) on trit ALU | **58/58** → **Bill-5** |
 | **Bill-5** | community mathematics on the same substrate | promoted from TED-5 |
 | **TED-6 / Adventure 2** | real analysis, multivariable calculus, ODEs on the 200 Hz wing plant | **46/46** → **Bill-6** |
-| **Bill-6** | current | analysis + plant oscillator |
+| **Bill-6** | analysis + plant oscillator | promoted from TED-6 |
+| **TED-7 / Adventure 2** | math expansion + STM/LTM exam (encode, interfere, retrieve) | **36/36** → **Bill-7** |
+| **Bill-7** | current | memory stores mapped: STM register, LTM \(W\), KC leftover |
 
-Scripts: `python scripts/bill_ted.py freeze` · `ted-1` · `ted-2` · `python scripts/adventure1_verify.py` · `ted-3` · `python scripts/bill3_math_env.py` · `ted-4` · `python scripts/bill4_math_courses.py` · `ted-5` · `python scripts/bill5_analysis.py` · `ted-6` · `ledger`
+Scripts: `python scripts/bill_ted.py freeze` · `ted-1` … `ted-6` · `python scripts/bill6_memory.py` · `ted-7` · `ledger`
 
 Data: `Bill and Ted fly adventures/ledger.json`
