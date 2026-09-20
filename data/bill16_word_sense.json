@@ -1,0 +1,99 @@
+{
+  "adventure": 2,
+  "ted": "TED-17",
+  "vs_bill": "Bill-16",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "clarification": "Blind 0/22: leftover (no named job) plus false ALU on English 'times'. Adapt 22/22: we named leftover jobs. The organism did not independently retry the quiz. Dictionary senses disambiguate 'times'.",
+  "wikipedia": "leftover research observer later; never authority over measured W",
+  "dictionary": "closed grammar senses; times-as-many = divide; times N = multiply",
+  "n": 13,
+  "n_ok": 13,
+  "fail": [],
+  "problems": [
+    {
+      "q": "TED-16 blind was leftover/false-ALU not a silent retry",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "q": "TED-16 adapt 22/22 was named leftover jobs",
+      "got": 22,
+      "want": 22,
+      "ok": true
+    },
+    {
+      "q": "books items in quiz",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "sense times-as-many: IM-G6-books-15",
+      "got": "ratio_divide",
+      "want": "ratio_divide",
+      "ok": true
+    },
+    {
+      "q": "not multiply: IM-G6-books-15",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "sense times-as-many: IM-G6-books-21",
+      "got": "ratio_divide",
+      "want": "ratio_divide",
+      "ok": true
+    },
+    {
+      "q": "not multiply: IM-G6-books-21",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "sense times-as-many: IM-G6-books-18",
+      "got": "ratio_divide",
+      "want": "ratio_divide",
+      "ok": true
+    },
+    {
+      "q": "not multiply: IM-G6-books-18",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "bare 3 times 4 is multiply",
+      "got": "multiply",
+      "want": "multiply",
+      "ok": true
+    },
+    {
+      "q": "3 times as many as 15 is ratio",
+      "got": "ratio_divide",
+      "want": "ratio_divide",
+      "ok": true
+    },
+    {
+      "q": "Wikipedia is leftover not W",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "dictionary is closed sense table not scrape",
+      "got": true,
+      "want": true,
+      "ok": true
+    }
+  ],
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-17",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}

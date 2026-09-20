@@ -1,0 +1,12 @@
+{
+  "id": "TED-17",
+  "role": "ted",
+  "adventure": 2,
+  "change": "dictionary/grammar senses for leftover English; Wikipedia not over W; DISCOVERIES.md",
+  "vs_bill": "Bill-16",
+  "n_ok": 13,
+  "n": 13,
+  "promotes": true,
+  "promote_to": "Bill-17",
+  "why": "Blind 0/22: leftover (no named job) plus false ALU on English 'times'. Adapt 22/22: we named leftover jobs. The organism did not independently retry the quiz. Dictionary senses disambiguate 'times'."
+}

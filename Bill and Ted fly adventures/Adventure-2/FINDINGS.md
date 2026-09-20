@@ -32,3 +32,5 @@ Do not expand il3LN6 / APL leftover hubs.
 | pathway | 1/1 |
 
 PhD band: φ, ALPHA, P_NEW, nest \(D_{\mathrm{eff}}\), \(S=K(T_1+T_2+T_3)\), look-split, BT ring, F02.
+
+What is new vs known connectomics: `docs/DISCOVERIES.md`. TED-16 unseen math: blind leftover, not a silent retry. TED-17 dictionary senses for English “times”.
