@@ -75,6 +75,7 @@ A2IX = ROOT / "data" / "bill9_inxxx_leftover.json"
 A2R = ROOT / "data" / "bill10_remaining_leftovers.json"
 A2ALL = ROOT / "data" / "bill11_map_all.json"
 A2LNG = ROOT / "data" / "bill12_language_splice.json"
+A2COD = ROOT / "data" / "bill13_coding_tokens.json"
 
 
 def fail(msg: str) -> None:
@@ -400,7 +401,7 @@ def test_identity_phot1_develop() -> None:
     bt = json.loads(BTLED.read_text(encoding="utf-8"))
     if bt.get("current_bill") not in (
         "Bill-0", "Bill-1", "Bill-2", "Bill-3", "Bill-4",
-        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10", "Bill-11", "Bill-12", "Bill-13",
+        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10", "Bill-11", "Bill-12", "Bill-13", "Bill-14",
     ):
         fail(f"bill_ted current {bt.get('current_bill')}")
     ok(f"bill_ted current={bt.get('current_bill')} teds={bt.get('teds')}")
@@ -582,11 +583,20 @@ def test_identity_phot1_develop() -> None:
     lng = json.loads(A2LNG.read_text(encoding="utf-8"))
     if not lng.get("overall_ok"):
         fail(f"bill12_language_splice fail={lng.get('fail')}")
-    if lng.get("promotes") and bt.get("current_bill") != "Bill-13":
-        fail("TED-13 promotes but ledger current_bill is not Bill-13")
+    if lng.get("promotes") and "Bill-13" not in (bt.get("bills") or []) and bt.get("current_bill") not in ("Bill-13", "Bill-14"):
+        fail("TED-13 promotes but Bill-13 is not on the ledger")
     ok(
         f"bill12_language_splice TED-13 {lng.get('n_ok')}/{lng.get('n')}  "
         f"not_on_W={(lng.get('splice') or {}).get('not_on_W')}  current={bt.get('current_bill')}"
+    )
+    cod = json.loads(A2COD.read_text(encoding="utf-8"))
+    if not cod.get("overall_ok"):
+        fail(f"bill13_coding_tokens fail={cod.get('fail')}")
+    if cod.get("promotes") and bt.get("current_bill") != "Bill-14":
+        fail("TED-14 promotes but ledger current_bill is not Bill-14")
+    ok(
+        f"bill13_coding_tokens TED-14 {cod.get('n_ok')}/{cod.get('n')}  "
+        f"horizon={(cod.get('splice') or {}).get('loop_horizon')}  current={bt.get('current_bill')}"
     )
 
 

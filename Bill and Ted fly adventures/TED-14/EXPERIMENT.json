@@ -1,0 +1,12 @@
+{
+  "id": "TED-14",
+  "role": "ted",
+  "adventure": 2,
+  "change": "coding tokens on language splice: let/if/while + trit ALU, not FlyWire W",
+  "vs_bill": "Bill-13",
+  "n_ok": 41,
+  "n": 41,
+  "promotes": true,
+  "promote_to": "Bill-14",
+  "why": "let/if/while on trit ALU. Loop horizon \u03c6^5=11. Courtship names DENY. Not on W. Never APL/il3LN6."
+}

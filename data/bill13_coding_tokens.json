@@ -1,0 +1,276 @@
+{
+  "adventure": 2,
+  "ted": "TED-14",
+  "vs_bill": "Bill-13",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "splice": {
+    "job": "coding tokens",
+    "tissue": "invented region on language splice: let/if/while + trit ALU",
+    "not_on_W": true,
+    "loop_horizon": 11,
+    "never": [
+      "APL",
+      "INXXX007",
+      "il3LN6",
+      "lLN2F_b"
+    ]
+  },
+  "n": 41,
+  "n_ok": 41,
+  "fail": [],
+  "problems": [
+    {
+      "q": "let x = 3 + 4; x",
+      "got": 7,
+      "want": 7,
+      "ok": true
+    },
+    {
+      "q": "not on W: let x = 3 + 4; x",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "splice ALU: let x = 3 + 4; x",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "let y = 6 * 7; y",
+      "got": 42,
+      "want": 42,
+      "ok": true
+    },
+    {
+      "q": "not on W: let y = 6 * 7; y",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "splice ALU: let y = 6 * 7; y",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "let a = JO_L + JO_R; a",
+      "got": 672,
+      "want": 672,
+      "ok": true
+    },
+    {
+      "q": "not on W: let a = JO_L + JO_R; a",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "splice ALU: let a = JO_L + JO_R; a",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "if cons(1, 1) { 10 } else { 0 }",
+      "got": 10,
+      "want": 10,
+      "ok": true
+    },
+    {
+      "q": "not on W: if cons(1, 1) { 10 } els",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "splice ALU: if cons(1, 1) { 10 } els",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "if cons(1, -1) { 10 } else { 0 }",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "q": "not on W: if cons(1, -1) { 10 } el",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "splice ALU: if cons(1, -1) { 10 } el",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "if overlay(1) { 5 } else { 9 }",
+      "got": 5,
+      "want": 5,
+      "ok": true
+    },
+    {
+      "q": "not on W: if overlay(1) { 5 } else",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "splice ALU: if overlay(1) { 5 } else",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "if leftover(0) { 1 } else { 0 }",
+      "got": 1,
+      "want": 1,
+      "ok": true
+    },
+    {
+      "q": "not on W: if leftover(0) { 1 } els",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "splice ALU: if leftover(0) { 1 } els",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "let i = 0; let s = 0; while i < 3 { let s = s + i; let i = i + 1 }; s",
+      "got": 3,
+      "want": 3,
+      "ok": true
+    },
+    {
+      "q": "not on W: let i = 0; let s = 0; wh",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "splice ALU: let i = 0; let s = 0; wh",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "let n = 1; while n < 5 { let n = n * 2 }; n",
+      "got": 8,
+      "want": 8,
+      "ok": true
+    },
+    {
+      "q": "not on W: let n = 1; while n < 5 {",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "splice ALU: let n = 1; while n < 5 {",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "abs(3 - 10)",
+      "got": 7,
+      "want": 7,
+      "ok": true
+    },
+    {
+      "q": "not on W: abs(3 - 10)",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "splice ALU: abs(3 - 10)",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "trit(0 - 4)",
+      "got": -1,
+      "want": -1,
+      "ok": true
+    },
+    {
+      "q": "not on W: trit(0 - 4)",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "splice ALU: trit(0 - 4)",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "let walk = 1; walk",
+      "got": 1,
+      "want": 1,
+      "ok": true
+    },
+    {
+      "q": "not on W: let walk = 1; walk",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "splice ALU: let walk = 1; walk",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "court identifier DENY",
+      "got": "deny",
+      "want": "deny",
+      "ok": true
+    },
+    {
+      "q": "unknown leftover",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "loop horizon \u03c6\u2075",
+      "got": 11,
+      "want": 11,
+      "ok": true
+    },
+    {
+      "q": "language splice still not on W",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "walk \u2227 smell still cons 0",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    }
+  ],
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-14",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}

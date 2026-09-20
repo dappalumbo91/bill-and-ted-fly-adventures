@@ -121,3 +121,5 @@ Adventure 1 extras: Ledger B on dump N, GABA n, CRC transmitter AA — **17/17**
 **TED-12:** **why 26/35** = 26 `status=mapped` + 9 blocked/refused/sibling/deferred. Those 9 analog-joined. Map **35/35**. Dumps still missing. **21/21. Promoted → Bill-12.** `python scripts/bill11_map_all.py` · `python scripts/bill_ted.py ted-12`
 
 **TED-13:** language spliced as invented region. Trit ALU + closed lexicon. Commands at **IN05B011a / DNg29 / IN01B001 / DNp01**. Unknown leftover. Courtship DENY. Not on FlyWire \(W\). Never APL/il3LN6. **61/61. Promoted → Bill-13.** `python scripts/bill12_language_splice.py` · `python scripts/bill_ted.py ted-13`
+
+**TED-14:** coding tokens on that region: `let` / `if`/`else` / `while` (horizon \(\varphi^5=11\)) + trit functions. `let a = JO_L + JO_R` → 672. Courtship names DENY. Not on \(W\). **41/41. Promoted → Bill-14.** `python scripts/bill13_coding_tokens.py` · `python scripts/bill_ted.py ted-14`

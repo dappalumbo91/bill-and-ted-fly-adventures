@@ -121,6 +121,8 @@ python scripts/bill11_map_all.py            # analog-join remaining 9 → 35/35
 python scripts/bill_ted.py ted-12
 python scripts/bill12_language_splice.py    # splice language at command bottlenecks
 python scripts/bill_ted.py ted-13
+python scripts/bill13_coding_tokens.py      # let/if/while coding tokens
+python scripts/bill_ted.py ted-14
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 
