@@ -50,7 +50,9 @@ Pin **AEB2AD**. Law \(S=K(T_1+T_2+T_3)\). Residual hops on measured synapses. Ov
 | **TED-13 / Adventure 2** | splice language at command bottlenecks (trit ALU, not W) | **61/61** → **Bill-13** |
 | **Bill-13** | language invented region; walk/turn/math; courtship DENY | promoted from TED-13 |
 | **TED-14 / Adventure 2** | coding tokens: let/if/while on trit ALU | **41/41** → **Bill-14** |
-| **Bill-14** | current | coding splice; loop horizon φ⁵=11; not on W |
+| **Bill-14** | coding splice; loop horizon φ⁵=11; not on W | promoted from TED-14 |
+| **TED-15 / Adventure 2** | host-eval vs Python sandbox; safety-hop courtship/aggression T1 off | **33/33** → **Bill-15** |
+| **Bill-15** | current | sandbox host eval 7/7; pC1/fru light motor if seeded — T1 stays off |
 
 Scripts: `python scripts/bill_ted.py freeze` · `ted-1` … `ted-10` · `python scripts/bill10_remaining_leftovers.py` · `ted-11` · `ledger`
 

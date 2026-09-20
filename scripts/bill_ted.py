@@ -52,6 +52,9 @@ def freeze_paths() -> list[Path]:
         BT / "TED-12" / "EXPERIMENT.json",
         BT / "TED-13" / "EXPERIMENT.json",
         BT / "TED-14" / "EXPERIMENT.json",
+        BT / "TED-15" / "EXPERIMENT.json",
+        BT / "Adventure-2" / "SAFETY.md",
+        ROOT / "docs" / "SAFETY_FAMILY.md",
         BT / "Adventure-2" / "LANGUAGE.md",
         ROOT / "docs" / "LANGUAGE_SPLICE.md",
         BT / "Adventure-2" / "CODING.md",
@@ -645,6 +648,44 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  promoted Bill-14 tree={man['tree_sha256'][:12]}")
         else:
             print("  Bill-13 stays")
+    elif cmd == "ted-15":
+        vpath = ROOT / "data" / "bill14_host_eval.json"
+        if not vpath.is_file():
+            print("  run python scripts/bill14_host_eval.py first")
+            return 1
+        v = json.loads(vpath.read_text(encoding="utf-8"))
+        win = bool(v.get("promotes") and v.get("overall_ok"))
+        exp = {
+            "id": "TED-15",
+            "role": "ted",
+            "adventure": 2,
+            "change": "host-eval coding vs Python sandbox; safety-hop courtship/aggression T1 off",
+            "vs_bill": "Bill-14",
+            "n_ok": v.get("n_ok"),
+            "n": v.get("n"),
+            "promotes": win,
+            "promote_to": "Bill-15" if win else None,
+            "why": (
+                "Sandbox is the host eval (AST whitelist). pC1/TN1/fru hops light motor — "
+                "that is why T1 stays off. Language/code DENY those names."
+            ),
+        }
+        dest = BT / "TED-15"
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / "EXPERIMENT.json").write_text(json.dumps(exp, indent=2), encoding="utf-8")
+        if "TED-15" not in led["teds"]:
+            led["teds"].append("TED-15")
+        print(f"  TED-15 promotes={win}  {exp.get('n_ok')}/{exp.get('n')}")
+        if win:
+            man = freeze("Bill-15")
+            if "Bill-15" not in led["bills"]:
+                led["bills"].append("Bill-15")
+            led["promotions"].append({"from": "TED-15", "to": "Bill-15", "tree": man["tree_sha256"]})
+            led["current_bill"] = "Bill-15"
+            led["last_tree_sha256"] = man["tree_sha256"]
+            print(f"  promoted Bill-15 tree={man['tree_sha256'][:12]}")
+        else:
+            print("  Bill-14 stays")
     elif cmd == "ted-1":
         exp = ted1()
         if "TED-1" not in led["teds"]:

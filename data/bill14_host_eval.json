@@ -1,0 +1,318 @@
+{
+  "adventure": 2,
+  "ted": "TED-15",
+  "vs_bill": "Bill-14",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "host_eval": {
+    "n_pairs": 7,
+    "n_match": 7,
+    "sandbox": "AST whitelist; no import/open/exec/attribute",
+    "why_not_unrestricted": "Unrestricted host eval is a system attack surface. Sandbox is the host eval we can actually run."
+  },
+  "safety": {
+    "t1": "off",
+    "mode": "live_T1_off",
+    "live_error": null,
+    "pathways": {
+      "pC1": {
+        "n_seed": 156,
+        "vnc_motor": 1.355009333383441,
+        "descending": 30.93662444720059,
+        "command": true,
+        "hops_2_4": {
+          "2": {
+            "vnc_motor": 1.355009333383441,
+            "descending": 30.93662444720059,
+            "top": "SIP091",
+            "command": true
+          },
+          "3": {
+            "vnc_motor": 5.033132213569833,
+            "descending": 25.072688755677227,
+            "top": "dPR1",
+            "command": true
+          },
+          "4": {
+            "vnc_motor": 6.864127491592717,
+            "descending": 13.917997204264113,
+            "top": "dPR1",
+            "command": true
+          }
+        },
+        "t1": "off",
+        "observer_default": "off"
+      },
+      "TN1": {
+        "n_seed": 35,
+        "vnc_motor": 10.07383611787576,
+        "descending": 1.2246684478842234,
+        "command": true,
+        "hops_2_4": {
+          "2": {
+            "vnc_motor": 10.07383611787576,
+            "descending": 1.2246684478842234,
+            "top": "hg1 MN",
+            "command": true
+          },
+          "3": {
+            "vnc_motor": 1.6209811974661859,
+            "descending": 0.24893115259276744,
+            "top": "tpn MN",
+            "command": true
+          },
+          "4": {
+            "vnc_motor": 0.5941601550789797,
+            "descending": 0.9335057703436651,
+            "top": "vMS12_a",
+            "command": false
+          }
+        },
+        "t1": "off",
+        "observer_default": "off"
+      },
+      "fru_dsx": {
+        "n_seed": 5012,
+        "vnc_motor": 7.261567924077205,
+        "descending": 35.211274063135235,
+        "command": true,
+        "hops_2_4": {
+          "2": {
+            "vnc_motor": 7.261567924077205,
+            "descending": 35.211274063135235,
+            "top": "v2LN30",
+            "command": true
+          },
+          "3": {
+            "vnc_motor": 5.200316389385718,
+            "descending": 14.438920324472988,
+            "top": "lLN1_bc",
+            "command": true
+          },
+          "4": {
+            "vnc_motor": 1.1507817540768865,
+            "descending": 2.7673130477129724,
+            "top": "lLN1_bc",
+            "command": true
+          }
+        },
+        "t1": "off",
+        "observer_default": "off"
+      },
+      "courtship_clip_paint": 0.5724713242961418,
+      "aggression_pC1_light_on": null,
+      "shared_pC1": true
+    },
+    "pc1_would_command_if_seeded": true,
+    "shared": "pC1 types seed both courtship (fru-GAL4 clip) and aggression (pC1SS2 opto). Same cells, different observer. Default both off."
+  },
+  "n": 33,
+  "n_ok": 33,
+  "fail": [],
+  "problems": [
+    {
+      "q": "host FSOT: let x = 3 + 4; x",
+      "got": 7,
+      "want": 7,
+      "ok": true
+    },
+    {
+      "q": "sandbox Py: x = 3 + 4; x",
+      "got": 7,
+      "want": 7,
+      "ok": true
+    },
+    {
+      "q": "FSOT==Py==want: 7",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "host FSOT: let y = 6 * 7; y",
+      "got": 42,
+      "want": 42,
+      "ok": true
+    },
+    {
+      "q": "sandbox Py: y = 6 * 7; y",
+      "got": 42,
+      "want": 42,
+      "ok": true
+    },
+    {
+      "q": "FSOT==Py==want: 42",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "host FSOT: let a = 10 - 3; a",
+      "got": 7,
+      "want": 7,
+      "ok": true
+    },
+    {
+      "q": "sandbox Py: a = 10 - 3; a",
+      "got": 7,
+      "want": 7,
+      "ok": true
+    },
+    {
+      "q": "FSOT==Py==want: 7",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "host FSOT: if cons(1, 1) { 10 } else { 0 }",
+      "got": 10,
+      "want": 10,
+      "ok": true
+    },
+    {
+      "q": "sandbox Py: 10 if 1 == 1 else 0",
+      "got": 10,
+      "want": 10,
+      "ok": true
+    },
+    {
+      "q": "FSOT==Py==want: 10",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "host FSOT: if cons(1, -1) { 10 } else { 0 }",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "q": "sandbox Py: 10 if 1 == -1 else 0",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "q": "FSOT==Py==want: 0",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "host FSOT: let i = 0; let s = 0; while i < 3 { let ",
+      "got": 3,
+      "want": 3,
+      "ok": true
+    },
+    {
+      "q": "sandbox Py: i = 0; s = 0; while i < 3:;     s = s + i;  ",
+      "got": 3,
+      "want": 3,
+      "ok": true
+    },
+    {
+      "q": "FSOT==Py==want: 3",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "host FSOT: abs(3 - 10)",
+      "got": 7,
+      "want": 7,
+      "ok": true
+    },
+    {
+      "q": "sandbox Py: abs(3 - 10)",
+      "got": 7,
+      "want": 7,
+      "ok": true
+    },
+    {
+      "q": "FSOT==Py==want: 7",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "FSOT court DENY",
+      "got": "deny",
+      "want": "deny",
+      "ok": true
+    },
+    {
+      "q": "sandbox court DENY",
+      "got": "deny",
+      "want": "deny",
+      "ok": true
+    },
+    {
+      "q": "sandbox forbid import",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "sandbox forbid open",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "language walk still command",
+      "got": "command",
+      "want": "command",
+      "ok": true
+    },
+    {
+      "q": "language court still DENY",
+      "got": "deny",
+      "want": "deny",
+      "ok": true
+    },
+    {
+      "q": "pC1 n_seed > 0",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "pC1 T1 off",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "TN1 n_seed > 0",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "fru_dsx n_seed > 0",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "default observer still deny courtship",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "host eval worksheet match n",
+      "got": 7,
+      "want": 7,
+      "ok": true
+    }
+  ],
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-15",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}

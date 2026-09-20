@@ -76,6 +76,7 @@ A2R = ROOT / "data" / "bill10_remaining_leftovers.json"
 A2ALL = ROOT / "data" / "bill11_map_all.json"
 A2LNG = ROOT / "data" / "bill12_language_splice.json"
 A2COD = ROOT / "data" / "bill13_coding_tokens.json"
+A2HV = ROOT / "data" / "bill14_host_eval.json"
 
 
 def fail(msg: str) -> None:
@@ -401,7 +402,7 @@ def test_identity_phot1_develop() -> None:
     bt = json.loads(BTLED.read_text(encoding="utf-8"))
     if bt.get("current_bill") not in (
         "Bill-0", "Bill-1", "Bill-2", "Bill-3", "Bill-4",
-        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10", "Bill-11", "Bill-12", "Bill-13", "Bill-14",
+        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10", "Bill-11", "Bill-12", "Bill-13", "Bill-14", "Bill-15",
     ):
         fail(f"bill_ted current {bt.get('current_bill')}")
     ok(f"bill_ted current={bt.get('current_bill')} teds={bt.get('teds')}")
@@ -592,11 +593,21 @@ def test_identity_phot1_develop() -> None:
     cod = json.loads(A2COD.read_text(encoding="utf-8"))
     if not cod.get("overall_ok"):
         fail(f"bill13_coding_tokens fail={cod.get('fail')}")
-    if cod.get("promotes") and bt.get("current_bill") != "Bill-14":
-        fail("TED-14 promotes but ledger current_bill is not Bill-14")
+    if cod.get("promotes") and "Bill-14" not in (bt.get("bills") or []) and bt.get("current_bill") not in ("Bill-14", "Bill-15"):
+        fail("TED-14 promotes but Bill-14 is not on the ledger")
     ok(
         f"bill13_coding_tokens TED-14 {cod.get('n_ok')}/{cod.get('n')}  "
         f"horizon={(cod.get('splice') or {}).get('loop_horizon')}  current={bt.get('current_bill')}"
+    )
+    hv = json.loads(A2HV.read_text(encoding="utf-8"))
+    if not hv.get("overall_ok"):
+        fail(f"bill14_host_eval fail={hv.get('fail')}")
+    if hv.get("promotes") and bt.get("current_bill") != "Bill-15":
+        fail("TED-15 promotes but ledger current_bill is not Bill-15")
+    ok(
+        f"bill14_host_eval TED-15 {hv.get('n_ok')}/{hv.get('n')}  "
+        f"match={(hv.get('host_eval') or {}).get('n_match')}  "
+        f"T1={(hv.get('safety') or {}).get('t1')}  current={bt.get('current_bill')}"
     )
 
 

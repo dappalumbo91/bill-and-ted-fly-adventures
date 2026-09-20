@@ -1,0 +1,12 @@
+{
+  "id": "TED-15",
+  "role": "ted",
+  "adventure": 2,
+  "change": "host-eval coding vs Python sandbox; safety-hop courtship/aggression T1 off",
+  "vs_bill": "Bill-14",
+  "n_ok": 33,
+  "n": 33,
+  "promotes": true,
+  "promote_to": "Bill-15",
+  "why": "Sandbox is the host eval (AST whitelist). pC1/TN1/fru hops light motor \u2014 that is why T1 stays off. Language/code DENY those names."
+}

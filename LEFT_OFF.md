@@ -123,3 +123,5 @@ Adventure 1 extras: Ledger B on dump N, GABA n, CRC transmitter AA — **17/17**
 **TED-13:** language spliced as invented region. Trit ALU + closed lexicon. Commands at **IN05B011a / DNg29 / IN01B001 / DNp01**. Unknown leftover. Courtship DENY. Not on FlyWire \(W\). Never APL/il3LN6. **61/61. Promoted → Bill-13.** `python scripts/bill12_language_splice.py` · `python scripts/bill_ted.py ted-13`
 
 **TED-14:** coding tokens on that region: `let` / `if`/`else` / `while` (horizon \(\varphi^5=11\)) + trit functions. `let a = JO_L + JO_R` → 672. Courtship names DENY. Not on \(W\). **41/41. Promoted → Bill-14.** `python scripts/bill13_coding_tokens.py` · `python scripts/bill_ted.py ted-14`
+
+**TED-15:** host-eval trit coding vs restricted Python sandbox **7/7**. Unrestricted eval/import is host attack surface. Safety hops T1 off: pC1 n=156 desc **30.94**, TN1 n=35 vm **10.07**, fru/dsx n=5012 desc **35.21** — family *would* command if seeded. Language/code still DENY. **33/33. Promoted → Bill-15.** `python scripts/bill14_host_eval.py` · `python scripts/bill_ted.py ted-15`
