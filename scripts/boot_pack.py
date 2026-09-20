@@ -65,6 +65,7 @@ A1C = ROOT / "data" / "adventure1_closeout.json"
 A1F = ROOT / "data" / "adventure1_fsot_apply.json"
 A1B = ROOT / "data" / "adventure1_fsot_blueprint.json"
 A1V = ROOT / "data" / "adventure1_verify.json"
+A2M = ROOT / "data" / "bill3_math_env.json"
 
 
 def fail(msg: str) -> None:
@@ -388,7 +389,7 @@ def test_identity_phot1_develop() -> None:
         f"R={ps.get('n_predicted_R')} leftover={ps.get('n_leftover')}"
     )
     bt = json.loads(BTLED.read_text(encoding="utf-8"))
-    if bt.get("current_bill") not in ("Bill-0", "Bill-1", "Bill-2", "Bill-3"):
+    if bt.get("current_bill") not in ("Bill-0", "Bill-1", "Bill-2", "Bill-3", "Bill-4"):
         fail(f"bill_ted current {bt.get('current_bill')}")
     ok(f"bill_ted current={bt.get('current_bill')} teds={bt.get('teds')}")
     a1 = json.loads(ADV1.read_text(encoding="utf-8"))
@@ -461,11 +462,23 @@ def test_identity_phot1_develop() -> None:
         fail(f"adventure1_verify fail={av.get('fail')}")
     if av.get("ted") != "TED-3" or av.get("promote_to") != "Bill-3":
         fail(f"verify ted={av.get('ted')} promote_to={av.get('promote_to')}")
-    if bt.get("current_bill") != "Bill-3":
-        fail("TED-3 promotes but ledger current_bill is not Bill-3")
+    if "Bill-3" not in (bt.get("bills") or []) and bt.get("current_bill") not in ("Bill-3", "Bill-4"):
+        fail("TED-3 promotes but Bill-3 is not on the ledger")
     ok(
         f"adventure1_verify TED-3 → Bill-3  {av.get('n_ok')}/{av.get('n')}  "
         f"bill_fn={av.get('bill_function_ok')} lean={av.get('lean_ok')}"
+    )
+    a2 = json.loads(A2M.read_text(encoding="utf-8"))
+    if not a2.get("overall_ok"):
+        fail(f"bill3_math_env fail={a2.get('fail')}")
+    if int(a2.get("n_ok") or 0) != int(a2.get("n") or 0):
+        fail(f"math env {a2.get('n_ok')}/{a2.get('n')}")
+    if a2.get("promotes") and bt.get("current_bill") != "Bill-4":
+        fail("TED-4 promotes but ledger current_bill is not Bill-4")
+    ok(
+        f"bill3_math_env TED-4 {a2.get('n_ok')}/{a2.get('n')}  "
+        f"types_lit={(a2.get('thinking') or {}).get('n_types_lit')}  "
+        f"current={bt.get('current_bill')}"
     )
 
 

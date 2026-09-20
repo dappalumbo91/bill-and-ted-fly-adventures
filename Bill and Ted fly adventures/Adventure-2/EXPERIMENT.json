@@ -1,0 +1,12 @@
+{
+  "id": "TED-4",
+  "role": "ted",
+  "adventure": 2,
+  "change": "Bill-3 through math environments + hop thinking traces; PhD FSOT identities",
+  "vs_bill": "Bill-3",
+  "promotes": true,
+  "promote_to": "Bill-4",
+  "n_ok": 37,
+  "n": 37,
+  "fail": []
+}

@@ -97,6 +97,7 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | Adventure 1 blueprint through FSOT | **closed 120/120, pathways 5/5** | F02 transmitter AA; residual hops; overlay; trit; receptor overlay sim n=45; look-split **0.494%** |
 | Courtship/aggression/fru/dsx DENY | **T1 observer off** | Pack is for human-facing AI; that family opposes human safety; labels stay measured |
 | TED-3 Adventure 1 verification | **promoted → Bill-3** | Blueprint through FSOT vs Bill-2: **28/28**. Hop function holds. Lean 0.5%/99.5% hold. Not Adventure 2. |
+| TED-4 Adventure 2 math environments | **promoted → Bill-4** | Bill-3 through maze/yaw/walk/smell/trit ring/PhD identities **37/37**. Thinking = residual hops; 11 types lit. Courtship not seeded. |
 
 ---
 

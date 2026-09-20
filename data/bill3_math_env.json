@@ -1,0 +1,1267 @@
+{
+  "adventure": 2,
+  "ted": "TED-4",
+  "vs_bill": "Bill-3",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "law": "S=K(T1+T2+T3); a\u2190rWa; overlay 1/\u03c6; consensus trit; F02; BT ALU",
+  "n": 37,
+  "n_ok": 37,
+  "fail": [],
+  "by_env": {
+    "maze": {
+      "n": 3,
+      "n_ok": 3
+    },
+    "yaw": {
+      "n": 3,
+      "n_ok": 3
+    },
+    "walk": {
+      "n": 2,
+      "n_ok": 2
+    },
+    "smell": {
+      "n": 2,
+      "n_ok": 2
+    },
+    "neuromod": {
+      "n": 2,
+      "n_ok": 2
+    },
+    "guardrail": {
+      "n": 1,
+      "n_ok": 1
+    },
+    "trit_ring": {
+      "n": 6,
+      "n_ok": 6
+    },
+    "phd_phi": {
+      "n": 4,
+      "n_ok": 4
+    },
+    "phd_seeds": {
+      "n": 2,
+      "n_ok": 2
+    },
+    "phd_nest": {
+      "n": 2,
+      "n_ok": 2
+    },
+    "phd_scalar": {
+      "n": 5,
+      "n_ok": 5
+    },
+    "phd_f02": {
+      "n": 3,
+      "n_ok": 3
+    },
+    "phd_overlay": {
+      "n": 1,
+      "n_ok": 1
+    },
+    "pathway": {
+      "n": 1,
+      "n_ok": 1
+    }
+  },
+  "problems": [
+    {
+      "env": "maze",
+      "q": "29 \u2212 28 (left-arm resource frames)",
+      "got": 1,
+      "want": 1,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "trace": {
+        "observer": "vnc_sensory",
+        "n_seed": 6365,
+        "hops": [
+          {
+            "hop": 0,
+            "n_active": 6365,
+            "vnc_motor": 0.0,
+            "descending": 0.0,
+            "top_cell_type": "SNta23",
+            "top_super_class": "vnc_sensory",
+            "top_a": 1.0
+          },
+          {
+            "hop": 1,
+            "n_active": 19,
+            "vnc_motor": 3.977874897568966,
+            "descending": 2.8894427751980323,
+            "top_cell_type": "IN05B011a",
+            "top_super_class": "vnc_intrinsic",
+            "top_a": 1.0
+          },
+          {
+            "hop": 2,
+            "n_active": 2,
+            "vnc_motor": 10.740180804833889,
+            "descending": 11.38578833493545,
+            "top_cell_type": "AN08B034",
+            "top_super_class": "ascending_neuron",
+            "top_a": 0.9999999999999992
+          }
+        ],
+        "hop2_vnc_motor": 10.740180804833889,
+        "walks": true,
+        "leftover": false,
+        "synaptic": "GABA outgoing \u2212 on measured W; excitatory default otherwise",
+        "overlay_cut": 0.6180339887498948
+      }
+    },
+    {
+      "env": "maze",
+      "q": "16 \u2212 28 (Fly02 miss frames)",
+      "got": -12,
+      "want": -12,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "trace": {
+        "observer": "vnc_sensory",
+        "n_seed": 6365,
+        "hops": [
+          {
+            "hop": 0,
+            "n_active": 6365,
+            "vnc_motor": 0.0,
+            "descending": 0.0,
+            "top_cell_type": "SNta23",
+            "top_super_class": "vnc_sensory",
+            "top_a": 1.0
+          },
+          {
+            "hop": 1,
+            "n_active": 19,
+            "vnc_motor": 3.977874897568966,
+            "descending": 2.8894427751980323,
+            "top_cell_type": "IN05B011a",
+            "top_super_class": "vnc_intrinsic",
+            "top_a": 1.0
+          },
+          {
+            "hop": 2,
+            "n_active": 2,
+            "vnc_motor": 10.740180804833889,
+            "descending": 11.38578833493545,
+            "top_cell_type": "AN08B034",
+            "top_super_class": "ascending_neuron",
+            "top_a": 0.9999999999999992
+          }
+        ],
+        "hop2_vnc_motor": 10.740180804833889,
+        "walks": true,
+        "leftover": false,
+        "synaptic": "GABA outgoing \u2212 on measured W; excitatory default otherwise",
+        "overlay_cut": 0.6180339887498948
+      }
+    },
+    {
+      "env": "maze",
+      "q": "cons(+1, \u22121) Fly02 vs T001 heading",
+      "got": 0,
+      "want": 0,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "trace": {
+        "observer": "vnc_sensory",
+        "n_seed": 6365,
+        "hops": [
+          {
+            "hop": 0,
+            "n_active": 6365,
+            "vnc_motor": 0.0,
+            "descending": 0.0,
+            "top_cell_type": "SNta23",
+            "top_super_class": "vnc_sensory",
+            "top_a": 1.0
+          },
+          {
+            "hop": 1,
+            "n_active": 19,
+            "vnc_motor": 3.977874897568966,
+            "descending": 2.8894427751980323,
+            "top_cell_type": "IN05B011a",
+            "top_super_class": "vnc_intrinsic",
+            "top_a": 1.0
+          },
+          {
+            "hop": 2,
+            "n_active": 2,
+            "vnc_motor": 10.740180804833889,
+            "descending": 11.38578833493545,
+            "top_cell_type": "AN08B034",
+            "top_super_class": "ascending_neuron",
+            "top_a": 0.9999999999999992
+          }
+        ],
+        "hop2_vnc_motor": 10.740180804833889,
+        "walks": true,
+        "leftover": false,
+        "synaptic": "GABA outgoing \u2212 on measured W; excitatory default otherwise",
+        "overlay_cut": 0.6180339887498948
+      }
+    },
+    {
+      "env": "yaw",
+      "q": "JO_L + JO_R n_seed",
+      "got": 672,
+      "want": 672,
+      "ok": true,
+      "observer": "JO",
+      "trace": {
+        "observer": "JO",
+        "n_seed": 672,
+        "hops": [
+          {
+            "hop": 0,
+            "n_active": 672,
+            "vnc_motor": 0.0,
+            "descending": 0.0,
+            "top_cell_type": "JO-A2",
+            "top_super_class": "cb_sensory",
+            "top_a": 1.0
+          },
+          {
+            "hop": 1,
+            "n_active": 3,
+            "vnc_motor": 0.0,
+            "descending": 14.685444579780704,
+            "top_cell_type": "DNg29",
+            "top_super_class": "descending_neuron",
+            "top_a": 0.9999999999999998
+          },
+          {
+            "hop": 2,
+            "n_active": 4,
+            "vnc_motor": 7.772920928859144,
+            "descending": 24.213046671127735,
+            "top_cell_type": "IN23B001",
+            "top_super_class": "vnc_intrinsic",
+            "top_a": 0.9999999999999974
+          }
+        ],
+        "hop2_vnc_motor": 7.772920928859144,
+        "walks": true,
+        "leftover": false,
+        "synaptic": "GABA outgoing \u2212 on measured W; excitatory default otherwise",
+        "overlay_cut": 0.6180339887498948
+      }
+    },
+    {
+      "env": "yaw",
+      "q": "bilateral JO consensus",
+      "got": 0,
+      "want": 0,
+      "ok": true,
+      "observer": "JO",
+      "trace": {
+        "observer": "JO",
+        "n_seed": 672,
+        "hops": [
+          {
+            "hop": 0,
+            "n_active": 672,
+            "vnc_motor": 0.0,
+            "descending": 0.0,
+            "top_cell_type": "JO-A2",
+            "top_super_class": "cb_sensory",
+            "top_a": 1.0
+          },
+          {
+            "hop": 1,
+            "n_active": 3,
+            "vnc_motor": 0.0,
+            "descending": 14.685444579780704,
+            "top_cell_type": "DNg29",
+            "top_super_class": "descending_neuron",
+            "top_a": 0.9999999999999998
+          },
+          {
+            "hop": 2,
+            "n_active": 4,
+            "vnc_motor": 7.772920928859144,
+            "descending": 24.213046671127735,
+            "top_cell_type": "IN23B001",
+            "top_super_class": "vnc_intrinsic",
+            "top_a": 0.9999999999999974
+          }
+        ],
+        "hop2_vnc_motor": 7.772920928859144,
+        "walks": true,
+        "leftover": false,
+        "synaptic": "GABA outgoing \u2212 on measured W; excitatory default otherwise",
+        "overlay_cut": 0.6180339887498948
+      }
+    },
+    {
+      "env": "yaw",
+      "q": "JO hop-1 top is DNg29",
+      "got": "DNg29",
+      "want": "DNg29",
+      "ok": true,
+      "observer": "JO",
+      "trace": {
+        "observer": "JO",
+        "n_seed": 672,
+        "hops": [
+          {
+            "hop": 0,
+            "n_active": 672,
+            "vnc_motor": 0.0,
+            "descending": 0.0,
+            "top_cell_type": "JO-A2",
+            "top_super_class": "cb_sensory",
+            "top_a": 1.0
+          },
+          {
+            "hop": 1,
+            "n_active": 3,
+            "vnc_motor": 0.0,
+            "descending": 14.685444579780704,
+            "top_cell_type": "DNg29",
+            "top_super_class": "descending_neuron",
+            "top_a": 0.9999999999999998
+          },
+          {
+            "hop": 2,
+            "n_active": 4,
+            "vnc_motor": 7.772920928859144,
+            "descending": 24.213046671127735,
+            "top_cell_type": "IN23B001",
+            "top_super_class": "vnc_intrinsic",
+            "top_a": 0.9999999999999974
+          }
+        ],
+        "hop2_vnc_motor": 7.772920928859144,
+        "walks": true,
+        "leftover": false,
+        "synaptic": "GABA outgoing \u2212 on measured W; excitatory default otherwise",
+        "overlay_cut": 0.6180339887498948
+      }
+    },
+    {
+      "env": "walk",
+      "q": "VNC hop-2 vnc_motor > 1",
+      "got": 10.740180804833889,
+      "want": true,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "trace": {
+        "observer": "vnc_sensory",
+        "n_seed": 6365,
+        "hops": [
+          {
+            "hop": 0,
+            "n_active": 6365,
+            "vnc_motor": 0.0,
+            "descending": 0.0,
+            "top_cell_type": "SNta23",
+            "top_super_class": "vnc_sensory",
+            "top_a": 1.0
+          },
+          {
+            "hop": 1,
+            "n_active": 19,
+            "vnc_motor": 3.977874897568966,
+            "descending": 2.8894427751980323,
+            "top_cell_type": "IN05B011a",
+            "top_super_class": "vnc_intrinsic",
+            "top_a": 1.0
+          },
+          {
+            "hop": 2,
+            "n_active": 2,
+            "vnc_motor": 10.740180804833889,
+            "descending": 11.38578833493545,
+            "top_cell_type": "AN08B034",
+            "top_super_class": "ascending_neuron",
+            "top_a": 0.9999999999999992
+          }
+        ],
+        "hop2_vnc_motor": 10.740180804833889,
+        "walks": true,
+        "leftover": false,
+        "synaptic": "GABA outgoing \u2212 on measured W; excitatory default otherwise",
+        "overlay_cut": 0.6180339887498948
+      }
+    },
+    {
+      "env": "walk",
+      "q": "VNC hop-1 top IN05B011a",
+      "got": "IN05B011a",
+      "want": "IN05B011a",
+      "ok": true,
+      "observer": "vnc_sensory",
+      "trace": {
+        "observer": "vnc_sensory",
+        "n_seed": 6365,
+        "hops": [
+          {
+            "hop": 0,
+            "n_active": 6365,
+            "vnc_motor": 0.0,
+            "descending": 0.0,
+            "top_cell_type": "SNta23",
+            "top_super_class": "vnc_sensory",
+            "top_a": 1.0
+          },
+          {
+            "hop": 1,
+            "n_active": 19,
+            "vnc_motor": 3.977874897568966,
+            "descending": 2.8894427751980323,
+            "top_cell_type": "IN05B011a",
+            "top_super_class": "vnc_intrinsic",
+            "top_a": 1.0
+          },
+          {
+            "hop": 2,
+            "n_active": 2,
+            "vnc_motor": 10.740180804833889,
+            "descending": 11.38578833493545,
+            "top_cell_type": "AN08B034",
+            "top_super_class": "ascending_neuron",
+            "top_a": 0.9999999999999992
+          }
+        ],
+        "hop2_vnc_motor": 10.740180804833889,
+        "walks": true,
+        "leftover": false,
+        "synaptic": "GABA outgoing \u2212 on measured W; excitatory default otherwise",
+        "overlay_cut": 0.6180339887498948
+      }
+    },
+    {
+      "env": "smell",
+      "q": "olfactory hop-2 leftover",
+      "got": 0.0005710214203076791,
+      "want": true,
+      "ok": true,
+      "observer": "olfactory",
+      "trace": {
+        "observer": "olfactory",
+        "n_seed": 2639,
+        "hops": [
+          {
+            "hop": 0,
+            "n_active": 2639,
+            "vnc_motor": 0.0,
+            "descending": 0.0,
+            "top_cell_type": "ORN_DP1m",
+            "top_super_class": "cb_sensory",
+            "top_a": 1.0
+          },
+          {
+            "hop": 1,
+            "n_active": 2,
+            "vnc_motor": 0.0,
+            "descending": 0.013578441612701064,
+            "top_cell_type": "il3LN6",
+            "top_super_class": "cb_intrinsic",
+            "top_a": 1.0
+          },
+          {
+            "hop": 2,
+            "n_active": 1,
+            "vnc_motor": 0.0005710214203076791,
+            "descending": 0.5732455413367353,
+            "top_cell_type": "v2LN30",
+            "top_super_class": "cb_intrinsic",
+            "top_a": 0.6641666272470418
+          }
+        ],
+        "hop2_vnc_motor": 0.0005710214203076791,
+        "walks": false,
+        "leftover": true,
+        "synaptic": "GABA outgoing \u2212 on measured W; excitatory default otherwise",
+        "overlay_cut": 0.6180339887498948
+      }
+    },
+    {
+      "env": "smell",
+      "q": "do not expand hop-1 leftover hub il3LN6",
+      "got": "il3LN6",
+      "want": "il3LN6",
+      "ok": true,
+      "observer": "olfactory",
+      "trace": {
+        "observer": "olfactory",
+        "n_seed": 2639,
+        "hops": [
+          {
+            "hop": 0,
+            "n_active": 2639,
+            "vnc_motor": 0.0,
+            "descending": 0.0,
+            "top_cell_type": "ORN_DP1m",
+            "top_super_class": "cb_sensory",
+            "top_a": 1.0
+          },
+          {
+            "hop": 1,
+            "n_active": 2,
+            "vnc_motor": 0.0,
+            "descending": 0.013578441612701064,
+            "top_cell_type": "il3LN6",
+            "top_super_class": "cb_intrinsic",
+            "top_a": 1.0
+          },
+          {
+            "hop": 2,
+            "n_active": 1,
+            "vnc_motor": 0.0005710214203076791,
+            "descending": 0.5732455413367353,
+            "top_cell_type": "v2LN30",
+            "top_super_class": "cb_intrinsic",
+            "top_a": 0.6641666272470418
+          }
+        ],
+        "hop2_vnc_motor": 0.0005710214203076791,
+        "walks": false,
+        "leftover": true,
+        "synaptic": "GABA outgoing \u2212 on measured W; excitatory default otherwise",
+        "overlay_cut": 0.6180339887498948
+      },
+      "expansion": null,
+      "kind": "leftover_hub"
+    },
+    {
+      "env": "neuromod",
+      "q": "DA hop-2 leftover",
+      "got": 0.041395377371460616,
+      "want": true,
+      "ok": true,
+      "observer": "dopamine",
+      "trace": {
+        "observer": "consensus_nt:dopamine",
+        "n_seed": 392,
+        "hops": [
+          {
+            "hop": 2,
+            "n_active": null,
+            "vnc_motor": 0.041395377371460616,
+            "descending": null,
+            "top_cell_type": null,
+            "top_super_class": null,
+            "ipsi_bias": -0.017476302101085753
+          }
+        ],
+        "hop2_vnc_motor": 0.041395377371460616,
+        "walks": false,
+        "leftover": true,
+        "synaptic": "volume leftover T1",
+        "overlay_cut": 0.6180339887498948
+      }
+    },
+    {
+      "env": "neuromod",
+      "q": "GABA hop-2 brake on",
+      "got": 28.747975630228993,
+      "want": true,
+      "ok": true,
+      "observer": "gaba",
+      "trace": {
+        "observer": "consensus_nt:gaba",
+        "n_seed": 22055,
+        "hops": [
+          {
+            "hop": 2,
+            "n_active": null,
+            "vnc_motor": 28.747975630228993,
+            "descending": null,
+            "top_cell_type": null,
+            "top_super_class": null,
+            "ipsi_bias": 0.053635184502669436
+          }
+        ],
+        "hop2_vnc_motor": 28.747975630228993,
+        "walks": true,
+        "leftover": false,
+        "synaptic": "GABA sign on W",
+        "overlay_cut": 0.6180339887498948
+      }
+    },
+    {
+      "env": "guardrail",
+      "q": "courtship T1 off (not seeded in this lab)",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "observer_off",
+      "trace": {
+        "observer": "observer_off",
+        "hops": [],
+        "synaptic": "law (not a cell seed)"
+      },
+      "synaptic": "observer off; labels stay"
+    },
+    {
+      "env": "trit_ring",
+      "q": "balanced-ternary add associative",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "trace": {
+        "observer": "vnc_sensory",
+        "n_seed": 6365,
+        "hops": [
+          {
+            "hop": 0,
+            "n_active": 6365,
+            "vnc_motor": 0.0,
+            "descending": 0.0,
+            "top_cell_type": "SNta23",
+            "top_super_class": "vnc_sensory",
+            "top_a": 1.0
+          },
+          {
+            "hop": 1,
+            "n_active": 19,
+            "vnc_motor": 3.977874897568966,
+            "descending": 2.8894427751980323,
+            "top_cell_type": "IN05B011a",
+            "top_super_class": "vnc_intrinsic",
+            "top_a": 1.0
+          },
+          {
+            "hop": 2,
+            "n_active": 2,
+            "vnc_motor": 10.740180804833889,
+            "descending": 11.38578833493545,
+            "top_cell_type": "AN08B034",
+            "top_super_class": "ascending_neuron",
+            "top_a": 0.9999999999999992
+          }
+        ],
+        "hop2_vnc_motor": 10.740180804833889,
+        "walks": true,
+        "leftover": false,
+        "synaptic": "GABA outgoing \u2212 on measured W; excitatory default otherwise",
+        "overlay_cut": 0.6180339887498948
+      }
+    },
+    {
+      "env": "trit_ring",
+      "q": "balanced-ternary mul distributes over add",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "trace": {
+        "observer": "vnc_sensory",
+        "n_seed": 6365,
+        "hops": [
+          {
+            "hop": 0,
+            "n_active": 6365,
+            "vnc_motor": 0.0,
+            "descending": 0.0,
+            "top_cell_type": "SNta23",
+            "top_super_class": "vnc_sensory",
+            "top_a": 1.0
+          },
+          {
+            "hop": 1,
+            "n_active": 19,
+            "vnc_motor": 3.977874897568966,
+            "descending": 2.8894427751980323,
+            "top_cell_type": "IN05B011a",
+            "top_super_class": "vnc_intrinsic",
+            "top_a": 1.0
+          },
+          {
+            "hop": 2,
+            "n_active": 2,
+            "vnc_motor": 10.740180804833889,
+            "descending": 11.38578833493545,
+            "top_cell_type": "AN08B034",
+            "top_super_class": "ascending_neuron",
+            "top_a": 0.9999999999999992
+          }
+        ],
+        "hop2_vnc_motor": 10.740180804833889,
+        "walks": true,
+        "leftover": false,
+        "synaptic": "GABA outgoing \u2212 on measured W; excitatory default otherwise",
+        "overlay_cut": 0.6180339887498948
+      }
+    },
+    {
+      "env": "trit_ring",
+      "q": "balanced-ternary unique encode \u221260..60",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "trace": {
+        "observer": "vnc_sensory",
+        "n_seed": 6365,
+        "hops": [
+          {
+            "hop": 0,
+            "n_active": 6365,
+            "vnc_motor": 0.0,
+            "descending": 0.0,
+            "top_cell_type": "SNta23",
+            "top_super_class": "vnc_sensory",
+            "top_a": 1.0
+          },
+          {
+            "hop": 1,
+            "n_active": 19,
+            "vnc_motor": 3.977874897568966,
+            "descending": 2.8894427751980323,
+            "top_cell_type": "IN05B011a",
+            "top_super_class": "vnc_intrinsic",
+            "top_a": 1.0
+          },
+          {
+            "hop": 2,
+            "n_active": 2,
+            "vnc_motor": 10.740180804833889,
+            "descending": 11.38578833493545,
+            "top_cell_type": "AN08B034",
+            "top_super_class": "ascending_neuron",
+            "top_a": 0.9999999999999992
+          }
+        ],
+        "hop2_vnc_motor": 10.740180804833889,
+        "walks": true,
+        "leftover": false,
+        "synaptic": "GABA outgoing \u2212 on measured W; excitatory default otherwise",
+        "overlay_cut": 0.6180339887498948
+      }
+    },
+    {
+      "env": "trit_ring",
+      "q": "add identity 0",
+      "got": 17,
+      "want": 17,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "trace": {
+        "observer": "vnc_sensory",
+        "n_seed": 6365,
+        "hops": [
+          {
+            "hop": 0,
+            "n_active": 6365,
+            "vnc_motor": 0.0,
+            "descending": 0.0,
+            "top_cell_type": "SNta23",
+            "top_super_class": "vnc_sensory",
+            "top_a": 1.0
+          },
+          {
+            "hop": 1,
+            "n_active": 19,
+            "vnc_motor": 3.977874897568966,
+            "descending": 2.8894427751980323,
+            "top_cell_type": "IN05B011a",
+            "top_super_class": "vnc_intrinsic",
+            "top_a": 1.0
+          },
+          {
+            "hop": 2,
+            "n_active": 2,
+            "vnc_motor": 10.740180804833889,
+            "descending": 11.38578833493545,
+            "top_cell_type": "AN08B034",
+            "top_super_class": "ascending_neuron",
+            "top_a": 0.9999999999999992
+          }
+        ],
+        "hop2_vnc_motor": 10.740180804833889,
+        "walks": true,
+        "leftover": false,
+        "synaptic": "GABA outgoing \u2212 on measured W; excitatory default otherwise",
+        "overlay_cut": 0.6180339887498948
+      }
+    },
+    {
+      "env": "trit_ring",
+      "q": "add inverse",
+      "got": 0,
+      "want": 0,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "trace": {
+        "observer": "vnc_sensory",
+        "n_seed": 6365,
+        "hops": [
+          {
+            "hop": 0,
+            "n_active": 6365,
+            "vnc_motor": 0.0,
+            "descending": 0.0,
+            "top_cell_type": "SNta23",
+            "top_super_class": "vnc_sensory",
+            "top_a": 1.0
+          },
+          {
+            "hop": 1,
+            "n_active": 19,
+            "vnc_motor": 3.977874897568966,
+            "descending": 2.8894427751980323,
+            "top_cell_type": "IN05B011a",
+            "top_super_class": "vnc_intrinsic",
+            "top_a": 1.0
+          },
+          {
+            "hop": 2,
+            "n_active": 2,
+            "vnc_motor": 10.740180804833889,
+            "descending": 11.38578833493545,
+            "top_cell_type": "AN08B034",
+            "top_super_class": "ascending_neuron",
+            "top_a": 0.9999999999999992
+          }
+        ],
+        "hop2_vnc_motor": 10.740180804833889,
+        "walks": true,
+        "leftover": false,
+        "synaptic": "GABA outgoing \u2212 on measured W; excitatory default otherwise",
+        "overlay_cut": 0.6180339887498948
+      }
+    },
+    {
+      "env": "trit_ring",
+      "q": "consensus trit: idempotent, commutative, 0 annihilates disagree",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "JO",
+      "trace": {
+        "observer": "JO",
+        "n_seed": 672,
+        "hops": [
+          {
+            "hop": 0,
+            "n_active": 672,
+            "vnc_motor": 0.0,
+            "descending": 0.0,
+            "top_cell_type": "JO-A2",
+            "top_super_class": "cb_sensory",
+            "top_a": 1.0
+          },
+          {
+            "hop": 1,
+            "n_active": 3,
+            "vnc_motor": 0.0,
+            "descending": 14.685444579780704,
+            "top_cell_type": "DNg29",
+            "top_super_class": "descending_neuron",
+            "top_a": 0.9999999999999998
+          },
+          {
+            "hop": 2,
+            "n_active": 4,
+            "vnc_motor": 7.772920928859144,
+            "descending": 24.213046671127735,
+            "top_cell_type": "IN23B001",
+            "top_super_class": "vnc_intrinsic",
+            "top_a": 0.9999999999999974
+          }
+        ],
+        "hop2_vnc_motor": 7.772920928859144,
+        "walks": true,
+        "leftover": false,
+        "synaptic": "GABA outgoing \u2212 on measured W; excitatory default otherwise",
+        "overlay_cut": 0.6180339887498948
+      }
+    },
+    {
+      "env": "phd_phi",
+      "q": "\u03c6\u00b2 = \u03c6 + 1",
+      "got": 2.618033988749895,
+      "want": 2.618033988749895,
+      "ok": true,
+      "observer": "overlay",
+      "trace": {
+        "observer": "overlay",
+        "hops": [],
+        "synaptic": "law (not a cell seed)"
+      }
+    },
+    {
+      "env": "phd_phi",
+      "q": "1/\u03c6 = \u03c6 \u2212 1",
+      "got": 0.6180339887498948,
+      "want": 0.6180339887498949,
+      "ok": true,
+      "observer": "overlay",
+      "trace": {
+        "observer": "overlay",
+        "hops": [],
+        "synaptic": "law (not a cell seed)"
+      }
+    },
+    {
+      "env": "phd_phi",
+      "q": "1/\u03c6\u00b2 = 2 \u2212 \u03c6",
+      "got": 0.38196601125010515,
+      "want": 0.3819660112501051,
+      "ok": true,
+      "observer": "overlay",
+      "trace": {
+        "observer": "overlay",
+        "hops": [],
+        "synaptic": "law (not a cell seed)"
+      }
+    },
+    {
+      "env": "phd_phi",
+      "q": "Fibonacci F25/F24 \u2192 \u03c6",
+      "got": 1.6180339886704431,
+      "want": 1.618033988749895,
+      "ok": true,
+      "observer": "overlay",
+      "trace": {
+        "observer": "overlay",
+        "hops": [],
+        "synaptic": "law (not a cell seed)"
+      }
+    },
+    {
+      "env": "phd_seeds",
+      "q": "ALPHA = ln(\u03c0)/(e \u03c6\u00b9\u00b3)",
+      "got": 0.0008082937414140405,
+      "want": 0.0008082937414140402,
+      "ok": true,
+      "observer": "scalar",
+      "trace": {
+        "observer": "scalar",
+        "hops": [],
+        "synaptic": "law (not a cell seed)"
+      }
+    },
+    {
+      "env": "phd_seeds",
+      "q": "P_NEW = (\u03b3/e)\u221a2",
+      "got": 0.30030227667037146,
+      "want": 0.3003022766703715,
+      "ok": true,
+      "observer": "scalar",
+      "trace": {
+        "observer": "scalar",
+        "hops": [],
+        "synaptic": "law (not a cell seed)"
+      }
+    },
+    {
+      "env": "phd_nest",
+      "q": "Biochemistry D_eff from nest",
+      "got": 10,
+      "want": 10,
+      "ok": true,
+      "observer": "scalar",
+      "trace": {
+        "observer": "scalar",
+        "hops": [],
+        "synaptic": "law (not a cell seed)"
+      },
+      "generation": 8
+    },
+    {
+      "env": "phd_nest",
+      "q": "Neuroscience D_eff from nest",
+      "got": 11,
+      "want": 11,
+      "ok": true,
+      "observer": "scalar",
+      "trace": {
+        "observer": "scalar",
+        "hops": [],
+        "synaptic": "law (not a cell seed)"
+      },
+      "generation": 9
+    },
+    {
+      "env": "phd_scalar",
+      "q": "S_Biochem float twin vs vendor",
+      "got": 1.1736666547149603e-16,
+      "want": 0.0,
+      "ok": true,
+      "observer": "scalar",
+      "trace": {
+        "observer": "scalar",
+        "hops": [],
+        "synaptic": "law (not a cell seed)"
+      },
+      "S": 0.9459440805999452,
+      "T1": 1.2516647174451234,
+      "T2": 1.0,
+      "T3": 1.4829920609537822e-17
+    },
+    {
+      "env": "phd_scalar",
+      "q": "S = K(T1+T2+T3) reconstruction",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "scalar",
+      "trace": {
+        "observer": "scalar",
+        "hops": [],
+        "synaptic": "law (not a cell seed)"
+      }
+    },
+    {
+      "env": "phd_scalar",
+      "q": "r_Biochem = 1+|S|P_NEW",
+      "got": 1.284069161007025,
+      "want": 1.284069161007025,
+      "ok": true,
+      "observer": "scalar",
+      "trace": {
+        "observer": "scalar",
+        "hops": [],
+        "synaptic": "law (not a cell seed)"
+      }
+    },
+    {
+      "env": "phd_scalar",
+      "q": "Biochem vs Neuro |S| look-split \u2264 0.5%",
+      "got": 0.4940517668525478,
+      "want": 0.5,
+      "ok": true,
+      "observer": "scalar",
+      "trace": {
+        "observer": "scalar",
+        "hops": [],
+        "synaptic": "law (not a cell seed)"
+      }
+    },
+    {
+      "env": "phd_scalar",
+      "q": "Ledger B relative error = |S|ALPHA (not a knob)",
+      "got": 0.07646006800765943,
+      "want": 0.07646,
+      "ok": true,
+      "observer": "scalar",
+      "trace": {
+        "observer": "scalar",
+        "hops": [],
+        "synaptic": "law (not a cell seed)"
+      }
+    },
+    {
+      "env": "phd_f02",
+      "q": "20/20 unique 7-trit opcodes",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "scalar",
+      "trace": {
+        "observer": "scalar",
+        "hops": [],
+        "synaptic": "law (not a cell seed)"
+      }
+    },
+    {
+      "env": "phd_f02",
+      "q": "Tyr opcode for DA/OA precursor",
+      "got": "[+0, +1, +1, +1, +0, -1, +0]",
+      "want": "[+0, +1, +1, +1, +0, -1, +0]",
+      "ok": true,
+      "observer": "dopamine",
+      "trace": {
+        "observer": "consensus_nt:dopamine",
+        "n_seed": 392,
+        "hops": [
+          {
+            "hop": 2,
+            "n_active": null,
+            "vnc_motor": 0.041395377371460616,
+            "descending": null,
+            "top_cell_type": null,
+            "top_super_class": null,
+            "ipsi_bias": -0.017476302101085753
+          }
+        ],
+        "hop2_vnc_motor": 0.041395377371460616,
+        "walks": false,
+        "leftover": true,
+        "synaptic": "volume leftover T1",
+        "overlay_cut": 0.6180339887498948
+      }
+    },
+    {
+      "env": "phd_f02",
+      "q": "Trp opcode for 5HT precursor",
+      "got": "[+0, -1, +1, +1, +0, +1, +0]",
+      "want": "[+0, -1, +1, +1, +0, +1, +0]",
+      "ok": true,
+      "observer": "dopamine",
+      "trace": {
+        "observer": "consensus_nt:dopamine",
+        "n_seed": 392,
+        "hops": [
+          {
+            "hop": 2,
+            "n_active": null,
+            "vnc_motor": 0.041395377371460616,
+            "descending": null,
+            "top_cell_type": null,
+            "top_super_class": null,
+            "ipsi_bias": -0.017476302101085753
+          }
+        ],
+        "hop2_vnc_motor": 0.041395377371460616,
+        "walks": false,
+        "leftover": true,
+        "synaptic": "volume leftover T1",
+        "overlay_cut": 0.6180339887498948
+      }
+    },
+    {
+      "env": "phd_overlay",
+      "q": "overlay fires |x|>1/\u03c6, leftover otherwise",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "overlay",
+      "trace": {
+        "observer": "overlay",
+        "hops": [],
+        "synaptic": "law (not a cell seed)"
+      }
+    },
+    {
+      "env": "pathway",
+      "q": "Tyr F02 \u2192 ple/Ddc \u2192 DA hop leftover",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "dopamine",
+      "trace": {
+        "observer": "consensus_nt:dopamine",
+        "n_seed": 392,
+        "hops": [
+          {
+            "hop": 2,
+            "n_active": null,
+            "vnc_motor": 0.041395377371460616,
+            "descending": null,
+            "top_cell_type": null,
+            "top_super_class": null,
+            "ipsi_bias": -0.017476302101085753
+          }
+        ],
+        "hop2_vnc_motor": 0.041395377371460616,
+        "walks": false,
+        "leftover": true,
+        "synaptic": "volume leftover T1",
+        "overlay_cut": 0.6180339887498948
+      }
+    }
+  ],
+  "thinking": {
+    "rule": "Problem sits on a measured observer. Thinking = residual hops on W. Synaptic state = GABA sign. Leftover stays leftover. Do not invent edges. Do not seed courtship/aggression.",
+    "types_lit": [
+      {
+        "observer": "vnc_sensory",
+        "hop": 0,
+        "cell_type": "SNta23",
+        "super_class": "vnc_sensory",
+        "n_active": 6365
+      },
+      {
+        "observer": "vnc_sensory",
+        "hop": 1,
+        "cell_type": "IN05B011a",
+        "super_class": "vnc_intrinsic",
+        "n_active": 19
+      },
+      {
+        "observer": "vnc_sensory",
+        "hop": 2,
+        "cell_type": "AN08B034",
+        "super_class": "ascending_neuron",
+        "n_active": 2
+      },
+      {
+        "observer": "JO",
+        "hop": 0,
+        "cell_type": "JO-A2",
+        "super_class": "cb_sensory",
+        "n_active": 672
+      },
+      {
+        "observer": "JO",
+        "hop": 1,
+        "cell_type": "DNg29",
+        "super_class": "descending_neuron",
+        "n_active": 3
+      },
+      {
+        "observer": "JO",
+        "hop": 2,
+        "cell_type": "IN23B001",
+        "super_class": "vnc_intrinsic",
+        "n_active": 4
+      },
+      {
+        "observer": "olfactory",
+        "hop": 0,
+        "cell_type": "ORN_DP1m",
+        "super_class": "cb_sensory",
+        "n_active": 2639
+      },
+      {
+        "observer": "olfactory",
+        "hop": 1,
+        "cell_type": "il3LN6",
+        "super_class": "cb_intrinsic",
+        "n_active": 2
+      },
+      {
+        "observer": "olfactory",
+        "hop": 2,
+        "cell_type": "v2LN30",
+        "super_class": "cb_intrinsic",
+        "n_active": 1
+      },
+      {
+        "observer": "mechanosensory",
+        "hop": 0,
+        "cell_type": "BM_Vt_PoOc",
+        "super_class": "cb_sensory",
+        "n_active": 5832
+      },
+      {
+        "observer": "mechanosensory",
+        "hop": 1,
+        "cell_type": "IN01B001",
+        "super_class": "vnc_intrinsic",
+        "n_active": 17
+      },
+      {
+        "observer": "mechanosensory",
+        "hop": 2,
+        "cell_type": "AN08B034",
+        "super_class": "ascending_neuron",
+        "n_active": 2
+      }
+    ],
+    "n_types_lit": 11,
+    "deny_family_seeded": false
+  },
+  "phd_band": [
+    "\u03c6 identities",
+    "ALPHA and P_NEW closed forms",
+    "nest D_eff",
+    "S reconstruction",
+    "look-split",
+    "BT ring",
+    "F02 uniqueness"
+  ],
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-4"
+}
