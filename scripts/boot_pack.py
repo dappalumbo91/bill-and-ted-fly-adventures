@@ -64,6 +64,7 @@ ACC = ROOT / "data" / "accuracy_sim.json"
 A1C = ROOT / "data" / "adventure1_closeout.json"
 A1F = ROOT / "data" / "adventure1_fsot_apply.json"
 A1B = ROOT / "data" / "adventure1_fsot_blueprint.json"
+A1V = ROOT / "data" / "adventure1_verify.json"
 
 
 def fail(msg: str) -> None:
@@ -387,7 +388,7 @@ def test_identity_phot1_develop() -> None:
         f"R={ps.get('n_predicted_R')} leftover={ps.get('n_leftover')}"
     )
     bt = json.loads(BTLED.read_text(encoding="utf-8"))
-    if bt.get("current_bill") not in ("Bill-0", "Bill-1", "Bill-2"):
+    if bt.get("current_bill") not in ("Bill-0", "Bill-1", "Bill-2", "Bill-3"):
         fail(f"bill_ted current {bt.get('current_bill')}")
     ok(f"bill_ted current={bt.get('current_bill')} teds={bt.get('teds')}")
     a1 = json.loads(ADV1.read_text(encoding="utf-8"))
@@ -454,6 +455,17 @@ def test_identity_phot1_develop() -> None:
         f"adventure1_fsot_blueprint genes {ab['n_genes_ok']}/{ab['n_genes']}  "
         f"pathways {ab['n_pathways_ok']}/5  "
         f"look-split {float((ab.get('scalar') or {}).get('look_split_pct') or 0):.3f}%"
+    )
+    av = json.loads(A1V.read_text(encoding="utf-8"))
+    if not av.get("overall_ok") or not av.get("promotes"):
+        fail(f"adventure1_verify fail={av.get('fail')}")
+    if av.get("ted") != "TED-3" or av.get("promote_to") != "Bill-3":
+        fail(f"verify ted={av.get('ted')} promote_to={av.get('promote_to')}")
+    if bt.get("current_bill") != "Bill-3":
+        fail("TED-3 promotes but ledger current_bill is not Bill-3")
+    ok(
+        f"adventure1_verify TED-3 → Bill-3  {av.get('n_ok')}/{av.get('n')}  "
+        f"bill_fn={av.get('bill_function_ok')} lean={av.get('lean_ok')}"
     )
 
 

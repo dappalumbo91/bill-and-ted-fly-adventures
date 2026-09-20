@@ -1,0 +1,193 @@
+{
+  "adventure": 1,
+  "ted": "TED-3",
+  "vs_bill": "Bill-2",
+  "promote_to": "Bill-3",
+  "role": "verification_not_new_adventure",
+  "pin": "AEB2AD",
+  "pin_sha256_16": "AEB2ADAD6E80F487",
+  "free_parameters": 0,
+  "law": "S=K(T1+T2+T3); r=1+|S|P_NEW; overlay 1/\u03c6; consensus trit; F02; Ledger B",
+  "n": 28,
+  "n_ok": 28,
+  "fail": [],
+  "checks": [
+    {
+      "name": "pin AEB2AD",
+      "ok": true,
+      "detail": "AEB2ADAD6E80F487",
+      "kind": "pin"
+    },
+    {
+      "name": "0 free parameters",
+      "ok": true,
+      "detail": 0,
+      "kind": "law"
+    },
+    {
+      "name": "Male VNC walk (Bill-2)",
+      "ok": true,
+      "detail": 10.740180804833889,
+      "kind": "bill_function"
+    },
+    {
+      "name": "Male JO walk (Bill-2)",
+      "ok": true,
+      "detail": 7.772920928859144,
+      "kind": "bill_function"
+    },
+    {
+      "name": "Male olfactory leftover (Bill-2)",
+      "ok": true,
+      "detail": 0.0005710214203076791,
+      "kind": "bill_function"
+    },
+    {
+      "name": "BANC VNC walk",
+      "ok": true,
+      "detail": 10.161924095410841,
+      "kind": "bill_function"
+    },
+    {
+      "name": "BANC JO walk",
+      "ok": true,
+      "detail": 6.636908411047972,
+      "kind": "bill_function"
+    },
+    {
+      "name": "BANC olfactory leftover",
+      "ok": true,
+      "detail": 0.0007640599289252,
+      "kind": "bill_function"
+    },
+    {
+      "name": "DA volume leftover",
+      "ok": true,
+      "detail": 0.041395377371460616,
+      "kind": "bill_function"
+    },
+    {
+      "name": "OA volume leftover",
+      "ok": true,
+      "detail": 0.799930297424188,
+      "kind": "bill_function"
+    },
+    {
+      "name": "5HT < walk/\u03c6",
+      "ok": true,
+      "detail": {
+        "ht": 4.695936959278612,
+        "walk_phi": 6.637796782706544
+      },
+      "kind": "bill_function"
+    },
+    {
+      "name": "GABA signed brake on W",
+      "ok": true,
+      "detail": 28.747975630228993,
+      "kind": "bill_function"
+    },
+    {
+      "name": "LNv leftover",
+      "ok": true,
+      "detail": 0.2842003448420871,
+      "kind": "bill_function"
+    },
+    {
+      "name": "volume leftover vs VNC walk",
+      "ok": true,
+      "detail": true,
+      "kind": "bill_function"
+    },
+    {
+      "name": "two-animal function 3/3",
+      "ok": true,
+      "detail": true,
+      "kind": "bill_function"
+    },
+    {
+      "name": "Lean leftover_margin",
+      "ok": true,
+      "detail": 5,
+      "kind": "lean"
+    },
+    {
+      "name": "look-split \u22640.5%",
+      "ok": true,
+      "detail": 0.4940517668525478,
+      "kind": "lean"
+    },
+    {
+      "name": "accuracy_sim",
+      "ok": true,
+      "detail": 15,
+      "kind": "lean"
+    },
+    {
+      "name": "Ledger B median \u22640.5%",
+      "ok": true,
+      "detail": 0.07608231569074611,
+      "kind": "lean"
+    },
+    {
+      "name": "blueprint 120/120",
+      "ok": true,
+      "detail": "120/120",
+      "kind": "ted_extend"
+    },
+    {
+      "name": "pathways 5/5",
+      "ok": true,
+      "detail": 5,
+      "kind": "ted_extend"
+    },
+    {
+      "name": "Orco leftover hop",
+      "ok": true,
+      "detail": 0.0005710214203076791,
+      "kind": "ted_extend"
+    },
+    {
+      "name": "F02 transmitter AA unique opcodes",
+      "ok": true,
+      "detail": true,
+      "kind": "ted_extend"
+    },
+    {
+      "name": "innexin consensus trit",
+      "ok": true,
+      "detail": 4,
+      "kind": "ted_extend"
+    },
+    {
+      "name": "fru/dsx DENY T1 off",
+      "ok": true,
+      "detail": true,
+      "kind": "guardrail"
+    },
+    {
+      "name": "human-facing intended use",
+      "ok": true,
+      "detail": "courtship + aggression + fru/dsx",
+      "kind": "guardrail"
+    },
+    {
+      "name": "gene blueprint n=120",
+      "ok": true,
+      "detail": 120,
+      "kind": "ted_extend"
+    },
+    {
+      "name": "fold 9/9 enzymes",
+      "ok": true,
+      "detail": 9,
+      "kind": "ted_extend"
+    }
+  ],
+  "bill_function_ok": true,
+  "lean_ok": true,
+  "ted_extend_ok": true,
+  "promotes": true,
+  "overall_ok": true,
+  "why": "Blueprint through FSOT extends Bill-2 without new knobs. Hop function (walk/JO on, olf/DA/OA leftover) holds. Lean 0.5%/99.5% hold. Not Adventure 2."
+}

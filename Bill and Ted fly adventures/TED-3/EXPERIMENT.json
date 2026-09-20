@@ -1,0 +1,16 @@
+{
+  "id": "TED-3",
+  "role": "ted",
+  "adventure": 1,
+  "change": "genetic blueprint through FSOT as verification of Adventure 1 (not Adventure 2)",
+  "vs_bill": "Bill-2",
+  "n_ok": 28,
+  "n": 28,
+  "fail": [],
+  "bill_function_ok": true,
+  "lean_ok": true,
+  "ted_extend_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-3",
+  "why": "Blueprint through FSOT extends Bill-2 without new knobs. Hop function (walk/JO on, olf/DA/OA leftover) holds. Lean 0.5%/99.5% hold. Not Adventure 2."
+}

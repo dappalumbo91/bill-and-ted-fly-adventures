@@ -90,3 +90,7 @@ Blueprint **120/120** genes computed as hop residual / overlay leftover / consen
 Pathways (F02 precursor → enzyme → \(a \leftarrow rWa\)): DA leftover 0.041; OA leftover 0.800; 5HT 4.70 < walk/φ=6.64; GABA signed brake; histamine recorded.
 
 Orco leftover 0.0006. fru/dsx/courtship/aggression DENY: T1 off for human-facing AI (that family opposes human safety). Transmitter AA through F02 + Ledger B. Receptor overlay sim n=45. Look-split 0.494%.
+
+## TED-3 verification (not Adventure 2)
+
+Blueprint vs Bill-2 **28/28**. Same hop function (VNC/JO walk, olf/DA/OA leftover). Lean 0.5%/99.5%. **Promotes to Bill-3.**

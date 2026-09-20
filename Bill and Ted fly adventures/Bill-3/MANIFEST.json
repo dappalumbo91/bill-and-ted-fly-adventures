@@ -1,0 +1,362 @@
+{
+  "id": "Bill-3",
+  "role": "bill",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "frozen_at": "2026-09-20T19:12:27.628085+00:00",
+  "tree_sha256": "6F2E596F6B3BE48BFED22AED0F2BB44B3F8570426E52135B3793BE8F5779AD5E",
+  "n_files": 70,
+  "files": [
+    {
+      "path": "vendor/fsot_compute.py",
+      "sha256": "AEB2ADAD6E80F487772C5DF90A2E3DDA71624AB831A6A83B94AB471AC9AAC170",
+      "bytes": 62737
+    },
+    {
+      "path": "data/accuracy_sim.json",
+      "sha256": "F4863C4E068385CAFD2570B7AC8BCD2A35DDE33933121224A6B5AAB723FE80F2",
+      "bytes": 4742
+    },
+    {
+      "path": "data/adventure1.json",
+      "sha256": "B2972F270CEA3102A2149B35DBD5A5285A0A01E723B73D6D112659DC5919CCAF",
+      "bytes": 4184
+    },
+    {
+      "path": "data/adventure1_closeout.json",
+      "sha256": "B28280721B5B7D587092ABDCF2F4A65B72686AAAF2B5FCFB486C35A9BB572C4D",
+      "bytes": 4150
+    },
+    {
+      "path": "data/adventure1_fold.json",
+      "sha256": "22518D9662E545EC76A91EE89F00773A638E3E15D57F2917A24996B221D76973",
+      "bytes": 6282
+    },
+    {
+      "path": "data/adventure1_fsot_apply.json",
+      "sha256": "9EC2E41EFD81C64084DEAEE2E1B879912DF8E2376BFE171061051C375B3E64FF",
+      "bytes": 5168
+    },
+    {
+      "path": "data/adventure1_fsot_blueprint.json",
+      "sha256": "2D6BD4262568E8A0258204AE7EBAA1AD990B0BF97F11AC096B55D8BA674650BE",
+      "bytes": 102215
+    },
+    {
+      "path": "data/adventure1_verify.json",
+      "sha256": "AC7536FB74C14F7767FE41D2AC9D9615AA1F7743F0FDAF81BE51536F95FCB962",
+      "bytes": 4411
+    },
+    {
+      "path": "data/analog_pointer.json",
+      "sha256": "5FC77145D40AE9FFF7A91C1D2D9309DCECCF9938E173378010AAEBB9A3A9AFEE",
+      "bytes": 3785
+    },
+    {
+      "path": "data/arith.json",
+      "sha256": "9AD31E9CE8E46CAA75B4B33D5A6551F886DC7BF00D6D8A5EAA495CC8ABEB612F",
+      "bytes": 18678
+    },
+    {
+      "path": "data/arith_count.json",
+      "sha256": "909ACE8EB5B2280700AB40161C1C70E3F4C0FF945238C329373D6803ACA1D168",
+      "bytes": 4647
+    },
+    {
+      "path": "data/arith_steps.json",
+      "sha256": "B0E30CAA4606823EE44A754EE5B945EE2566A5549DECAE0F024135060DF17CCA",
+      "bytes": 8029
+    },
+    {
+      "path": "data/banc_connectome_boot.json",
+      "sha256": "BF44B3F7E4D4AB953F22790714F50BB70E1780EC6779AB307B4C8C53A5BED4ED",
+      "bytes": 18966
+    },
+    {
+      "path": "data/baseline_sim.json",
+      "sha256": "0FE8C4AD8C0AD0491A64A85A2E56327F120162F6F3767F784C27D84DC1AA5132",
+      "bytes": 8430
+    },
+    {
+      "path": "data/codex_types.json",
+      "sha256": "CCD04B55246C7E16BF3E8A726BE33CECF41AFA8E3DB21A1D5A512F990B15509E",
+      "bytes": 611
+    },
+    {
+      "path": "data/cross_proof_report.json",
+      "sha256": "0FCA156F9FFCE071E2DFD0E530524D3E77A3C6B548EDC95DAF64C5F7092F7FEA",
+      "bytes": 7212
+    },
+    {
+      "path": "data/develop_cycle.json",
+      "sha256": "D1A35768BF2CFABE0AB15EC6729B7F8439885A48F7946BD6885B2B35DE92546C",
+      "bytes": 8929
+    },
+    {
+      "path": "data/fly_aggression_flow.json",
+      "sha256": "7A30AAAF7C490E389F3993B820DD76AE5324A080D409F90FC11C8E5B9E41D482",
+      "bytes": 219373
+    },
+    {
+      "path": "data/fly_behavior_flow.json",
+      "sha256": "F2E144CAE4F3B7CA84815E8B33CDDC4F2B6300503367B9FCC796FD2ADE9C283B",
+      "bytes": 214004
+    },
+    {
+      "path": "data/fly_connectome_boot.json",
+      "sha256": "4C388F17D2C5E8BB6BD450C4A213E2B3440549DC76914846669536F5CB76B5BE",
+      "bytes": 13065
+    },
+    {
+      "path": "data/fly_connectome_inventory.json",
+      "sha256": "C8CFFDC84EF086F67449E6FAF2D275B2E0F625A01873C1B2207D41AE11FAC3BE",
+      "bytes": 1553
+    },
+    {
+      "path": "data/fly_courtship_flow.json",
+      "sha256": "07CB1F6DB73853D01B84078D2B71ED6F25E6044145DE8B38E25996BDABCF5982",
+      "bytes": 331724
+    },
+    {
+      "path": "data/fly_function.json",
+      "sha256": "BE1D2F363FFC7D868ACDA20B6A09DF8CE1878C46C87B561F70704A3B2A7D3319",
+      "bytes": 3836
+    },
+    {
+      "path": "data/fly_genetics_join.json",
+      "sha256": "1CEB9A21EB37D129FA26090FAB97C76D68FBE81FC0A2E3EC2C305D09D674B72D",
+      "bytes": 3289
+    },
+    {
+      "path": "data/fly_odor_flow.json",
+      "sha256": "7D44224729C9D615108DBF4A91FEAB9C6C21D19D8DE38CE6408270ED866B8E80",
+      "bytes": 540118
+    },
+    {
+      "path": "data/fly_sleep_flow.json",
+      "sha256": "6B46D0CA9A552706FDB952A0ACF5037CE4B6F742A77711767085FF83AF9B7275",
+      "bytes": 218324
+    },
+    {
+      "path": "data/fly_walking_product.json",
+      "sha256": "9819FBC50DBFCB5B4CF851F0DA7EE3A0D69CA9A4268036FAA8D631F3CACAA837",
+      "bytes": 5116
+    },
+    {
+      "path": "data/gene_blueprint.json",
+      "sha256": "D135AAB8B47BC473C6CAD199D881B56E608D7612F6981A56267BFEF65C171AFC",
+      "bytes": 31736
+    },
+    {
+      "path": "data/genetic_baseline_rest.json",
+      "sha256": "D3BB4044494FBE30C360BF560800E8403DC4DDE3965B2A3BF68E5FAB85A2AC4C",
+      "bytes": 15745
+    },
+    {
+      "path": "data/genetic_crumbs.json",
+      "sha256": "FAF7FF2AAC9CAEF2CF6FEBFB465C726A74B8782F1EC5CB12E27897A1C2BA2D25",
+      "bytes": 6531
+    },
+    {
+      "path": "data/genetic_interactions.json",
+      "sha256": "B6E458E0CDE55B9F7E030C3FA3C1DF2493747C58266582A7284D1F509B8C6D6A",
+      "bytes": 10473
+    },
+    {
+      "path": "data/genetics_hook.json",
+      "sha256": "4BFDF8A8DCC1350BF8316334779C38104B885924BA0E3DA93E806CE31525D3BE",
+      "bytes": 13192
+    },
+    {
+      "path": "data/hemibrain_connectome_boot.json",
+      "sha256": "67FA8C06D3847B194A7C87EE0B8E45F3E1F4D362AAA3CEBFE072D9813B43C5B8",
+      "bytes": 18534
+    },
+    {
+      "path": "data/homolog_correspondence.json",
+      "sha256": "385641FB0EC3D89F8F9BDBFF57DC9572F811673ECF0FD8DFB4877E633C3B3B30",
+      "bytes": 36003
+    },
+    {
+      "path": "data/kenyon_connectome_boot.json",
+      "sha256": "2B89975DFA68E2316A77E1A517ED4634F75120C7B44F09232683DB31583BB049",
+      "bytes": 8539
+    },
+    {
+      "path": "data/larva_connectome_boot.json",
+      "sha256": "945DE8F7F6EBFD37D275CF6CF0F7FA19AA10A1530C4677BDD7DD504752A12056",
+      "bytes": 15732
+    },
+    {
+      "path": "data/larva_connectome_inventory.json",
+      "sha256": "DBC9BE47530BB4CC31FD8C6DF93621271BCE457557E4DCA3B81E4673A51D0EAE",
+      "bytes": 462
+    },
+    {
+      "path": "data/leftover_map.json",
+      "sha256": "1CE44A050371CF4F26FDFCCB0F6F4A1313031E79402A646A4F4157FE58744C32",
+      "bytes": 7939
+    },
+    {
+      "path": "data/leftover_margin.json",
+      "sha256": "85FAFDCF4C3587DD986BDE128B9EEA0EB82511FE0FDC52996C1928853F0DD456",
+      "bytes": 2794
+    },
+    {
+      "path": "data/leftover_solve.json",
+      "sha256": "56AD5256519995C02753462F015EB0AF34D4C7B6ACC28AF783438230519974DB",
+      "bytes": 8372
+    },
+    {
+      "path": "data/live_verify.json",
+      "sha256": "894EAD64F8D72957CD17A9E5D066CC6F68B9E7410B78347B34249C438F04D4C7",
+      "bytes": 1715
+    },
+    {
+      "path": "data/male_cns_boot.json",
+      "sha256": "1B68FF542345704327E307F93A7E325AEEFF0D437A26A267784E88DB913BD75D",
+      "bytes": 16793
+    },
+    {
+      "path": "data/male_cns_genetics_on_cells.json",
+      "sha256": "BA1035AAB72D0E16BB066AC40B783CA09A361614B8E9471B4C95E9FCD6D5774A",
+      "bytes": 553
+    },
+    {
+      "path": "data/math_first.json",
+      "sha256": "F5C524519E8382EC84A5EBE5CC094D90ACBD1ABA1AC9DF519F2B1085E81AD688",
+      "bytes": 6084
+    },
+    {
+      "path": "data/neural_guardrails.json",
+      "sha256": "544DF9C2CA45C951C7D2426412FC3794F719143C609E41F7F84E8C1A17CCAFB7",
+      "bytes": 2965
+    },
+    {
+      "path": "data/peptide_leftovers.json",
+      "sha256": "CA5039490B04902E514A999B8BDBF42242160C88ECC33C1183FDF79E92DC4BD4",
+      "bytes": 10752
+    },
+    {
+      "path": "data/phot1_map.json",
+      "sha256": "633A48E0E4184DB5C76F0F068C3A2E2CE69C5B584898B8C143C70DC8D5035C7C",
+      "bytes": 1193
+    },
+    {
+      "path": "data/predicted_side_hops.json",
+      "sha256": "4011C580B5B5C63FC88E2BEA49E0560BE7FDDE0A882D566AD48B0D8B04D063A7",
+      "bytes": 2761
+    },
+    {
+      "path": "data/product_vs_alphafold.json",
+      "sha256": "459E9219FA7F928BCB62A170AF5EB339107DC3B7B2281E0D10E12DC99F0A7E35",
+      "bytes": 3691
+    },
+    {
+      "path": "data/repertoire.json",
+      "sha256": "00CD1BB94975D859DAFB8BEEE6E4688B6CADE4FC9438F10CE2E2AF03E50BF5E3",
+      "bytes": 5583
+    },
+    {
+      "path": "data/shared_type_hops.json",
+      "sha256": "BC939243335F00EEE0A01E3C18A65122A96716771365B5BF5FA81A1F8DCBE541",
+      "bytes": 1695
+    },
+    {
+      "path": "data/stress_map.json",
+      "sha256": "08F9E7D8A79148D97BFA607A7DB1F869FBA406B14A9122680C70BD8B9E5CC28B",
+      "bytes": 12665
+    },
+    {
+      "path": "data/trit_expr.json",
+      "sha256": "99618F35960723B7781B005ED619610615D99D5805969278D49262461902DD35",
+      "bytes": 3675
+    },
+    {
+      "path": "data/type_counts.json",
+      "sha256": "3CDBF2E2923E24A2A4C69B2D14D801E3B577E6AE15FD37CEC05A68A448DC3818",
+      "bytes": 1261
+    },
+    {
+      "path": "data/type_identity.json",
+      "sha256": "9432948B9769F998F9A2C91A938C4A6B6E3263E696E183E65B58BCED529FAC75",
+      "bytes": 3917
+    },
+    {
+      "path": "data/vnc_side_predicted.json",
+      "sha256": "F28F71317F216FD8DC45AC469329999EF084A1CB974D0C5321D7FCD9FB49A19E",
+      "bytes": 2632
+    },
+    {
+      "path": "data/wing_sim.json",
+      "sha256": "C0E8464760410B759369C5FFA33F4A738FB57451F268D75382D616B36259566C",
+      "bytes": 5321
+    },
+    {
+      "path": "data/worm_connectome_boot.json",
+      "sha256": "16A464B1B2C4EFA2CFA88C138E6FCAB8A3BA580872B62377798EFDBAEE95F594",
+      "bytes": 11279
+    },
+    {
+      "path": "data/worm_sex_compare.json",
+      "sha256": "1DD58A50622B1BD7531EF4B31AB6AEF402234AE925C430D0B5C499DA38E500A0",
+      "bytes": 3230
+    },
+    {
+      "path": "data/yaw_jo.json",
+      "sha256": "DFD10ED9AC1D0799B8A7D0F824E36BF28397BBCD8E2F8B1B4201346C10E05A58",
+      "bytes": 1957
+    },
+    {
+      "path": "MATH.md",
+      "sha256": "E8DB553583A4B2F7C0681C8D94ADA0CCA619AC53094250CF9A578FF7971FFB88",
+      "bytes": 3493
+    },
+    {
+      "path": "docs/MECHANICS.md",
+      "sha256": "77D36C93F1F7200D881F081AD9FF04950D3B5B694B9C216293DBAE72F1839D40",
+      "bytes": 4427
+    },
+    {
+      "path": "docs/LEFTOVER.md",
+      "sha256": "8D88952E479408FD2FC713BB6626A05C7352F43DABCD3C643E59765E3B6FE24A",
+      "bytes": 5004
+    },
+    {
+      "path": "RUNNING.md",
+      "sha256": "9FCB677D4BB27B6E9AA39B22E855409AEC527ADDF56CC364DA605B671C36DC79",
+      "bytes": 17428
+    },
+    {
+      "path": "Bill and Ted fly adventures/BILL_TED.md",
+      "sha256": "ED757F99AFD18152152C2C0E4DC5B7C62B2ABF8B5DA415CEA4909C7F2FA80620",
+      "bytes": 2246
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-1/EXPERIMENT.json",
+      "sha256": "1CF71CA2F5695DCAD26DA2CCCC9B509D425AFAF8FBCB1D28D1DA1709842BFECA",
+      "bytes": 486
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-2/EXPERIMENT.json",
+      "sha256": "26738D019F1E260DD2DE7C6F6FFC9BCF60188A6D7043600EEF3AA1880F8806B4",
+      "bytes": 424
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-3/EXPERIMENT.json",
+      "sha256": "83E9EB5A262B2F9FA9B5A2AFEE0581617FB5AE34DED694E5516D302C4DD7E87F",
+      "bytes": 505
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-1/FINDINGS.md",
+      "sha256": "3EE5E53D37124CF8101C9F014A58D60DF14E662B297CC64E463639E47DE77123",
+      "bytes": 3770
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-1/CLOSEOUT.md",
+      "sha256": "2AB4D9CBFA43F890EF022A75F97EE067007DF477F7D7D03CCBA287903C7FB702",
+      "bytes": 4415
+    }
+  ],
+  "note": "Residual organism snapshot. Not trained weights. Synapse feathers stay on D:."
+}

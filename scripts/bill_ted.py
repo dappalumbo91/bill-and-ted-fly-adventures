@@ -40,7 +40,9 @@ def freeze_paths() -> list[Path]:
         BT / "BILL_TED.md",
         BT / "TED-1" / "EXPERIMENT.json",
         BT / "TED-2" / "EXPERIMENT.json",
+        BT / "TED-3" / "EXPERIMENT.json",
         BT / "Adventure-1" / "FINDINGS.md",
+        BT / "Adventure-1" / "CLOSEOUT.md",
     ]:
         if p.is_file():
             paths.append(p)
@@ -157,6 +159,45 @@ def main(argv: list[str] | None = None) -> int:
             led["promotions"].append({"from": "TED-2", "to": "Bill-2", "tree": man["tree_sha256"]})
             led["current_bill"] = "Bill-2"
             print(f"  promoted Bill-2 tree={man['tree_sha256'][:12]}")
+    elif cmd == "ted-3":
+        vpath = ROOT / "data" / "adventure1_verify.json"
+        if not vpath.is_file():
+            print("  run python scripts/adventure1_verify.py first")
+            return 1
+        v = json.loads(vpath.read_text(encoding="utf-8"))
+        win = bool(v.get("promotes") and v.get("overall_ok"))
+        exp = {
+            "id": "TED-3",
+            "role": "ted",
+            "adventure": 1,
+            "change": "genetic blueprint through FSOT as verification of Adventure 1 (not Adventure 2)",
+            "vs_bill": "Bill-2",
+            "n_ok": v.get("n_ok"),
+            "n": v.get("n"),
+            "fail": v.get("fail") or [],
+            "bill_function_ok": v.get("bill_function_ok"),
+            "lean_ok": v.get("lean_ok"),
+            "ted_extend_ok": v.get("ted_extend_ok"),
+            "promotes": win,
+            "promote_to": "Bill-3" if win else None,
+            "why": v.get("why"),
+        }
+        dest = BT / "TED-3"
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / "EXPERIMENT.json").write_text(json.dumps(exp, indent=2), encoding="utf-8")
+        if "TED-3" not in led["teds"]:
+            led["teds"].append("TED-3")
+        print(f"  TED-3 promotes={win}  {exp.get('n_ok')}/{exp.get('n')}")
+        if win:
+            man = freeze("Bill-3")
+            if "Bill-3" not in led["bills"]:
+                led["bills"].append("Bill-3")
+            led["promotions"].append({"from": "TED-3", "to": "Bill-3", "tree": man["tree_sha256"]})
+            led["current_bill"] = "Bill-3"
+            led["last_tree_sha256"] = man["tree_sha256"]
+            print(f"  promoted Bill-3 tree={man['tree_sha256'][:12]}")
+        else:
+            print("  Bill-2 stays")
     elif cmd == "ted-1":
         exp = ted1()
         if "TED-1" not in led["teds"]:
@@ -174,7 +215,7 @@ def main(argv: list[str] | None = None) -> int:
     elif cmd == "ledger":
         print(json.dumps({k: led[k] for k in led if k != "files"}, indent=2)[:2000])
     else:
-        print("usage: freeze [Bill-0] | ted-1 | ted-2 | ledger")
+        print("usage: freeze [Bill-0] | ted-1 | ted-2 | ted-3 | ledger")
         return 1
     LEDGER.write_text(json.dumps(led, indent=2), encoding="utf-8")
     print(f"  wrote {LEDGER}")

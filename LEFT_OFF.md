@@ -99,3 +99,5 @@ Bill-0 freeze → TED-1 (predicted observers) → **Bill-1**. Ledger: `Bill and 
 Fold: live UniProt **9/9** biosynthetic enzymes sit on NT jobs. Biochem vs Neuro |S| look-split **0.494% ≤ 0.5%**. Zig DA→MB: fly DA motor leftover is the **correct application** (not a walk seed). Pin edition: Zig D1D38A, pack AEB2AD — same law, hops stay AEB2AD.
 
 Adventure 1 extras: Ledger B on dump N, GABA n, CRC transmitter AA — **17/17** green, median **0.076%**. Blueprint through FSOT: **120/120** genes (hop residual / overlay / trit / DENY / excitatory \(W\) / effector); pathways **5/5** (F02 precursor → enzyme → \(a\leftarrow rWa\)). Orco leftover 0.0006. fru/dsx/courtship/aggression DENY: \(T_1\) off — this pack is for human-facing AI; that family opposes human safety; labels stay. Hops already r=1+\|S\|P_NEW.
+
+**TED-3 (still Adventure 1, not Adventure 2):** blueprint verification vs Bill-2 **28/28**. Bill function holds. Lean gates hold. **Promoted → Bill-3.** `python scripts/adventure1_verify.py` · `python scripts/bill_ted.py ted-3`

@@ -67,3 +67,12 @@ Orco olfactory hop-2 vnc_motor **0.0006 leftover** (the job). fru/dsx/courtship/
 Transmitter AA (Gly Asp Glu Tyr Trp His) through F02 7-trit opcode (h, V, μ, q) and Ledger B on CRC MW. Biosynthetic pathways: precursor F02 → enzyme sits_on → NT residual hop. Receptor occupancy analog = ligand hop leftover under \(1/\varphi\), not a fitted \(K_d\).
 
 Dump identity 0% is the measured \(W\) the hops use. Independent rows go through \(S\), \(rW\), overlay, trit. **overall_ok=True**.
+
+
+## TED-3 verification (still Adventure 1)
+
+Blueprint is **not** Adventure 2. It is TED-3 vs Bill-2: same law, 0 free parameters.
+
+Checks **28/28**. Bill function hold. Lean 0.5%/99.5% hold. **promotes=True** → **Bill-3**.
+
+Blueprint through FSOT extends Bill-2 without new knobs. Hop function (walk/JO on, olf/DA/OA leftover) holds. Lean 0.5%/99.5% hold. Not Adventure 2.

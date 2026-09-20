@@ -99,6 +99,8 @@ python scripts/gene_blueprint.py --crumbs   # official names + GluRIID/Rh3–6 c
 python scripts/accuracy_sim.py              # FSOT vs empirical fly measurements
 python scripts/adventure1_fsot_apply.py     # Ledger B on dump N, GABA n, CRC transmitter AA MW
 python scripts/adventure1_fsot_blueprint.py # F02 AA + 120-gene residual hops + pathway sim
+python scripts/adventure1_verify.py         # TED-3 vs Bill-2 (Adventure 1 verification, not Adventure 2)
+python scripts/bill_ted.py ted-3            # promote TED-3 → Bill-3 if verify holds
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 
