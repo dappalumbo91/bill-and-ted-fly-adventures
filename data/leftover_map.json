@@ -4,13 +4,13 @@
   "phi": 1.618033988749895,
   "overlay": 0.6180339887498948,
   "leftover_floor_1_over_phi2": 0.38196601125010515,
-  "n": 31,
-  "n_mapped": 22,
+  "n": 35,
+  "n_mapped": 26,
   "by_kind": {
     "overlay": 2,
     "consensus": 2,
-    "hub": 4,
-    "unlabeled": 6,
+    "hub": 5,
+    "unlabeled": 9,
     "product": 2,
     "horizon": 1,
     "sleep": 1,
@@ -22,7 +22,7 @@
     "language": 1
   },
   "by_status": {
-    "mapped": 22,
+    "mapped": 26,
     "sibling": 2,
     "blocked": 4,
     "refused": 2,
@@ -277,8 +277,40 @@
       "name": "LLM / coding tokens",
       "status": "deferred",
       "n": null,
-      "mechanic": "spatial/trit/\u03c6 first; ALU and parser exist",
-      "do": "not this pack's next observer"
+      "mechanic": "trit ALU and parser exist; not an observer on W. Splice job later: named leftover until tissue",
+      "do": "do not seed language on FlyWire; splice as invented region under leftover law"
+    },
+    {
+      "kind": "unlabeled",
+      "name": "VNC 5 leftover unlabeled sides",
+      "status": "mapped",
+      "n": 5,
+      "mechanic": "in/out |W| under 1/\u03c6 or cons 0; predicted hops leftover; not EM",
+      "do": "trit 0; do not impute side"
+    },
+    {
+      "kind": "unlabeled",
+      "name": "Male tibia_extensor* type string",
+      "status": "mapped",
+      "n": 0,
+      "mechanic": "BANC FETi n=6 hop-2 vm 9.19; Male type string 0 \u2014 dump naming leftover",
+      "do": "analog Male vnc_motor / hg MN; do not invent FETi on Male"
+    },
+    {
+      "kind": "hub",
+      "name": "hemibrain olfactory lLN2F_b",
+      "status": "mapped",
+      "n": 429.5,
+      "mechanic": "hop-1 collapse leftover LN (hemibrain)",
+      "do": "do not expand"
+    },
+    {
+      "kind": "unlabeled",
+      "name": "birthtime 1268 superpose",
+      "status": "mapped",
+      "n": 1268,
+      "mechanic": "P(early|lineage) leftover under 1/\u03c6 \u2014 trit 0",
+      "do": "do not force early/late"
     }
   ],
   "rule": "Leftover is mapped when we name the mechanic and the do-not. Missing dumps stay missing. Do not invent joins.",

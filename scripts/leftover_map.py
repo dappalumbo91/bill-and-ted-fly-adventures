@@ -163,8 +163,20 @@ def main() -> int:
             "labels exist; human-facing seed off",
             "not leftover of data — guardrail"),
         row("language", "LLM / coding tokens", "deferred", None,
-            "spatial/trit/φ first; ALU and parser exist",
-            "not this pack's next observer"),
+            "trit ALU and parser exist; not an observer on W. Splice job later: named leftover until tissue",
+            "do not seed language on FlyWire; splice as invented region under leftover law"),
+        row("unlabeled", "VNC 5 leftover unlabeled sides", "mapped", 5,
+            "in/out |W| under 1/φ or cons 0; predicted hops leftover; not EM",
+            "trit 0; do not impute side"),
+        row("unlabeled", "Male tibia_extensor* type string", "mapped", 0,
+            "BANC FETi n=6 hop-2 vm 9.19; Male type string 0 — dump naming leftover",
+            "analog Male vnc_motor / hg MN; do not invent FETi on Male"),
+        row("hub", "hemibrain olfactory lLN2F_b", "mapped", 429.5,
+            "hop-1 collapse leftover LN (hemibrain)",
+            "do not expand"),
+        row("unlabeled", "birthtime 1268 superpose", "mapped", 1268,
+            "P(early|lineage) leftover under 1/φ — trit 0",
+            "do not force early/late"),
     ]
 
     by_kind: dict[str, int] = {}

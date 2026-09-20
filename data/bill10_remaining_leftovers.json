@@ -1,0 +1,209 @@
+{
+  "adventure": 2,
+  "ted": "TED-11",
+  "vs_bill": "Bill-10",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "leftover_map_n": 35,
+  "leftover_map_n_mapped": 26,
+  "by_status": {
+    "mapped": 26,
+    "sibling": 2,
+    "blocked": 4,
+    "refused": 2,
+    "deferred": 1
+  },
+  "n": 18,
+  "n_ok": 18,
+  "fail": [],
+  "problems": [
+    {
+      "q": "every leftover_map item has mechanic + do",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "leftover_map overall_ok",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "VNC leftover unlabeled n=5",
+      "got": 5,
+      "want": 5,
+      "ok": true
+    },
+    {
+      "q": "predicted leftover five n=5",
+      "got": 5,
+      "want": 5,
+      "ok": true
+    },
+    {
+      "q": "birthtime superpose 1268",
+      "got": 1268,
+      "want": 1268,
+      "ok": true
+    },
+    {
+      "q": "Male tibia_extensor type string 0 (BANC FETi exists)",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "q": "BANC FETi n=6 command",
+      "got": 6,
+      "want": 6,
+      "ok": true
+    },
+    {
+      "q": "haltere type substr 0",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "q": "wing type substr 0",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "q": "hg3 MN analog n=2",
+      "got": 2,
+      "want": 2,
+      "ok": true
+    },
+    {
+      "q": "DNp01 analog n=2",
+      "got": 2,
+      "want": 2,
+      "ok": true
+    },
+    {
+      "q": "INXXX007 leftover kind class_gated",
+      "got": "class_gated_leftover",
+      "want": "class_gated_leftover",
+      "ok": true
+    },
+    {
+      "q": "blocked dumps still blocked",
+      "got": 4,
+      "want": 4,
+      "ok": true
+    },
+    {
+      "q": "refused still refused (no invent)",
+      "got": 2,
+      "want": 2,
+      "ok": true
+    },
+    {
+      "q": "sibling pins 2",
+      "got": 2,
+      "want": 2,
+      "ok": true
+    },
+    {
+      "q": "language deferred splice job",
+      "got": "language",
+      "want": "language",
+      "ok": true
+    },
+    {
+      "q": "courtship DENY not leftover of data",
+      "got": "off",
+      "want": "off",
+      "ok": true
+    },
+    {
+      "q": "command modules still 5/6",
+      "got": 5,
+      "want": 5,
+      "ok": true
+    }
+  ],
+  "remaining": {
+    "wait_dump_blocked": [
+      {
+        "name": "free-flight 3D wingbeat",
+        "analog": "do not synthesize a 200 Hz clip and call it measured"
+      },
+      {
+        "name": "Codex api_token CSV",
+        "analog": "do not scrape the SPA"
+      },
+      {
+        "name": "Berlin walk / ymaze zip",
+        "analog": "Harvard 3D remains the body"
+      },
+      {
+        "name": "Iwasaki ball-walk videos",
+        "analog": "forelimb share \u2265 1/\u03c6 analog"
+      }
+    ],
+    "refuse_invent": [
+      {
+        "name": "embryo\u2192pupa synapse movie",
+        "do": "do not interpolate metamorphosis synapses"
+      },
+      {
+        "name": "Fly Cell Atlas \u2192 bodyId",
+        "do": "genes sit on classes, not invented bodyIds"
+      }
+    ],
+    "sibling": [
+      "Genetics C\u03b1 campaign freeze",
+      "FSOT-Genetics GitHub pin"
+    ],
+    "deferred_splice": [
+      {
+        "name": "LLM / coding tokens",
+        "job": "language / coding tokens",
+        "exists": "trit ALU + parser",
+        "do": "do not seed language on FlyWire; splice as invented region under leftover law"
+      }
+    ],
+    "mapped_analogs": [
+      {
+        "job": "haltere",
+        "analog": "JO gyro (nompC / JO hops)"
+      },
+      {
+        "job": "wing type string",
+        "analog": "hg3 MN + DNp01 plant"
+      },
+      {
+        "job": "Male FETi",
+        "analog": "BANC tibia_extensor_FETi; Male vnc_motor"
+      },
+      {
+        "job": "VNC 5 unlabeled sides",
+        "analog": "trit 0 leftover"
+      },
+      {
+        "job": "birthtime 1268",
+        "analog": "superpose trit 0"
+      },
+      {
+        "job": "INXXX007",
+        "analog": "chordotonal class \u2192 FETi"
+      }
+    ],
+    "never_grow": [
+      "il3LN6",
+      "APL",
+      "lLN2F_b",
+      "INXXX007"
+    ]
+  },
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-11",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}

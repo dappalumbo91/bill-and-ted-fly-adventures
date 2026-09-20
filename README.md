@@ -115,6 +115,8 @@ python scripts/bill8_grow_bottlenecks.py    # residual-seed command bottleneck t
 python scripts/bill_ted.py ted-9            # promote TED-9 → Bill-9
 python scripts/bill9_inxxx_leftover.py      # INXXX007 leftover; chordotonal → FETi
 python scripts/bill_ted.py ted-10           # promote TED-10 → Bill-10
+python scripts/bill10_remaining_leftovers.py
+python scripts/bill_ted.py ted-11           # remaining leftovers mapped
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

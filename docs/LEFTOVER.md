@@ -7,7 +7,7 @@ Pin **AEB2AD**. Leftover is a **mechanic**, not a hole to fill with invented syn
 \text{leftover} \iff \lvert x\rvert \le 1/\varphi
 \]
 
-Consensus trit \(0\) is leftover of a decision (superpose). Missing dumps stay missing. Stamp: `data/leftover_map.json` (`python scripts/leftover_map.py`). **30** items: **21 mapped**, 4 blocked, 2 refused, 2 sibling, 1 deferred.
+Consensus trit \(0\) is leftover of a decision (superpose). Missing dumps stay missing. Stamp: `data/leftover_map.json` (`python scripts/leftover_map.py`). **35** items: **26 mapped**, 4 blocked, 2 refused, 2 sibling, 1 deferred.
 
 ---
 
@@ -113,3 +113,8 @@ Authority: FSOT-2.1-Lean `docs/APPLY.md` step 5 and `scripts/fsot_precision_cons
 - Birthtime overlay p=1: **GREEN**.
 - Unlabeled VNC: **9 predicted L/R**, 5 leftover — `data/vnc_side_predicted.json` (predicted, not EM).
 - Those 9 as hop observers (`python scripts/predicted_side_hops.py`): L ipsi **+0.17**, R **−0.84**, leftover-five ~0. Function matches labeled VNC laterality.
+
+
+## Remaining (TED-11)
+
+Map stamp **26/35**. Blocked 4 wait. Refused 2. Sibling 2. Language deferred splice. VNC 5 sides trit 0. Male FETi naming analog BANC. See `docs/LEFTOVER_REMAINING.md`.

@@ -72,6 +72,7 @@ A2MEM = ROOT / "data" / "bill6_memory.json"
 A2GX = ROOT / "data" / "bill7_memory_expand.json"
 A2GR = ROOT / "data" / "bill8_grow_bottlenecks.json"
 A2IX = ROOT / "data" / "bill9_inxxx_leftover.json"
+A2R = ROOT / "data" / "bill10_remaining_leftovers.json"
 
 
 def fail(msg: str) -> None:
@@ -397,7 +398,7 @@ def test_identity_phot1_develop() -> None:
     bt = json.loads(BTLED.read_text(encoding="utf-8"))
     if bt.get("current_bill") not in (
         "Bill-0", "Bill-1", "Bill-2", "Bill-3", "Bill-4",
-        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10",
+        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10", "Bill-11",
     ):
         fail(f"bill_ted current {bt.get('current_bill')}")
     ok(f"bill_ted current={bt.get('current_bill')} teds={bt.get('teds')}")
@@ -549,11 +550,21 @@ def test_identity_phot1_develop() -> None:
     ix = json.loads(A2IX.read_text(encoding="utf-8"))
     if not ix.get("overall_ok"):
         fail(f"bill9_inxxx_leftover fail={ix.get('fail')}")
-    if ix.get("promotes") and bt.get("current_bill") != "Bill-10":
-        fail("TED-10 promotes but ledger current_bill is not Bill-10")
+    if ix.get("promotes") and "Bill-10" not in (bt.get("bills") or []) and bt.get("current_bill") not in ("Bill-10", "Bill-11"):
+        fail("TED-10 promotes but Bill-10 is not on the ledger")
     ok(
         f"bill9_inxxx_leftover TED-10 {ix.get('n_ok')}/{ix.get('n')}  "
         f"kind={(ix.get('leftover') or {}).get('kind')}  current={bt.get('current_bill')}"
+    )
+    rem = json.loads(A2R.read_text(encoding="utf-8"))
+    if not rem.get("overall_ok"):
+        fail(f"bill10_remaining_leftovers fail={rem.get('fail')}")
+    if rem.get("promotes") and bt.get("current_bill") != "Bill-11":
+        fail("TED-11 promotes but ledger current_bill is not Bill-11")
+    ok(
+        f"bill10_remaining_leftovers TED-11 {rem.get('n_ok')}/{rem.get('n')}  "
+        f"map={rem.get('leftover_map_n_mapped')}/{rem.get('leftover_map_n')}  "
+        f"current={bt.get('current_bill')}"
     )
 
 

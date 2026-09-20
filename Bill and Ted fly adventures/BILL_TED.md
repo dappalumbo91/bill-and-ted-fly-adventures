@@ -42,8 +42,10 @@ Pin **AEB2AD**. Law \(S=K(T_1+T_2+T_3)\). Residual hops on measured synapses. Ov
 | **TED-9 / Adventure 2** | residual-seed command bottlenecks as splice-ready modules | **5/6** live hops → **Bill-9** |
 | **Bill-9** | DNg29, IN01B001, IN05B011a, PS100, AN05B009 grown; INXXX007 leftover | promoted from TED-9 |
 | **TED-10 / Adventure 2** | INXXX007 class-gated leftover; splice chordotonal → FETi | **9/9** → **Bill-10** |
-| **Bill-10** | current | leftover named; FETi effector hopped (BANC n=6, vm 9.19) |
+| **Bill-10** | leftover named; FETi effector hopped (BANC n=6, vm 9.19) | promoted from TED-10 |
+| **TED-11 / Adventure 2** | remaining leftovers mapped (analogs, wait, refuse, language splice) | **18/18** → **Bill-11** |
+| **Bill-11** | current | leftover map 26/35; `docs/LEFTOVER_REMAINING.md` |
 
-Scripts: `python scripts/bill_ted.py freeze` · `ted-1` … `ted-9` · `python scripts/bill9_inxxx_leftover.py` · `ted-10` · `ledger`
+Scripts: `python scripts/bill_ted.py freeze` · `ted-1` … `ted-10` · `python scripts/bill10_remaining_leftovers.py` · `ted-11` · `ledger`
 
 Data: `Bill and Ted fly adventures/ledger.json`
