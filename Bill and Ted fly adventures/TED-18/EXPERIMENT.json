@@ -1,0 +1,12 @@
+{
+  "id": "TED-18",
+  "role": "ted",
+  "adventure": 1,
+  "change": "adaptive grammar leftover learner; LTM bind; teaching trajectory is data",
+  "vs_bill": "Bill-17",
+  "n_ok": 22,
+  "n": 22,
+  "promotes": true,
+  "promote_to": "Bill-18",
+  "why": "Not one schema per item. Dictionary/grammar on the prompt. LTM fingerprint after a hit. Adventure 1 teaching thread."
+}

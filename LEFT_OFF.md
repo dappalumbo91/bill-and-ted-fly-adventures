@@ -129,3 +129,5 @@ Adventure 1 extras: Ledger B on dump N, GABA n, CRC transmitter AA — **17/17**
 **TED-16:** unseen open math (NAEP G4 sample + IM CC BY). Blind language+ALU **0/22** (word leftover; some false ALU on "times"). Named leftover jobs (percent, ratio, linear) **22/22**. Not an LLM test. **Promoted → Bill-16.** `python scripts/bill15_unseen_math.py` · `python scripts/bill_ted.py ted-16`
 
 **TED-17:** Blind was leftover + “times” misfire, not a retry. Dictionary/grammar senses: *times as many* = divide. Wikipedia leftover, not over \(W\). Pack-new vs known connectomics: `docs/DISCOVERIES.md`. **13/13. Promoted → Bill-17.** `python scripts/bill16_word_sense.py` · `python scripts/bill_ted.py ted-17`
+
+**TED-18 (Adventure 1 teaching):** adaptive grammar on the prompt, **not** one schema per item. Unseen IM/NAEP **22/22**, LTM bind 22. Teaching trajectory (hops that held across Bills) is data: `docs/LEARNING.md`. **Promoted → Bill-18.** `python scripts/bill17_adaptive.py` · `python scripts/bill_ted.py ted-18`

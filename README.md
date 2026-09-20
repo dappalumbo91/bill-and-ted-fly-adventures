@@ -129,6 +129,8 @@ python scripts/bill15_unseen_math.py        # unseen NAEP/IM math quiz
 python scripts/bill_ted.py ted-16
 python scripts/bill16_word_sense.py         # dictionary senses; not Wikipedia over W
 python scripts/bill_ted.py ted-17
+python scripts/bill17_adaptive.py           # adaptive leftover learner (Adventure 1)
+python scripts/bill_ted.py ted-18
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

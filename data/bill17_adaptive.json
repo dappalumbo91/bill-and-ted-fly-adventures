@@ -1,0 +1,226 @@
+{
+  "adventure": 1,
+  "ted": "TED-18",
+  "vs_bill": "Bill-17",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "note": "Adventure 1 teaching thread: family read/write/math/code. Adaptive leftover, not one schema per item.",
+  "n": 22,
+  "n_ok": 22,
+  "n_ltm_bound": 22,
+  "ltm_keys": [
+    "eq",
+    "less",
+    "pct",
+    "plain",
+    "quarter",
+    "times_as"
+  ],
+  "items": [
+    {
+      "id": "NAEP-G4-2017-n+4=12",
+      "prompt": "What value of n makes n+4=12 true?",
+      "want": 8,
+      "got": 8,
+      "how": "eq_n_plus",
+      "ok": true,
+      "fp": "eq"
+    },
+    {
+      "id": "IM-G6-free-throws-25pct",
+      "prompt": "Mai attempted 40 free throws and was successful on 25% of them. How many successful?",
+      "want": 10,
+      "got": 10,
+      "how": "pct_of",
+      "ok": true,
+      "fp": "pct"
+    },
+    {
+      "id": "IM-G6-150pct-throws",
+      "prompt": "Priya made 12 free throws yesterday. Today she made 150% as many. How many today?",
+      "want": 18,
+      "got": 18,
+      "how": "pct_as_many",
+      "ok": true,
+      "fp": "pct"
+    },
+    {
+      "id": "IM-G6-vitamin-C-250pct",
+      "prompt": "200 mg vitamin C is 250% of daily allowance. What is 100% of the allowance?",
+      "want": 80,
+      "got": 80,
+      "how": "pct_whole",
+      "ok": true,
+      "fp": "pct"
+    },
+    {
+      "id": "IM-G6-hiphop-40pct",
+      "prompt": "40% of sixth-grade students prefer hip-hop. 100 students prefer it. How many sixth-graders at the school?",
+      "want": 250,
+      "got": 250,
+      "how": "pct_whole",
+      "ok": true,
+      "fp": "pct"
+    },
+    {
+      "id": "IM-G6-ribbon-10",
+      "prompt": "Red ribbon is 7 inches less than blue. Blue is 10. How long is red?",
+      "want": 3,
+      "got": 3,
+      "how": "less_than",
+      "ok": true,
+      "fp": "less"
+    },
+    {
+      "id": "IM-G6-ribbon-27",
+      "prompt": "Red ribbon is 7 inches less than blue. Blue is 27. How long is red?",
+      "want": 20,
+      "got": 20,
+      "how": "less_than",
+      "ok": true,
+      "fp": "less"
+    },
+    {
+      "id": "IM-G6-ribbon-blue-from-12",
+      "prompt": "Red is 7 less than blue. Red is 12. How long is blue?",
+      "want": 19,
+      "got": 19,
+      "how": "less_invert",
+      "ok": true,
+      "fp": "less"
+    },
+    {
+      "id": "IM-G6-books-15",
+      "prompt": "Tyler has 3 times as many books as Mai. Tyler has 15. How many does Mai have?",
+      "want": 5,
+      "got": 5,
+      "how": "times_as_many",
+      "ok": true,
+      "fp": "times_as"
+    },
+    {
+      "id": "IM-G6-books-21",
+      "prompt": "Tyler has 3 times as many books as Mai. Tyler has 21. How many does Mai have?",
+      "want": 7,
+      "got": 7,
+      "how": "times_as_many",
+      "ok": true,
+      "fp": "times_as"
+    },
+    {
+      "id": "IM-G6-books-18",
+      "prompt": "Tyler has 3 times as many books as Mai. Tyler has 18. How many does Mai have?",
+      "want": 6,
+      "got": 6,
+      "how": "times_as_many",
+      "ok": true,
+      "fp": "times_as"
+    },
+    {
+      "id": "IM-G6-houses-450-135",
+      "prompt": "Han's house is 450 meters from school. Lin is 135 meters closer. How far is Lin?",
+      "want": 315,
+      "got": 315,
+      "how": "less_than",
+      "ok": true,
+      "fp": "less"
+    },
+    {
+      "id": "IM-G6-playlist-quarter",
+      "prompt": "Tyler has 36 songs. Noah has one quarter as many. How many songs does Noah have?",
+      "want": 9,
+      "got": 9,
+      "how": "quarter",
+      "ok": true,
+      "fp": "quarter"
+    },
+    {
+      "id": "IM-G6-spend-books",
+      "prompt": "You had 50 dollars. Spent 10% on clothes, 20% on games, rest on books. How much on books?",
+      "want": 35,
+      "got": 35,
+      "how": "pct_rest",
+      "ok": true,
+      "fp": "pct"
+    },
+    {
+      "id": "IM-G6-bin-5gal",
+      "prompt": "Bin capacity 50 gallons. What percent is 5 gallons?",
+      "want": 10,
+      "got": 10,
+      "how": "is_what_pct",
+      "ok": true,
+      "fp": "pct"
+    },
+    {
+      "id": "IM-G6-bin-30gal",
+      "prompt": "Bin capacity 50 gallons. What percent is 30 gallons?",
+      "want": 60,
+      "got": 60,
+      "how": "is_what_pct",
+      "ok": true,
+      "fp": "pct"
+    },
+    {
+      "id": "IM-G6-bin-45gal",
+      "prompt": "Bin capacity 50 gallons. What percent is 45 gallons?",
+      "want": 90,
+      "got": 90,
+      "how": "is_what_pct",
+      "ok": true,
+      "fp": "pct"
+    },
+    {
+      "id": "IM-G6-bin-100gal",
+      "prompt": "Bin capacity 50 gallons. What percent is 100 gallons?",
+      "want": 200,
+      "got": 200,
+      "how": "is_what_pct",
+      "ok": true,
+      "fp": "pct"
+    },
+    {
+      "id": "IM-G6-potatoes-15",
+      "prompt": "10 lb potatoes make 15 lb mash. How many mash from 15 lb potatoes?",
+      "want": 22,
+      "got": 22,
+      "how": "ratio",
+      "ok": true,
+      "fp": "plain"
+    },
+    {
+      "id": "IM-G8-andres-puzzle",
+      "prompt": "Pick a number, add 2, multiply by 3, subtract 7, add original. Result 27. Starting number?",
+      "want": 7,
+      "got": 7,
+      "how": "andres_chain",
+      "ok": true,
+      "fp": "plain"
+    },
+    {
+      "id": "IM-G8-elena-points",
+      "prompt": "Mai 5 points. Noah 3 times Mai. Tyler 4 fewer than Noah. Elena twice Tyler. Elena?",
+      "want": 22,
+      "got": 22,
+      "how": "chain_points",
+      "ok": true,
+      "fp": "plain"
+    },
+    {
+      "id": "IM-G6-tape-3x9",
+      "prompt": "3 equal parts of 9, total 27. Multiplication equation value 3*9.",
+      "want": 27,
+      "got": 27,
+      "how": "tape_3x9",
+      "ok": true,
+      "fp": "plain"
+    }
+  ],
+  "fail": [],
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-18",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}

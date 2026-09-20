@@ -79,6 +79,7 @@ A2COD = ROOT / "data" / "bill13_coding_tokens.json"
 A2HV = ROOT / "data" / "bill14_host_eval.json"
 A2UM = ROOT / "data" / "bill15_unseen_math.json"
 A2WS = ROOT / "data" / "bill16_word_sense.json"
+A1AD = ROOT / "data" / "bill17_adaptive.json"
 
 
 def fail(msg: str) -> None:
@@ -404,7 +405,7 @@ def test_identity_phot1_develop() -> None:
     bt = json.loads(BTLED.read_text(encoding="utf-8"))
     if bt.get("current_bill") not in (
         "Bill-0", "Bill-1", "Bill-2", "Bill-3", "Bill-4",
-        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10", "Bill-11", "Bill-12", "Bill-13", "Bill-14", "Bill-15", "Bill-16", "Bill-17",
+        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10", "Bill-11", "Bill-12", "Bill-13", "Bill-14", "Bill-15", "Bill-16", "Bill-17", "Bill-18",
     ):
         fail(f"bill_ted current {bt.get('current_bill')}")
     ok(f"bill_ted current={bt.get('current_bill')} teds={bt.get('teds')}")
@@ -623,10 +624,19 @@ def test_identity_phot1_develop() -> None:
     ws = json.loads(A2WS.read_text(encoding="utf-8"))
     if not ws.get("overall_ok"):
         fail(f"bill16_word_sense fail={ws.get('fail')}")
-    if ws.get("promotes") and bt.get("current_bill") != "Bill-17":
-        fail("TED-17 promotes but ledger current_bill is not Bill-17")
+    if ws.get("promotes") and "Bill-17" not in (bt.get("bills") or []) and bt.get("current_bill") not in ("Bill-17", "Bill-18"):
+        fail("TED-17 promotes but Bill-17 is not on the ledger")
     ok(
         f"bill16_word_sense TED-17 {ws.get('n_ok')}/{ws.get('n')}  current={bt.get('current_bill')}"
+    )
+    ad = json.loads(A1AD.read_text(encoding="utf-8"))
+    if not ad.get("overall_ok"):
+        fail(f"bill17_adaptive fail={ad.get('fail')}")
+    if ad.get("promotes") and bt.get("current_bill") != "Bill-18":
+        fail("TED-18 promotes but ledger current_bill is not Bill-18")
+    ok(
+        f"bill17_adaptive TED-18 {ad.get('n_ok')}/{ad.get('n')}  "
+        f"LTM={ad.get('n_ltm_bound')}  current={bt.get('current_bill')}"
     )
 
 

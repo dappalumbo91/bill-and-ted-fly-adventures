@@ -30,9 +30,11 @@ These are not new neurons. They are **new numbers and a leftover taxonomy** unde
 
 5. **Two-animal function 3/3; magnitude is two animals** (sex/cut), not one measured \(m\) under the 0.5% scalar gate.
 
-6. **English “times” ALU misfire (TED-16).** Blind unseen IM/NAEP **0/22**. Not “it failed the quiz.” Word jobs had no name (leftover — correct). A few blinds **multiplied** because the lexicon treated “times” as \(\times\) (`3 times as many` + 15 → 45, want 5). Named leftover jobs then **22/22**. That is application leftover of the language splice, not a new fly cell.
+6. **Teaching trajectory is data (Adventure 1).** Hop-2 walk vs leftover, two-animal 3/3, look-split 0.494%, language/code splices, pC1 desc 30.94 if T1 on — these **held across Bills**. That is longitudinal measurement of this organism learning to read/math/code, not a throwaway accuracy score.
 
-7. **Inf-norm hop masses are not extensive in \(n_{\mathrm{seed}}\)** (TBD vs 07B). APPLY wrong-object: leftover scoring ≠ classifier.
+7. **English “times” ALU misfire (TED-16) then adaptive grammar (TED-18).** Blind **0/22** leftover + false \(\times\). Per-item schemas **22/22** (not independent retry). TED-18 grammar/dictionary **without per-item schema 22/22**, LTM bind 22. Hardcoding every leftover job is not biological; this is the remedy.
+
+8. **Inf-norm hop masses are not extensive in \(n_{\mathrm{seed}}\)** (TBD vs 07B). APPLY wrong-object: leftover scoring ≠ classifier.
 
 ## What we are *not* claiming
 
