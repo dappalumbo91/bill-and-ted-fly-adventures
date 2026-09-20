@@ -42,6 +42,10 @@ def grammar_math(prompt: str) -> tuple[object, str]:
     if re.search(r"one\s+quarter|a\s+quarter", t) and ns:
         return ns[0] // 4, "quarter"
 
+    m = re.search(r"(\d+)\s*% of (\d+)", t)
+    if m:
+        return (int(m.group(2)) * int(m.group(1))) // 100, "pct_of_xy"
+
     m = re.search(r"(\d+)\s*%\s+as\s+many", t)
     if m and ns:
         pct = int(m.group(1))

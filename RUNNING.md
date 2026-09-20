@@ -113,6 +113,7 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | TED-17 word sense + discoveries | **promoted → Bill-17** | dictionary “times as many”; `docs/DISCOVERIES.md` |
 | TED-18 adaptive leftover (Adv 1) | **promoted → Bill-18** | grammar on prompt **22/22** IM/NAEP; LTM 22; not per-item schema |
 | TED-19 bio-teach | **promoted → Bill-19** | steps then new numbers **6/6**; DA leftover T1 bind; not fitted RL |
+| TED-20 read/write school exam | **promoted → Bill-20** | **11/11** mix retain; G:\\AI_Datasets mapped; capability ledger |
 
 ---
 

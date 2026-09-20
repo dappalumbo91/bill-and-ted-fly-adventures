@@ -133,3 +133,5 @@ Adventure 1 extras: Ledger B on dump N, GABA n, CRC transmitter AA — **17/17**
 **TED-18 (Adventure 1 teaching):** adaptive grammar on the prompt, **not** one schema per item. Unseen IM/NAEP **22/22**, LTM bind 22. Teaching trajectory (hops that held across Bills) is data: `docs/LEARNING.md`. **Promoted → Bill-18.** `python scripts/bill17_adaptive.py` · `python scripts/bill_ted.py ted-18`
 
 **TED-19:** teach the procedure, then new numbers. Overlay vs leftover = usable vs resistance. Reward trit +1/0/−1; DA leftover \(T_1\) binds LTM; 5HT leftover on error. No new synapses. Transfer **6/6**, retention after interference. **Promoted → Bill-19.** `python scripts/bill18_bio_teach.py` · `python scripts/bill_ted.py ted-19`
+
+**TED-20:** read decode + write encode; school exam **11/11** (math, commands, code, deny, retain). Capability ledger vs LLM end. Curriculum sources (OpenStax, DeepMind math, ARC, G:\\AI_Datasets) mapped as JSON Q&A analog. **Promoted → Bill-20.** `python scripts/bill19_read_write.py` · `python scripts/bill_ted.py ted-20`

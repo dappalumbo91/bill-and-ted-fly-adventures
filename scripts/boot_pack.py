@@ -81,6 +81,7 @@ A2UM = ROOT / "data" / "bill15_unseen_math.json"
 A2WS = ROOT / "data" / "bill16_word_sense.json"
 A1AD = ROOT / "data" / "bill17_adaptive.json"
 A1BT = ROOT / "data" / "bill18_bio_teach.json"
+A1RW = ROOT / "data" / "bill19_read_write.json"
 
 
 def fail(msg: str) -> None:
@@ -406,7 +407,7 @@ def test_identity_phot1_develop() -> None:
     bt = json.loads(BTLED.read_text(encoding="utf-8"))
     if bt.get("current_bill") not in (
         "Bill-0", "Bill-1", "Bill-2", "Bill-3", "Bill-4",
-        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10", "Bill-11", "Bill-12", "Bill-13", "Bill-14", "Bill-15", "Bill-16", "Bill-17", "Bill-18", "Bill-19",
+        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10", "Bill-11", "Bill-12", "Bill-13", "Bill-14", "Bill-15", "Bill-16", "Bill-17", "Bill-18", "Bill-19", "Bill-20",
     ):
         fail(f"bill_ted current {bt.get('current_bill')}")
     ok(f"bill_ted current={bt.get('current_bill')} teds={bt.get('teds')}")
@@ -642,11 +643,20 @@ def test_identity_phot1_develop() -> None:
     bteach = json.loads(A1BT.read_text(encoding="utf-8"))
     if not bteach.get("overall_ok"):
         fail(f"bill18_bio_teach fail={bteach.get('fail')}")
-    if bteach.get("promotes") and bt.get("current_bill") != "Bill-19":
-        fail("TED-19 promotes but ledger current_bill is not Bill-19")
+    if bteach.get("promotes") and "Bill-19" not in (bt.get("bills") or []) and bt.get("current_bill") not in ("Bill-19", "Bill-20"):
+        fail("TED-19 promotes but Bill-19 is not on the ledger")
     ok(
         f"bill18_bio_teach TED-19 {bteach.get('n_ok')}/{bteach.get('n')}  "
         f"transfer={bteach.get('n_transfer_ok')}/{bteach.get('n_transfer')}  "
+        f"current={bt.get('current_bill')}"
+    )
+    rw = json.loads(A1RW.read_text(encoding="utf-8"))
+    if not rw.get("overall_ok"):
+        fail(f"bill19_read_write fail n={rw.get('n_ok')}/{rw.get('n')}")
+    if rw.get("promotes") and bt.get("current_bill") != "Bill-20":
+        fail("TED-20 promotes but ledger current_bill is not Bill-20")
+    ok(
+        f"bill19_read_write TED-20 {rw.get('n_ok')}/{rw.get('n')}  "
         f"current={bt.get('current_bill')}"
     )
 

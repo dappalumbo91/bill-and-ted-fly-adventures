@@ -1,0 +1,12 @@
+{
+  "id": "TED-20",
+  "role": "ted",
+  "adventure": 1,
+  "change": "teach read/write; school exam mix retain; capability ledger; curriculum sources mapped",
+  "vs_bill": "Bill-19",
+  "n_ok": 11,
+  "n": 11,
+  "promotes": true,
+  "promote_to": "Bill-20",
+  "why": "Read decode + write encode as steps. Combined exam. G:\\AI_Datasets and OpenStax/DeepMind/ARC mapped as JSON Q&A analog, not pretrain."
+}

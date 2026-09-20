@@ -1,0 +1,15 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "format": "JSON Q&A this splice can take (not LLM pretrain)",
+  "item_schema": {
+    "id": "string",
+    "prompt": "written question",
+    "want": "integer or closed-lexicon string",
+    "steps": "optional procedure the lesson taught"
+  },
+  "example": [
+    {"id": "ex-pct", "prompt": "15% of 40", "want": 6, "steps": "N*P/100"},
+    {"id": "ex-read", "prompt": "turn left", "want": "DNg29"}
+  ]
+}

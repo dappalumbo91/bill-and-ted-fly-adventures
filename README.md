@@ -133,6 +133,8 @@ python scripts/bill17_adaptive.py           # adaptive leftover learner (Adventu
 python scripts/bill_ted.py ted-18
 python scripts/bill18_bio_teach.py          # steps then own work; DA leftover reward
 python scripts/bill_ted.py ted-19
+python scripts/bill19_read_write.py         # read/write school exam
+python scripts/bill_ted.py ted-20
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

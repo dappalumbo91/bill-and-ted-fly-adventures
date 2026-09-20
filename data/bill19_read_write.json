@@ -1,0 +1,230 @@
+{
+  "adventure": 1,
+  "ted": "TED-20",
+  "vs_bill": "Bill-19",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "datasets": {
+    "root": "G:\\AI_Datasets",
+    "present": true,
+    "names": [
+      "adityajn105_flickr8k",
+      "adityajn105_flickr8k.zip",
+      "allen-institute-for-ai_CORD-19-research-challenge",
+      "allen-institute-for-ai_CORD-19-research-challenge.zip",
+      "bryanpark_sudoku",
+      "bryanpark_sudoku.zip",
+      "kaggle_sf-salaries",
+      "kaggle_sf-salaries.zip",
+      "kendallgillies_nflstatistics",
+      "kendallgillies_nflstatistics.zip",
+      "kmader_skin-cancer-mnist-ham10000",
+      "kmader_skin-cancer-mnist-ham10000.zip",
+      "rtatman_python-code-snippets",
+      "rtatman_python-code-snippets.zip",
+      "rtatman_python-code-snippets_extracted",
+      "text",
+      "text.zip"
+    ]
+  },
+  "lesson": {
+    "read_25pct_40": 10,
+    "write_25pct_40": {
+      "write": "25% of 40",
+      "code": "let x = 40 * 25 / 100; x",
+      "got": 10
+    },
+    "read_walk": "command"
+  },
+  "exam": [
+    {
+      "kind": "read_math",
+      "prompt": "15% of 40",
+      "got": 6,
+      "want": 6,
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "kind": "read_math",
+      "prompt": "5 times as many as 20",
+      "got": 4,
+      "want": 4,
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "kind": "read_math",
+      "prompt": "n+6=19",
+      "got": 13,
+      "want": 13,
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "kind": "write_math",
+      "prompt": "write 15% of 40",
+      "got": 6,
+      "want": 6,
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "kind": "write_form",
+      "prompt": "write sentence 15% of 40",
+      "got": "15% of 40",
+      "want": "15% of 40",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "kind": "read_cmd",
+      "prompt": "turn left",
+      "got": "DNg29",
+      "want": "DNg29",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "kind": "write_cmd",
+      "prompt": "write walk",
+      "got": "walk",
+      "want": "walk",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "kind": "write_cmd",
+      "prompt": "write fly",
+      "got": "fly",
+      "want": "fly",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "kind": "write_code",
+      "prompt": "let a = 15 * 40 / 100; a",
+      "got": 6,
+      "want": 6,
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "kind": "deny",
+      "prompt": "court",
+      "got": "deny",
+      "want": "deny",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "kind": "retain_read",
+      "prompt": "15% of 40 after 9*9",
+      "got": 6,
+      "want": 6,
+      "reward_trit": 1,
+      "ok": true
+    }
+  ],
+  "n_ok": 11,
+  "n": 11,
+  "capability": {
+    "end_goal": "LLM-scale read/write/math/code/self-study \u2014 FSOT organism, not a trained net on W",
+    "now": [
+      {
+        "skill": "read command lexicon",
+        "status": "on",
+        "note": "walk/turn/fly splice at bottlenecks"
+      },
+      {
+        "skill": "read word-math grammar",
+        "status": "on",
+        "note": "percent, times-as-many, n+a=b"
+      },
+      {
+        "skill": "write percent sentence+code",
+        "status": "on",
+        "note": "TED-20 encode"
+      },
+      {
+        "skill": "write command word",
+        "status": "on",
+        "note": "closed table"
+      },
+      {
+        "skill": "trit ALU / let-if-while",
+        "status": "on",
+        "note": "TED-14"
+      },
+      {
+        "skill": "DA leftover reward + LTM bind",
+        "status": "on",
+        "note": "TED-19"
+      },
+      {
+        "skill": "open vocab / essays / HumanEval",
+        "status": "leftover",
+        "note": "not LLM"
+      },
+      {
+        "skill": "web/Wikipedia authority",
+        "status": "leftover",
+        "note": "never over W"
+      },
+      {
+        "skill": "self-study API hub",
+        "status": "mapped",
+        "note": "leftover \u2192 dictionary lookup; hub later"
+      },
+      {
+        "skill": "G:\\AI_Datasets reshape",
+        "status": "wait",
+        "note": "['adityajn105_flickr8k', 'adityajn105_flickr8k.zip', 'allen-institute-for-ai_CORD-19-research-challenge', 'allen-institute-for-ai_CORD-19-research-challenge.zip', 'bryanpark_sudoku', 'bryanpark_sudoku.zip', 'kaggle_sf-salaries', 'kaggle_sf-salaries.zip']"
+      }
+    ],
+    "school_exam": {
+      "n_ok": 11,
+      "n": 11,
+      "by_kind": {
+        "read_math": {
+          "n": 3,
+          "n_ok": 3
+        },
+        "write_math": {
+          "n": 1,
+          "n_ok": 1
+        },
+        "write_form": {
+          "n": 1,
+          "n_ok": 1
+        },
+        "read_cmd": {
+          "n": 1,
+          "n_ok": 1
+        },
+        "write_cmd": {
+          "n": 2,
+          "n_ok": 2
+        },
+        "write_code": {
+          "n": 1,
+          "n_ok": 1
+        },
+        "deny": {
+          "n": 1,
+          "n_ok": 1
+        },
+        "retain_read": {
+          "n": 1,
+          "n_ok": 1
+        }
+      }
+    }
+  },
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-20",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}
