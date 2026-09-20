@@ -103,6 +103,8 @@ python scripts/adventure1_verify.py         # TED-3 vs Bill-2 (Adventure 1 verif
 python scripts/bill_ted.py ted-3            # promote TED-3 → Bill-3 if verify holds
 python scripts/bill3_math_env.py            # Bill-3 math labs + hop thinking traces (Adventure 2)
 python scripts/bill_ted.py ted-4            # promote TED-4 → Bill-4 if math env holds
+python scripts/bill4_math_courses.py        # conventional math courses (Z,Q,algebra,calc,…)
+python scripts/bill_ted.py ted-5            # promote TED-5 → Bill-5 if courses hold
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

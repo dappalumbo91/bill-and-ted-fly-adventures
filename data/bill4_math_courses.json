@@ -1,0 +1,823 @@
+{
+  "adventure": 2,
+  "ted": "TED-5",
+  "vs_bill": "Bill-4",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "law": "conventional math on balanced-ternary ALU + seeds; hops are the thinking trace",
+  "n": 58,
+  "n_ok": 58,
+  "fail": [],
+  "by_course": {
+    "integers": {
+      "n": 7,
+      "n_ok": 7
+    },
+    "rationals": {
+      "n": 5,
+      "n_ok": 5
+    },
+    "algebra": {
+      "n": 5,
+      "n_ok": 5
+    },
+    "geometry": {
+      "n": 5,
+      "n_ok": 5
+    },
+    "trig": {
+      "n": 5,
+      "n_ok": 5
+    },
+    "combinatorics": {
+      "n": 3,
+      "n_ok": 3
+    },
+    "number_theory": {
+      "n": 5,
+      "n_ok": 5
+    },
+    "linear_algebra": {
+      "n": 5,
+      "n_ok": 5
+    },
+    "calculus": {
+      "n": 6,
+      "n_ok": 6
+    },
+    "statistics": {
+      "n": 5,
+      "n_ok": 5
+    },
+    "logic": {
+      "n": 5,
+      "n_ok": 5
+    },
+    "sets": {
+      "n": 1,
+      "n_ok": 1
+    },
+    "guardrail": {
+      "n": 1,
+      "n_ok": 1
+    }
+  },
+  "problems": [
+    {
+      "course": "integers",
+      "q": "7 + 8",
+      "got": 15,
+      "want": 15,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "integers",
+      "q": "20 \u2212 7",
+      "got": 13,
+      "want": 13,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "integers",
+      "q": "6 \u00d7 7",
+      "got": 42,
+      "want": 42,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "integers",
+      "q": "672 \u00f7 3 (JO n_seed / 3)",
+      "got": 224,
+      "want": 224,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "integers",
+      "q": "672 mod 5",
+      "got": 2,
+      "want": 2,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "integers",
+      "q": "(\u22124) \u00d7 (\u22125)",
+      "got": 20,
+      "want": 20,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "integers",
+      "q": "order: (2+3)\u00d74 = 2\u00d74 + 3\u00d74",
+      "got": 20,
+      "want": 20,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "rationals",
+      "q": "1/2 + 1/3",
+      "got": [
+        5,
+        6
+      ],
+      "want": [
+        5,
+        6
+      ],
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "rationals",
+      "q": "2/3 \u00d7 3/4",
+      "got": [
+        1,
+        2
+      ],
+      "want": [
+        1,
+        2
+      ],
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "rationals",
+      "q": "(1/2) / (1/4)",
+      "got": [
+        2,
+        1
+      ],
+      "want": [
+        2,
+        1
+      ],
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "rationals",
+      "q": "reduce 348/672 (JO_L / JO)",
+      "got": [
+        29,
+        56
+      ],
+      "want": [
+        29,
+        56
+      ],
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "rationals",
+      "q": "348/324 reduce JO_L/JO_R",
+      "got": [
+        29,
+        27
+      ],
+      "want": [
+        29,
+        27
+      ],
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "algebra",
+      "q": "solve 3x + 5 = 20",
+      "got": 5,
+      "want": 5,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "algebra",
+      "q": "solve 2(x \u2212 4) = 10",
+      "got": 9,
+      "want": 9,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "algebra",
+      "q": "discriminant of x\u00b2 \u2212 5x + 6",
+      "got": 1,
+      "want": 1,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "algebra",
+      "q": "roots of x\u00b2 \u2212 5x + 6",
+      "got": [
+        2,
+        3
+      ],
+      "want": [
+        2,
+        3
+      ],
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "algebra",
+      "q": "poly 2x\u00b2 + 3x + 1 at x=4",
+      "got": 45,
+      "want": 45,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "geometry",
+      "q": "Pythagorean 3-4-5: 3\u00b2+4\u00b2",
+      "got": 25,
+      "want": 25,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "geometry",
+      "q": "5\u00b2",
+      "got": 25,
+      "want": 25,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "geometry",
+      "q": "similar triangles 3/4 = 6/x \u2192 x",
+      "got": 8,
+      "want": 8,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "geometry",
+      "q": "unit circle circumference 2\u03c0",
+      "got": 6.283185307179586,
+      "want": 6.283185307179586,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "geometry",
+      "q": "area unit circle \u03c0r\u00b2 r=1",
+      "got": 3.141592653589793,
+      "want": 3.141592653589793,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "trig",
+      "q": "sin\u00b2\u03b8 + cos\u00b2\u03b8 = 1 at \u03b8=\u03c0/6",
+      "got": 1.0,
+      "want": 1.0,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "trig",
+      "q": "sin(\u03c0/6) = 1/2",
+      "got": 0.49999999999999994,
+      "want": 0.5,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "trig",
+      "q": "cos(\u03c0/3) = 1/2",
+      "got": 0.5000000000000001,
+      "want": 0.5,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "trig",
+      "q": "sin(2\u03b8)=2sin\u03b8cos\u03b8 at \u03b8=\u03c0/8",
+      "got": 0.7071067811865476,
+      "want": 0.7071067811865476,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "trig",
+      "q": "Euler e^{i\u03c0} + 1 = 0 (real part)",
+      "got": 0.0,
+      "want": 0.0,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "combinatorics",
+      "q": "C(10,3)",
+      "got": 120,
+      "want": 120,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "combinatorics",
+      "q": "C(5,0)",
+      "got": 1,
+      "want": 1,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "combinatorics",
+      "q": "C(7,2) = C(7,5)",
+      "got": 21,
+      "want": 21,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "number_theory",
+      "q": "gcd(672, 348)",
+      "got": 12,
+      "want": 12,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "number_theory",
+      "q": "gcd(348, 324)",
+      "got": 12,
+      "want": 12,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "number_theory",
+      "q": "7 is prime",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "number_theory",
+      "q": "672 even (mod 2 = 0)",
+      "got": 0,
+      "want": 0,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "number_theory",
+      "q": "\u03c6(10) totient",
+      "got": 4,
+      "want": 4,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "linear_algebra",
+      "q": "det [[1,2],[3,4]]",
+      "got": -2,
+      "want": -2,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "linear_algebra",
+      "q": "AB [0][0] of [[1,2],[3,4]][[5,6],[7,8]]",
+      "got": 19,
+      "want": 19,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "linear_algebra",
+      "q": "AB full",
+      "got": [
+        [
+          19,
+          22
+        ],
+        [
+          43,
+          50
+        ]
+      ],
+      "want": [
+        [
+          19,
+          22
+        ],
+        [
+          43,
+          50
+        ]
+      ],
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "linear_algebra",
+      "q": "AI = A",
+      "got": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "want": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "linear_algebra",
+      "q": "det I = 1",
+      "got": 1,
+      "want": 1,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "calculus",
+      "q": "d/dx (2x\u00b2 + 3x + 1)",
+      "got": [
+        4,
+        3
+      ],
+      "want": [
+        4,
+        3
+      ],
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "calculus",
+      "q": "d/dx (x\u00b3) = 3x\u00b2",
+      "got": [
+        3,
+        0,
+        0
+      ],
+      "want": [
+        3,
+        0,
+        0
+      ],
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "calculus",
+      "q": "(4x+3) at x=2",
+      "got": 11,
+      "want": 11,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "calculus",
+      "q": "\u222b (4x+3) dx in Z[x], C=0",
+      "got": [
+        2,
+        3,
+        0
+      ],
+      "want": [
+        2,
+        3,
+        0
+      ],
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "calculus",
+      "q": "(1+1/n)^n \u2192 e at n=24 (direction)",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "calculus",
+      "q": "power rule n x^{n-1} for n=5, x=2: 5\u00b716",
+      "got": 80,
+      "want": 80,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "statistics",
+      "q": "mean(JO_L, JO_R) n_seed",
+      "got": 336,
+      "want": 336,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "statistics",
+      "q": "JO_L \u2212 mean",
+      "got": 12,
+      "want": 12,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "statistics",
+      "q": "range JO_L, JO_R",
+      "got": 24,
+      "want": 24,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "statistics",
+      "q": "median {16,28,29} maze frames",
+      "got": 28,
+      "want": 28,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "statistics",
+      "q": "VNC n_seed > JO n_seed",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "logic",
+      "q": "De Morgan \u00ac(A\u2227B)=\u00acA\u2228\u00acB for (1,0)",
+      "got": 1,
+      "want": 1,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "logic",
+      "q": "De Morgan \u00ac(A\u2228B)=\u00acA\u2227\u00acB for (1,0)",
+      "got": 0,
+      "want": 0,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "logic",
+      "q": "excluded middle A\u2228\u00acA at 1",
+      "got": 1,
+      "want": 1,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "logic",
+      "q": "consensus as 3-valued AND-agree",
+      "got": 1,
+      "want": 1,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "logic",
+      "q": "consensus disagree superposes",
+      "got": 0,
+      "want": 0,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "sets",
+      "q": "|A\u222aB|=|A|+|B|\u2212|A\u2229B|  {1,2,3}\u222a{3,4}",
+      "got": 4,
+      "want": 4,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    },
+    {
+      "course": "guardrail",
+      "q": "courtship not a math-course seed",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional",
+      "substrate": "balanced-ternary ALU + seeds {\u03c0,e,\u03c6,\u03b3}"
+    }
+  ],
+  "traces": {
+    "vnc_sensory": {
+      "observer": "vnc_sensory",
+      "n_seed": 6365,
+      "hops": [
+        {
+          "hop": 0,
+          "n_active": 6365,
+          "vnc_motor": 0.0,
+          "top_cell_type": "SNta23"
+        },
+        {
+          "hop": 1,
+          "n_active": 19,
+          "vnc_motor": 3.977874897568966,
+          "top_cell_type": "IN05B011a"
+        },
+        {
+          "hop": 2,
+          "n_active": 2,
+          "vnc_motor": 10.740180804833889,
+          "top_cell_type": "AN08B034"
+        }
+      ]
+    },
+    "JO": {
+      "observer": "JO",
+      "n_seed": 672,
+      "hops": [
+        {
+          "hop": 0,
+          "n_active": 672,
+          "vnc_motor": 0.0,
+          "top_cell_type": "JO-A2"
+        },
+        {
+          "hop": 1,
+          "n_active": 3,
+          "vnc_motor": 0.0,
+          "top_cell_type": "DNg29"
+        },
+        {
+          "hop": 2,
+          "n_active": 4,
+          "vnc_motor": 7.772920928859144,
+          "top_cell_type": "IN23B001"
+        }
+      ]
+    },
+    "olfactory": {
+      "observer": "olfactory",
+      "n_seed": 2639,
+      "hops": [
+        {
+          "hop": 0,
+          "n_active": 2639,
+          "vnc_motor": 0.0,
+          "top_cell_type": "ORN_DP1m"
+        },
+        {
+          "hop": 1,
+          "n_active": 2,
+          "vnc_motor": 0.0,
+          "top_cell_type": "il3LN6"
+        },
+        {
+          "hop": 2,
+          "n_active": 1,
+          "vnc_motor": 0.0005710214203076791,
+          "top_cell_type": "v2LN30"
+        }
+      ]
+    }
+  },
+  "thinking": {
+    "rule": "Compute in trit ALU / seeds. Report in Z, Q, R, matrices. Observer hops are the brain trace. Courtship off.",
+    "deny_family_seeded": false
+  },
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-5",
+  "note": "FSOT is the substrate. These courses are the community's mathematics so the organism can use both."
+}

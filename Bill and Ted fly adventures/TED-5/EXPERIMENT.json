@@ -1,0 +1,13 @@
+{
+  "id": "TED-5",
+  "role": "ted",
+  "adventure": 2,
+  "change": "conventional math courses on trit ALU (Z,Q,algebra,geometry,trig,calculus,lin alg,stats,logic)",
+  "vs_bill": "Bill-4",
+  "n_ok": 58,
+  "n": 58,
+  "fail": [],
+  "promotes": true,
+  "promote_to": "Bill-5",
+  "why": "Same substrate. Curriculum is community mathematics in conventional notation. Hops remain the thinking trace. No new knobs. Courtship not seeded."
+}
