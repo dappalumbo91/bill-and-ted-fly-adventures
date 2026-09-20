@@ -119,6 +119,8 @@ python scripts/bill10_remaining_leftovers.py
 python scripts/bill_ted.py ted-11           # remaining leftovers mapped
 python scripts/bill11_map_all.py            # analog-join remaining 9 → 35/35
 python scripts/bill_ted.py ted-12
+python scripts/bill12_language_splice.py    # splice language at command bottlenecks
+python scripts/bill_ted.py ted-13
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

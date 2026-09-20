@@ -119,3 +119,5 @@ Adventure 1 extras: Ledger B on dump N, GABA n, CRC transmitter AA — **17/17**
 **TED-11:** remaining leftovers **18/18**. Map **26/35**. Blocked 4 wait (free-flight, Codex, Berlin, Iwasaki). Refused 2. Sibling pins. Language deferred splice. VNC 5 trit 0. Male FETi analog BANC. `docs/LEFTOVER_REMAINING.md`. **Promoted → Bill-11.** `python scripts/bill10_remaining_leftovers.py` · `python scripts/bill_ted.py ted-11`
 
 **TED-12:** **why 26/35** = 26 `status=mapped` + 9 blocked/refused/sibling/deferred. Those 9 analog-joined. Map **35/35**. Dumps still missing. **21/21. Promoted → Bill-12.** `python scripts/bill11_map_all.py` · `python scripts/bill_ted.py ted-12`
+
+**TED-13:** language spliced as invented region. Trit ALU + closed lexicon. Commands at **IN05B011a / DNg29 / IN01B001 / DNp01**. Unknown leftover. Courtship DENY. Not on FlyWire \(W\). Never APL/il3LN6. **61/61. Promoted → Bill-13.** `python scripts/bill12_language_splice.py` · `python scripts/bill_ted.py ted-13`

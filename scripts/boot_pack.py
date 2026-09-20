@@ -74,6 +74,7 @@ A2GR = ROOT / "data" / "bill8_grow_bottlenecks.json"
 A2IX = ROOT / "data" / "bill9_inxxx_leftover.json"
 A2R = ROOT / "data" / "bill10_remaining_leftovers.json"
 A2ALL = ROOT / "data" / "bill11_map_all.json"
+A2LNG = ROOT / "data" / "bill12_language_splice.json"
 
 
 def fail(msg: str) -> None:
@@ -399,7 +400,7 @@ def test_identity_phot1_develop() -> None:
     bt = json.loads(BTLED.read_text(encoding="utf-8"))
     if bt.get("current_bill") not in (
         "Bill-0", "Bill-1", "Bill-2", "Bill-3", "Bill-4",
-        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10", "Bill-11", "Bill-12",
+        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10", "Bill-11", "Bill-12", "Bill-13",
     ):
         fail(f"bill_ted current {bt.get('current_bill')}")
     ok(f"bill_ted current={bt.get('current_bill')} teds={bt.get('teds')}")
@@ -572,11 +573,20 @@ def test_identity_phot1_develop() -> None:
         fail(f"bill11_map_all fail={mall.get('fail')}")
     if int(mall.get("n_mapped") or 0) != int(mall.get("n") or 0):
         fail(f"leftover map {mall.get('n_mapped')}/{mall.get('n')}")
-    if mall.get("promotes") and bt.get("current_bill") != "Bill-12":
-        fail("TED-12 promotes but ledger current_bill is not Bill-12")
+    if mall.get("promotes") and "Bill-12" not in (bt.get("bills") or []) and bt.get("current_bill") not in ("Bill-12", "Bill-13"):
+        fail("TED-12 promotes but Bill-12 is not on the ledger")
     ok(
         f"bill11_map_all TED-12 {mall.get('n_ok')}/{mall.get('n_tests')}  "
         f"map={mall.get('n_mapped')}/{mall.get('n')}  current={bt.get('current_bill')}"
+    )
+    lng = json.loads(A2LNG.read_text(encoding="utf-8"))
+    if not lng.get("overall_ok"):
+        fail(f"bill12_language_splice fail={lng.get('fail')}")
+    if lng.get("promotes") and bt.get("current_bill") != "Bill-13":
+        fail("TED-13 promotes but ledger current_bill is not Bill-13")
+    ok(
+        f"bill12_language_splice TED-13 {lng.get('n_ok')}/{lng.get('n')}  "
+        f"not_on_W={(lng.get('splice') or {}).get('not_on_W')}  current={bt.get('current_bill')}"
     )
 
 

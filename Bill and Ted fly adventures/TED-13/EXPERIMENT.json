@@ -1,0 +1,12 @@
+{
+  "id": "TED-13",
+  "role": "ted",
+  "adventure": 2,
+  "change": "splice language as invented region at command bottlenecks (trit ALU, not FlyWire W)",
+  "vs_bill": "Bill-12",
+  "n_ok": 61,
+  "n": 61,
+  "promotes": true,
+  "promote_to": "Bill-13",
+  "why": "Language is trit ALU + closed lexicon. Commands splice at IN05B011a/DNg29/DNp01. Unknown leftover. Courtship DENY. Not on W. Not APL."
+}

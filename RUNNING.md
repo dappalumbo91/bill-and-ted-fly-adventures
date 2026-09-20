@@ -106,6 +106,7 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | TED-10 INXXX007 leftover | **promoted → Bill-10** | class-gated leftover; chordotonal class vm 5.01; FETi BANC n=6 vm 9.19; do not grow XXX |
 | TED-11 remaining leftovers | **promoted → Bill-11** | map **26/35**; 4 blocked wait; language splice job; Male FETi analog BANC |
 | TED-12 analog-join remaining 9 | **promoted → Bill-12** | leftover map **35/35**; dumps still missing; no invented data |
+| TED-13 language splice | **promoted → Bill-13** | invented region at IN05B011a/DNg29/DNp01/ALU; not on \(W\); **61/61** |
 
 ---
 

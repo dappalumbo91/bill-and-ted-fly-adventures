@@ -46,7 +46,9 @@ Pin **AEB2AD**. Law \(S=K(T_1+T_2+T_3)\). Residual hops on measured synapses. Ov
 | **TED-11 / Adventure 2** | remaining leftovers mapped (analogs, wait, refuse, language splice) | **18/18** → **Bill-11** |
 | **Bill-11** | leftover map 26/35; `docs/LEFTOVER_REMAINING.md` | promoted from TED-11 |
 | **TED-12 / Adventure 2** | analog-join the remaining 9 leftovers; map **35/35** | **21/21** → **Bill-12** |
-| **Bill-12** | current | leftover map 35/35 via analog jobs; dumps still missing |
+| **Bill-12** | leftover map 35/35 via analog jobs; dumps still missing | promoted from TED-12 |
+| **TED-13 / Adventure 2** | splice language at command bottlenecks (trit ALU, not W) | **61/61** → **Bill-13** |
+| **Bill-13** | current | language invented region; walk/turn/math; courtship DENY |
 
 Scripts: `python scripts/bill_ted.py freeze` · `ted-1` … `ted-10` · `python scripts/bill10_remaining_leftovers.py` · `ted-11` · `ledger`
 

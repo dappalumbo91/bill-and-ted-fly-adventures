@@ -1,0 +1,577 @@
+{
+  "adventure": 2,
+  "ted": "TED-13",
+  "vs_bill": "Bill-12",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "splice": {
+    "job": "language",
+    "tissue": "invented region: trit ALU + closed lexicon",
+    "not_on_W": true,
+    "at_bottlenecks": [
+      "IN05B011a",
+      "DNg29",
+      "IN01B001",
+      "DNp01",
+      "ALU"
+    ],
+    "never": [
+      "APL",
+      "INXXX007",
+      "il3LN6",
+      "lLN2F_b"
+    ],
+    "unknown": "leftover trit 0",
+    "deny": "courtship/aggression T1 off"
+  },
+  "n": 61,
+  "n_ok": 61,
+  "fail": [],
+  "problems": [
+    {
+      "q": "kind:walk",
+      "got": "command",
+      "want": "command",
+      "ok": true
+    },
+    {
+      "q": "splice:walk",
+      "got": "IN05B011a",
+      "want": "IN05B011a",
+      "ok": true
+    },
+    {
+      "q": "not on W:walk",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "command lights:walk",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "bottleneck not hub:walk",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "kind:turn left",
+      "got": "command",
+      "want": "command",
+      "ok": true
+    },
+    {
+      "q": "splice:turn left",
+      "got": "DNg29",
+      "want": "DNg29",
+      "ok": true
+    },
+    {
+      "q": "not on W:turn left",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "command lights:turn left",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "bottleneck not hub:turn left",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "kind:hear",
+      "got": "command",
+      "want": "command",
+      "ok": true
+    },
+    {
+      "q": "splice:hear",
+      "got": "DNg29",
+      "want": "DNg29",
+      "ok": true
+    },
+    {
+      "q": "not on W:hear",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "command lights:hear",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "bottleneck not hub:hear",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "kind:touch the object",
+      "got": "command",
+      "want": "command",
+      "ok": true
+    },
+    {
+      "q": "splice:touch the object",
+      "got": "IN01B001",
+      "want": "IN01B001",
+      "ok": true
+    },
+    {
+      "q": "not on W:touch the object",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "command lights:touch the object",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "bottleneck not hub:touch the object",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "kind:see",
+      "got": "command",
+      "want": "command",
+      "ok": true
+    },
+    {
+      "q": "splice:see",
+      "got": "L5",
+      "want": "L5",
+      "ok": true
+    },
+    {
+      "q": "not on W:see",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "command lights:see",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "bottleneck not hub:see",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "kind:fly",
+      "got": "command",
+      "want": "command",
+      "ok": true
+    },
+    {
+      "q": "splice:fly",
+      "got": "DNp01",
+      "want": "DNp01",
+      "ok": true
+    },
+    {
+      "q": "not on W:fly",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "command lights:fly",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "bottleneck not hub:fly",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "kind:7 + 8",
+      "got": "alu",
+      "want": "alu",
+      "ok": true
+    },
+    {
+      "q": "splice:7 + 8",
+      "got": "ALU",
+      "want": "ALU",
+      "ok": true
+    },
+    {
+      "q": "not on W:7 + 8",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "kind:add 6 times 7",
+      "got": "alu",
+      "want": "alu",
+      "ok": true
+    },
+    {
+      "q": "splice:add 6 times 7",
+      "got": "ALU",
+      "want": "ALU",
+      "ok": true
+    },
+    {
+      "q": "not on W:add 6 times 7",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "kind:JO_L + JO_R",
+      "got": "alu",
+      "want": "alu",
+      "ok": true
+    },
+    {
+      "q": "splice:JO_L + JO_R",
+      "got": "ALU",
+      "want": "ALU",
+      "ok": true
+    },
+    {
+      "q": "not on W:JO_L + JO_R",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "kind:smell",
+      "got": "leftover",
+      "want": "leftover",
+      "ok": true
+    },
+    {
+      "q": "not on W:smell",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "kind:xyzzy",
+      "got": "leftover",
+      "want": "leftover",
+      "ok": true
+    },
+    {
+      "q": "not on W:xyzzy",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "kind:court the fly",
+      "got": "deny",
+      "want": "deny",
+      "ok": true
+    },
+    {
+      "q": "not on W:court the fly",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "kind:mate",
+      "got": "deny",
+      "want": "deny",
+      "ok": true
+    },
+    {
+      "q": "not on W:mate",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "kind:fight",
+      "got": "deny",
+      "want": "deny",
+      "ok": true
+    },
+    {
+      "q": "not on W:fight",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "kind:remember this",
+      "got": "memory",
+      "want": "memory",
+      "ok": true
+    },
+    {
+      "q": "not on W:remember this",
+      "got": false,
+      "want": false,
+      "ok": true
+    },
+    {
+      "q": "7+8 ALU",
+      "got": 15,
+      "want": 15,
+      "ok": true
+    },
+    {
+      "q": "add 6 times 7",
+      "got": 42,
+      "want": 42,
+      "ok": true
+    },
+    {
+      "q": "JO_L + JO_R",
+      "got": 672,
+      "want": 672,
+      "ok": true
+    },
+    {
+      "q": "walk and smell consensus leftover",
+      "got": 0,
+      "want": 0,
+      "ok": true
+    },
+    {
+      "q": "STM holds last 3",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "never splice APL/il3LN6",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "courtship DENY",
+      "got": "deny",
+      "want": "deny",
+      "ok": true
+    },
+    {
+      "q": "guardrail courtship off",
+      "got": "off",
+      "want": "off",
+      "ok": true
+    },
+    {
+      "q": "DNg29 grown module still command",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "language not a FlyWire edge list",
+      "got": true,
+      "want": true,
+      "ok": true
+    }
+  ],
+  "utterances": [
+    {
+      "utt": "walk",
+      "kind": "command",
+      "job": "walk",
+      "splice_at": "IN05B011a",
+      "leftover": false,
+      "command": true,
+      "got": "walk",
+      "vnc_motor": 10.740180804833889,
+      "descending": 11.38578833493545,
+      "on_W": false,
+      "reads_measured_hop": true
+    },
+    {
+      "utt": "turn left",
+      "kind": "command",
+      "job": "hear_steer",
+      "splice_at": "DNg29",
+      "leftover": false,
+      "command": true,
+      "got": "hear_steer",
+      "vnc_motor": 7.772920928859144,
+      "descending": 24.213046671127735,
+      "on_W": false,
+      "reads_measured_hop": true
+    },
+    {
+      "utt": "hear",
+      "kind": "command",
+      "job": "hear_steer",
+      "splice_at": "DNg29",
+      "leftover": false,
+      "command": true,
+      "got": "hear_steer",
+      "vnc_motor": 7.772920928859144,
+      "descending": 24.213046671127735,
+      "on_W": false,
+      "reads_measured_hop": true
+    },
+    {
+      "utt": "touch the object",
+      "kind": "command",
+      "job": "object",
+      "splice_at": "IN01B001",
+      "leftover": false,
+      "command": true,
+      "got": "object",
+      "vnc_motor": 7.549628185600908,
+      "descending": 13.890959775127437,
+      "on_W": false,
+      "reads_measured_hop": true
+    },
+    {
+      "utt": "see",
+      "kind": "command",
+      "job": "see",
+      "splice_at": "L5",
+      "leftover": false,
+      "command": true,
+      "got": "see",
+      "vnc_motor": 0.0014929328621908077,
+      "descending": 1.9159346289752521,
+      "on_W": false,
+      "reads_measured_hop": true
+    },
+    {
+      "utt": "fly",
+      "kind": "command",
+      "job": "descend_escape",
+      "splice_at": "DNp01",
+      "leftover": false,
+      "command": true,
+      "got": "descend_escape",
+      "vnc_motor": 2.087500777701731,
+      "descending": 9.204417345859511,
+      "on_W": false,
+      "reads_measured_hop": true
+    },
+    {
+      "utt": "7 + 8",
+      "kind": "alu",
+      "job": "math",
+      "splice_at": "ALU",
+      "leftover": false,
+      "command": false,
+      "got": 15,
+      "on_W": false
+    },
+    {
+      "utt": "add 6 times 7",
+      "kind": "alu",
+      "job": "math",
+      "splice_at": "ALU",
+      "leftover": false,
+      "command": false,
+      "got": 42,
+      "on_W": false
+    },
+    {
+      "utt": "JO_L + JO_R",
+      "kind": "alu",
+      "job": "math",
+      "splice_at": "ALU",
+      "leftover": false,
+      "command": false,
+      "got": 672,
+      "on_W": false
+    },
+    {
+      "utt": "smell",
+      "kind": "leftover",
+      "job": "smell",
+      "splice_at": null,
+      "leftover": true,
+      "command": false,
+      "got": "leftover",
+      "on_W": false,
+      "never": "il3LN6"
+    },
+    {
+      "utt": "xyzzy",
+      "kind": "leftover",
+      "job": "unknown_token",
+      "splice_at": null,
+      "leftover": true,
+      "command": false,
+      "got": "leftover",
+      "on_W": false,
+      "trit": 0
+    },
+    {
+      "utt": "court the fly",
+      "kind": "deny",
+      "job": "courtship/aggression",
+      "splice_at": null,
+      "leftover": true,
+      "command": false,
+      "got": "DENY",
+      "on_W": false
+    },
+    {
+      "utt": "mate",
+      "kind": "deny",
+      "job": "courtship/aggression",
+      "splice_at": null,
+      "leftover": true,
+      "command": false,
+      "got": "DENY",
+      "on_W": false
+    },
+    {
+      "utt": "fight",
+      "kind": "deny",
+      "job": "courtship/aggression",
+      "splice_at": null,
+      "leftover": true,
+      "command": false,
+      "got": "DENY",
+      "on_W": false
+    },
+    {
+      "utt": "remember this",
+      "kind": "memory",
+      "job": "mushroom_body",
+      "splice_at": null,
+      "leftover": true,
+      "command": false,
+      "got": "leftover",
+      "on_W": false,
+      "never": "APL"
+    }
+  ],
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-13",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}

@@ -273,8 +273,8 @@
       "name": "LLM / coding tokens",
       "status": "mapped",
       "n": 21,
-      "mechanic": "analog is trit ALU + expression parser (21/21); not an observer on FlyWire W",
-      "do": "do not seed language on W; splice as invented region at a command bottleneck later"
+      "mechanic": "spliced TED-13: trit ALU + closed lexicon at command bottlenecks; not an observer on FlyWire W",
+      "do": "do not seed language on W; never APL/il3LN6"
     },
     {
       "kind": "unlabeled",
