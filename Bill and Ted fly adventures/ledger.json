@@ -7,14 +7,16 @@
     "Bill-2",
     "Bill-3",
     "Bill-4",
-    "Bill-5"
+    "Bill-5",
+    "Bill-6"
   ],
   "teds": [
     "TED-1",
     "TED-2",
     "TED-3",
     "TED-4",
-    "TED-5"
+    "TED-5",
+    "TED-6"
   ],
   "promotions": [
     {
@@ -41,8 +43,13 @@
       "from": "TED-5",
       "to": "Bill-5",
       "tree": "05EE701141A6A6818A6B054F8FBE1E46B0726A972D6CF87493887EA5D94204DA"
+    },
+    {
+      "from": "TED-6",
+      "to": "Bill-6",
+      "tree": "B709419EE27688C2A7D43174AB034AFCEEC4934D6B945F16F7AF7D03B4BF75B6"
     }
   ],
-  "current_bill": "Bill-5",
-  "last_tree_sha256": "05EE701141A6A6818A6B054F8FBE1E46B0726A972D6CF87493887EA5D94204DA"
+  "current_bill": "Bill-6",
+  "last_tree_sha256": "B709419EE27688C2A7D43174AB034AFCEEC4934D6B945F16F7AF7D03B4BF75B6"
 }

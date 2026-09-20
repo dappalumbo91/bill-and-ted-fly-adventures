@@ -105,3 +105,5 @@ Adventure 1 extras: Ledger B on dump N, GABA n, CRC transmitter AA — **17/17**
 **TED-4 / Adventure 2:** Bill-3 through math environments + thinking traces **37/37**. Maze/yaw/walk/smell/neuromod/trit ring/PhD (φ, ALPHA, nest \(D_{\mathrm{eff}}\), \(S\), look-split, F02). Monitor: residual hops on measured \(W\); types lit include JO-A2, DNg29, IN05B011a, il3LN6. Courtship/aggression not seeded. **Promoted → Bill-4.** `python scripts/bill3_math_env.py` · `python scripts/bill_ted.py ted-4`
 
 **TED-5:** conventional math courses on the same substrate **58/58**. Integers, rationals, algebra, geometry, trig, combinatorics, number theory, 2×2 linear algebra, polynomial calculus, stats on JO counts, logic/sets. Answers in community notation. **Promoted → Bill-5.** `python scripts/bill4_math_courses.py` · `python scripts/bill_ted.py ted-5`
+
+**TED-6:** real analysis (series, IVT, MVT, Taylor, ε-δ), multivariable (partials, Clairaut, Green, chain), ODEs on the 200 Hz wing plant \(\ddot y+\omega^2 y=0\) when descending \(>1\). Smell leftover = rest. L5 flight_only. **46/46. Promoted → Bill-6.** `python scripts/bill5_analysis.py` · `python scripts/bill_ted.py ted-6`

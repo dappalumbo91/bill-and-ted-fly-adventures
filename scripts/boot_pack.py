@@ -67,6 +67,7 @@ A1B = ROOT / "data" / "adventure1_fsot_blueprint.json"
 A1V = ROOT / "data" / "adventure1_verify.json"
 A2M = ROOT / "data" / "bill3_math_env.json"
 A2C = ROOT / "data" / "bill4_math_courses.json"
+A2A = ROOT / "data" / "bill5_analysis.json"
 
 
 def fail(msg: str) -> None:
@@ -390,7 +391,7 @@ def test_identity_phot1_develop() -> None:
         f"R={ps.get('n_predicted_R')} leftover={ps.get('n_leftover')}"
     )
     bt = json.loads(BTLED.read_text(encoding="utf-8"))
-    if bt.get("current_bill") not in ("Bill-0", "Bill-1", "Bill-2", "Bill-3", "Bill-4", "Bill-5"):
+    if bt.get("current_bill") not in ("Bill-0", "Bill-1", "Bill-2", "Bill-3", "Bill-4", "Bill-5", "Bill-6"):
         fail(f"bill_ted current {bt.get('current_bill')}")
     ok(f"bill_ted current={bt.get('current_bill')} teds={bt.get('teds')}")
     a1 = json.loads(ADV1.read_text(encoding="utf-8"))
@@ -486,11 +487,22 @@ def test_identity_phot1_develop() -> None:
         fail(f"bill4_math_courses fail={a2c.get('fail')}")
     if int(a2c.get("n_ok") or 0) != int(a2c.get("n") or 0):
         fail(f"math courses {a2c.get('n_ok')}/{a2c.get('n')}")
-    if a2c.get("promotes") and bt.get("current_bill") != "Bill-5":
-        fail("TED-5 promotes but ledger current_bill is not Bill-5")
+    if a2c.get("promotes") and "Bill-5" not in (bt.get("bills") or []) and bt.get("current_bill") not in ("Bill-5", "Bill-6"):
+        fail("TED-5 promotes but Bill-5 is not on the ledger")
     ok(
         f"bill4_math_courses TED-5 {a2c.get('n_ok')}/{a2c.get('n')}  "
         f"courses={len(a2c.get('by_course') or {})}  current={bt.get('current_bill')}"
+    )
+    a2a = json.loads(A2A.read_text(encoding="utf-8"))
+    if not a2a.get("overall_ok"):
+        fail(f"bill5_analysis fail={a2a.get('fail')}")
+    if int(a2a.get("n_ok") or 0) != int(a2a.get("n") or 0):
+        fail(f"analysis {a2a.get('n_ok')}/{a2a.get('n')}")
+    if a2a.get("promotes") and bt.get("current_bill") != "Bill-6":
+        fail("TED-6 promotes but ledger current_bill is not Bill-6")
+    ok(
+        f"bill5_analysis TED-6 {a2a.get('n_ok')}/{a2a.get('n')}  "
+        f"plant_f={((a2a.get('plant') or {}).get('f_wb_hz'))}  current={bt.get('current_bill')}"
     )
 
 

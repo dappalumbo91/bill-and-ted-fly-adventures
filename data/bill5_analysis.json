@@ -1,0 +1,516 @@
+{
+  "adventure": 2,
+  "ted": "TED-6",
+  "vs_bill": "Bill-5",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "law": "analysis + multivariable + wing-plant ODE on trit/seeds/hops",
+  "n": 46,
+  "n_ok": 46,
+  "fail": [],
+  "by_course": {
+    "analysis": {
+      "n": 13,
+      "n_ok": 13
+    },
+    "multivariable": {
+      "n": 15,
+      "n_ok": 15
+    },
+    "ode": {
+      "n": 17,
+      "n_ok": 17
+    },
+    "guardrail": {
+      "n": 1,
+      "n_ok": 1
+    }
+  },
+  "problems": [
+    {
+      "course": "analysis",
+      "q": "geometric \u03a3_{k=0}^{5} (1/2)^k = 63/32",
+      "got": [
+        63,
+        32
+      ],
+      "want": [
+        63,
+        32
+      ],
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "analysis",
+      "q": "squeeze 0 < 1/n < 1 and 1/n \u2192 0 at n=1000",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "analysis",
+      "q": "(1+1/n)^n monotone toward e (8<16<32<e)",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "analysis",
+      "q": "Fibonacci ratios are Cauchy \u2192 \u03c6",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "analysis",
+      "q": "IVT: f(1)<0<f(2) for x\u00b3\u2212x\u22121",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "analysis",
+      "q": "IVT bisection root in (1,2), f(mid) leftover small",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "analysis",
+      "q": "MVT x\u00b2 on [1,3]: (9-1)/2 = f'(2) = 4",
+      "got": 4,
+      "want": 4,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "analysis",
+      "q": "Rolle x\u00b2\u22121 on [\u22121,1]: f'(0)=0",
+      "got": 0,
+      "want": 0,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "analysis",
+      "q": "Taylor e remainder \u2264 e/(n+1)! at n=8",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "analysis",
+      "q": "\u03b5-\u03b4 continuity of x\u00b2 at 0",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "analysis",
+      "q": "lim_{x\u21920} sin(x)/x = 1",
+      "got": 1.0,
+      "want": 1.0,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "analysis",
+      "q": "comparison 4^{-k} \u2264 2^{-k}",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "analysis",
+      "q": "x\u00b2 uniformly continuous on [0,1]: Lip\u22642",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "multivariable",
+      "q": "f_x of x\u00b2y + 3xy\u00b2 at (1,1)",
+      "got": 5.0,
+      "want": 5.0,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "multivariable",
+      "q": "f_y at (1,1)",
+      "got": 7.0,
+      "want": 7.0,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "multivariable",
+      "q": "Clairaut f_xy = f_yx at (1,1)",
+      "got": 8.0,
+      "want": 8.0,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "multivariable",
+      "q": "f_xx at (1,1) = 2y = 2",
+      "got": 2.0,
+      "want": 2.0,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "multivariable",
+      "q": "f_yy at (1,1) = 6x = 6",
+      "got": 6.0,
+      "want": 6.0,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "multivariable",
+      "q": "grad f(1,1) = (5,7)",
+      "got": [
+        5.0,
+        7.0
+      ],
+      "want": [
+        5.0,
+        7.0
+      ],
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "multivariable",
+      "q": "D_u f(1,1), u=(3,4)/5",
+      "got": 8.6,
+      "want": 8.6,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "multivariable",
+      "q": "x\u00b2+y\u00b2 Hessian det=4>0, f_xx>0 min",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "multivariable",
+      "q": "x\u00b2\u2212y\u00b2 Hessian det=\u22124 saddle",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "multivariable",
+      "q": "Jacobian det of z\u21a6z\u00b2 at (1,1)",
+      "got": 8,
+      "want": 8,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "multivariable",
+      "q": "\u222c_R (2x+3y) dA, R=[0,1]\u00d7[0,2]",
+      "got": 8.0,
+      "want": 8.0,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "multivariable",
+      "q": "Green F=(\u2212y,x) on unit square",
+      "got": 2.0,
+      "want": 2.0,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "multivariable",
+      "q": "chain z=x\u00b2+y\u00b2, x=t, y=t\u00b2, \u017c(1)",
+      "got": 6,
+      "want": 6,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "multivariable",
+      "q": "div(x,y)=2",
+      "got": 2,
+      "want": 2,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "multivariable",
+      "q": "curl(\u2212y,x)=2 (2D)",
+      "got": 2,
+      "want": 2,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "ode",
+      "q": "plant \u03c9 = 2\u03c0 \u00b7 200 Hz",
+      "got": 1256.6370614359173,
+      "want": 1256.6370614359173,
+      "ok": true,
+      "observer": "DNp01",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "ode",
+      "q": "period T = 1/200 s",
+      "got": 0.005,
+      "want": 0.005,
+      "ok": true,
+      "observer": "DNp01",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "ode",
+      "q": "\u00ff + \u03c9\u00b2 y = 0 for y=sin(\u03c9t)",
+      "got": 0.0,
+      "want": 0.0,
+      "ok": true,
+      "observer": "DNp01",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "ode",
+      "q": "oscillator energy y\u00b2+(\u1e8f/\u03c9)\u00b2=1",
+      "got": 0.9999999999999999,
+      "want": 1.0,
+      "ok": true,
+      "observer": "DNp01",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "ode",
+      "q": "walk descending>1 \u21d2 200 Hz in band",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "vnc_sensory",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "ode",
+      "q": "smell leftover descending\u22641 \u21d2 rest y=0",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "olfactory",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "ode",
+      "q": "L5 flight_only: desc>1, vnc leftover",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "L5",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "ode",
+      "q": "DNp01 descending drives oscillator",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "DNp01",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "ode",
+      "q": "yaw trit \u21d2 anti-phase plant (yaw True)",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "ode",
+      "q": "finite-difference \u00ff+\u03c9\u00b2y residual / \u03c9\u00b2 < 0.05 at 2 kHz",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "DNp01",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "ode",
+      "q": "samples/beat = fps/f_wb = 10",
+      "got": 10,
+      "want": 10,
+      "ok": true,
+      "observer": "DNp01",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "ode",
+      "q": "y'=-2y, y(0)=1 \u21d2 y(1)=e^{-2}",
+      "got": 0.1353352832366127,
+      "want": 0.1353352832366127,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "ode",
+      "q": "Euler 10 steps h=0.01 on y'=-y within 0.01 of e^{-0.1}",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "ode",
+      "q": "separable dy/y=dx, y(0)=1 \u21d2 y(1)=e",
+      "got": 2.718281828459045,
+      "want": 2.718281828459045,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "ode",
+      "q": "command overlay: desc>1 on, leftover off (smell)",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "olfactory",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "ode",
+      "q": "bilateral consensus 0 \u21d2 in-phase wings (yaw False)",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "ode",
+      "q": "JO consensus trit still 0 (straight)",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "JO",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    },
+    {
+      "course": "guardrail",
+      "q": "courtship not an analysis/ODE seed",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "observer": "scalar",
+      "notation": "conventional analysis",
+      "substrate": "trit ALU + seeds + 200 Hz wing plant"
+    }
+  ],
+  "plant": {
+    "f_wb_hz": 200.0,
+    "omega": 1256.6370614359173,
+    "sim_fps": 2000.0,
+    "fd_rel_residual": 0.030879654995169776
+  },
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-6",
+  "thinking": {
+    "rule": "Analysis identities on seeds/ALU. Plant ODE is \u00ff+\u03c9\u00b2y=0 when descending>1. Traces: DNp01, JO, L5, VNC, olfactory leftover. Courtship off.",
+    "deny_family_seeded": false
+  }
+}

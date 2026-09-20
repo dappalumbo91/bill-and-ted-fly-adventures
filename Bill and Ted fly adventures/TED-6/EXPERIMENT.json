@@ -1,0 +1,13 @@
+{
+  "id": "TED-6",
+  "role": "ted",
+  "adventure": 2,
+  "change": "real analysis, multivariable calculus, ODEs on the 200 Hz wing plant",
+  "vs_bill": "Bill-5",
+  "n_ok": 46,
+  "n": 46,
+  "fail": [],
+  "promotes": true,
+  "promote_to": "Bill-6",
+  "why": "IVT/MVT/Taylor/\u03b5-\u03b4; partials/Green/chain; \u00ff+\u03c9\u00b2y=0 when descending>1. Same substrate. No new knobs. Courtship not seeded."
+}

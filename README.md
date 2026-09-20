@@ -105,6 +105,8 @@ python scripts/bill3_math_env.py            # Bill-3 math labs + hop thinking tr
 python scripts/bill_ted.py ted-4            # promote TED-4 → Bill-4 if math env holds
 python scripts/bill4_math_courses.py        # conventional math courses (Z,Q,algebra,calc,…)
 python scripts/bill_ted.py ted-5            # promote TED-5 → Bill-5 if courses hold
+python scripts/bill5_analysis.py            # analysis, multivariable, 200 Hz plant ODEs
+python scripts/bill_ted.py ted-6            # promote TED-6 → Bill-6 if analysis holds
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 
