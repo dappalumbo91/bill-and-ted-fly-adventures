@@ -32,3 +32,15 @@ Isolated n=2 seeds are mid-path: **IN01B001** lights descending at hop-3 (3.56) 
 5. Courtship/aggression stay \(T_1\) off.
 
 Document freeze: `data/bill8_grow_bottlenecks.json`.
+
+
+## TED-10 leftover solve — INXXX007
+
+| Seed | n | hop-2 vm | command | Mechanic |
+|------|--:|---------:|:-------:|----------|
+| chordotonal **class** | 2136 | 5.01 | True | proprio → leg |
+| **INXXX007** type | 2 | 0.12 | False | class-gated leftover; XXX unlabeled |
+| **DNg29** type | 2 | 2.09 | True | isolated command (contrast) |
+| class hop-3 | — | — | — | effector **tibia_extensor_FETi** |
+
+Do not grow INXXX007. Splice the job **chordotonal class → tibia_extensor_FETi**. FETi live n_seed=6.

@@ -71,6 +71,7 @@ A2A = ROOT / "data" / "bill5_analysis.json"
 A2MEM = ROOT / "data" / "bill6_memory.json"
 A2GX = ROOT / "data" / "bill7_memory_expand.json"
 A2GR = ROOT / "data" / "bill8_grow_bottlenecks.json"
+A2IX = ROOT / "data" / "bill9_inxxx_leftover.json"
 
 
 def fail(msg: str) -> None:
@@ -394,7 +395,10 @@ def test_identity_phot1_develop() -> None:
         f"R={ps.get('n_predicted_R')} leftover={ps.get('n_leftover')}"
     )
     bt = json.loads(BTLED.read_text(encoding="utf-8"))
-    if bt.get("current_bill") not in ("Bill-0", "Bill-1", "Bill-2", "Bill-3", "Bill-4", "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9"):
+    if bt.get("current_bill") not in (
+        "Bill-0", "Bill-1", "Bill-2", "Bill-3", "Bill-4",
+        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10",
+    ):
         fail(f"bill_ted current {bt.get('current_bill')}")
     ok(f"bill_ted current={bt.get('current_bill')} teds={bt.get('teds')}")
     a1 = json.loads(ADV1.read_text(encoding="utf-8"))
@@ -536,11 +540,20 @@ def test_identity_phot1_develop() -> None:
         fail(f"bill8_grow_bottlenecks fail n_command={gr.get('n_command_ok')}")
     if int(gr.get("n_command_ok") or 0) < 4:
         fail(f"grow command {gr.get('n_command_ok')}/{gr.get('n_modules')}")
-    if gr.get("promotes") and bt.get("current_bill") != "Bill-9":
-        fail("TED-9 promotes but ledger current_bill is not Bill-9")
+    if gr.get("promotes") and "Bill-9" not in (bt.get("bills") or []) and bt.get("current_bill") not in ("Bill-9", "Bill-10"):
+        fail("TED-9 promotes but Bill-9 is not on the ledger")
     ok(
         f"bill8_grow_bottlenecks TED-9 {gr.get('n_command_ok')}/{gr.get('n_modules')}  "
         f"mode={gr.get('mode')}  current={bt.get('current_bill')}"
+    )
+    ix = json.loads(A2IX.read_text(encoding="utf-8"))
+    if not ix.get("overall_ok"):
+        fail(f"bill9_inxxx_leftover fail={ix.get('fail')}")
+    if ix.get("promotes") and bt.get("current_bill") != "Bill-10":
+        fail("TED-10 promotes but ledger current_bill is not Bill-10")
+    ok(
+        f"bill9_inxxx_leftover TED-10 {ix.get('n_ok')}/{ix.get('n')}  "
+        f"kind={(ix.get('leftover') or {}).get('kind')}  current={bt.get('current_bill')}"
     )
 
 

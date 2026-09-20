@@ -113,6 +113,8 @@ python scripts/bill7_memory_expand.py       # STM φ² window, LTM class index, 
 python scripts/bill_ted.py ted-8            # promote TED-8 → Bill-8
 python scripts/bill8_grow_bottlenecks.py    # residual-seed command bottleneck types (needs D:)
 python scripts/bill_ted.py ted-9            # promote TED-9 → Bill-9
+python scripts/bill9_inxxx_leftover.py      # INXXX007 leftover; chordotonal → FETi
+python scripts/bill_ted.py ted-10           # promote TED-10 → Bill-10
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

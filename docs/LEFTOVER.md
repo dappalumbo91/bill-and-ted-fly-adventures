@@ -27,6 +27,7 @@ Consensus trit \(0\) is leftover of a decision (superpose). Missing dumps stay m
 | olfactory **il3LN6** | collapse 1319× | do not expand |
 | Kenyon **APL** / MBp3 | MB leftover, motor off | do not expand |
 | JO hop-1 silent **669** | 672−3; 3 = DNg29 | expand on DNg29, not the 669 |
+| **INXXX007** | chordotonal class 2136→hop-1 this type, motor on; type-alone n=2 leftover | splice class → FETi; do not grow INXXX007 |
 
 ## Unlabeled (measured empty, not imputed)
 

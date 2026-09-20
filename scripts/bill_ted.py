@@ -47,6 +47,8 @@ def freeze_paths() -> list[Path]:
         BT / "TED-7" / "EXPERIMENT.json",
         BT / "TED-8" / "EXPERIMENT.json",
         BT / "TED-9" / "EXPERIMENT.json",
+        BT / "TED-10" / "EXPERIMENT.json",
+        BT / "Adventure-2" / "LEFTOVER_INXXX.md",
         BT / "Adventure-2" / "COURSES.md",
         BT / "Adventure-2" / "ANALYSIS.md",
         BT / "Adventure-2" / "MEMORY.md",
@@ -446,6 +448,44 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  promoted Bill-9 tree={man['tree_sha256'][:12]}")
         else:
             print("  Bill-8 stays")
+    elif cmd == "ted-10":
+        vpath = ROOT / "data" / "bill9_inxxx_leftover.json"
+        if not vpath.is_file():
+            print("  run python scripts/bill9_inxxx_leftover.py first")
+            return 1
+        v = json.loads(vpath.read_text(encoding="utf-8"))
+        win = bool(v.get("promotes") and v.get("overall_ok"))
+        exp = {
+            "id": "TED-10",
+            "role": "ted",
+            "adventure": 2,
+            "change": "INXXX007 class-gated leftover; splice chordotonal → FETi; do not grow XXX type",
+            "vs_bill": "Bill-9",
+            "n_ok": v.get("n_ok"),
+            "n": v.get("n"),
+            "promotes": win,
+            "promote_to": "Bill-10" if win else None,
+            "why": (
+                "Chordotonal class commands; INXXX007 isolate leftover (unlabeled). "
+                "DNg29 isolate still commands. Effector is tibia_extensor_FETi."
+            ),
+        }
+        dest = BT / "TED-10"
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / "EXPERIMENT.json").write_text(json.dumps(exp, indent=2), encoding="utf-8")
+        if "TED-10" not in led["teds"]:
+            led["teds"].append("TED-10")
+        print(f"  TED-10 promotes={win}  {exp.get('n_ok')}/{exp.get('n')}")
+        if win:
+            man = freeze("Bill-10")
+            if "Bill-10" not in led["bills"]:
+                led["bills"].append("Bill-10")
+            led["promotions"].append({"from": "TED-10", "to": "Bill-10", "tree": man["tree_sha256"]})
+            led["current_bill"] = "Bill-10"
+            led["last_tree_sha256"] = man["tree_sha256"]
+            print(f"  promoted Bill-10 tree={man['tree_sha256'][:12]}")
+        else:
+            print("  Bill-9 stays")
     elif cmd == "ted-1":
         exp = ted1()
         if "TED-1" not in led["teds"]:
@@ -463,7 +503,7 @@ def main(argv: list[str] | None = None) -> int:
     elif cmd == "ledger":
         print(json.dumps({k: led[k] for k in led if k != "files"}, indent=2)[:2000])
     else:
-        print("usage: freeze [Bill-0] | ted-1 | ted-2 | ted-3 | ted-4 | ted-5 | ted-6 | ted-7 | ted-8 | ted-9 | ledger")
+        print("usage: freeze [Bill-0] | ted-1 | … | ted-10 | ledger")
         return 1
     LEDGER.write_text(json.dumps(led, indent=2), encoding="utf-8")
     print(f"  wrote {LEDGER}")

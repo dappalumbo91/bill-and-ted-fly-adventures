@@ -4,12 +4,12 @@
   "phi": 1.618033988749895,
   "overlay": 0.6180339887498948,
   "leftover_floor_1_over_phi2": 0.38196601125010515,
-  "n": 30,
-  "n_mapped": 21,
+  "n": 31,
+  "n_mapped": 22,
   "by_kind": {
     "overlay": 2,
     "consensus": 2,
-    "hub": 3,
+    "hub": 4,
     "unlabeled": 6,
     "product": 2,
     "horizon": 1,
@@ -22,7 +22,7 @@
     "language": 1
   },
   "by_status": {
-    "mapped": 21,
+    "mapped": 22,
     "sibling": 2,
     "blocked": 4,
     "refused": 2,
@@ -84,6 +84,14 @@
       "n": 669,
       "mechanic": "672\u22123=669 below overlay after hop-1; 3 active = DNg29 bottleneck",
       "do": "command bottleneck DNg29 is the expansion candidate"
+    },
+    {
+      "kind": "hub",
+      "name": "INXXX007 class-gated leftover",
+      "status": "mapped",
+      "n": 2,
+      "mechanic": "BANC chordotonal class n=2136 hop-1 top INXXX007 motor on; type-alone n=2 leftover. XXX unlabeled. Effector hop-3 tibia_extensor_FETi",
+      "do": "splice chordotonal class \u2192 FETi; do not grow INXXX007"
     },
     {
       "kind": "unlabeled",

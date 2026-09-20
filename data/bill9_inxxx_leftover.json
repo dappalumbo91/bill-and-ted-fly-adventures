@@ -1,0 +1,179 @@
+{
+  "adventure": 2,
+  "ted": "TED-10",
+  "vs_bill": "Bill-9",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "leftover": {
+    "type": "INXXX007",
+    "kind": "class_gated_leftover",
+    "unlabeled": true,
+    "class": "chordotonal",
+    "class_n_seed": 2136,
+    "class_hop1_top": "INXXX007",
+    "class_hop2_vnc_motor": 5.010851171929309,
+    "class_hop3_top": "tibia_extensor_FETi",
+    "type_n_seed": 2,
+    "type_command": false,
+    "contrast_DNg29_isolated_command": true,
+    "do": "splice chordotonal \u2192 FETi; do not grow INXXX007"
+  },
+  "feti": {
+    "banc": {
+      "tibia_extensor_FETi:type_exact": {
+        "n_seed": 6,
+        "hop0_vnc_motor": 0.0,
+        "vnc_motor": 9.187213565536167,
+        "descending": 0.2227314390467459,
+        "command_hops_2_4": true,
+        "is_motor_identity": false,
+        "hops": {
+          "1": {
+            "n_active": 0,
+            "vnc_motor": 0.0,
+            "descending": 0.0,
+            "top": null,
+            "command": false
+          },
+          "2": {
+            "n_active": 1,
+            "vnc_motor": 9.187213565536167,
+            "descending": 0.2227314390467459,
+            "top": "tibia_extensor_FETi",
+            "command": true
+          },
+          "3": {
+            "n_active": 6,
+            "vnc_motor": 20.516959983149512,
+            "descending": 1.710998585363484,
+            "top": "IN19B003",
+            "command": true
+          },
+          "4": {
+            "n_active": 6,
+            "vnc_motor": 13.231458208105119,
+            "descending": 3.36553953891829,
+            "top": "IN19B003",
+            "command": true
+          }
+        },
+        "gpu": true
+      },
+      "tibia_extensor:type_prefix": {
+        "n_seed": 12,
+        "hop0_vnc_motor": 0.0,
+        "vnc_motor": 16.092105263157833,
+        "descending": 0.3602284011916576,
+        "command_hops_2_4": true,
+        "is_motor_identity": false,
+        "hops": {
+          "1": {
+            "n_active": 2,
+            "vnc_motor": 5.888888888888635,
+            "descending": 0.388888888888872,
+            "top": "tibia_extensor_FETi",
+            "command": true
+          },
+          "2": {
+            "n_active": 4,
+            "vnc_motor": 16.092105263157833,
+            "descending": 0.3602284011916576,
+            "top": "tibia_extensor_FETi",
+            "command": true
+          },
+          "3": {
+            "n_active": 1,
+            "vnc_motor": 15.846655666866035,
+            "descending": 0.8763560810733545,
+            "top": "IN08A002",
+            "command": true
+          },
+          "4": {
+            "n_active": 3,
+            "vnc_motor": 14.409430400987217,
+            "descending": 1.0851791078117399,
+            "top": "tibia_extensor_FETi",
+            "command": true
+          }
+        },
+        "gpu": true
+      }
+    },
+    "male": {
+      "tibia_extensor_FETi:type_exact": {
+        "n_seed": 0
+      },
+      "tibia_extensor:type_prefix": {
+        "n_seed": 0
+      }
+    }
+  },
+  "live_error": null,
+  "n": 9,
+  "n_ok": 9,
+  "fail": [],
+  "problems": [
+    {
+      "q": "chordotonal class hop-2 vnc_motor command",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "INXXX007 type-alone leftover",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "DNg29 type-alone still command (contrast)",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "class hop-1 top is INXXX007",
+      "got": "INXXX007",
+      "want": "INXXX007",
+      "ok": true
+    },
+    {
+      "q": "class hop-3 effector tibia_extensor_FETi",
+      "got": "tibia_extensor_FETi",
+      "want": "tibia_extensor_FETi",
+      "ok": true
+    },
+    {
+      "q": "XXX unlabeled placeholder type",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "do not grow INXXX007 (class-gated leftover)",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "splice job is chordotonal class \u2192 FETi",
+      "got": true,
+      "want": true,
+      "ok": true
+    },
+    {
+      "q": "FETi type-exact is motor identity or command",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "n_seed": 6,
+      "hop0_vnc_motor": 0.0
+    }
+  ],
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-10",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}

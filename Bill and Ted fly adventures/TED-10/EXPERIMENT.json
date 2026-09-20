@@ -1,0 +1,12 @@
+{
+  "id": "TED-10",
+  "role": "ted",
+  "adventure": 2,
+  "change": "INXXX007 class-gated leftover; splice chordotonal \u2192 FETi; do not grow XXX type",
+  "vs_bill": "Bill-9",
+  "n_ok": 9,
+  "n": 9,
+  "promotes": true,
+  "promote_to": "Bill-10",
+  "why": "Chordotonal class commands; INXXX007 isolate leftover (unlabeled). DNg29 isolate still commands. Effector is tibia_extensor_FETi."
+}
