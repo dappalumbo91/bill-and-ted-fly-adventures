@@ -6,7 +6,7 @@
   "overlay": "one agreed label",
   "consensus": "two labels, trit 0",
   "leftover": "no label, trit 0",
-  "trace_sha256": "2EBE6BBE3E74C33BAB4329CA623E6FE7DD819216F415D1E0DB103DD2183B22A4",
+  "trace_sha256": "0085BB291B6BBA0CEDCF39C6ECCDA8A63FEF86A219DF429B756AEB8644C84159",
   "lean_file": "lean/Adventure1Thought.lean",
   "lean_ok": true,
   "easy": {
@@ -18,14 +18,14 @@
   },
   "challenge": {
     "n": 299,
-    "correct": 33,
-    "wrong": 1,
+    "correct": 41,
+    "wrong": 0,
     "leftover": 258,
-    "consensus_0": 7
+    "consensus_0": 0
   },
   "use": {
-    "n": 52,
-    "correct": 52,
+    "n": 67,
+    "correct": 67,
     "wrong": 0,
     "leftover": 0,
     "consensus_0": 0

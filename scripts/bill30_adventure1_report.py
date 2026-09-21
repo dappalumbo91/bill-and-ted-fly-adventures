@@ -24,7 +24,8 @@ from bill23_arc import choices_of, load_split, study_facts  # noqa: E402
 from bill26_arc_leftovers import pick_v3  # noqa: E402
 from bill27_arc_challenge import load_challenge  # noqa: E402
 from bill28_use import BANK as BANK29, PROCS_ALL  # noqa: E402
-from bill29_use_more import BANK as BANK30, all_pick  # noqa: E402
+from bill29_use_more import BANK as BANK30  # noqa: E402
+from bill31_use_gaps import BANK as BANK32, family_pick  # noqa: E402
 import fsot_compute as fsot  # noqa: E402
 
 OUT = ROOT / "data" / "adventure1_trace.json"
@@ -52,7 +53,7 @@ def trace_arc(exam: str, frame, facts) -> list[dict]:
         texts = dict(pairs)
         key = str(row["answerKey"]).strip()
         stem = str(row["question"]).replace("\n", " ")
-        use_lab, use_law = all_pick(stem, pairs)
+        use_lab, use_law = family_pick(stem, pairs)
         base_lab, base_how, _ = pick_v3(stem, pairs, facts, PROCS_ALL)
         if use_law == "conflict":
             lab, how = None, "consensus_0"
@@ -94,7 +95,7 @@ def trace_bank(exam: str, bank: list[dict]) -> list[dict]:
         pairs = item["choices"]
         texts = dict(pairs)
         stem = item["stem"]
-        lab, law = all_pick(stem, pairs)
+        lab, law = family_pick(stem, pairs)
         how = "consensus_0" if law == "conflict" else ("use" if lab is not None else "leftover")
         if item["kind"] == "near":
             voted_wrong = law == item["law"]
@@ -143,7 +144,7 @@ def write_lean(c_easy, c_chal, c_use) -> None:
     LEAN.parent.mkdir(parents=True, exist_ok=True)
     text = f"""-- Adventure 1 thought law. Pin AEB2AD. 0 free parameters.
 -- One agreed label overlays. Disagreement or silence is trit 0 (no letter).
--- The counts are the replay of the Bill-30 brain. Lean checks the arithmetic.
+-- The counts are the replay after the TED-32 gap relations. Lean checks the arithmetic.
 
 def pin : String := "AEB2AD"
 def freeParameters : Nat := 0
@@ -189,7 +190,11 @@ def main() -> int:
     facts = study_facts(load_split("train"))
     easy_rows = trace_arc("ARC-Easy validation", load_split("validation"), facts)
     chal_rows = trace_arc("ARC-Challenge validation", load_challenge("validation"), facts)
-    use_rows = trace_bank("use, first relations", BANK29) + trace_bank("use, further relations", BANK30)
+    use_rows = (
+        trace_bank("use, first relations", BANK29)
+        + trace_bank("use, further relations", BANK30)
+        + trace_bank("use, cleaned gaps", BANK32)
+    )
     c_easy, c_chal, c_use = counts(easy_rows), counts(chal_rows), counts(use_rows)
     accounted = (
         c_easy["correct"] + c_easy["wrong"] + c_easy["leftover"] + c_easy["consensus_0"] == c_easy["n"]
@@ -268,10 +273,10 @@ A family answer of `leftover` means it refused. `consensus 0` means two routes n
     wrong_lines = "\n".join(
         f"| `{cell(r['id'])}` | {cell(r['stem'][:180])} | {cell(r['expected'])} | {cell(r['family'])} | {cell(r['route'])} |"
         for r in chal_wrong
-    ) or "|  |  |  |  | |"
+    ) or "| none |  |  |  | |"
     report = f"""# Adventure 1 report
 
-Pin **AEB2AD**. 0 free parameters. Current organism **Bill-30**. This is the learning closeout of Adventure 1. The connectome closeout (hops, blueprint, two-animal split) stays in `CLOSEOUT.md`. This report is what the organism was taught, what it answered, and what was changed.
+Pin **AEB2AD**. 0 free parameters. The brain replayed here includes the TED-32 gap relations. **Bill-32** freezes this record. Measured edges are still unchanged. This is the cleaned learning closeout of Adventure 1. The connectome closeout (hops, blueprint, two-animal split) stays in `CLOSEOUT.md`. This report is what the organism was taught, what it answered, and what was changed.
 
 Trace: `data/adventure1_trace.json`. Side by side: `docs/ADVENTURE1_SIDE_BY_SIDE.md`. Lean check: `lean/Adventure1Thought.lean` ({'passed' if lean_ok else 'FAILED'}).
 
@@ -355,9 +360,9 @@ The full question, expected answer, and family answer for every Easy item, every
 - A fact collision still happens. The wrong-answer table above is that failure: a route named a letter, and it was the wrong letter.
 - Pasting Challenge items into the cue list would raise the Challenge score the way Easy was raised. That would be answer memory, which is the function this closeout separated from use.
 
-## Where Adventure 2 starts
+## Still inside Adventure 1
 
-Bill-30. Pin AEB2AD. Measured \\(W\\) as frozen. `reason_use` is the splice to extend. The open job is more situations, each checked on a new wording and on a near miss, then scored on Challenge without copying those questions into the cues. OpenStax after decimals, and a fresh math set the ALU computes, are the other open curriculum. Courtship stays off.
+The wrong commitment and the seven ties are cleaned. The remaining Challenge leftovers are situations with no relation yet. They stay refusals. Adventure 2 waits. The open job is more situations, each checked on a new wording and on a near miss, without copying Challenge questions into the cues. Measured \\(W\\) stays frozen. Courtship stays off.
 
 Trace sha256 `{trace_sha}`.
 """

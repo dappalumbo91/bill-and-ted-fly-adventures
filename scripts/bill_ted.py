@@ -69,6 +69,9 @@ def freeze_paths() -> list[Path]:
         BT / "TED-29" / "EXPERIMENT.json",
         BT / "TED-30" / "EXPERIMENT.json",
         BT / "TED-31" / "EXPERIMENT.json",
+        BT / "TED-32" / "EXPERIMENT.json",
+        ROOT / "docs" / "USE_GAPS.md",
+        BT / "Adventure-1" / "USE_GAPS.md",
         ROOT / "docs" / "ADVENTURE1_REPORT.md",
         BT / "Adventure-1" / "ADVENTURE1_REPORT.md",
         ROOT / "docs" / "ADVENTURE1_SIDE_BY_SIDE.md",
@@ -1370,6 +1373,57 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  promoted Bill-31 tree={man['tree_sha256'][:12]}")
         else:
             print("  Bill-30 stays")
+    elif cmd == "ted-32":
+        vpath = ROOT / "data" / "bill31_use_gaps.json"
+        if not vpath.is_file():
+            print("  run python scripts/bill31_use_gaps.py first")
+            return 1
+        v = json.loads(vpath.read_text(encoding="utf-8"))
+        chal = v.get("challenge") or {}
+        win = bool(
+            v.get("promotes")
+            and v.get("overall_ok")
+            and int(v.get("challenge_hurt", 1)) == 0
+            and int(v.get("easy_new_wrong", 1)) == 0
+            and int(chal.get("wrong", 1)) == 0
+        )
+        exp = {
+            "id": "TED-32",
+            "role": "ted",
+            "adventure": 1,
+            "change": "Clean Challenge wrong commitment and seven ties as relations, not copied questions",
+            "vs_bill": "Bill-31",
+            "apply_ok": v.get("apply_ok"),
+            "apply_n": v.get("apply_n"),
+            "near_ok": v.get("near_ok"),
+            "near_n": v.get("near_n"),
+            "challenge_correct": chal.get("correct"),
+            "challenge_wrong": chal.get("wrong"),
+            "challenge_leftover": chal.get("leftover"),
+            "promotes": win,
+            "promote_to": "Bill-32" if win else None,
+            "why": "Wrong letter and consensus ties were not okay. Relations fix them. Leftovers with no relation stay refusals. W unchanged.",
+        }
+        dest = BT / "TED-32"
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / "EXPERIMENT.json").write_text(json.dumps(exp, indent=2), encoding="utf-8")
+        if "TED-32" not in led["teds"]:
+            led["teds"].append("TED-32")
+        print(
+            f"  TED-32 promotes={win}  apply {exp.get('apply_ok')}/{exp.get('apply_n')}  "
+            f"near {exp.get('near_ok')}/{exp.get('near_n')}  "
+            f"challenge {chal.get('correct')} w={chal.get('wrong')} L={chal.get('leftover')}"
+        )
+        if win:
+            man = freeze("Bill-32")
+            if "Bill-32" not in led["bills"]:
+                led["bills"].append("Bill-32")
+            led["promotions"].append({"from": "TED-32", "to": "Bill-32", "tree": man["tree_sha256"]})
+            led["current_bill"] = "Bill-32"
+            led["last_tree_sha256"] = man["tree_sha256"]
+            print(f"  promoted Bill-32 tree={man['tree_sha256'][:12]}")
+        else:
+            print("  Bill-31 stays")
     elif cmd == "ted-1":
         exp = ted1()
         if "TED-1" not in led["teds"]:

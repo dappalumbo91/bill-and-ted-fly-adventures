@@ -157,6 +157,8 @@ python scripts/bill29_use_more.py           # more relations on new wording
 python scripts/bill_ted.py ted-30
 python scripts/bill30_adventure1_report.py  # side-by-side replay and Adventure 1 report
 python scripts/bill_ted.py ted-31
+python scripts/bill31_use_gaps.py           # clean the wrong commitment and the ties
+python scripts/bill_ted.py ted-32
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

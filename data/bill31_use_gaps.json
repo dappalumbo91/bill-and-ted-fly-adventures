@@ -1,0 +1,246 @@
+{
+  "adventure": 1,
+  "ted": "TED-32",
+  "vs_bill": "Bill-31",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "fitted_challenge_val_into_cues": false,
+  "apply_ok": 8,
+  "apply_n": 8,
+  "near_ok": 7,
+  "near_n": 7,
+  "old_apply_ok": 33,
+  "old_apply_n": 33,
+  "old_near_ok": 19,
+  "old_near_n": 19,
+  "source_ok": 8,
+  "source_n": 8,
+  "easy_still_correct": 570,
+  "easy_new_wrong": 0,
+  "challenge": {
+    "correct": 41,
+    "wrong": 0,
+    "leftover": 258,
+    "consensus_0": 0
+  },
+  "challenge_hurt": 0,
+  "bank": [
+    {
+      "id": "apply-rock-percent",
+      "kind": "apply",
+      "law": "pie_percent",
+      "want": "C",
+      "picked": "C",
+      "fired": "pie_percent",
+      "ok": true
+    },
+    {
+      "id": "near-temp-each-day",
+      "kind": "near",
+      "law": "pie_percent",
+      "want": "B",
+      "picked": "B",
+      "fired": "line_over_time",
+      "ok": true
+    },
+    {
+      "id": "apply-marsh-flood",
+      "kind": "apply",
+      "law": "flood_helps_aquatic",
+      "want": "C",
+      "picked": "C",
+      "fired": "flood_helps_aquatic",
+      "ok": true
+    },
+    {
+      "id": "near-flood-hurts",
+      "kind": "near",
+      "law": "flood_helps_aquatic",
+      "want": "A",
+      "picked": "A",
+      "fired": "flood_hurts_land",
+      "ok": true
+    },
+    {
+      "id": "apply-plates-apart-not",
+      "kind": "apply",
+      "law": "diverging_not_trench",
+      "want": "A",
+      "picked": "A",
+      "fired": "diverging_not_trench",
+      "ok": true
+    },
+    {
+      "id": "near-plates-apart-does",
+      "kind": "near",
+      "law": "diverging_not_trench",
+      "want": "B",
+      "picked": "B",
+      "fired": "diverging_forms_ridge",
+      "ok": true
+    },
+    {
+      "id": "apply-algae-mat",
+      "kind": "apply",
+      "law": "algae_blocks_light",
+      "want": "C",
+      "picked": "C",
+      "fired": "algae_blocks_light",
+      "ok": true
+    },
+    {
+      "id": "apply-foxes-die",
+      "kind": "apply",
+      "law": "eater_dies_prey_up",
+      "want": "B",
+      "picked": "B",
+      "fired": "eater_dies_prey_up",
+      "ok": true
+    },
+    {
+      "id": "near-mice-die",
+      "kind": "near",
+      "law": "eater_dies_prey_up",
+      "want": "A",
+      "picked": "A",
+      "fired": "prey_dies_eater_down",
+      "ok": true
+    },
+    {
+      "id": "apply-next-moon",
+      "kind": "apply",
+      "law": "after_waxing_gibbous",
+      "want": "C",
+      "picked": "C",
+      "fired": "after_waxing_gibbous",
+      "ok": true
+    },
+    {
+      "id": "near-after-full",
+      "kind": "near",
+      "law": "after_waxing_gibbous",
+      "want": "A",
+      "picked": "A",
+      "fired": "after_full_moon",
+      "ok": true
+    },
+    {
+      "id": "apply-not-organic",
+      "kind": "apply",
+      "law": "organic_not_metal",
+      "want": "D",
+      "picked": "D",
+      "fired": "organic_not_metal",
+      "ok": true
+    },
+    {
+      "id": "near-organic-carbon",
+      "kind": "near",
+      "law": "organic_not_metal",
+      "want": "B",
+      "picked": "B",
+      "fired": "organic_has_carbon",
+      "ok": true
+    },
+    {
+      "id": "apply-tick",
+      "kind": "apply",
+      "law": "parasite_biotic",
+      "want": "C",
+      "picked": "C",
+      "fired": "parasite_biotic",
+      "ok": true
+    },
+    {
+      "id": "near-hawk-rabbit",
+      "kind": "near",
+      "law": "parasite_biotic",
+      "want": "A",
+      "picked": "A",
+      "fired": "eats_is_predator",
+      "ok": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "Mercury_7215180",
+      "law": "pie_percent",
+      "ok": true,
+      "picked": "C",
+      "fired": "pie_percent",
+      "key": "C",
+      "key_text": "pie chart"
+    },
+    {
+      "id": "Mercury_SC_415026",
+      "law": "flood_helps_aquatic",
+      "ok": true,
+      "picked": "C",
+      "fired": "flood_helps_aquatic",
+      "key": "C",
+      "key_text": "alligators"
+    },
+    {
+      "id": "Mercury_7246348",
+      "law": "diverging_not_trench",
+      "ok": true,
+      "picked": "A",
+      "fired": "diverging_not_trench",
+      "key": "A",
+      "key_text": "trench"
+    },
+    {
+      "id": "Mercury_7115273",
+      "law": "algae_blocks_light",
+      "ok": true,
+      "picked": "C",
+      "fired": "algae_blocks_light",
+      "key": "C",
+      "key_text": "light"
+    },
+    {
+      "id": "NYSEDREGENTS_2014_4_28",
+      "law": "eater_dies_prey_up",
+      "ok": true,
+      "picked": "B",
+      "fired": "eater_dies_prey_up",
+      "key": "B",
+      "key_text": "increase"
+    },
+    {
+      "id": "Mercury_180443",
+      "law": "after_waxing_gibbous",
+      "ok": true,
+      "picked": "C",
+      "fired": "after_waxing_gibbous",
+      "key": "C",
+      "key_text": "full moon"
+    },
+    {
+      "id": "Mercury_7264023",
+      "law": "organic_not_metal",
+      "ok": true,
+      "picked": "D",
+      "fired": "organic_not_metal",
+      "key": "D",
+      "key_text": "potassium"
+    },
+    {
+      "id": "Mercury_7131828",
+      "law": "parasite_biotic",
+      "ok": true,
+      "picked": "C",
+      "fired": "parasite_biotic",
+      "key": "C",
+      "key_text": "biotic factors interacting with each other"
+    }
+  ],
+  "failures": [],
+  "measured_W_changed": false,
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-32",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}

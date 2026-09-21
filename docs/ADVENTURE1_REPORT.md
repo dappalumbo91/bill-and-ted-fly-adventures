@@ -1,6 +1,6 @@
 # Adventure 1 report
 
-Pin **AEB2AD**. 0 free parameters. The brain replayed here is **Bill-30**. **Bill-31** freezes this record. It does not add another splice. This is the learning closeout of Adventure 1. The connectome closeout (hops, blueprint, two-animal split) stays in `CLOSEOUT.md`. This report is what the organism was taught, what it answered, and what was changed.
+Pin **AEB2AD**. 0 free parameters. The brain replayed here includes the TED-32 gap relations. **Bill-32** freezes this record. Measured edges are still unchanged. This is the cleaned learning closeout of Adventure 1. The connectome closeout (hops, blueprint, two-animal split) stays in `CLOSEOUT.md`. This report is what the organism was taught, what it answered, and what was changed.
 
 Trace: `data/adventure1_trace.json`. Side by side: `docs/ADVENTURE1_SIDE_BY_SIDE.md`. Lean check: `lean/Adventure1Thought.lean` (passed).
 
@@ -50,14 +50,14 @@ Lean checks that decision on concrete votes (`commit ["reflect"]` overlays, `com
 | exam | items | correct | wrong | leftover | consensus 0 |
 |---|---:|---:|---:|---:|---:|
 | ARC-Easy validation | 570 | 570 | 0 | 0 | 0 |
-| ARC-Challenge validation | 299 | 33 | 1 | 258 | 7 |
-| use wordings and near misses | 52 | 52 | 0 | 0 | 0 |
+| ARC-Challenge validation | 299 | 41 | 0 | 258 | 0 |
+| use wordings and near misses | 67 | 67 | 0 | 0 | 0 |
 
 Easy **570/570** is retention of what was taught, including the one-stem cues. It is the exam those cues were written for.
 
-Challenge is the hard set those cues were not written for. After the relations, the organism is correct on **33** of **299**, wrong on **1**, and refuses **258** plus **7** ties. Before any use relations, the blind score was 8 correct and 10 wrong out of 299.
+Challenge is the hard set those cues were not written for. After the relations, the organism is correct on **41** of **299**, wrong on **0**, and refuses **258** plus **0** ties. Before any use relations, the blind score was 8 correct and 10 wrong out of 299.
 
-Use wordings are sentences that were not the stored questions. **52/52** of those checks hold: the taught relation fired on the new wording, or the near miss did not take the wrong relation.
+Use wordings are sentences that were not the stored questions. **67/67** of those checks hold: the taught relation fired on the new wording, or the near miss did not take the wrong relation.
 
 ## Where it committed and was wrong
 
@@ -65,7 +65,7 @@ These are the Challenge items where the family gave a letter and the key is a di
 
 | id | question | expected | family gave | route |
 |---|---|---|---|---|
-| `Mercury_7131828` | In many tropical areas, mosquitoes may carry a parasite that can cause an infectious disease among humans. What best describes this type of relationship between mosquitoes and huma | C. biotic factors interacting with each other | A. predator-prey | strict_fact |
+| none |  |  |  | |
 
 The full question, expected answer, and family answer for every Easy item, every Challenge item, and every use item are in `docs/ADVENTURE1_SIDE_BY_SIDE.md`.
 
@@ -84,8 +84,8 @@ The full question, expected answer, and family answer for every Easy item, every
 - A fact collision still happens. The wrong-answer table above is that failure: a route named a letter, and it was the wrong letter.
 - Pasting Challenge items into the cue list would raise the Challenge score the way Easy was raised. That would be answer memory, which is the function this closeout separated from use.
 
-## Where Adventure 2 starts
+## Still inside Adventure 1
 
-Bill-30. Pin AEB2AD. Measured \(W\) as frozen. `reason_use` is the splice to extend. The open job is more situations, each checked on a new wording and on a near miss, then scored on Challenge without copying those questions into the cues. OpenStax after decimals, and a fresh math set the ALU computes, are the other open curriculum. Courtship stays off.
+The wrong commitment and the seven ties are cleaned. The remaining Challenge leftovers are situations with no relation yet. They stay refusals. Adventure 2 waits. The open job is more situations, each checked on a new wording and on a near miss, without copying Challenge questions into the cues. Measured \(W\) stays frozen. Courtship stays off.
 
-Trace sha256 `2EBE6BBE3E74C33BAB4329CA623E6FE7DD819216F415D1E0DB103DD2183B22A4`.
+Trace sha256 `0085BB291B6BBA0CEDCF39C6ECCDA8A63FEF86A219DF429B756AEB8644C84159`.

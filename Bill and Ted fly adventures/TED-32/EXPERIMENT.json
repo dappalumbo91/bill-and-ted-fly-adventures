@@ -1,0 +1,17 @@
+{
+  "id": "TED-32",
+  "role": "ted",
+  "adventure": 1,
+  "change": "Clean Challenge wrong commitment and seven ties as relations, not copied questions",
+  "vs_bill": "Bill-31",
+  "apply_ok": 8,
+  "apply_n": 8,
+  "near_ok": 7,
+  "near_n": 7,
+  "challenge_correct": 41,
+  "challenge_wrong": 0,
+  "challenge_leftover": 258,
+  "promotes": true,
+  "promote_to": "Bill-32",
+  "why": "Wrong letter and consensus ties were not okay. Relations fix them. Leftovers with no relation stay refusals. W unchanged."
+}
