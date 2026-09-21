@@ -1,0 +1,12 @@
+{
+  "id": "TED-21",
+  "role": "ted",
+  "adventure": 1,
+  "change": "ingest DeepMind-style algorithmic math JSON; G: zips empty",
+  "vs_bill": "Bill-20",
+  "n_ok": 48,
+  "n": 48,
+  "promotes": true,
+  "promote_to": "Bill-21",
+  "why": "Rule-generated K-12 arithmetic. Organism works each prompt. Not LLM. Not stored keys."
+}

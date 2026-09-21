@@ -62,7 +62,9 @@ Pin **AEB2AD**. Law \(S=K(T_1+T_2+T_3)\). Residual hops on measured synapses. Ov
 | **TED-19 / Adventure 1** | teach steps, own work, DA leftover reward | transfer **6/6** → **Bill-19** |
 | **Bill-19** | bio-teach; not fitted RL; DA still leftover | promoted from TED-19 |
 | **TED-20 / Adventure 1** | read/write school exam; capability ledger; curriculum sources | **11/11** → **Bill-20** |
-| **Bill-20** | current | read+write+math+retain; `docs/CAPABILITY.md` |
+| **Bill-20** | read+write+math+retain; `docs/CAPABILITY.md` | promoted from TED-20 |
+| **TED-21 / Adventure 1** | DeepMind-style ingest 48 JSON items | **48/48** → **Bill-21** |
+| **Bill-21** | current | algorithmic math ingested; G: zips empty |
 
 Scripts: `python scripts/bill_ted.py freeze` · `ted-1` … `ted-10` · `python scripts/bill10_remaining_leftovers.py` · `ted-11` · `ledger`
 

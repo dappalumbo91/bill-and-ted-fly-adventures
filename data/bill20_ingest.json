@@ -1,0 +1,558 @@
+{
+  "adventure": 1,
+  "ted": "TED-21",
+  "vs_bill": "Bill-20",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "g_datasets": "zips empty/corrupt; DeepMind-style templates ingested instead",
+  "n": 48,
+  "n_ok": 48,
+  "extra_n_ok": 3,
+  "extra_n": 3,
+  "by_kind": {
+    "plus": {
+      "n": 6,
+      "n_ok": 6
+    },
+    "minus": {
+      "n": 6,
+      "n_ok": 6
+    },
+    "times": {
+      "n": 6,
+      "n_ok": 6
+    },
+    "div": {
+      "n": 6,
+      "n_ok": 6
+    },
+    "pct": {
+      "n": 6,
+      "n_ok": 6
+    },
+    "times_as": {
+      "n": 6,
+      "n_ok": 6
+    },
+    "eq": {
+      "n": 6,
+      "n_ok": 6
+    },
+    "less": {
+      "n": 6,
+      "n_ok": 6
+    }
+  },
+  "leftover_kinds": [],
+  "items": [
+    {
+      "id": "dm-plus-000",
+      "kind": "plus",
+      "prompt": "What is 34 plus 28?",
+      "want": 62,
+      "got": 62,
+      "how": "plus",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-minus-001",
+      "kind": "minus",
+      "prompt": "What is 73 minus 10?",
+      "want": 63,
+      "got": 63,
+      "how": "minus",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-times-002",
+      "kind": "times",
+      "prompt": "Calculate 10 times 6.",
+      "want": 60,
+      "got": 60,
+      "how": "times",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-div-003",
+      "kind": "div",
+      "prompt": "Divide 55 by 5.",
+      "want": 11,
+      "got": 11,
+      "how": "div",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-pct-004",
+      "kind": "pct",
+      "prompt": "20% of 40",
+      "want": 8,
+      "got": 8,
+      "how": "pct_of_xy",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-times_as-005",
+      "kind": "times_as",
+      "prompt": "2 times as many as 8",
+      "want": 4,
+      "got": 4,
+      "how": "times_as_many",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-eq-006",
+      "kind": "eq",
+      "prompt": "What value of n makes n+8=79 true?",
+      "want": 71,
+      "got": 71,
+      "how": "eq_n_plus",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-less-007",
+      "kind": "less",
+      "prompt": "17 less than 33",
+      "want": 16,
+      "got": 16,
+      "how": "less_than",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-plus-008",
+      "kind": "plus",
+      "prompt": "What is 31 plus 16?",
+      "want": 47,
+      "got": 47,
+      "how": "plus",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-minus-009",
+      "kind": "minus",
+      "prompt": "What is 49 minus 2?",
+      "want": 47,
+      "got": 47,
+      "how": "minus",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-times-010",
+      "kind": "times",
+      "prompt": "Calculate 9 times 9.",
+      "want": 81,
+      "got": 81,
+      "how": "times",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-div-011",
+      "kind": "div",
+      "prompt": "Divide 60 by 6.",
+      "want": 10,
+      "got": 10,
+      "how": "div",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-pct-012",
+      "kind": "pct",
+      "prompt": "25% of 20",
+      "want": 5,
+      "got": 5,
+      "how": "pct_of_xy",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-times_as-013",
+      "kind": "times_as",
+      "prompt": "5 times as many as 75",
+      "want": 15,
+      "got": 15,
+      "how": "times_as_many",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-eq-014",
+      "kind": "eq",
+      "prompt": "What value of n makes n+4=61 true?",
+      "want": 57,
+      "got": 57,
+      "how": "eq_n_plus",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-less-015",
+      "kind": "less",
+      "prompt": "15 less than 27",
+      "want": 12,
+      "got": 12,
+      "how": "less_than",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-plus-016",
+      "kind": "plus",
+      "prompt": "What is 32 plus 7?",
+      "want": 39,
+      "got": 39,
+      "how": "plus",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-minus-017",
+      "kind": "minus",
+      "prompt": "What is 35 minus 1?",
+      "want": 34,
+      "got": 34,
+      "how": "minus",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-times-018",
+      "kind": "times",
+      "prompt": "Calculate 10 times 5.",
+      "want": 50,
+      "got": 50,
+      "how": "times",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-div-019",
+      "kind": "div",
+      "prompt": "Divide 48 by 6.",
+      "want": 8,
+      "got": 8,
+      "how": "div",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-pct-020",
+      "kind": "pct",
+      "prompt": "50% of 60",
+      "want": 30,
+      "got": 30,
+      "how": "pct_of_xy",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-times_as-021",
+      "kind": "times_as",
+      "prompt": "3 times as many as 18",
+      "want": 6,
+      "got": 6,
+      "how": "times_as_many",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-eq-022",
+      "kind": "eq",
+      "prompt": "What value of n makes n+13=22 true?",
+      "want": 9,
+      "got": 9,
+      "how": "eq_n_plus",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-less-023",
+      "kind": "less",
+      "prompt": "19 less than 55",
+      "want": 36,
+      "got": 36,
+      "how": "less_than",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-plus-024",
+      "kind": "plus",
+      "prompt": "What is 22 plus 14?",
+      "want": 36,
+      "got": 36,
+      "how": "plus",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-minus-025",
+      "kind": "minus",
+      "prompt": "What is 46 minus 19?",
+      "want": 27,
+      "got": 27,
+      "how": "minus",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-times-026",
+      "kind": "times",
+      "prompt": "Calculate 4 times 4.",
+      "want": 16,
+      "got": 16,
+      "how": "times",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-div-027",
+      "kind": "div",
+      "prompt": "Divide 60 by 6.",
+      "want": 10,
+      "got": 10,
+      "how": "div",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-pct-028",
+      "kind": "pct",
+      "prompt": "50% of 80",
+      "want": 40,
+      "got": 40,
+      "how": "pct_of_xy",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-times_as-029",
+      "kind": "times_as",
+      "prompt": "3 times as many as 27",
+      "want": 9,
+      "got": 9,
+      "how": "times_as_many",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-eq-030",
+      "kind": "eq",
+      "prompt": "What value of n makes n+5=76 true?",
+      "want": 71,
+      "got": 71,
+      "how": "eq_n_plus",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-less-031",
+      "kind": "less",
+      "prompt": "17 less than 62",
+      "want": 45,
+      "got": 45,
+      "how": "less_than",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-plus-032",
+      "kind": "plus",
+      "prompt": "What is 59 plus 30?",
+      "want": 89,
+      "got": 89,
+      "how": "plus",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-minus-033",
+      "kind": "minus",
+      "prompt": "What is 84 minus 13?",
+      "want": 71,
+      "got": 71,
+      "how": "minus",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-times-034",
+      "kind": "times",
+      "prompt": "Calculate 8 times 10.",
+      "want": 80,
+      "got": 80,
+      "how": "times",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-div-035",
+      "kind": "div",
+      "prompt": "Divide 35 by 5.",
+      "want": 7,
+      "got": 7,
+      "how": "div",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-pct-036",
+      "kind": "pct",
+      "prompt": "10% of 20",
+      "want": 2,
+      "got": 2,
+      "how": "pct_of_xy",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-times_as-037",
+      "kind": "times_as",
+      "prompt": "3 times as many as 45",
+      "want": 15,
+      "got": 15,
+      "how": "times_as_many",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-eq-038",
+      "kind": "eq",
+      "prompt": "What value of n makes n+14=51 true?",
+      "want": 37,
+      "got": 37,
+      "how": "eq_n_plus",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-less-039",
+      "kind": "less",
+      "prompt": "4 less than 87",
+      "want": 83,
+      "got": 83,
+      "how": "less_than",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-plus-040",
+      "kind": "plus",
+      "prompt": "What is 21 plus 37?",
+      "want": 58,
+      "got": 58,
+      "how": "plus",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-minus-041",
+      "kind": "minus",
+      "prompt": "What is 86 minus 8?",
+      "want": 78,
+      "got": 78,
+      "how": "minus",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-times-042",
+      "kind": "times",
+      "prompt": "Calculate 12 times 12.",
+      "want": 144,
+      "got": 144,
+      "how": "times",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-div-043",
+      "kind": "div",
+      "prompt": "Divide 44 by 4.",
+      "want": 11,
+      "got": 11,
+      "how": "div",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-pct-044",
+      "kind": "pct",
+      "prompt": "10% of 80",
+      "want": 8,
+      "got": 8,
+      "how": "pct_of_xy",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-times_as-045",
+      "kind": "times_as",
+      "prompt": "3 times as many as 42",
+      "want": 14,
+      "got": 14,
+      "how": "times_as_many",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-eq-046",
+      "kind": "eq",
+      "prompt": "What value of n makes n+5=60 true?",
+      "want": 55,
+      "got": 55,
+      "how": "eq_n_plus",
+      "reward_trit": 1,
+      "ok": true
+    },
+    {
+      "id": "dm-less-047",
+      "kind": "less",
+      "prompt": "15 less than 67",
+      "want": 52,
+      "got": 52,
+      "how": "less_than",
+      "reward_trit": 1,
+      "ok": true
+    }
+  ],
+  "extra": [
+    {
+      "kind": "write",
+      "prompt": "write 25% of 60",
+      "got": 15,
+      "want": 15,
+      "ok": true
+    },
+    {
+      "kind": "read_cmd",
+      "prompt": "turn left",
+      "got": "DNg29",
+      "want": "DNg29",
+      "ok": true
+    },
+    {
+      "kind": "deny",
+      "prompt": "court",
+      "got": "deny",
+      "want": "deny",
+      "ok": true
+    }
+  ],
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-21",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}

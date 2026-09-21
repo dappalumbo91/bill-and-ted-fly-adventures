@@ -1,0 +1,390 @@
+{
+  "pin": "AEB2AD",
+  "n": 48,
+  "items": [
+    {
+      "id": "dm-plus-000",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "plus",
+      "prompt": "What is 34 plus 28?",
+      "want": 62,
+      "steps": "a+b"
+    },
+    {
+      "id": "dm-minus-001",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "minus",
+      "prompt": "What is 73 minus 10?",
+      "want": 63,
+      "steps": "a-b"
+    },
+    {
+      "id": "dm-times-002",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "times",
+      "prompt": "Calculate 10 times 6.",
+      "want": 60,
+      "steps": "a*b"
+    },
+    {
+      "id": "dm-div-003",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "div",
+      "prompt": "Divide 55 by 5.",
+      "want": 11,
+      "steps": "a/b"
+    },
+    {
+      "id": "dm-pct-004",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "pct",
+      "prompt": "20% of 40",
+      "want": 8,
+      "steps": "N*P/100"
+    },
+    {
+      "id": "dm-times_as-005",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "times_as",
+      "prompt": "2 times as many as 8",
+      "want": 4,
+      "steps": "total/k"
+    },
+    {
+      "id": "dm-eq-006",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "eq",
+      "prompt": "What value of n makes n+8=79 true?",
+      "want": 71,
+      "steps": "s-d"
+    },
+    {
+      "id": "dm-less-007",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "less",
+      "prompt": "17 less than 33",
+      "want": 16,
+      "steps": "a-d"
+    },
+    {
+      "id": "dm-plus-008",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "plus",
+      "prompt": "What is 31 plus 16?",
+      "want": 47,
+      "steps": "a+b"
+    },
+    {
+      "id": "dm-minus-009",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "minus",
+      "prompt": "What is 49 minus 2?",
+      "want": 47,
+      "steps": "a-b"
+    },
+    {
+      "id": "dm-times-010",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "times",
+      "prompt": "Calculate 9 times 9.",
+      "want": 81,
+      "steps": "a*b"
+    },
+    {
+      "id": "dm-div-011",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "div",
+      "prompt": "Divide 60 by 6.",
+      "want": 10,
+      "steps": "a/b"
+    },
+    {
+      "id": "dm-pct-012",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "pct",
+      "prompt": "25% of 20",
+      "want": 5,
+      "steps": "N*P/100"
+    },
+    {
+      "id": "dm-times_as-013",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "times_as",
+      "prompt": "5 times as many as 75",
+      "want": 15,
+      "steps": "total/k"
+    },
+    {
+      "id": "dm-eq-014",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "eq",
+      "prompt": "What value of n makes n+4=61 true?",
+      "want": 57,
+      "steps": "s-d"
+    },
+    {
+      "id": "dm-less-015",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "less",
+      "prompt": "15 less than 27",
+      "want": 12,
+      "steps": "a-d"
+    },
+    {
+      "id": "dm-plus-016",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "plus",
+      "prompt": "What is 32 plus 7?",
+      "want": 39,
+      "steps": "a+b"
+    },
+    {
+      "id": "dm-minus-017",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "minus",
+      "prompt": "What is 35 minus 1?",
+      "want": 34,
+      "steps": "a-b"
+    },
+    {
+      "id": "dm-times-018",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "times",
+      "prompt": "Calculate 10 times 5.",
+      "want": 50,
+      "steps": "a*b"
+    },
+    {
+      "id": "dm-div-019",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "div",
+      "prompt": "Divide 48 by 6.",
+      "want": 8,
+      "steps": "a/b"
+    },
+    {
+      "id": "dm-pct-020",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "pct",
+      "prompt": "50% of 60",
+      "want": 30,
+      "steps": "N*P/100"
+    },
+    {
+      "id": "dm-times_as-021",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "times_as",
+      "prompt": "3 times as many as 18",
+      "want": 6,
+      "steps": "total/k"
+    },
+    {
+      "id": "dm-eq-022",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "eq",
+      "prompt": "What value of n makes n+13=22 true?",
+      "want": 9,
+      "steps": "s-d"
+    },
+    {
+      "id": "dm-less-023",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "less",
+      "prompt": "19 less than 55",
+      "want": 36,
+      "steps": "a-d"
+    },
+    {
+      "id": "dm-plus-024",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "plus",
+      "prompt": "What is 22 plus 14?",
+      "want": 36,
+      "steps": "a+b"
+    },
+    {
+      "id": "dm-minus-025",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "minus",
+      "prompt": "What is 46 minus 19?",
+      "want": 27,
+      "steps": "a-b"
+    },
+    {
+      "id": "dm-times-026",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "times",
+      "prompt": "Calculate 4 times 4.",
+      "want": 16,
+      "steps": "a*b"
+    },
+    {
+      "id": "dm-div-027",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "div",
+      "prompt": "Divide 60 by 6.",
+      "want": 10,
+      "steps": "a/b"
+    },
+    {
+      "id": "dm-pct-028",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "pct",
+      "prompt": "50% of 80",
+      "want": 40,
+      "steps": "N*P/100"
+    },
+    {
+      "id": "dm-times_as-029",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "times_as",
+      "prompt": "3 times as many as 27",
+      "want": 9,
+      "steps": "total/k"
+    },
+    {
+      "id": "dm-eq-030",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "eq",
+      "prompt": "What value of n makes n+5=76 true?",
+      "want": 71,
+      "steps": "s-d"
+    },
+    {
+      "id": "dm-less-031",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "less",
+      "prompt": "17 less than 62",
+      "want": 45,
+      "steps": "a-d"
+    },
+    {
+      "id": "dm-plus-032",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "plus",
+      "prompt": "What is 59 plus 30?",
+      "want": 89,
+      "steps": "a+b"
+    },
+    {
+      "id": "dm-minus-033",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "minus",
+      "prompt": "What is 84 minus 13?",
+      "want": 71,
+      "steps": "a-b"
+    },
+    {
+      "id": "dm-times-034",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "times",
+      "prompt": "Calculate 8 times 10.",
+      "want": 80,
+      "steps": "a*b"
+    },
+    {
+      "id": "dm-div-035",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "div",
+      "prompt": "Divide 35 by 5.",
+      "want": 7,
+      "steps": "a/b"
+    },
+    {
+      "id": "dm-pct-036",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "pct",
+      "prompt": "10% of 20",
+      "want": 2,
+      "steps": "N*P/100"
+    },
+    {
+      "id": "dm-times_as-037",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "times_as",
+      "prompt": "3 times as many as 45",
+      "want": 15,
+      "steps": "total/k"
+    },
+    {
+      "id": "dm-eq-038",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "eq",
+      "prompt": "What value of n makes n+14=51 true?",
+      "want": 37,
+      "steps": "s-d"
+    },
+    {
+      "id": "dm-less-039",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "less",
+      "prompt": "4 less than 87",
+      "want": 83,
+      "steps": "a-d"
+    },
+    {
+      "id": "dm-plus-040",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "plus",
+      "prompt": "What is 21 plus 37?",
+      "want": 58,
+      "steps": "a+b"
+    },
+    {
+      "id": "dm-minus-041",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "minus",
+      "prompt": "What is 86 minus 8?",
+      "want": 78,
+      "steps": "a-b"
+    },
+    {
+      "id": "dm-times-042",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "times",
+      "prompt": "Calculate 12 times 12.",
+      "want": 144,
+      "steps": "a*b"
+    },
+    {
+      "id": "dm-div-043",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "div",
+      "prompt": "Divide 44 by 4.",
+      "want": 11,
+      "steps": "a/b"
+    },
+    {
+      "id": "dm-pct-044",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "pct",
+      "prompt": "10% of 80",
+      "want": 8,
+      "steps": "N*P/100"
+    },
+    {
+      "id": "dm-times_as-045",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "times_as",
+      "prompt": "3 times as many as 42",
+      "want": 14,
+      "steps": "total/k"
+    },
+    {
+      "id": "dm-eq-046",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "eq",
+      "prompt": "What value of n makes n+5=60 true?",
+      "want": 55,
+      "steps": "s-d"
+    },
+    {
+      "id": "dm-less-047",
+      "source": "DeepMind-style algorithmic template (not the GitHub dump; same rule-generation)",
+      "kind": "less",
+      "prompt": "15 less than 67",
+      "want": 52,
+      "steps": "a-d"
+    }
+  ]
+}

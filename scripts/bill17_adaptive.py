@@ -39,6 +39,22 @@ def grammar_math(prompt: str) -> tuple[object, str]:
         k, total = ns[0], ns[-1]
         if k:
             return total // k, "times_as_many"
+    # DeepMind-style English arithmetic (after "as many" so times ≠ multiply there).
+    m = re.search(r"(\d+)\s+plus\s+(\d+)", t)
+    if m:
+        return int(m.group(1)) + int(m.group(2)), "plus"
+    m = re.search(r"(\d+)\s+minus\s+(\d+)", t)
+    if m:
+        return int(m.group(1)) - int(m.group(2)), "minus"
+    m = re.search(r"(\d+)\s+times\s+(\d+)", t)
+    if m:
+        return int(m.group(1)) * int(m.group(2)), "times"
+    m = re.search(r"divide\s+(\d+)\s+by\s+(\d+)|(\d+)\s+divided by\s+(\d+)", t)
+    if m:
+        a = int(m.group(1) or m.group(3))
+        b = int(m.group(2) or m.group(4))
+        if b:
+            return a // b, "div"
     if re.search(r"one\s+quarter|a\s+quarter", t) and ns:
         return ns[0] // 4, "quarter"
 
