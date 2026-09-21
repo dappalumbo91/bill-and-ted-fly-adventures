@@ -1,0 +1,12 @@
+{
+  "id": "TED-22",
+  "role": "ted",
+  "adventure": 1,
+  "change": "OpenStax Prealgebra 2e JSON ingest sequential Ch.1 then Ch.3",
+  "vs_bill": "Bill-21",
+  "n_ok": 15,
+  "n": 15,
+  "promotes": true,
+  "promote_to": "Bill-22",
+  "why": "CC BY-NC-SA exercises. Organism works prompts. 1683+49 computed 1732 not published 2162."
+}

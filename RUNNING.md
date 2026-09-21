@@ -115,6 +115,7 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | TED-19 bio-teach | **promoted → Bill-19** | steps then new numbers **6/6**; DA leftover T1 bind; not fitted RL |
 | TED-20 read/write school exam | **promoted → Bill-20** | **11/11** mix retain; G:\\AI_Datasets mapped; capability ledger |
 | TED-21 DeepMind-style ingest | **promoted → Bill-21** | **48/48** plus/minus/times/div/pct/eq; G: zips empty |
+| TED-22 OpenStax Prealgebra | **promoted → Bill-22** | **15/15** Ch.1 then Ch.3; integers/eval/simplify |
 
 ---
 

@@ -137,6 +137,8 @@ python scripts/bill19_read_write.py         # read/write school exam
 python scripts/bill_ted.py ted-20
 python scripts/bill20_ingest.py             # DeepMind-style JSON ingest
 python scripts/bill_ted.py ted-21
+python scripts/bill21_openstax.py           # OpenStax Prealgebra JSON
+python scripts/bill_ted.py ted-22
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

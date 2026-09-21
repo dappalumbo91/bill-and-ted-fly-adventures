@@ -1,0 +1,188 @@
+{
+  "adventure": 1,
+  "ted": "TED-22",
+  "vs_bill": "Bill-21",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "license": "CC BY-NC-SA 4.0 OpenStax",
+  "n": 15,
+  "n_ok": 15,
+  "ch1_ok": true,
+  "by_ch": {
+    "1": {
+      "n": 3,
+      "n_ok": 3
+    },
+    "2": {
+      "n": 2,
+      "n_ok": 2
+    },
+    "3": {
+      "n": 9,
+      "n_ok": 9
+    },
+    "4": {
+      "n": 1,
+      "n_ok": 1
+    }
+  },
+  "items": [
+    {
+      "id": "os-1.3-324+586",
+      "ch": 1,
+      "prompt": "Add: 324 + 586",
+      "want": 910,
+      "cite": "Be Prepared 1.3",
+      "got": 910,
+      "how": "addsub_expr",
+      "ok": true
+    },
+    {
+      "id": "os-1.4-1683+49",
+      "ch": 1,
+      "prompt": "Add: 1,683 + 49",
+      "want": 1732,
+      "cite": "Be Prepared 1.4 prompt; computed 1683+49 (published key 2162 does not match this addend pair)",
+      "got": 1732,
+      "how": "addsub_expr",
+      "ok": true
+    },
+    {
+      "id": "os-1.4-605-321",
+      "ch": 1,
+      "prompt": "Subtract: 605 - 321",
+      "want": 284,
+      "cite": "Be Prepared 1.4",
+      "got": 284,
+      "how": "addsub_expr",
+      "ok": true
+    },
+    {
+      "id": "os-3.2-x+8",
+      "ch": 3,
+      "prompt": "Evaluate x + 8 when x = 6",
+      "want": 14,
+      "cite": "Be Prepared 3.2",
+      "got": 14,
+      "how": "eval_plus",
+      "ok": true
+    },
+    {
+      "id": "os-3.2-8+2(5+1)",
+      "ch": 3,
+      "prompt": "Simplify: 8 + 2(5 + 1)",
+      "want": 20,
+      "cite": "Be Prepared 3.2",
+      "got": 20,
+      "how": "simplify",
+      "ok": true
+    },
+    {
+      "id": "os-3.3-12-(8-1)",
+      "ch": 3,
+      "prompt": "Simplify: 12 - (8 - 1)",
+      "want": 5,
+      "cite": "Be Prepared 3.3",
+      "got": 5,
+      "how": "simplify",
+      "ok": true
+    },
+    {
+      "id": "os-3.3--18+7",
+      "ch": 3,
+      "prompt": "Add: -18 + 7",
+      "want": -11,
+      "cite": "Be Prepared 3.3 (computed \u221218+7)",
+      "got": -11,
+      "how": "addsub_expr",
+      "ok": true
+    },
+    {
+      "id": "os-3.4--5*3",
+      "ch": 3,
+      "prompt": "Add: -5 + (-5) + (-5)",
+      "want": -15,
+      "cite": "Be Prepared 3.4",
+      "got": -15,
+      "how": "addsub_expr",
+      "ok": true
+    },
+    {
+      "id": "os-3.4-n+4",
+      "ch": 3,
+      "prompt": "Evaluate n + 4 when n = -7",
+      "want": -3,
+      "cite": "Be Prepared 3.4",
+      "got": -3,
+      "how": "eval_plus",
+      "ok": true
+    },
+    {
+      "id": "os-3.5-x+4",
+      "ch": 3,
+      "prompt": "Evaluate x + 4 when x = -4",
+      "want": 0,
+      "cite": "Be Prepared 3.5",
+      "got": 0,
+      "how": "eval_plus",
+      "ok": true
+    },
+    {
+      "id": "os-3.5-y-6=10",
+      "ch": 3,
+      "prompt": "Solve: y - 6 = 10",
+      "want": 16,
+      "cite": "Be Prepared 3.5",
+      "got": 16,
+      "how": "solve_minus",
+      "ok": true
+    },
+    {
+      "id": "os-4.1-5*2+1",
+      "ch": 4,
+      "prompt": "Simplify: 5 * 2 + 1",
+      "want": 11,
+      "cite": "Be Prepared 4.1",
+      "got": 11,
+      "how": "simplify",
+      "ok": true
+    },
+    {
+      "id": "os-ea-son-11-3",
+      "ch": 2,
+      "prompt": "Rochelle's daughter is 11 years old. Her son is 3 years younger. How old is her son?",
+      "want": 8,
+      "cite": "Elementary Algebra 2e 534",
+      "got": 8,
+      "how": "younger",
+      "ok": true
+    },
+    {
+      "id": "os-ea-tan-146-15",
+      "ch": 2,
+      "prompt": "Tan weighs 146 pounds. Minh weighs 15 pounds more than Tan. How much does Minh weigh?",
+      "want": 161,
+      "cite": "Elementary Algebra 2e 535",
+      "got": 161,
+      "how": "more_than",
+      "ok": true
+    },
+    {
+      "id": "os-2lt4",
+      "ch": 3,
+      "prompt": "Fill in: 2 < 4 is true as 1, compute 4 minus 2",
+      "want": 2,
+      "cite": "Be Prepared 3.1 analog compute",
+      "got": 2,
+      "how": "minus",
+      "ok": true
+    }
+  ],
+  "fail": [],
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-22",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}
