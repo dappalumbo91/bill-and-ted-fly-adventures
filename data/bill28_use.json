@@ -1,0 +1,366 @@
+{
+  "adventure": 1,
+  "ted": "TED-29",
+  "vs_bill": "Bill-28",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "fitted_challenge_val_into_cues": false,
+  "answer_key_seen_at_pick": false,
+  "census_early_procedures_on_easy": {
+    "n_procedures": 98,
+    "dead_on_this_set": 0,
+    "fires_on_one_stem": 94,
+    "fires_on_many_all_correct": 4,
+    "fires_on_many_with_a_wrong": 0
+  },
+  "census_item_cues_on_easy": {
+    "n_procedures": 424,
+    "dead_on_this_set": 0,
+    "fires_on_one_stem": 424,
+    "fires_on_many_all_correct": 0,
+    "fires_on_many_with_a_wrong": 0
+  },
+  "census_all_on_challenge": {
+    "n_procedures": 522,
+    "dead_on_this_set": 521,
+    "fires_on_one_stem": 1,
+    "fires_on_many_all_correct": 0,
+    "fires_on_many_with_a_wrong": 0
+  },
+  "apply_ok": 14,
+  "apply_n": 14,
+  "near_ok": 8,
+  "near_n": 8,
+  "source_ok": 9,
+  "source_n": 9,
+  "easy_still_correct": 570,
+  "easy_new_wrong": 0,
+  "challenge_newly_caught": 9,
+  "challenge_hurt": 0,
+  "bank": [
+    {
+      "id": "apply-reflect-lake",
+      "kind": "apply",
+      "law": "reflection",
+      "want": "C",
+      "picked": "C",
+      "fired": "reflection",
+      "ok": true,
+      "stem": "A girl looks into a still lake and sees the pines upside down. Which property of the water surface lets her see them?"
+    },
+    {
+      "id": "apply-reflect-pool",
+      "kind": "apply",
+      "law": "reflection",
+      "want": "B",
+      "picked": "B",
+      "fired": "reflection",
+      "ok": true,
+      "stem": "Sam sees his face when he looks into a quiet pool. What property of the pool makes that happen?"
+    },
+    {
+      "id": "near-pond-warm",
+      "kind": "near",
+      "law": "reflection",
+      "want": "A",
+      "picked": "A",
+      "fired": "temperature_place",
+      "ok": true,
+      "stem": "The pond is warmer at the surface than along the bottom. Which property of the water is different between those two places?"
+    },
+    {
+      "id": "apply-egg-bird",
+      "kind": "apply",
+      "law": "egg_cell",
+      "want": "C",
+      "picked": "C",
+      "fired": "egg_cell",
+      "ok": true,
+      "stem": "Which level of organization best describes a bird egg?"
+    },
+    {
+      "id": "apply-egg-frog",
+      "kind": "apply",
+      "law": "egg_cell",
+      "want": "B",
+      "picked": "B",
+      "fired": "egg_cell",
+      "ok": true,
+      "stem": "A frog egg is one membrane-bound living unit. Which level of organization is it?"
+    },
+    {
+      "id": "near-heart-organ",
+      "kind": "near",
+      "law": "egg_cell",
+      "want": "B",
+      "picked": "B",
+      "fired": "heart_organ",
+      "ok": true,
+      "stem": "The heart pumps blood and is built from muscle tissue. Which level of organization best describes the heart?"
+    },
+    {
+      "id": "apply-hawk",
+      "kind": "apply",
+      "law": "consumer",
+      "want": "C",
+      "picked": "C",
+      "fired": "consumer",
+      "ok": true,
+      "stem": "A hawk eats rabbits and mice. What role does the hawk fill in its ecosystem?"
+    },
+    {
+      "id": "apply-mushroom",
+      "kind": "apply",
+      "law": "decomposer",
+      "want": "C",
+      "picked": "C",
+      "fired": "decomposer",
+      "ok": true,
+      "stem": "A mushroom breaks down a dead log. What role does the mushroom fill in that ecosystem?"
+    },
+    {
+      "id": "near-mushroom-not-consumer",
+      "kind": "near",
+      "law": "consumer",
+      "want": "B",
+      "picked": "B",
+      "fired": "decomposer",
+      "ok": true,
+      "stem": "Bacteria rot a fallen tree and return its matter to the soil. What role do the bacteria fill in the ecosystem?"
+    },
+    {
+      "id": "apply-juice-freeze",
+      "kind": "apply",
+      "law": "freeze_state",
+      "want": "B",
+      "picked": "B",
+      "fired": "freeze_state",
+      "ok": true,
+      "stem": "Juice is sealed in a bottle and left in a freezer until it is solid. Which property of the juice changed?"
+    },
+    {
+      "id": "apply-milk-same",
+      "kind": "apply",
+      "law": "freeze_mass",
+      "want": "C",
+      "picked": "C",
+      "fired": "freeze_mass",
+      "ok": true,
+      "stem": "A sealed bag of milk is frozen solid and never opened. Which property of the milk stays the same?"
+    },
+    {
+      "id": "near-freeze-not-mass-as-change",
+      "kind": "near",
+      "law": "freeze_state",
+      "want": "B",
+      "picked": "B",
+      "fired": "freeze_mass",
+      "ok": true,
+      "stem": "A sealed bag of milk is put in a freezer. Which property stays the same when it freezes?"
+    },
+    {
+      "id": "apply-fossils",
+      "kind": "apply",
+      "law": "life_history_rock",
+      "want": "C",
+      "picked": "C",
+      "fired": "life_history_rock",
+      "ok": true,
+      "stem": "Which kind of rock would you break open to look for fossils of ancient animals?"
+    },
+    {
+      "id": "apply-magma",
+      "kind": "apply",
+      "law": "igneous",
+      "want": "B",
+      "picked": "B",
+      "fired": "igneous",
+      "ok": true,
+      "stem": "Which rock forms when magma cools?"
+    },
+    {
+      "id": "near-magma-not-fossil",
+      "kind": "near",
+      "law": "life_history_rock",
+      "want": "C",
+      "picked": "C",
+      "fired": "igneous",
+      "ok": true,
+      "stem": "Granite forms when magma cools underground. Which rock type is granite?"
+    },
+    {
+      "id": "apply-euk",
+      "kind": "apply",
+      "law": "eukaryote_nucleus",
+      "want": "B",
+      "picked": "B",
+      "fired": "eukaryote_nucleus",
+      "ok": true,
+      "stem": "A eukaryotic cell has a structure that is absent from a prokaryotic cell. Which structure is that?"
+    },
+    {
+      "id": "near-both-membranes",
+      "kind": "near",
+      "law": "eukaryote_nucleus",
+      "want": "B",
+      "picked": "B",
+      "fired": "shared_membrane",
+      "ok": true,
+      "stem": "Name one structure that both a eukaryotic cell and a prokaryotic cell have."
+    },
+    {
+      "id": "apply-high",
+      "kind": "apply",
+      "law": "high_pressure_dry",
+      "want": "C",
+      "picked": "C",
+      "fired": "high_pressure_dry",
+      "ok": true,
+      "stem": "A high-pressure system sits over a valley for ten days and keeps air from rising. What is the most likely result?"
+    },
+    {
+      "id": "apply-low",
+      "kind": "apply",
+      "law": "low_pressure_wet",
+      "want": "C",
+      "picked": "C",
+      "fired": "low_pressure_wet",
+      "ok": true,
+      "stem": "A low-pressure system moves in and air rises and cools overnight. What weather is most likely by morning?"
+    },
+    {
+      "id": "near-low-not-drought-law",
+      "kind": "near",
+      "law": "high_pressure_dry",
+      "want": "B",
+      "picked": "B",
+      "fired": "low_pressure_wet",
+      "ok": true,
+      "stem": "A low-pressure system moves in and air rises. What weather should you expect?"
+    },
+    {
+      "id": "apply-tomatoes",
+      "kind": "apply",
+      "law": "same_crop_nutrients",
+      "want": "B",
+      "picked": "B",
+      "fired": "same_crop_nutrients",
+      "ok": true,
+      "stem": "A gardener grows tomatoes in the same bed for five years. The harvest shrinks even though rain and temperature were normal. What most likely decreased?"
+    },
+    {
+      "id": "near-no-rain",
+      "kind": "near",
+      "law": "same_crop_nutrients",
+      "want": "B",
+      "picked": "B",
+      "fired": "no_rain",
+      "ok": true,
+      "stem": "A gardener's tomatoes died during a month with no rain. What was missing?"
+    }
+  ],
+  "sources": [
+    {
+      "id": "NYSEDREGENTS_2014_4_13",
+      "law": "reflection",
+      "ok": true,
+      "picked": "B",
+      "fired": "reflection",
+      "key": "B",
+      "key_text": "reflectiveness",
+      "stem": "A boy can see his face when he looks into a calm pond. Which physical property of the pond makes this happen?"
+    },
+    {
+      "id": "Mercury_7185133",
+      "law": "egg_cell",
+      "ok": true,
+      "picked": "A",
+      "fired": "egg_cell",
+      "key": "A",
+      "key_text": "a cell",
+      "stem": "Tracey was learning about structural organization in animals. What level of structural organization best describes an egg?"
+    },
+    {
+      "id": "Mercury_SC_408859",
+      "law": "consumer",
+      "ok": true,
+      "picked": "A",
+      "fired": "consumer",
+      "key": "A",
+      "key_text": "consumer",
+      "stem": "American alligators are common in Florida wetlands. They are known to eat frogs, turtles, fish, mice, and birds. What role does an American alligator fill in it"
+    },
+    {
+      "id": "MEA_2016_5_6",
+      "law": "freeze_state",
+      "ok": true,
+      "picked": "C",
+      "fired": "freeze_state",
+      "key": "C",
+      "key_text": "state",
+      "stem": "A balloon filled with water is placed in a freezer. Which property of the water will change as the water reaches its freezing point?"
+    },
+    {
+      "id": "Mercury_SC_401244",
+      "law": "life_history_rock",
+      "ok": true,
+      "picked": "D",
+      "fired": "life_history_rock",
+      "key": "D",
+      "key_text": "limestone",
+      "stem": "Which rock type is most useful in studying the history of living organisms?"
+    },
+    {
+      "id": "Mercury_415263",
+      "law": "eukaryote_nucleus",
+      "ok": true,
+      "picked": "C",
+      "fired": "eukaryote_nucleus",
+      "key": "C",
+      "key_text": "a nucleus",
+      "stem": "Which of the following is found in a eukaryotic cell but not in a prokaryotic cell?"
+    },
+    {
+      "id": "Mercury_7103565",
+      "law": "high_pressure_dry",
+      "ok": true,
+      "picked": "C",
+      "fired": "high_pressure_dry",
+      "key": "C",
+      "key_text": "drought",
+      "stem": "High-pressure systems stop air from rising into the colder regions of the atmosphere where water can condense. What will most likely result if a high-pressure s"
+    },
+    {
+      "id": "Mercury_7166880",
+      "law": "low_pressure_wet",
+      "ok": true,
+      "picked": "D",
+      "fired": "low_pressure_wet",
+      "key": "D",
+      "key_text": "cloudy and rainy",
+      "stem": "Clay is watching the weather to prepare for a trip to the beach tomorrow. The forecast predicts that a low-pressure system will move in overnight. Which type of"
+    },
+    {
+      "id": "Mercury_7141400",
+      "law": "same_crop_nutrients",
+      "ok": true,
+      "picked": "A",
+      "fired": "same_crop_nutrients",
+      "key": "A",
+      "key_text": "decrease in soil nutrients",
+      "stem": "A farmer plants corn in a field every year for several years. Each year he notices that his production of corn per acre has decreased even though the weather co"
+    }
+  ],
+  "new_pathway": {
+    "name": "reason_use",
+    "splice_at": "ALU",
+    "not_on_W": true,
+    "law": "a relation votes only when the situation matches; a near miss stays quiet; one label or leftover"
+  },
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-29",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}

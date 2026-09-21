@@ -151,6 +151,8 @@ python scripts/bill26_arc_leftovers.py      # ARC leftovers, same reason_proc
 python scripts/bill_ted.py ted-27
 python scripts/bill27_arc_challenge.py      # blind ARC-Challenge, no new procedures
 python scripts/bill_ted.py ted-28
+python scripts/bill28_use.py                # use a relation on new wording, not one cue per question
+python scripts/bill_ted.py ted-29
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

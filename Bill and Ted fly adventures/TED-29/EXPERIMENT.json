@@ -1,0 +1,17 @@
+{
+  "id": "TED-29",
+  "role": "ted",
+  "adventure": 1,
+  "change": "Separate answer-the-item cues from relations that apply to new wording",
+  "vs_bill": "Bill-28",
+  "apply_ok": 14,
+  "apply_n": 14,
+  "near_ok": 8,
+  "near_n": 8,
+  "source_ok": 9,
+  "easy_new_wrong": 0,
+  "item_cues_one_stem": 424,
+  "promotes": true,
+  "promote_to": "Bill-29",
+  "why": "Easy 570/570 was mostly one cue per question. Use is the same relation on a new wording, quiet on a near miss. Not on W."
+}
