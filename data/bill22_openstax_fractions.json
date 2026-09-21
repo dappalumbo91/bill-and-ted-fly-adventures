@@ -1,0 +1,199 @@
+{
+  "adventure": 1,
+  "ted": "TED-23",
+  "vs_bill": "Bill-22",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "n": 15,
+  "n_ok": 15,
+  "ch4_ok": true,
+  "fail": [],
+  "items": [
+    {
+      "id": "os-4.3-div-reduce",
+      "ch": 4,
+      "prompt": "Divide and reduce: (4 + 5) / (10 - 7)",
+      "want": 3,
+      "cite": "Be Prepared 4.3",
+      "got": 3,
+      "how": "expr",
+      "ok": true
+    },
+    {
+      "id": "os-4.3-mul-1/8-2/3",
+      "ch": 4,
+      "prompt": "Multiply and simplify: 1/8 * 2/3",
+      "want": [
+        1,
+        12
+      ],
+      "cite": "Be Prepared 4.3",
+      "got": [
+        1,
+        12
+      ],
+      "how": "frac_mul",
+      "ok": true
+    },
+    {
+      "id": "os-4.3-mixed-2-3/5",
+      "ch": 4,
+      "prompt": "Convert 2 3/5 into an improper fraction",
+      "want": [
+        13,
+        5
+      ],
+      "cite": "Be Prepared 4.3 (2 3/5)",
+      "got": [
+        13,
+        5
+      ],
+      "how": "mixed_to_improper",
+      "ok": true
+    },
+    {
+      "id": "os-4.6-11/4-mixed",
+      "ch": 4,
+      "prompt": "Change 11/4 to a mixed number",
+      "want": "2 3/4",
+      "cite": "Be Prepared 4.6",
+      "got": "2 3/4",
+      "how": "improper_to_mixed",
+      "ok": true
+    },
+    {
+      "id": "os-4.6-3-1/2",
+      "ch": 4,
+      "prompt": "Change 3 1/2 to an improper fraction",
+      "want": [
+        7,
+        2
+      ],
+      "cite": "Be Prepared 4.6",
+      "got": [
+        7,
+        2
+      ],
+      "how": "mixed_to_improper",
+      "ok": true
+    },
+    {
+      "id": "os-4.7-x+4",
+      "ch": 4,
+      "prompt": "Evaluate x + 4 when x = -3",
+      "want": 1,
+      "cite": "Be Prepared 4.7",
+      "got": 1,
+      "how": "eval_plus",
+      "ok": true
+    },
+    {
+      "id": "os-4.7-2y-3=9",
+      "ch": 4,
+      "prompt": "Solve: 2y - 3 = 9",
+      "want": 6,
+      "cite": "Be Prepared 4.7",
+      "got": 6,
+      "how": "solve_2y",
+      "ok": true
+    },
+    {
+      "id": "os-4.7-y-3=-9",
+      "ch": 4,
+      "prompt": "Solve: y - 3 = -9",
+      "want": -6,
+      "cite": "Be Prepared 4.7 computed (published OCR 25 does not match y-3=-9)",
+      "got": -6,
+      "how": "solve_y",
+      "ok": true
+    },
+    {
+      "id": "os-5.1-round-748",
+      "ch": 5,
+      "prompt": "Round 748 to the nearest ten",
+      "want": 750,
+      "cite": "Be Prepared 5.1",
+      "got": 750,
+      "how": "round10",
+      "ok": true
+    },
+    {
+      "id": "os-5.2--36/-9",
+      "ch": 5,
+      "prompt": "Divide -36 / -9",
+      "want": 4,
+      "cite": "Be Prepared 5.2",
+      "got": 4,
+      "how": "int_div",
+      "ok": true
+    },
+    {
+      "id": "os-5.4-15-y",
+      "ch": 5,
+      "prompt": "Evaluate 15 - y when y = -5",
+      "want": 20,
+      "cite": "Be Prepared 5.4",
+      "got": 20,
+      "how": "eval_minus",
+      "ok": true
+    },
+    {
+      "id": "os-5.5-4*8+6*3",
+      "ch": 5,
+      "prompt": "Simplify: 4(8) + 6(3)",
+      "want": 50,
+      "cite": "Be Prepared 5.5",
+      "got": 50,
+      "how": "paren_mul",
+      "ok": true
+    },
+    {
+      "id": "os-5.5-(4+9+2)/3",
+      "ch": 5,
+      "prompt": "Simplify: (4 + 9 + 2) / 3",
+      "want": 5,
+      "cite": "Be Prepared 5.5",
+      "got": 5,
+      "how": "expr",
+      "ok": true
+    },
+    {
+      "id": "os-5.3-0.24/8",
+      "ch": 5,
+      "prompt": "Divide: 0.24 / 8",
+      "want": [
+        3,
+        100
+      ],
+      "cite": "Be Prepared 5.3 (0.03 = 3/100)",
+      "got": [
+        3,
+        100
+      ],
+      "how": "decimal_div",
+      "ok": true
+    },
+    {
+      "id": "os-4.4-3/6+2/6",
+      "ch": 4,
+      "prompt": "Simplify: 3/6 + 2/6",
+      "want": [
+        5,
+        6
+      ],
+      "cite": "Be Prepared 4.4 analog 3/6+2/6",
+      "got": [
+        5,
+        6
+      ],
+      "how": "frac_add",
+      "ok": true
+    }
+  ],
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-23",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}

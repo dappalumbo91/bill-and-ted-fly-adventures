@@ -1,0 +1,762 @@
+{
+  "id": "Bill-23",
+  "role": "bill",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "frozen_at": "2026-09-21T21:07:13.644978+00:00",
+  "tree_sha256": "EBCE02666ABE5AA028A35E0200830E39DEE0CD6BDE18332D6713216D419D55EF",
+  "n_files": 150,
+  "files": [
+    {
+      "path": "vendor/fsot_compute.py",
+      "sha256": "AEB2ADAD6E80F487772C5DF90A2E3DDA71624AB831A6A83B94AB471AC9AAC170",
+      "bytes": 62737
+    },
+    {
+      "path": "data/accuracy_sim.json",
+      "sha256": "F4863C4E068385CAFD2570B7AC8BCD2A35DDE33933121224A6B5AAB723FE80F2",
+      "bytes": 4742
+    },
+    {
+      "path": "data/adventure1.json",
+      "sha256": "B2972F270CEA3102A2149B35DBD5A5285A0A01E723B73D6D112659DC5919CCAF",
+      "bytes": 4184
+    },
+    {
+      "path": "data/adventure1_closeout.json",
+      "sha256": "B28280721B5B7D587092ABDCF2F4A65B72686AAAF2B5FCFB486C35A9BB572C4D",
+      "bytes": 4150
+    },
+    {
+      "path": "data/adventure1_fold.json",
+      "sha256": "22518D9662E545EC76A91EE89F00773A638E3E15D57F2917A24996B221D76973",
+      "bytes": 6282
+    },
+    {
+      "path": "data/adventure1_fsot_apply.json",
+      "sha256": "9EC2E41EFD81C64084DEAEE2E1B879912DF8E2376BFE171061051C375B3E64FF",
+      "bytes": 5168
+    },
+    {
+      "path": "data/adventure1_fsot_blueprint.json",
+      "sha256": "2D6BD4262568E8A0258204AE7EBAA1AD990B0BF97F11AC096B55D8BA674650BE",
+      "bytes": 102215
+    },
+    {
+      "path": "data/adventure1_verify.json",
+      "sha256": "AC7536FB74C14F7767FE41D2AC9D9615AA1F7743F0FDAF81BE51536F95FCB962",
+      "bytes": 4411
+    },
+    {
+      "path": "data/analog_pointer.json",
+      "sha256": "5FC77145D40AE9FFF7A91C1D2D9309DCECCF9938E173378010AAEBB9A3A9AFEE",
+      "bytes": 3785
+    },
+    {
+      "path": "data/arith.json",
+      "sha256": "9AD31E9CE8E46CAA75B4B33D5A6551F886DC7BF00D6D8A5EAA495CC8ABEB612F",
+      "bytes": 18678
+    },
+    {
+      "path": "data/arith_count.json",
+      "sha256": "909ACE8EB5B2280700AB40161C1C70E3F4C0FF945238C329373D6803ACA1D168",
+      "bytes": 4647
+    },
+    {
+      "path": "data/arith_steps.json",
+      "sha256": "B0E30CAA4606823EE44A754EE5B945EE2566A5549DECAE0F024135060DF17CCA",
+      "bytes": 8029
+    },
+    {
+      "path": "data/banc_connectome_boot.json",
+      "sha256": "BF44B3F7E4D4AB953F22790714F50BB70E1780EC6779AB307B4C8C53A5BED4ED",
+      "bytes": 18966
+    },
+    {
+      "path": "data/baseline_sim.json",
+      "sha256": "0FE8C4AD8C0AD0491A64A85A2E56327F120162F6F3767F784C27D84DC1AA5132",
+      "bytes": 8430
+    },
+    {
+      "path": "data/bill10_remaining_leftovers.json",
+      "sha256": "A4D79A373F63F6C231CEED1B176172EC7E08FB661405E0A97EA86AA68CF50D7C",
+      "bytes": 4468
+    },
+    {
+      "path": "data/bill11_map_all.json",
+      "sha256": "600B9690C6FE746478CDC9938A85BB9828B4D23E42FF70A414890B059CD30F2E",
+      "bytes": 4756
+    },
+    {
+      "path": "data/bill12_language_splice.json",
+      "sha256": "0C96EFDC1171180D366E21E0378FC2627ECF0DECE66963D40870288B56E6B1DF",
+      "bytes": 11461
+    },
+    {
+      "path": "data/bill13_coding_tokens.json",
+      "sha256": "7CED6D7553FB5AC4DACEEFD9116D954EAC49F7AC2F9F3F4B4265954974B3936A",
+      "bytes": 5408
+    },
+    {
+      "path": "data/bill14_host_eval.json",
+      "sha256": "CBB933E1395BCD7BCD364C599CD2C4B57FACF13F632E6A41DEB821D1678D6C4E",
+      "bytes": 7116
+    },
+    {
+      "path": "data/bill15_unseen_math.json",
+      "sha256": "796507A1307886C4E83E15B46F88EBCBF906FDC547FE78177BD95BA055BC346D",
+      "bytes": 11596
+    },
+    {
+      "path": "data/bill16_word_sense.json",
+      "sha256": "88F5CA65F42A97E0F6E489930E2941B9B1301E5800B78D24B5161E3DB68ED293",
+      "bytes": 2379
+    },
+    {
+      "path": "data/bill17_adaptive.json",
+      "sha256": "CD46F920F47B20C3F84823E7AB128698D440FDAF75DFE6BECFAACF7B6CD8DF48",
+      "bytes": 5936
+    },
+    {
+      "path": "data/bill18_bio_teach.json",
+      "sha256": "44CD2970ACAB78D0CF468A683C4BCB3B083B1E25CCD90D71479C50948B2D2744",
+      "bytes": 3997
+    },
+    {
+      "path": "data/bill19_read_write.json",
+      "sha256": "036D4B9BBECB43D2CF763B51F7F0AE3DF53BA4E0ADB9C844A5B8BAC3AE7DD020",
+      "bytes": 5386
+    },
+    {
+      "path": "data/bill20_ingest.json",
+      "sha256": "D2B823FB4CB64AA926121B748C332C071A4F0C1920E68D8DA4FEF948DB816602",
+      "bytes": 11453
+    },
+    {
+      "path": "data/bill21_openstax.json",
+      "sha256": "27EEE4B007C9458FB3707F13A07F774D83BBAE75417E708F2CFE43F3A60B6C9E",
+      "bytes": 4148
+    },
+    {
+      "path": "data/bill22_openstax_fractions.json",
+      "sha256": "B708ADBF296DB2F87F9795B88AD96824DC54CD376699590FDCD9787584D2BF02",
+      "bytes": 4110
+    },
+    {
+      "path": "data/bill3_math_env.json",
+      "sha256": "F348F757C1DDF9D97F1A43A26429F621D82FEEF6AC5884FFE9DCF09226F86595",
+      "bytes": 35015
+    },
+    {
+      "path": "data/bill4_math_courses.json",
+      "sha256": "6A0245C3FBDC83A8B0B3C4169C4FCF753823189C979553344180795D19D01558",
+      "bytes": 20677
+    },
+    {
+      "path": "data/bill5_analysis.json",
+      "sha256": "F143D4F0238CBA240E3FB50B5B78D3EDDE6F70E514C180959B1D699B0547CD51",
+      "bytes": 14423
+    },
+    {
+      "path": "data/bill6_memory.json",
+      "sha256": "1635234E6B8CD2B9F34E0E33B3634D2FC5EB6142686E5B08B81137A905001F02",
+      "bytes": 9798
+    },
+    {
+      "path": "data/bill7_memory_expand.json",
+      "sha256": "34AE9FA96F968811B33F6D33C02C1D105694EF4F7C785B54571A982AB2D7183C",
+      "bytes": 7048
+    },
+    {
+      "path": "data/bill8_grow_bottlenecks.json",
+      "sha256": "4E3DC0BD4C1E4F5423A283DDFC27C3DBA4843DF98195CCA53206421FC256C85E",
+      "bytes": 8940
+    },
+    {
+      "path": "data/bill9_inxxx_leftover.json",
+      "sha256": "E1E3A9244220C298AE8BB85ABCE75CC347D1E4C5591E512080385CF838BC40FC",
+      "bytes": 4571
+    },
+    {
+      "path": "data/codex_types.json",
+      "sha256": "CCD04B55246C7E16BF3E8A726BE33CECF41AFA8E3DB21A1D5A512F990B15509E",
+      "bytes": 611
+    },
+    {
+      "path": "data/cross_proof_report.json",
+      "sha256": "0FCA156F9FFCE071E2DFD0E530524D3E77A3C6B548EDC95DAF64C5F7092F7FEA",
+      "bytes": 7212
+    },
+    {
+      "path": "data/curriculum_qa_format.json",
+      "sha256": "2D131DA3229A7A44AEF8A273A2A603B33E8A51810C15CC405590C929B71635B5",
+      "bytes": 446
+    },
+    {
+      "path": "data/develop_cycle.json",
+      "sha256": "D1A35768BF2CFABE0AB15EC6729B7F8439885A48F7946BD6885B2B35DE92546C",
+      "bytes": 8929
+    },
+    {
+      "path": "data/fly_aggression_flow.json",
+      "sha256": "7A30AAAF7C490E389F3993B820DD76AE5324A080D409F90FC11C8E5B9E41D482",
+      "bytes": 219373
+    },
+    {
+      "path": "data/fly_behavior_flow.json",
+      "sha256": "F2E144CAE4F3B7CA84815E8B33CDDC4F2B6300503367B9FCC796FD2ADE9C283B",
+      "bytes": 214004
+    },
+    {
+      "path": "data/fly_connectome_boot.json",
+      "sha256": "4C388F17D2C5E8BB6BD450C4A213E2B3440549DC76914846669536F5CB76B5BE",
+      "bytes": 13065
+    },
+    {
+      "path": "data/fly_connectome_inventory.json",
+      "sha256": "C8CFFDC84EF086F67449E6FAF2D275B2E0F625A01873C1B2207D41AE11FAC3BE",
+      "bytes": 1553
+    },
+    {
+      "path": "data/fly_courtship_flow.json",
+      "sha256": "07CB1F6DB73853D01B84078D2B71ED6F25E6044145DE8B38E25996BDABCF5982",
+      "bytes": 331724
+    },
+    {
+      "path": "data/fly_function.json",
+      "sha256": "BE1D2F363FFC7D868ACDA20B6A09DF8CE1878C46C87B561F70704A3B2A7D3319",
+      "bytes": 3836
+    },
+    {
+      "path": "data/fly_genetics_join.json",
+      "sha256": "1CEB9A21EB37D129FA26090FAB97C76D68FBE81FC0A2E3EC2C305D09D674B72D",
+      "bytes": 3289
+    },
+    {
+      "path": "data/fly_odor_flow.json",
+      "sha256": "7D44224729C9D615108DBF4A91FEAB9C6C21D19D8DE38CE6408270ED866B8E80",
+      "bytes": 540118
+    },
+    {
+      "path": "data/fly_sleep_flow.json",
+      "sha256": "6B46D0CA9A552706FDB952A0ACF5037CE4B6F742A77711767085FF83AF9B7275",
+      "bytes": 218324
+    },
+    {
+      "path": "data/fly_walking_product.json",
+      "sha256": "9819FBC50DBFCB5B4CF851F0DA7EE3A0D69CA9A4268036FAA8D631F3CACAA837",
+      "bytes": 5116
+    },
+    {
+      "path": "data/gene_blueprint.json",
+      "sha256": "D135AAB8B47BC473C6CAD199D881B56E608D7612F6981A56267BFEF65C171AFC",
+      "bytes": 31736
+    },
+    {
+      "path": "data/genetic_baseline_rest.json",
+      "sha256": "D3BB4044494FBE30C360BF560800E8403DC4DDE3965B2A3BF68E5FAB85A2AC4C",
+      "bytes": 15745
+    },
+    {
+      "path": "data/genetic_crumbs.json",
+      "sha256": "FAF7FF2AAC9CAEF2CF6FEBFB465C726A74B8782F1EC5CB12E27897A1C2BA2D25",
+      "bytes": 6531
+    },
+    {
+      "path": "data/genetic_interactions.json",
+      "sha256": "B6E458E0CDE55B9F7E030C3FA3C1DF2493747C58266582A7284D1F509B8C6D6A",
+      "bytes": 10473
+    },
+    {
+      "path": "data/genetics_hook.json",
+      "sha256": "4BFDF8A8DCC1350BF8316334779C38104B885924BA0E3DA93E806CE31525D3BE",
+      "bytes": 13192
+    },
+    {
+      "path": "data/hemibrain_connectome_boot.json",
+      "sha256": "67FA8C06D3847B194A7C87EE0B8E45F3E1F4D362AAA3CEBFE072D9813B43C5B8",
+      "bytes": 18534
+    },
+    {
+      "path": "data/homolog_correspondence.json",
+      "sha256": "385641FB0EC3D89F8F9BDBFF57DC9572F811673ECF0FD8DFB4877E633C3B3B30",
+      "bytes": 36003
+    },
+    {
+      "path": "data/ingest_deepmind_style.json",
+      "sha256": "CA4BD132764844348723EB14C4384840C13DBA777411FCEFAE27652979DADC0D",
+      "bytes": 11980
+    },
+    {
+      "path": "data/ingest_openstax.json",
+      "sha256": "6B13BF6DC65C6F364390BFE062B779E73C4EDCE992176F03205E7A1A929A8B2B",
+      "bytes": 2769
+    },
+    {
+      "path": "data/ingest_openstax_fractions.json",
+      "sha256": "01EBE906369F2A7712EDF04C35188E9649D4E9A05AD353DA820BAD55FA778C11",
+      "bytes": 2788
+    },
+    {
+      "path": "data/kenyon_connectome_boot.json",
+      "sha256": "2B89975DFA68E2316A77E1A517ED4634F75120C7B44F09232683DB31583BB049",
+      "bytes": 8539
+    },
+    {
+      "path": "data/larva_connectome_boot.json",
+      "sha256": "945DE8F7F6EBFD37D275CF6CF0F7FA19AA10A1530C4677BDD7DD504752A12056",
+      "bytes": 15732
+    },
+    {
+      "path": "data/larva_connectome_inventory.json",
+      "sha256": "DBC9BE47530BB4CC31FD8C6DF93621271BCE457557E4DCA3B81E4673A51D0EAE",
+      "bytes": 462
+    },
+    {
+      "path": "data/leftover_map.json",
+      "sha256": "DB2B6A25B9AAB57A4602BFE3DAE5B25C3F7A96944A17C166FDB1886CBF3FED75",
+      "bytes": 9614
+    },
+    {
+      "path": "data/leftover_margin.json",
+      "sha256": "85FAFDCF4C3587DD986BDE128B9EEA0EB82511FE0FDC52996C1928853F0DD456",
+      "bytes": 2794
+    },
+    {
+      "path": "data/leftover_solve.json",
+      "sha256": "56AD5256519995C02753462F015EB0AF34D4C7B6ACC28AF783438230519974DB",
+      "bytes": 8372
+    },
+    {
+      "path": "data/live_verify.json",
+      "sha256": "894EAD64F8D72957CD17A9E5D066CC6F68B9E7410B78347B34249C438F04D4C7",
+      "bytes": 1715
+    },
+    {
+      "path": "data/male_cns_boot.json",
+      "sha256": "1B68FF542345704327E307F93A7E325AEEFF0D437A26A267784E88DB913BD75D",
+      "bytes": 16793
+    },
+    {
+      "path": "data/male_cns_genetics_on_cells.json",
+      "sha256": "BA1035AAB72D0E16BB066AC40B783CA09A361614B8E9471B4C95E9FCD6D5774A",
+      "bytes": 553
+    },
+    {
+      "path": "data/math_first.json",
+      "sha256": "F5C524519E8382EC84A5EBE5CC094D90ACBD1ABA1AC9DF519F2B1085E81AD688",
+      "bytes": 6084
+    },
+    {
+      "path": "data/neural_guardrails.json",
+      "sha256": "544DF9C2CA45C951C7D2426412FC3794F719143C609E41F7F84E8C1A17CCAFB7",
+      "bytes": 2965
+    },
+    {
+      "path": "data/peptide_leftovers.json",
+      "sha256": "CA5039490B04902E514A999B8BDBF42242160C88ECC33C1183FDF79E92DC4BD4",
+      "bytes": 10752
+    },
+    {
+      "path": "data/phot1_map.json",
+      "sha256": "633A48E0E4184DB5C76F0F068C3A2E2CE69C5B584898B8C143C70DC8D5035C7C",
+      "bytes": 1193
+    },
+    {
+      "path": "data/predicted_side_hops.json",
+      "sha256": "4011C580B5B5C63FC88E2BEA49E0560BE7FDDE0A882D566AD48B0D8B04D063A7",
+      "bytes": 2761
+    },
+    {
+      "path": "data/product_vs_alphafold.json",
+      "sha256": "459E9219FA7F928BCB62A170AF5EB339107DC3B7B2281E0D10E12DC99F0A7E35",
+      "bytes": 3691
+    },
+    {
+      "path": "data/repertoire.json",
+      "sha256": "00CD1BB94975D859DAFB8BEEE6E4688B6CADE4FC9438F10CE2E2AF03E50BF5E3",
+      "bytes": 5583
+    },
+    {
+      "path": "data/shared_type_hops.json",
+      "sha256": "BC939243335F00EEE0A01E3C18A65122A96716771365B5BF5FA81A1F8DCBE541",
+      "bytes": 1695
+    },
+    {
+      "path": "data/stress_map.json",
+      "sha256": "08F9E7D8A79148D97BFA607A7DB1F869FBA406B14A9122680C70BD8B9E5CC28B",
+      "bytes": 12665
+    },
+    {
+      "path": "data/trit_expr.json",
+      "sha256": "99618F35960723B7781B005ED619610615D99D5805969278D49262461902DD35",
+      "bytes": 3675
+    },
+    {
+      "path": "data/type_counts.json",
+      "sha256": "3CDBF2E2923E24A2A4C69B2D14D801E3B577E6AE15FD37CEC05A68A448DC3818",
+      "bytes": 1261
+    },
+    {
+      "path": "data/type_identity.json",
+      "sha256": "9432948B9769F998F9A2C91A938C4A6B6E3263E696E183E65B58BCED529FAC75",
+      "bytes": 3917
+    },
+    {
+      "path": "data/vnc_side_predicted.json",
+      "sha256": "F28F71317F216FD8DC45AC469329999EF084A1CB974D0C5321D7FCD9FB49A19E",
+      "bytes": 2632
+    },
+    {
+      "path": "data/wing_sim.json",
+      "sha256": "C0E8464760410B759369C5FFA33F4A738FB57451F268D75382D616B36259566C",
+      "bytes": 5321
+    },
+    {
+      "path": "data/worm_connectome_boot.json",
+      "sha256": "16A464B1B2C4EFA2CFA88C138E6FCAB8A3BA580872B62377798EFDBAEE95F594",
+      "bytes": 11279
+    },
+    {
+      "path": "data/worm_sex_compare.json",
+      "sha256": "1DD58A50622B1BD7531EF4B31AB6AEF402234AE925C430D0B5C499DA38E500A0",
+      "bytes": 3230
+    },
+    {
+      "path": "data/yaw_jo.json",
+      "sha256": "DFD10ED9AC1D0799B8A7D0F824E36BF28397BBCD8E2F8B1B4201346C10E05A58",
+      "bytes": 1957
+    },
+    {
+      "path": "MATH.md",
+      "sha256": "E8DB553583A4B2F7C0681C8D94ADA0CCA619AC53094250CF9A578FF7971FFB88",
+      "bytes": 3493
+    },
+    {
+      "path": "docs/MECHANICS.md",
+      "sha256": "77D36C93F1F7200D881F081AD9FF04950D3B5B694B9C216293DBAE72F1839D40",
+      "bytes": 4427
+    },
+    {
+      "path": "docs/LEFTOVER.md",
+      "sha256": "968AAF44E6B06FC49B123169A3A0E61CF1B0F10008E828C0DD42B0469592755E",
+      "bytes": 5520
+    },
+    {
+      "path": "RUNNING.md",
+      "sha256": "D751011EDE6C57DCF8B853F68B17D51BFB5F688B1F91147D7DCAE5D78449E1FC",
+      "bytes": 20146
+    },
+    {
+      "path": "Bill and Ted fly adventures/BILL_TED.md",
+      "sha256": "E619B642BF4B921E9524A10D227FFD4CA7AC66E825C3AFDE3F8C05A16CC89A26",
+      "bytes": 6283
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-1/EXPERIMENT.json",
+      "sha256": "1CF71CA2F5695DCAD26DA2CCCC9B509D425AFAF8FBCB1D28D1DA1709842BFECA",
+      "bytes": 486
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-2/EXPERIMENT.json",
+      "sha256": "26738D019F1E260DD2DE7C6F6FFC9BCF60188A6D7043600EEF3AA1880F8806B4",
+      "bytes": 424
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-3/EXPERIMENT.json",
+      "sha256": "83E9EB5A262B2F9FA9B5A2AFEE0581617FB5AE34DED694E5516D302C4DD7E87F",
+      "bytes": 505
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-4/EXPERIMENT.json",
+      "sha256": "0C348BF72D1B3097D7F6366C85357B18382BEA75D57D16A1F6C4C732A4C6C7D0",
+      "bytes": 413
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-5/EXPERIMENT.json",
+      "sha256": "42A67E8FA0B636E1F0AA3ED13C44397C1B762DFBB94468D523E185C6F378222C",
+      "bytes": 442
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-6/EXPERIMENT.json",
+      "sha256": "DAB96BFEB861ED065001C4F61CCC348A1A67F41015864BF002DDA270B6847B74",
+      "bytes": 416
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-7/EXPERIMENT.json",
+      "sha256": "94B50F057FC10C477F8E7BE566715225F82CC288846C524B1F94C4B941CF29B7",
+      "bytes": 426
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-8/EXPERIMENT.json",
+      "sha256": "AE11C7DF2CC76BB9E452FC731F2CA8646E7C4B8B34DB7690D63263DB9C8F973D",
+      "bytes": 424
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-9/EXPERIMENT.json",
+      "sha256": "7CBC1357342F996B64915711E534F98A94F44CA361057342ABC29E07CADD94AC",
+      "bytes": 448
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-10/EXPERIMENT.json",
+      "sha256": "4F183CACC34BB935D67BFE1EE9839C1258BDB63B38507A6030085152A029D32B",
+      "bytes": 400
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-11/EXPERIMENT.json",
+      "sha256": "8D8FF24B03E9A726BEC0181C6489D0FE4844C53C175A47E36118C3C3213C8168",
+      "bytes": 381
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-12/EXPERIMENT.json",
+      "sha256": "976822803CD5ACB47C77FC4F477CFF963C637B9A468FC8E021CA4350DEE00073",
+      "bytes": 388
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-13/EXPERIMENT.json",
+      "sha256": "5F79DE8A747A828E9182ACFC11BEBAF81DC6F5F210121E400EFD0300BC64F15D",
+      "bytes": 407
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-14/EXPERIMENT.json",
+      "sha256": "9D6A387ECC318E89575FDA257B3FDBA730BBD0C638941A541FF39CE0AB75363D",
+      "bytes": 364
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-15/EXPERIMENT.json",
+      "sha256": "47E732836D7EDC2D2A15D88DCC01E487F9C0D1A51DC69CDF6D27C750A8B2C11E",
+      "bytes": 400
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-16/EXPERIMENT.json",
+      "sha256": "57EDDC81B46B3CC1AC08388AF0CC13100EBB56BDBBE0867B87530E4C3F33BF2B",
+      "bytes": 401
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-17/EXPERIMENT.json",
+      "sha256": "6BF34AC8A468533B7E6B8E04CB29944AC9B14D7299C315EAD0663ACE592A63FF",
+      "bytes": 473
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-18/EXPERIMENT.json",
+      "sha256": "7CE21FB08C86C73FF0BAE35D134ED094A8CA1C5E8164859609B9D953E3B16877",
+      "bytes": 379
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-19/EXPERIMENT.json",
+      "sha256": "30B3C7CF2C1819A650D2BFABD8CED7F27B84524FCFEAD190A74CC2B806E02165",
+      "bytes": 419
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-20/EXPERIMENT.json",
+      "sha256": "04BE4F7BDB3423D8B779AF326D7440286510739C61C828437956C0FFF12A4646",
+      "bytes": 411
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-21/EXPERIMENT.json",
+      "sha256": "C27D5665D8775F93B1060AC6CB01840C038AE4CCADB222E9E5903078BA852558",
+      "bytes": 334
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-22/EXPERIMENT.json",
+      "sha256": "CF233D3ADC24F62AF51D26C159792C9755087658226369F4F14963BF942EA340",
+      "bytes": 339
+    },
+    {
+      "path": "Bill and Ted fly adventures/TED-23/EXPERIMENT.json",
+      "sha256": "566D29F4DF12FE8A6E4DDDCA977CE7939BE5C1838D664322DE793208DA9D18AF",
+      "bytes": 291
+    },
+    {
+      "path": "docs/ECOSYSTEM_REVIEW.md",
+      "sha256": "5652B3A86F51498367F4817DFA674CC3DD5E233159E1123C8E1777D8834395F1",
+      "bytes": 1246
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-1/OPENSTAX_FRACTIONS.md",
+      "sha256": "04722FA5283A04FE0522BE0C39EF87AB222F3797959B99E8EA95CF2BA2A35C1D",
+      "bytes": 274
+    },
+    {
+      "path": "docs/OPENSTAX.md",
+      "sha256": "839FCCB8D0D58BD821D1E3D333D5EA287F7F4A35CC77A4AD06AF389FDD01B394",
+      "bytes": 550
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-1/OPENSTAX.md",
+      "sha256": "CB314140DA1AA752322ED017928288AA8973FD282E97A211133DFD85B0CEBA1B",
+      "bytes": 261
+    },
+    {
+      "path": "docs/INGEST.md",
+      "sha256": "55FD2BC6655A4B035A129D35CE544922CCC15D5F1DC1624C5BA45E756177E119",
+      "bytes": 420
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-1/INGEST.md",
+      "sha256": "55FD2BC6655A4B035A129D35CE544922CCC15D5F1DC1624C5BA45E756177E119",
+      "bytes": 420
+    },
+    {
+      "path": "docs/BIO_TEACH.md",
+      "sha256": "3277C24E0C51D030BA0B36685911C864EA7DBC881CB8DF302535ED1A153E411D",
+      "bytes": 676
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-1/BIO_TEACH.md",
+      "sha256": "3277C24E0C51D030BA0B36685911C864EA7DBC881CB8DF302535ED1A153E411D",
+      "bytes": 676
+    },
+    {
+      "path": "docs/CAPABILITY.md",
+      "sha256": "8E5A28FDCDC81DE9679E7E568B8D8E2790AEB92BBEC4377D3AD6CF379DD002F1",
+      "bytes": 952
+    },
+    {
+      "path": "docs/SELF_STUDY.md",
+      "sha256": "EB2B3A13A06177384A7B4CCCD52228484543544F17F04FA1DC4E1EB5FBF90AB5",
+      "bytes": 529
+    },
+    {
+      "path": "docs/CURRICULUM_SOURCES.md",
+      "sha256": "A640E760B89D2773076964F25ACED16AD49E1880871B014D0BFB7911F6C2539E",
+      "bytes": 2014
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-1/CAPABILITY.md",
+      "sha256": "8E5A28FDCDC81DE9679E7E568B8D8E2790AEB92BBEC4377D3AD6CF379DD002F1",
+      "bytes": 952
+    },
+    {
+      "path": "docs/LEARNING.md",
+      "sha256": "A9C3EC8FB50D8482855EA0FF3203FC5537510A41AC10A15D755D94260AEC5E65",
+      "bytes": 1166
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-1/LEARNING.md",
+      "sha256": "A9C3EC8FB50D8482855EA0FF3203FC5537510A41AC10A15D755D94260AEC5E65",
+      "bytes": 1166
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-2/WORD_SENSE.md",
+      "sha256": "43F0E3F2647A923F927A1E446DD5D93101A1ABE29B2CB09DBF297828B5F60CF3",
+      "bytes": 613
+    },
+    {
+      "path": "docs/WORD_SENSE.md",
+      "sha256": "43F0E3F2647A923F927A1E446DD5D93101A1ABE29B2CB09DBF297828B5F60CF3",
+      "bytes": 613
+    },
+    {
+      "path": "docs/DISCOVERIES.md",
+      "sha256": "47FCC7955A75AB9444BF10D6379C239226A353933C21D4334D63AFF6CE1E03B6",
+      "bytes": 3624
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-2/UNSEEN_MATH.md",
+      "sha256": "E4323E1BC253F94C0133E49C9AAF55DA6D7EC4CFDE25AFBBB964EA5C0ADF998A",
+      "bytes": 697
+    },
+    {
+      "path": "docs/UNSEEN_MATH.md",
+      "sha256": "E4323E1BC253F94C0133E49C9AAF55DA6D7EC4CFDE25AFBBB964EA5C0ADF998A",
+      "bytes": 697
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-2/SAFETY.md",
+      "sha256": "0361289A566779ECBC3D7EEE1A26611C3EEF2A882EDEC1F0A089A9BB2DC06908",
+      "bytes": 849
+    },
+    {
+      "path": "docs/SAFETY_FAMILY.md",
+      "sha256": "AE9856D3A3B2D137D3FD4E05F4D5F96EB58D68A4C10F809ECFCFBDDEB4E56B7C",
+      "bytes": 1181
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-2/LANGUAGE.md",
+      "sha256": "41F884D9F39FAE2242EBA945A49548968C00E027CE8BAA7ED6F63554D2D9C2FC",
+      "bytes": 866
+    },
+    {
+      "path": "docs/LANGUAGE_SPLICE.md",
+      "sha256": "41F884D9F39FAE2242EBA945A49548968C00E027CE8BAA7ED6F63554D2D9C2FC",
+      "bytes": 866
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-2/CODING.md",
+      "sha256": "7AD641257749908587D3A7847748BE693A24E1B748FDC92FC64F297C1C29EF0C",
+      "bytes": 316
+    },
+    {
+      "path": "docs/CODING_SPLICE.md",
+      "sha256": "7AD641257749908587D3A7847748BE693A24E1B748FDC92FC64F297C1C29EF0C",
+      "bytes": 316
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-2/LEFTOVER_INXXX.md",
+      "sha256": "CB6905D3678999D140936F22D0A4F21827DD14A974BF2DCF22379329ADDB08DF",
+      "bytes": 580
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-2/REMAINING.md",
+      "sha256": "692DC9AA857FEF10F9A73BCC17A94FC3CAF5E93DE32587DDF93E6041D2BDD51A",
+      "bytes": 1702
+    },
+    {
+      "path": "docs/LEFTOVER_REMAINING.md",
+      "sha256": "692DC9AA857FEF10F9A73BCC17A94FC3CAF5E93DE32587DDF93E6041D2BDD51A",
+      "bytes": 1702
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-2/COURSES.md",
+      "sha256": "F35C2917538999372DD1F4CBB2E817951B7970F82269BABD5912510905480501",
+      "bytes": 799
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-2/ANALYSIS.md",
+      "sha256": "8BF39E48232C7FE0E96D15CE12A2EBC906D430275D7B650A8B9BB237E7A3090D",
+      "bytes": 616
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-2/MEMORY.md",
+      "sha256": "2428665C1BE43BD566F0F628E3FFCEF0CCBDC30722EFF0AE9E90A8E20AE8A83F",
+      "bytes": 1097
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-2/GROWTH.md",
+      "sha256": "01F659083DB1CC926241787B6009C31D2E514EB34B1A9D58BDCE86C014A55E8B",
+      "bytes": 359
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-2/GROW.md",
+      "sha256": "13B21E4A341E044B797414AB8DC05C1627032B4150C3BB2B0FC8D9B0D528B83B",
+      "bytes": 146
+    },
+    {
+      "path": "docs/MEMORY_LIMITS.md",
+      "sha256": "282AF33117DAE6C42EDDE574B3B9883D71B8EBA43F3628652D2A907B7BF9A137",
+      "bytes": 5661
+    },
+    {
+      "path": "docs/GROWTH_REGIONS.md",
+      "sha256": "2A401D235D2CDC18C2F9AF6BD367F4424C17641F50FC336E6A8F34F8E508B4D3",
+      "bytes": 2794
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-1/FINDINGS.md",
+      "sha256": "3EE5E53D37124CF8101C9F014A58D60DF14E662B297CC64E463639E47DE77123",
+      "bytes": 3770
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-1/CLOSEOUT.md",
+      "sha256": "2AB4D9CBFA43F890EF022A75F97EE067007DF477F7D7D03CCBA287903C7FB702",
+      "bytes": 4415
+    },
+    {
+      "path": "Bill and Ted fly adventures/Adventure-2/FINDINGS.md",
+      "sha256": "3771163D4F1C22FCE97E21C6C057F8BFB2AB25DC224D7A3935A6561ED4F09D15",
+      "bytes": 1145
+    }
+  ],
+  "note": "Residual organism snapshot. Not trained weights. Synapse feathers stay on D:."
+}

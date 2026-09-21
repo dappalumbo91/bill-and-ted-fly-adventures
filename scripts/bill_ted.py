@@ -60,6 +60,9 @@ def freeze_paths() -> list[Path]:
         BT / "TED-20" / "EXPERIMENT.json",
         BT / "TED-21" / "EXPERIMENT.json",
         BT / "TED-22" / "EXPERIMENT.json",
+        BT / "TED-23" / "EXPERIMENT.json",
+        ROOT / "docs" / "ECOSYSTEM_REVIEW.md",
+        BT / "Adventure-1" / "OPENSTAX_FRACTIONS.md",
         ROOT / "docs" / "OPENSTAX.md",
         BT / "Adventure-1" / "OPENSTAX.md",
         ROOT / "docs" / "INGEST.md",
@@ -969,6 +972,41 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  promoted Bill-22 tree={man['tree_sha256'][:12]}")
         else:
             print("  Bill-21 stays")
+    elif cmd == "ted-23":
+        vpath = ROOT / "data" / "bill22_openstax_fractions.json"
+        if not vpath.is_file():
+            print("  run python scripts/bill22_openstax_fractions.py first")
+            return 1
+        v = json.loads(vpath.read_text(encoding="utf-8"))
+        win = bool(v.get("promotes") and v.get("overall_ok"))
+        exp = {
+            "id": "TED-23",
+            "role": "ted",
+            "adventure": 1,
+            "change": "OpenStax Ch.4 fractions then Ch.5 decimals",
+            "vs_bill": "Bill-22",
+            "n_ok": v.get("n_ok"),
+            "n": v.get("n"),
+            "promotes": win,
+            "promote_to": "Bill-23" if win else None,
+            "why": "Sequential after Ch.1/3. y-3=-9 computed -6. 2 3/5 = 13/5.",
+        }
+        dest = BT / "TED-23"
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / "EXPERIMENT.json").write_text(json.dumps(exp, indent=2), encoding="utf-8")
+        if "TED-23" not in led["teds"]:
+            led["teds"].append("TED-23")
+        print(f"  TED-23 promotes={win}  {exp.get('n_ok')}/{exp.get('n')}")
+        if win:
+            man = freeze("Bill-23")
+            if "Bill-23" not in led["bills"]:
+                led["bills"].append("Bill-23")
+            led["promotions"].append({"from": "TED-23", "to": "Bill-23", "tree": man["tree_sha256"]})
+            led["current_bill"] = "Bill-23"
+            led["last_tree_sha256"] = man["tree_sha256"]
+            print(f"  promoted Bill-23 tree={man['tree_sha256'][:12]}")
+        else:
+            print("  Bill-22 stays")
     elif cmd == "ted-1":
         exp = ted1()
         if "TED-1" not in led["teds"]:

@@ -139,3 +139,5 @@ Adventure 1 extras: Ledger B on dump N, GABA n, CRC transmitter AA — **17/17**
 **TED-21:** G:\\AI_Datasets zips empty. Ingested DeepMind-style algorithmic JSON **48/48** (8 kinds × 6). Mix read/write/deny 3/3. Bank `data/ingest_deepmind_style.json`. **Promoted → Bill-21.** `python scripts/bill20_ingest.py` · `python scripts/bill_ted.py ted-21`
 
 **TED-22:** OpenStax Prealgebra 2e (CC BY-NC-SA) **15/15**. Sequential Ch.1 then integers. `1683+49` computed **1732** (published key 2162 does not match those addends). **Promoted → Bill-22.** `python scripts/bill21_openstax.py` · `python scripts/bill_ted.py ted-22`
+
+**TED-23:** OpenStax Ch.4 fractions then Ch.5 decimals **15/15**. \(1/8\cdot 2/3=1/12\), \(2\,3/5=13/5\), \(y-3=-9\) computed **−6**. Ecosystem review: `docs/ECOSYSTEM_REVIEW.md`. **Promoted → Bill-23.** `python scripts/bill22_openstax_fractions.py` · `python scripts/bill_ted.py ted-23`

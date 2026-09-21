@@ -1,0 +1,12 @@
+{
+  "id": "TED-23",
+  "role": "ted",
+  "adventure": 1,
+  "change": "OpenStax Ch.4 fractions then Ch.5 decimals",
+  "vs_bill": "Bill-22",
+  "n_ok": 15,
+  "n": 15,
+  "promotes": true,
+  "promote_to": "Bill-23",
+  "why": "Sequential after Ch.1/3. y-3=-9 computed -6. 2 3/5 = 13/5."
+}
