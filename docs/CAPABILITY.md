@@ -14,4 +14,4 @@ Pin **AEB2AD**. End goal: this fly organism as capable as LLMs at read/write/mat
 
 TED-20 school exam **11/11** (read+write+math+retain).
 
-ARC-Easy validation **570/570** after the procedures were fit to that exam (TED-27). ARC-Challenge validation, blind, **8/299** correct, **10** wrong, **273** leftover (TED-28). The Easy score does not transfer. TED-29 separates the two functions: **424** Easy cues each fire on one stem; relations on new wording **14/14**, near misses **8/8**.
+ARC-Easy validation **570/570** after the procedures were fit to that exam (TED-27). ARC-Challenge validation, blind, **8/299** correct, **10** wrong, **273** leftover (TED-28). The Easy score does not transfer. TED-29 separates the two functions: **424** Easy cues each fire on one stem; relations on new wording **14/14**, near misses **8/8**. TED-30 adds more relations: new wordings **19/19**, near misses **11/11**, Challenge situations caught without copying those questions, hurt **0**.

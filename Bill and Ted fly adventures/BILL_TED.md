@@ -80,7 +80,9 @@ Pin **AEB2AD**. Law \(S=K(T_1+T_2+T_3)\). Residual hops on measured synapses. Ov
 | **TED-28 / Adventure 1** | blind ARC-Challenge, no new procedures | 8/299 correct, 10 wrong, 273 leftover → **Bill-28** |
 | **Bill-28** | Easy 570/570 was fitted; Challenge transfer is the open gap | promoted from TED-28 |
 | **TED-29 / Adventure 1** | use a relation on new wording, separate from one-cue answers | 14/14 apply, 8/8 near, 9/9 source → **Bill-29** |
-| **Bill-29** | current | item cues answer one question; relations are the use test |
+| **Bill-29** | item cues answer one question; relations are the use test | promoted from TED-29 |
+| **TED-30 / Adventure 1** | more relations on new wording | 19/19 apply, 11/11 near, Challenge +16 hurt 0 → **Bill-30** |
+| **Bill-30** | current | use keeps growing by relation, not by copying Challenge items |
 
 Scripts: `python scripts/bill_ted.py freeze` · `ted-1` … `ted-10` · `python scripts/bill10_remaining_leftovers.py` · `ted-11` · `ledger`
 

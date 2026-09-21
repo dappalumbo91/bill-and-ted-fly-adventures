@@ -1,0 +1,19 @@
+{
+  "id": "TED-30",
+  "role": "ted",
+  "adventure": 1,
+  "change": "More situation relations; new wording, near miss, original situation",
+  "vs_bill": "Bill-29",
+  "apply_ok": 19,
+  "apply_n": 19,
+  "near_ok": 11,
+  "near_n": 11,
+  "source_ok": 24,
+  "source_n": 24,
+  "challenge_newly_caught": 16,
+  "challenge_hurt": 0,
+  "easy_new_wrong": 0,
+  "promotes": true,
+  "promote_to": "Bill-30",
+  "why": "Use stays a relation on a new wording. Challenge questions were not copied into cues. Not on W."
+}

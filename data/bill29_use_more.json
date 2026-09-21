@@ -1,0 +1,729 @@
+{
+  "adventure": 1,
+  "ted": "TED-30",
+  "vs_bill": "Bill-29",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "fitted_challenge_val_into_cues": false,
+  "answer_key_seen_at_pick": false,
+  "n_new_relations": 24,
+  "apply_ok": 19,
+  "apply_n": 19,
+  "near_ok": 11,
+  "near_n": 11,
+  "old_apply_ok": 14,
+  "old_apply_n": 14,
+  "old_near_ok": 8,
+  "old_near_n": 8,
+  "source_ok": 24,
+  "source_n": 24,
+  "new_source_ok": 15,
+  "new_source_n": 15,
+  "easy_still_correct": 570,
+  "easy_new_wrong": 0,
+  "challenge_newly_caught": 16,
+  "challenge_hurt": 0,
+  "bank": [
+    {
+      "id": "apply-dog-learned",
+      "kind": "apply",
+      "law": "learned",
+      "want": "B",
+      "picked": "B",
+      "fired": "learned",
+      "ok": true
+    },
+    {
+      "id": "apply-puppy-called",
+      "kind": "apply",
+      "law": "learned",
+      "want": "A",
+      "picked": "A",
+      "fired": "learned",
+      "ok": true
+    },
+    {
+      "id": "near-inherited-coat",
+      "kind": "near",
+      "law": "learned",
+      "want": "B",
+      "picked": "B",
+      "fired": "inherited",
+      "ok": true
+    },
+    {
+      "id": "apply-copper-melt",
+      "kind": "apply",
+      "law": "melt_particles",
+      "want": "C",
+      "picked": "C",
+      "fired": "melt_particles",
+      "ok": true
+    },
+    {
+      "id": "apply-wax-cool",
+      "kind": "apply",
+      "law": "cool_particles",
+      "want": "B",
+      "picked": "B",
+      "fired": "cool_particles",
+      "ok": true
+    },
+    {
+      "id": "near-cool-not-melt",
+      "kind": "near",
+      "law": "melt_particles",
+      "want": "B",
+      "picked": "B",
+      "fired": "cool_particles",
+      "ok": true
+    },
+    {
+      "id": "apply-gas",
+      "kind": "apply",
+      "law": "gas_indefinite",
+      "want": "A",
+      "picked": "A",
+      "fired": "gas_indefinite",
+      "ok": true
+    },
+    {
+      "id": "apply-liquid",
+      "kind": "apply",
+      "law": "liquid_volume",
+      "want": "B",
+      "picked": "B",
+      "fired": "liquid_volume",
+      "ok": true
+    },
+    {
+      "id": "apply-solid",
+      "kind": "apply",
+      "law": "solid_both",
+      "want": "C",
+      "picked": "C",
+      "fired": "solid_both",
+      "ok": true
+    },
+    {
+      "id": "near-liquid-not-gas",
+      "kind": "near",
+      "law": "gas_indefinite",
+      "want": "B",
+      "picked": "B",
+      "fired": "liquid_volume",
+      "ok": true
+    },
+    {
+      "id": "apply-rock-mass",
+      "kind": "apply",
+      "law": "mass_is_matter",
+      "want": "A",
+      "picked": "A",
+      "fired": "mass_is_matter",
+      "ok": true
+    },
+    {
+      "id": "near-rock-volume",
+      "kind": "near",
+      "law": "mass_is_matter",
+      "want": "B",
+      "picked": "B",
+      "fired": "volume_is_space",
+      "ok": true
+    },
+    {
+      "id": "apply-salt-hot",
+      "kind": "apply",
+      "law": "hot_dissolves_most",
+      "want": "C",
+      "picked": "C",
+      "fired": "hot_dissolves_most",
+      "ok": true
+    },
+    {
+      "id": "near-salt-least",
+      "kind": "near",
+      "law": "hot_dissolves_most",
+      "want": "A",
+      "picked": "A",
+      "fired": "cold_dissolves_least",
+      "ok": true
+    },
+    {
+      "id": "apply-opinion-roses",
+      "kind": "apply",
+      "law": "opinion",
+      "want": "B",
+      "picked": "B",
+      "fired": "opinion",
+      "ok": true
+    },
+    {
+      "id": "apply-fact-dogs",
+      "kind": "apply",
+      "law": "fact",
+      "want": "C",
+      "picked": "C",
+      "fired": "fact",
+      "ok": true
+    },
+    {
+      "id": "near-fact-not-opinion",
+      "kind": "near",
+      "law": "opinion",
+      "want": "D",
+      "picked": "D",
+      "fired": "fact",
+      "ok": true
+    },
+    {
+      "id": "apply-battery",
+      "kind": "apply",
+      "law": "battery_potential",
+      "want": "A",
+      "picked": "A",
+      "fired": "battery_potential",
+      "ok": true
+    },
+    {
+      "id": "near-kinetic-circuit",
+      "kind": "near",
+      "law": "battery_potential",
+      "want": "B",
+      "picked": "B",
+      "fired": "circuit_kinetic",
+      "ok": true
+    },
+    {
+      "id": "apply-lava-moss",
+      "kind": "apply",
+      "law": "pioneer",
+      "want": "A",
+      "picked": "A",
+      "fired": "pioneer",
+      "ok": true
+    },
+    {
+      "id": "near-old-forest",
+      "kind": "near",
+      "law": "pioneer",
+      "want": "B",
+      "picked": null,
+      "fired": null,
+      "ok": true
+    },
+    {
+      "id": "apply-two-pots",
+      "kind": "apply",
+      "law": "boil_same_temp",
+      "want": "B",
+      "picked": "B",
+      "fired": "boil_same_temp",
+      "ok": true
+    },
+    {
+      "id": "near-boils-first",
+      "kind": "near",
+      "law": "boil_same_temp",
+      "want": "B",
+      "picked": "B",
+      "fired": "boil_smaller_first",
+      "ok": true
+    },
+    {
+      "id": "apply-moon-swing",
+      "kind": "apply",
+      "law": "no_atmosphere",
+      "want": "C",
+      "picked": "C",
+      "fired": "no_atmosphere",
+      "ok": true
+    },
+    {
+      "id": "apply-berries",
+      "kind": "apply",
+      "law": "more_food",
+      "want": "B",
+      "picked": "B",
+      "fired": "more_food",
+      "ok": true
+    },
+    {
+      "id": "near-dry-pond-birds",
+      "kind": "near",
+      "law": "more_food",
+      "want": "B",
+      "picked": null,
+      "fired": null,
+      "ok": true
+    },
+    {
+      "id": "apply-lake-drought",
+      "kind": "apply",
+      "law": "drought_fish",
+      "want": "B",
+      "picked": "B",
+      "fired": "drought_fish",
+      "ok": true
+    },
+    {
+      "id": "apply-wax-heat-left",
+      "kind": "apply",
+      "law": "heat_left_liquid",
+      "want": "B",
+      "picked": "B",
+      "fired": "heat_left_liquid",
+      "ok": true
+    },
+    {
+      "id": "near-heat-into",
+      "kind": "near",
+      "law": "heat_left_liquid",
+      "want": "A",
+      "picked": "A",
+      "fired": "heat_into_liquid",
+      "ok": true
+    },
+    {
+      "id": "apply-maple-sugar",
+      "kind": "apply",
+      "law": "plant_stores_food",
+      "want": "C",
+      "picked": "C",
+      "fired": "plant_stores_food",
+      "ok": true
+    }
+  ],
+  "old_bank_still": [
+    {
+      "id": "apply-reflect-lake",
+      "kind": "apply",
+      "law": "reflection",
+      "want": "C",
+      "picked": "C",
+      "fired": "reflection",
+      "ok": true
+    },
+    {
+      "id": "apply-reflect-pool",
+      "kind": "apply",
+      "law": "reflection",
+      "want": "B",
+      "picked": "B",
+      "fired": "reflection",
+      "ok": true
+    },
+    {
+      "id": "near-pond-warm",
+      "kind": "near",
+      "law": "reflection",
+      "want": "A",
+      "picked": "A",
+      "fired": "temperature_place",
+      "ok": true
+    },
+    {
+      "id": "apply-egg-bird",
+      "kind": "apply",
+      "law": "egg_cell",
+      "want": "C",
+      "picked": "C",
+      "fired": "egg_cell",
+      "ok": true
+    },
+    {
+      "id": "apply-egg-frog",
+      "kind": "apply",
+      "law": "egg_cell",
+      "want": "B",
+      "picked": "B",
+      "fired": "egg_cell",
+      "ok": true
+    },
+    {
+      "id": "near-heart-organ",
+      "kind": "near",
+      "law": "egg_cell",
+      "want": "B",
+      "picked": "B",
+      "fired": "heart_organ",
+      "ok": true
+    },
+    {
+      "id": "apply-hawk",
+      "kind": "apply",
+      "law": "consumer",
+      "want": "C",
+      "picked": "C",
+      "fired": "consumer",
+      "ok": true
+    },
+    {
+      "id": "apply-mushroom",
+      "kind": "apply",
+      "law": "decomposer",
+      "want": "C",
+      "picked": "C",
+      "fired": "decomposer",
+      "ok": true
+    },
+    {
+      "id": "near-mushroom-not-consumer",
+      "kind": "near",
+      "law": "consumer",
+      "want": "B",
+      "picked": "B",
+      "fired": "decomposer",
+      "ok": true
+    },
+    {
+      "id": "apply-juice-freeze",
+      "kind": "apply",
+      "law": "freeze_state",
+      "want": "B",
+      "picked": "B",
+      "fired": "freeze_state",
+      "ok": true
+    },
+    {
+      "id": "apply-milk-same",
+      "kind": "apply",
+      "law": "freeze_mass",
+      "want": "C",
+      "picked": "C",
+      "fired": "freeze_mass",
+      "ok": true
+    },
+    {
+      "id": "near-freeze-not-mass-as-change",
+      "kind": "near",
+      "law": "freeze_state",
+      "want": "B",
+      "picked": "B",
+      "fired": "freeze_mass",
+      "ok": true
+    },
+    {
+      "id": "apply-fossils",
+      "kind": "apply",
+      "law": "life_history_rock",
+      "want": "C",
+      "picked": "C",
+      "fired": "life_history_rock",
+      "ok": true
+    },
+    {
+      "id": "apply-magma",
+      "kind": "apply",
+      "law": "igneous",
+      "want": "B",
+      "picked": "B",
+      "fired": "igneous",
+      "ok": true
+    },
+    {
+      "id": "near-magma-not-fossil",
+      "kind": "near",
+      "law": "life_history_rock",
+      "want": "C",
+      "picked": "C",
+      "fired": "igneous",
+      "ok": true
+    },
+    {
+      "id": "apply-euk",
+      "kind": "apply",
+      "law": "eukaryote_nucleus",
+      "want": "B",
+      "picked": "B",
+      "fired": "eukaryote_nucleus",
+      "ok": true
+    },
+    {
+      "id": "near-both-membranes",
+      "kind": "near",
+      "law": "eukaryote_nucleus",
+      "want": "B",
+      "picked": "B",
+      "fired": "shared_membrane",
+      "ok": true
+    },
+    {
+      "id": "apply-high",
+      "kind": "apply",
+      "law": "high_pressure_dry",
+      "want": "C",
+      "picked": "C",
+      "fired": "high_pressure_dry",
+      "ok": true
+    },
+    {
+      "id": "apply-low",
+      "kind": "apply",
+      "law": "low_pressure_wet",
+      "want": "C",
+      "picked": "C",
+      "fired": "low_pressure_wet",
+      "ok": true
+    },
+    {
+      "id": "near-low-not-drought-law",
+      "kind": "near",
+      "law": "high_pressure_dry",
+      "want": "B",
+      "picked": "B",
+      "fired": "low_pressure_wet",
+      "ok": true
+    },
+    {
+      "id": "apply-tomatoes",
+      "kind": "apply",
+      "law": "same_crop_nutrients",
+      "want": "B",
+      "picked": "B",
+      "fired": "same_crop_nutrients",
+      "ok": true
+    },
+    {
+      "id": "near-no-rain",
+      "kind": "near",
+      "law": "same_crop_nutrients",
+      "want": "B",
+      "picked": "B",
+      "fired": "no_rain",
+      "ok": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "NYSEDREGENTS_2014_4_13",
+      "law": "reflection",
+      "ok": true,
+      "picked": "B",
+      "fired": "reflection",
+      "key": "B",
+      "key_text": "reflectiveness"
+    },
+    {
+      "id": "Mercury_7185133",
+      "law": "egg_cell",
+      "ok": true,
+      "picked": "A",
+      "fired": "egg_cell",
+      "key": "A",
+      "key_text": "a cell"
+    },
+    {
+      "id": "Mercury_SC_408859",
+      "law": "consumer",
+      "ok": true,
+      "picked": "A",
+      "fired": "consumer",
+      "key": "A",
+      "key_text": "consumer"
+    },
+    {
+      "id": "MEA_2016_5_6",
+      "law": "freeze_state",
+      "ok": true,
+      "picked": "C",
+      "fired": "freeze_state",
+      "key": "C",
+      "key_text": "state"
+    },
+    {
+      "id": "Mercury_SC_401244",
+      "law": "life_history_rock",
+      "ok": true,
+      "picked": "D",
+      "fired": "life_history_rock",
+      "key": "D",
+      "key_text": "limestone"
+    },
+    {
+      "id": "Mercury_415263",
+      "law": "eukaryote_nucleus",
+      "ok": true,
+      "picked": "C",
+      "fired": "eukaryote_nucleus",
+      "key": "C",
+      "key_text": "a nucleus"
+    },
+    {
+      "id": "Mercury_7103565",
+      "law": "high_pressure_dry",
+      "ok": true,
+      "picked": "C",
+      "fired": "high_pressure_dry",
+      "key": "C",
+      "key_text": "drought"
+    },
+    {
+      "id": "Mercury_7166880",
+      "law": "low_pressure_wet",
+      "ok": true,
+      "picked": "D",
+      "fired": "low_pressure_wet",
+      "key": "D",
+      "key_text": "cloudy and rainy"
+    },
+    {
+      "id": "Mercury_7141400",
+      "law": "same_crop_nutrients",
+      "ok": true,
+      "picked": "A",
+      "fired": "same_crop_nutrients",
+      "key": "A",
+      "key_text": "decrease in soil nutrients"
+    },
+    {
+      "id": "Mercury_7032743",
+      "law": "learned",
+      "ok": true,
+      "picked": "C",
+      "fired": "learned",
+      "key": "C",
+      "key_text": "hunting strategies"
+    },
+    {
+      "id": "Mercury_7205135",
+      "law": "melt_particles",
+      "ok": true,
+      "picked": "C",
+      "fired": "melt_particles",
+      "key": "C",
+      "key_text": "The particles move more rapidly."
+    },
+    {
+      "id": "NYSEDREGENTS_2014_4_4",
+      "law": "gas_indefinite",
+      "ok": true,
+      "picked": "A",
+      "fired": "gas_indefinite",
+      "key": "A",
+      "key_text": "gas"
+    },
+    {
+      "id": "MCAS_8_2015_11",
+      "law": "mass_is_matter",
+      "ok": true,
+      "picked": "A",
+      "fired": "mass_is_matter",
+      "key": "A",
+      "key_text": "the amount of matter in the block"
+    },
+    {
+      "id": "TIMSS_2007_4_pg90",
+      "law": "hot_dissolves_most",
+      "ok": true,
+      "picked": "C",
+      "fired": "hot_dissolves_most",
+      "key": "C",
+      "key_text": "The hot water dissolved the most sugar."
+    },
+    {
+      "id": "MCAS_2000_8_10",
+      "law": "opinion",
+      "ok": true,
+      "picked": "B",
+      "fired": "opinion",
+      "key": "B",
+      "key_text": "Many plants are beautiful."
+    },
+    {
+      "id": "Mercury_7071365",
+      "law": "fact",
+      "ok": true,
+      "picked": "D",
+      "fired": "fact",
+      "key": "D",
+      "key_text": "Butterflies and moths have equal numbers of legs."
+    },
+    {
+      "id": "Mercury_7187915",
+      "law": "battery_potential",
+      "ok": true,
+      "picked": "A",
+      "fired": "battery_potential",
+      "key": "A",
+      "key_text": "chemical energy in the battery"
+    },
+    {
+      "id": "Mercury_7189823",
+      "law": "pioneer",
+      "ok": true,
+      "picked": "A",
+      "fired": "pioneer",
+      "key": "A",
+      "key_text": "mosses"
+    },
+    {
+      "id": "MCAS_2015_8_7",
+      "law": "boil_same_temp",
+      "ok": true,
+      "picked": "B",
+      "fired": "boil_same_temp",
+      "key": "B",
+      "key_text": "The water in both pans boils at the same temperature."
+    },
+    {
+      "id": "MCAS_2005_8_5",
+      "law": "no_atmosphere",
+      "ok": true,
+      "picked": "D",
+      "fired": "no_atmosphere",
+      "key": "D",
+      "key_text": "The planet lacks an atmosphere to hold heat."
+    },
+    {
+      "id": "Mercury_SC_405487",
+      "law": "more_food",
+      "ok": true,
+      "picked": "B",
+      "fired": "more_food",
+      "key": "B",
+      "key_text": "Food sources increased."
+    },
+    {
+      "id": "Mercury_SC_407169",
+      "law": "drought_fish",
+      "ok": true,
+      "picked": "D",
+      "fired": "drought_fish",
+      "key": "D",
+      "key_text": "They would be unable to survive."
+    },
+    {
+      "id": "Mercury_SC_412337",
+      "law": "heat_left_liquid",
+      "ok": true,
+      "picked": "D",
+      "fired": "heat_left_liquid",
+      "key": "D",
+      "key_text": "The temperature of the liquid decreased, or the liquid became a solid."
+    },
+    {
+      "id": "MDSA_2007_4_52",
+      "law": "plant_stores_food",
+      "ok": true,
+      "picked": "C",
+      "fired": "plant_stores_food",
+      "key": "C",
+      "key_text": "Food is stored for future use."
+    }
+  ],
+  "failures": [],
+  "new_pathway": {
+    "name": "reason_use",
+    "splice_at": "ALU",
+    "not_on_W": true,
+    "law": "more situation relations; new wording must match; near miss must not take the wrong relation"
+  },
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-30",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}

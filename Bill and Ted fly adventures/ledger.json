@@ -31,7 +31,8 @@
     "Bill-26",
     "Bill-27",
     "Bill-28",
-    "Bill-29"
+    "Bill-29",
+    "Bill-30"
   ],
   "teds": [
     "TED-1",
@@ -62,7 +63,8 @@
     "TED-26",
     "TED-27",
     "TED-28",
-    "TED-29"
+    "TED-29",
+    "TED-30"
   ],
   "promotions": [
     {
@@ -209,8 +211,13 @@
       "from": "TED-29",
       "to": "Bill-29",
       "tree": "A326A10E232A10F2EDC293A9CD3B4D0FE12BF15EE81AAFE63E8F8DF8744B8CF1"
+    },
+    {
+      "from": "TED-30",
+      "to": "Bill-30",
+      "tree": "8F2867DE833074CD61210E3E3A561ED8A6390D33B766B88FA6378CDE5276F272"
     }
   ],
-  "current_bill": "Bill-29",
-  "last_tree_sha256": "A326A10E232A10F2EDC293A9CD3B4D0FE12BF15EE81AAFE63E8F8DF8744B8CF1"
+  "current_bill": "Bill-30",
+  "last_tree_sha256": "8F2867DE833074CD61210E3E3A561ED8A6390D33B766B88FA6378CDE5276F272"
 }

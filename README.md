@@ -153,6 +153,8 @@ python scripts/bill27_arc_challenge.py      # blind ARC-Challenge, no new proced
 python scripts/bill_ted.py ted-28
 python scripts/bill28_use.py                # use a relation on new wording, not one cue per question
 python scripts/bill_ted.py ted-29
+python scripts/bill29_use_more.py           # more relations on new wording
+python scripts/bill_ted.py ted-30
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 
