@@ -8,7 +8,7 @@ Gemini’s list is the right **shape**: sequential textbooks, algorithmic math, 
 |--------|--------|----------------|--------|
 | OpenStax / BCcampus | CC textbooks XML/PDF | TED-22 Prealgebra 2e Be Prepared + word problems **15/15** sequential Ch.1→3. | **ingested** |
 | DeepMind Mathematics Dataset | algorithmic K-12 strings | TED-21 ingested **48** template items (G: zips empty). Plus/minus/times/div/pct/times-as-many/eq/less **48/48**. | **ingested** |
-| ARC (AI2 science MCQ) | question + choices + key | Choice trit leftover until we teach MCQ as overlay on options. | leftover job |
+| ARC (AI2 science MCQ) | question + choices + key | TED-24 ARC-Easy: study train, exam val. One fact → letter; else leftover. Precision **68.6%** when answered (48/70); **500/570** leftover. | **ingested** |
 | Simple English Wikipedia dumps | encyclopedic frames | Research observer later; overlay/consensus; **never over \(W\)**. | leftover |
 | Gutenberg | public-domain reading | Reading curriculum later; closed-lexicon decode first. | leftover |
 | OpenML education | arrays | Numeric rule arrays if they match ALU. | analog |

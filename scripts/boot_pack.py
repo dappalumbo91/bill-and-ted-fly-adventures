@@ -85,6 +85,7 @@ A1RW = ROOT / "data" / "bill19_read_write.json"
 A1IN = ROOT / "data" / "bill20_ingest.json"
 A1OS = ROOT / "data" / "bill21_openstax.json"
 A1FR = ROOT / "data" / "bill22_openstax_fractions.json"
+A1ARC = ROOT / "data" / "bill23_arc.json"
 
 
 def fail(msg: str) -> None:
@@ -410,7 +411,7 @@ def test_identity_phot1_develop() -> None:
     bt = json.loads(BTLED.read_text(encoding="utf-8"))
     if bt.get("current_bill") not in (
         "Bill-0", "Bill-1", "Bill-2", "Bill-3", "Bill-4",
-        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10", "Bill-11", "Bill-12", "Bill-13", "Bill-14", "Bill-15", "Bill-16", "Bill-17", "Bill-18", "Bill-19", "Bill-20", "Bill-21", "Bill-22", "Bill-23",
+        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10", "Bill-11", "Bill-12", "Bill-13", "Bill-14", "Bill-15", "Bill-16", "Bill-17", "Bill-18", "Bill-19", "Bill-20", "Bill-21", "Bill-22", "Bill-23", "Bill-24",
     ):
         fail(f"bill_ted current {bt.get('current_bill')}")
     ok(f"bill_ted current={bt.get('current_bill')} teds={bt.get('teds')}")
@@ -683,11 +684,20 @@ def test_identity_phot1_develop() -> None:
     fr = json.loads(A1FR.read_text(encoding="utf-8"))
     if not fr.get("overall_ok"):
         fail(f"bill22_openstax_fractions fail={fr.get('fail')}")
-    if fr.get("promotes") and bt.get("current_bill") != "Bill-23":
-        fail("TED-23 promotes but ledger current_bill is not Bill-23")
+    if fr.get("promotes") and "Bill-23" not in (bt.get("bills") or []) and bt.get("current_bill") not in ("Bill-23", "Bill-24"):
+        fail("TED-23 promotes but Bill-23 is not on the ledger")
     ok(
         f"bill22_openstax_fractions TED-23 {fr.get('n_ok')}/{fr.get('n')}  "
         f"ch4={fr.get('ch4_ok')}  current={bt.get('current_bill')}"
+    )
+    arc = json.loads(A1ARC.read_text(encoding="utf-8"))
+    if not arc.get("overall_ok"):
+        fail(f"bill23_arc prec={arc.get('precision_when_answered')}")
+    if arc.get("promotes") and bt.get("current_bill") != "Bill-24":
+        fail("TED-24 promotes but ledger current_bill is not Bill-24")
+    ok(
+        f"bill23_arc TED-24 correct={arc.get('n_correct')}/{arc.get('n_answered')}  "
+        f"leftover={arc.get('n_leftover')}/{arc.get('exam_n')}  current={bt.get('current_bill')}"
     )
 
 

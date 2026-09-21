@@ -1,0 +1,161 @@
+{
+  "adventure": 1,
+  "ted": "TED-24",
+  "vs_bill": "Bill-23",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "license": "CC BY-SA 4.0 AI2 ARC-Easy (Clark et al. 2018)",
+  "study_n": 2251,
+  "exam_n": 570,
+  "n_answered": 70,
+  "n_correct": 48,
+  "n_wrong": 22,
+  "n_leftover": 500,
+  "precision_when_answered": 0.6857,
+  "accuracy_counting_leftover_as_miss": 0.0842,
+  "rule": "exactly one studied fact entails a choice and shares >=2 stem words; else leftover trit 0",
+  "samples": [
+    {
+      "id": "MCAS_2000_4_6",
+      "stem": "Which technology was developed most recently?",
+      "picked": null,
+      "key": "A",
+      "how": "leftover",
+      "ok": false
+    },
+    {
+      "id": "Mercury_7057260",
+      "stem": "A student hypothesizes that algae are producers. Which question will best help the student determine if this is correct?",
+      "picked": null,
+      "key": "C",
+      "how": "leftover",
+      "ok": false
+    },
+    {
+      "id": "ACTAAP_2014_7_6",
+      "stem": "Soccer players use their muscle systems to kick a ball into a goal. What organ system coordinates the muscles?",
+      "picked": "C",
+      "key": "A",
+      "how": "one_fact",
+      "ok": false
+    },
+    {
+      "id": "Mercury_7122448",
+      "stem": "Planets in the solar system are in constant motion. What factor has the greatest effect on the orbits of the planets?",
+      "picked": null,
+      "key": "B",
+      "how": "leftover",
+      "ok": false
+    },
+    {
+      "id": "Mercury_SC_416516",
+      "stem": "How is a pond different from a lake?",
+      "picked": null,
+      "key": "B",
+      "how": "leftover",
+      "ok": false
+    },
+    {
+      "id": "MCAS_2016_8_3",
+      "stem": "A substance with a mass of 10 g is heated to produce two new substances. The mass of the first new substance is 9.3 g and the mass of the second new substance is 0.7 g. Which of th",
+      "picked": null,
+      "key": "C",
+      "how": "leftover",
+      "ok": false
+    },
+    {
+      "id": "Mercury_7030153",
+      "stem": "The cilia in the respiratory system are responsible for preventing dirt and mucus from entering the bronchial tubes and lungs. If the cilia are damaged, the person's bronchial tube",
+      "picked": null,
+      "key": "C",
+      "how": "leftover",
+      "ok": false
+    },
+    {
+      "id": "AKDE&ED_2012_8_43",
+      "stem": "Which two traits would best distinguish a bird from other vertebrates?",
+      "picked": null,
+      "key": "C",
+      "how": "leftover",
+      "ok": false
+    },
+    {
+      "id": "NYSEDREGENTS_2014_8_10",
+      "stem": "A green plant absorbs light. A frog eats flies. These are both examples of how organisms",
+      "picked": null,
+      "key": "1",
+      "how": "leftover",
+      "ok": false
+    },
+    {
+      "id": "Mercury_SC_LBS10938",
+      "stem": "Which of these scientific advances occurred first?",
+      "picked": null,
+      "key": "D",
+      "how": "leftover",
+      "ok": false
+    },
+    {
+      "id": "ACTAAP_2007_7_19",
+      "stem": "Which instrument measures atmospheric pressure?",
+      "picked": "A",
+      "key": "A",
+      "how": "one_fact",
+      "ok": true
+    },
+    {
+      "id": "Mercury_176873",
+      "stem": "Which of the following is produced during the process of cellular respiration?",
+      "picked": "A",
+      "key": "A",
+      "how": "one_fact",
+      "ok": true
+    },
+    {
+      "id": "Mercury_7241343",
+      "stem": "When a person is infected with the influenza virus, the immune system defends the body through a cell-mediated immune response. Which immune cell is responsible for protecting the ",
+      "picked": "A",
+      "key": "D",
+      "how": "one_fact",
+      "ok": false
+    },
+    {
+      "id": "TIMSS_1995_8_J5",
+      "stem": "Which form of solar radiation causes sunburn?",
+      "picked": "B",
+      "key": "B",
+      "how": "one_fact",
+      "ok": true
+    },
+    {
+      "id": "Mercury_SC_401208",
+      "stem": "Which type of graph would best display the changes in temperature over a 24 hour period?",
+      "picked": "A",
+      "key": "A",
+      "how": "one_fact",
+      "ok": true
+    },
+    {
+      "id": "Mercury_7040863",
+      "stem": "What system helps the body defend itself against disease while maintaining the levels of body fluids?",
+      "picked": "A",
+      "key": "C",
+      "how": "one_fact",
+      "ok": false
+    },
+    {
+      "id": "Mercury_7137673",
+      "stem": "A population of plants growing on an island consisted of two varieties, one with thorns and the other without. Over a period of many years, the variety with thorns gradually disapp",
+      "picked": "C",
+      "key": "C",
+      "how": "one_fact",
+      "ok": true
+    }
+  ],
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-24",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}

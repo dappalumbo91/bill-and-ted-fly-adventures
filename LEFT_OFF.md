@@ -141,3 +141,5 @@ Adventure 1 extras: Ledger B on dump N, GABA n, CRC transmitter AA — **17/17**
 **TED-22:** OpenStax Prealgebra 2e (CC BY-NC-SA) **15/15**. Sequential Ch.1 then integers. `1683+49` computed **1732** (published key 2162 does not match those addends). **Promoted → Bill-22.** `python scripts/bill21_openstax.py` · `python scripts/bill_ted.py ted-22`
 
 **TED-23:** OpenStax Ch.4 fractions then Ch.5 decimals **15/15**. \(1/8\cdot 2/3=1/12\), \(2\,3/5=13/5\), \(y-3=-9\) computed **−6**. Ecosystem review: `docs/ECOSYSTEM_REVIEW.md`. **Promoted → Bill-23.** `python scripts/bill22_openstax_fractions.py` · `python scripts/bill_ted.py ted-23`
+
+**TED-24:** ARC-Easy (CC BY-SA). Study train 2251. Exam validation **570**. One studied fact → letter; else leftover. Answered **70**, correct **48** (precision **68.6%**), wrong **22**, leftover **500**. No guess. **Promoted → Bill-24.** `python scripts/bill23_arc.py` · `python scripts/bill_ted.py ted-24`

@@ -141,6 +141,8 @@ python scripts/bill21_openstax.py           # OpenStax Prealgebra JSON
 python scripts/bill_ted.py ted-22
 python scripts/bill22_openstax_fractions.py # OpenStax Ch.4–5
 python scripts/bill_ted.py ted-23
+python scripts/bill23_arc.py                # ARC-Easy study then exam
+python scripts/bill_ted.py ted-24
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 
