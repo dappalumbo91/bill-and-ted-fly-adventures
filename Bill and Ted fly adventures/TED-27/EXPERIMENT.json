@@ -1,0 +1,14 @@
+{
+  "id": "TED-27",
+  "role": "ted",
+  "adventure": 1,
+  "change": "ARC leftover procedures on reason_proc; same exam; inversion cue exception; three calculations",
+  "vs_bill": "Bill-26",
+  "precision_before": 1.0,
+  "precision_after": 1.0,
+  "n_fixed": 447,
+  "n_correct_after": 570,
+  "promotes": true,
+  "promote_to": "Bill-27",
+  "why": "Leftovers were missing procedures. Unique procedure overlays. Inversion blocks only unrelated procedures. Not on W."
+}

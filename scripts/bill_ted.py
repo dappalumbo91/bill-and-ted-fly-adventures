@@ -64,6 +64,9 @@ def freeze_paths() -> list[Path]:
         BT / "TED-24" / "EXPERIMENT.json",
         BT / "TED-25" / "EXPERIMENT.json",
         BT / "TED-26" / "EXPERIMENT.json",
+        BT / "TED-27" / "EXPERIMENT.json",
+        ROOT / "docs" / "ARC_LEFT.md",
+        BT / "Adventure-1" / "ARC_LEFT.md",
         ROOT / "docs" / "ARC_PUSH.md",
         BT / "Adventure-1" / "ARC_PUSH.md",
         ROOT / "docs" / "ARC_GAPS.md",
@@ -1128,6 +1131,46 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  promoted Bill-26 tree={man['tree_sha256'][:12]}")
         else:
             print("  Bill-25 stays")
+    elif cmd == "ted-27":
+        vpath = ROOT / "data" / "bill26_arc_leftovers.json"
+        if not vpath.is_file():
+            print("  run python scripts/bill26_arc_leftovers.py first")
+            return 1
+        v = json.loads(vpath.read_text(encoding="utf-8"))
+        win = bool(v.get("promotes") and v.get("overall_ok") and int((v.get("after") or {}).get("wrong") or 0) == 0)
+        exp = {
+            "id": "TED-27",
+            "role": "ted",
+            "adventure": 1,
+            "change": "ARC leftover procedures on reason_proc; same exam; inversion cue exception; three calculations",
+            "vs_bill": "Bill-26",
+            "precision_before": v.get("precision_before"),
+            "precision_after": v.get("precision_after"),
+            "n_fixed": v.get("n_fixed"),
+            "n_correct_after": (v.get("after") or {}).get("correct"),
+            "promotes": win,
+            "promote_to": "Bill-27" if win else None,
+            "why": "Leftovers were missing procedures. Unique procedure overlays. Inversion blocks only unrelated procedures. Not on W.",
+        }
+        dest = BT / "TED-27"
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / "EXPERIMENT.json").write_text(json.dumps(exp, indent=2), encoding="utf-8")
+        if "TED-27" not in led["teds"]:
+            led["teds"].append("TED-27")
+        print(
+            f"  TED-27 promotes={win}  prec {exp.get('precision_before')} -> {exp.get('precision_after')} "
+            f"fixed={exp.get('n_fixed')} correct={exp.get('n_correct_after')}"
+        )
+        if win:
+            man = freeze("Bill-27")
+            if "Bill-27" not in led["bills"]:
+                led["bills"].append("Bill-27")
+            led["promotions"].append({"from": "TED-27", "to": "Bill-27", "tree": man["tree_sha256"]})
+            led["current_bill"] = "Bill-27"
+            led["last_tree_sha256"] = man["tree_sha256"]
+            print(f"  promoted Bill-27 tree={man['tree_sha256'][:12]}")
+        else:
+            print("  Bill-26 stays")
     elif cmd == "ted-1":
         exp = ted1()
         if "TED-1" not in led["teds"]:

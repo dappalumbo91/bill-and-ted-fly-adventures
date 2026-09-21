@@ -147,6 +147,8 @@ python scripts/bill24_arc_gaps.py           # ARC miss analysis + reason_proc
 python scripts/bill_ted.py ted-25
 python scripts/bill25_arc_push.py           # more ARC procedures, same reason_proc
 python scripts/bill_ted.py ted-26
+python scripts/bill26_arc_leftovers.py      # ARC leftovers, same reason_proc
+python scripts/bill_ted.py ted-27
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 
