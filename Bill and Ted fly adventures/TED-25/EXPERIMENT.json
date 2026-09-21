@@ -1,0 +1,13 @@
+{
+  "id": "TED-25",
+  "role": "ted",
+  "adventure": 1,
+  "change": "ARC gap analysis; instruct procedures; reason_proc at ALU; generic resistance; contained-answer fact",
+  "vs_bill": "Bill-24",
+  "precision_before": 0.6857,
+  "precision_after": 1.0,
+  "n_fixed": 41,
+  "promotes": true,
+  "promote_to": "Bill-25",
+  "why": "Wrongs were untaught procedures plus generic collisions. reason_proc overlays one agreed procedure; disagreement is trit 0. Not on W."
+}

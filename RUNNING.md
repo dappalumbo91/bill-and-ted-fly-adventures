@@ -118,6 +118,7 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | TED-22 OpenStax Prealgebra | **promoted → Bill-22** | **15/15** Ch.1 then Ch.3; integers/eval/simplify |
 | TED-23 OpenStax fractions | **promoted → Bill-23** | Ch.4–5 **15/15**; y−3=−9 computed −6 |
 | TED-24 ARC-Easy | **promoted → Bill-24** | study 2251; exam 570; correct 48/70 answered; 500 leftover |
+| TED-25 ARC gaps | **promoted → Bill-25** | wrong 22→0; precision 68.6%→100% on 79 answered; `reason_proc`; 471 leftover |
 
 ---
 

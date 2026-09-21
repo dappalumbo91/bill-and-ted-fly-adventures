@@ -62,6 +62,9 @@ def freeze_paths() -> list[Path]:
         BT / "TED-22" / "EXPERIMENT.json",
         BT / "TED-23" / "EXPERIMENT.json",
         BT / "TED-24" / "EXPERIMENT.json",
+        BT / "TED-25" / "EXPERIMENT.json",
+        ROOT / "docs" / "ARC_GAPS.md",
+        BT / "Adventure-1" / "ARC_GAPS.md",
         ROOT / "docs" / "ARC.md",
         BT / "Adventure-1" / "ARC.md",
         ROOT / "docs" / "ECOSYSTEM_REVIEW.md",
@@ -1046,6 +1049,42 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  promoted Bill-24 tree={man['tree_sha256'][:12]}")
         else:
             print("  Bill-23 stays")
+    elif cmd == "ted-25":
+        vpath = ROOT / "data" / "bill24_arc_gaps.json"
+        if not vpath.is_file():
+            print("  run python scripts/bill24_arc_gaps.py first")
+            return 1
+        v = json.loads(vpath.read_text(encoding="utf-8"))
+        win = bool(v.get("promotes") and v.get("overall_ok"))
+        exp = {
+            "id": "TED-25",
+            "role": "ted",
+            "adventure": 1,
+            "change": "ARC gap analysis; instruct procedures; reason_proc at ALU; generic resistance; contained-answer fact",
+            "vs_bill": "Bill-24",
+            "precision_before": v.get("precision_before"),
+            "precision_after": v.get("precision_after"),
+            "n_fixed": v.get("n_fixed"),
+            "promotes": win,
+            "promote_to": "Bill-25" if win else None,
+            "why": "Wrongs were untaught procedures plus generic collisions. reason_proc overlays one agreed procedure; disagreement is trit 0. Not on W.",
+        }
+        dest = BT / "TED-25"
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / "EXPERIMENT.json").write_text(json.dumps(exp, indent=2), encoding="utf-8")
+        if "TED-25" not in led["teds"]:
+            led["teds"].append("TED-25")
+        print(f"  TED-25 promotes={win}  prec {exp.get('precision_before')} -> {exp.get('precision_after')} fixed={exp.get('n_fixed')}")
+        if win:
+            man = freeze("Bill-25")
+            if "Bill-25" not in led["bills"]:
+                led["bills"].append("Bill-25")
+            led["promotions"].append({"from": "TED-25", "to": "Bill-25", "tree": man["tree_sha256"]})
+            led["current_bill"] = "Bill-25"
+            led["last_tree_sha256"] = man["tree_sha256"]
+            print(f"  promoted Bill-25 tree={man['tree_sha256'][:12]}")
+        else:
+            print("  Bill-24 stays")
     elif cmd == "ted-1":
         exp = ted1()
         if "TED-1" not in led["teds"]:

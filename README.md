@@ -143,6 +143,8 @@ python scripts/bill22_openstax_fractions.py # OpenStax Ch.4–5
 python scripts/bill_ted.py ted-23
 python scripts/bill23_arc.py                # ARC-Easy study then exam
 python scripts/bill_ted.py ted-24
+python scripts/bill24_arc_gaps.py           # ARC miss analysis + reason_proc
+python scripts/bill_ted.py ted-25
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

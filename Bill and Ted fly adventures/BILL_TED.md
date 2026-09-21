@@ -70,7 +70,9 @@ Pin **AEB2AD**. Law \(S=K(T_1+T_2+T_3)\). Residual hops on measured synapses. Ov
 | **TED-23 / Adventure 1** | OpenStax Ch.4 fractions then Ch.5 decimals | **15/15** → **Bill-23** |
 | **Bill-23** | fractions/decimals; Lean AEB2AD still authority | promoted from TED-23 |
 | **TED-24 / Adventure 1** | ARC-Easy MCQ: one fact or leftover | prec **68.6%** when answered → **Bill-24** |
-| **Bill-24** | current | ARC val 48/70 answered correct; 500 leftover |
+| **Bill-24** | ARC val 48/70 answered correct; 500 leftover | promoted from TED-24 |
+| **TED-25 / Adventure 1** | ARC gap analysis + reason_proc instruction | prec 68.6%→100% on 79 answered, wrong 22→0 → **Bill-25** |
+| **Bill-25** | current | ARC reasoner; generic tokens are resistance; one hydro “least” still leftover |
 
 Scripts: `python scripts/bill_ted.py freeze` · `ted-1` … `ted-10` · `python scripts/bill10_remaining_leftovers.py` · `ted-11` · `ledger`
 
