@@ -124,6 +124,7 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | TED-28 ARC-Challenge blind | **promoted → Bill-28** | unseen harder set; 8/299 correct; 10 wrong; 273 leftover; precision 44.4% when answered |
 | TED-29 use vs answer | **promoted → Bill-29** | 424 Easy cues fire on one stem; relations 14/14 on new wording, 8/8 near misses, 9/9 source items; Easy stays 570 |
 | TED-30 more use | **promoted → Bill-30** | 19/19 new wordings, 11/11 near misses, 15 new situations caught, Challenge +16 hurt 0, Easy stays 570 |
+| TED-31 Adventure 1 closeout | **promoted → Bill-31** | replay Easy 570/570, Challenge 33/299 wrong 1, use 52/52; Lean thought law; side by side |
 
 ---
 

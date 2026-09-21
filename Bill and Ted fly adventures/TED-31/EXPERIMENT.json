@@ -1,0 +1,16 @@
+{
+  "id": "TED-31",
+  "role": "ted",
+  "adventure": 1,
+  "change": "Adventure 1 closeout: side-by-side replay, FSOT thought law, Lean check",
+  "vs_bill": "Bill-30",
+  "easy_correct": 570,
+  "challenge_correct": 33,
+  "challenge_wrong": 1,
+  "use_correct": 52,
+  "lean_ok": true,
+  "trace_sha256": "2EBE6BBE3E74C33BAB4329CA623E6FE7DD819216F415D1E0DB103DD2183B22A4",
+  "promotes": true,
+  "promote_to": "Bill-31",
+  "why": "Record expected versus family answer. Thought is overlay, consensus 0, or leftover. W unchanged."
+}

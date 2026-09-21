@@ -1,0 +1,34 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "phi": 1.618033988749895,
+  "inv_phi": 0.6180339887498948,
+  "overlay": "one agreed label",
+  "consensus": "two labels, trit 0",
+  "leftover": "no label, trit 0",
+  "trace_sha256": "2EBE6BBE3E74C33BAB4329CA623E6FE7DD819216F415D1E0DB103DD2183B22A4",
+  "lean_file": "lean/Adventure1Thought.lean",
+  "lean_ok": true,
+  "easy": {
+    "n": 570,
+    "correct": 570,
+    "wrong": 0,
+    "leftover": 0,
+    "consensus_0": 0
+  },
+  "challenge": {
+    "n": 299,
+    "correct": 33,
+    "wrong": 1,
+    "leftover": 258,
+    "consensus_0": 7
+  },
+  "use": {
+    "n": 52,
+    "correct": 52,
+    "wrong": 0,
+    "leftover": 0,
+    "consensus_0": 0
+  },
+  "measured_W_changed": false
+}

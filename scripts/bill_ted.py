@@ -68,7 +68,12 @@ def freeze_paths() -> list[Path]:
         BT / "TED-28" / "EXPERIMENT.json",
         BT / "TED-29" / "EXPERIMENT.json",
         BT / "TED-30" / "EXPERIMENT.json",
-        ROOT / "docs" / "USE_MORE.md",
+        BT / "TED-31" / "EXPERIMENT.json",
+        ROOT / "docs" / "ADVENTURE1_REPORT.md",
+        BT / "Adventure-1" / "ADVENTURE1_REPORT.md",
+        ROOT / "docs" / "ADVENTURE1_SIDE_BY_SIDE.md",
+        BT / "Adventure-1" / "SIDE_BY_SIDE.md",
+        ROOT / "lean" / "Adventure1Thought.lean",
         BT / "Adventure-1" / "USE_MORE.md",
         ROOT / "docs" / "USE.md",
         BT / "Adventure-1" / "USE.md",
@@ -1312,6 +1317,59 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  promoted Bill-30 tree={man['tree_sha256'][:12]}")
         else:
             print("  Bill-29 stays")
+    elif cmd == "ted-31":
+        vpath = ROOT / "data" / "adventure1_stamp.json"
+        if not vpath.is_file():
+            print("  run python scripts/bill30_adventure1_report.py first")
+            return 1
+        v = json.loads(vpath.read_text(encoding="utf-8"))
+        easy = v.get("easy") or {}
+        chal = v.get("challenge") or {}
+        use = v.get("use") or {}
+        win = bool(
+            v.get("lean_ok")
+            and int(v.get("free_parameters", 1)) == 0
+            and int(easy.get("correct", 0)) == 570
+            and int(easy.get("wrong", 1)) == 0
+            and int(use.get("wrong", 1)) == 0
+            and int(chal.get("n", 0)) == 299
+        )
+        exp = {
+            "id": "TED-31",
+            "role": "ted",
+            "adventure": 1,
+            "change": "Adventure 1 closeout: side-by-side replay, FSOT thought law, Lean check",
+            "vs_bill": "Bill-30",
+            "easy_correct": easy.get("correct"),
+            "challenge_correct": chal.get("correct"),
+            "challenge_wrong": chal.get("wrong"),
+            "use_correct": use.get("correct"),
+            "lean_ok": v.get("lean_ok"),
+            "trace_sha256": v.get("trace_sha256"),
+            "promotes": win,
+            "promote_to": "Bill-31" if win else None,
+            "why": "Record expected versus family answer. Thought is overlay, consensus 0, or leftover. W unchanged.",
+        }
+        dest = BT / "TED-31"
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / "EXPERIMENT.json").write_text(json.dumps(exp, indent=2), encoding="utf-8")
+        if "TED-31" not in led["teds"]:
+            led["teds"].append("TED-31")
+        print(
+            f"  TED-31 promotes={win}  easy {easy.get('correct')}/{easy.get('n')}  "
+            f"challenge {chal.get('correct')}/{chal.get('n')} w={chal.get('wrong')}  "
+            f"use {use.get('correct')}/{use.get('n')}  lean={v.get('lean_ok')}"
+        )
+        if win:
+            man = freeze("Bill-31")
+            if "Bill-31" not in led["bills"]:
+                led["bills"].append("Bill-31")
+            led["promotions"].append({"from": "TED-31", "to": "Bill-31", "tree": man["tree_sha256"]})
+            led["current_bill"] = "Bill-31"
+            led["last_tree_sha256"] = man["tree_sha256"]
+            print(f"  promoted Bill-31 tree={man['tree_sha256'][:12]}")
+        else:
+            print("  Bill-30 stays")
     elif cmd == "ted-1":
         exp = ted1()
         if "TED-1" not in led["teds"]:

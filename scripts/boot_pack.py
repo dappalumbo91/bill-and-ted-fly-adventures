@@ -92,6 +92,7 @@ A1LEFT = ROOT / "data" / "bill26_arc_leftovers.json"
 A1CHAL = ROOT / "data" / "bill27_arc_challenge.json"
 A1USE = ROOT / "data" / "bill28_use.json"
 A1USE2 = ROOT / "data" / "bill29_use_more.json"
+A1STAMP = ROOT / "data" / "adventure1_stamp.json"
 
 
 def fail(msg: str) -> None:
@@ -417,7 +418,7 @@ def test_identity_phot1_develop() -> None:
     bt = json.loads(BTLED.read_text(encoding="utf-8"))
     if bt.get("current_bill") not in (
         "Bill-0", "Bill-1", "Bill-2", "Bill-3", "Bill-4",
-        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10", "Bill-11", "Bill-12", "Bill-13", "Bill-14", "Bill-15", "Bill-16", "Bill-17", "Bill-18", "Bill-19", "Bill-20", "Bill-21", "Bill-22", "Bill-23", "Bill-24", "Bill-25", "Bill-26", "Bill-27", "Bill-28", "Bill-29", "Bill-30",
+        "Bill-5", "Bill-6", "Bill-7", "Bill-8", "Bill-9", "Bill-10", "Bill-11", "Bill-12", "Bill-13", "Bill-14", "Bill-15", "Bill-16", "Bill-17", "Bill-18", "Bill-19", "Bill-20", "Bill-21", "Bill-22", "Bill-23", "Bill-24", "Bill-25", "Bill-26", "Bill-27", "Bill-28", "Bill-29", "Bill-30", "Bill-31",
     ):
         fail(f"bill_ted current {bt.get('current_bill')}")
     ok(f"bill_ted current={bt.get('current_bill')} teds={bt.get('teds')}")
@@ -708,7 +709,7 @@ def test_identity_phot1_develop() -> None:
     gap = json.loads(A1GAP.read_text(encoding="utf-8"))
     if not gap.get("overall_ok"):
         fail("bill24_arc_gaps")
-    if gap.get("promotes") and bt.get("current_bill") not in ("Bill-25", "Bill-26", "Bill-27", "Bill-28", "Bill-29", "Bill-30"):
+    if gap.get("promotes") and bt.get("current_bill") not in ("Bill-25", "Bill-26", "Bill-27", "Bill-28", "Bill-29", "Bill-30", "Bill-31"):
         fail("TED-25 promotes but ledger current_bill is not Bill-25")
     ok(
         f"bill24_arc_gaps TED-25 prec {gap.get('precision_before')}->{gap.get('precision_after')}  "
@@ -717,7 +718,7 @@ def test_identity_phot1_develop() -> None:
     push = json.loads(A1PUSH.read_text(encoding="utf-8"))
     if not push.get("overall_ok") or int((push.get("after") or {}).get("wrong") or 0) != 0:
         fail("bill25_arc_push")
-    if push.get("promotes") and bt.get("current_bill") not in ("Bill-26", "Bill-27", "Bill-28", "Bill-29", "Bill-30"):
+    if push.get("promotes") and bt.get("current_bill") not in ("Bill-26", "Bill-27", "Bill-28", "Bill-29", "Bill-30", "Bill-31"):
         fail("TED-26 promotes but ledger current_bill is not Bill-26")
     ok(
         f"bill25_arc_push TED-26 prec {push.get('precision_before')}->{push.get('precision_after')}  "
@@ -727,7 +728,7 @@ def test_identity_phot1_develop() -> None:
     after = left.get("after") or {}
     if not left.get("overall_ok") or int(after.get("wrong") or 0) != 0:
         fail("bill26_arc_leftovers")
-    if left.get("promotes") and bt.get("current_bill") not in ("Bill-27", "Bill-28", "Bill-29", "Bill-30"):
+    if left.get("promotes") and bt.get("current_bill") not in ("Bill-27", "Bill-28", "Bill-29", "Bill-30", "Bill-31"):
         fail("TED-27 promotes but ledger current_bill is not Bill-27")
     ok(
         f"bill26_arc_leftovers TED-27 {after.get('correct')}/{left.get('exam_n')}  "
@@ -740,7 +741,7 @@ def test_identity_phot1_develop() -> None:
     nsum = int(cc.get("correct") or 0) + int(cc.get("wrong") or 0) + int(cc.get("leftover") or 0) + int(cc.get("consensus_0") or 0)
     if nsum != int(chal.get("exam_n") or 0):
         fail("bill27_arc_challenge accounting")
-    if chal.get("promotes") and bt.get("current_bill") not in ("Bill-28", "Bill-29", "Bill-30"):
+    if chal.get("promotes") and bt.get("current_bill") not in ("Bill-28", "Bill-29", "Bill-30", "Bill-31"):
         fail("TED-28 promotes but ledger current_bill is not Bill-28")
     ok(
         f"bill27_arc_challenge TED-28 {cc.get('correct')}/{chal.get('exam_n')}  "
@@ -756,7 +757,7 @@ def test_identity_phot1_develop() -> None:
         fail("bill28_use apply")
     if int(use.get("near_ok") or 0) != int(use.get("near_n") or -1):
         fail("bill28_use near")
-    if use.get("promotes") and bt.get("current_bill") not in ("Bill-29", "Bill-30"):
+    if use.get("promotes") and bt.get("current_bill") not in ("Bill-29", "Bill-30", "Bill-31"):
         fail("TED-29 promotes but ledger current_bill is not Bill-29")
     ok(
         f"bill28_use TED-29 apply {use.get('apply_ok')}/{use.get('apply_n')}  "
@@ -768,12 +769,31 @@ def test_identity_phot1_develop() -> None:
         fail("bill29_use_more")
     if int(use2.get("apply_ok") or 0) != int(use2.get("apply_n") or -1):
         fail("bill29_use_more apply")
-    if use2.get("promotes") and bt.get("current_bill") != "Bill-30":
+    if use2.get("promotes") and bt.get("current_bill") not in ("Bill-30", "Bill-31"):
         fail("TED-30 promotes but ledger current_bill is not Bill-30")
     ok(
         f"bill29_use_more TED-30 apply {use2.get('apply_ok')}/{use2.get('apply_n')}  "
         f"near {use2.get('near_ok')}/{use2.get('near_n')}  "
         f"caught={use2.get('challenge_newly_caught')} hurt={use2.get('challenge_hurt')}  "
+        f"current={bt.get('current_bill')}"
+    )
+    stamp = json.loads(A1STAMP.read_text(encoding="utf-8"))
+    se, sc, su = stamp.get("easy") or {}, stamp.get("challenge") or {}, stamp.get("use") or {}
+    if not stamp.get("lean_ok") or stamp.get("measured_W_changed") is not False:
+        fail("adventure1 stamp")
+    if int(se.get("correct", 0)) != 570 or int(se.get("wrong", 1)) != 0:
+        fail("adventure1 easy replay")
+    nsum = int(sc.get("correct", 0)) + int(sc.get("wrong", 0)) + int(sc.get("leftover", 0)) + int(sc.get("consensus_0", 0))
+    if nsum != int(sc.get("n", 0)) or int(sc.get("n", 0)) != 299:
+        fail("adventure1 challenge replay")
+    if int(su.get("wrong", 1)) != 0 or int(su.get("correct", 0)) != int(su.get("n", -1)):
+        fail("adventure1 use replay")
+    if bt.get("current_bill") != "Bill-31":
+        fail("TED-31 promotes but ledger current_bill is not Bill-31")
+    ok(
+        f"adventure1 TED-31 easy {se.get('correct')}/{se.get('n')}  "
+        f"challenge {sc.get('correct')}/{sc.get('n')} w={sc.get('wrong')}  "
+        f"use {su.get('correct')}/{su.get('n')}  lean={stamp.get('lean_ok')}  "
         f"current={bt.get('current_bill')}"
     )
 
