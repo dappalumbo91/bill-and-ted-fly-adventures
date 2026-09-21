@@ -149,6 +149,8 @@ python scripts/bill25_arc_push.py           # more ARC procedures, same reason_p
 python scripts/bill_ted.py ted-26
 python scripts/bill26_arc_leftovers.py      # ARC leftovers, same reason_proc
 python scripts/bill_ted.py ted-27
+python scripts/bill27_arc_challenge.py      # blind ARC-Challenge, no new procedures
+python scripts/bill_ted.py ted-28
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

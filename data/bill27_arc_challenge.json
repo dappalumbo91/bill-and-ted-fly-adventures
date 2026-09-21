@@ -1,0 +1,134 @@
+{
+  "adventure": 1,
+  "ted": "TED-28",
+  "vs_bill": "Bill-27",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "set": "ARC-Challenge validation",
+  "license": "CC BY-SA 4.0",
+  "exam_n": 299,
+  "new_procedures": 0,
+  "fitted_to_this_exam": false,
+  "answer_key_seen_at_pick": false,
+  "easy_val_was_fitted": true,
+  "counts": {
+    "correct": 8,
+    "wrong": 10,
+    "leftover": 273,
+    "consensus_0": 8,
+    "procedure": 1,
+    "strict_fact": 17
+  },
+  "correct_by_how": {
+    "procedure": 1,
+    "strict_fact": 7,
+    "numeric": 0
+  },
+  "n_answered": 18,
+  "precision_when_answered": 0.4444,
+  "accuracy_if_refusal_is_miss": 0.0268,
+  "wrong_examples": [
+    {
+      "id": "Mercury_7103565",
+      "how": "strict_fact",
+      "picked": "B",
+      "picked_text": "rain",
+      "key": "C",
+      "key_text": "drought",
+      "stem": "High-pressure systems stop air from rising into the colder regions of the atmosphere where water can condense. What will most likely result if a high-pressure system remains in an "
+    },
+    {
+      "id": "NYSEDREGENTS_2014_4_13",
+      "how": "strict_fact",
+      "picked": "C",
+      "picked_text": "temperature",
+      "key": "B",
+      "key_text": "reflectiveness",
+      "stem": "A boy can see his face when he looks into a calm pond. Which physical property of the pond makes this happen?"
+    },
+    {
+      "id": "Mercury_7185133",
+      "how": "strict_fact",
+      "picked": "D",
+      "picked_text": "an organ",
+      "key": "A",
+      "key_text": "a cell",
+      "stem": "Tracey was learning about structural organization in animals. What level of structural organization best describes an egg?"
+    },
+    {
+      "id": "Mercury_7141400",
+      "how": "strict_fact",
+      "picked": "D",
+      "picked_text": "decrease in sunlight",
+      "key": "A",
+      "key_text": "decrease in soil nutrients",
+      "stem": "A farmer plants corn in a field every year for several years. Each year he notices that his production of corn per acre has decreased even though the weather conditions have been v"
+    },
+    {
+      "id": "MEA_2016_5_6",
+      "how": "strict_fact",
+      "picked": "B",
+      "picked_text": "mass",
+      "key": "C",
+      "key_text": "state",
+      "stem": "A balloon filled with water is placed in a freezer. Which property of the water will change as the water reaches its freezing point?"
+    },
+    {
+      "id": "Mercury_SC_401244",
+      "how": "strict_fact",
+      "picked": "B",
+      "picked_text": "marble",
+      "key": "D",
+      "key_text": "limestone",
+      "stem": "Which rock type is most useful in studying the history of living organisms?"
+    },
+    {
+      "id": "Mercury_SC_408859",
+      "how": "strict_fact",
+      "picked": "B",
+      "picked_text": "decomposer",
+      "key": "A",
+      "key_text": "consumer",
+      "stem": "American alligators are common in Florida wetlands. They are known to eat frogs, turtles, fish, mice, and birds. What role does an American alligator fill in its ecosystem?"
+    },
+    {
+      "id": "Mercury_7166880",
+      "how": "strict_fact",
+      "picked": "B",
+      "picked_text": "sunny",
+      "key": "D",
+      "key_text": "cloudy and rainy",
+      "stem": "Clay is watching the weather to prepare for a trip to the beach tomorrow. The forecast predicts that a low-pressure system will move in overnight. Which type of weather can Clay mo"
+    },
+    {
+      "id": "Mercury_415263",
+      "how": "strict_fact",
+      "picked": "B",
+      "picked_text": "cytoplasm",
+      "key": "C",
+      "key_text": "a nucleus",
+      "stem": "Which of the following is found in a eukaryotic cell but not in a prokaryotic cell?"
+    },
+    {
+      "id": "Mercury_7131828",
+      "how": "strict_fact",
+      "picked": "A",
+      "picked_text": "predator-prey",
+      "key": "C",
+      "key_text": "biotic factors interacting with each other",
+      "stem": "In many tropical areas, mosquitoes may carry a parasite that can cause an infectious disease among humans. What best describes this type of relationship between mosquitoes and huma"
+    }
+  ],
+  "new_pathway": {
+    "name": "reason_proc",
+    "splice_at": "ALU",
+    "not_on_W": true,
+    "changed": false
+  },
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-28",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}

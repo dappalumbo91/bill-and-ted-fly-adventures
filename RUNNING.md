@@ -121,6 +121,7 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | TED-25 ARC gaps | **promoted → Bill-25** | wrong 22→0; precision 68.6%→100% on 79 answered; `reason_proc`; 471 leftover |
 | TED-26 ARC procedures | **promoted → Bill-26** | correct 79→123; wrong 0; consensus 20→0; 447 leftover; precision 100% |
 | TED-27 ARC leftovers | **promoted → Bill-27** | correct 123→570; wrong 0; leftover 447→0; precision 100% |
+| TED-28 ARC-Challenge blind | **promoted → Bill-28** | unseen harder set; 8/299 correct; 10 wrong; 273 leftover; precision 44.4% when answered |
 
 ---
 

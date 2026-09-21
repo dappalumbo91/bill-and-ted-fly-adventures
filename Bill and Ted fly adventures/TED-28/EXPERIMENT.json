@@ -1,0 +1,15 @@
+{
+  "id": "TED-28",
+  "role": "ted",
+  "adventure": 1,
+  "change": "Blind ARC-Challenge validation on the Bill-27 brain; no new procedures",
+  "vs_bill": "Bill-27",
+  "exam_n": 299,
+  "correct": 8,
+  "wrong": 10,
+  "leftover": 273,
+  "precision_when_answered": 0.4444,
+  "promotes": true,
+  "promote_to": "Bill-28",
+  "why": "Easy 570/570 was the exam the procedures were fit to. Challenge is unseen. Record the transfer. Not on W."
+}

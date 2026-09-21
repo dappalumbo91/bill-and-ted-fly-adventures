@@ -65,6 +65,9 @@ def freeze_paths() -> list[Path]:
         BT / "TED-25" / "EXPERIMENT.json",
         BT / "TED-26" / "EXPERIMENT.json",
         BT / "TED-27" / "EXPERIMENT.json",
+        BT / "TED-28" / "EXPERIMENT.json",
+        ROOT / "docs" / "ARC_CHALLENGE.md",
+        BT / "Adventure-1" / "ARC_CHALLENGE.md",
         ROOT / "docs" / "ARC_LEFT.md",
         BT / "Adventure-1" / "ARC_LEFT.md",
         ROOT / "docs" / "ARC_PUSH.md",
@@ -1171,6 +1174,48 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  promoted Bill-27 tree={man['tree_sha256'][:12]}")
         else:
             print("  Bill-26 stays")
+    elif cmd == "ted-28":
+        vpath = ROOT / "data" / "bill27_arc_challenge.json"
+        if not vpath.is_file():
+            print("  run python scripts/bill27_arc_challenge.py first")
+            return 1
+        v = json.loads(vpath.read_text(encoding="utf-8"))
+        win = bool(v.get("promotes") and v.get("overall_ok") and v.get("fitted_to_this_exam") is False)
+        counts = v.get("counts") or {}
+        exp = {
+            "id": "TED-28",
+            "role": "ted",
+            "adventure": 1,
+            "change": "Blind ARC-Challenge validation on the Bill-27 brain; no new procedures",
+            "vs_bill": "Bill-27",
+            "exam_n": v.get("exam_n"),
+            "correct": counts.get("correct"),
+            "wrong": counts.get("wrong"),
+            "leftover": counts.get("leftover"),
+            "precision_when_answered": v.get("precision_when_answered"),
+            "promotes": win,
+            "promote_to": "Bill-28" if win else None,
+            "why": "Easy 570/570 was the exam the procedures were fit to. Challenge is unseen. Record the transfer. Not on W.",
+        }
+        dest = BT / "TED-28"
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / "EXPERIMENT.json").write_text(json.dumps(exp, indent=2), encoding="utf-8")
+        if "TED-28" not in led["teds"]:
+            led["teds"].append("TED-28")
+        print(
+            f"  TED-28 promotes={win}  c={counts.get('correct')}/{v.get('exam_n')} "
+            f"w={counts.get('wrong')} L={counts.get('leftover')} prec={v.get('precision_when_answered')}"
+        )
+        if win:
+            man = freeze("Bill-28")
+            if "Bill-28" not in led["bills"]:
+                led["bills"].append("Bill-28")
+            led["promotions"].append({"from": "TED-28", "to": "Bill-28", "tree": man["tree_sha256"]})
+            led["current_bill"] = "Bill-28"
+            led["last_tree_sha256"] = man["tree_sha256"]
+            print(f"  promoted Bill-28 tree={man['tree_sha256'][:12]}")
+        else:
+            print("  Bill-27 stays")
     elif cmd == "ted-1":
         exp = ted1()
         if "TED-1" not in led["teds"]:
