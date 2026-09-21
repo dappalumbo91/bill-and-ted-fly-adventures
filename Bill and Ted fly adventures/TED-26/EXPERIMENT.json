@@ -1,0 +1,14 @@
+{
+  "id": "TED-26",
+  "role": "ted",
+  "adventure": 1,
+  "change": "More ARC procedures on reason_proc; ties resolved; refusals stay refusals",
+  "vs_bill": "Bill-25",
+  "precision_before": 1.0,
+  "precision_after": 1.0,
+  "n_fixed": 44,
+  "n_correct_after": 123,
+  "promotes": true,
+  "promote_to": "Bill-26",
+  "why": "Consensus ties and leftovers were untaught procedures. Same ALU law, more procedure memory. Not on W."
+}

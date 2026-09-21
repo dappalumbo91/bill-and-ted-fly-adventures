@@ -92,10 +92,10 @@ def question_inverted(stem: str) -> bool:
     )
 
 
-def procedure_votes(stem: str, pairs: list[tuple[str, str]]) -> list[str]:
+def procedure_votes(stem: str, pairs: list[tuple[str, str]], procs=None) -> list[str]:
     sl = stem.lower()
     votes = []
-    for need, bits, ban, stem_ban in PROCS:
+    for need, bits, ban, stem_ban in (PROCS if procs is None else procs):
         if any(b in sl for b in stem_ban):
             continue
         if not all(n in sl for n in need):
@@ -119,9 +119,9 @@ def entailed(text: str, fact: dict) -> bool:
     return ans == fact["ans"] or ans in fact["ans"]
 
 
-def pick_v2(stem: str, pairs, facts) -> tuple[str | None, str, dict]:
+def pick_v2(stem: str, pairs, facts, procs=None) -> tuple[str | None, str, dict]:
     """FSOT reasoner at the ALU. Key is not an input."""
-    votes = procedure_votes(stem, pairs)
+    votes = procedure_votes(stem, pairs, procs)
     neg = question_inverted(stem)
     state = {
         "procedure_votes": votes,
