@@ -92,7 +92,9 @@ Pin **AEB2AD**. Law \(S=K(T_1+T_2+T_3)\). Residual hops on measured synapses. Ov
 | **TED-34 / Adventure 1** | rational procedure for the Chapter 6 refusals | Be Prepared 12/12, new wordings 12/12, near 4/4 → **Bill-34** |
 | **Bill-34** | decimals and one-step equations | promoted from TED-34 |
 | **TED-35 / Adventure 1** | fix fraction and percent errors | 1/12, 31.5, and 25; gaps 8/8 → **Bill-35** |
-| **Bill-35** | current | fraction products and percents stay exact; Adventure 2 stays closed |
+| **Bill-35** | fraction products and percents stay exact | promoted from TED-35 |
+| **TED-36 / Adventure 1** | Python laws in the sandbox | one plus one is 2, one plus one plus one is 3, same fold; taught 7/7, fresh 15/15, refusals 12/12 → **Bill-36** |
+| **Bill-36** | current | the sandbox runs programs the laws compose; Adventure 2 stays closed |
 
 Scripts: `python scripts/bill_ted.py freeze` · `ted-1` … `ted-10` · `python scripts/bill10_remaining_leftovers.py` · `ted-11` · `ledger`
 

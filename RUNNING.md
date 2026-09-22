@@ -130,6 +130,7 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | before Adventure 2 | no new Bill | census; interference forgotten 0/343; OpenStax Ch.6 Be Prepared 0 correct, 12 leftover |
 | TED-34 rational Chapter 6 | **promoted → Bill-34** | same 12 Be Prepared now correct; new wordings 12/12; near 4/4; earlier OpenStax 15/15 |
 | TED-35 fraction and percent errors | **promoted → Bill-35** | 1/3*1/4 was 0, 35% of 90 was 31, what-percent of 80 was 400; gaps 8/8 |
+| TED-36 Python laws | **promoted → Bill-36** | same fold: (1 + 1) is 2 and ((1 + 1) + 1) is 3; taught 7/7, fresh 15/15, refusals 12/12 |
 
 ---
 

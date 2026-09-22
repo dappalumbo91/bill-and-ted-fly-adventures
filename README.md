@@ -167,6 +167,8 @@ python scripts/bill34_ch6_refine.py        # why those 12 refused, then the rati
 python scripts/bill_ted.py ted-34
 python scripts/bill35_math_gaps.py         # fraction product 0, percent floor, swapped what-percent
 python scripts/bill_ted.py ted-35
+python scripts/bill36_python_laws.py       # Python laws in the sandbox; same fold, longer sum
+python scripts/bill_ted.py ted-36
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

@@ -66,6 +66,10 @@ ALLOWED_AST = (
     ast.Call,
     ast.Pass,
     ast.IfExp,
+    ast.FunctionDef,
+    ast.Return,
+    ast.arguments,
+    ast.arg,
 )
 BIN = {ast.Add: operator.add, ast.Sub: operator.sub, ast.Mult: operator.mul, ast.Div: operator.floordiv, ast.FloorDiv: operator.floordiv, ast.Mod: operator.mod}
 CMP = {ast.Eq: operator.eq, ast.NotEq: operator.ne, ast.Lt: operator.lt, ast.Gt: operator.gt, ast.LtE: operator.le, ast.GtE: operator.ge}
@@ -76,32 +80,66 @@ class SandboxError(ValueError):
     pass
 
 
+class _Return(Exception):
+    def __init__(self, value: Any):
+        self.value = value
+
+
+def _fn_block(node: ast.FunctionDef) -> dict | None:
+    """A function may take plain names and return. No decorators, stars, or annotations."""
+    if node.name in DENY_NAMES:
+        return {"kind": "deny", "got": "DENY", "leftover": True, "sandbox": True}
+    if node.decorator_list or node.returns is not None or getattr(node, "type_params", None):
+        return {"kind": "leftover", "got": "forbid signature", "leftover": True, "sandbox": True}
+    args = node.args
+    if args.vararg or args.kwarg or args.kwonlyargs or args.defaults or args.posonlyargs:
+        return {"kind": "leftover", "got": "forbid signature", "leftover": True, "sandbox": True}
+    for a in args.args:
+        if a.arg in DENY_NAMES:
+            return {"kind": "deny", "got": "DENY", "leftover": True, "sandbox": True}
+        if a.annotation is not None:
+            return {"kind": "leftover", "got": "forbid signature", "leftover": True, "sandbox": True}
+    return None
+
+
 class PySandbox:
     """Restricted Python subset. No import, open, exec, attribute, or host eval."""
 
-    def __init__(self, env: dict[str, int] | None = None):
+    def __init__(self, env: dict[str, Any] | None = None):
         self.env: dict[str, Any] = dict(env or {})
         self.loops = 0
+        self.call_depth = 0
 
     def run(self, src: str) -> dict:
         try:
             tree = ast.parse(src)
         except SyntaxError as exc:
             return {"kind": "leftover", "got": str(exc), "leftover": True, "sandbox": True}
+        defined = {n.name for n in ast.walk(tree) if isinstance(n, ast.FunctionDef)}
         for node in ast.walk(tree):
             if not isinstance(node, ALLOWED_AST):
                 return {"kind": "leftover", "got": f"forbid {type(node).__name__}", "leftover": True, "sandbox": True}
             if isinstance(node, ast.Name) and node.id in DENY_NAMES:
                 return {"kind": "deny", "got": "DENY", "leftover": True, "sandbox": True}
+            if isinstance(node, ast.FunctionDef):
+                blocked = _fn_block(node)
+                if blocked:
+                    return blocked
+            if isinstance(node, ast.arg) and node.arg in DENY_NAMES:
+                return {"kind": "deny", "got": "DENY", "leftover": True, "sandbox": True}
             if isinstance(node, ast.Call):
-                if not isinstance(node.func, ast.Name) or node.func.id not in CALLS:
+                if node.keywords or not isinstance(node.func, ast.Name):
                     return {"kind": "leftover", "got": "forbid call", "leftover": True, "sandbox": True}
-        last = 0
+                if node.func.id not in CALLS and node.func.id not in defined:
+                    return {"kind": "leftover", "got": "forbid call", "leftover": True, "sandbox": True}
+        last: Any = 0
         try:
             for stmt in tree.body:
                 last = self._stmt(stmt)
         except SandboxError as exc:
             return {"kind": "leftover", "got": str(exc), "leftover": True, "sandbox": True}
+        except _Return:
+            return {"kind": "leftover", "got": "return", "leftover": True, "sandbox": True}
         return {"kind": "code", "got": last, "leftover": False, "sandbox": True, "on_W": False}
 
     def _stmt(self, node: ast.stmt) -> Any:
@@ -133,7 +171,16 @@ class PySandbox:
                 for s in node.body:
                     last = self._stmt(s)
                 n += 1
+            # Still true at the horizon: refusal, not a short count.
+            if n >= LOOP_HORIZON and self._expr(node.test):
+                raise SandboxError("horizon")
             return last
+        if isinstance(node, ast.FunctionDef):
+            self.env[node.name] = ("fn", node)
+            return 0
+        if isinstance(node, ast.Return):
+            value = self._expr(node.value) if node.value is not None else 0
+            raise _Return(value)
         if isinstance(node, ast.Pass):
             return 0
         raise SandboxError(type(node).__name__)
@@ -164,10 +211,48 @@ class PySandbox:
         if isinstance(node, ast.IfExp):
             return self._expr(node.body) if self._expr(node.test) else self._expr(node.orelse)
         if isinstance(node, ast.Call):
-            fn = CALLS[node.func.id]
-            args = [self._expr(a) for a in node.args]
-            return fn(*args)
+            if isinstance(node.func, ast.Name) and node.func.id in CALLS:
+                fn = CALLS[node.func.id]
+                args = [self._expr(a) for a in node.args]
+                return fn(*args)
+            if isinstance(node.func, ast.Name):
+                user = self.env.get(node.func.id)
+                if isinstance(user, tuple) and user and user[0] == "fn":
+                    args = [self._expr(a) for a in node.args]
+                    return self._call_user(user[1], args)
+            raise SandboxError("forbid call")
         raise SandboxError(type(node).__name__)
+
+    def _call_user(self, fn: ast.FunctionDef, args: list[Any]) -> Any:
+        if self.call_depth >= LOOP_HORIZON:
+            raise SandboxError("horizon")
+        params = [a.arg for a in fn.args.args]
+        if len(args) != len(params):
+            raise SandboxError("arity")
+        self.call_depth += 1
+        missing = object()
+        saved: dict[str, Any] = {}
+        try:
+            for name in params:
+                saved[name] = self.env[name] if name in self.env else missing
+            for name, val in zip(params, args):
+                if name in DENY_NAMES:
+                    raise SandboxError("deny")
+                self.env[name] = val
+            try:
+                last: Any = 0
+                for stmt in fn.body:
+                    last = self._stmt(stmt)
+                return last
+            except _Return as ret:
+                return ret.value
+        finally:
+            self.call_depth -= 1
+            for name, old in saved.items():
+                if old is missing:
+                    self.env.pop(name, None)
+                else:
+                    self.env[name] = old
 
 
 def _hop_pack(run: dict[str, Any]) -> dict[str, Any]:

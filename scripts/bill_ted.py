@@ -73,6 +73,9 @@ def freeze_paths() -> list[Path]:
         BT / "TED-33" / "EXPERIMENT.json",
         BT / "TED-34" / "EXPERIMENT.json",
         BT / "TED-35" / "EXPERIMENT.json",
+        BT / "TED-36" / "EXPERIMENT.json",
+        ROOT / "docs" / "PYTHON_LAWS.md",
+        BT / "Adventure-1" / "PYTHON_LAWS.md",
         ROOT / "docs" / "MATH_GAPS.md",
         BT / "Adventure-1" / "MATH_GAPS.md",
         ROOT / "docs" / "CH6_REFINE.md",
@@ -1594,6 +1597,66 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  promoted Bill-35 tree={man['tree_sha256'][:12]}")
         else:
             print("  Bill-34 stays")
+    elif cmd == "ted-36":
+        vpath = ROOT / "data" / "bill36_python_laws.json"
+        if not vpath.is_file():
+            print("  run python scripts/bill36_python_laws.py first")
+            return 1
+        v = json.loads(vpath.read_text(encoding="utf-8"))
+        taught, fresh, refuse = v.get("taught") or {}, v.get("fresh") or {}, v.get("refuse") or {}
+        win = bool(
+            v.get("overall_ok")
+            and v.get("same_law") is True
+            and v.get("sandbox_pairs_ok") is True
+            and v.get("measured_W_changed") is False
+            and int(v.get("free_parameters", 1)) == 0
+            and int(taught.get("correct", 0)) == int(taught.get("n", -1))
+            and int(taught.get("wrong", 1)) == 0
+            and int(taught.get("leftover", 1)) == 0
+            and int(fresh.get("correct", 0)) == int(fresh.get("n", -1))
+            and int(fresh.get("wrong", 1)) == 0
+            and int(fresh.get("leftover", 1)) == 0
+            and int(refuse.get("correct", 0)) == int(refuse.get("n", -1))
+            and int(refuse.get("wrong", 1)) == 0
+        )
+        exp = {
+            "id": "TED-36",
+            "role": "ted",
+            "adventure": 1,
+            "change": "Python laws in the sandbox: the same fold writes a longer sum",
+            "vs_bill": "Bill-35",
+            "taught_correct": taught.get("correct"),
+            "taught_n": taught.get("n"),
+            "fresh_correct": fresh.get("correct"),
+            "fresh_n": fresh.get("n"),
+            "refuse_correct": refuse.get("correct"),
+            "refuse_n": refuse.get("n"),
+            "same_law": v.get("same_law"),
+            "sandbox_pairs_ok": v.get("sandbox_pairs_ok"),
+            "promotes": win,
+            "promote_to": "Bill-36" if win else None,
+            "why": "One plus one and one plus one plus one are one fold. A function is that fold with a hole. The sandbox runs the program. Measured W stays unchanged.",
+        }
+        dest = BT / "TED-36"
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / "EXPERIMENT.json").write_text(json.dumps(exp, indent=2), encoding="utf-8")
+        if "TED-36" not in led["teds"]:
+            led["teds"].append("TED-36")
+        print(
+            f"  TED-36 promotes={win}  taught {taught.get('correct')}/{taught.get('n')}  "
+            f"fresh {fresh.get('correct')}/{fresh.get('n')}  "
+            f"refuse {refuse.get('correct')}/{refuse.get('n')}"
+        )
+        if win:
+            man = freeze("Bill-36")
+            if "Bill-36" not in led["bills"]:
+                led["bills"].append("Bill-36")
+            led["promotions"].append({"from": "TED-36", "to": "Bill-36", "tree": man["tree_sha256"]})
+            led["current_bill"] = "Bill-36"
+            led["last_tree_sha256"] = man["tree_sha256"]
+            print(f"  promoted Bill-36 tree={man['tree_sha256'][:12]}")
+        else:
+            print("  Bill-35 stays")
     elif cmd == "ted-1":
         exp = ted1()
         if "TED-1" not in led["teds"]:

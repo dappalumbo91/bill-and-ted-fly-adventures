@@ -1,0 +1,18 @@
+{
+  "id": "TED-36",
+  "role": "ted",
+  "adventure": 1,
+  "change": "Python laws in the sandbox: the same fold writes a longer sum",
+  "vs_bill": "Bill-35",
+  "taught_correct": 7,
+  "taught_n": 7,
+  "fresh_correct": 15,
+  "fresh_n": 15,
+  "refuse_correct": 12,
+  "refuse_n": 12,
+  "same_law": true,
+  "sandbox_pairs_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-36",
+  "why": "One plus one and one plus one plus one are one fold. A function is that fold with a hole. The sandbox runs the program. Measured W stays unchanged."
+}
