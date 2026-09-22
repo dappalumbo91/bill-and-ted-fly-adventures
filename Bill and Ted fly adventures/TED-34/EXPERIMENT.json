@@ -1,0 +1,15 @@
+{
+  "id": "TED-34",
+  "role": "ted",
+  "adventure": 1,
+  "change": "Rational procedure for the Chapter 6 refusals",
+  "vs_bill": "Bill-33",
+  "blind_correct": 12,
+  "blind_n": 12,
+  "fresh_correct": 12,
+  "near_correct": 4,
+  "old_openstax_ok": 15,
+  "promotes": true,
+  "promote_to": "Bill-34",
+  "why": "Decimals and one-step equations were refusals because the integer ALU stops at a decimal point and the sentence shape was missing. One rational procedure covers them. W unchanged."
+}

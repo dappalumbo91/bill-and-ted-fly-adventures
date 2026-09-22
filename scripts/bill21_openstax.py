@@ -22,6 +22,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from bill17_adaptive import grammar_math  # noqa: E402
 from bill18_bio_teach import reward_trit  # noqa: E402
+from rational_work import rational_work  # noqa: E402
 from trit_expr import ParseError, eval_expr  # noqa: E402
 
 OUT = ROOT / "data" / "bill21_openstax.json"
@@ -93,6 +94,9 @@ def openstax_work(prompt: str):
         if len(ns) >= 2:
             return ns[0] + ns[1], "more_than"
 
+    got = rational_work(prompt)
+    if got is not None:
+        return got
     return grammar_math(prompt)
 
 

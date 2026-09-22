@@ -71,6 +71,9 @@ def freeze_paths() -> list[Path]:
         BT / "TED-31" / "EXPERIMENT.json",
         BT / "TED-32" / "EXPERIMENT.json",
         BT / "TED-33" / "EXPERIMENT.json",
+        BT / "TED-34" / "EXPERIMENT.json",
+        ROOT / "docs" / "CH6_REFINE.md",
+        BT / "Adventure-1" / "CH6_REFINE.md",
         ROOT / "docs" / "USE_FINISH.md",
         BT / "Adventure-1" / "USE_FINISH.md",
         ROOT / "docs" / "USE_GAPS.md",
@@ -1480,6 +1483,59 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  promoted Bill-33 tree={man['tree_sha256'][:12]}")
         else:
             print("  Bill-32 stays")
+    elif cmd == "ted-34":
+        vpath = ROOT / "data" / "bill34_ch6.json"
+        if not vpath.is_file():
+            print("  run python scripts/bill34_ch6_refine.py first")
+            return 1
+        v = json.loads(vpath.read_text(encoding="utf-8"))
+        blind, fresh, near = v.get("blind") or {}, v.get("fresh") or {}, v.get("near") or {}
+        win = bool(
+            v.get("overall_ok")
+            and int(blind.get("correct", 0)) == int(blind.get("n", -1))
+            and int(blind.get("wrong", 1)) == 0
+            and int(blind.get("leftover", 1)) == 0
+            and int(fresh.get("correct", 0)) == int(fresh.get("n", -1))
+            and int(fresh.get("wrong", 1)) == 0
+            and int(near.get("correct", 0)) == int(near.get("n", -1))
+            and int(near.get("wrong", 1)) == 0
+            and int(v.get("old_openstax_ok", 0)) == int(v.get("old_openstax_n", -1))
+        )
+        exp = {
+            "id": "TED-34",
+            "role": "ted",
+            "adventure": 1,
+            "change": "Rational procedure for the Chapter 6 refusals",
+            "vs_bill": "Bill-33",
+            "blind_correct": blind.get("correct"),
+            "blind_n": blind.get("n"),
+            "fresh_correct": fresh.get("correct"),
+            "near_correct": near.get("correct"),
+            "old_openstax_ok": v.get("old_openstax_ok"),
+            "promotes": win,
+            "promote_to": "Bill-34" if win else None,
+            "why": "Decimals and one-step equations were refusals because the integer ALU stops at a decimal point and the sentence shape was missing. One rational procedure covers them. W unchanged.",
+        }
+        dest = BT / "TED-34"
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / "EXPERIMENT.json").write_text(json.dumps(exp, indent=2), encoding="utf-8")
+        if "TED-34" not in led["teds"]:
+            led["teds"].append("TED-34")
+        print(
+            f"  TED-34 promotes={win}  ch6 {blind.get('correct')}/{blind.get('n')}  "
+            f"fresh {fresh.get('correct')}/{fresh.get('n')}  "
+            f"near {near.get('correct')}/{near.get('n')}  old {v.get('old_openstax_ok')}/{v.get('old_openstax_n')}"
+        )
+        if win:
+            man = freeze("Bill-34")
+            if "Bill-34" not in led["bills"]:
+                led["bills"].append("Bill-34")
+            led["promotions"].append({"from": "TED-34", "to": "Bill-34", "tree": man["tree_sha256"]})
+            led["current_bill"] = "Bill-34"
+            led["last_tree_sha256"] = man["tree_sha256"]
+            print(f"  promoted Bill-34 tree={man['tree_sha256'][:12]}")
+        else:
+            print("  Bill-33 stays")
     elif cmd == "ted-1":
         exp = ted1()
         if "TED-1" not in led["teds"]:
