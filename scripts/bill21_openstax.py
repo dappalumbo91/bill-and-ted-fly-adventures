@@ -22,7 +22,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from bill17_adaptive import grammar_math  # noqa: E402
 from bill18_bio_teach import reward_trit  # noqa: E402
-from rational_work import rational_work  # noqa: E402
+from rational_work import rational_expr, rational_work  # noqa: E402
 from trit_expr import ParseError, eval_expr  # noqa: E402
 
 OUT = ROOT / "data" / "bill21_openstax.json"
@@ -80,6 +80,15 @@ def openstax_work(prompt: str):
     m = re.search(r"simplify:\s*(.+)$", t)
     if m:
         expr = normalize_expr(m.group(1))
+        # A slash is a fraction. Integer division would turn 1/3 * 1/4 into 0.
+        if "/" in expr:
+            try:
+                fr = rational_expr(expr)
+                if fr.denominator == 1:
+                    return int(fr), "fraction_simplify"
+                return f"{fr.numerator}/{fr.denominator}", "fraction_simplify"
+            except (ValueError, ZeroDivisionError):
+                pass
         try:
             return eval_expr(expr, {}), "simplify"
         except (ParseError, ZeroDivisionError, ValueError):

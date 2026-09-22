@@ -165,6 +165,8 @@ python scripts/bill_ted.py ted-33
 python scripts/bill33_before_a2.py         # census, interference, blind Chapter 6
 python scripts/bill34_ch6_refine.py        # why those 12 refused, then the rational procedure
 python scripts/bill_ted.py ted-34
+python scripts/bill35_math_gaps.py         # fraction product 0, percent floor, swapped what-percent
+python scripts/bill_ted.py ted-35
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

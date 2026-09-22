@@ -1,0 +1,256 @@
+{
+  "adventure": 1,
+  "ted": "TED-35",
+  "vs_bill": "Bill-34",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "measured_W_changed": false,
+  "gaps": {
+    "n": 8,
+    "correct": 8,
+    "wrong": 0,
+    "leftover": 0
+  },
+  "fresh": {
+    "n": 8,
+    "correct": 8,
+    "wrong": 0,
+    "leftover": 0
+  },
+  "near": {
+    "n": 6,
+    "correct": 6,
+    "wrong": 0,
+    "leftover": 0
+  },
+  "blind_ch6": {
+    "n": 12,
+    "correct": 12,
+    "wrong": 0,
+    "leftover": 0
+  },
+  "prior_fresh": {
+    "n": 12,
+    "correct": 12,
+    "wrong": 0,
+    "leftover": 0
+  },
+  "prior_near": {
+    "n": 4,
+    "correct": 4,
+    "wrong": 0,
+    "leftover": 0
+  },
+  "old_openstax_ok": 15,
+  "old_openstax_n": 15,
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-35",
+  "items": {
+    "gaps": [
+      {
+        "id": "os6-6.11",
+        "prompt": "Simplify: 1/3 * 1/4",
+        "want": "1/12",
+        "got": "1/12",
+        "how": "fraction_simplify",
+        "status": "correct",
+        "cite": "Be Prepared 6.11; the product is 1/12. The integer ALU had returned 0."
+      },
+      {
+        "id": "ex-6.14",
+        "prompt": "What number is 35% of 90?",
+        "want": 31.5,
+        "got": 31.5,
+        "how": "percent_of",
+        "status": "correct",
+        "cite": "Example 6.14. The percent grammar had returned 31."
+      },
+      {
+        "id": "ex-6.16",
+        "prompt": "36 is 75% of what number?",
+        "want": 48,
+        "got": 48,
+        "how": "percent_of_what",
+        "status": "correct",
+        "cite": "Example 6.16"
+      },
+      {
+        "id": "gap-what-percent",
+        "prompt": "What percent of 80 is 20?",
+        "want": 25,
+        "got": 25,
+        "how": "what_percent",
+        "status": "correct",
+        "cite": "Same shape as Try It percent questions. The old order of the numbers returned 400."
+      },
+      {
+        "id": "gap-linear",
+        "prompt": "Solve: 2y - 3 = 9",
+        "want": 6,
+        "got": 6,
+        "how": "solve_linear",
+        "status": "correct",
+        "cite": "Be Prepared 4.7"
+      },
+      {
+        "id": "gap-power",
+        "prompt": "Simplify: 4^5",
+        "want": 1024,
+        "got": 1024,
+        "how": "power",
+        "status": "correct",
+        "cite": "Be Prepared 2.2, 4 to the fifth"
+      },
+      {
+        "id": "gap-tip",
+        "prompt": "A bill is 80 dollars. The tip is 20%. How much is the tip?",
+        "want": 16,
+        "got": 16,
+        "how": "tip",
+        "status": "correct",
+        "cite": "Chapter 6 tip example, 20% of 80"
+      },
+      {
+        "id": "gap-sale",
+        "prompt": "The price is 40 dollars. A 25% discount is taken. What is the sale price?",
+        "want": 30,
+        "got": 30,
+        "how": "sale_price",
+        "status": "correct",
+        "cite": "Chapter 6 discount"
+      }
+    ],
+    "fresh": [
+      {
+        "id": "fresh-frac",
+        "prompt": "Simplify: 2/5 * 3/4",
+        "want": "3/10",
+        "got": "3/10",
+        "how": "fraction_simplify",
+        "status": "correct",
+        "cite": ""
+      },
+      {
+        "id": "fresh-pct",
+        "prompt": "What number is 15% of 60?",
+        "want": 9,
+        "got": 9,
+        "how": "percent_of",
+        "status": "correct",
+        "cite": ""
+      },
+      {
+        "id": "fresh-base",
+        "prompt": "12 is 40% of what number?",
+        "want": 30,
+        "got": 30,
+        "how": "percent_of_what",
+        "status": "correct",
+        "cite": ""
+      },
+      {
+        "id": "fresh-wp",
+        "prompt": "What percent of 50 is 10?",
+        "want": 20,
+        "got": 20,
+        "how": "what_percent",
+        "status": "correct",
+        "cite": ""
+      },
+      {
+        "id": "fresh-lin",
+        "prompt": "Solve: 3x + 4 = 19",
+        "want": 5,
+        "got": 5,
+        "how": "solve_linear",
+        "status": "correct",
+        "cite": ""
+      },
+      {
+        "id": "fresh-pow",
+        "prompt": "Simplify: 2^6",
+        "want": 64,
+        "got": 64,
+        "how": "power",
+        "status": "correct",
+        "cite": ""
+      },
+      {
+        "id": "fresh-tip",
+        "prompt": "A bill is 50 dollars. The tip is 10%. How much is the tip?",
+        "want": 5,
+        "got": 5,
+        "how": "tip",
+        "status": "correct",
+        "cite": ""
+      },
+      {
+        "id": "fresh-sale",
+        "prompt": "The price is 80 dollars. A 20% discount is taken. What is the sale price?",
+        "want": 64,
+        "got": 64,
+        "how": "sale_price",
+        "status": "correct",
+        "cite": ""
+      }
+    ],
+    "near": [
+      {
+        "id": "near-frac-sum",
+        "prompt": "Simplify: 1/3 + 1/4",
+        "want": "7/12",
+        "got": "7/12",
+        "how": "fraction_simplify",
+        "status": "correct",
+        "cite": ""
+      },
+      {
+        "id": "near-pct-part",
+        "prompt": "What number is 25% of 80?",
+        "want": 20,
+        "got": 20,
+        "how": "percent_of",
+        "status": "correct",
+        "cite": ""
+      },
+      {
+        "id": "near-lin-plus",
+        "prompt": "Solve: 2y + 3 = 9",
+        "want": 3,
+        "got": 3,
+        "how": "solve_linear",
+        "status": "correct",
+        "cite": ""
+      },
+      {
+        "id": "near-pow",
+        "prompt": "Simplify: 5^4",
+        "want": 625,
+        "got": 625,
+        "how": "power",
+        "status": "correct",
+        "cite": ""
+      },
+      {
+        "id": "near-discount-amount",
+        "prompt": "The price is 40 dollars. A 25% discount is taken. What is the discount amount?",
+        "want": 10,
+        "got": 10,
+        "how": "discount_amount",
+        "status": "correct",
+        "cite": ""
+      },
+      {
+        "id": "near-gallons",
+        "prompt": "Bin capacity 50 gallons. What percent is 5 gallons?",
+        "want": 10,
+        "got": 10,
+        "how": "is_what_pct",
+        "status": "correct",
+        "cite": ""
+      }
+    ],
+    "old_fail": []
+  }
+}

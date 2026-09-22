@@ -1,0 +1,15 @@
+{
+  "id": "TED-35",
+  "role": "ted",
+  "adventure": 1,
+  "change": "Fix fraction and percent errors and the remaining one-step gaps",
+  "vs_bill": "Bill-34",
+  "gaps_correct": 8,
+  "gaps_n": 8,
+  "fresh_correct": 8,
+  "near_correct": 6,
+  "old_openstax_ok": 15,
+  "promotes": true,
+  "promote_to": "Bill-35",
+  "why": "1/3*1/4 was 0, 35% of 90 was 31, and what-percent swapped the numbers into 400. Fractions and percents now stay exact. W unchanged."
+}

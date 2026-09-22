@@ -72,6 +72,9 @@ def freeze_paths() -> list[Path]:
         BT / "TED-32" / "EXPERIMENT.json",
         BT / "TED-33" / "EXPERIMENT.json",
         BT / "TED-34" / "EXPERIMENT.json",
+        BT / "TED-35" / "EXPERIMENT.json",
+        ROOT / "docs" / "MATH_GAPS.md",
+        BT / "Adventure-1" / "MATH_GAPS.md",
         ROOT / "docs" / "CH6_REFINE.md",
         BT / "Adventure-1" / "CH6_REFINE.md",
         ROOT / "docs" / "USE_FINISH.md",
@@ -1536,6 +1539,61 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  promoted Bill-34 tree={man['tree_sha256'][:12]}")
         else:
             print("  Bill-33 stays")
+    elif cmd == "ted-35":
+        vpath = ROOT / "data" / "bill35_math_gaps.json"
+        if not vpath.is_file():
+            print("  run python scripts/bill35_math_gaps.py first")
+            return 1
+        v = json.loads(vpath.read_text(encoding="utf-8"))
+        gaps, fresh, near = v.get("gaps") or {}, v.get("fresh") or {}, v.get("near") or {}
+        blind = v.get("blind_ch6") or {}
+        win = bool(
+            v.get("overall_ok")
+            and int(gaps.get("correct", 0)) == int(gaps.get("n", -1))
+            and int(gaps.get("wrong", 1)) == 0
+            and int(gaps.get("leftover", 1)) == 0
+            and int(fresh.get("correct", 0)) == int(fresh.get("n", -1))
+            and int(fresh.get("wrong", 1)) == 0
+            and int(near.get("correct", 0)) == int(near.get("n", -1))
+            and int(near.get("wrong", 1)) == 0
+            and int(blind.get("correct", 0)) == int(blind.get("n", -1))
+            and int(v.get("old_openstax_ok", 0)) == int(v.get("old_openstax_n", -1))
+        )
+        exp = {
+            "id": "TED-35",
+            "role": "ted",
+            "adventure": 1,
+            "change": "Fix fraction and percent errors and the remaining one-step gaps",
+            "vs_bill": "Bill-34",
+            "gaps_correct": gaps.get("correct"),
+            "gaps_n": gaps.get("n"),
+            "fresh_correct": fresh.get("correct"),
+            "near_correct": near.get("correct"),
+            "old_openstax_ok": v.get("old_openstax_ok"),
+            "promotes": win,
+            "promote_to": "Bill-35" if win else None,
+            "why": "1/3*1/4 was 0, 35% of 90 was 31, and what-percent swapped the numbers into 400. Fractions and percents now stay exact. W unchanged.",
+        }
+        dest = BT / "TED-35"
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / "EXPERIMENT.json").write_text(json.dumps(exp, indent=2), encoding="utf-8")
+        if "TED-35" not in led["teds"]:
+            led["teds"].append("TED-35")
+        print(
+            f"  TED-35 promotes={win}  gaps {gaps.get('correct')}/{gaps.get('n')}  "
+            f"fresh {fresh.get('correct')}/{fresh.get('n')}  near {near.get('correct')}/{near.get('n')}  "
+            f"old {v.get('old_openstax_ok')}/{v.get('old_openstax_n')}"
+        )
+        if win:
+            man = freeze("Bill-35")
+            if "Bill-35" not in led["bills"]:
+                led["bills"].append("Bill-35")
+            led["promotions"].append({"from": "TED-35", "to": "Bill-35", "tree": man["tree_sha256"]})
+            led["current_bill"] = "Bill-35"
+            led["last_tree_sha256"] = man["tree_sha256"]
+            print(f"  promoted Bill-35 tree={man['tree_sha256'][:12]}")
+        else:
+            print("  Bill-34 stays")
     elif cmd == "ted-1":
         exp = ted1()
         if "TED-1" not in led["teds"]:

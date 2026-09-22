@@ -175,6 +175,88 @@ def rational_work(prompt: str):
             return None
         return _number(den * right), "solve_var_div"
 
+    percent_of = re.search(
+        r"what percent of\s+(-?\d+(?:\.\d+)?)\s+is\s+(-?\d+(?:\.\d+)?)",
+        t,
+    )
+    if percent_of:
+        whole, part = _dec(percent_of.group(1)), _dec(percent_of.group(2))
+        if whole == 0:
+            return None
+        return _number(part / whole * 100), "what_percent"
+
+    is_percent_of = re.search(
+        r"(-?\d+(?:\.\d+)?)\s+is\s+(-?\d+(?:\.\d+)?)\s*%\s+of",
+        t,
+    )
+    if is_percent_of:
+        part, pct = _dec(is_percent_of.group(1)), _dec(is_percent_of.group(2))
+        if pct == 0:
+            return None
+        return _number(part / (pct / 100)), "percent_of_what"
+
+    number_is_percent = re.search(
+        r"(?:what number is|how much is)\s+(-?\d+(?:\.\d+)?)\s*%\s+of\s+(-?\d+(?:\.\d+)?)",
+        t,
+    )
+    if number_is_percent:
+        pct, base = _dec(number_is_percent.group(1)), _dec(number_is_percent.group(2))
+        return _number(base * pct / 100), "percent_of"
+
+    bare_percent = re.search(
+        r"(-?\d+(?:\.\d+)?)\s*%\s+of\s+(-?\d+(?:\.\d+)?)",
+        t,
+    )
+    if bare_percent and "what percent" not in t:
+        pct, base = _dec(bare_percent.group(1)), _dec(bare_percent.group(2))
+        if "discount" in t and ("sale price" in t or "pay" in t):
+            return _number(base * (100 - pct) / 100), "sale_price"
+        if "how much is the discount" in t or "discount amount" in t:
+            return _number(base * pct / 100), "discount_amount"
+        if "tip" in t:
+            return _number(base * pct / 100), "tip"
+        return _number(base * pct / 100), "percent_of"
+
+    linear = re.search(
+        r"(-?\d+)\s*([a-z])\s*([+-])\s*(-?\d+)\s*=\s*(-?\d+)",
+        t,
+    )
+    if not linear:
+        linear = re.search(
+            r"\b([a-z])\s*([+-])\s*(-?\d+)\s*=\s*(-?\d+)",
+            t,
+        )
+        if linear:
+            coeff = Fraction(1)
+            var_op, const, right = linear.group(2), _dec(linear.group(3)), _dec(linear.group(4))
+            signed = const if var_op == "+" else -const
+            return _number((right - signed) / coeff), "solve_linear"
+        linear = None
+    if linear and linear.lastindex == 5:
+        coeff = _dec(linear.group(1))
+        var_op, const, right = linear.group(3), _dec(linear.group(4)), _dec(linear.group(5))
+        if coeff == 0:
+            return None
+        signed = const if var_op == "+" else -const
+        return _number((right - signed) / coeff), "solve_linear"
+
+    money = re.search(r"(\d+(?:\.\d+)?)\s+dollars", t)
+    pct_word = re.search(r"(\d+(?:\.\d+)?)\s*%", t)
+    if money and pct_word:
+        base, pct = _dec(money.group(1)), _dec(pct_word.group(1))
+        if "discount" in t and ("sale price" in t or "pay" in t):
+            return _number(base * (100 - pct) / 100), "sale_price"
+        if "how much is the discount" in t or "discount amount" in t:
+            return _number(base * pct / 100), "discount_amount"
+        if "tip" in t:
+            return _number(base * pct / 100), "tip"
+
+    power = re.search(r"(-?\d+)\s*\^\s*(\d+)", t)
+    if power and "simplify" in t:
+        exp = int(power.group(2))
+        if 0 <= exp <= 12:
+            return int(power.group(1)) ** exp, "power"
+
     miles = re.search(r"(\d+(?:\.\d+)?)\s+miles\s+in\s+(\d+(?:\.\d+)?)\s+hours", t)
     if miles:
         dist, hours = _dec(miles.group(1)), _dec(miles.group(2))

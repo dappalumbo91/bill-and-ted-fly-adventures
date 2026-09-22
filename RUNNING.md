@@ -129,6 +129,7 @@ Consensus trit (guardrail / give-take): \(a\) if \(a=b\) else \(0\). Residual do
 | TED-33 finish Challenge leftovers | **promoted → Bill-33** | relations on new wording; Challenge 299/299 wrong 0 leftover 0; Easy stays 570; thought column on the side-by-side |
 | before Adventure 2 | no new Bill | census; interference forgotten 0/343; OpenStax Ch.6 Be Prepared 0 correct, 12 leftover |
 | TED-34 rational Chapter 6 | **promoted → Bill-34** | same 12 Be Prepared now correct; new wordings 12/12; near 4/4; earlier OpenStax 15/15 |
+| TED-35 fraction and percent errors | **promoted → Bill-35** | 1/3*1/4 was 0, 35% of 90 was 31, what-percent of 80 was 400; gaps 8/8 |
 
 ---
 
