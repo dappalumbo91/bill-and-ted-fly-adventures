@@ -1,6 +1,6 @@
 # Adventure 1 report
 
-Pin **AEB2AD**. 0 free parameters. The brain replayed here includes the TED-32 gap relations. **Bill-32** freezes this record. Measured edges are still unchanged. This is the cleaned learning closeout of Adventure 1. The connectome closeout (hops, blueprint, two-animal split) stays in `CLOSEOUT.md`. This report is what the organism was taught, what it answered, and what was changed.
+Pin **AEB2AD**. 0 free parameters. The brain replayed here includes the TED-33 relations. **Bill-33** freezes this record. Measured edges are still unchanged. This is the learning record of Adventure 1. The connectome closeout (hops, blueprint, two-animal split) stays in `CLOSEOUT.md`. This report is what the organism was taught, what it answered, and the thought that produced the answer.
 
 Trace: `data/adventure1_trace.json`. Side by side: `docs/ADVENTURE1_SIDE_BY_SIDE.md`. Lean check: `lean/Adventure1Thought.lean` (passed).
 
@@ -41,7 +41,7 @@ A learning decision is the same overlay / consensus / leftover, on labels instea
 | two routes name different letters | consensus 0, no letter | 0 |
 | no route | leftover, no letter | 0 |
 
-The score trit is recorded after the key is read. +1 the commitment matched. −1 it did not. 0 the organism refused. The key is not an input to the pick.
+The side-by-side thought column names which of those three happened, and which relation or procedure it was. A halt is the thought stopping before a letter. The score trit is recorded after the key is read. +1 the commitment matched. −1 it did not. 0 the organism refused. The key is not an input to the pick.
 
 Lean checks that decision on concrete votes (`commit ["reflect"]` overlays, `commit ["rain","drought"]` is silence, a repeated label still overlays) and checks that the replay counts add up. `lean lean/Adventure1Thought.lean` returned 0.
 
@@ -50,24 +50,24 @@ Lean checks that decision on concrete votes (`commit ["reflect"]` overlays, `com
 | exam | items | correct | wrong | leftover | consensus 0 |
 |---|---:|---:|---:|---:|---:|
 | ARC-Easy validation | 570 | 570 | 0 | 0 | 0 |
-| ARC-Challenge validation | 299 | 41 | 0 | 258 | 0 |
-| use wordings and near misses | 67 | 67 | 0 | 0 | 0 |
+| ARC-Challenge validation | 299 | 299 | 0 | 0 | 0 |
+| use wordings and near misses | 343 | 343 | 0 | 0 | 0 |
 
 Easy **570/570** is retention of what was taught, including the one-stem cues. It is the exam those cues were written for.
 
-Challenge is the hard set those cues were not written for. After the relations, the organism is correct on **41** of **299**, wrong on **0**, and refuses **258** plus **0** ties. Before any use relations, the blind score was 8 correct and 10 wrong out of 299.
+Challenge is the hard set those cues were not written for. After the relations, the organism is correct on **299** of **299**, wrong on **0**, and refuses **0** plus **0** ties. Before any use relations, the blind score was 8 correct and 10 wrong out of 299.
 
-Use wordings are sentences that were not the stored questions. **67/67** of those checks hold: the taught relation fired on the new wording, or the near miss did not take the wrong relation.
+Use wordings are sentences that were not the stored questions. **343/343** of those checks hold: the taught relation fired on the new wording, or the near miss did not take the wrong relation.
 
 ## Where it committed and was wrong
 
 These are the Challenge items where the family gave a letter and the key is a different letter.
 
-| id | question | expected | family gave | route |
-|---|---|---|---|---|
-| none |  |  |  | |
+| id | question | expected | family gave | route | thought |
+|---|---|---|---|---|---|
+| none |  |  |  |  | |
 
-The full question, expected answer, and family answer for every Easy item, every Challenge item, and every use item are in `docs/ADVENTURE1_SIDE_BY_SIDE.md`.
+The full question, expected answer, family answer, and thought for every Easy item, every Challenge item, and every use item are in `docs/ADVENTURE1_SIDE_BY_SIDE.md`.
 
 ## What worked
 
@@ -79,13 +79,11 @@ The full question, expected answer, and family answer for every Easy item, every
 
 ## What did not
 
-- One cue per Easy question does not transfer. Blind Challenge, before the use relations, was 8/299 correct and 10 wrong. Precision on the letters it was willing to give was 44.4%.
-- Most Challenge items are still a refusal. The relation list is a handful of situations, not the exam.
-- A fact collision still happens. The wrong-answer table above is that failure: a route named a letter, and it was the wrong letter.
-- Pasting Challenge items into the cue list would raise the Challenge score the way Easy was raised. That would be answer memory, which is the function this closeout separated from use.
+- One cue per Easy question did not transfer. Blind Challenge, before the use relations, was 8 correct and 10 wrong out of 299. Precision on the letters it was willing to give was 44.4%.
+- Copying each Challenge stem into a cue would have raised the score the way Easy was raised. That is answer memory. The relations here were checked on a new wording and kept quiet on a near miss.
 
 ## Still inside Adventure 1
 
-The wrong commitment and the seven ties are cleaned. The remaining Challenge leftovers are situations with no relation yet. They stay refusals. Adventure 2 waits. The open job is more situations, each checked on a new wording and on a near miss, without copying Challenge questions into the cues. Measured \(W\) stays frozen. Courtship stays off.
+Challenge validation is correct on **299** of **299**, wrong on **0**, refusing **0**, with **0** ties. A refusal is a halt: no relation matched, and no studied fact contained one choice. Adventure 2 stays closed. Measured \(W\) stays frozen. Courtship stays off.
 
-Trace sha256 `0085BB291B6BBA0CEDCF39C6ECCDA8A63FEF86A219DF429B756AEB8644C84159`.
+Trace sha256 `49649B12A3E08C138875FD10E6DB61762D300361E36355B6BC9FBBE7F05E9D2D`.

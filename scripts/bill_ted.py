@@ -70,6 +70,9 @@ def freeze_paths() -> list[Path]:
         BT / "TED-30" / "EXPERIMENT.json",
         BT / "TED-31" / "EXPERIMENT.json",
         BT / "TED-32" / "EXPERIMENT.json",
+        BT / "TED-33" / "EXPERIMENT.json",
+        ROOT / "docs" / "USE_FINISH.md",
+        BT / "Adventure-1" / "USE_FINISH.md",
         ROOT / "docs" / "USE_GAPS.md",
         BT / "Adventure-1" / "USE_GAPS.md",
         ROOT / "docs" / "ADVENTURE1_REPORT.md",
@@ -1424,6 +1427,59 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  promoted Bill-32 tree={man['tree_sha256'][:12]}")
         else:
             print("  Bill-31 stays")
+    elif cmd == "ted-33":
+        vpath = ROOT / "data" / "bill32_use_finish.json"
+        if not vpath.is_file():
+            print("  run python scripts/bill32_use_finish.py first")
+            return 1
+        v = json.loads(vpath.read_text(encoding="utf-8"))
+        chal = v.get("challenge") or {}
+        win = bool(
+            v.get("promotes")
+            and v.get("overall_ok")
+            and int(v.get("challenge_hurt", 1)) == 0
+            and int(v.get("easy_new_wrong", 1)) == 0
+            and int(chal.get("wrong", 1)) == 0
+            and int(chal.get("leftover", 1)) == 0
+            and int(chal.get("consensus_0", 1)) == 0
+        )
+        exp = {
+            "id": "TED-33",
+            "role": "ted",
+            "adventure": 1,
+            "change": "Finish Challenge leftovers as relations and record why a thought halted",
+            "vs_bill": "Bill-32",
+            "apply_ok": v.get("apply_ok"),
+            "apply_n": v.get("apply_n"),
+            "near_ok": v.get("near_ok"),
+            "near_n": v.get("near_n"),
+            "challenge_correct": chal.get("correct"),
+            "challenge_wrong": chal.get("wrong"),
+            "challenge_leftover": chal.get("leftover"),
+            "promotes": win,
+            "promote_to": "Bill-33" if win else None,
+            "why": "Each leftover situation is a relation on a new wording. The side-by-side records the thought that continued or halted. W unchanged.",
+        }
+        dest = BT / "TED-33"
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / "EXPERIMENT.json").write_text(json.dumps(exp, indent=2), encoding="utf-8")
+        if "TED-33" not in led["teds"]:
+            led["teds"].append("TED-33")
+        print(
+            f"  TED-33 promotes={win}  apply {exp.get('apply_ok')}/{exp.get('apply_n')}  "
+            f"near {exp.get('near_ok')}/{exp.get('near_n')}  "
+            f"challenge {chal.get('correct')} w={chal.get('wrong')} L={chal.get('leftover')}"
+        )
+        if win:
+            man = freeze("Bill-33")
+            if "Bill-33" not in led["bills"]:
+                led["bills"].append("Bill-33")
+            led["promotions"].append({"from": "TED-33", "to": "Bill-33", "tree": man["tree_sha256"]})
+            led["current_bill"] = "Bill-33"
+            led["last_tree_sha256"] = man["tree_sha256"]
+            print(f"  promoted Bill-33 tree={man['tree_sha256'][:12]}")
+        else:
+            print("  Bill-32 stays")
     elif cmd == "ted-1":
         exp = ted1()
         if "TED-1" not in led["teds"]:

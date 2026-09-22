@@ -159,6 +159,9 @@ python scripts/bill30_adventure1_report.py  # side-by-side replay and Adventure 
 python scripts/bill_ted.py ted-31
 python scripts/bill31_use_gaps.py           # clean the wrong commitment and the ties
 python scripts/bill_ted.py ted-32
+python scripts/bill32_use_finish.py         # finish Challenge leftovers as relations
+python scripts/bill30_adventure1_report.py  # side-by-side with the thought that continued or halted
+python scripts/bill_ted.py ted-33
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 

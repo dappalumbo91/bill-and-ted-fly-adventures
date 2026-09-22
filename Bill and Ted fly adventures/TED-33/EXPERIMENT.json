@@ -1,0 +1,17 @@
+{
+  "id": "TED-33",
+  "role": "ted",
+  "adventure": 1,
+  "change": "Finish Challenge leftovers as relations and record why a thought halted",
+  "vs_bill": "Bill-32",
+  "apply_ok": 260,
+  "apply_n": 260,
+  "near_ok": 16,
+  "near_n": 16,
+  "challenge_correct": 299,
+  "challenge_wrong": 0,
+  "challenge_leftover": 0,
+  "promotes": true,
+  "promote_to": "Bill-33",
+  "why": "Each leftover situation is a relation on a new wording. The side-by-side records the thought that continued or halted. W unchanged."
+}

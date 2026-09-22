@@ -1,0 +1,34 @@
+{
+  "adventure": 1,
+  "ted": "TED-33",
+  "vs_bill": "Bill-32",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "fitted_challenge_val_into_cues": false,
+  "apply_ok": 260,
+  "apply_n": 260,
+  "near_ok": 16,
+  "near_n": 16,
+  "old_apply_ok": 41,
+  "old_apply_n": 41,
+  "old_near_ok": 26,
+  "old_near_n": 26,
+  "source_ok": 251,
+  "source_n": 251,
+  "easy_new_wrong": 0,
+  "challenge": {
+    "correct": 299,
+    "wrong": 0,
+    "leftover": 0,
+    "consensus_0": 0
+  },
+  "challenge_hurt": 0,
+  "failures": [],
+  "measured_W_changed": false,
+  "overall_ok": true,
+  "promotes": true,
+  "promote_to": "Bill-33",
+  "thinking": {
+    "deny_family_seeded": false
+  }
+}

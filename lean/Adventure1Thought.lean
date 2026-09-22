@@ -1,6 +1,6 @@
 -- Adventure 1 thought law. Pin AEB2AD. 0 free parameters.
 -- One agreed label overlays. Disagreement or silence is trit 0 (no letter).
--- The counts are the replay after the TED-32 gap relations. Lean checks the arithmetic.
+-- The counts are the replay after the TED-33 relations. Lean checks the arithmetic.
 
 def pin : String := "AEB2AD"
 def freeParameters : Nat := 0
@@ -25,14 +25,14 @@ def easyConsensus : Nat := 0
 #guard easyCorrect + easyWrong + easyLeftover + easyConsensus = easyN
 
 def challengeN : Nat := 299
-def challengeCorrect : Nat := 41
+def challengeCorrect : Nat := 299
 def challengeWrong : Nat := 0
-def challengeLeftover : Nat := 258
+def challengeLeftover : Nat := 0
 def challengeConsensus : Nat := 0
 #guard challengeCorrect + challengeWrong + challengeLeftover + challengeConsensus = challengeN
 
-def useN : Nat := 67
-def useCorrect : Nat := 67
+def useN : Nat := 343
+def useCorrect : Nat := 343
 def useWrong : Nat := 0
 #guard useCorrect + useWrong = useN
 #guard useWrong = 0

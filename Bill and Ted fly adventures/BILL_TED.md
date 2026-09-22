@@ -86,7 +86,9 @@ Pin **AEB2AD**. Law \(S=K(T_1+T_2+T_3)\). Residual hops on measured synapses. Ov
 | **TED-31 / Adventure 1** | closeout: expected versus family answer, FSOT thought, Lean check | Easy 570/570, Challenge 33/299, use 52/52 → **Bill-31** |
 | **Bill-31** | Adventure 1 learning record | promoted from TED-31 |
 | **TED-32 / Adventure 1** | clean the wrong commitment and seven ties as relations | Challenge 41/299, wrong 0, consensus 0 → **Bill-32** |
-| **Bill-32** | current | Adventure 1 still open on untaught Challenge leftovers |
+| **Bill-32** | relations for the wrong letter and the seven ties | promoted from TED-32 |
+| **TED-33 / Adventure 1** | finish Challenge leftovers as relations; record the thought | Challenge 299/299, wrong 0, leftover 0, Easy 570 → **Bill-33** |
+| **Bill-33** | current | Adventure 1 Challenge validation is answered; Adventure 2 stays closed |
 
 Scripts: `python scripts/bill_ted.py freeze` · `ted-1` … `ted-10` · `python scripts/bill10_remaining_leftovers.py` · `ted-11` · `ledger`
 
