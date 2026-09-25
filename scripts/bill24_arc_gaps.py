@@ -15,6 +15,9 @@ Not a new edge on W. Not APL.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from pathlib import Path

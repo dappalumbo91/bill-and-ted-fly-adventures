@@ -6,6 +6,9 @@ renders. Original Gemini export is left beside this file as .gemini-export.pdf.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 from pathlib import Path
 
 from reportlab.lib import colors
@@ -28,7 +31,6 @@ from reportlab.platypus import (
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "Bio-Neuromorphic Connectome Expansion Feasibility.pdf"
-FONTS = Path(r"C:\Windows\Fonts")
 
 NAVY = colors.HexColor("#1b365d")
 TEAL = colors.HexColor("#0e6b6b")
@@ -38,46 +40,71 @@ LIVE = colors.HexColor("#e8f5e9")
 PAUSE = colors.HexColor("#fff8e1")
 MATH_BG = colors.HexColor("#f4f7fb")
 
-pdfmetrics.registerFont(TTFont("TNR", str(FONTS / "times.ttf")))
-pdfmetrics.registerFont(TTFont("TNR-B", str(FONTS / "timesbd.ttf")))
-pdfmetrics.registerFont(TTFont("TNR-I", str(FONTS / "timesi.ttf")))
-pdfmetrics.registerFont(TTFont("TNR-BI", str(FONTS / "timesbi.ttf")))
-pdfmetrics.registerFontFamily(
-    "TNR", normal="TNR", bold="TNR-B", italic="TNR-I", boldItalic="TNR-BI"
-)
-
 USABLE = letter[0] - 1.4 * inch
+FONT = {"body": "Times-Roman", "bold": "Times-Bold", "italic": "Times-Italic", "bi": "Times-BoldItalic"}
+
+
+def register_fonts() -> None:
+    """Prefer a Times file when one is installed. Otherwise use the built-in face."""
+    candidates = []
+    import os
+    if os.environ.get("FONT_DIR"):
+        candidates.append(Path(os.environ["FONT_DIR"]))
+    candidates.append(Path(r"C:\Windows\Fonts"))
+    candidates.append(Path("/usr/share/fonts/truetype/liberation"))
+    candidates.append(Path("/usr/share/fonts/truetype/dejavu"))
+    names = (
+        ("times.ttf", "timesbd.ttf", "timesi.ttf", "timesbi.ttf"),
+        ("LiberationSerif-Regular.ttf", "LiberationSerif-Bold.ttf", "LiberationSerif-Italic.ttf", "LiberationSerif-BoldItalic.ttf"),
+        ("DejaVuSerif.ttf", "DejaVuSerif-Bold.ttf", "DejaVuSerif-Italic.ttf", "DejaVuSerif-BoldItalic.ttf"),
+    )
+    for folder in candidates:
+        for quartet in names:
+            paths = [folder / name for name in quartet]
+            if all(p.is_file() for p in paths):
+                pdfmetrics.registerFont(TTFont("TNR", str(paths[0])))
+                pdfmetrics.registerFont(TTFont("TNR-B", str(paths[1])))
+                pdfmetrics.registerFont(TTFont("TNR-I", str(paths[2])))
+                pdfmetrics.registerFont(TTFont("TNR-BI", str(paths[3])))
+                pdfmetrics.registerFontFamily(
+                    "TNR", normal="TNR", bold="TNR-B", italic="TNR-I", boldItalic="TNR-BI"
+                )
+                FONT["body"] = "TNR"
+                FONT["bold"] = "TNR-B"
+                FONT["italic"] = "TNR-I"
+                FONT["bi"] = "TNR-BI"
+                return
 
 
 def styles():
     base = getSampleStyleSheet()
     return {
         "title": ParagraphStyle(
-            "T", parent=base["Title"], fontName="TNR-B", fontSize=16,
+            "T", parent=base["Title"], fontName=FONT["bold"], fontSize=16,
             leading=20, textColor=NAVY, spaceAfter=6, alignment=TA_LEFT,
         ),
         "sub": ParagraphStyle(
-            "S", parent=base["Normal"], fontName="TNR-I", fontSize=9,
+            "S", parent=base["Normal"], fontName=FONT["italic"], fontSize=9,
             leading=12, textColor=TEAL, spaceAfter=10,
         ),
         "h1": ParagraphStyle(
-            "H1", parent=base["Heading1"], fontName="TNR-B", fontSize=12,
+            "H1", parent=base["Heading1"], fontName=FONT["bold"], fontSize=12,
             leading=15, textColor=NAVY, spaceBefore=11, spaceAfter=5,
         ),
         "h2": ParagraphStyle(
-            "H2", parent=base["Heading2"], fontName="TNR-B", fontSize=10.5,
+            "H2", parent=base["Heading2"], fontName=FONT["bold"], fontSize=10.5,
             leading=13, textColor=TEAL, spaceBefore=8, spaceAfter=3,
         ),
         "body": ParagraphStyle(
-            "B", parent=base["Normal"], fontName="TNR", fontSize=9.5,
+            "B", parent=base["Normal"], fontName=FONT["body"], fontSize=9.5,
             leading=12.5, spaceAfter=5,
         ),
         "cell": ParagraphStyle(
-            "C", parent=base["Normal"], fontName="TNR", fontSize=8,
+            "C", parent=base["Normal"], fontName=FONT["body"], fontSize=8,
             leading=10.5,
         ),
         "cellb": ParagraphStyle(
-            "CB", parent=base["Normal"], fontName="TNR-B", fontSize=8,
+            "CB", parent=base["Normal"], fontName=FONT["bold"], fontSize=8,
             leading=10.5,
         ),
         "math": ParagraphStyle(
@@ -142,7 +169,7 @@ def header_footer(canvas, doc):
     canvas.setStrokeColor(NAVY)
     canvas.setLineWidth(0.6)
     canvas.line(0.7 * inch, letter[1] - 0.50 * inch, letter[0] - 0.7 * inch, letter[1] - 0.50 * inch)
-    canvas.setFont("TNR-I", 8)
+    canvas.setFont(FONT["italic"], 8)
     canvas.drawString(
         0.7 * inch, 0.38 * inch,
         "Updated 2026-09-17  ·  original Gemini export kept as .gemini-export.pdf",
@@ -152,6 +179,7 @@ def header_footer(canvas, doc):
 
 
 def build():
+    register_fonts()
     st = styles()
     c = st["cell"]
     b = st["cellb"]

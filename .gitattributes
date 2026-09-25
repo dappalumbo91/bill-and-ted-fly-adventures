@@ -1,0 +1,2 @@
+# The pin is the file bytes. Git must not rewrite CRLF to LF.
+vendor/fsot_compute.py -text

@@ -13,6 +13,9 @@ Not a trained policy. Not language. Not invented synapses.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from pathlib import Path
@@ -245,6 +248,11 @@ def brain_print(
 
 
 def main() -> int:
+    missing = [tr["body"] for tr in TRIALS if not (BEHAVIOR / tr["body"]).is_file()]
+    if len(missing) == len(TRIALS):
+        from paths import need
+
+        need("behavior CSVs " + ", ".join(missing), BEHAVIOR)
     male = hop2_table(MALE)
     banc = hop2_table(BANC)
     catalog = brain_print(male, banc)

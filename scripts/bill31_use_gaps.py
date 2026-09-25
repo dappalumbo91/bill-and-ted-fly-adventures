@@ -10,6 +10,9 @@ situation. Challenge questions are not copied into cues. Easy must stay
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from pathlib import Path

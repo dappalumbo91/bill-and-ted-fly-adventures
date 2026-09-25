@@ -10,6 +10,9 @@ Next growth is the effector the class already reaches: tibia_extensor_FETi.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from pathlib import Path
@@ -101,7 +104,11 @@ def main() -> int:
             feti[gname] = rec
     except Exception as exc:  # noqa: BLE001
         live_error = str(exc)
-        print(f"  live FETi failed ({exc})", flush=True)
+        print(
+            "  needs Male CNS and BANC feathers from fetch_data "
+            f"(python scripts/fetch_data.py). Live FETi skipped ({exc})",
+            flush=True,
+        )
 
     feti_banc = ((feti.get("banc") or {}).get("tibia_extensor_FETi:type_exact") or {})
     feti_is_motor = bool(feti_banc.get("is_motor_identity")) or bool(feti_banc.get("command_hops_2_4"))

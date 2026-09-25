@@ -14,6 +14,9 @@ Data cache on D:\\FlyWire_Connectome\\hemibrain (not git). 0 free parameters.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import re
 import sys
@@ -29,9 +32,9 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 sys.path.insert(0, str(ROOT / "vendor"))
 
-from fly_connectome import residual_cascade, seed_indices, _R_BIO  # noqa: E402
+from fly_connectome import FLY_ROOT, residual_cascade, seed_indices, _R_BIO  # noqa: E402
 
-CACHE = Path(r"D:\FlyWire_Connectome\hemibrain")
+CACHE = FLY_ROOT / "hemibrain"
 NEURON_FEA = CACHE / "neuprint_v1_2_1_typed_neurons.feather"
 EDGE_FEA = CACHE / "neuprint_v1_2_1_typed_edges.feather"
 NEUPRINT = "https://neuprint.janelia.org/api/custom/custom"
@@ -276,7 +279,15 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--fetch", action="store_true", help="refresh neuPrint cache")
     ap.add_argument("--gpu", dest="gpu", action="store_true", default=True)
     ap.add_argument("--cpu", dest="gpu", action="store_false")
+    ap.add_argument("--offline", action="store_true")
     args = ap.parse_args(argv)
+    if args.offline:
+        import os
+
+        from runio import offline_exit
+
+        os.environ["FSOT_OFFLINE"] = "1"
+        return offline_exit(ROOT / "data" / "hemibrain_connectome_boot.json")
     if args.fetch and NEURON_FEA.exists():
         NEURON_FEA.unlink()
         if EDGE_FEA.exists():

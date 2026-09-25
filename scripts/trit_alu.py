@@ -6,6 +6,9 @@ No trained weights. Carry is a trit. Integers are finite trit words
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 
 def trit(x: int) -> int:
     if x > 0:

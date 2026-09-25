@@ -13,6 +13,9 @@ Expansion = residual on the *measured* type at the bottleneck
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import re
 from pathlib import Path
@@ -291,6 +294,14 @@ def stress_from_hops() -> list[dict]:
 
 def main() -> int:
     env = registry()
+    if env.get("T001_L") == 0 and env.get("T001_R") == 0 and env.get("T02_L") == 0 and env.get("T02_R") == 0:
+        from paths import need
+
+        need(
+            "behavior turn counts for Fly01_T001 and Fly02_T002 "
+            "(BodyCoords3D CSVs, then data/baseline_sim.json)",
+            ROOT / "data" / "baseline_sim.json",
+        )
     rows = []
     n_cons0 = 0
     for src, want in WORKSHEET:

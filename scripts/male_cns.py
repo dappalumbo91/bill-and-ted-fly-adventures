@@ -15,6 +15,9 @@ Same residual as FlyWire v630. 0 free parameters.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from pathlib import Path
@@ -50,6 +53,11 @@ def load_male_graph() -> dict[str, Any]:
     import pandas as pd
     from scipy.sparse import csr_matrix
 
+    from paths import require
+
+    require(ANN, "Male CNS body annotations feather")
+    require(NT, "Male CNS neurotransmitter feather")
+    require(WTS, "Male CNS connectome weights feather")
     print(f"  reading {ANN.name}", flush=True)
     ann = pd.read_feather(ANN)
     traced = ann[ann["status"] == "Traced"].copy()

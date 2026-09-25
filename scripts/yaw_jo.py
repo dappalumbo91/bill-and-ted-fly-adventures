@@ -11,6 +11,9 @@ Wing plant: yaw trit ≠ 0 → opposite-phase wings (already in wing_sim).
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 from pathlib import Path
 
@@ -32,6 +35,10 @@ INV_PHI = 1.0 / PHI
 def main() -> int:
     hops = (json.loads(MATH.read_text(encoding="utf-8")).get("laterality_hops") or {})
     by = {p["name"]: p for p in (hops.get("programs") or [])}
+    if "JO_L" not in by or "JO_R" not in by:
+        from paths import need
+
+        need("laterality programs JO_L and JO_R in data/math_first.json", MATH)
     jL = by["JO_L"]["hop2"]
     jR = by["JO_R"]["hop2"]
     nL = int(by["JO_L"]["n_seed"])

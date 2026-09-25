@@ -7,12 +7,16 @@ not the web UI.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-FLY = Path(r"D:\FlyWire_Connectome")
+sys.path.insert(0, str(ROOT / "scripts"))
+from paths import FLY_ROOT as FLY  # noqa: E402
 OUT = ROOT / "data" / "type_counts.json"
 
 
@@ -129,6 +133,11 @@ def neuprint_hemibrain_live() -> dict:
 
 
 def main() -> int:
+    from paths import require
+
+    require(FLY / "male_cns" / "body-annotations-male-cns-v1.0-minconf-0.5.feather", "Male CNS body annotations feather")
+    require(FLY / "banc" / "banc_888_meta.feather", "BANC meta feather")
+    require(FLY / "Supplemental_file1_neuron_annotations.tsv", "FlyWire annotation TSV")
     doc = {
         "pin": "AEB2AD",
         "free_parameters": 0,

@@ -1,0 +1,6 @@
+mpmath
+numpy
+pandas
+scipy
+pyarrow
+reportlab

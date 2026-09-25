@@ -9,6 +9,9 @@ engine to dump N, GABA n, and CRC transmitter AA MW (APPLY_NEURO).
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from pathlib import Path

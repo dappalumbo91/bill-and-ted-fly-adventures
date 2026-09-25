@@ -12,6 +12,9 @@ Zero free parameters — values are closed forms in {π,e,φ,γ,G} + Layer 1/2.
 
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import math
 import re

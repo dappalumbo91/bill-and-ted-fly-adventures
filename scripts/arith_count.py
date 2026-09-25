@@ -9,6 +9,9 @@ No trained weights. No invented synapses.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 from pathlib import Path
 

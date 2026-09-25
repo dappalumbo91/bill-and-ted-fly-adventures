@@ -6,6 +6,9 @@ original Challenge item. A near miss uses different wording so the relation stay
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import re
 
 from bill28_use import _choose, _has

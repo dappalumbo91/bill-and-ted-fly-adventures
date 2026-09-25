@@ -10,6 +10,9 @@ Predicted labels are stamped as predicted, not as EM.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from collections import defaultdict
@@ -22,11 +25,11 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 sys.path.insert(0, str(ROOT / "vendor"))
 
+from fly_connectome import FLY_ROOT as FLY  # noqa: E402
 from fly_connectome import _PHI, _R_BIO  # noqa: E402
 from trit_alu import consensus, trit  # noqa: E402
 
 OUT = ROOT / "data" / "leftover_solve.json"
-FLY = Path(r"D:\FlyWire_Connectome")
 INV_PHI = 1.0 / float(_PHI)
 ANN = FLY / "male_cns" / "body-annotations-male-cns-v1.0-minconf-0.5.feather"
 
@@ -324,6 +327,9 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--hops", action="store_true")
     args = ap.parse_args(argv)
+    from paths import require
+
+    require(ANN, "Male CNS body annotations feather")
     print("  birthtime prior", flush=True)
     birth = birthtime_prior()
     print(

@@ -12,6 +12,9 @@ Same pin as adult fly, worm, Ciona, Platynereis. 0 free parameters.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from collections import Counter
@@ -27,7 +30,9 @@ sys.path.insert(0, str(ROOT / "vendor"))
 import fsot_compute as fc  # noqa: E402
 from full_scalar_law import residual_scale  # noqa: E402
 
-LARVA = Path(r"D:\FlyWire_Connectome\larva\Supplementary-Data-S1")
+from paths import FLY_ROOT  # noqa: E402
+
+LARVA = FLY_ROOT / "larva" / "Supplementary-Data-S1"
 _PHI = float(fc.PHI)
 _R_BIO = residual_scale(abs(float(fc.domain_scalar("Biochemistry"))))
 
@@ -43,6 +48,10 @@ def _read_graph() -> dict[str, Any]:
     import pandas as pd
     from scipy.sparse import csr_matrix
 
+    from paths import require
+
+    require(LARVA / "annotations.csv", "larva annotations.csv")
+    require(LARVA / "all-all_connectivity_matrix.csv", "larva all-all_connectivity_matrix.csv")
     ann = pd.read_csv(LARVA / "annotations.csv")
     meta: dict[str, dict[str, str]] = {}
     for _, row in ann.iterrows():

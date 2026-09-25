@@ -19,6 +19,9 @@ Not a trained RNN and not a thought. 0 free parameters.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import shutil
 import subprocess

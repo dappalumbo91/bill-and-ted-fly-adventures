@@ -16,6 +16,9 @@ The Easy exam must not gain a wrong answer.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from pathlib import Path

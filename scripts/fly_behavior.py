@@ -15,6 +15,9 @@ Not a trained RNN and not a thought. 0 free parameters.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import shutil
 import subprocess
@@ -412,7 +415,15 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--gpu", dest="gpu", action="store_true", default=True)
     ap.add_argument("--cpu", dest="gpu", action="store_false")
     ap.add_argument("--skip-video", action="store_true")
+    ap.add_argument("--offline", action="store_true")
     args = ap.parse_args(argv)
+    if args.offline:
+        import os
+
+        from runio import offline_exit
+
+        os.environ["FSOT_OFFLINE"] = "1"
+        return offline_exit(ROOT / "data" / "fly_behavior_flow.json")
     BEHAVIOR.mkdir(parents=True, exist_ok=True)
     print("FSOT fly behavior observer → residual boot", flush=True)
     print(f"  phi={_PHI} R_BIO={_R_BIO} gpu={cuda_name()}", flush=True)

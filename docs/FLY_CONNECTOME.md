@@ -1,6 +1,6 @@
 # Fly connectome — measured organism graph
 
-**Data is not in this git repo.** It stays on the game drive: `D:\FlyWire_Connectome`.
+**Data is not in this git repo.** `python scripts/fetch_data.py` and `data_manifest.json` are the download list. The files land in `data_external/FlyWire_Connectome` unless `FLY_ROOT` is set. The notes below record the dumps this pack was measured on.
 
 Same pin `AEB2AD`. Same law as Biohub and the protein product: **measured coordinates and measured edges are authority**. Residual scales the interface. We do not invent a 13 Å MDS brain or train a net to hallucinate synapses.
 

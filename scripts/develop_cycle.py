@@ -17,6 +17,9 @@ measured cells. Do not invent metamorphosis synapses.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from collections import Counter
@@ -27,7 +30,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 sys.path.insert(0, str(ROOT / "vendor"))
 
-FLY = Path(r"D:\FlyWire_Connectome")
+from paths import FLY_ROOT as FLY  # noqa: E402
 OUT = ROOT / "data" / "develop_cycle.json"
 LARVA_BOOT = ROOT / "data" / "larva_connectome_boot.json"
 MALE_BOOT = ROOT / "data" / "male_cns_boot.json"
@@ -43,6 +46,12 @@ def _norm(s: Any) -> str:
 def inventory() -> dict[str, Any]:
     import pandas as pd
 
+    from paths import require
+
+    require(FLY / "male_cns" / "body-annotations-male-cns-v1.0-minconf-0.5.feather", "Male CNS body annotations feather")
+    require(FLY / "banc" / "banc_888_meta.feather", "BANC meta feather")
+    require(FLY / "Supplemental_file1_neuron_annotations.tsv", "FlyWire annotation TSV")
+    require(FLY / "larva" / "Supplementary-Data-S1" / "annotations.csv", "larva annotations.csv")
     male = pd.read_feather(
         FLY / "male_cns" / "body-annotations-male-cns-v1.0-minconf-0.5.feather"
     )

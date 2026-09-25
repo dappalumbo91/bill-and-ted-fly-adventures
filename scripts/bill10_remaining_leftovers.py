@@ -7,6 +7,9 @@ Does not invent dumps. Blocked stays blocked. Language stays a splice job, not W
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 from pathlib import Path
 
@@ -68,6 +71,12 @@ def main() -> int:
     n_ok = sum(1 for r in rows if r["ok"])
     fail = [r["q"] for r in rows if not r["ok"]]
     overall = n_ok == len(rows)
+    if not overall:
+        from paths import FLY_ROOT, need
+
+        edgelist = FLY_ROOT / "banc" / "banc_888_edgelist_simple_v3.feather"
+        if not edgelist.is_file():
+            need("BANC edgelist so bill9 can record FETi n=6", edgelist)
 
     remaining = {
         "wait_dump_blocked": [

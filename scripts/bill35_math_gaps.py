@@ -9,6 +9,9 @@ returned 400. One-step equations, powers, tips, and discounts had no shape.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from pathlib import Path

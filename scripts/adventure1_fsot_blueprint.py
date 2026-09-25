@@ -15,6 +15,9 @@ same engine as the hops. Not a seating list with a side check.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import math
 import sys

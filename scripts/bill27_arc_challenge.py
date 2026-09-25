@@ -9,6 +9,9 @@ at the same brain. The key is not an input. Nothing is added from these items.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 import urllib.request
@@ -27,7 +30,9 @@ from bill26_arc_leftovers import EXTRA, pick_v3  # noqa: E402
 OUT = ROOT / "data" / "bill27_arc_challenge.json"
 DOC = ROOT / "docs" / "ARC_CHALLENGE.md"
 ADV = ROOT / "Bill and Ted fly adventures" / "Adventure-1"
-TMP = Path(r"C:\Users\damia\AppData\Local\Temp")
+from paths import CACHE_DIR  # noqa: E402
+
+TMP = CACHE_DIR
 HF = (
     "https://huggingface.co/datasets/allenai/ai2_arc/resolve/main/"
     "ARC-Challenge/{split}-00000-of-00001.parquet"
@@ -36,6 +41,7 @@ HF = (
 
 def load_challenge(name: str) -> pd.DataFrame:
     dest = TMP / f"arc_challenge_{name}.parquet"
+    dest.parent.mkdir(parents=True, exist_ok=True)
     if not dest.is_file() or dest.stat().st_size < 1000:
         url = HF.format(split=name)
         print(f"  download challenge {name}", flush=True)

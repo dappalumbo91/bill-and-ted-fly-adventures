@@ -12,6 +12,9 @@ Disagreeing procedures are consensus trit 0. Not an edge on W.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import re
 import sys

@@ -11,6 +11,9 @@ names DENY. Measured W stays unchanged.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import ast
 import re
 import sys

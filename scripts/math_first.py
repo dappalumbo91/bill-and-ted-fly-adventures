@@ -9,6 +9,9 @@ probe that uses only seeds {π,e,φ,γ} and measured left/right observers.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from pathlib import Path

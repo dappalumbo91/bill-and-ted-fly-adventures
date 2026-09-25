@@ -9,6 +9,9 @@ already in the organism. A miss stays a refusal.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from collections import Counter, defaultdict

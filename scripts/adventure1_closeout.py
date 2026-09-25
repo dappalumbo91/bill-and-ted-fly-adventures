@@ -8,6 +8,9 @@ Independent: leftover vs walk, look-split, side vote, BANC vs Male *function*.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 from pathlib import Path
 

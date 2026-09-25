@@ -11,6 +11,9 @@ Resistance = leftover steps vs overlay steps while working the ALU.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 from pathlib import Path
 

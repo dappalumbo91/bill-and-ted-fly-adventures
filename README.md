@@ -6,13 +6,13 @@ Pin **AEB2AD** (FSOT-2.1-Lean hub). Law \(S = K(T_1+T_2+T_3)\). Residual \(r = 1
 
 This pack is **not** a trained RNN and does not invent synapses. The graph is FlyWire / Male CNS / BANC measured edges. Residual hops are the FSOT signal. You can treat the hop field as a net to experiment on. Do not swap measured edges for learned weights and still call it the product.
 
-Math: `MATH.md`. Reverse mechanics: `docs/MECHANICS.md`. Living findings log: `RUNNING.md`. Repos: `REPOS.md`. Genetics hook: `data/genetics_hook.json`. Live APIs: `data/live_verify.json`.
+Math: `MATH.md`. Reverse mechanics: `docs/MECHANICS.md`. Living findings log: `RUNNING.md`. Repos: `REPOS.md`. Reproduce: `docs/REPRODUCE.md`. Genetics hook: `data/genetics_hook.json`. Live APIs: `data/live_verify.json`.
 
 **Bill and Ted:** baseline residual net **Bill** vs numbered experiments **TED-\(n\)**. When TED earns Lean/function gates it promotes to **Bill-\(k\)**. Folder: `Bill and Ted fly adventures/`. License: Apache 2.0.
 
-Source: `C:\Users\damia\Desktop\FSOT-Genetics` · [FSOT-Genetics](https://github.com/dappalumbo91/FSOT-Genetics) · hub [FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)
+Source: [FSOT-Genetics](https://github.com/dappalumbo91/FSOT-Genetics) · hub [FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)
 
-Synapse dumps stay on `D:\FlyWire_Connectome` (too large for this folder). Boot JSON in `data/` is the residual result.
+Synapse dumps are not in git. `python scripts/fetch_data.py` puts public files under `data_external/` (override with `FLY_ROOT`). The pin file `vendor/fsot_compute.py` is stored byte-for-byte (`.gitattributes` marks it `-text`) so a fresh clone hashes to AEB2AD. Boot JSON in `data/` is the residual result. A rerun writes to `out/` unless `FSOT_COMMIT_OUT=1`.
 
 ## What is in here
 
@@ -25,7 +25,7 @@ Synapse dumps stay on `D:\FlyWire_Connectome` (too large for this folder). Boot 
 | `data/analog_pointer.json` | Blank 1:1 (mec-4) points at nompC on this graph |
 | `data/homolog_correspondence.json` | Bee/mosquito/beetle product transfers |
 | `formulas/` | Codon → trit → AA opcode (20/20 unique expanded words) |
-| `scripts/` | Live hop engines (need `D:\FlyWire_Connectome` for full graph) |
+| `scripts/` | Live hop engines (need `FLY_ROOT` for the full graph) |
 | `lean/` | ChemLink D_eff, observer (backbone unobserved), residual ≥ 1 |
 | `zig/` | Codon / genetic pair geometry |
 | `vendor/` | `fsot_compute.py` pin AEB2AD |
@@ -63,11 +63,14 @@ Full gauntlet: in FSOT-Genetics run `python verification/run_cross_proof.py`.
 
 ## Boot / tests (from this folder)
 
-```powershell
-cd "C:\Users\damia\Desktop\fsot fly nuron net"
+```bash
+pip install -r requirements.txt
+python scripts/fetch_data.py
 python scripts/boot_pack.py                 # pin, trinary, frozen hops vs RESULTS
-python scripts/boot_pack.py --live          # + FlyWire TSV + Male CNS feathers on D:
+python scripts/boot_pack.py --check         # committed numbers reproduce
+python scripts/boot_pack.py --live          # + FlyWire TSV and Male CNS feathers under FLY_ROOT
 python scripts/boot_pack.py --apis          # UniProt, Ensembl, neuPrint, Allen, GitHub
+python scripts/genetics_hook.py --offline   # cached gene rows, no live IDs
 python scripts/genetics_hook.py             # genes on hop jobs, live IDs
 python scripts/live_verify.py
 python scripts/trinary_syntax.py
@@ -172,23 +175,22 @@ python scripts/bill_ted.py ted-36
 python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates hold
 ```
 
-`--live` re-reads `D:\FlyWire_Connectome` and checks neuron/edge/GABA counts match the frozen boots (165,122 / 25,563,197 / 22,055). Hop-2 split stays JO/VNC on, olfactory off.
+`--live` re-reads `FLY_ROOT` and checks neuron/edge/GABA counts match the frozen boots (165,122 / 25,563,197 / 22,055). Hop-2 split stays JO/VNC on, olfactory off. Video scripts (`fly_odor.py`, `fly_courtship.py`, `fly_aggression.py`) need `ffmpeg` and `ffprobe` on `PATH`. `torch` is optional; hops use NumPy when CUDA is absent. Reruns write under `out/`. `python scripts/some_script.py --check` compares score fields to the committed JSON. `FSOT_COMMIT_OUT=1` writes the tracked files (the promotion step).
 
-## Re-run hops (needs game drive)
+## Re-run hops (needs FLY_ROOT)
 
-```powershell
-cd "C:\Users\damia\Desktop\fsot fly nuron net"
-python scripts\male_cns.py
-python scripts\banc_connectome.py
-python scripts\hemibrain_connectome.py
-python scripts\larva_connectome.py --boot
-python scripts\type_counts.py
-python scripts\fly_connectome.py --boot --seed sensory
+```bash
+python scripts/male_cns.py
+python scripts/banc_connectome.py
+python scripts/hemibrain_connectome.py
+python scripts/larva_connectome.py --boot
+python scripts/type_counts.py
+python scripts/fly_connectome.py --boot --seed sensory
 ```
 
 ## Experiment as a net
 
-Allowed: take `data/*_boot.json` hop fields, or the measured edgelist on `D:`, and try alternative observers / seeds.
+Allowed: take `data/*_boot.json` hop fields, or the measured edgelist under `FLY_ROOT`, and try alternative observers / seeds.
 
 Not allowed if you still want the FSOT product: replace synapse counts with trained weights, invent contacts, or call leftover olfactory LN mass a thought.
 

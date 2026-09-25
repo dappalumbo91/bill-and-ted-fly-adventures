@@ -12,6 +12,9 @@ and measured types/transmitters. Residual does not invent synapses.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 import urllib.request
@@ -27,8 +30,7 @@ sys.path.insert(0, str(ROOT / "vendor"))
 
 import fsot_compute as fc  # noqa: E402
 from full_scalar_law import residual_scale  # noqa: E402
-
-FLY_ROOT = Path(r"D:\FlyWire_Connectome")
+from paths import FLY_ROOT, need  # noqa: E402
 ANN_URL = (
     "https://raw.githubusercontent.com/flyconnectome/flywire_annotations/"
     "main/supplemental_files/Supplemental_file1_neuron_annotations.tsv"
@@ -52,6 +54,8 @@ def ensure_annotations(dest_dir: Path = FLY_ROOT) -> Path:
     path = dest_dir / ANN_NAME
     if path.exists() and path.stat().st_size > 1_000_000:
         return path
+    if "--offline" in sys.argv or __import__("os").environ.get("FSOT_OFFLINE") == "1":
+        need(ANN_NAME, path)
     print(f"  downloading {ANN_URL}", flush=True)
     urllib.request.urlretrieve(ANN_URL, path)
     print(f"  wrote {path} ({path.stat().st_size} bytes)", flush=True)
@@ -491,6 +495,8 @@ def residual_cascade(
                 a[np.asarray(seed_i, dtype=np.int64)] = 1.0
             trace = [_snapshot(a, step=0, ids=ids, idx=idx, meta=meta)]
     if not used_gpu:
+        if seed_i:
+            print("  CPU residual (CUDA is not the hop path)", flush=True)
         for h in range(1, hops + 1):
             a = _hop_cpu(W, a)
             if h in keep:

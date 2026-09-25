@@ -12,6 +12,9 @@ off-domain = leftover when the job is not a measured observer.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from pathlib import Path

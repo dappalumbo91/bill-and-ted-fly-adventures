@@ -9,6 +9,9 @@ disambiguates. Wikipedia stays leftover: not a measured dump, not over W.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import re
 from pathlib import Path

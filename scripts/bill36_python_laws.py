@@ -10,6 +10,9 @@ Courtship names DENY. Measured W stays unchanged.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from pathlib import Path

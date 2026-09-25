@@ -10,6 +10,9 @@ If TED matches empirical function and Lean gates, it promotes to Bill-k.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import hashlib
 import json
 import sys

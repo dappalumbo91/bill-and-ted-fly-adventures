@@ -9,6 +9,9 @@ join. Innexins sit on consensus (gap analog), not on invented EM edges.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 import urllib.request
@@ -102,6 +105,11 @@ def ensembl_gene(sym: str) -> dict:
 
 
 def main() -> int:
+    from runio import offline_exit
+
+    cached = offline_exit(OUT)
+    if cached is not None:
+        return cached
     a1 = json.loads(A1.read_text(encoding="utf-8")) if A1.is_file() else {}
     fold = json.loads(FOLD.read_text(encoding="utf-8")) if FOLD.is_file() else {}
     nt_hop = {h["nt"]: h for h in (a1.get("neuromod_hops") or [])}

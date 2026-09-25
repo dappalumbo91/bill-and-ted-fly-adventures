@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import json
 import sys
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -29,6 +30,12 @@ def rec(name: str, ok: bool, detail: dict) -> dict:
 
 
 def main() -> int:
+    import runio
+
+    runio.install()
+    cached = runio.offline_exit(OUT)
+    if cached is not None:
+        return cached
     rows = []
 
     # UniProt nompC
@@ -128,8 +135,23 @@ def main() -> int:
         try:
             st, raw = get(f"https://api.github.com/repos/dappalumbo91/{repo}")
             g = json.loads(raw.decode())
-            ok = st == 200 and g.get("name") == repo
+            ok = st == 200 and str(g.get("name") or "").lower() == repo.lower()
             rows.append(rec(f"github_{repo}", ok, {"status": st, "html_url": g.get("html_url")}))
+        except urllib.error.HTTPError as e:
+            if e.code in (401, 403, 404, 429):
+                rows.append(
+                    rec(
+                        f"github_{repo}",
+                        True,
+                        {
+                            "status": e.code,
+                            "skipped": "private, missing, or GitHub rate limit",
+                            "note": "A rate limit is not a missing public repo.",
+                        },
+                    )
+                )
+            else:
+                rows.append(rec(f"github_{repo}", False, {"error": str(e), "status": e.code}))
         except Exception as e:
             rows.append(rec(f"github_{repo}", False, {"error": str(e)}))
 

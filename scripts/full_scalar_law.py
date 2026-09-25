@@ -12,6 +12,9 @@ Hot path is float64 twin of vendor compute_scalar (same algebra, fast).
 
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import math
 import sys
 from dataclasses import dataclass

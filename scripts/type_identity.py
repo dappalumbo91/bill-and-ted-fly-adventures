@@ -9,13 +9,19 @@ graphs into one fake animal.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
+import sys
 from pathlib import Path
 
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
-FLY = Path(r"D:\FlyWire_Connectome")
+sys.path.insert(0, str(ROOT / "scripts"))
+from paths import FLY_ROOT as FLY  # noqa: E402
+from paths import require  # noqa: E402
 OUT = ROOT / "data" / "type_identity.json"
 
 
@@ -29,10 +35,14 @@ def _norm(s: str) -> str:
 
 
 def main() -> int:
-    male = pd.read_feather(FLY / "male_cns" / "body-annotations-male-cns-v1.0-minconf-0.5.feather")
+    male_path = FLY / "male_cns" / "body-annotations-male-cns-v1.0-minconf-0.5.feather"
+    banc_path = FLY / "banc" / "banc_888_meta.feather"
+    require(male_path, "Male CNS body annotations feather")
+    require(banc_path, "BANC meta feather")
+    male = pd.read_feather(male_path)
     traced = male[male["status"] == "Traced"]
     male_types = {_norm(x) for x in traced["type"].tolist() if _norm(x)}
-    banc = pd.read_feather(FLY / "banc" / "banc_888_meta.feather")
+    banc = pd.read_feather(banc_path)
     banc_types = {_norm(x) for x in banc["cell_type"].tolist() if _norm(x)}
     banc_male_ann = [_norm(x) for x in banc["malecns_cell_type"].tolist()]
     banc_male_set = {x for x in banc_male_ann if x}

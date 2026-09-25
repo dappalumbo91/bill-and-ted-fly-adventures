@@ -21,6 +21,9 @@ pC1 also seeds courtship — same cells, different observer. 0 free parameters.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 import urllib.request

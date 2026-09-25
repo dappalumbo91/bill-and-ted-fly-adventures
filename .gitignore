@@ -14,3 +14,5 @@ data/_*.log
 venv/
 .env
 *.swp
+data_external/
+out/

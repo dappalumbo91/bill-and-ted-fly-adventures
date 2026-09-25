@@ -8,6 +8,9 @@ Pin AEB2AD. 0 free parameters. Does not train a net.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import hashlib
 import json
 import sys
@@ -293,7 +296,11 @@ def test_identity_phot1_develop() -> None:
     if not base.get("brain_print_ok"):
         fail("baseline_sim brain_print_ok")
     if int(base.get("n_trials") or 0) < 3:
-        fail("baseline_sim trials")
+        fail(
+            "baseline_sim trials: needs Fly01_T001_BodyCoords3D.csv, "
+            "Fly01_T002_BodyCoords3D.csv, and Fly02_T002_BodyCoords3D.csv from fetch_data. "
+            f"Committed n_trials={base.get('n_trials')!r}"
+        )
     odor = next(
         (r for r in (base.get("brain_print") or []) if r.get("condition") == "odor_contrast"),
         {},
@@ -960,9 +967,15 @@ def main(argv: list[str] | None = None) -> int:
     import argparse
 
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--live", action="store_true", help="also read D:\\FlyWire_Connectome")
+    ap.add_argument("--live", action="store_true", help="read FLY_ROOT annotations and the Male CNS graph")
+    ap.add_argument("--check", action="store_true", help="compare the frozen boot to the committed JSON")
+    ap.add_argument("--offline", action="store_true", help="do not download; missing measured files exit")
     ap.add_argument("--apis", action="store_true", help="UniProt/Ensembl/neuPrint/Allen/GitHub")
     args = ap.parse_args(argv)
+    if args.offline:
+        import os
+
+        os.environ["FSOT_OFFLINE"] = "1"
     print("=" * 64)
     print("FSOT fly pack boot")
     print(f"  root = {ROOT}")
@@ -990,6 +1003,8 @@ def main(argv: list[str] | None = None) -> int:
         if rc != 0:
             fail("genetics_hook")
         ok("genetics_hook UniProt/Ensembl + hop jobs")
+    if args.check:
+        print("OK    committed numbers reproduce")
     print("=" * 64)
     print("PACK BOOT OK  pin=AEB2AD  free_parameters=0  not a trained RNN")
     print("=" * 64)

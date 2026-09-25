@@ -9,6 +9,9 @@ Lean: Biochemistry (molecule) vs Neuroscience (signaling) neighbor fold.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 import urllib.request
@@ -106,6 +109,11 @@ def ensembl_gene(sym: str) -> dict:
 
 
 def main() -> int:
+    from runio import offline_exit
+
+    cached = offline_exit(OUT)
+    if cached is not None:
+        return cached
     a1 = json.loads(A1.read_text(encoding="utf-8")) if A1.is_file() else {}
     nt_hop = {h["nt"]: h for h in (a1.get("neuromod_hops") or [])}
     rows = []

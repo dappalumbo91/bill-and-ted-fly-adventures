@@ -7,6 +7,9 @@ Does not invent a Fly Cell Atlas bodyId join.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 import urllib.request
@@ -87,6 +90,11 @@ def ensembl_live(symbol: str) -> dict | None:
 
 
 def main() -> int:
+    from runio import offline_exit
+
+    cached = offline_exit(OUT)
+    if cached is not None:
+        return cached
     join = json.loads(JOIN.read_text(encoding="utf-8")) if JOIN.is_file() else {}
     walk = {g["symbol"]: g for g in (json.loads(WALK.read_text(encoding="utf-8")).get("genes") or [])} if WALK.is_file() else {}
     homo = []

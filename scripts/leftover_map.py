@@ -8,6 +8,9 @@ We map it. We do not invent a join, a pupal movie, or a wingbeat.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 from pathlib import Path
 

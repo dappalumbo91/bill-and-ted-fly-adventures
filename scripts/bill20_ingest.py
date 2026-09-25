@@ -9,6 +9,9 @@ The organism works each prompt (grammar + ALU). Not LLM pretrain.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import random
 from pathlib import Path

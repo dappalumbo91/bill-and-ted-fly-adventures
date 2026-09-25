@@ -12,6 +12,9 @@ Thinking traces stay the measured hop observers (JO / VNC / leftover).
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import math
 from pathlib import Path

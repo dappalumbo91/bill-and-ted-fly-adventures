@@ -10,6 +10,9 @@ Sit-on existing hop jobs / leftover / DENY. No invented synapses.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 import urllib.request

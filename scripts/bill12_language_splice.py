@@ -9,6 +9,9 @@ and smell stay leftover. Courtship/aggression T1 off.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import re
 from collections import deque

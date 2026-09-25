@@ -13,6 +13,9 @@ growth map for later evolutionary seed of command bottlenecks.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 from collections import deque
 from pathlib import Path

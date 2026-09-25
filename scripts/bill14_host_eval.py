@@ -13,6 +13,9 @@ enable the family as default observer.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import ast
 import json
 import operator

@@ -18,6 +18,9 @@ Drop glia / trachea / not_a_neuron. 0 free parameters.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from pathlib import Path
@@ -29,9 +32,9 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 sys.path.insert(0, str(ROOT / "vendor"))
 
-from fly_connectome import residual_cascade, seed_indices, _R_BIO  # noqa: E402
+from fly_connectome import FLY_ROOT, residual_cascade, seed_indices, _R_BIO  # noqa: E402
 
-BANC = Path(r"D:\FlyWire_Connectome\banc")
+BANC = FLY_ROOT / "banc"
 META = BANC / "banc_888_meta.feather"
 EDGES = BANC / "banc_888_edgelist_simple_v3.feather"
 
@@ -65,6 +68,10 @@ def load_banc_graph() -> dict[str, Any]:
     import pandas as pd
     from scipy.sparse import csr_matrix
 
+    from paths import require
+
+    require(META, "BANC meta feather")
+    require(EDGES, "BANC edgelist feather")
     print(f"  reading {META.name}", flush=True)
     meta_df = pd.read_feather(META)
     sc_raw = meta_df["super_class"].fillna("").astype(str)

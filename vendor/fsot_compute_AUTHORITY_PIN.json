@@ -4,7 +4,7 @@
   "pin_prefix": "AEB2AD",
   "previous_pack_pin_prefix": "D1D38A",
   "previous_pack_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
-  "source_desktop": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": "vendor/fsot_compute.py",
   "github_repo": "https://github.com/dappalumbo91/FSOT-2.1-Lean",
   "github_main_verified_sha256": "AEB2ADAD6E80F487772C5DF90A2E3DDA71624AB831A6A83B94AB471AC9AAC170",
   "certificate_authority": "AEB2ADAD6E80F487772C5DF90A2E3DDA71624AB831A6A83B94AB471AC9AAC170",

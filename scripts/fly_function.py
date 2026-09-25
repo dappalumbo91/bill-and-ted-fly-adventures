@@ -15,6 +15,9 @@ are the flight/song motor names in the dump.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from pathlib import Path
@@ -27,7 +30,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 sys.path.insert(0, str(ROOT / "vendor"))
 
 from fly_behavior import BEHAVIOR, TRIALS  # noqa: E402
-from fly_connectome import _PHI, _R_BIO, seed_indices  # noqa: E402
+from fly_connectome import FLY_ROOT, _PHI, _R_BIO, seed_indices  # noqa: E402
 
 OUT = ROOT / "data" / "fly_function.json"
 FPS = 400.0  # Dataverse 6-camera 400 Hz
@@ -95,9 +98,11 @@ def wing_trial(tid: str) -> dict[str, Any]:
 def type_inventory() -> dict[str, Any]:
     import pandas as pd
 
-    ann = pd.read_feather(
-        Path(r"D:\FlyWire_Connectome\male_cns\body-annotations-male-cns-v1.0-minconf-0.5.feather")
-    )
+    from paths import require
+
+    ann_path = FLY_ROOT / "male_cns" / "body-annotations-male-cns-v1.0-minconf-0.5.feather"
+    require(ann_path, "Male CNS body annotations feather")
+    ann = pd.read_feather(ann_path)
     tr = ann[ann["status"] == "Traced"]
     typ = tr["type"].fillna("").astype(str)
     sc = tr["superclass"].fillna("").astype(str)

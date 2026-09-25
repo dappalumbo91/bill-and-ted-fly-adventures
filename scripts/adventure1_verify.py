@@ -10,6 +10,9 @@ and 0 free parameters.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import hashlib
 import json
 from pathlib import Path

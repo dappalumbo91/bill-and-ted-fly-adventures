@@ -23,6 +23,9 @@ Also mirrors neuron-zig:
 
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import math
 import sys

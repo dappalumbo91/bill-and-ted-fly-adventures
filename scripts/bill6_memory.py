@@ -13,6 +13,9 @@ Storage is FSOT, not a trained weight dump.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import math
 from pathlib import Path

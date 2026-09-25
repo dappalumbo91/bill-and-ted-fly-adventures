@@ -10,6 +10,9 @@ Does not change measured W.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import hashlib
 import json
 import subprocess

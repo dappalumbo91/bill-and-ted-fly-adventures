@@ -13,6 +13,9 @@ reshape; this TED uses the splice the organism can actually take.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import re
 from pathlib import Path
@@ -32,7 +35,7 @@ OUT = ROOT / "data" / "bill19_read_write.json"
 CAP = ROOT / "docs" / "CAPABILITY.md"
 STUDY = ROOT / "docs" / "SELF_STUDY.md"
 ADV = ROOT / "Bill and Ted fly adventures" / "Adventure-1"
-DATASETS = Path(r"G:\AI_Datasets")
+from paths import DATASETS_ROOT as DATASETS  # noqa: E402
 
 
 def read_meaning(text: str) -> dict:

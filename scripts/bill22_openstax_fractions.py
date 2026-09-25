@@ -8,6 +8,9 @@ When a published key disagrees with the stated numbers, score the arithmetic.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import re
 from pathlib import Path

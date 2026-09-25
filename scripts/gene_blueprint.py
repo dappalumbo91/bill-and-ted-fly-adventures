@@ -9,6 +9,9 @@ symbol (t, ChT, VGlut1) so a reader gets the fly blueprint, not a homemade tag.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 import urllib.request

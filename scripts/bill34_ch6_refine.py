@@ -8,6 +8,9 @@ operations. Near misses ask for the other quantity. No per-exercise cue.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from pathlib import Path

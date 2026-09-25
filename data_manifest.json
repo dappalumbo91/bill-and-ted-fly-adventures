@@ -1,0 +1,143 @@
+{
+  "pin": "AEB2AD",
+  "root_env": "FLY_ROOT",
+  "default_root": "data_external/FlyWire_Connectome",
+  "files": [
+    {
+      "id": "flywire_annotations",
+      "path": "Supplemental_file1_neuron_annotations.tsv",
+      "url": "https://raw.githubusercontent.com/flyconnectome/flywire_annotations/main/supplemental_files/Supplemental_file1_neuron_annotations.tsv",
+      "version": "Schlegel et al. Nature 2024 supplemental file 1, flyconnectome/flywire_annotations main",
+      "sha256": "9a4f8b2f843196074431ebd7cd883536afa1be86c8a4ce90970441e8be81d1be",
+      "bytes": 31718505,
+      "note": "139248 annotation rows. Boot --live compares this count to data/fly_connectome_inventory.json."
+    },
+    {
+      "id": "flywire_connections_v783",
+      "path": "proofread_connections_783.feather",
+      "url": "https://zenodo.org/records/10676866/files/proofread_connections_783.feather?download=1",
+      "version": "Zenodo 10676866 proofread connections v783",
+      "sha256": null,
+      "large": true,
+      "note": "About 0.85 GB. A local v630/connections.csv.gz is accepted by fly_connectome.ensure_connections."
+    },
+    {
+      "id": "arc_easy_train",
+      "path": "cache/arc_easy_train.parquet",
+      "root": "repo",
+      "url": "https://huggingface.co/datasets/allenai/ai2_arc/resolve/main/ARC-Easy/train-00000-of-00001.parquet",
+      "version": "allenai/ai2_arc ARC-Easy train",
+      "sha256": null,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "id": "arc_easy_validation",
+      "path": "cache/arc_easy_validation.parquet",
+      "root": "repo",
+      "url": "https://huggingface.co/datasets/allenai/ai2_arc/resolve/main/ARC-Easy/validation-00000-of-00001.parquet",
+      "version": "allenai/ai2_arc ARC-Easy validation",
+      "sha256": null,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "id": "arc_challenge_train",
+      "path": "cache/arc_challenge_train.parquet",
+      "root": "repo",
+      "url": "https://huggingface.co/datasets/allenai/ai2_arc/resolve/main/ARC-Challenge/train-00000-of-00001.parquet",
+      "version": "allenai/ai2_arc ARC-Challenge train",
+      "sha256": null,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "id": "arc_challenge_validation",
+      "path": "cache/arc_challenge_validation.parquet",
+      "root": "repo",
+      "url": "https://huggingface.co/datasets/allenai/ai2_arc/resolve/main/ARC-Challenge/validation-00000-of-00001.parquet",
+      "version": "allenai/ai2_arc ARC-Challenge validation",
+      "sha256": null,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "id": "dam_sleep_m064",
+      "path": "behavior/sleep/M064.txt",
+      "url": "https://raw.githubusercontent.com/rethomics/damr/master/inst/extdata/M064.txt",
+      "version": "rethomics/damr monitor M064",
+      "sha256": null,
+      "source": "https://github.com/rethomics/damr"
+    },
+    {
+      "id": "larva_annotations",
+      "path": "larva/Supplementary-Data-S1/annotations.csv",
+      "url": "https://raw.githubusercontent.com/brain-networks/larval-drosophila-connectome/main/Supplementary-Data-S1/annotations.csv",
+      "version": "Winding et al. Science 2023 Supplementary-Data-S1",
+      "sha256": null,
+      "source": "https://github.com/brain-networks/larval-drosophila-connectome"
+    },
+    {
+      "id": "larva_connectivity",
+      "path": "larva/Supplementary-Data-S1/all-all_connectivity_matrix.csv",
+      "url": "https://raw.githubusercontent.com/brain-networks/larval-drosophila-connectome/main/Supplementary-Data-S1/all-all_connectivity_matrix.csv",
+      "version": "Winding et al. Science 2023 Supplementary-Data-S1",
+      "sha256": null,
+      "large": true,
+      "source": "https://github.com/brain-networks/larval-drosophila-connectome"
+    },
+    {
+      "id": "behavior_csvs",
+      "path": "behavior",
+      "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/BBNPYX",
+      "version": "Harvard Dataverse doi:10.7910/DVN/BBNPYX",
+      "sha256": null,
+      "dataverse": "doi:10.7910/DVN/BBNPYX",
+      "names": [
+        "Fly01_T001_BodyCoords3D.csv",
+        "Fly01_T002_BodyCoords3D.csv",
+        "Fly02_T002_BodyCoords3D.csv",
+        "Fly01_T001_Coords3D.csv"
+      ],
+      "note": "fetch_data asks the Dataverse API for these CSV names and saves them under behavior/."
+    },
+    {
+      "id": "male_cns_v1",
+      "path": "male_cns",
+      "version": "Berg et al. Cell 2026 Male CNS v1.0",
+      "sha256": null,
+      "requires_token": true,
+      "names": [
+        "body-annotations-male-cns-v1.0-minconf-0.5.feather",
+        "body-neurotransmitters-male-cns-v1.0.feather",
+        "connectome-weights-male-cns-v1.0-minconf-0.5.feather"
+      ],
+      "note": "FlyWire Codex download needs an api_token. Place the three feathers in male_cns/. https://codex.flywire.ai/"
+    },
+    {
+      "id": "banc_v888",
+      "path": "banc",
+      "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/7WTH1N",
+      "version": "Bates et al. Nature 2026 BANC v888",
+      "sha256": null,
+      "large": true,
+      "names": [
+        "banc_888_meta.feather",
+        "banc_888_edgelist_simple_v3.feather"
+      ],
+      "note": "Also published at gs://lee-lab_brain-and-nerve-cord-fly-connectome/compiled_data/banc_888/. Place the two feathers in banc/."
+    },
+    {
+      "id": "hemibrain_cache",
+      "path": "hemibrain",
+      "url": "https://neuprint.janelia.org/",
+      "version": "Scheffer et al. eLife 2020 hemibrain:v1.2.1",
+      "sha256": null,
+      "note": "No static dump in this manifest. python scripts/hemibrain_connectome.py --fetch writes the cache. neuPrint is public and slow."
+    },
+    {
+      "id": "behavior_videos",
+      "path": "behavior",
+      "version": "clip corroboration only",
+      "sha256": null,
+      "large": true,
+      "note": "Videos are optional. 3D CSVs are the walking observer. odor, courtship, and aggression scripts also need ffmpeg and ffprobe on PATH. Sources are in those scripts (eLife, PLOS)."
+    }
+  ]
+}

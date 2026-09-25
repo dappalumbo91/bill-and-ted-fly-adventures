@@ -10,6 +10,9 @@ JO / olfactory. 0 free parameters.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from pathlib import Path
@@ -110,7 +113,15 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--gpu", dest="gpu", action="store_true", default=True)
     ap.add_argument("--cpu", dest="gpu", action="store_false")
+    ap.add_argument("--offline", action="store_true")
     args = ap.parse_args(argv)
+    if args.offline:
+        import os
+
+        from runio import offline_exit
+
+        os.environ["FSOT_OFFLINE"] = "1"
+        return offline_exit(ROOT / "data" / "kenyon_connectome_boot.json")
 
     full = load_hemibrain_graph()
     mb_i = [

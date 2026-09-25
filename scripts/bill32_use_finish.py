@@ -10,6 +10,9 @@ stay halted, and the side-by-side says why.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import re
 import sys

@@ -7,6 +7,9 @@ sentence shape. The same procedure has to work on a new wording.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import re
 from fractions import Fraction
 

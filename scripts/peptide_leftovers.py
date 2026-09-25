@@ -11,6 +11,9 @@ volume, ACh, DENY courtship — not invented synapses.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 import urllib.request

@@ -12,6 +12,9 @@ Domain maps are Biochemistry observations.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import urllib.request
 from pathlib import Path

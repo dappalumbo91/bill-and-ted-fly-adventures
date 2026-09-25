@@ -9,6 +9,9 @@ secondary only). 0 free parameters. Sequences from UniProt on D:.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import sys
 from pathlib import Path
@@ -16,10 +19,34 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from fsot_predict import main as predict_main  # noqa: E402
+from paths import FLY_ROOT, need  # noqa: E402
 
-FASTA = Path(r"D:\FlyWire_Connectome\male_cns\fly_walking_proteins.fasta")
-OUT_D = Path(r"D:\FlyWire_Connectome\male_cns\product")
+FASTA = FLY_ROOT / "male_cns" / "fly_walking_proteins.fasta"
+OUT_D = FLY_ROOT / "male_cns" / "product"
+
+
+def _predict_main():
+    """fsot_predict lives in FSOT-Genetics, not in this pack."""
+    try:
+        from fsot_predict import main as predict_main
+        return predict_main
+    except ImportError:
+        pass
+    import os
+
+    candidates = []
+    if os.environ.get("FSOT_GENETICS"):
+        candidates.append(Path(os.environ["FSOT_GENETICS"]) / "scripts")
+    candidates.append(ROOT.parent / "FSOT-Genetics" / "scripts")
+    for folder in candidates:
+        if (folder / "fsot_predict.py").is_file():
+            sys.path.insert(0, str(folder))
+            from fsot_predict import main as predict_main
+            return predict_main
+    need(
+        "fsot_predict.py from https://github.com/dappalumbo91/FSOT-Genetics (set FSOT_GENETICS to that repo)",
+        FASTA,
+    )
 OUT_GIT = ROOT / "data" / "fly_walking_product.json"
 
 GENES = [
@@ -83,7 +110,7 @@ def main(argv: list[str] | None = None) -> int:
         pdb_out = OUT_D / f"{g['symbol']}_{acc}.pdb"
         json_out = OUT_D / f"{g['symbol']}_{acc}.json"
         print(f"== {g['symbol']} {acc} n={len(seq)}", flush=True)
-        rc = predict_main(
+        rc = _predict_main()(
             [
                 "--seq",
                 seq,

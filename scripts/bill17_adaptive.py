@@ -9,6 +9,9 @@ not over W. Connectome mappings that keep working ARE the data.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import re
 from pathlib import Path

@@ -11,6 +11,9 @@ Sources: OpenStax Prealgebra 2e Be Prepared answer key + published word problems
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import re
 from pathlib import Path

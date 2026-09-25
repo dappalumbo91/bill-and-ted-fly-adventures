@@ -7,6 +7,9 @@ instead of inventing counts from the SPA.
 """
 from __future__ import annotations
 
+import runio
+runio.install()
+
 import json
 import os
 import urllib.request
