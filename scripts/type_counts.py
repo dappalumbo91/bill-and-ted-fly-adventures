@@ -3,8 +3,8 @@
 
 Counts come from the Male CNS feathers, the BANC meta feather, and the
 FlyWire annotation TSV under FLY_ROOT. fetch_data saves the Male CNS
-annotation feather from the public Janelia bucket. The FlyWire Codex
-FAFB CSV is a different download and is not used here.
+annotation feather from the public Janelia bucket. codex_types.py counts
+FAFB DNg29 and JO from this TSV and fafb/fafb_783_meta.feather.
 """
 from __future__ import annotations
 

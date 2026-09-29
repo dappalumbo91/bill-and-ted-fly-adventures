@@ -90,7 +90,7 @@ ChAT / VGlut / Mhc seated on the hop table (`data/genetics_hook.json`, live UniP
 | *VGlut* | Q9VQC0 | 7T3O | 0.61 | 0.69 | glutamatergic vnc_motor NMJ (walking hop-2 **10.74**) |
 | *Mhc* | P05661 | 5W1A | 0.97 | 0.40 (≥ 1/φ² leftover) | muscle — **not a CNS cell** |
 
-No Fly Cell Atlas bodyId invent. Codex CSV still needs `CODEX_API_TOKEN` (`data/codex_types.json` blocked).
+No Fly Cell Atlas bodyId invent. FAFB DNg29 and JO are in `data/codex_types.json`: Schlegel TSV n=139248, DNg29=2, JO prefix=1104; lee-lab meta n=144837, DNg29=2, JO prefix=1107. The Codex download URL is the HTML app. A portal gzipped CSV still needs `CODEX_API_TOKEN`.
 
 Whole-animal: worm (both sexes) sensory → command interneuron → muscle NMJ; Ciona MGIN; Platynereis prototroch.
 

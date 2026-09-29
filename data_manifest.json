@@ -10,7 +10,16 @@
       "version": "Schlegel et al. Nature 2024 supplemental file 1, flyconnectome/flywire_annotations main",
       "sha256": "9a4f8b2f843196074431ebd7cd883536afa1be86c8a4ce90970441e8be81d1be",
       "bytes": 31718505,
-      "note": "139248 annotation rows. Boot --live compares this count to data/fly_connectome_inventory.json."
+      "note": "139248 annotation rows. Boot --live compares this count to data/fly_connectome_inventory.json. scripts/codex_types.py counts DNg29 and JO from this TSV."
+    },
+    {
+      "id": "fafb_783_meta",
+      "path": "fafb/fafb_783_meta.feather",
+      "url": "https://storage.googleapis.com/lee-lab_brain-and-nerve-cord-fly-connectome/compiled_data/fafb_783/fafb_783_meta.feather",
+      "version": "lee-lab compiled FAFB 783 meta",
+      "sha256": "5e248762d5308bf31e77b0ec5a6acd91ad11a22213b8cd985229c5917acd1823",
+      "bytes": 13539866,
+      "note": "Public bucket, same family as BANC. cell_type column. scripts/codex_types.py reads this beside the Schlegel TSV. A Codex portal gzipped CSV still needs CODEX_API_TOKEN."
     },
     {
       "id": "flywire_connections_v783",
@@ -159,7 +168,7 @@
           "large": true
         }
       ],
-      "note": "Public Janelia bucket, also listed at https://male-cns.janelia.org/download/. Default fetch saves the annotation and neurotransmitter feathers into FLY_ROOT/male_cns/. The weight table is python scripts/fetch_data.py --large. These bytes are the committed Male CNS boot. The FlyWire Codex FAFB CSV is a different download and still needs CODEX_API_TOKEN."
+      "note": "Public Janelia bucket, also listed at https://male-cns.janelia.org/download/. Default fetch saves the annotation and neurotransmitter feathers into FLY_ROOT/male_cns/. The weight table is python scripts/fetch_data.py --large. These bytes are the committed Male CNS boot. The Codex download URL returns the HTML app. scripts/codex_types.py counts FAFB DNg29 and JO from the Schlegel TSV and fafb/fafb_783_meta.feather. A portal gzipped CSV still needs CODEX_API_TOKEN."
     },
     {
       "id": "banc_v888",

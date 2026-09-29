@@ -5,17 +5,152 @@
     "DNg29",
     "JO"
   ],
-  "token_present": false,
-  "ok": false,
-  "blocked": "Codex CSV dumps need api_token. Local measured dumps are the authority for this pack (data/type_counts.json). Do not scrape the SPA.",
-  "fallback": {
-    "authority": "FLY_ROOT feathers/TSV + neuPrint live",
-    "type_counts": "data/type_counts.json",
-    "male_DNg29": 2,
-    "banc_DNg29": 2,
-    "hemibrain_DNg29": 0,
-    "male_JO": 672,
-    "banc_JO": 1198,
-    "hemibrain_JO": 78
+  "authority": "Supplemental_file1_neuron_annotations.tsv and fafb/fafb_783_meta.feather. The Schlegel TSV is the committed FlyWire count. The Codex download URL is the HTML app. A portal gzipped CSV still needs CODEX_API_TOKEN.",
+  "nomenclature": "Schlegel cell_type names are the split JO labels in schlegel_tsv.jo_names. lee-lab fafb_783_meta cell_type names are the coarser labels in fafb_783_meta.jo_names. Each table keeps its own JO prefix total. jo_only_in_meta lists meta JO root ids absent from the TSV root_id column. jo_only_in_tsv lists TSV JO root ids absent from the meta id column.",
+  "schlegel_tsv": {
+    "n": 139248,
+    "DNg29": 2,
+    "JO_type_prefix": 1104,
+    "jo_lower_prefix": 1104,
+    "n_jo_names": 34,
+    "jo_names": [
+      "JO",
+      "JO-A1",
+      "JO-A2",
+      "JO-A3",
+      "JO-A4",
+      "JO-A5",
+      "JO-B1_a",
+      "JO-B1_b",
+      "JO-B1_c",
+      "JO-B2",
+      "JO-B3",
+      "JO-B4_a",
+      "JO-B4_b",
+      "JO-CA1",
+      "JO-CA2",
+      "JO-CL",
+      "JO-CM",
+      "JO-DA",
+      "JO-DP",
+      "JO-ED1",
+      "JO-ED2_a",
+      "JO-ED2_b",
+      "JO-ED2_c",
+      "JO-EV1",
+      "JO-EV2",
+      "JO-EV3",
+      "JO-EV4",
+      "JO-EV5",
+      "JO-EV6",
+      "JO-FD1",
+      "JO-FD2",
+      "JO-FV",
+      "JO-mz",
+      "JO-unclear"
+    ],
+    "source": "Supplemental_file1_neuron_annotations.tsv",
+    "type_column": "cell_type",
+    "id_column": "root_id"
+  },
+  "fafb_783_meta": {
+    "n": 144837,
+    "DNg29": 2,
+    "JO_type_prefix": 1107,
+    "jo_lower_prefix": 1107,
+    "n_jo_names": 24,
+    "jo_names": [
+      "JO-A",
+      "JO-B",
+      "JO-C",
+      "JO-CA",
+      "JO-CL",
+      "JO-CM",
+      "JO-D",
+      "JO-DA",
+      "JO-DP",
+      "JO-E",
+      "JO-EDC",
+      "JO-EDM",
+      "JO-EDP",
+      "JO-EV",
+      "JO-EVL",
+      "JO-EVM",
+      "JO-EVP",
+      "JO-F",
+      "JO-FDA",
+      "JO-FDL",
+      "JO-FDP",
+      "JO-FVA",
+      "JO-FVL",
+      "JO-mz"
+    ],
+    "source": "fafb/fafb_783_meta.feather",
+    "type_column": "cell_type",
+    "id_column": "fafb_783_id"
+  },
+  "dng29_same": true,
+  "jo_only_in_meta": [
+    "720575940626741265",
+    "720575940628159081",
+    "720575940636488667"
+  ],
+  "n_jo_only_in_meta": 3,
+  "jo_only_in_meta_rows": [
+    {
+      "root_id": "720575940626741265",
+      "cell_type": "JO-B",
+      "super_class": "sensory"
+    },
+    {
+      "root_id": "720575940628159081",
+      "cell_type": "JO-B",
+      "super_class": "sensory"
+    },
+    {
+      "root_id": "720575940636488667",
+      "cell_type": "JO-B",
+      "super_class": "sensory"
+    }
+  ],
+  "jo_only_in_tsv": [],
+  "n_jo_only_in_tsv": 0,
+  "type_counts_flywire": {
+    "source": "data/type_counts.json",
+    "n": 139248,
+    "DNg29": 2,
+    "JO_type_prefix": 1104
+  },
+  "matches_type_counts": true,
+  "overall_ok": true,
+  "other_graphs": {
+    "source": "data/type_counts.json",
+    "male_cns": {
+      "n_traced": 165122,
+      "DNg29": 2,
+      "JO_type_prefix": 672
+    },
+    "banc": {
+      "n": 188508,
+      "DNg29": 2,
+      "JO_type_prefix": 1198
+    },
+    "hemibrain_cache": {
+      "n_typed": 22704,
+      "DNg29": 0,
+      "JO_type_prefix": 78
+    }
+  },
+  "codex_portal": {
+    "url": "https://codex.flywire.ai/api/download?dataset=fafb",
+    "anonymous": {
+      "token_present": false,
+      "is_table": false,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8"
+    },
+    "with_token": {
+      "token_present": false
+    }
   }
 }

@@ -41,7 +41,7 @@ Living log: **`RUNNING.md`** (law + findings). Update that file when something l
 |------|--------|
 | Shared-type hops (two animals) | DNg29 descending **on** both; KCg-m / L5 `vnc_motor` **off**. `data/shared_type_hops.json` |
 | Male CNS v1.0 feathers | Public Janelia flat-connectome. `fetch_data` saves annotations and neurotransmitters. The weight table is `--large`. |
-| Codex FAFB CSV | **Blocked.** Still needs `CODEX_API_TOKEN`. `data/type_counts.json` is the committed count authority. |
+| FAFB DNg29 / JO | Schlegel TSV n=**139248**, DNg29=**2**, JO prefix=**1104** (committed in `data/type_counts.json`). lee-lab `fafb_783_meta.feather` n=**144837**, DNg29=**2**, JO prefix=**1107**. Three meta JO-B roots are absent from the TSV. Codex download URL is the HTML app. A portal gzipped CSV still needs `CODEX_API_TOKEN`. `scripts/codex_types.py`. |
 | Product Cα | Campaign D1D38A freeze kept; pack pin AEB2AD noted on the JSON. |
 | Behavior-flow `r` field | Restamped 1.284069 (inf-norm; videos not re-run). |
 

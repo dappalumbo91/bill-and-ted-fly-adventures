@@ -152,7 +152,7 @@ Shared-type hops (`data/shared_type_hops.json`, `overall_ok=true`):
 | **KCg-m** | 1342 | 1456 | vnc_motor **0.0000** | vnc_motor **0.0004** | Kenyon leftover; motor **off** |
 | **L5** | 1787 | 1683 | vnc_motor **0.0015** | vnc_motor **0.0000** | lamina; motor **off** at hop-2 (descending can light later — visual DNs, not VNC legs) |
 
-Male CNS v1.0 feathers are the public Janelia bucket (`fetch_data`; the weight table is `--large`). The FlyWire Codex FAFB CSV still has no `CODEX_API_TOKEN`. Committed `data/type_counts.json` is the count authority (Male/BANC DNg29=2, hemibrain JO=78 / DNg29=0).
+Male CNS v1.0 feathers are the public Janelia bucket (`fetch_data`; the weight table is `--large`). FAFB DNg29 and JO are counted by `scripts/codex_types.py` from the Schlegel TSV (n=139248, DNg29=2, JO prefix=1104, committed in `data/type_counts.json`) and lee-lab `fafb_783_meta.feather` (n=144837, DNg29=2, JO prefix=1107). The Codex download URL is the HTML app. A portal gzipped CSV still needs `CODEX_API_TOKEN`. Male/BANC DNg29=2 and hemibrain JO=78 / DNg29=0 stay the counts in `data/type_counts.json`.
 
 Product freeze: `pack_pin=AEB2AD`, `campaign_pin=D1D38A`. Å numbers unchanged (Genetics campaign). Homolog JSON same stamp.
 

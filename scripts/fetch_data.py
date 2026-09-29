@@ -8,8 +8,9 @@
 Male CNS v1.0 feathers come from the public Janelia bucket. The default
 run saves the annotation and neurotransmitter feathers. The weight table
 is SKIP unless --large, and that skip is not a failure. The same rule
-covers the other multi-gigabyte dumps. Hemibrain and optional behavior
-videos are notes, not downloads. Every other entry with a url or a
+covers the other multi-gigabyte dumps. FAFB cell types for codex_types.py
+also include fafb/fafb_783_meta.feather from the lee-lab public bucket.
+Hemibrain and optional behavior videos are notes, not downloads. Every other entry with a url or a
 Dataverse id must land on disk or this process exits non-zero. SHA-256
 is checked when the manifest has one. The report is out/fetch_report.json.
 """

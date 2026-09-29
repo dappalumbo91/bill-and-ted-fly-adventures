@@ -16,7 +16,7 @@ Adult *Drosophila melanogaster* is the first animal with a complete brain-scale 
 | BANC v888 | **175,401** neurons (glia dropped), 13.5 M edges, female brain+VNC intact neck | Bates et al. *Nature* 2026; on `D:\FlyWire_Connectome\banc`; live `scripts/banc_connectome.py` |
 | neuPrint hemibrain:v1.2.1 | **22,704** typed (incl. cropped Leaves), 3.44 M edges; no VNC | Scheffer et al. *eLife* 2020; cache `D:\FlyWire_Connectome\hemibrain`; live `scripts/hemibrain_connectome.py` |
 
-Paper: Dorkenwald et al., *Nature* **634**, 124–138 (2024). Annotations: Schlegel et al., *Nature* **634**, 139–152 (2024). Portal: [codex.flywire.ai](https://codex.flywire.ai/) (sign-in). Open dumps: GitHub annotations + [Zenodo 10676866](https://zenodo.org/records/10676866).
+Paper: Dorkenwald et al., *Nature* **634**, 124–138 (2024). Annotations: Schlegel et al., *Nature* **634**, 139–152 (2024). Portal: [codex.flywire.ai](https://codex.flywire.ai/) (sign-in). Open dumps: GitHub annotations, lee-lab `fafb_783_meta.feather`, and [Zenodo 10676866](https://zenodo.org/records/10676866).
 
 Voxel of the EM volume: **4 × 4 × 40 nm** (anchor/soma columns in the annotation TSV).
 
