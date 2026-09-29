@@ -11,7 +11,7 @@
       "ok": true,
       "status": "PASS",
       "returncode": 0,
-      "detail": "  obligations=42 layerA=13 layerB=29\n  wrote C:\\Users\\damia\\Desktop\\FSOT-Genetics\\verification\\obligations.json\n"
+      "detail": "  obligations=42 layerA=13 layerB=29\n  wrote FSOT-Genetics\\verification\\obligations.json\n"
     },
     {
       "name": "python_verify_cross",
@@ -83,7 +83,7 @@
       "ok": true,
       "status": "PASS",
       "returncode": 0,
-      "detail": "/tla2sany/StandardModules/Sequences.tla)\nParsing file C:\\Users\\damia\\AppData\\Local\\Temp\\tlc-5379896941872930332\\FiniteSets.tla (jar:file:/C:/Users/damia/Desktop/FSOT-Genetics/verification/tla/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file C:\\Users\\damia\\AppData\\Local\\Temp\\tlc-5379896941872930332\\Integers.tla (jar:file:/C:/Users/damia/Desktop/FSOT-Genetics/verification/tla/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Integers\nSemantic processing of module TLCExt\nSemantic processing of module _TLCTrace\nSemantic processing of module GeneticsSolve\nLinting of module TLCExt\nLinting of module _TLCTrace\nLinting of module GeneticsSolve\nStarting... (2026-09-17 16:07:48)\nComputing initial states...\nFinished computing initial states: 1 distinct state generated at 2026-09-17 16:07:48.\nModel checking completed. No error has been found.\n  Estimates of the probability that TLC did not check all reachable states\n  because two distinct states had the same fingerprint:\n  calculated (optimistic):  val = 3.2E-17\n61 states generated, 12 distinct states found, 0 states left on queue.\nThe depth of the complete state graph search is 5.\nThe average outdegree of the complete state graph is 1 (minimum is 0, the maximum 3 and the 95th percentile is 3).\nFinished in 00s at (2026-09-17 16:07:48)\n"
+      "detail": "/tla2sany/StandardModules/Sequences.tla)\nParsing file temp\\tlc-5379896941872930332\\FiniteSets.tla (jar:file:/FSOT-Genetics/verification/tla/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file temp\\tlc-5379896941872930332\\Integers.tla (jar:file:/FSOT-Genetics/verification/tla/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Integers\nSemantic processing of module TLCExt\nSemantic processing of module _TLCTrace\nSemantic processing of module GeneticsSolve\nLinting of module TLCExt\nLinting of module _TLCTrace\nLinting of module GeneticsSolve\nStarting... (2026-09-17 16:07:48)\nComputing initial states...\nFinished computing initial states: 1 distinct state generated at 2026-09-17 16:07:48.\nModel checking completed. No error has been found.\n  Estimates of the probability that TLC did not check all reachable states\n  because two distinct states had the same fingerprint:\n  calculated (optimistic):  val = 3.2E-17\n61 states generated, 12 distinct states found, 0 states left on queue.\nThe depth of the complete state graph search is 5.\nThe average outdegree of the complete state graph is 1 (minimum is 0, the maximum 3 and the 95th percentile is 3).\nFinished in 00s at (2026-09-17 16:07:48)\n"
     }
   ],
   "required_fail_count": 0,

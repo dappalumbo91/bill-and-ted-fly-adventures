@@ -10,7 +10,8 @@ No VNC in this volume. Report descending, not vnc_motor.
 DNg29 is absent (whole-CNS type; not in the hemibrain cut).
 Neuron properties have no predictedNt — unsigned residual, no invented GABA.
 
-Data cache on D:\\FlyWire_Connectome\\hemibrain (not git). 0 free parameters.
+Data cache on FLY_ROOT/hemibrain (not git). 0 free parameters.
+A full neuPrint fetch is well over 90 seconds (about 114 edge batches).
 """
 from __future__ import annotations
 

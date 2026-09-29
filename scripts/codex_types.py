@@ -36,8 +36,8 @@ def main() -> int:
         )
         counts = ROOT / "data" / "type_counts.json"
         rec["fallback"] = {
-            "authority": "D:\\FlyWire_Connectome feathers/TSV + neuPrint live",
-            "type_counts": str(counts) if counts.is_file() else None,
+            "authority": "FLY_ROOT feathers/TSV + neuPrint live",
+            "type_counts": "data/type_counts.json" if counts.is_file() else None,
             "male_DNg29": 2,
             "banc_DNg29": 2,
             "hemibrain_DNg29": 0,

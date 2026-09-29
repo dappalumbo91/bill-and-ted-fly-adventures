@@ -329,6 +329,13 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--hops", action="store_true", help="Male left/right residual hops")
     args = ap.parse_args(argv)
+    if runio.checking():
+        from paths import need
+
+        for tr in TRIALS:
+            csv = BEHAVIOR / tr["body"]
+            if not csv.is_file():
+                need(tr["body"], csv)
     print("  math probe", flush=True)
     probe = math_probe()
     print(f"  math {probe['n_ok']}/{probe['n']} fail={probe['fail']}", flush=True)

@@ -15,8 +15,10 @@ runio.install()
 
 import hashlib
 import json
+import shutil
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -151,7 +153,7 @@ def md_table(rows: list[dict]) -> str:
     return "\n".join(lines)
 
 
-def write_lean(c_easy, c_chal, c_use) -> None:
+def write_lean(c_easy, c_chal, c_use, dest: Path | None = None) -> None:
     LEAN.parent.mkdir(parents=True, exist_ok=True)
     text = f"""-- Adventure 1 thought law. Pin AEB2AD. 0 free parameters.
 -- One agreed label overlays. Disagreement or silence is trit 0 (no letter).
@@ -192,10 +194,14 @@ def useWrong : Nat := {c_use['wrong']}
 #guard useCorrect + useWrong = useN
 #guard useWrong = 0
 """
-    LEAN.write_text(text, encoding="utf-8")
+    (dest or LEAN).write_text(text, encoding="utf-8")
 
 
 def main() -> int:
+    lean_bin = shutil.which("lean")
+    if not lean_bin:
+        print("needs Lean 4 on PATH", file=sys.stderr)
+        return 2
     phi = float(fsot.PHI)
     inv_phi = 1.0 / phi
     facts = study_facts(load_split("train"))
@@ -214,8 +220,11 @@ def main() -> int:
         and c_use["wrong"] == 0
         and c_use["correct"] == c_use["n"]
     )
-    write_lean(c_easy, c_chal, c_use)
-    lean = subprocess.run(["lean", str(LEAN)], capture_output=True, text=True)
+    lean_path = LEAN
+    if runio.checking():
+        lean_path = Path(tempfile.gettempdir()) / "Adventure1Thought.lean"
+    write_lean(c_easy, c_chal, c_use, lean_path)
+    lean = subprocess.run([lean_bin, str(lean_path)], capture_output=True, text=True)
     lean_ok = lean.returncode == 0
     trace_bytes = json.dumps(
         {"easy": easy_rows, "challenge": chal_rows, "use": use_rows},

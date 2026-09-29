@@ -35,8 +35,8 @@ User: [dappalumbo91](https://github.com/dappalumbo91). Live existence check: `py
 | Source | What | API / dump |
 |--------|------|------------|
 | FlyWire / Codex | Adult brain types + connectivity | https://codex.flywire.ai (CAVE is Allen Institute software) |
-| Male CNS | Brain+VNC Berg et al. Cell 2026 | `D:\FlyWire_Connectome\male_cns` |
-| BANC | Female brain+VNC Bates et al. Nature 2026 | `D:\FlyWire_Connectome\banc` |
+| Male CNS | Brain+VNC Berg et al. Cell 2026 | `FLY_ROOT/male_cns` |
+| BANC | Female brain+VNC Bates et al. Nature 2026 | `FLY_ROOT/banc` |
 | Janelia neuPrint | Hemibrain v1.2.1 (independent fly graph) | https://neuprint.janelia.org/api |
 | UniProt / Ensembl | Gene ↔ protein | REST (no token) |
 | Allen Brain Atlas | **Mouse/human atlases**, not the fly connectome | https://api.brain-map.org |

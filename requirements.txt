@@ -1,6 +1,6 @@
-mpmath
-numpy
-pandas
-scipy
-pyarrow
-reportlab
+numpy==2.5.3
+pandas==3.0.6
+pyarrow==25.0.1
+scipy==1.18.1
+reportlab==5.0.1
+mpmath==1.4.1

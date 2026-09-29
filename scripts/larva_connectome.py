@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Drosophila first-instar larva brain — measured CNS graph.
 
-Winding et al. Science 2023. Files on D:\\FlyWire_Connectome\\larva
-(GitHub brain-networks/larval-drosophila-connectome Supplementary-Data-S1).
+Winding et al. Science 2023. Files on FLY_ROOT/larva
+(GitHub brain-networks/larval-drosophila-connectome Supplementary-Data-S1.zip).
 
 ~2,952 neurons, all-all synapse counts. Cell types from the paper
 annotations (sensory, DN-VNC, DN-SEZ, KC, …). Transmitter is not in
@@ -208,8 +208,12 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--boot", action="store_true")
     ap.add_argument("--seed", default="sensory")
     args = ap.parse_args(argv)
-    if not (LARVA / "all-all_connectivity_matrix.csv").exists():
-        raise SystemExit(f"missing {LARVA}")
+    from paths import need
+
+    matrix = LARVA / "all-all_connectivity_matrix.csv"
+    ann = LARVA / "annotations.csv"
+    if not matrix.is_file() or not ann.is_file():
+        need("larva Supplementary-Data-S1 annotations.csv and all-all_connectivity_matrix.csv", matrix if not matrix.is_file() else ann)
     g = _read_graph()
     if not args.boot:
         inv = {

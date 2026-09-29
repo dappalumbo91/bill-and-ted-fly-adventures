@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Male CNS (brain + VNC) residual boot — measured graph.
 
-Berg et al. Cell 2026. Files on D:\\FlyWire_Connectome\\male_cns (not git):
+Berg et al. Cell 2026. Files on FLY_ROOT/male_cns (not git):
 
   body-annotations-male-cns-v1.0-minconf-0.5.feather
   body-neurotransmitters-male-cns-v1.0.feather
@@ -165,9 +165,15 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--gpu", dest="gpu", action="store_true", default=True)
     ap.add_argument("--cpu", dest="gpu", action="store_false")
     args = ap.parse_args(argv)
-    for p in (ANN, NT, WTS):
-        if not p.exists():
-            raise SystemExit(f"missing {p}")
+    from paths import need
+
+    for p, what in (
+        (ANN, "Male CNS body annotations feather"),
+        (NT, "Male CNS neurotransmitter feather"),
+        (WTS, "Male CNS connectome weights feather"),
+    ):
+        if not p.is_file():
+            need(what, p)
     graph = load_male_graph()
     programs = []
     for spec in PROGRAMS:

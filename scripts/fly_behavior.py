@@ -424,6 +424,13 @@ def main(argv: list[str] | None = None) -> int:
 
         os.environ["FSOT_OFFLINE"] = "1"
         return offline_exit(ROOT / "data" / "fly_behavior_flow.json")
+    if runio.checking():
+        from paths import need
+
+        for t in TRIALS:
+            body = BEHAVIOR / t["body"]
+            if not body.is_file():
+                need(t["body"], body)
     BEHAVIOR.mkdir(parents=True, exist_ok=True)
     print("FSOT fly behavior observer → residual boot", flush=True)
     print(f"  phi={_PHI} R_BIO={_R_BIO} gpu={cuda_name()}", flush=True)

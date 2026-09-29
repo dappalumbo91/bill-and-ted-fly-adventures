@@ -59,7 +59,7 @@ def offline_exit(committed: Path) -> int | None:
         return 2
     doc = json.loads(committed.read_text(encoding="utf-8"))
     ok = doc.get("overall_ok", True)
-    print(f"offline {committed.name} overall_ok={ok}")
+    print(f"offline {committed.name} overall_ok={ok}  replayed from cache, not recomputed")
     return 0 if ok else 1
 
 
@@ -121,10 +121,51 @@ def _route(path: Path, text: str | None):
     return dest
 
 
+def _install_flag_parse() -> None:
+    """Accept --check and --offline on scripts that never registered them.
+
+    The flags stay on sys.argv, so runio.checking() and runio.offline()
+    still see them. argparse only stops rejecting the unknown option.
+    """
+    import argparse
+
+    current = argparse.ArgumentParser.parse_args
+    if getattr(current, "_fsot_wrapped", False):
+        return
+    orig = current
+
+    def parse_args(self, args=None, namespace=None):
+        raw = list(sys.argv[1:] if args is None else args)
+        registered: set[str] = set()
+        for action in self._actions:
+            registered.update(action.option_strings or ())
+        stripped: list[str] = []
+        saw_check = False
+        saw_offline = False
+        for tok in raw:
+            if tok == "--check" and "--check" not in registered:
+                saw_check = True
+                continue
+            if tok == "--offline" and "--offline" not in registered:
+                saw_offline = True
+                continue
+            stripped.append(tok)
+        ns = orig(self, stripped, namespace)
+        if saw_check and not hasattr(ns, "check"):
+            ns.check = True
+        if saw_offline and not hasattr(ns, "offline"):
+            ns.offline = True
+        return ns
+
+    parse_args._fsot_wrapped = True  # type: ignore[attr-defined]
+    argparse.ArgumentParser.parse_args = parse_args  # type: ignore[method-assign]
+
+
 def install() -> None:
     global _INSTALLED, _ORIG_TEXT, _ORIG_BYTES
     if _INSTALLED:
         return
+    _install_flag_parse()
     _ORIG_TEXT = Path.write_text
     _ORIG_BYTES = Path.write_bytes
 

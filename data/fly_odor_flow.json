@@ -22438,7 +22438,7 @@
       }
     },
     "v630": {
-      "source": "C:\\Users\\damia\\Desktop\\FSOT-Genetics\\data\\fly_behavior_flow.json",
+      "source": "data/fly_behavior_flow.json",
       "gpu_name": "NVIDIA GeForce RTX 5070",
       "compare": {
         "hop_1": {
@@ -22535,7 +22535,7 @@
       "n_programs": 4
     },
     "male_cns": {
-      "source": "C:\\Users\\damia\\Desktop\\FSOT-Genetics\\data\\male_cns_boot.json",
+      "source": "data/male_cns_boot.json",
       "n_neurons": 165122,
       "n_edges": 25563197,
       "n_gaba": 22055,

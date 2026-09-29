@@ -17,9 +17,10 @@
       "path": "proofread_connections_783.feather",
       "url": "https://zenodo.org/records/10676866/files/proofread_connections_783.feather?download=1",
       "version": "Zenodo 10676866 proofread connections v783",
-      "sha256": null,
+      "sha256": "24f960ae3e7d4f8cd30db3b62e99fb5179cc3d1e76d8c155bfb441e9737d3faf",
+      "bytes": 852022274,
       "large": true,
-      "note": "About 0.85 GB. A local v630/connections.csv.gz is accepted by fly_connectome.ensure_connections."
+      "note": "Zenodo record 10676866 also publishes md5 f48f972d262323a102aed49af1396b8a. A local v630/connections.csv.gz is accepted by fly_connectome.ensure_connections."
     },
     {
       "id": "arc_easy_train",
@@ -27,7 +28,8 @@
       "root": "repo",
       "url": "https://huggingface.co/datasets/allenai/ai2_arc/resolve/main/ARC-Easy/train-00000-of-00001.parquet",
       "version": "allenai/ai2_arc ARC-Easy train",
-      "sha256": null,
+      "sha256": "b315db8a4be597dc7daa50a4e70d48dd7c990c32085629e6ccd8c926beaa80b5",
+      "bytes": 330598,
       "license": "CC BY-SA 4.0"
     },
     {
@@ -36,7 +38,8 @@
       "root": "repo",
       "url": "https://huggingface.co/datasets/allenai/ai2_arc/resolve/main/ARC-Easy/validation-00000-of-00001.parquet",
       "version": "allenai/ai2_arc ARC-Easy validation",
-      "sha256": null,
+      "sha256": "ed890ff1e4cef7a7140d3a30dcea3ed2c9d467c6458f447ad9ef0176d8dcbb74",
+      "bytes": 86080,
       "license": "CC BY-SA 4.0"
     },
     {
@@ -45,7 +48,8 @@
       "root": "repo",
       "url": "https://huggingface.co/datasets/allenai/ai2_arc/resolve/main/ARC-Challenge/train-00000-of-00001.parquet",
       "version": "allenai/ai2_arc ARC-Challenge train",
-      "sha256": null,
+      "sha256": "e488c1587ffdcfc8443f916c53488a95cd471c5790e0746c6bfe4cecf20962cb",
+      "bytes": 189909,
       "license": "CC BY-SA 4.0"
     },
     {
@@ -54,7 +58,8 @@
       "root": "repo",
       "url": "https://huggingface.co/datasets/allenai/ai2_arc/resolve/main/ARC-Challenge/validation-00000-of-00001.parquet",
       "version": "allenai/ai2_arc ARC-Challenge validation",
-      "sha256": null,
+      "sha256": "395a5c88d1580d69855fbaee9450270578df1ad5af6259771cd0a42c20e99f05",
+      "bytes": 55743,
       "license": "CC BY-SA 4.0"
     },
     {
@@ -62,82 +67,135 @@
       "path": "behavior/sleep/M064.txt",
       "url": "https://raw.githubusercontent.com/rethomics/damr/master/inst/extdata/M064.txt",
       "version": "rethomics/damr monitor M064",
-      "sha256": null,
+      "sha256": "62a1c3a651f19f0ae86732f0530916b299f7c5bee14ed2fb7bf21e10471edd11",
+      "bytes": 353571,
       "source": "https://github.com/rethomics/damr"
     },
     {
-      "id": "larva_annotations",
-      "path": "larva/Supplementary-Data-S1/annotations.csv",
-      "url": "https://raw.githubusercontent.com/brain-networks/larval-drosophila-connectome/main/Supplementary-Data-S1/annotations.csv",
-      "version": "Winding et al. Science 2023 Supplementary-Data-S1",
-      "sha256": null,
-      "source": "https://github.com/brain-networks/larval-drosophila-connectome"
-    },
-    {
-      "id": "larva_connectivity",
-      "path": "larva/Supplementary-Data-S1/all-all_connectivity_matrix.csv",
-      "url": "https://raw.githubusercontent.com/brain-networks/larval-drosophila-connectome/main/Supplementary-Data-S1/all-all_connectivity_matrix.csv",
-      "version": "Winding et al. Science 2023 Supplementary-Data-S1",
-      "sha256": null,
-      "large": true,
-      "source": "https://github.com/brain-networks/larval-drosophila-connectome"
+      "id": "larva_s1",
+      "path": "larva/Supplementary-Data-S1.zip",
+      "url": "https://raw.githubusercontent.com/brain-networks/larval-drosophila-connectome/main/Supplementary-Data-S1.zip",
+      "version": "Winding et al. Science 2023 Supplementary-Data-S1.zip",
+      "sha256": "8c1f43809ed5d527ba61b154e377cc21da26383a75eda8aab85ce05607a72a4c",
+      "bytes": 1107380,
+      "unzip_to": "larva/Supplementary-Data-S1",
+      "extract": [
+        {
+          "name": "annotations.csv",
+          "sha256": "477250fc559684f0e898a12016f41221bfa320012e378ab7ae8c5125c7776f7e",
+          "bytes": 65148
+        },
+        {
+          "name": "all-all_connectivity_matrix.csv",
+          "sha256": "94d51a821217048acf711f4feb71693a8487f2547540c6f2f25896c60e2348e3",
+          "bytes": 34914576
+        }
+      ],
+      "source": "https://github.com/brain-networks/larval-drosophila-connectome",
+      "note": "The repo publishes the zip, not the raw CSVs. fetch_data unzips annotations.csv and all-all_connectivity_matrix.csv into larva/Supplementary-Data-S1/."
     },
     {
       "id": "behavior_csvs",
       "path": "behavior",
-      "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/BBNPYX",
       "version": "Harvard Dataverse doi:10.7910/DVN/BBNPYX",
-      "sha256": null,
       "dataverse": "doi:10.7910/DVN/BBNPYX",
-      "names": [
-        "Fly01_T001_BodyCoords3D.csv",
-        "Fly01_T002_BodyCoords3D.csv",
-        "Fly02_T002_BodyCoords3D.csv",
-        "Fly01_T001_Coords3D.csv"
+      "files": [
+        {
+          "name": "201217_bolt-Chr_Fly01_F_T001_BodyCoords3D.csv",
+          "save_as": "Fly01_T001_BodyCoords3D.csv",
+          "sha256": "e1cb0d2fde595ff725a59cce8806c225c146986006466589699cbc516ac2b1d3",
+          "bytes": 817079
+        },
+        {
+          "name": "201217_bolt-Chr_Fly01_F_T002_BodyCoords3D.csv",
+          "save_as": "Fly01_T002_BodyCoords3D.csv",
+          "sha256": "2f0242769d334e3d3fc975cf73ac49c390d8348293d25da3b9f4c10317a4d8c6",
+          "bytes": 851198
+        },
+        {
+          "name": "201217_bolt-Chr_Fly02_M_T002_BodyCoords3D.csv",
+          "save_as": "Fly02_T002_BodyCoords3D.csv",
+          "sha256": "44a892eea67d86a3872b663dbbba2409438304e54ecd2637d410a86539ba3fbc",
+          "bytes": 830004
+        },
+        {
+          "name": "201217_bolt-Chr_Fly01_F_T001_Coords3D.csv",
+          "save_as": "Fly01_T001_Coords3D.csv",
+          "sha256": "63ab62a5fb004aceb43b3ab5782e1eebb31f12ff4a160d356a2b92fa4fd2122f",
+          "bytes": 790438
+        }
       ],
-      "note": "fetch_data asks the Dataverse API for these CSV names and saves them under behavior/."
+      "note": "Dataverse stores the long bolt-Chr names. fetch_data saves the short names the walking scripts read."
+    },
+    {
+      "id": "fly_walking_proteins_fasta",
+      "path": "male_cns/fly_walking_proteins.fasta",
+      "url": "https://rest.uniprot.org/uniprotkb/stream?query=accession:P20228+OR+accession:Q9VUD5+OR+accession:Q9W3W0+OR+accession:Q7KIQ2&format=fasta",
+      "version": "UniProt Gad1 P20228, nan Q9VUD5, iav Q9W3W0, nompC Q7KIQ2",
+      "sha256": "573ad098e0c29592acaca974aca341c376d80e73964cf9571d049f479ac544ad",
+      "bytes": 4553,
+      "note": "fly_walking_proteins.py reads this FASTA. fsot_predict is not in this pack; set FSOT_GENETICS to https://github.com/dappalumbo91/FSOT-Genetics."
     },
     {
       "id": "male_cns_v1",
       "path": "male_cns",
       "version": "Berg et al. Cell 2026 Male CNS v1.0",
-      "sha256": null,
       "requires_token": true,
-      "names": [
-        "body-annotations-male-cns-v1.0-minconf-0.5.feather",
-        "body-neurotransmitters-male-cns-v1.0.feather",
-        "connectome-weights-male-cns-v1.0-minconf-0.5.feather"
+      "files": [
+        {
+          "name": "body-annotations-male-cns-v1.0-minconf-0.5.feather",
+          "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+          "bytes": 14483314
+        },
+        {
+          "name": "body-neurotransmitters-male-cns-v1.0.feather",
+          "sha256": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621",
+          "bytes": 43282834
+        },
+        {
+          "name": "connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+          "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+          "bytes": 1051241946
+        }
       ],
-      "note": "FlyWire Codex download needs an api_token. Place the three feathers in male_cns/. https://codex.flywire.ai/"
+      "note": "FlyWire Codex download needs an api_token. Place the three feathers in male_cns/. https://codex.flywire.ai/ The sha256 values are the Codex files behind the committed Male CNS boot. fetch_data does not download them."
     },
     {
       "id": "banc_v888",
       "path": "banc",
       "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/7WTH1N",
+      "dataverse": "doi:10.7910/DVN/7WTH1N",
       "version": "Bates et al. Nature 2026 BANC v888",
-      "sha256": null,
       "large": true,
-      "names": [
-        "banc_888_meta.feather",
-        "banc_888_edgelist_simple_v3.feather"
+      "files": [
+        {
+          "name": "banc_888_meta.feather",
+          "sha256": "819bbcff476e52702d6f8d8604ce1f12d1d7b11942281df2f49df2a73a6f15a5",
+          "bytes": 57550610
+        },
+        {
+          "name": "banc_888_edgelist_simple_v3.feather",
+          "sha256": "8c296e946f3c69a8c7222f30ad75fa8a98eeb189124fec6df829c9125f4be64b",
+          "bytes": 359161658
+        }
       ],
-      "note": "Also published at gs://lee-lab_brain-and-nerve-cord-fly-connectome/compiled_data/banc_888/. Place the two feathers in banc/."
+      "note": "python scripts/fetch_data.py --large downloads these two feathers into FLY_ROOT/banc/. Also published at gs://lee-lab_brain-and-nerve-cord-fly-connectome/compiled_data/banc_888/."
     },
     {
       "id": "hemibrain_cache",
       "path": "hemibrain",
+      "kind": "note",
       "url": "https://neuprint.janelia.org/",
       "version": "Scheffer et al. eLife 2020 hemibrain:v1.2.1",
-      "sha256": null,
-      "note": "No static dump in this manifest. python scripts/hemibrain_connectome.py --fetch writes the cache. neuPrint is public and slow."
+      "note": "No static dump in this manifest. python scripts/hemibrain_connectome.py writes the cache from public neuPrint. A full fetch is well over 90 seconds. --offline replays data/hemibrain_connectome_boot.json. This note is not a failed download."
     },
     {
       "id": "behavior_videos",
       "path": "behavior",
-      "version": "clip corroboration only",
-      "sha256": null,
+      "kind": "note",
       "large": true,
-      "note": "Videos are optional. 3D CSVs are the walking observer. odor, courtship, and aggression scripts also need ffmpeg and ffprobe on PATH. Sources are in those scripts (eLife, PLOS)."
+      "version": "clip corroboration only",
+      "note": "Videos are optional, not a failed download. 3D CSVs are the walking observer. odor, courtship, and aggression scripts also need ffmpeg and ffprobe on PATH."
     }
   ]
 }

@@ -935,7 +935,7 @@ def live_male_graph() -> None:
     from male_cns import ANN, WTS, load_male_graph
 
     if not ANN.is_file() or not WTS.is_file():
-        print("SKIP  male_cns feathers not on D:")
+        print(f"SKIP  male_cns feathers not in {ANN.parent}")
         return
     g = load_male_graph()
     frozen = json.loads(MALE.read_text(encoding="utf-8"))
@@ -961,6 +961,75 @@ def live_analog() -> None:
     if jobs[0]["mapped_analog"]["symbol"] != "nompC":
         fail("analog not nompC")
     ok("analog_pointer mec-4 → nompC  unc-25 → Gad1")
+
+
+def _headline(path: Path, fields: dict[str, object]) -> None:
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    bad = []
+    got_show = []
+    for key, exp in fields.items():
+        got = doc
+        for part in key.split("."):
+            got = got.get(part) if isinstance(got, dict) else None
+        got_show.append(f"{key.split('.')[-1]}={got}")
+        if got != exp:
+            bad.append(f"{key} committed={got!r} want={exp!r}")
+    if bad:
+        fail(f"check {path.name}: " + "; ".join(bad))
+    print(f"check OK {path.name} " + " ".join(got_show))
+
+
+def check_committed() -> int:
+    """Re-read headline fields already frozen in the committed JSON.
+
+    This does not recompute residual hops and does not load the Male CNS graph.
+    """
+    files = (
+        (MALE, {"n_neurons": 165122, "n_gaba": 22055, "n_edges": 25563197}),
+        (BANC, {"n_neurons": 175401}),
+        (ROOT / "data" / "fly_connectome_inventory.json", {"n_neurons": 139248}),
+        (BASE, {"n_trials": 3}),
+        (BTLED, {"current_bill": "Bill-36"}),
+        (
+            A1STAMP,
+            {
+                "easy.correct": 570,
+                "easy.n": 570,
+                "challenge.correct": 299,
+                "challenge.n": 299,
+                "challenge.wrong": 0,
+                "use.correct": 343,
+                "use.n": 343,
+                "lean_ok": True,
+            },
+        ),
+        (ROOT / "data" / "bill21_openstax.json", {"n": 15, "n_ok": 15}),
+        (
+            ROOT / "data" / "bill34_ch6.json",
+            {"blind.correct": 12, "blind.n": 12, "old_openstax_ok": 15, "old_openstax_n": 15},
+        ),
+        (
+            ROOT / "data" / "bill35_math_gaps.json",
+            {"gaps.correct": 8, "gaps.n": 8, "old_openstax_ok": 15, "old_openstax_n": 15},
+        ),
+        (
+            ROOT / "data" / "bill36_python_laws.json",
+            {
+                "taught.correct": 7,
+                "taught.n": 7,
+                "fresh.correct": 15,
+                "fresh.n": 15,
+                "refuse.correct": 12,
+                "refuse.n": 12,
+                "overall_ok": True,
+            },
+        ),
+        (A2IX, {"n": 9, "n_ok": 9, "overall_ok": True}),
+    )
+    for path, fields in files:
+        _headline(path, fields)
+    print(f"OK    committed numbers compared files={len(files)}")
+    return len(files)
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -1004,7 +1073,7 @@ def main(argv: list[str] | None = None) -> int:
             fail("genetics_hook")
         ok("genetics_hook UniProt/Ensembl + hop jobs")
     if args.check:
-        print("OK    committed numbers reproduce")
+        check_committed()
     print("=" * 64)
     print("PACK BOOT OK  pin=AEB2AD  free_parameters=0  not a trained RNN")
     print("=" * 64)

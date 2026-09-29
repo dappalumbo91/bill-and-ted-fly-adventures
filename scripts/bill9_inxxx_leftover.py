@@ -78,12 +78,23 @@ def main() -> int:
     dng_cmd = bool((dng.get("male") or {}).get("command"))
     feti_top = ((cho_h3.get("top") or {}) if isinstance(cho_h3.get("top"), dict) else {}).get("cell_type") or cho_h3.get("top")
 
+    from banc_connectome import EDGES, META, load_banc_graph
+    from male_cns import ANN, NT, WTS, load_male_graph
+    from paths import need
+
+    for path, what in (
+        (META, "BANC meta feather"),
+        (EDGES, "BANC edgelist feather"),
+        (ANN, "Male CNS body annotations feather"),
+        (NT, "Male CNS neurotransmitter feather"),
+        (WTS, "Male CNS connectome weights feather"),
+    ):
+        if not path.is_file():
+            need(what, path)
+
     feti: dict[str, Any] = {}
     live_error = None
     try:
-        from banc_connectome import load_banc_graph
-        from male_cns import load_male_graph
-
         print("  load BANC", flush=True)
         bg = load_banc_graph()
         print("  load Male", flush=True)

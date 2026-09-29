@@ -381,4 +381,9 @@ def main(argv: list[str] | None = None) -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    from paths import MissingData
+
+    try:
+        raise SystemExit(main())
+    except MissingData:
+        raise SystemExit(2)

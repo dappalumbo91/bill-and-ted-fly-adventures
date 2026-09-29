@@ -31,6 +31,7 @@ sys.path.insert(0, str(ROOT / "vendor"))
 
 from fly_behavior import BEHAVIOR, TRIALS  # noqa: E402
 from fly_connectome import FLY_ROOT, _PHI, _R_BIO, seed_indices  # noqa: E402
+from paths import require  # noqa: E402
 
 OUT = ROOT / "data" / "fly_function.json"
 FPS = 400.0  # Dataverse 6-camera 400 Hz
@@ -69,7 +70,7 @@ def _fft_peak(x: np.ndarray, fps: float) -> dict[str, float]:
 def wing_trial(tid: str) -> dict[str, Any]:
     import pandas as pd
 
-    df = pd.read_csv(BEHAVIOR / f"{tid}_Coords3D.csv")
+    df = pd.read_csv(require(BEHAVIOR / f"{tid}_Coords3D.csv", f"{tid}_Coords3D.csv"))
     lw = _xyz(df, "Th-lWing")
     rw = _xyz(df, "Th-rWing")
     tar = np.stack([_xyz(df, f"{leg}-Tar") for leg in ("R1", "R2", "R3", "L1", "L2", "L3")], axis=1)
@@ -217,4 +218,9 @@ def main(argv: list[str] | None = None) -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    from paths import MissingData
+
+    try:
+        raise SystemExit(main())
+    except MissingData:
+        raise SystemExit(2)

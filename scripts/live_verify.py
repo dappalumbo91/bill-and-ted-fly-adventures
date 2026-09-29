@@ -8,6 +8,7 @@ Does not need a Codex download token. Allen Brain Atlas is mouse — recorded as
 from __future__ import annotations
 
 import json
+import os
 import sys
 import urllib.error
 import urllib.request
@@ -18,15 +19,44 @@ OUT = ROOT / "data" / "live_verify.json"
 UA = {"User-Agent": "FSOT-fly-pack (mailto:local)", "Accept": "application/json"}
 
 
+def _headers(url: str) -> dict[str, str]:
+    headers = dict(UA)
+    if "api.github.com" in url:
+        token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+        if token:
+            headers["Authorization"] = f"Bearer {token}"
+            headers["Accept"] = "application/vnd.github+json"
+    return headers
+
+
 def get(url: str, timeout: int = 45) -> tuple[int, bytes]:
-    req = urllib.request.Request(url, headers=UA)
+    req = urllib.request.Request(url, headers=_headers(url))
     with urllib.request.urlopen(req, timeout=timeout) as fh:
         return fh.status, fh.read()
 
 
-def rec(name: str, ok: bool, detail: dict) -> dict:
-    print(f"{'OK   ' if ok else 'FAIL '} {name}")
-    return {"name": name, "ok": ok, **detail}
+def rate_limited(code: int, body: str, headers) -> bool:
+    """429, or 403 when GitHub says the quota is spent. A bare 403 is forbidden."""
+    if code == 429:
+        return True
+    if code != 403:
+        return False
+    remaining = ""
+    if headers is not None:
+        remaining = str(headers.get("X-RateLimit-Remaining") or "")
+    text = body.lower()
+    return remaining == "0" or "rate limit" in text
+
+
+def rec(name: str, ok: bool, detail: dict, skipped: bool = False) -> dict:
+    if skipped:
+        print(f"SKIP {name} (rate limit)")
+    else:
+        print(f"{'OK   ' if ok else 'FAIL '} {name}")
+    row = {"name": name, "ok": ok, **detail}
+    if skipped:
+        row["skipped"] = True
+    return row
 
 
 def main() -> int:
@@ -138,30 +168,39 @@ def main() -> int:
             ok = st == 200 and str(g.get("name") or "").lower() == repo.lower()
             rows.append(rec(f"github_{repo}", ok, {"status": st, "html_url": g.get("html_url")}))
         except urllib.error.HTTPError as e:
-            if e.code in (401, 403, 404, 429):
+            body = e.read().decode("utf-8", errors="replace")[:800]
+            if rate_limited(e.code, body, e.headers):
                 rows.append(
                     rec(
                         f"github_{repo}",
-                        True,
+                        False,
                         {
                             "status": e.code,
-                            "skipped": "private, missing, or GitHub rate limit",
-                            "note": "A rate limit is not a missing public repo.",
+                            "skipped": "rate limit",
+                            "note": "skipped (rate limit)",
                         },
+                        skipped=True,
                     )
                 )
             else:
-                rows.append(rec(f"github_{repo}", False, {"error": str(e), "status": e.code}))
+                if e.code == 404:
+                    err = "missing repo"
+                elif e.code == 403:
+                    err = "forbidden"
+                else:
+                    err = str(e)
+                rows.append(rec(f"github_{repo}", False, {"error": err, "status": e.code}))
         except Exception as e:
             rows.append(rec(f"github_{repo}", False, {"error": str(e)}))
 
-    failed = [r for r in rows if not r["ok"]]
+    scored = [r for r in rows if not r.get("skipped")]
+    failed = [r for r in scored if not r["ok"]]
     doc = {
         "pin": "AEB2AD",
         "free_parameters": 0,
         "n": len(rows),
         "fail": len(failed),
-        "overall_ok": len(failed) == 0,
+        "overall_ok": all(r["ok"] for r in scored),
         "checks": rows,
     }
     OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")

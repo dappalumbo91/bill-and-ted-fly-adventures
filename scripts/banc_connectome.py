@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """BANC female brain + VNC residual boot — measured graph.
 
-Bates et al. Nature 2026. Files on D:\\FlyWire_Connectome\\banc (not git):
+Bates et al. Nature 2026. Files on FLY_ROOT/banc (not git):
 
   banc_888_meta.feather
   banc_888_edgelist_simple_v3.feather
@@ -189,9 +189,11 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--gpu", dest="gpu", action="store_true", default=True)
     ap.add_argument("--cpu", dest="gpu", action="store_false")
     args = ap.parse_args(argv)
-    for p in (META, EDGES):
-        if not p.exists() or p.stat().st_size < 1_000_000:
-            raise SystemExit(f"missing {p}")
+    from paths import need
+
+    for p, what in ((META, "BANC meta feather"), (EDGES, "BANC edgelist feather")):
+        if not p.is_file() or p.stat().st_size < 1_000_000:
+            need(what, p)
     graph = load_banc_graph()
     programs = []
     for spec in PROGRAMS:

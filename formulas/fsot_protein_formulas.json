@@ -11,7 +11,7 @@
     "ETA_EFF":"1/(PI-1)  ~= 0.46694",
     "S_BIOCHEM":   "domain_scalar('Biochemistry', D_eff=13, delta_psi=0.1, observed=false)  (FSOT-2.0 scalar engine output)",
     "S_MOLCHEM":   "domain_scalar('Molecular_Chemistry', D_eff=9, delta_psi=0.4, observed=true)",
-    "source": "C:\\Users\\damia\\Desktop\\FSOT NeuroLab\\fsot_compute.py and Genetics\\fsot_core\\src\\lib.rs"
+    "source": "vendor/fsot_compute.py and https://github.com/dappalumbo91/FSOT-Genetics fsot_core/src/lib.rs"
   },
 
   "formulas": [

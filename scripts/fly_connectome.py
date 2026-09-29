@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Read the FlyWire adult Drosophila connectome (measured authority).
 
-Annotations live on the game drive, not in git:
+Annotations live under FLY_ROOT, not in git:
 
-  D:\\FlyWire_Connectome
+  FLY_ROOT
 
   python scripts/fly_connectome.py --inventory
 

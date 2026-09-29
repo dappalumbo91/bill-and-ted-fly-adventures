@@ -9,6 +9,8 @@ from __future__ import annotations
 import runio
 runio.install()
 
+import os
+import tempfile
 from pathlib import Path
 
 from reportlab.lib import colors
@@ -566,17 +568,24 @@ def build():
     ))
     story.append(KeepTogether(closer))
 
-    doc = SimpleDocTemplate(
-        str(OUT),
-        pagesize=letter,
-        leftMargin=0.7 * inch,
-        rightMargin=0.7 * inch,
-        topMargin=0.65 * inch,
-        bottomMargin=0.55 * inch,
-        title="Bio-Neuromorphic Connectome Expansion Feasibility — FSOT fly program",
-        author="FSOT fly pack (pin D1D38A)",
-    )
-    doc.build(story, onFirstPage=header_footer, onLaterPages=header_footer)
+    fd, tmp_name = tempfile.mkstemp(suffix=".pdf")
+    os.close(fd)
+    tmp = Path(tmp_name)
+    try:
+        doc = SimpleDocTemplate(
+            str(tmp),
+            pagesize=letter,
+            leftMargin=0.7 * inch,
+            rightMargin=0.7 * inch,
+            topMargin=0.65 * inch,
+            bottomMargin=0.55 * inch,
+            title="Bio-Neuromorphic Connectome Expansion Feasibility — FSOT fly program",
+            author="FSOT fly pack (pin D1D38A)",
+        )
+        doc.build(story, onFirstPage=header_footer, onLaterPages=header_footer)
+        OUT.write_bytes(tmp.read_bytes())
+    finally:
+        tmp.unlink(missing_ok=True)
     print("wrote", OUT)
 
 

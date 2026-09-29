@@ -1,5 +1,5 @@
 {
-  "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\smiles\\FSOT_SMILES_Lab_Dataset.json",
+  "source": "https://github.com/dappalumbo91/FSOT-2.1-Lean vendor/smiles/FSOT_SMILES_Lab_Dataset.json",
   "authority": "FSOT SMILES Lab \u2014 seed-only chemistry (pi,e,phi,gamma,G)",
   "n_records": 116,
   "sections": [

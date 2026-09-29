@@ -5,7 +5,9 @@ iav / nan / nompC sit on JO and mechanosensory cells that seeded the
 Male CNS boot. Gad1 is the GABA enzyme already used as inhibitory sign.
 
 Measured homolog → product Cα. No homolog → no_measured_map (Rg +
-secondary only). 0 free parameters. Sequences from UniProt on D:.
+secondary only). 0 free parameters. Sequences from UniProt
+(Gad1 P20228, nan Q9VUD5, iav Q9W3W0, nompC Q7KIQ2) at
+FLY_ROOT/male_cns/fly_walking_proteins.fasta.
 """
 from __future__ import annotations
 
@@ -82,8 +84,11 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--only", nargs="*", default=None, help="subset of symbols")
     args = ap.parse_args(argv)
-    if not FASTA.exists():
-        raise SystemExit(f"missing {FASTA}")
+    if not FASTA.is_file():
+        need(
+            "male_cns/fly_walking_proteins.fasta (UniProt Gad1 P20228, nan Q9VUD5, iav Q9W3W0, nompC Q7KIQ2)",
+            FASTA,
+        )
     seqs = _parse_fasta(FASTA)
     OUT_D.mkdir(parents=True, exist_ok=True)
     want = {s.lower() for s in args.only} if args.only else None

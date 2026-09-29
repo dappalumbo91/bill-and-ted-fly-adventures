@@ -2,7 +2,7 @@
 """Local measured type counts for DNg29 / JO / KC.
 
 Codex CSV dumps need an api_token. These counts come from the same
-feathers / TSV already on D:\\FlyWire_Connectome — the authority dumps,
+feathers / TSV already under FLY_ROOT — the authority dumps,
 not the web UI.
 """
 from __future__ import annotations
@@ -141,7 +141,7 @@ def main() -> int:
     doc = {
         "pin": "AEB2AD",
         "free_parameters": 0,
-        "rule": "Counts from measured dumps on D:. Codex api_token not used.",
+        "rule": "Counts from measured dumps under FLY_ROOT. Codex api_token not used.",
         "male_cns": male_counts(),
         "banc": banc_counts(),
         "flywire_annotations": flywire_counts(),
@@ -155,4 +155,9 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    from paths import MissingData
+
+    try:
+        raise SystemExit(main())
+    except MissingData:
+        raise SystemExit(2)

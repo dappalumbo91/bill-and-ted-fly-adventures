@@ -67,7 +67,7 @@ Full gauntlet: in FSOT-Genetics run `python verification/run_cross_proof.py`.
 pip install -r requirements.txt
 python scripts/fetch_data.py
 python scripts/boot_pack.py                 # pin, trinary, frozen hops vs RESULTS
-python scripts/boot_pack.py --check         # committed numbers reproduce
+python scripts/boot_pack.py --check         # re-read committed headline fields
 python scripts/boot_pack.py --live          # + FlyWire TSV and Male CNS feathers under FLY_ROOT
 python scripts/boot_pack.py --apis          # UniProt, Ensembl, neuPrint, Allen, GitHub
 python scripts/genetics_hook.py --offline   # cached gene rows, no live IDs
