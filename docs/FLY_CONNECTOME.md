@@ -12,7 +12,7 @@ Adult *Drosophila melanogaster* is the first animal with a complete brain-scale 
 |----------|------|------------|
 | FlyWire FAFB v783 | 139,255 neurons, ~50 M chemical synapses, 8,453 cell types | annotations TSV (small); proofread connections ~0.85 GB; full synapses 9.5 GB |
 | Schlegel et al. 2024 | superclass, hemilineage, neurotransmitter, soma xyz, VFB/FBbt | GitHub `flyconnectome/flywire_annotations` |
-| Male CNS v1.0 | **165,122 traced** (brain + VNC), 25.6 M edges | Berg et al. *Cell* 2026-09-03; on `D:\FlyWire_Connectome\male_cns` |
+| Male CNS v1.0 | **165,122 traced** (brain + VNC), 25.6 M edges | Berg et al. *Cell* 2026-09-03; `FLY_ROOT/male_cns`, public `gs://flyem-male-cns/v1.0/connectome-data/flat-connectome/` |
 | BANC v888 | **175,401** neurons (glia dropped), 13.5 M edges, female brain+VNC intact neck | Bates et al. *Nature* 2026; on `D:\FlyWire_Connectome\banc`; live `scripts/banc_connectome.py` |
 | neuPrint hemibrain:v1.2.1 | **22,704** typed (incl. cropped Leaves), 3.44 M edges; no VNC | Scheffer et al. *eLife* 2020; cache `D:\FlyWire_Connectome\hemibrain`; live `scripts/hemibrain_connectome.py` |
 
@@ -101,6 +101,8 @@ Source: `data/fly_behavior_flow.json`.
 ### Male CNS — brain + nerve cord (live)
 
 `python scripts/male_cns.py`
+
+The three v1.0 feathers are public. `python scripts/fetch_data.py` saves annotations and neurotransmitters. `python scripts/fetch_data.py --large` also saves the weight table.
 
 Traced neurons **165,122**, **25,563,197** edges, **22,055** GABA. RTX 5070. Walking seed is VNC sensory (leg/body afferents) and mechanosensory class. **vnc_motor** (708 cells) are the leg/body motor neurons.
 

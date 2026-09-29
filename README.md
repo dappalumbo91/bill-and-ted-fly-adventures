@@ -179,6 +179,8 @@ python scripts/bill_ted.py ted-2            # promote TED-2 → Bill-2 if gates 
 
 ## Re-run hops (needs FLY_ROOT)
 
+Male CNS feathers are public. `python scripts/fetch_data.py` saves annotations and neurotransmitters. `python scripts/fetch_data.py --large` also saves the weight table, the BANC feathers, and the FlyWire connection table. `male_cns.py` reads the weight table and runs well over 90 seconds. `fly_sleep.py`, `fly_courtship.py`, and `fly_aggression.py` do the same unless given `--skip-hops`.
+
 ```bash
 python scripts/male_cns.py
 python scripts/banc_connectome.py

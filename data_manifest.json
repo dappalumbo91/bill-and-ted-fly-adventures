@@ -139,8 +139,8 @@
     {
       "id": "male_cns_v1",
       "path": "male_cns",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/",
       "version": "Berg et al. Cell 2026 Male CNS v1.0",
-      "requires_token": true,
       "files": [
         {
           "name": "body-annotations-male-cns-v1.0-minconf-0.5.feather",
@@ -155,10 +155,11 @@
         {
           "name": "connectome-weights-male-cns-v1.0-minconf-0.5.feather",
           "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
-          "bytes": 1051241946
+          "bytes": 1051241946,
+          "large": true
         }
       ],
-      "note": "FlyWire Codex download needs an api_token. Place the three feathers in male_cns/. https://codex.flywire.ai/ The sha256 values are the Codex files behind the committed Male CNS boot. fetch_data does not download them."
+      "note": "Public Janelia bucket, also listed at https://male-cns.janelia.org/download/. Default fetch saves the annotation and neurotransmitter feathers into FLY_ROOT/male_cns/. The weight table is python scripts/fetch_data.py --large. These bytes are the committed Male CNS boot. The FlyWire Codex FAFB CSV is a different download and still needs CODEX_API_TOKEN."
     },
     {
       "id": "banc_v888",

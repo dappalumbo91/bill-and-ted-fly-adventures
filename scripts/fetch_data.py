@@ -5,11 +5,13 @@
   python scripts/fetch_data.py --large
   python scripts/fetch_data.py --dry-run
 
-Token-gated FlyWire Codex files are listed and skipped. A multi-gigabyte
-file is SKIP unless --large; that skip is not a failure. Hemibrain and
-optional behavior videos are notes, not downloads. Every other entry with
-a url or a Dataverse id must land on disk or this process exits non-zero.
-SHA-256 is checked when the manifest has one. The report is out/fetch_report.json.
+Male CNS v1.0 feathers come from the public Janelia bucket. The default
+run saves the annotation and neurotransmitter feathers. The weight table
+is SKIP unless --large, and that skip is not a failure. The same rule
+covers the other multi-gigabyte dumps. Hemibrain and optional behavior
+videos are notes, not downloads. Every other entry with a url or a
+Dataverse id must land on disk or this process exits non-zero. SHA-256
+is checked when the manifest has one. The report is out/fetch_report.json.
 """
 from __future__ import annotations
 
@@ -211,6 +213,62 @@ def _url_item(item: dict, dry: bool) -> dict:
     return rec
 
 
+def _file_url(item: dict, spec: dict) -> str:
+    if spec.get("url"):
+        return str(spec["url"])
+    base = str(item.get("url") or "")
+    if not base:
+        return ""
+    if not base.endswith("/"):
+        base += "/"
+    return base + str(spec["name"])
+
+
+def _public_files(item: dict, large: bool, dry: bool) -> dict:
+    """Download a folder of public files. A per-file large flag can SKIP."""
+    folder = FLY_ROOT / item["path"]
+    rows = []
+    for spec in item.get("files") or []:
+        name = str(spec["name"])
+        dest = folder / name
+        if spec.get("large") and not large:
+            print(f"SKIP  {item['id']} {name}: large (pass --large)", flush=True)
+            rows.append({"name": name, "ok": True, "skipped": "large"})
+            continue
+        if dry:
+            print(f"DRY   {item['id']} {name} -> {dest}", flush=True)
+            rows.append({"name": name, "ok": True, "dry_run": True, "path": str(dest)})
+            continue
+        sha = spec.get("sha256")
+        nbytes = spec.get("bytes")
+        if _matches(dest, sha, nbytes):
+            print(f"HAVE  {name}", flush=True)
+            rows.append({"name": name, "ok": True, "path": str(dest), "cached": True})
+            continue
+        url = _file_url(item, spec)
+        if not url:
+            print(f"FAIL  {name}: no url", flush=True)
+            rows.append({"name": name, "ok": False, "error": "no url"})
+            continue
+        try:
+            _download(url, dest)
+        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+            print(f"FAIL  {name}: {exc}", flush=True)
+            rows.append({"name": name, "ok": False, "error": str(exc)})
+            continue
+        if not _matches(dest, sha, nbytes):
+            got = _sha256(dest) if dest.is_file() else None
+            print(f"FAIL  {name}: sha256/bytes mismatch got={got} size={dest.stat().st_size if dest.is_file() else 0}", flush=True)
+            rows.append({"name": name, "ok": False, "error": "sha256 or bytes mismatch", "sha256": got})
+            continue
+        rows.append({"name": name, "ok": True, "path": str(dest), "sha256": sha})
+    ok = all(row.get("ok") for row in rows if not row.get("skipped"))
+    rec = {"id": item["id"], "ok": ok, "files": rows, "path": str(folder)}
+    if rows and all(row.get("skipped") for row in rows):
+        rec["skipped"] = "large"
+    return rec
+
+
 def _one(item: dict, large: bool, dry: bool) -> dict:
     rec = {"id": item["id"], "ok": True}
     if item.get("requires_token"):
@@ -221,6 +279,9 @@ def _one(item: dict, large: bool, dry: bool) -> dict:
         print(f"NOTE  {item['id']}: {item.get('note')}", flush=True)
         rec.update({"skipped": "instructions", "note": item.get("note"), "url": item.get("url")})
         return rec
+    if item.get("files") and not item.get("dataverse") and not item.get("unzip_to"):
+        print(f"FILES {item['id']}", flush=True)
+        return _public_files(item, large, dry)
     if item.get("large") and not large:
         print(f"SKIP  {item['id']}: large (pass --large)", flush=True)
         rec.update({"skipped": "large"})

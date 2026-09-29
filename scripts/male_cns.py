@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 """Male CNS (brain + VNC) residual boot — measured graph.
 
-Berg et al. Cell 2026. Files on FLY_ROOT/male_cns (not git):
+Berg et al. Cell 2026. Files on FLY_ROOT/male_cns (not git), from the
+public Janelia bucket flyem-male-cns v1.0 flat-connectome:
 
   body-annotations-male-cns-v1.0-minconf-0.5.feather
   body-neurotransmitters-male-cns-v1.0.feather
   connectome-weights-male-cns-v1.0-minconf-0.5.feather
+
+python scripts/fetch_data.py saves the first two.
+python scripts/fetch_data.py --large also saves the weight table.
+Reading that table and running the residual is well over 90 seconds.
 
 Traced neurons only. GABA from consensus_nt. Walking seed is
 vnc_sensory (leg/body afferents in the cord) and mechanosensory
@@ -57,7 +62,7 @@ def load_male_graph() -> dict[str, Any]:
 
     require(ANN, "Male CNS body annotations feather")
     require(NT, "Male CNS neurotransmitter feather")
-    require(WTS, "Male CNS connectome weights feather")
+    require(WTS, "Male CNS connectome weights feather (python scripts/fetch_data.py --large)")
     print(f"  reading {ANN.name}", flush=True)
     ann = pd.read_feather(ANN)
     traced = ann[ann["status"] == "Traced"].copy()
@@ -170,7 +175,7 @@ def main(argv: list[str] | None = None) -> int:
     for p, what in (
         (ANN, "Male CNS body annotations feather"),
         (NT, "Male CNS neurotransmitter feather"),
-        (WTS, "Male CNS connectome weights feather"),
+        (WTS, "Male CNS connectome weights feather (python scripts/fetch_data.py --large)"),
     ):
         if not p.is_file():
             need(what, p)

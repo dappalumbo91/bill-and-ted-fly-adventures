@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Local measured type counts for DNg29 / JO / KC.
 
-Codex CSV dumps need an api_token. These counts come from the same
-feathers / TSV already under FLY_ROOT — the authority dumps,
-not the web UI.
+Counts come from the Male CNS feathers, the BANC meta feather, and the
+FlyWire annotation TSV under FLY_ROOT. fetch_data saves the Male CNS
+annotation feather from the public Janelia bucket. The FlyWire Codex
+FAFB CSV is a different download and is not used here.
 """
 from __future__ import annotations
 

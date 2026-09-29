@@ -40,7 +40,8 @@ Living log: **`RUNNING.md`** (law + findings). Update that file when something l
 | Item | Result |
 |------|--------|
 | Shared-type hops (two animals) | DNg29 descending **on** both; KCg-m / L5 `vnc_motor` **off**. `data/shared_type_hops.json` |
-| Codex token | **Blocked.** Local `type_counts.json` is authority. |
+| Male CNS v1.0 feathers | Public Janelia flat-connectome. `fetch_data` saves annotations and neurotransmitters. The weight table is `--large`. |
+| Codex FAFB CSV | **Blocked.** Still needs `CODEX_API_TOKEN`. `data/type_counts.json` is the committed count authority. |
 | Product Cα | Campaign D1D38A freeze kept; pack pin AEB2AD noted on the JSON. |
 | Behavior-flow `r` field | Restamped 1.284069 (inf-norm; videos not re-run). |
 
