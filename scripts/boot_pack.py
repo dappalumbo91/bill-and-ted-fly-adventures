@@ -1025,6 +1025,17 @@ def check_committed() -> int:
             },
         ),
         (A2IX, {"n": 9, "n_ok": 9, "overall_ok": True}),
+        (
+            ROOT / "data" / "fly_spine_report.json",
+            {
+                "pin": "AEB2AD",
+                "free_parameters": 0,
+                "overall_ok": True,
+                "n_obligations": 89,
+                "n_predictions": 4,
+                "current_bill": "Bill-36",
+            },
+        ),
     )
     for path, fields in files:
         _headline(path, fields)

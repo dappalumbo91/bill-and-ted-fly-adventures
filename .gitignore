@@ -16,3 +16,5 @@ venv/
 *.swp
 data_external/
 out/
+verification/fly/tla/states/
+verification/fly/rust/target/

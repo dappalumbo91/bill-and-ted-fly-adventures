@@ -1,8 +1,10 @@
 # Cross-verification — genetics formula branch
 
+The fly pack's own gauntlet is `python verification/run_fly_spine.py`. It writes `data/fly_spine_report.json` under pin **AEB2AD**. See `docs/FLY_SPINE.md`. The commands below are the genetics sibling, pin **D1D38A**.
+
 Modeled on **FSOT-2.1-Lean** multi-prover / green-gate discipline:
 
-- Same **AEB2AD** scalar pin as Lean hub (nest-derived \(D_{\mathrm{eff}}\)).
+- Stored genetics report pin is **D1D38A**. The law is the same `S=K(T1+T2+T3)` the Lean hub carries under **AEB2AD**.
 - Hard CI exit on pin drift, free parameters, or grind-time regression.
 - Scoreboards are evidence, not marketing.
 
@@ -35,5 +37,6 @@ Campaign green (AF) means: **median RMSD / lDDT competitive** — see `BEAT_ALPH
 ```
 FSOT-2.1-Lean     → Lean / multi-prover / domain margins
 fsot-neuron-zig   → seed + genetic pair geometry parity
-FSOT-Genetics     → F01–F15 + fold + AF H2H (this repo)
+FSOT-Genetics     → F01–F15 + fold + AF H2H (genetics sibling, pin D1D38A)
+fly pack          → obligation spine, pin AEB2AD, docs/FLY_SPINE.md
 ```

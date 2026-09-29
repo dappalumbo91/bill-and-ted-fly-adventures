@@ -1,0 +1,944 @@
+{
+  "application": "fly-obligation-spine",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "current_bill": "Bill-36",
+  "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD",
+  "n_obligations": 89,
+  "n_predictions": 4,
+  "facts": {
+    "free_parameters": 0,
+    "phi_milli": 1618,
+    "inv_phi_milli": 618,
+    "schlegel_n": 139248,
+    "schlegel_dng29": 2,
+    "schlegel_jo": 1104,
+    "meta_n": 144837,
+    "meta_dng29": 2,
+    "meta_jo": 1107,
+    "jo_only_meta": 3,
+    "jo_only_tsv": 0,
+    "male_dng29": 2,
+    "male_jo": 672,
+    "male_traced": 165122,
+    "banc_dng29": 2,
+    "banc_jo": 1198,
+    "hemibrain_dng29": 0,
+    "hemibrain_jo": 78,
+    "hemibrain_typed": 22704,
+    "male_neurons": 165122,
+    "male_gaba": 22055,
+    "male_edges": 25563197,
+    "banc_neurons": 175401,
+    "inventory_n": 139248,
+    "easy_n": 570,
+    "easy_correct": 570,
+    "easy_wrong": 0,
+    "easy_leftover": 0,
+    "easy_consensus": 0,
+    "challenge_n": 299,
+    "challenge_correct": 299,
+    "challenge_wrong": 0,
+    "challenge_leftover": 0,
+    "challenge_consensus": 0,
+    "use_n": 343,
+    "use_correct": 343,
+    "use_wrong": 0,
+    "leftover_n": 35,
+    "leftover_mapped": 35,
+    "guard_jo": 1,
+    "guard_vnc": 1,
+    "guard_gaba": 1,
+    "guard_courtship": 0,
+    "guard_aggression": 0,
+    "guard_fru_dsx": 0,
+    "trials": 3,
+    "resource_reached": 2,
+    "measured_w_changed": 0,
+    "dng29_male_desc_milli": 9204,
+    "dng29_male_vm_milli": 2088,
+    "dng29_banc_desc_milli": 7813,
+    "dng29_banc_vm_milli": 5827,
+    "kcgm_male_desc_milli": 53,
+    "kcgm_male_vm_milli": 0,
+    "kcgm_banc_desc_milli": 214,
+    "kcgm_banc_vm_milli": 0,
+    "l5_male_desc_milli": 1916,
+    "l5_male_vm_milli": 1,
+    "l5_banc_desc_milli": 3528,
+    "l5_banc_vm_milli": 0,
+    "early_vm_milli": 24254,
+    "h07b_vm_milli": 27566,
+    "mbp3_vm_milli": 0,
+    "early_n": 7890,
+    "h07b_n": 954,
+    "mbp3_n": 1038
+  },
+  "obligations": [
+    {
+      "id": "eq_free_parameters",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "free_parameters = 0",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_phi_milli",
+      "kind": "nat_eq",
+      "lhs": 1618,
+      "rhs": 1618,
+      "statement": "phi_milli = 1618",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_inv_phi_milli",
+      "kind": "nat_eq",
+      "lhs": 618,
+      "rhs": 618,
+      "statement": "inv_phi_milli = 618",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_schlegel_n",
+      "kind": "nat_eq",
+      "lhs": 139248,
+      "rhs": 139248,
+      "statement": "schlegel_n = 139248",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_schlegel_dng29",
+      "kind": "nat_eq",
+      "lhs": 2,
+      "rhs": 2,
+      "statement": "schlegel_dng29 = 2",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_schlegel_jo",
+      "kind": "nat_eq",
+      "lhs": 1104,
+      "rhs": 1104,
+      "statement": "schlegel_jo = 1104",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_meta_n",
+      "kind": "nat_eq",
+      "lhs": 144837,
+      "rhs": 144837,
+      "statement": "meta_n = 144837",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_meta_dng29",
+      "kind": "nat_eq",
+      "lhs": 2,
+      "rhs": 2,
+      "statement": "meta_dng29 = 2",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_meta_jo",
+      "kind": "nat_eq",
+      "lhs": 1107,
+      "rhs": 1107,
+      "statement": "meta_jo = 1107",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_jo_only_meta",
+      "kind": "nat_eq",
+      "lhs": 3,
+      "rhs": 3,
+      "statement": "jo_only_meta = 3",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_jo_only_tsv",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "jo_only_tsv = 0",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_male_dng29",
+      "kind": "nat_eq",
+      "lhs": 2,
+      "rhs": 2,
+      "statement": "male_dng29 = 2",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_male_jo",
+      "kind": "nat_eq",
+      "lhs": 672,
+      "rhs": 672,
+      "statement": "male_jo = 672",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_male_traced",
+      "kind": "nat_eq",
+      "lhs": 165122,
+      "rhs": 165122,
+      "statement": "male_traced = 165122",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_banc_dng29",
+      "kind": "nat_eq",
+      "lhs": 2,
+      "rhs": 2,
+      "statement": "banc_dng29 = 2",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_banc_jo",
+      "kind": "nat_eq",
+      "lhs": 1198,
+      "rhs": 1198,
+      "statement": "banc_jo = 1198",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_hemibrain_dng29",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "hemibrain_dng29 = 0",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_hemibrain_jo",
+      "kind": "nat_eq",
+      "lhs": 78,
+      "rhs": 78,
+      "statement": "hemibrain_jo = 78",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_hemibrain_typed",
+      "kind": "nat_eq",
+      "lhs": 22704,
+      "rhs": 22704,
+      "statement": "hemibrain_typed = 22704",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_male_neurons",
+      "kind": "nat_eq",
+      "lhs": 165122,
+      "rhs": 165122,
+      "statement": "male_neurons = 165122",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_male_gaba",
+      "kind": "nat_eq",
+      "lhs": 22055,
+      "rhs": 22055,
+      "statement": "male_gaba = 22055",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_male_edges",
+      "kind": "nat_eq",
+      "lhs": 25563197,
+      "rhs": 25563197,
+      "statement": "male_edges = 25563197",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_banc_neurons",
+      "kind": "nat_eq",
+      "lhs": 175401,
+      "rhs": 175401,
+      "statement": "banc_neurons = 175401",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_inventory_n",
+      "kind": "nat_eq",
+      "lhs": 139248,
+      "rhs": 139248,
+      "statement": "inventory_n = 139248",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_easy_n",
+      "kind": "nat_eq",
+      "lhs": 570,
+      "rhs": 570,
+      "statement": "easy_n = 570",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_easy_correct",
+      "kind": "nat_eq",
+      "lhs": 570,
+      "rhs": 570,
+      "statement": "easy_correct = 570",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_easy_wrong",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "easy_wrong = 0",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_easy_leftover",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "easy_leftover = 0",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_easy_consensus",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "easy_consensus = 0",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_challenge_n",
+      "kind": "nat_eq",
+      "lhs": 299,
+      "rhs": 299,
+      "statement": "challenge_n = 299",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_challenge_correct",
+      "kind": "nat_eq",
+      "lhs": 299,
+      "rhs": 299,
+      "statement": "challenge_correct = 299",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_challenge_wrong",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "challenge_wrong = 0",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_challenge_leftover",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "challenge_leftover = 0",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_challenge_consensus",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "challenge_consensus = 0",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_use_n",
+      "kind": "nat_eq",
+      "lhs": 343,
+      "rhs": 343,
+      "statement": "use_n = 343",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_use_correct",
+      "kind": "nat_eq",
+      "lhs": 343,
+      "rhs": 343,
+      "statement": "use_correct = 343",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_use_wrong",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "use_wrong = 0",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_leftover_n",
+      "kind": "nat_eq",
+      "lhs": 35,
+      "rhs": 35,
+      "statement": "leftover_n = 35",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_leftover_mapped",
+      "kind": "nat_eq",
+      "lhs": 35,
+      "rhs": 35,
+      "statement": "leftover_mapped = 35",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_guard_jo",
+      "kind": "nat_eq",
+      "lhs": 1,
+      "rhs": 1,
+      "statement": "guard_jo = 1",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_guard_vnc",
+      "kind": "nat_eq",
+      "lhs": 1,
+      "rhs": 1,
+      "statement": "guard_vnc = 1",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_guard_gaba",
+      "kind": "nat_eq",
+      "lhs": 1,
+      "rhs": 1,
+      "statement": "guard_gaba = 1",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_guard_courtship",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "guard_courtship = 0",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_guard_aggression",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "guard_aggression = 0",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_guard_fru_dsx",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "guard_fru_dsx = 0",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_trials",
+      "kind": "nat_eq",
+      "lhs": 3,
+      "rhs": 3,
+      "statement": "trials = 3",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_resource_reached",
+      "kind": "nat_eq",
+      "lhs": 2,
+      "rhs": 2,
+      "statement": "resource_reached = 2",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_measured_w_changed",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "measured_w_changed = 0",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_dng29_male_desc_milli",
+      "kind": "nat_eq",
+      "lhs": 9204,
+      "rhs": 9204,
+      "statement": "dng29_male_desc_milli = 9204",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_dng29_male_vm_milli",
+      "kind": "nat_eq",
+      "lhs": 2088,
+      "rhs": 2088,
+      "statement": "dng29_male_vm_milli = 2088",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_dng29_banc_desc_milli",
+      "kind": "nat_eq",
+      "lhs": 7813,
+      "rhs": 7813,
+      "statement": "dng29_banc_desc_milli = 7813",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_dng29_banc_vm_milli",
+      "kind": "nat_eq",
+      "lhs": 5827,
+      "rhs": 5827,
+      "statement": "dng29_banc_vm_milli = 5827",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_kcgm_male_desc_milli",
+      "kind": "nat_eq",
+      "lhs": 53,
+      "rhs": 53,
+      "statement": "kcgm_male_desc_milli = 53",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_kcgm_male_vm_milli",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "kcgm_male_vm_milli = 0",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_kcgm_banc_desc_milli",
+      "kind": "nat_eq",
+      "lhs": 214,
+      "rhs": 214,
+      "statement": "kcgm_banc_desc_milli = 214",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_kcgm_banc_vm_milli",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "kcgm_banc_vm_milli = 0",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_l5_male_desc_milli",
+      "kind": "nat_eq",
+      "lhs": 1916,
+      "rhs": 1916,
+      "statement": "l5_male_desc_milli = 1916",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_l5_male_vm_milli",
+      "kind": "nat_eq",
+      "lhs": 1,
+      "rhs": 1,
+      "statement": "l5_male_vm_milli = 1",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_l5_banc_desc_milli",
+      "kind": "nat_eq",
+      "lhs": 3528,
+      "rhs": 3528,
+      "statement": "l5_banc_desc_milli = 3528",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_l5_banc_vm_milli",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "l5_banc_vm_milli = 0",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_early_vm_milli",
+      "kind": "nat_eq",
+      "lhs": 24254,
+      "rhs": 24254,
+      "statement": "early_vm_milli = 24254",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_h07b_vm_milli",
+      "kind": "nat_eq",
+      "lhs": 27566,
+      "rhs": 27566,
+      "statement": "h07b_vm_milli = 27566",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_mbp3_vm_milli",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "mbp3_vm_milli = 0",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_early_n",
+      "kind": "nat_eq",
+      "lhs": 7890,
+      "rhs": 7890,
+      "statement": "early_n = 7890",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_h07b_n",
+      "kind": "nat_eq",
+      "lhs": 954,
+      "rhs": 954,
+      "statement": "h07b_n = 954",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_mbp3_n",
+      "kind": "nat_eq",
+      "lhs": 1038,
+      "rhs": 1038,
+      "statement": "mbp3_n = 1038",
+      "source": "committed JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_jo_gap",
+      "kind": "nat_eq",
+      "lhs": 1107,
+      "rhs": 1107,
+      "statement": "meta JO prefix = Schlegel JO prefix + roots only in the meta table",
+      "source": "data/codex_types.json",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_jo_only_tsv",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "no TSV JO root is absent from the meta table",
+      "source": "data/codex_types.json",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_inventory_schlegel",
+      "kind": "nat_eq",
+      "lhs": 139248,
+      "rhs": 139248,
+      "statement": "inventory n equals the Schlegel TSV n",
+      "source": "data/fly_connectome_inventory.json",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_dng29_male_schlegel",
+      "kind": "nat_eq",
+      "lhs": 2,
+      "rhs": 2,
+      "statement": "Male CNS DNg29 equals Schlegel DNg29",
+      "source": "data/type_counts.json",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_dng29_banc_schlegel",
+      "kind": "nat_eq",
+      "lhs": 2,
+      "rhs": 2,
+      "statement": "BANC DNg29 equals Schlegel DNg29",
+      "source": "data/type_counts.json",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_dng29_meta_schlegel",
+      "kind": "nat_eq",
+      "lhs": 2,
+      "rhs": 2,
+      "statement": "meta DNg29 equals Schlegel DNg29",
+      "source": "data/codex_types.json",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_hemibrain_dng29",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "hemibrain has no DNg29",
+      "source": "data/type_counts.json",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_easy_partition",
+      "kind": "nat_eq",
+      "lhs": 570,
+      "rhs": 570,
+      "statement": "Easy correct + wrong + leftover + consensus = n",
+      "source": "data/adventure1_stamp.json",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_challenge_partition",
+      "kind": "nat_eq",
+      "lhs": 299,
+      "rhs": 299,
+      "statement": "Challenge correct + wrong + leftover + consensus = n",
+      "source": "data/adventure1_stamp.json",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_use_partition",
+      "kind": "nat_eq",
+      "lhs": 343,
+      "rhs": 343,
+      "statement": "use correct + wrong = n",
+      "source": "data/adventure1_stamp.json",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_use_wrong",
+      "kind": "nat_eq",
+      "lhs": 0,
+      "rhs": 0,
+      "statement": "use wrong = 0",
+      "source": "data/adventure1_stamp.json",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_leftover_closed",
+      "kind": "nat_eq",
+      "lhs": 35,
+      "rhs": 35,
+      "statement": "leftover map is closed",
+      "source": "data/leftover_map.json",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "eq_male_traced",
+      "kind": "nat_eq",
+      "lhs": 165122,
+      "rhs": 165122,
+      "statement": "type-count traced equals the Male CNS boot",
+      "source": "data/male_cns_boot.json",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "gt_dng29_male_desc_milli",
+      "kind": "nat_gt",
+      "lhs": 9204,
+      "rhs": 1000,
+      "statement": "DNg29 male descending mass is above 1",
+      "source": "committed hop JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "gt_dng29_banc_desc_milli",
+      "kind": "nat_gt",
+      "lhs": 7813,
+      "rhs": 1000,
+      "statement": "DNg29 BANC descending mass is above 1",
+      "source": "committed hop JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "gt_early_vm_milli",
+      "kind": "nat_gt",
+      "lhs": 24254,
+      "rhs": 1000,
+      "statement": "early-born hop-2 vnc_motor is above 1",
+      "source": "committed hop JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "gt_h07b_vm_milli",
+      "kind": "nat_gt",
+      "lhs": 27566,
+      "rhs": 1000,
+      "statement": "07B hop-2 vnc_motor is above 1",
+      "source": "committed hop JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "le_kcgm_male_vm_milli",
+      "kind": "nat_le",
+      "lhs": 0,
+      "rhs": 1000,
+      "statement": "KCg-m male vnc_motor is at or below 1",
+      "source": "committed hop JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "le_kcgm_banc_vm_milli",
+      "kind": "nat_le",
+      "lhs": 0,
+      "rhs": 1000,
+      "statement": "KCg-m BANC vnc_motor is at or below 1",
+      "source": "committed hop JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "le_l5_male_vm_milli",
+      "kind": "nat_le",
+      "lhs": 1,
+      "rhs": 1000,
+      "statement": "L5 male vnc_motor is at or below 1",
+      "source": "committed hop JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "le_l5_banc_vm_milli",
+      "kind": "nat_le",
+      "lhs": 0,
+      "rhs": 1000,
+      "statement": "L5 BANC vnc_motor is at or below 1",
+      "source": "committed hop JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "le_mbp3_vm_milli",
+      "kind": "nat_le",
+      "lhs": 0,
+      "rhs": 1000,
+      "statement": "MBp3 hop-2 vnc_motor is at or below 1",
+      "source": "committed hop JSON",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    },
+    {
+      "id": "le_resource_trials",
+      "kind": "nat_le",
+      "lhs": 2,
+      "rhs": 3,
+      "statement": "resource reaches are at most the trial count",
+      "source": "data/baseline_sim.json",
+      "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD"
+    }
+  ],
+  "predictions": [
+    {
+      "id": "codex_portal_csv",
+      "measurement": "Codex portal gzipped FAFB CSV",
+      "status": "absent",
+      "filled": false,
+      "test": "DNg29 must equal the Schlegel count. A JO prefix equal to the Schlegel count passes the split-name table. A JO prefix equal to the meta count passes the coarse-name table. The coarse-minus-split gap must be the recorded meta-only JO roots.",
+      "holds_now": {
+        "schlegel_dng29": 2,
+        "schlegel_jo": 1104,
+        "meta_jo": 1107,
+        "jo_only_meta_roots": [
+          "720575940626741265",
+          "720575940628159081",
+          "720575940636488667"
+        ]
+      }
+    },
+    {
+      "id": "fly_cell_atlas_bodyid",
+      "measurement": "Fly Cell Atlas bodyId join",
+      "status": "absent",
+      "filled": false,
+      "test": "When a published bodyId table arrives, nompC, iav, and nan rows whose root is in the Schlegel TSV must carry a JO cell_type prefix. Gad1 rows must land in the GABA class already counted on the Male CNS. No bodyId is assigned before that table.",
+      "holds_now": {
+        "body_id_count": null,
+        "male_gaba": 22055
+      }
+    },
+    {
+      "id": "pupal_synapse_series",
+      "measurement": "embryo to pupa to adult synapse time series",
+      "status": "absent",
+      "filled": false,
+      "test": "A published series passes at its adult end when early-born and 07B hop-2 vnc_motor stay above 1 and MBp3 hop-2 vnc_motor stays at or below 1. Intermediate frames are not given values.",
+      "holds_now": {
+        "early_n": 7890,
+        "early_vm_milli": 24254,
+        "h07b_n": 954,
+        "h07b_vm_milli": 27566,
+        "mbp3_n": 1038,
+        "mbp3_vm_milli": 0,
+        "frame_count": null
+      }
+    },
+    {
+      "id": "iwasaki_videos",
+      "measurement": "Iwasaki object-interaction videos",
+      "status": "absent",
+      "filled": false,
+      "test": "When frames arrive, score them with the same ball rule and the same guardrail: courtship, aggression, and fru/dsx stay unseeded. The path is not fitted. The Harvard ball trials already on disk stay the measured baseline.",
+      "holds_now": {
+        "trials": 3,
+        "resource_reached": 2,
+        "frame_count": null
+      }
+    }
+  ],
+  "decision": {
+    "one_label": "overlay",
+    "two_labels": "trit 0",
+    "silence": "trit 0",
+    "repeated_label": "overlay"
+  }
+}

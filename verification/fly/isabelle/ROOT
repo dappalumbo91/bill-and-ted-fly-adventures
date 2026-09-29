@@ -1,0 +1,4 @@
+session FlySpine = HOL +
+  options [document = false, timeout = 120]
+  theories
+    FlySpine

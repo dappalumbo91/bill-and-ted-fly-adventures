@@ -1,0 +1,156 @@
+{
+  "application": "fly-obligation-spine",
+  "inherits_hub_overall_ok": false,
+  "inherits_genetics_report": false,
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "current_bill": "Bill-36",
+  "law": "S=K(T1+T2+T3); overlay 1/phi; consensus trit; 0 free parameters; pin AEB2AD",
+  "n_obligations": 89,
+  "n_predictions": 4,
+  "predictions": [
+    {
+      "id": "codex_portal_csv",
+      "measurement": "Codex portal gzipped FAFB CSV",
+      "status": "absent",
+      "filled": false,
+      "test": "DNg29 must equal the Schlegel count. A JO prefix equal to the Schlegel count passes the split-name table. A JO prefix equal to the meta count passes the coarse-name table. The coarse-minus-split gap must be the recorded meta-only JO roots.",
+      "holds_now": {
+        "schlegel_dng29": 2,
+        "schlegel_jo": 1104,
+        "meta_jo": 1107,
+        "jo_only_meta_roots": [
+          "720575940626741265",
+          "720575940628159081",
+          "720575940636488667"
+        ]
+      }
+    },
+    {
+      "id": "fly_cell_atlas_bodyid",
+      "measurement": "Fly Cell Atlas bodyId join",
+      "status": "absent",
+      "filled": false,
+      "test": "When a published bodyId table arrives, nompC, iav, and nan rows whose root is in the Schlegel TSV must carry a JO cell_type prefix. Gad1 rows must land in the GABA class already counted on the Male CNS. No bodyId is assigned before that table.",
+      "holds_now": {
+        "body_id_count": null,
+        "male_gaba": 22055
+      }
+    },
+    {
+      "id": "pupal_synapse_series",
+      "measurement": "embryo to pupa to adult synapse time series",
+      "status": "absent",
+      "filled": false,
+      "test": "A published series passes at its adult end when early-born and 07B hop-2 vnc_motor stay above 1 and MBp3 hop-2 vnc_motor stays at or below 1. Intermediate frames are not given values.",
+      "holds_now": {
+        "early_n": 7890,
+        "early_vm_milli": 24254,
+        "h07b_n": 954,
+        "h07b_vm_milli": 27566,
+        "mbp3_n": 1038,
+        "mbp3_vm_milli": 0,
+        "frame_count": null
+      }
+    },
+    {
+      "id": "iwasaki_videos",
+      "measurement": "Iwasaki object-interaction videos",
+      "status": "absent",
+      "filled": false,
+      "test": "When frames arrive, score them with the same ball rule and the same guardrail: courtship, aggression, and fru/dsx stay unseeded. The path is not fitted. The Harvard ball trials already on disk stay the measured baseline.",
+      "holds_now": {
+        "trials": 3,
+        "resource_reached": 2,
+        "frame_count": null
+      }
+    }
+  ],
+  "overall_ok": true,
+  "layers": [
+    {
+      "name": "python_obligations",
+      "required": true,
+      "ok": true,
+      "status": "PASS",
+      "returncode": 0,
+      "detail": "obligations=89 predictions=4 fail=0"
+    },
+    {
+      "name": "decision_rule",
+      "required": true,
+      "ok": true,
+      "status": "PASS",
+      "returncode": 0,
+      "detail": "one label overlays; disagreement or silence is trit 0; a repeated label overlays"
+    },
+    {
+      "name": "smt_z3",
+      "required": true,
+      "ok": true,
+      "status": "PASS",
+      "returncode": 0,
+      "detail": "sat\n"
+    },
+    {
+      "name": "lean",
+      "required": true,
+      "ok": true,
+      "status": "PASS",
+      "returncode": 0,
+      "detail": ""
+    },
+    {
+      "name": "coq",
+      "required": true,
+      "ok": true,
+      "status": "PASS",
+      "returncode": 0,
+      "detail": "ng: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FlySpine.v\", line 26, characters 0-33:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FlySpine.v\", line 51, characters 0-41:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FlySpine.v\", line 53, characters 0-41:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FlySpine.v\", line 54, characters 0-39:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FlySpine.v\", line 63, characters 0-35:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FlySpine.v\", line 64, characters 0-34:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FlySpine.v\", line 66, characters 0-27:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+    },
+    {
+      "name": "isabelle",
+      "required": true,
+      "ok": true,
+      "status": "PASS",
+      "returncode": 0,
+      "detail": "0:00:02 elapsed time\n"
+    },
+    {
+      "name": "fstar",
+      "required": true,
+      "ok": true,
+      "status": "PASS",
+      "returncode": 0,
+      "detail": "Verified module: FlySpine\nAll verification conditions discharged successfully\n"
+    },
+    {
+      "name": "rust",
+      "required": true,
+      "ok": true,
+      "status": "PASS",
+      "returncode": 0,
+      "detail": "FSOT_FLY_SPINE_RUST_OK\nphi=1.618033988749895\ninv_phi=0.618033988749895\n"
+    },
+    {
+      "name": "tla",
+      "required": true,
+      "ok": true,
+      "status": "PASS",
+      "returncode": 0,
+      "detail": "Finished computing initial states: 1 distinct state generated at 2026-09-29 08:56:57.\nModel checking completed. No error has been found.\n2 states generated, 1 distinct states found, 0 states left on queue."
+    }
+  ],
+  "frameworks_passed": [
+    "python_obligations",
+    "decision_rule",
+    "smt_z3",
+    "lean",
+    "coq",
+    "isabelle",
+    "fstar",
+    "rust",
+    "tla"
+  ],
+  "frameworks_failed": []
+}

@@ -1,0 +1,8 @@
+[package]
+name = "fsot_fly_spine"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "fsot_fly_spine"
+path = "src/main.rs"

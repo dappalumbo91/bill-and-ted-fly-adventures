@@ -165,13 +165,13 @@ Source: `data/plant_signal_boot.json`.
 | Point a clade-restricted 1:1 at the mapped residual job | Treat a genome as synapses |
 | Same law on animals and plants (proteins) | Skip VNC and call a fly brain a whole animal |
 
-## 6. Multi-prover stamp
+## 6. Genetics sibling stamp
 
-`python verification/run_cross_proof.py` → `data/cross_proof_report.json`. **42** obligations (13 engine, 29 measured). **overall_ok = true.** Does not inherit the hub report.
+`data/cross_proof_report.json` is the genetics sibling. Pin **D1D38A**. **42** obligations (13 engine, 29 measured). **overall_ok = true** (TLC finished 2026-09-17). Same law `S=K(T1+T2+T3)`. The fly hops stay on pin AEB2AD.
 
 | Layer | Status |
 |-------|--------|
-| Python AEB2AD + formula path | PASS |
+| Python formula path | PASS |
 | SMT python + Z3 | PASS |
 | Lean 4 + Mathlib (`Catalog.lean`) | PASS |
 | Coq / Rocq | PASS |
@@ -181,3 +181,19 @@ Source: `data/plant_signal_boot.json`.
 | TLA+ TLC routing | PASS |
 
 Labeled archive: `docs/VERIFIED_SOLVES.md`. Biohub/Kaggle stay frozen (`docs/BIOHUB_FREEZE.md`).
+
+## 7. Fly obligation spine
+
+`python verification/export_fly_spine.py` then `python verification/run_fly_spine.py` writes `data/fly_spine_report.json`. Pin **AEB2AD**. Bill-36. **89** obligations and **4** measurement predictions. **overall_ok = true.** 0 free parameters. Courtship, aggression, and fru/dsx stay off. The four predictions stay `absent` until the measured file arrives. The pass/fail test for each file is in `docs/FLY_SPINE.md`.
+
+| Layer | Status |
+|-------|--------|
+| Python obligations | PASS |
+| Decision rule | PASS |
+| Z3 | PASS |
+| Lean 4 (`verification/fly/lean/FlySpine.lean`) | PASS |
+| Coq / Rocq | PASS |
+| Isabelle/HOL | PASS |
+| F* | PASS |
+| Rust | PASS |
+| TLA+ TLC | PASS |
