@@ -1,0 +1,148 @@
+{
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "current_bill": "Bill-36",
+  "bill_bumped": false,
+  "measured_W_loaded": false,
+  "spine_predictions_left_absent": true,
+  "body_id_assigned": false,
+  "pupal_frames_invented": false,
+  "iwasaki_ball_rule_applied": false,
+  "writes": "reruns went through runio into out/; this file is the score record",
+  "quantities": [
+    {
+      "code_name": "Fly Cell Atlas bodyId join",
+      "deals_with": "Which connectome class a gene sits on, so a residual hop can be read.",
+      "published_columns": [
+        "Male CNS bodyId plus consensus_nt in body-neurotransmitters-male-cns-v1.0.feather",
+        "Male CNS type, class, subclass on body-annotations",
+        "FlyWire cell_type, vfb_id, fbbt_id in Supplemental_file1_neuron_annotations.tsv"
+      ],
+      "finding": "No gene symbol, FlyBase id, or UniProt accession is in the Schlegel TSV. vfb_id is one Virtual Fly Brain short id per FlyWire root. fbbt_id is a Drosophila Anatomy Ontology term and is empty on every JO row. Male bodyId is the Male CNS cell id. None of those is a Fly Cell Atlas barcode."
+    },
+    {
+      "code_name": "Embryo-to-pupa synapse series",
+      "deals_with": "Whether adult cells that still carry a birthtime or hemilineage tag drive vnc_motor.",
+      "published_columns": ["birthtime", "trumanHl", "itoleeHl", "hemilineage", "larva celltype"],
+      "finding": "Inventory was re-read from the annotation feathers. Adult-end hop-2 numbers stayed the frozen develop_cycle hops. No intermediate synapse frame was filled."
+    },
+    {
+      "code_name": "Iwasaki forelimb share of tarsus energy",
+      "deals_with": "Object contact versus per-leg tarsus energy. The family ball rule needs R1 and L1 tarsus energy. Iwasaki's summary mats publish centroids, distance, timebase, and fly_on_object.",
+      "published_columns": ["fly_on_object_per_fly", "fly_traj_per_fly", "ball_traj_per_fly", "fly_ball_distance_per_fly", "timebase_per_fly"],
+      "finding": "fly_on_object is present and is false on every scored frame. The mats have no tarsus or forelimb column. The 1/phi rule stayed on the Harvard 6-leg trials."
+    }
+  ],
+  "gene_class": {
+    "schlegel_tsv": {
+      "n_rows": 139248,
+      "header_has_bodyId": false,
+      "cell_type_JO_prefix": 1104,
+      "JO_nunique_names": 34,
+      "cell_type_DNg29": 2,
+      "gene_symbol_hits": 0,
+      "vfb_id_JO_nonempty": 1104,
+      "vfb_id_JO_nunique": 1104,
+      "vfb_id_all_nonempty": 139245,
+      "fbbt_id_JO_nonempty": 0,
+      "fbbt_id_all_nonempty": 28905,
+      "fbbt_top": {"FBbt_00003720": 2933, "label": "lamina monopolar neuron L2"}
+    },
+    "male_annotations": {
+      "n_rows": 211577,
+      "n_traced": 165122,
+      "has_bodyId": true,
+      "type_JO_prefix": 672,
+      "type_DNg29": 2,
+      "class_mechanosensory": 1733,
+      "class_mechanosensory_tactile": 2558,
+      "class_mechanosensory_proprioceptive": 1454,
+      "subclass_mechanosensory_bristle": 2206,
+      "subclass_campaniform_sensilla": 426,
+      "subclass_chordotonal_organ": 425,
+      "subclass_wind_gravity": 475,
+      "superclass_vnc_sensory": 6365,
+      "receptorType_n": 752,
+      "receptorType": {"putative_ppk23": 269, "putative_ppk25": 257, "putative_IR52b": 226}
+    },
+    "consensus_nt": {
+      "table_rows": 1835518,
+      "gaba_unique_bodies": 22196,
+      "gaba_on_traced": 22055
+    },
+    "seats": [
+      {"symbol": "nompC", "uniprot": "Q7KIQ2", "sits_on": "mechanosensory bristles / campaniform", "hop_seed": "JO"},
+      {"symbol": "iav", "uniprot": "Q9W3W0", "sits_on": "Johnston organ chordotonal", "hop_seed": "JO"},
+      {"symbol": "nan", "uniprot": "Q9VUD5", "sits_on": "Johnston organ, partners with iav", "hop_seed": "JO"},
+      {"symbol": "Gad1", "uniprot": "P20228", "sits_on": "GABAergic neurons", "hop_seed": "vnc_sensory", "class_count": 22055}
+    ]
+  },
+  "birth_tags": {
+    "male_traced": 165122,
+    "birthtime": {"early": 7890, "late": 13},
+    "trumanHl_n": 19737,
+    "truman_07B": 954,
+    "itoleeHl_n": 37745,
+    "ito_MBp3": 1038,
+    "persistent_jobs": ["KC", "MBON", "DN-VNC", "ascending", "sensory", "LN"],
+    "adult_end_hop2_vnc_motor": {
+      "birth_early": 24.253860720964948,
+      "truman_07B": 27.565871341818752,
+      "ito_MBp3": 7.979027811605463e-05
+    },
+    "hops_recomputed": false
+  },
+  "iwasaki_contact": {
+    "glue": {"flies": 40, "frames": 43558560, "contact_frames": 0},
+    "mobile": {"flies": 48, "frames": 52291680, "contact_frames": 0},
+    "nopin": {"flies": 36, "frames": 34582080, "contact_frames": 0},
+    "tarsus_columns_present": false,
+    "ball_rule_applied": false,
+    "v73_mat_opened": false,
+    "glue_fly0_distance_min": 0.0,
+    "glue_fly0_distance_max": 613.0815606426277,
+    "glue_fly0_frames": 1209600
+  },
+  "family_render": {
+    "law": "S=K(T1+T2+T3); residual a<-rWa on frozen hop-2; command when vnc_motor>1",
+    "programs": [
+      {"program": "JO", "who": "nompC, iav, nan hop_seed", "male_hop2_vnc_motor": 7.772920928859144, "male_hop2_descending": 24.213046671127735, "walks": true},
+      {"program": "mechanosensory", "who": "nompC sits_on and Harvard ball observer", "male_hop2_vnc_motor": 7.549628185600908, "male_hop2_descending": 13.890959775127437, "walks": true},
+      {"program": "vnc_sensory", "who": "Gad1 recorded hop_seed; leg tarsus observer", "male_hop2_vnc_motor": 10.740180804833889, "walks": true},
+      {"program": "gaba", "who": "Gad1 sits_on, traced consensus_nt", "n_seed": 22055, "male_hop2_vnc_motor": 28.747975630228993, "role": "signed brake"},
+      {"program": "olfactory", "male_hop2_vnc_motor": 0.0005710214203076791, "walks": false},
+      {"program": "birth_early", "n_seed": 7890, "male_hop2_vnc_motor": 24.253860720964948, "walks": true},
+      {"program": "truman_07B", "n_seed": 954, "male_hop2_vnc_motor": 27.565871341818752, "walks": true},
+      {"program": "ito_MBp3", "n_seed": 1038, "male_hop2_vnc_motor": 7.979027811605463e-05, "walks": false},
+      {"program": "courtship", "allow": false},
+      {"program": "aggression", "allow": false}
+    ],
+    "harvard_ball": {
+      "trials": 3,
+      "resource_reached": 2,
+      "brain_print_ok": true,
+      "frames": [
+        {"id": "Fly01_T001", "n_frames": 333, "n_ball_forelimb": 9, "reached": true},
+        {"id": "Fly01_T002", "n_frames": 347, "n_ball_forelimb": 15, "reached": true},
+        {"id": "Fly02_T002", "n_frames": 337, "n_ball_forelimb": 5, "reached": false}
+      ]
+    },
+    "repertoire_ok": true,
+    "courtship_denied": true,
+    "aggression_denied": true
+  },
+  "learned_tasks": {
+    "easy": {"correct": 570, "n": 570, "wrong": 0},
+    "challenge": {"correct": 299, "n": 299, "wrong": 0},
+    "use": {"n": 343, "forgotten": 0},
+    "use_finish": {"apply": "260/260", "near": "16/16", "old": "41/41 and 26/26", "source": "251/251", "easy_wrong": 0, "challenge_wrong": 0, "hurt": 0},
+    "openstax": "15/15",
+    "fractions": "15/15",
+    "chapter6": "12/12",
+    "math_gaps": "8/8",
+    "python_laws": {"taught": "7/7", "fresh": "15/15", "refuse": "12/12", "same_law": true},
+    "adventure1_verify": "28/28",
+    "boot_check": "PACK BOOT OK",
+    "spine": {"n_obligations": 89, "n_predictions": 4, "overall_ok": true, "predictions_filled": false}
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "application": "public-gap-fetch",
+  "pin": "AEB2AD",
+  "free_parameters": 0,
+  "current_bill": "Bill-36",
+  "spine_report": "data/fly_spine_report.json",
+  "spine_predictions_left_absent": true,
+  "note": "Files live under D:\\FlyWire_Connectome\\public_gaps. This record does not flip fly_spine_report predictions. run_fly_spine.py rejects a prediction whose filled flag is true or whose status is not absent.",
+  "codex_portal_csv": {
+    "source": "https://storage.googleapis.com/flywire-data/codex/data/fafb/783/",
+    "passing_file": "fw_and_hemibrain_types.csv.gz",
+    "bytes": 1043857,
+    "sha256": "193f266279f20cfd816e3631a9225cf887d3424d337454a20f09d10916472bd0",
+    "n_rows": 139255,
+    "type_column": "cell_type",
+    "DNg29": 2,
+    "DNg29_roots": ["720575940607761244", "720575940622579967"],
+    "DNg29_roots_match_schlegel": true,
+    "JO_prefix": 1107,
+    "jo_nomenclature": "coarse",
+    "jo_name_count": 24,
+    "gate_dng29": true,
+    "gate_jo": true,
+    "jo_only_versus_schlegel": [
+      {"root_id": "720575940626741265", "cell_type": "JO-B"},
+      {"root_id": "720575940628159081", "cell_type": "JO-B"},
+      {"root_id": "720575940636488667", "cell_type": "JO-B"}
+    ],
+    "jo_only_in_schlegel": [],
+    "gap_is_the_three_meta_only_roots": true,
+    "companion_file": {
+      "name": "classification_with_fw_and_hemibrain_types.csv.gz",
+      "bytes": 1362939,
+      "sha256": "e2e8e892ca4b8498e25e22c7625f3e8486751a530d0cbdd34203df2f8cbb00ff",
+      "same_jo_roots": true,
+      "same_dng29_roots": true
+    },
+    "does_not_pass": [
+      {
+        "name": "consolidated_cell_types.csv.gz",
+        "bytes": 901707,
+        "sha256": "8aba246d71dc40361677493629972ce3883048c3d02010adc42bda22962a1a2d",
+        "column": "primary_type",
+        "DNg29": 2,
+        "JO_prefix": 1122
+      },
+      {
+        "name": "classification.csv.gz",
+        "bytes": 934402,
+        "sha256": "e946b552f4056dfc977707be0674609832c3f64332a22d69dc0d9615e7aae663",
+        "n_rows": 139255,
+        "cell_type_column": false
+      }
+    ],
+    "root_id_symmetric_difference": {
+      "codex_not_in_schlegel": 14,
+      "schlegel_not_in_codex": 7,
+      "codex_not_in_schlegel_types": [
+        {"root_id": "720575940606792881", "cell_type": "T1"},
+        {"root_id": "720575940607862706", "cell_type": "CB3834"},
+        {"root_id": "720575940613336473", "cell_type": ""},
+        {"root_id": "720575940613437206", "cell_type": ""},
+        {"root_id": "720575940619169349", "cell_type": "Tm20"},
+        {"root_id": "720575940623450077", "cell_type": ""},
+        {"root_id": "720575940623913933", "cell_type": ""},
+        {"root_id": "720575940625523749", "cell_type": ""},
+        {"root_id": "720575940626741265", "cell_type": "JO-B"},
+        {"root_id": "720575940628159081", "cell_type": "JO-B"},
+        {"root_id": "720575940633242449", "cell_type": "CB.FB3,4A2"},
+        {"root_id": "720575940636488667", "cell_type": "JO-B"},
+        {"root_id": "720575940639387763", "cell_type": ""},
+        {"root_id": "720575940642560987", "cell_type": "L5"}
+      ],
+      "schlegel_not_in_codex_types": [
+        {"root_id": "720575940616847814", "cell_type": "L2"},
+        {"root_id": "720575940618455453", "cell_type": "Mi9"},
+        {"root_id": "720575940622062913", "cell_type": "L2"},
+        {"root_id": "720575940624154153", "cell_type": ""},
+        {"root_id": "720575940626850833", "cell_type": "HBeyelet"},
+        {"root_id": "720575940628215433", "cell_type": "ORN_DM4"},
+        {"root_id": "720575940637590670", "cell_type": "HBeyelet"}
+      ]
+    }
+  },
+  "fly_cell_atlas_bodyid": {
+    "body_id_count": null,
+    "antenna_stringent_h5ad": {
+      "url": "https://cloud.flycellatlas.org/index.php/s/jpLWSwcA638yZka/download/s_fca_biohub_antenna_10x.h5ad",
+      "bytes": 740806185,
+      "downloaded": false
+    },
+    "cellxgene_collections_scanned": 395,
+    "drosophila_collections": 0
+  },
+  "pupal_synapse_series": {
+    "frame_count": null,
+    "expression_tables": {
+      "source": "GEO GSE142787 optic-lobe developmental atlas",
+      "cluster_markers": {
+        "bytes": 35990473,
+        "adult_nompC": {"cluster": "4", "avg_logFC": 0.458598683858139, "pct_1": 0.156},
+        "Gad1_marker_sheets": ["P15", "P30", "P40", "P50", "P70", "Adult"],
+        "iav_in_marker_table": false,
+        "nan_in_marker_table": false
+      },
+      "log_normalized_average_expression": {
+        "bytes": 145820714,
+        "sha256": "44999534dd706c2c06686718fbbf982d99743138b45e435620603a3d3646b259",
+        "adult_peak": {
+          "nompC": {"cluster": "4", "value": 0.459824901340383, "n_nonzero_clusters": 18},
+          "iav": {"cluster": "199", "value": 0.0429390548912226, "n_nonzero_clusters": 22},
+          "Gad1": {"cluster": "162", "value": 4.90453583225813, "n_nonzero_clusters": 199}
+        },
+        "nan_sheets": ["P15_average_expression", "P30_average_expression"]
+      }
+    }
+  },
+  "iwasaki_videos": {
+    "frame_count": null,
+    "ball_rule_applied": false,
+    "reason": "Summary mats contain fly and ball trajectories, distance, timebase, ball movement, and fly_on_object. They do not contain tarsus or forelimb columns, so the forelimb share rule was not applied.",
+    "harvard_baseline_unchanged": {"trials": 3, "resource_reached": 2},
+    "osf": "https://doi.org/10.17605/OSF.IO/3RDME",
+    "mats": [
+      {
+        "name": "initial_fly_ball_dataset_glue.mat",
+        "bytes": 626745824,
+        "sha256": "34b1d7195771d6e1f3b501da52864c65f2b5e389bc4fbe270a89c8d679b3c73c",
+        "n_flies": 40
+      },
+      {
+        "name": "initial_fly_ball_dataset_mobile.mat",
+        "bytes": 687750463,
+        "sha256": "5d377fdd32545eff08c1aef093dac23ef4cc24a9b53d1f9e8043b6342591ed0f",
+        "n_flies": 48
+      },
+      {
+        "name": "initial_fly_ball_dataset_nopin.mat",
+        "bytes": 465192867,
+        "sha256": "e4b4817e59c58d123987a12eec596972ccc2207762fd51b68236d26cd1819170",
+        "n_flies": 36
+      },
+      {
+        "name": "initial_fly_ball_dataset.mat",
+        "bytes": 1316751999,
+        "sha256": "7e98c1be83157b66e2b11b6c53f33f6e6c1419978dd7c43f9fcea5fe872bd0b4",
+        "format": "MATLAB 7.3",
+        "trajectory_names_present": true,
+        "tarsus_name_present": false,
+        "forelimb_name_present": false
+      }
+    ],
+    "current_biology_mmc": "HTTP 403"
+  },
+  "not_seeded": {
+    "dsx_fru_types.csv.gz": {"bytes": 8981, "n_rows": 1407, "seeded": false}
+  }
+}
