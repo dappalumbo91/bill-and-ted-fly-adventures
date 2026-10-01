@@ -12,7 +12,7 @@ Gemini’s list is the right **shape**: sequential textbooks, algorithmic math, 
 | Simple English Wikipedia dumps | encyclopedic frames | Research observer later; overlay/consensus; **never over \(W\)**. | leftover |
 | Gutenberg | public-domain reading | Reading curriculum later; closed-lexicon decode first. | leftover |
 | OpenML education | arrays | Numeric rule arrays if they match ALU. | analog |
-| **G:\\AI_Datasets** (on disk) | flickr, python snippets, text.zip, CORD-19 | Zips **0-byte / not zip**. Folders empty. Cannot extract. | blocked dump |
+| **<local folder, not included in repo: AI_Datasets>** (on disk) | flickr, python snippets, text.zip, CORD-19 | Zips **0-byte / not zip**. Folders empty. Cannot extract. | blocked dump |
 
 ## What this model reads easiest
 

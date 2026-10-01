@@ -135,9 +135,9 @@ Adventure 1 extras: Ledger B on dump N, GABA n, CRC transmitter AA — **17/17**
 
 **TED-19:** teach the procedure, then new numbers. Overlay vs leftover = usable vs resistance. Reward trit +1/0/−1; DA leftover \(T_1\) binds LTM; 5HT leftover on error. No new synapses. Transfer **6/6**, retention after interference. **Promoted → Bill-19.** `python scripts/bill18_bio_teach.py` · `python scripts/bill_ted.py ted-19`
 
-**TED-20:** read decode + write encode; school exam **11/11** (math, commands, code, deny, retain). Capability ledger vs LLM end. Curriculum sources (OpenStax, DeepMind math, ARC, G:\\AI_Datasets) mapped as JSON Q&A analog. **Promoted → Bill-20.** `python scripts/bill19_read_write.py` · `python scripts/bill_ted.py ted-20`
+**TED-20:** read decode + write encode; school exam **11/11** (math, commands, code, deny, retain). Capability ledger vs LLM end. Curriculum sources (OpenStax, DeepMind math, ARC, <local folder, not included in repo: AI_Datasets>) mapped as JSON Q&A analog. **Promoted → Bill-20.** `python scripts/bill19_read_write.py` · `python scripts/bill_ted.py ted-20`
 
-**TED-21:** G:\\AI_Datasets zips empty. Ingested DeepMind-style algorithmic JSON **48/48** (8 kinds × 6). Mix read/write/deny 3/3. Bank `data/ingest_deepmind_style.json`. **Promoted → Bill-21.** `python scripts/bill20_ingest.py` · `python scripts/bill_ted.py ted-21`
+**TED-21:** <local folder, not included in repo: AI_Datasets> zips empty. Ingested DeepMind-style algorithmic JSON **48/48** (8 kinds × 6). Mix read/write/deny 3/3. Bank `data/ingest_deepmind_style.json`. **Promoted → Bill-21.** `python scripts/bill20_ingest.py` · `python scripts/bill_ted.py ted-21`
 
 **TED-22:** OpenStax Prealgebra 2e (CC BY-NC-SA) **15/15**. Sequential Ch.1 then integers. `1683+49` computed **1732** (published key 2162 does not match those addends). **Promoted → Bill-22.** `python scripts/bill21_openstax.py` · `python scripts/bill_ted.py ted-22`
 

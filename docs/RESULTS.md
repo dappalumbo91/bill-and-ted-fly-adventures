@@ -1,7 +1,7 @@
 # What FSOT-Genetics actually does (live results)
 
 Pin `AEB2AD`. Law \(S = K(T_1+T_2+T_3)\). **0 free parameters.**  
-Data stays on `D:\FlyWire_Connectome` (not git). Do not mix product Å with hop mass.
+Data stays on `<local folder, not included in repo: FlyWire_Connectome>` (not git). Do not mix product Å with hop mass.
 
 ## 1. Protein product (accuracy that is Å)
 
