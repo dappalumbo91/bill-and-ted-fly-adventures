@@ -927,7 +927,7 @@ def main(argv: list[str] | None = None) -> int:
             "promote_to": "Bill-20" if win else None,
             "why": (
                 "Read decode + write encode as steps. Combined exam. "
-                "G:\\AI_Datasets and OpenStax/DeepMind/ARC mapped as JSON Q&A analog, not pretrain."
+                "$FSOT_AI_DATASETS and OpenStax/DeepMind/ARC mapped as JSON Q&A analog, not pretrain."
             ),
         }
         dest = BT / "TED-20"

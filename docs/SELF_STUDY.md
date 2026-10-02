@@ -4,4 +4,4 @@ When leftover: query the **closed dictionary/grammar** (TED-17/18). Hit → LTM 
 
 Later **API hub**: same leftover lookup, optional retrieved text as overlay observer. Consensus 0 if it disagrees with measured \(W\). Never Wikipedia-as-authority. Never courtship/aggression seed.
 
-G:\AI_Datasets (flickr captions, python snippets) reshape later into Q&A this organism can actually take — not dumped as LLM pretrain.
+<local folder, not included in repo: AI_Datasets> (flickr captions, python snippets) reshape later into Q&A this organism can actually take — not dumped as LLM pretrain.

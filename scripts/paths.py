@@ -7,6 +7,18 @@ used when the env var is unset, so an existing local dump still resolves.
 """
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import os
 import sys
 from pathlib import Path
@@ -27,8 +39,8 @@ def _pick(env: str, default: Path, legacy: Path | None = None) -> Path:
     return default
 
 
-FLY_ROOT = _pick("FLY_ROOT", ROOT / "data_external" / "FlyWire_Connectome", Path(r"D:\FlyWire_Connectome"))
-DATASETS_ROOT = _pick("DATASETS_ROOT", ROOT / "data_external" / "AI_Datasets", Path(r"G:\AI_Datasets"))
+FLY_ROOT = _pick("FLY_ROOT", ROOT / "data_external" / "FlyWire_Connectome", _fsot_local_path('FLY_ROOT', 'data_external/fly'))
+DATASETS_ROOT = _pick("DATASETS_ROOT", ROOT / "data_external" / "AI_Datasets", _fsot_local_path('FSOT_AI_DATASETS', 'data_external/ai_datasets'))
 CACHE_DIR = _pick("CACHE_DIR", ROOT / "data_external" / "cache", None)
 OUT_DIR = Path(os.environ["FSOT_OUT"]) if os.environ.get("FSOT_OUT") else ROOT / "out"
 

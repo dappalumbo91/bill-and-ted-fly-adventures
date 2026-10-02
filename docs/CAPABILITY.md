@@ -10,7 +10,7 @@ Pin **AEB2AD**. End goal: this fly organism as capable as LLMs at read/write/mat
 | Code | let/if/while trit ALU | HumanEval-scale |
 | Reward | DA leftover +1 LTM bind | same law |
 | Self-study | leftover → dictionary | API hub |
-| G:\AI_Datasets | present True ['adityajn105_flickr8k', 'adityajn105_flickr8k.zip', 'allen-institute-for-ai_CORD-19-research-challenge', 'allen-institute-for-ai_CORD-19-research-challenge.zip', 'bryanpark_sudoku', 'bryanpark_sudoku.zip'] | reshape to Q&A this splice can take |
+| <local folder, not included in repo: AI_Datasets> | present True ['adityajn105_flickr8k', 'adityajn105_flickr8k.zip', 'allen-institute-for-ai_CORD-19-research-challenge', 'allen-institute-for-ai_CORD-19-research-challenge.zip', 'bryanpark_sudoku', 'bryanpark_sudoku.zip'] | reshape to Q&A this splice can take |
 
 TED-20 school exam **11/11** (read+write+math+retain).
 
