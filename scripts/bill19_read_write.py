@@ -6,7 +6,7 @@ Then a combined unseen quiz: read + write + math + retention.
 Self-study: leftover → closed dictionary lookup (API hub later, not Wikipedia over W).
 Capability ledger vs LLM-scale end goal.
 
-Datasets on G:\\AI_Datasets (flickr, python snippets, text.zip) stay for later
+Datasets on $FSOT_AI_DATASETS (flickr, python snippets, text.zip) stay for later
 reshape; this TED uses the splice the organism can actually take.
 
   python scripts/bill19_read_write.py
@@ -144,7 +144,7 @@ def main() -> int:
             {"skill": "open vocab / essays / HumanEval", "status": "leftover", "note": "not LLM"},
             {"skill": "web/Wikipedia authority", "status": "leftover", "note": "never over W"},
             {"skill": "self-study API hub", "status": "mapped", "note": "leftover → dictionary lookup; hub later"},
-            {"skill": "G:\\AI_Datasets reshape", "status": "wait", "note": str(ds["names"][:8])},
+            {"skill": "$FSOT_LOCAL_DATA/AI_Datasets reshape", "status": "wait", "note": str(ds["names"][:8])},
         ],
         "school_exam": {"n_ok": n_ok, "n": n, "by_kind": by},
     }
@@ -185,7 +185,7 @@ Pin **AEB2AD**. End goal: this fly organism as capable as LLMs at read/write/mat
 | Code | let/if/while trit ALU | HumanEval-scale |
 | Reward | DA leftover +1 LTM bind | same law |
 | Self-study | leftover → dictionary | API hub |
-| G:\\AI_Datasets | present {ds['present']} {ds['names'][:6]} | reshape to Q&A this splice can take |
+| $FSOT_AI_DATASETS | present {ds['present']} {ds['names'][:6]} | reshape to Q&A this splice can take |
 
 TED-20 school exam **{n_ok}/{n}** (read+write+math+retain).
 """
@@ -196,7 +196,7 @@ When leftover: query the **closed dictionary/grammar** (TED-17/18). Hit → LTM 
 
 Later **API hub**: same leftover lookup, optional retrieved text as overlay observer. Consensus 0 if it disagrees with measured \(W\). Never Wikipedia-as-authority. Never courtship/aggression seed.
 
-G:\\AI_Datasets (flickr captions, python snippets) reshape later into Q&A this organism can actually take — not dumped as LLM pretrain.
+$FSOT_AI_DATASETS (flickr captions, python snippets) reshape later into Q&A this organism can actually take — not dumped as LLM pretrain.
 """
     STUDY.write_text(study_md, encoding="utf-8")
     (ADV / "CAPABILITY.md").write_text(cap_md, encoding="utf-8")

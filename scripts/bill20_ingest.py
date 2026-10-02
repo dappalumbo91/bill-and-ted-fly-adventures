@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """TED-21: ingest DeepMind-style algorithmic math as JSON Q&A.
 
-G:\\AI_Datasets zips on disk are empty/corrupt (0-byte). Ingest is the DeepMind
+$FSOT_AI_DATASETS zips on disk are empty/corrupt (0-byte). Ingest is the DeepMind
 method: generate K-12 arithmetic from explicit templates, not scraped web.
 The organism works each prompt (grammar + ALU). Not LLM pretrain.
 
@@ -152,7 +152,7 @@ def main() -> int:
     OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
     md = f"""# Ingest TED-21 — DeepMind-style JSON
 
-G:\\\\AI_Datasets archives are empty (0-byte zips). Ingest is **algorithmic templates** (DeepMind Mathematics Dataset method): plus/minus/times/divide/percent/times-as-many/equation/less-than.
+$FSOT_AI_DATASETS archives are empty (0-byte zips). Ingest is **algorithmic templates** (DeepMind Mathematics Dataset method): plus/minus/times/divide/percent/times-as-many/equation/less-than.
 
 The organism **works each prompt**. Not stored keys. Not LLM.
 
