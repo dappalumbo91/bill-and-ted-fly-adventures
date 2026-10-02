@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below. Please also cite the FlyWire, Male CNS and BANC connectome datasets it uses."
+type: software
+title: "Bill and Ted fly adventures: FSOT residual experiments on measured fly connectomes"
+authors:
+  - family-names: Palumbo
+    given-names: Damian Arthur
+repository-code: "https://github.com/dappalumbo91/bill-and-ted-fly-adventures"
+license: Apache-2.0
+abstract: >-
+  FSOT residual-hop experiments on measured fly wiring (FlyWire, Male CNS,
+  BANC): baseline "Bill" vs numbered experiments "TED". Zero free parameters;
+  measured edges are not replaced by learned weights.
+keywords: [fsot, drosophila, connectomics, neuroscience]
